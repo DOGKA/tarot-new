@@ -1,0 +1,1798 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "name": "Deli",
+      "image": "00_fool",
+      "arcana": "major",
+      "number": "0",
+      "suit": null,
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Yeni başlangıçları ve içindeki yaratıcı gücü kucaklayarak kaderini şekillendir. Kendi yolunu çizerken kendine güven ve olumsuz düşünenleri görmezden gel. Unutma, cesurca hareket ettiğinde hayat sana yeni kapılar açar.",
+          "love": "Açık bir kalple ve yeni bir başlangıç yapma isteğiyle romantizm dünyasına adım atın. Gerçek duygularınızı ve arzularınızı ifade etmeye cesaret edin, bu sizi heyecan verici bağlantılara götürebilir.",
+          "career": "Şimdi, cesur yeni projeler peşinde koşmanın veya bir değişiklik arzuluyorsanız kariyer yolunuzu değiştirmenin tam zamanı. Yenilikçilik ve öncü ruh, size doğru fırsatları ve işbirlikçileri çekerek yol göstericiniz olacak.",
+          "finance": "Finansal konularınızda alışılmadık yaklaşımları değerlendirin. Şu an, o benzersiz fikre yatırım yapmak veya yeni bir girişim başlatmak için doğru zaman olabilir, çünkü iyimserliğiniz ve yeni bakış açınız sayesinde başarıya ulaşma olasılığınız artmıştır."
+        },
+        "reversed": {
+          "general": "Aynı eski korkularla yüzleşmek bir gerileme gibi hissettirebilir, ancak bunu bir kez ve sonsuza kadar onları yenmek için bir fırsat olarak görün. Cesaretinizi toplayın ve başarıya giden yolu açmak için bu zorluklarla doğrudan yüzleşin.",
+          "love": "Geçmişteki ilişki korkuları yeniden ortaya çıkabilir ve sizi geri çekilmeye ya da bunları aşmaya zorlayabilir. Daha tatmin edici ilişkiler için yolu açmak üzere bu korkuları doğrudan ele almayı seçin.",
+          "career": "Bir zamanlar ilerlemenizi durduran benzer engellerle karşılaşabilirsiniz. Bunu, geçmiş hatalarınızdan ders almak ve yenilenen kararlılığınızla ilerlemek için bir fırsat olarak değerlendirin.",
+          "finance": "Geçmişteki kayıplar veya başarısızlıklarla ilgili olarak finansal endişeler yeniden ortaya çıkabilir. Stratejilerinizi yeniden değerlendirerek ve belki de tavsiye alarak bu endişeleri doğrudan ele alın ve geçmişteki başarısızlıkları gelecekteki başarılara dönüştürün."
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "Büyücü",
+      "image": "01_magician",
+      "arcana": "major",
+      "number": "I",
+      "suit": null,
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Potansiyelini şimdi ortaya çıkar; fikirlerini gerçeğe dönüştürmek için gerekli tüm araçlara sahipsin. Becerilerini kullanmaya odaklan ve vizyonunu hayata geçirmek için kararlı adımlar at.",
+          "love": "İlişkilerde, yaratıcılığınız ve coşkunuz daha derin bağlar kurmanıza yardımcı olabilir. Anlamlı sohbetler başlatın ve bağınızı güçlendiren unutulmaz anlar yaratın.",
+          "career": "Kariyerinizin gidişatını etkilemek için en uygun konumdasınız. Benzersiz yeteneklerinizden yararlanarak, üstlerinize ve meslektaşlarınıza güçlü yönlerinizi sergileyen projeler başlatın.",
+          "finance": "Bu, finansal stratejinizi yenilemek için uygun bir zamandır. Gelecekteki büyümeyi güvence altına almak için mevcut finansal durumunuzdan yararlanacak yatırım veya tasarruf planlarını değerlendirin."
+        },
+        "reversed": {
+          "general": "Stratejilerinizi ve fikirlerinizi yeniden değerlendirin; aşırı karmaşıklık veya ihmal ilerlemenizi engelleyebilir. Yaklaşımınızı basitleştirin ve pratik adımlara odaklanın.",
+          "love": "Aşkta, iletişim sorunları veya gerçekçi olmayan beklentiler sürtüşmelere neden olabilir. İlişkinizin hedeflerini yeniden değerlendirmeye zaman ayırın ve partnerinizle yeniden uyum sağlamak için açık bir şekilde iletişim kurun.",
+          "career": "Kariyerinizde karşılaşabileceğiniz olası hatalar, aşırı planlama veya yetersiz eylemden kaynaklanabilir. İş yerinde ivmeyi yeniden kazanmak için odak noktanızı hazırlıktan uygulamaya kaydırın.",
+          "finance": "Finansal stratejilerinizi yeniden gözden geçirmeniz gerekebilir. Gereksiz risklerden kaçının ve sağlam, pragmatik bir temel üzerine inşa ettiğinizden emin olmak için yaklaşımınızı iyileştirin."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "Azize",
+      "image": "02_high_priestess",
+      "arcana": "major",
+      "number": "II",
+      "suit": null,
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Hayatın karmaşıklıklarını aşmak için içsel bilgeliğinize güvenin. Anlayışınızı veya yaklaşımınızı yeniden şekillendirebilecek ani içgörülere açık olun. Netlik geldiğinde, tereddüt etmeden harekete geçin.",
+          "love": "İçgüdülerine dikkat et, çünkü bunlar ilişkin veya potansiyel partnerlerin hakkında gerçekleri ortaya çıkarabilir. Bir şey ters gidiyorsa, ortamı temizlemek için samimi bir konuşma yapmayı düşün. Anlayış ve incelikle aşkın sularında yolunu bul.",
+          "career": "Bir anlık netlik, profesyonel hayatınızda yeni yolların önünü açabilir. Fırsatlar ortaya çıktığında içgüdülerinize güvenin ve ilk bakışta zor gibi görünen rollerden çekinmeyin. İçgüdüleriniz güçlü bir rehberdir.",
+          "finance": "Finansal içgörüler beklenmedik bir şekilde ortaya çıkabilir. Bu içgörülere çok dikkat edin ve bütçenizi veya yatırım stratejinizi ayarlamak için bunları kullanın. Finansal kararlar almak için sezgilerinize güvenmenin tam zamanı."
+        },
+        "reversed": {
+          "general": "Mevcut yaşam bakış açınızı sorguladıkları için bazı gerçeklerden kaçınıyor olabilirsiniz. Büyümek ve ilerlemek için bu gerçeklerle yüzleşmek çok önemlidir. Objektif olmaya çalışın ve inançlarınızı yeniden değerlendirmeye hazır olun.",
+          "love": "Aşkta, sorunları inkar etmek bir çözüme yol açmaz. Rahatsız edici gerçeklerle yüzleşmek zor olabilir, ancak ilişkinizin sağlığı için gereklidir. Sorunları ele almak için açık ve dürüst bir diyalog kurun.",
+          "career": "Bilinmeyenden korkarak kariyerinizdeki değişime direnmek, gelişiminizi sınırlayabilir. Rahatsız edici olsa bile, profesyonel hayatınızla ilgili gerçekleri kabul edin. Bu, geri bildirim almak veya farklı kariyer yolları düşünmek anlamına gelebilir.",
+          "finance": "Önemli finansal işaretleri, beklentilerinizle uyuşmadığı için görmezden geliyor olabilirsiniz. Zaman ayırıp finansal stratejinizi dürüstçe yeniden değerlendirin. Bu işaretleri görmezden gelmek, gelecekte daha büyük kayıplara yol açabilir."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "İmparatoriçe",
+      "image": "03_empress",
+      "arcana": "major",
+      "number": "III",
+      "suit": null,
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Çevrenizde büyümeyi teşvik etmek için doğanızın besleyici yönlerini benimseyin. Nezaketle davranın ve başkalarının gelişmesine olanak tanıyan ortamlar yaratın. Her etkileşimde potansiyelin tohumlarını besleyen toprak olun.",
+          "love": "Derin ve anlamlı bağlar kurmaya odaklanın. Partnerinizle açık bir şekilde iletişim kurun ve onun ihtiyaçlarını ve isteklerini anlamak için aktif olarak çaba gösterin. Bekarsanız, büyümenizi tamamlayacak bir ilişkiyi çekmek için kendinizi sevmeyi öğrenin.",
+          "career": "İşyerinde diğer çalışanları desteklemek ve geliştirmek için etkini kullan. Takım çalışmasına katıl ve katkılarının tüm grubu nasıl geliştirebileceğini düşün. Yeni iş arkadaşlarına mentorluk yapma veya rehberlik etme fırsatları ara.",
+          "finance": "Büyüme ve istikrar vaat eden girişimlere yatırım yapın. Mali durumunuzu düzenli bakıma ihtiyaç duyan bir bahçe olarak düşünün — gereksiz harcamaları budayın ve yatırımlarınızın tohumlarını akıllıca sulayın."
+        },
+        "reversed": {
+          "general": "Kişiliğinizin besleyici yönlerini ihmal ediyor olabilirsiniz, bu da kişisel ve toplumsal gelişimi engelleyebilir. Eylemlerinizin kendinize veya başkalarına zarar vermediğinden emin olmak için üzerinde düşünün. Günlük etkileşimlerinize pozitiflik ve destek katmanın yollarını aktif olarak arayın.",
+          "love": "Kendinize kapanmayın veya partnerinizin ihtiyaçlarını göz ardı etmeyin. İletişim çok önemlidir; sorunlar ortaya çıkarsa, dürüstlükle ve çatışmaları çözme isteğiyle karşı karşıya kalın. İlişkinizi iyileştirmek ve güçlendirmek için karşılıklı saygı ve anlayışı önceliklendirin.",
+          "career": "İzolasyon veya işbirliği eksikliği, mesleki ilerlemenizi engelleyebilir. Ekibinizle yeniden bağlantı kurun ve sorumlulukları paylaşın. Tek başına çok fazla yük üstlenmekten kaçının — işbirliği, daha büyük başarı ve iş tatmini sağlayabilir.",
+          "finance": "Kaynaklarınızı nasıl yönettiğinizi yeniden değerlendirin. İsraflı harcamalar veya kötü finansal planlama istikrarsızlığa yol açabilir. Tasarruf yapmanıza ve gereksiz harcamaları azaltmanıza olanak tanıyan bir bütçe oluşturarak finansal sağlığınızın dengesini yeniden sağlayın."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "İmparator",
+      "image": "04_emperor",
+      "arcana": "major",
+      "number": "IV",
+      "suit": null,
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Belirsiz hissetseniz bile doğru yola giriyorsunuz. Bu aşamayı geleceğinizin temel taşı olarak kabul edin ve eylemlerinizin uzun vadeli hedeflerinizle uyumlu olmasını sağlayın.",
+          "love": "İlişkilerde, istikrar ve yapı kurmanın zamanı geldi. Daha güvenli ve anlayışlı bir bağ kurmak için isteklerinizi ve beklentilerinizi açıkça ifade edin.",
+          "career": "Kariyer eylemlerinizi profesyonel gelişim hedeflerinizle uyumlu hale getirmeye odaklanın. Sizi zorlayabilecek ancak nihayetinde istediğiniz kariyer yoluna yönlendirecek sorumlulukları kabul etmek için iyi bir zaman.",
+          "finance": "Şu anda finansal disiplin çok önemlidir. Geleceği göz önünde bulundurarak bütçenizi planlayın ve ani satın alımlardan kaçının. Anlık tatmin yerine uzun vadeli faydalar vaat eden yatırımları değerlendirin."
+        },
+        "reversed": {
+          "general": "Gerçek amacınızla uyumlu yoldan sapıyor olabilirsiniz. Son zamanlarda yaptığınız seçimleri yeniden değerlendirin ve bunların nihai hedeflerinize nasıl hizmet ettiğini düşünün.",
+          "love": "Aşkta, şu anki yolunuzun sizi gerçekten istediğiniz ilişkiye götürüp götürmediğini yeniden düşünün. Taktik değiştirmenin veya partnerinizle uyumsuzlukları gidermenin zamanı gelmiş olabilir.",
+          "career": "Kariyerinizde, kestirmelerden veya görünüşte kolay çözümlerden kaçının. Bunlar sürdürülebilir başarıya yol açmayabilir. Çalışmalarınızı uzun vadeli kariyer hedeflerinizle yeniden uyumlu hale getirin.",
+          "finance": "Finansal kararların yeniden değerlendirilmesi gerekebilir. Sağlam bir temeli olmayan, yüksek getiri vaat eden dürtüsel harcamalardan veya riskli yatırımlardan kaçının."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "Aziz",
+      "image": "05_hierophant",
+      "arcana": "major",
+      "number": "V",
+      "suit": null,
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Yeni deneyimlerden ve düşünce tarzınıza meydan okuyan kişilerden öğrenme yolculuğuna kendinizi bırakın. Hayatın size sıra dışı veya zorlu koşullar aracılığıyla öğretmeye çalıştığı derslere açık olun.",
+          "love": "Bu, partnerinizden veya potansiyel partnerlerinizden öğrenme zamanıdır. Birlikte daha güçlü olmak için iletişimi ve farklı bakış açılarını anlamayı vurgulayın. Her çatışma veya farklılık, bağınızı derinleştirmek için bir fırsattır.",
+          "career": "İşyerinizde mentorluk arayın veya başkalarına rehberlik edin. Bu bilgi alışverişi sadece becerilerinizi geliştirmekle kalmayacak, aynı zamanda profesyonel ilişkilerinizi de güçlendirecektir. Öğrenme veya öğretme fırsatları arayın.",
+          "finance": "Daha deneyimli kişilerden finansal tavsiye alın ve hızlı getiri vaat eden yatırımlara karşı dikkatli olun. Uzun vadeli hedeflerinize uygun farklı finansal stratejiler hakkında bilgi edinin."
+        },
+        "reversed": {
+          "general": "Büyüme fırsatlarından kaçınmak kısa vadede rahatlık sağlayabilir, ancak uzun vadede gelişiminizi engelleyebilir. Zorluklardan kaçmak yerine onlarla yüzleşmenin faydalarını yeniden düşünün.",
+          "love": "Zorlu ilişkilerden uzaklaştığınızı fark ederseniz, kaçırdığınız dersleri düşünün. Engelleri birlikte aşmak için partnerinizle derin ve dürüst bir şekilde iletişim kurun.",
+          "career": "İş yerinde mentorluk veya rehberlikten kaçınmak daha kolay görünebilir, ancak bu fırsatları değerlendirmek önemli bir mesleki gelişim sağlayabilir. Geri bildirim isteyin ve gelişmek için yeni yöntemler öğrenmeye açık olun.",
+          "finance": "Finansal kestirmelerden kaçının ve sağlam tavsiyeleri ihmal etmeyin. Disiplinli davranmanın ve finansal kararlarınız hakkında bilgi sahibi olmanın uzun vadeli potansiyel faydalarını yeniden değerlendirin."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Aşıklar",
+      "image": "06_lovers",
+      "arcana": "major",
+      "number": "VI",
+      "suit": null,
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Önemli bir dönüm noktasındasınız, en derin değerlerinizle uyumlu bir seçim yapmak zorunludur. Kalbinizin sesini dinleyin ve toplumun beklentilerine aykırı olsa bile, sizi kişisel tatminine doğru yönlendirmesine izin verin.",
+          "love": "Bu, sizi zorlayan ama aynı zamanda zenginleştiren, belki de geleneksel normlara aykırı olan sevgiyi seçme zamanıdır. Toplumsal engellerle karşılaşsanız bile, içtenlikle doğru hissettiğiniz ilişkileri sürdürün.",
+          "career": "Kariyerinizde, sadece kağıt üzerinde iyi görünen bir yol değil, gerçekten tatmin edici hissettiren bir yol seçin. Bu, maaştan ziyade tutkunuzu takip etmek veya prestijli bir pozisyondan ziyade anlamlı bir projeyi takip etmek anlamına gelebilir.",
+          "finance": "Sadece kısa vadeli kazançlar değil, uzun vadeli kişisel vizyonunuzu destekleyen finansal kararlar alın. Bu, en karlı olmasa bile değerlerinizle uyumlu alanlara yatırım yapmayı gerektirebilir."
+        },
+        "reversed": {
+          "general": "Karar vermekten kaçınmak bir seçenek değildir; kararsızlık sadece yolunuzu zorlaştırır. Durgunluğu önlemek için bir yön belirleyin ve seçimlerinizi gerçek arzularınızla uyumlu hale getirin.",
+          "love": "İlişkilerde, gerçekten ne istediğinizi net bir şekilde belirlemek çok önemlidir. Kararsızlık memnuniyetsizliğe yol açabilir, bu nedenle bir partnerde ne aradığınıza karar verin ve buna göre hareket edin.",
+          "career": "İş seçenekleri arasında seçim yapmakta tereddüt etmek, ilerlemenizi engeller. Kariyer hedeflerinizi değerlendirin ve profesyonel gelişiminize en uygun olanı kesin bir karar verin.",
+          "finance": "Finansal kararları ertelemek, fırsatların kaçırılmasına neden olabilir. Finansal geleceğinizi güvence altına almak için kaynaklarınızı nereye tahsis edeceğinize dair bilinçli kararlar alın."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "Savaş Arabası",
+      "image": "07_chariot",
+      "arcana": "major",
+      "number": "VII",
+      "suit": null,
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Hayatınızdaki hızlı değişimi ilerlemenin bir işareti olarak kabul edin. Odaklanmanızı koruyun ve yeni durumlara hızla uyum sağlayarak son zamanlarda yaptığınız seçimlerin momentumunu değerlendirin.",
+          "love": "İlişkiniz hızlı bir şekilde ilerliyor olabilir. Her iki tarafın da bu hızdan memnun olmasını sağlamak için açık iletişim kurun ve duygularınızı şeffaf bir şekilde ifade edin.",
+          "career": "İşyerindeki hızlı değişikliklerden faydalanın. Yeni projelerde inisiyatif alın ve kariyerinizde olumlu bir şekilde öne çıkmak için liderlik vasıflarınızı sergileyin.",
+          "finance": "Bu, cesur finansal kararlar almak için uygun bir zamandır. Uzun vadeli hedeflerinizle uyumlu yatırımları değerlendirin, ancak karar vermeden önce kapsamlı bir araştırma yapın."
+        },
+        "reversed": {
+          "general": "Olayların hızından bunalmış hissetmek, stratejik olarak duraklayıp öncelikleri belirleme ihtiyacını gösterir. Tekrar işe koyulmadan önce, hangi fırsatların büyümenize gerçekten fayda sağlayacağına karar verin.",
+          "love": "İlişki aceleci geliyorsa, daha yavaş bir tempoya ihtiyacınız olduğunu belirtin. İlişkinizde hem sizin hem de partnerinizin aynı hızda ilerlediğinden emin olmak önemlidir.",
+          "career": "Zorlu projelerden çekilme dürtüsüne direnin. Bunun yerine, görevleri delege ederek ve profesyonel gelişiminize en fazla değer katan şeylere odaklanarak iş yükünüzü yönetin.",
+          "finance": "Bu kaos dönemlerinde aceleci finansal kararlar almaktan kaçının. Analiz ve planlama için zaman ayırın, her finansal adımın iyi düşünülmüş olduğundan emin olun."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "Güç",
+      "image": "08_strength",
+      "arcana": "major",
+      "number": "VIII",
+      "suit": null,
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "İçinizdeki gücü kullanarak çevrenizdeki kaosu düzene sokun. Karmaşık durumları etkili bir şekilde yönetmek ve kolaylaştırmak için organizasyon becerilerinizi geliştirmeye odaklanın.",
+          "love": "Güçlü varlığınızı ve özgüveninizi kullanarak ilişkilerinizi geliştirin. Net iletişim ve ikna edici bir tavır, çatışmaları çözmeye ve bağları güçlendirmeye yardımcı olacaktır.",
+          "career": "İş yerinde zorlu projeleri veya müzakereleri yürütmek için enerjinizi kanalize edin. Artan irade gücünüz ve liderlik becerileriniz sizi ekip dinamiklerinde önemli bir oyuncu haline getirecektir.",
+          "finance": "Mali işlerinizi titizlikle düzenleyin. Uzun vadeli istikrarı sağlamak için bütçenizi ve yatırım planlarınızı gözden geçirip sistematik hale getirmek için uygun bir zamandır."
+        },
+        "reversed": {
+          "general": "Yönetilemeyen dış sorunlar nedeniyle enerjinizi nerede kaybettiğinizi fark edin. Yaklaşımınızı yeniden değerlendirin ve başarısızlık ve hayal kırıklığı duygularını önlemek için kontrolü yeniden ele alın.",
+          "love": "Çözülmemiş sorunlar veya çatışmalar nedeniyle ilişkilerinizdeki enerjinizin tükendiği anların farkında olun. Uyumu yeniden sağlamak için bu sorunları doğrudan ele almak için adımlar atın.",
+          "career": "Engellerin sizi yolunuzdan saptırmasına izin vermeyin. İş akışınızı bozan unsurları belirleyin ve profesyonel ivmenizi yeniden kazanmak için bu unsurlarla doğrudan mücadele edin.",
+          "finance": "Düzensizlik nedeniyle kaçırılan finansal fırsatlara dikkat edin. Herhangi bir yanlış yönetimi düzeltmek ve finansal stratejilerinizi yeniden düzenlemek için hemen harekete geçin."
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "Ermiş",
+      "image": "09_hermit",
+      "arcana": "major",
+      "number": "IX",
+      "suit": null,
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Keşiş, içe dönme ve kendini keşfetme aşamasını simgeler. Bu zamanı, hedeflerinizi ve kim olmaya başladığınızı düşünmek için kullanın. Bu, enerjinizi yenilemek ve yolunuz hakkında netlik kazanmak için kişisel bir inzivaya çekilmeniz için mükemmel bir zamandır.",
+          "love": "Romantik ilişkilerinizde, bir partnerden gerçekten neye ihtiyacınız olduğunu düşünmek için zaman ayırın. Bekarsanız, yeni bir ilişkiye girmeden önce kendinizi daha iyi anlamak için bu yalnızlık döneminin tadını çıkarın. Bir ilişkisi olanlar için, bağınızı güçlendirmek için kişisel alanınızı koruyun.",
+          "career": "Bu kart, kariyer yolunuz üzerinde düşünmek için bir ara vermenizi tavsiye ediyor. Yoğun tempodan uzaklaşın ve uzun vadeli hedeflerinizi değerlendirin. Mesleki gelişim veya kariyer hedeflerinizle uyumlu yeni beceriler öğrenmek için ideal bir zaman.",
+          "finance": "Finansal planlamaya odaklanın ve harcamalarınızı ve yatırımlarınızı dikkatlice gözden geçirin. Finansal durumunuzu analiz etmek ve geleceğinizi güvence altına almak için bütçenizi ayarlamak için akıllıca bir dönemdir. Düşüncesizce alışveriş yapmaktan kaçının ve uzun vadeli tasarruflara yatırım yapın."
+        },
+        "reversed": {
+          "general": "Kendinizi iyi hissetmediğiniz halde meşgul görünmeye çalışmak enerjinizi daha da tüketebilir. Dinlenmeye ihtiyacınız olduğunu kabul edin ve kendinizi aşırı yüklemeyin. Vücudunuzu dinlemek ve yavaşlamak önemlidir.",
+          "love": "Aşk hayatınızda, iyi olmadığınız halde iyiymiş gibi davranmak, yarardan çok zarar verebilir. Kendinize sessiz bir zamana ihtiyacınız olduğunu partnerinizle açıkça konuşun. Bu dürüstlük, yanlış anlaşılmaları önleyebilir ve ilişkinizi güçlendirebilir.",
+          "career": "Ters Çıplak Adam, mevcut iş faaliyetlerinizin gerekliliğini yeniden değerlendirmenizi önerir. Görevler verimsiz veya yorucu geliyorsa, ekibinizle veya amirinizle daha anlamlı işlere öncelik vermeyi tartışmanın zamanı gelmiş olabilir.",
+          "finance": "Aceleyle veya aciliyet bahanesiyle finansal kararlar almaktan kaçının. Bir adım geri atın ve mevcut finansal hareketlerinizin gerçekten faydalı mı yoksa sadece dürtüsel mi olduğunu değerlendirin. Sabır ve dikkatli planlama şu anda çok önemlidir."
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "Kader Çarkı",
+      "image": "10_wheel_of_fortune",
+      "arcana": "major",
+      "number": "X",
+      "suit": null,
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Karşılaştığınız değişiklikleri, daha yüksek bir anlayış veya duruma geçişin işareti olarak kabul edin. Değişiklikler başlangıçta sizi tedirgin etse de, daha olumlu bir gelecek şekillendirdiğini anlayarak uyumlu ve açık kalın.",
+          "love": "İlişkilerde, bu daha derin bağlantı düzeylerine evrilme zamanıdır. Gelecekle ilgili vizyonlarınızı açıkça paylaşın ve ilişkinizin dinamiklerindeki değişiklikleri kucaklayın.",
+          "career": "Terfi veya yeni iş fırsatları muhtemeldir; hazır olduğunuzu gösterin. Bu geçiş döneminden en iyi şekilde yararlanmak için yeni roller ve sorumluluklara hızla uyum sağlayın.",
+          "finance": "Finansal büyüme ufukta görünüyor. Uzun vadeli hedeflerle uyumlu yatırımları değerlendirmek için uygun bir zaman olabilir, ancak ihtiyatlı bir iyimserlikle ve kapsamlı araştırmalarla hareket edin."
+        },
+        "reversed": {
+          "general": "Büyüme fırsatları mevcuttur, ancak bunları değerlendirmek için aktif olarak harekete geçmelisiniz. Küçük değişikliklere karşı uyanık olun ve bu anları ilerlemek için proaktif bir şekilde değerlendirin.",
+          "love": "İlişkilerinizi derinleştirmek için ipuçlarını veya fırsatları kaçırıyor olabilirsiniz. Partnerinizin ihtiyaçlarına ve önerilerine daha fazla dikkat edin, bunları daha tatmin edici bir bağ kurmanın kapıları olarak görün.",
+          "career": "İş yerinde gözden kaçırmış olabileceğiniz yeni bilgiler veya fırsatlar konusunda uyanık olun. Bir sonraki büyük fırsatınız, aktif katılımınızı gerektiren, gözünüzün önünde gizli olabilir.",
+          "finance": "Aktif olarak aramazsanız, finansal fırsatlar fark edilmeden geçip gidebilir. Yatırım fırsatlarını veya finansal istikrarınızı artırmanın yollarını gözden kaçırmayın; faydalanmak için harekete geçmeniz gerekir."
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "Adalet",
+      "image": "11_justice",
+      "arcana": "major",
+      "number": "XI",
+      "suit": null,
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Daha sonra sorun yaşamamak için çözülmemiş sorunları şimdi halledin. Ertelemek sizi zorluklara daha da fazla sürükler, bu yüzden zorluklarla doğrudan yüzleşin ve başarıya giden yolu açın.",
+          "love": "İlişkilerde, sorunlar ortaya çıktıkça bunları çözmek çok önemlidir. Sorunlar daha da büyümeden açıkça iletişim kurun ve ilişkinizde adalet ve eşitliği sağlayın.",
+          "career": "İşyerindeki zorluklarla doğrudan yüzleşin ve yasal veya etik sorunları çözmeye çalışın. Bu proaktif yaklaşım, mesleki itibarınızı koruyacak ve yeni fırsatların kapısını açacaktır.",
+          "finance": "Mali yükümlülüklerinizi zamanında yerine getirin. Ödemeleri geciktirmek veya borçları görmezden gelmek daha büyük mali sorunlara yol açabilir. Hesaplarınızı kapatın ve bütçenizi düzenleyin, böylece içiniz rahat olsun."
+        },
+        "reversed": {
+          "general": "Kendinizi kurban olarak görmeyi bırakın ve hayatınızın sorumluluğunu üstlenin. Kendinizi kandırmaktan kurtulun ve mevcut durumunuzda üstlendiğiniz rolü kabul ederek değişimi başlatın.",
+          "love": "İlişki sorunları için partnerinizi suçluyorsanız, içe dönüp kendinize bakmanın zamanı gelmiştir. Davranışlarınızı düşünün ve karşılıklı anlayış ve sorumluluk için çaba gösterin.",
+          "career": "İş yerinde suçu başkalarına atmaktan kaçının. Yaptığınız hataları kabul edin ve telafi etmeye ve profesyonel davranışınızı iyileştirmeye kararlı olun.",
+          "finance": "Finansal durumunuzun sorumluluğunu üstlenin. Para sorunlarınız için dış faktörleri suçlama tuzağına düşmeyin ve finansal istikrarınızı yeniden kazanmak için sağlam bir plan oluşturmaya odaklanın."
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "Asılan Adam",
+      "image": "12_hanged_man",
+      "arcana": "major",
+      "number": "XII",
+      "suit": null,
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Sizi engelleyen kalıplarla yüzleşme ve onları dönüştürme zamanı geldi. Bunu, derinlemesine yerleşmiş alışkanlıklarınızı ve inançlarınızı yeniden değerlendirmeniz ve gerekli yerlerde cesurca değişiklikler yapmanız için bir fırsat olarak görün.",
+          "love": "İlişkilerde, modası geçmiş beklentilere veya rollere bağlı kalıyor olabilirsiniz. Büyümeyi ve daha derin bir bağ kurmayı teşvik etmek için partnerinizle yeni olasılıkları açıkça tartışın.",
+          "career": "Mesleki gelişiminiz eski yöntemler nedeniyle engelleniyor. İş yerinde mevcut durumu sorgulayın, yenilikçi fikirler önerin veya yaratıcı düşünceyi teşvik eden roller arayın.",
+          "finance": "Finansal alışkanlıklarınızı ve bunların ardındaki varsayımları yeniden gözden geçirin. Artık modası geçmiş yatırım stratejilerinden kurtulup daha güncel fırsatları keşfetmenin zamanı gelmiş olabilir."
+        },
+        "reversed": {
+          "general": "Gerekli değişime direnmek, zorluklarınızı daha da artıracaktır. Rahatsızlığı kabul edin, ancak direnmek yerine yapıcı çözümler aramaya başlayın.",
+          "love": "İlişkilerde inatçılık durgunluğa yol açar. İlişki dinamiklerindeki rolünüzü düşünün ve partnerinizle değişim ve büyüme hakkında konuşmalar başlatın.",
+          "career": "İş yerinde eski yöntemlere bağlı kalmak, kariyerinizin ilerlemesine zarar verebilir. Yeni endüstri standartlarına veya iş gereksinimlerine uyum sağlamak için yaklaşımınızı değiştirip esnek davranmak çok önemlidir.",
+          "finance": "Finansal olarak uyum sağlamaya isteksiz olmanız size yarar sağlamıyor. Ekonomik duruma daha iyi uyum sağlamak için bütçe ve yatırım planlarınızı gözden geçirip ayarlayın."
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "Ölüm",
+      "image": "13_death",
+      "arcana": "major",
+      "number": "XIII",
+      "suit": null,
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Bu sakin dönem, derinlemesine düşünmek için bir fırsattır. Geçmiş deneyimlerinizi analiz edin, bunları hayatınızda tutmak veya atmak istediklerinize göre sınıflandırın ve bu içgörülerden yararlanarak gelecekteki kararlarınızı şekillendirin.",
+          "love": "İlişkilerde, geçmişteki hangi dinamiklere değer verdiğinizi ve hangilerini değiştirmek istediğinizi düşünün. Bu isteklerinizi partnerinizle paylaşarak, ortak geleceğinizin her ikinizin de vizyonlarıyla uyumlu olmasını sağlayın.",
+          "career": "Kariyerinizin gidişatını düşünün ve hangi unsurları devam ettirmek, hangilerini geride bırakmak istediğinize karar verin. Bu iç gözlemi, bir sonraki kariyer adımlarınızı yönlendirmek için kullanın; belki de daha netleşen hedeflerinize daha uygun roller arayın.",
+          "finance": "Geçmişteki başarılarınızı ve başarısızlıklarınızı gözden geçirerek finansal alışkanlıklarınızı değerlendirin. Bu analizi, sürdürülebilir büyüme ve güvenliğe odaklanan proaktif bir finansal plan oluşturmak için kullanın."
+        },
+        "reversed": {
+          "general": "Değişime direnmek kişisel gelişiminizi durdurabilir. Gerekli sonları kabul edin ve kararlarınızı yönlendirecek net arzular ve öncelikler oluşturmaya başlayın.",
+          "love": "İlişki sorunlarını ele almaktan kaçınmak memnuniyetsizliğe yol açabilir. Daha sağlıklı bir ilişki dinamiği oluşturmak için altta yatan sorunları proaktif bir şekilde tartışın ve çözün.",
+          "career": "Gerekli değişikliklere direnirseniz, kariyerinizde durgunluk hissedebilirsiniz. İyileştirme veya değişiklik gerektiren alanları kabul edin ve bunları ele almak için kararlı adımlar atın.",
+          "finance": "Finansal ilerleme, uyum sağlama konusundaki isteksizlik nedeniyle engellenebilir. Finansal stratejilerinizi yeniden değerlendirin ve ekonomik istikrarınızı artırmak için gerekli değişiklikleri uygulamaya hazır olun."
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "Denge",
+      "image": "14_temperance",
+      "arcana": "major",
+      "number": "XIV",
+      "suit": null,
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Şu anda sabır sizin yol göstericinizdir. Hayatınızdaki gelişmelerin doğal bir hızda ilerlediğini anlayın. Rotanızı koruyun ve sürece güvenin, acele etme veya durumu zorlama dürtüsüne direnin.",
+          "love": "Romantik hayatınızda, ilişkilerin yavaşça gelişmesine izin verin. Hızlı çözümler veya taahhütler için baskı yapmak yerine sabır ve anlayış gösterin. Bu, bağlantıları doğal bir şekilde derinleştirme zamanıdır.",
+          "career": "Profesyonel projeleriniz, hemen fark edilmeseler bile ilerleme kaydediyor. Çabalarınızı sürdürün ve sonuçlar konusunda sabırlı olun. Fazla zorlamayın; işinizin kendi hızında olgunlaşmasına izin verin.",
+          "finance": "Finansal açıdan, bu dönem ihtiyatlı bir iyimserlik zamanıdır. Mevcut stratejilerinizi sürdürün ve yatırımlarınızın olgunlaşmasına izin verin. Kısa vadeli piyasa dalgalanmalarına dayalı aceleci kararlar alma eğiliminden kaçının."
+        },
+        "reversed": {
+          "general": "Vites değiştirin ve hayata daha dinamik bir yaklaşım benimseyin. Dış güçlerin harekete geçmesini beklemek yerine, değişimi başlatmaya başlayın. Aktif olarak yeni fırsatlar peşinde koşmanın ve durgunluktan çıkmanın zamanı geldi.",
+          "love": "İlişkiniz durgunlaşmış hissediyorsanız, yeni deneyimler ya da gelecekteki hedefler hakkında açık konuşmalar yoluyla büyümeyi teşvik etmenin zamanı gelmiş olabilir. Değişimi teşvik etmek ve ilişkinizi derinleştirmek için inisiyatif alın.",
+          "career": "Kariyerinizde, ilerleme yolunda cesur adımlar atmaya başlayın. Size meydan okuyan ve büyüme fırsatı sunan yeni projeler veya roller arayın. Profesyonel hayatınızı ileriye taşıyacak önemli adımlar atmak için uygun bir zaman.",
+          "finance": "Finansal açıdan, portföyünüzü çeşitlendirme ve genişletme fırsatlarını arayın. Uzun vadeli finansal hedeflerinizle uyumlu, daha agresif yatırım stratejileri düşünün, ancak önce iyice araştırma yaptığınızdan emin olun."
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "Şeytan",
+      "image": "15_devil",
+      "arcana": "major",
+      "number": "XV",
+      "suit": null,
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Bağımlılık zincirlerinizi fark edin ve özgürleşmek için proaktif adımlar atın. İster zararlı bir alışkanlık ister duygusal bir bağ olsun, kişisel özgürlük için net hedefler belirleyerek özerkliğinizi geri kazanın.",
+          "love": "İlişkilerde aşırı bağımlı veya kontrolcü olmaktan kaçının. Daha sağlıklı ve dengeli bir ilişki kurmak için hem kendinizde hem de partnerinizde bağımsızlığı ve kişisel gelişimi teşvik edin.",
+          "career": "Kariyeriniz tatmin edici bir yol olmaktan çok bir tuzak gibi geliyorsa, yeniden değerlendirme zamanı gelmiştir. Yeni beceriler geliştirmeyi veya tutkularınız ve değerlerinizle daha uyumlu alternatif kariyer yolları keşfetmeyi düşünün.",
+          "finance": "Finansal alışkanlıklar bağlayıcı olabilir. Harcama ve tasarruf alışkanlıklarınızı eleştirel bir gözle inceleyin; bunlar sizi borca veya finansal strese sürükliyorsa, daha sürdürülebilir bir bütçe oluşturun veya finansal danışmanlık alın."
+        },
+        "reversed": {
+          "general": "Kötü alışkanlıklara kapılma riskinin baş gösterdiği kritik bir dönemeçte bulunuyorsunuz. Dikkatli olun ve potansiyel bağımlılıklardan uzaklaşan yolları bilinçli bir şekilde seçin.",
+          "love": "İlişkilerinizde karşılıklı bağımlılık veya sağlıksız bağlanma belirtileri olup olmadığına dikkat edin. Açık iletişim kurun ve her iki tarafın da bireyselliğini koruyabilmesi için sınırlar belirleyin.",
+          "career": "Uzun vadede zararlı olabilecek, görünüşte kazançlı bir fırsatın cazibesine kapılmamaya dikkat edin. İş tekliflerini ve proje taahhütlerini ilerlemeden önce iyice inceleyin.",
+          "finance": "Riskli finansal planlar veya para sorunlarına hızlı çözümler sizi cezbedebilir. Dikkatli olun ve geçici kazançlar yerine uzun vadeli finansal istikrarı önceliklendirin."
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "Yıkılan Kule",
+      "image": "16_tower",
+      "arcana": "major",
+      "number": "XVI",
+      "suit": null,
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Hayatınızın modası geçmiş yönlerini ortadan kaldıran gerekli değişimi kucaklayın. Bu, rahatsız edici gelebilir, ancak daha güçlü bir şekilde yeniden inşa etmek için bir fırsattır. Neyin parçalandığını ve onu bırakmanın neden yararlı olduğunu değerlendirin.",
+          "love": "İlişkinizin çökmekte olduğunu hissediyorsanız, hangi kalıplardan veya dinamiklerden kurtulmanız gerektiğini düşünün. Bu çalkantılı dönemi, iletişiminizi güçlendirmek ve daha sağlıklı bir temele oturtmak için kullanın.",
+          "career": "İş durumunuzda ani bir değişiklik, örneğin işten çıkarılma veya bir projenin aniden sona ermesi, kariyer yolunuzu yeniden değerlendirmeniz için bir işarettir. Bu anı, mevcut becerileriniz ve tutkularınızla daha uyumlu rollere yönelmek için kullanın.",
+          "finance": "Finansal istikrarsızlık, bütçenizi ve harcama alışkanlıklarınızı gözden geçirip yeniden düzenlemeniz için bir uyarı olabilir. Borçlarınızı temizlemeyi öncelik haline getirin ve gelecekteki belirsizliklere daha iyi hazırlanmak için yeni tasarruf stratejileri düşünün."
+        },
+        "reversed": {
+          "general": "Değişime direnmek, rahatsızlığınızı sadece uzatacaktır. Artık size hizmet etmeyen şeyleri kabul edin ve bilinçli olarak bırakma sürecine başlayarak yeni bir büyüme için yer açın.",
+          "love": "En iyi dönemini geçmiş bir ilişkiye tutunmak, tatmin edici ilişkiler kurmanı engelleyebilir. Seni bu ilişkiye bağlayan şeyin ne olduğunu ve bunun duygusal bedelini ödemeye değer olup olmadığını düşün.",
+          "career": "Değişimden korktuğunuz için durgun bir işte kalmak, profesyonel gelişiminizi engelleyebilir. Başlangıçta göz korkutucu görünebilecek ancak daha fazla iş tatmini sağlayabilecek yeni fırsatları keşfetmek için kendinize meydan okuyun.",
+          "finance": "Gerekli finansal değişikliklerden kaçınmak, ileride daha büyük sorunlara yol açabilir. Ekonomik istikrarınızı kademeli olarak iyileştirmek için finansal planlamanızda küçük, yönetilebilir ayarlamalar yapmaya başlayın."
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "Yıldız",
+      "image": "17_star",
+      "arcana": "major",
+      "number": "XVII",
+      "suit": null,
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Kişisel gelişiminize yön veren sezgisel dürtülerinizi kucaklayın. Geçmişteki kısıtlamaları bırakın ve kendinize güvenerek yeni yollar keşfetmeye izin verin.",
+          "love": "İlişkiler konusunda içgüdülerinize güvenin. Derin bir bağ hissediyorsanız, geleneksel mantığa aykırı olsa bile bu bağı takip edin. Bu, mevcut bağları derinleştirmek veya yeni romantik olasılıkları keşfetmek için uygun bir zaman olabilir.",
+          "career": "Mesleki hayatınızda iç sesinizi dinleyin, bu sizi mevcut yolunuzdan uzaklaştırsa bile. Tutkularınızla daha uyumlu yeni iş fırsatlarını veya yaratıcı projeleri değerlendirin.",
+          "finance": "İçgüdüleriniz sizi umut verici finansal fırsatlara yönlendirebilir. Geleneksel bilgeliği takip etmek yerine, size derin bir şekilde hitap eden alanları araştırın ve bu alanlara yatırım yapın."
+        },
+        "reversed": {
+          "general": "Sezgilerinizi sorguluyor ve gerekli değişikliklere direniyor olabilirsiniz. Korkularınızı kabul edin, ancak bunların hayatınızda önemli değişiklikler yapmanızı engellemesine izin vermeyin.",
+          "love": "İlişkilerde, içgüdülerine güvenmekte tereddüt etmen durgunluğa yol açabilir. Duygularını yeniden değerlendir ve direncinin gerçek bir endişeden ziyade korkudan kaynaklanıp kaynaklanmadığını düşün.",
+          "career": "Bilinmeyenden korktuğunuz için gerçek amacınızı görmezden geliyor olabilirsiniz. Kariyer hedeflerinizi yeniden değerlendirin ve rahatlık alanınızda kalmanın potansiyelinizi engellediğini düşünün.",
+          "finance": "İçgüdüsel finansal kararları önlemek, fırsatların kaçırılmasına neden olabilir. Son zamanlarda yaşadığınız tereddütleri düşünün ve sezgi ile rasyonel planlama arasında daha dengeli bir yaklaşım benimsemeyi düşünün."
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "Ay",
+      "image": "18_moon",
+      "arcana": "major",
+      "number": "XVIII",
+      "suit": null,
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Ayın dik olarak görünmesi, bilinçaltındaki korkularınla yüzleşmeni gerektirir. Bu korkular, farkında olmadan ilerlemeni engelleyebilir. Derinlemesine düşünerek bu gizli korkuları belirle ve üstesinden gel.",
+          "love": "İlişkiniz, dile getirilmeyen korkularla gölgelenmiş olabilir. Yanlış anlaşılmaları gidermek ve ilişkinizi derinleştirmek için, güvensizliklerinizi ve şüphelerinizi partnerinizle açıkça konuşun.",
+          "career": "Kariyerinizde, mantıksız korkular sizi engelliyor olabilir. Geri bildirim isteyerek, mentorluk arayarak veya güveninizi artırmak için yeni zorluklara göğüs gererek bu korkularla yüzleşin.",
+          "finance": "Finansal kararlar, farkında olmadığımız korkularımızdan etkilenebilir. Önemli adımlar atmadan önce, finansal tercihlerinizi analiz etmek, ihtiyatlı bilgelik ile irrasyonel korku arasında ayrım yapmak çok önemlidir."
+        },
+        "reversed": {
+          "general": "Ters çevrildiğinde, Ay hayatınızı etkileyen dışsal korkuları gösterir. Bu dışsal baskıları belirleyin ve duygularınızı veya eylemlerinizi yönetmelerine izin vermemek için sınırlar belirlemeye çalışın.",
+          "love": "Dış etkenler ilişkinizde huzursuzluğa neden olabilir. İlişkinizi olumsuz etkilerden korumak ve partnerinizle güçlü, özel bir bağ kurmaya odaklanmak önemlidir.",
+          "career": "Tersine çevrilmiş Ay, kariyer endişelerinizin dışsal olumsuzluklardan kaynaklanabileceğini gösteriyor. Başkalarının korkularını veya başarısızlıklarını kendinize mal etmediğinizden emin olun; kendi yolunuza ve başarılarınıza odaklanın.",
+          "finance": "Finansal endişeleriniz, toplumsal baskılar veya akran baskısı nedeniyle daha da artabilir. Finansal planlarınızı ve kararlarınızı bağımsız olarak gözden geçirmek için zaman ayırın, kitlesel histeri veya panik kaynaklı seçimlerin tuzağına düşmeyin."
+        }
+      }
+    },
+    {
+      "id": 19,
+      "name": "Güneş",
+      "image": "19_sun",
+      "arcana": "major",
+      "number": "XIX",
+      "suit": null,
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Hayatınızdaki mevcut uyumu, gerçek benliğinizi ifade etmek için altın bir fırsat olarak kabul edin. Bu istikrarlı dönemi, kişisel hedeflerinizi ve tutkularınızı sağlamlaştırmak için değerlendirin.",
+          "love": "Bu, ilişkinizde daha derin bağlar kurmak için umut verici bir dönem. Bağınızı güçlendirmek için ortak hedefler belirlemeyi veya birlikte uzun vadeli projeler planlamayı düşünün.",
+          "career": "Mevcut iş yerinizdeki uyum, becerilerinizi ve kişiliğinizi sergilemenizi sağlıyor. Güçlü yönleriniz ve tutkularınızla uyumlu projelerde inisiyatif alın.",
+          "finance": "Finansal istikrarın sağlandığı şu anda, finansal hedeflerinizi değerlendirip yeniden düzenlemek için uygun bir zaman. Uzun vadeli hedeflerinizi yansıtan yatırım veya tasarruf planlarını değerlendirin."
+        },
+        "reversed": {
+          "general": "Geçmişteki eylemlerinizle gelecekteki hedefleriniz arasında denge kurmak için mevcut zorlukların üstesinden gelirken, azim çok önemlidir. Uzun vadeli vizyonunuza odaklanın ve çabalarınızda tutarlılığı koruyun.",
+          "love": "Sorunları açıkça ele alarak ve karşılıklı büyümeye kararlılık göstererek ilişki sorunlarını aşın. Bu aşama zor olsa da, ikiniz de çatışmaları çözmeye yatırım yaparsanız ilişkinizi güçlendirebilir.",
+          "career": "Engellere rağmen, azminiz sonunda başarıya ulaşmanızı sağlayacaktır. İş yerinde becerilerinize ve ilişkilerinize yatırım yapmaya devam edin ve hedeflerinize ulaşmak için çabalamaya devam edin.",
+          "finance": "Geçmişte alınan kararlar nedeniyle finansal ilerleme şu anda yavaş olabilir. Finansal durumunuzu yönetirken istikrarlı bir yaklaşım sergileyin ve sabırlı olun; rotanızı düzelttikçe iyileşme ufukta görünmeye başlayacaktır."
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "Mahkeme",
+      "image": "20_judgement",
+      "arcana": "major",
+      "number": "XX",
+      "suit": null,
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Bu önemli dönüşüm dönemini kucaklayın. Geçmişteki halinizi bırakın ve yeni bakış açılarını ve deneyimleri açık bir kalple karşılayın. Bu güçlü büyüme döneminden en iyi şekilde yararlanmak için kararlı bir şekilde hareket edin.",
+          "love": "Bu, ilişkinizi bir sonraki seviyeye taşımak veya yeni bir romantik başlangıca adım atmak için uygun bir zamandır. İsteklerinizi net bir şekilde ifade edin ve daha derin bağlar kurmak için partnerinizin veya potansiyel partnerlerinizin sizi aktif bir şekilde dinlemesini sağlayın.",
+          "career": "Kariyerinizde ilerleme arayarak veya yeni bir alana yönelerek köklü değişimin enerjisinden yararlanın. Hedeflerinizi açıkça dile getirin, mentorluk arayın ve kariyer hedeflerinize ulaşmak için somut adımlar atın.",
+          "finance": "Finansal açıdan, değerlendirme ve ayarlama zamanıdır. Uzun vadeli finansal hedeflerinize uygun olarak yatırımlarınızı ve tasarruf stratejilerinizi gözden geçirin. Büyüme için yeni fırsatları değerlendirin, ancak iyi bilgilendirilmiş bir şekilde dikkatli davranın."
+        },
+        "reversed": {
+          "general": "Eski inançlara veya rahatlıklara tutunarak ilerlemenizi engelliyor olabilirsiniz. Bu unsurları belirleyin ve bilinçli olarak bırakın, böylece yeni bir sayfa açılsın. Değişim için küçük, bilinçli adımlar atın.",
+          "love": "İlişkilerde, eski alışkanlıklar veya çözülmemiş sorunlar sizi engelliyor olabilir. Bu zorlukları doğrudan ele alın ve olumlu bir şekilde ilerlemek için gerekirse danışmanlık veya arabuluculuk hizmetlerinden yararlanmayı düşünün.",
+          "career": "Mesleki yaşamınızda değişime direnç göstermeniz potansiyelinizi sınırlayabilir. Sizi engelleyen korkularınız veya alışkanlıklarınızı düşünün ve bunlarla yüzleşin. Geri bildirim alın ve yeni yaklaşımları benimsemeye açık olun.",
+          "finance": "Finansal açıdan, yeni stratejileri benimsemekte tereddüt etmek zararlı olabilir. Güncel finansal eğilimler hakkında bilgi edinin ve daha etkili bir finansal yönetime geçiş yapmanıza yardımcı olması için bir finans danışmanına danışmayı düşünün."
+        }
+      }
+    },
+    {
+      "id": 21,
+      "name": "Dünya",
+      "image": "21_world",
+      "arcana": "major",
+      "number": "XXI",
+      "suit": null,
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Uyum ve başarının zirvesinde bulunuyorsunuz; hayatınızın her alanında pozitifliği ve açıklığı teşvik ederek bunu sürdürün.",
+          "love": "İlişkileriniz gelişiyor. Partnerinize karşı açık ve minnettar davranarak bunu sürdürmeye devam edin.",
+          "career": "Profesyonel hayatınızda başarılısınız. Bu ivmeyi, yeteneklerinizi zorlayacak yeni projeler veya liderlik rollerini arayarak değerlendirin.",
+          "finance": "Finansal istikrar elinizin altında. Akıllı yatırımlar ile yeterli tasarrufları dengeleyerek bunu güvence altına alın."
+        },
+        "reversed": {
+          "general": "Her zamanki uyum hissinizde bir düşüş fark edebilirsiniz. Stres faktörlerini belirleyerek ve farkındalık veya meditasyon yoluyla aktif olarak huzur arayarak bununla mücadele edin.",
+          "love": "Kabul görmemek sürtüşmelere neden olabilir. İletişimi geliştirin ve ihtiyaçlarınızı ve endişelerinizi açıkça ifade ederek uyumu yeniden sağlayın.",
+          "career": "Kariyerinizde kendinizi güvensiz hissetmek, hedeflerinizi yeniden değerlendirmeniz gerektiğinin bir işareti olabilir. Becerilerinizi güncelleyerek veya bir mentorla kariyer hedeflerinizi netleştirerek konumunuzu güçlendirin.",
+          "finance": "Finansal endişeler ortaya çıkabilir; bütçenizi veya finansal planınızı gözden geçirip ayarlayarak finansal durumunuza olan güveninizi yeniden kazanabilirsiniz."
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "Değnek Ası",
+      "image": "wands_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Bu anı yeni bir başlangıç için değerlendirin, günlük deneyimlerinizi ve etkileşimlerinizi zenginleştiren değişiklikleri kucaklayın. Kişisel gelişiminize enerji harcayın ve yeni kapıların açıldığını izleyin.",
+          "love": "Aşk hayatınızda yeni bir enerji patlaması sizi bekliyor. Bağınızı derinleştirmek için partnerinizle anlamlı sohbetler başlatın veya yeni deneyimler planlayın.",
+          "career": "Mesleki gelişim için bir fırsat ufukta görünüyor. İnisiyatif alın, yeni projeler için gönüllü olun ve hedeflerinizi gerçekleştirmenize yardımcı olabilecek kişilere bu hedeflerinizi bildirin.",
+          "finance": "Bu, finansal stratejilerinizi yeniden düşünmek için uygun bir zamandır. Yeni yatırım yolları veya tasarruflarınızı optimize etmenin yollarını düşünün, ancak dikkatli bir araştırma yaparak ilerleyin."
+        },
+        "reversed": {
+          "general": "Aceleci davranışlar yolunuzu kesmiş olabilir. Bir adım geri atın, durumu dürüstçe değerlendirin ve hedeflerinize yeniden uyum sağlamak için gerekli düzenlemeleri yapın.",
+          "love": "Yanlış anlaşılmalar veya aceleci kararlar sürtüşmelere neden olabilir. Bu sorunları partnerinizle açıkça konuşun ve etkileşimlerinizde netlik ve anlayış için çaba gösterin.",
+          "career": "İş yerinde alınan son kararları gözden geçirin, özellikle de bu kararlar aksiliklere yol açmışsa. Bu hatalardan ders alın ve gelecekte benzer hataların tekrarlanmaması için rehberlik veya geri bildirim isteyin.",
+          "finance": "Finansal gözden kaçırmalar veya dürtüsel satın alımlar endişe yaratıyor olabilir. Bütçenizi yeniden değerlendirin, net finansal hedefler belirleyin ve kontrolü yeniden ele geçirmek için bir plana sadık kalın."
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "Değnek İkilisi",
+      "image": "wands_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Eski yöntemlerin artık size fayda sağlamadığı bir dönüm noktasındasınız. Bu aşamayı atlatmak için yeni beceriler öğrenmenin zorluğunu kucaklayın. Bunu değişime direnmek yerine gelişmek için bir işaret olarak değerlendirin.",
+          "love": "İlişkilerde, işe yaramayan eski kalıpları kırmanın zamanı geldi. Yeni ihtiyaçlar ve istekler hakkında açıkça iletişim kurun ve birlikte uyum sağlamaya istekli olun.",
+          "career": "Profesyonel hayatınız yenilikçilik gerektirir. Konfor alanınızın dışına çıkın ve yeni beceriler edinin veya farklı projeler üstlenerek güncel ve rekabetçi kalın.",
+          "finance": "Finansal stratejilerinizi yeniden gözden geçirin. Gelecekteki finansal hedeflerinize uygun yatırımlar veya tasarruf planları hakkında bilgi edinmek için doğru zaman olabilir."
+        },
+        "reversed": {
+          "general": "Büyüme fırsatları kendiliğinden ortaya çıkıyor. İçgüdülerini dinle ve bu yeni olasılıkları keşfetmek için proaktif ol. Bunları görmezden gelmek pişmanlığa yol açabilir.",
+          "love": "Daha derin bir bağ kurma veya yeni ilişkiler kurma şansı sizi bekliyor. Sinyallere dikkat edin ve doğru hissettiğiniz potansiyel romantik fırsatları keşfetmekten çekinmeyin.",
+          "career": "Yeni iş teklifleri veya projeler ilk başta önemsiz görünebilir, ancak önemli bir büyümeye yol açabilir. Bu fırsatları dikkatlice değerlendirin ve içgüdülerinizi takip edin.",
+          "finance": "İlk bakışta umut verici görünmeyen finansal fırsatlar, önemli faydalar sağlayabilir. Gerekli özeni gösterin ve hesaplanmış riskler almayı düşünün."
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "Değnek Üçlüsü",
+      "image": "wands_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Son kararlarınızla harika sonuçlar elde etmek üzeresiniz. İlerlemeye devam edin ve ufkunuzu genişletin; başarı elinizin altında.",
+          "love": "Siz ve partneriniz birlikte anlamlı iyileştirmeler yaptıkça ilişkinizdeki ilerleme açıkça görülür. Daha güçlü bir bağ kurmak için açık iletişim kurmaya devam edin ve eylemlerinizi ortak hedeflerle uyumlu hale getirin.",
+          "career": "Kariyeriniz umut verici gelişmelerle ivme kazanıyor. İş ortamınızı iyileştirin veya günlük işe gidip gelme ve çalışma konforunuzu artıracak fırsatlar arayın.",
+          "finance": "Bu, yatırımlar ve finansal büyüme için verimli bir dönemdir. Bilinçli kararlar alın ve uzun vadeli potansiyel gösteren girişimlere yatırım yapın."
+        },
+        "reversed": {
+          "general": "Mevcut girişimleriniz beklenen sonuçları vermeyebileceğinden dikkatli olun. Stratejilerinizi yeniden değerlendirin ve hayal kırıklığı yaşamamak için rotanızı değiştirmeye hazır olun.",
+          "love": "İlişkinizde gösterdiğiniz çabalar istenen etkiyi yaratmayabilir. Yaklaşımınızı yeniden değerlendirin ve eylemlerinizin ve beklentilerinizin partnerinizinkilerle gerçekçi bir şekilde uyumlu olduğundan emin olun.",
+          "career": "Kariyeriniz durgunluk veya beklenmedik aksiliklerle karşılaşabilir. Dikkatli olun ve mevcut planlarınız beklenen performansı göstermezse stratejilerinizi değiştirmeye veya uyum sağlamaya hazır olun.",
+          "finance": "Şu anda yapılan yatırımlar beklenen kadar iyi performans göstermeyebilir. Finansal planlarınızı tekrar gözden geçirin ve daha net bir görünüm elde edene kadar yeni yatırımları ertelemek üzerinde düşünün."
+        }
+      }
+    },
+    {
+      "id": 25,
+      "name": "Değnek Dörtlüsü",
+      "image": "wands_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Mevcut rutininizin istikrarını ve öngörülebilirliğini büyümenin temeli olarak benimseyin. Bu sakin dönemi, gelecekteki hedeflerinizi planlamak ve net hedefler belirlemek için kullanın.",
+          "love": "İlişkinizde rutin monoton gelebilir. Bağınızı derinleştirmek ve monotonluğu kırmak için biraz spontanlık katın ve yeni deneyimler paylaşın.",
+          "career": "İşiniz tekrarlayıcı ve yaratıcılıktan yoksun gelebilir. Rutinizi kırmak için beceri geliştirme veya ek sorumluluklar için fırsatlar arayarak inisiyatif alın.",
+          "finance": "Finansal istikrar mevcuttur, ancak rehavete kapılmayın. Gelecekteki ihtiyaçlara ve potansiyel yatırımlara daha iyi hazırlanmak için finansal planlarınızı gözden geçirin ve ayarlayın."
+        },
+        "reversed": {
+          "general": "Gerekli değişikliklerle uğraşmaktan kaçınmak için hobilerinizden veya dikkatinizi dağıtan şeylerden yararlanıyor olabilirsiniz. Sorunlardan kaçmak yerine, elinizdeki gerçek sorunları çözmeye odaklanın.",
+          "love": "Birincil ilişkinizin dışındaki birinden teselli buluyorsanız, sorunları kaçmak yerine partnerinizle doğrudan yüzleşme zamanı gelmiştir.",
+          "career": "İş yerinde motivasyonunuz düşükse, küçük olumlu yönlere tutunuyor olabilirsiniz. Daha tatmin edici roller için gerçekçi adımlar içeren bir kariyer geliştirme planı oluşturmayı düşünün.",
+          "finance": "Sıkıntıdan kurtulmak için dürtüsel harcamalar yapmaktan kaçının. Uzun vadeli finansal hedeflerinizi gözden kaçırmadan, kendinize küçük ödüller verebileceğiniz bir bütçe belirleyin."
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "Değnek Beşlisi",
+      "image": "wands_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Değişimlerin hızını kucaklayın; hayatınızı değiştirmek için kararlı bir şekilde hareket edin. Bu, korkuyu aşıp dönüşümün heyecanıyla gelişme zamanıdır. Yeni deneyimlere cesurca adım atarken, değişimin hızını müttefikiniz olarak kabul edin.",
+          "love": "İlişkilerde, bu, kaynayan çatışmaları ele almak ve çözmek için uygun bir zamandır. Konuşmalara açık bir şekilde ve birlikte gelişmeye hazır olarak yaklaşın. Bu, ilişkinizin görünümünü önemli ölçüde daha iyiye doğru değiştirebilir.",
+          "career": "Kariyerinizde, mevcut durumu sorgulayın ve gerekli değişiklikleri başlatın. İster yeni fikirler önerin ister yeni fırsatlar arayın, şimdi harekete geçme zamanı. Yenilik yapma cesaretiniz, profesyonel gelişiminiz için yeni yollar açabilir.",
+          "finance": "Finansal açıdan, yatırım stratejinizi çeşitlendirmeyi veya değiştirmeyi düşünün. Mevcut finansal durumunuzu eleştirel bir gözle değerlendirin ve finansal sağlığınızı iyileştirmek için proaktif değişiklikler yapın."
+        },
+        "reversed": {
+          "general": "Değişikliklere başladıktan sonra tereddüt edebilirsiniz; kendinize olan güvensizliğinizi aşın ve başladığınız işi tamamlayın. Pişmanlığınızı kararlılığa dönüştürün ve bitmemiş işlerinizi yenilenen bir azimle ele alın. Unutmayın, şimdi geri çekilmek fırsatları kaçırmak anlamına gelebilir.",
+          "love": "İlişkinizde karar vermekten çekiniyorsanız, yaklaşımınızı yeniden gözden geçirin. Sorunları doğrudan ele almak zor olabilir, ancak büyüme için genellikle gereklidir. Çözülmemiş sorunların daha da kötüleşmesini önlemek için açık bir şekilde iletişim kurun.",
+          "career": "Kariyerinizde, zorluklardan kaçınmak güvenli hissettirebilir, ancak büyümenizi engelleyebilir. Konfor alanınızdan çıkmanızı gerektirse bile, terk ettiğiniz projelere veya ertelediğiniz kararlara yeniden odaklanın. Mesleki gelişiminiz, zorluklarla yüzleşme isteğinize bağlıdır.",
+          "finance": "Finansal açıdan, önemli kararları askıya aldıysanız, yeniden değerlendirme ve harekete geçme zamanıdır. Korkunun finansal stratejilerinizi belirlemesine izin vermeyin. Finansal geleceğinizi güçlendirmek için bilinçli ve cesur kararlar alın."
+        }
+      }
+    },
+    {
+      "id": 27,
+      "name": "Değnek Altılısı",
+      "image": "wands_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Başarılarınızı kutlayın ve bunların size verdiği özgüveni benimseyin. Bu zamanı daha yüksek hedefler belirlemek ve ufkunuzu genişletmek için kullanın. Kişisel gelişim yolculuğunun tadını çıkarın ve başarınızın başkalarına da yol gösterici olmasına izin verin.",
+          "love": "İlişkiniz muhtemelen karşılıklı saygı ve ortak başarıların yaşandığı bir dönemden geçiyor. Birbirinizin bireyselliğini onurlandırmaya ve birbirinizin hedeflerini desteklemeye devam edin. Bu denge, daha derin bağlar kurmanızı sağlayacaktır.",
+          "career": "Mesleki başarılarınızın takdir edildiği bir dönemdesiniz. Bu görünürlüğü, yeni sorumluluklar veya yenilikçi projeler üstlenmek için kullanın. Alanınızdaki konumunuzu sağlamlaştırmak için aktif olarak ağ kurun.",
+          "finance": "Finansal kararlarınız meyvesini veriyor ve daha rahat bir yaşam standardına ulaşmanızı sağlıyor. Kazançlarınızı istikrarlı, uzun vadeli varlıklara yeniden yatırmayı düşünün ve bu büyümeyi sürdürmek için harcamalarınızı kontrol altında tutun."
+        },
+        "reversed": {
+          "general": "Geçmişteki başarısızlıklar sizi engelleyebilir, ancak bunların şu anki kararlarınızı etkilemesine izin vermeyin. Yeni durumlara taze bir bakış açısıyla yaklaşın ve beklenmedik sonuçlara açık olun. Geçmişten ders alın, ancak şimdiki zamanda yaşayın.",
+          "love": "Geçmişteki ilişki kalıpları, şu anki beklentilerinizi etkiliyor olabilir. Farklı seçimler yaparak ve korkularınızı ve umutlarınızı partnerinizle açıkça paylaşarak bu döngüyü kırın.",
+          "career": "Geçmişteki mesleki başarısızlıklar nedeniyle kendinizi sıkışmış hissediyorsanız, yeniden değerlendirme yapma ve yeni bir strateji belirleme zamanı gelmiştir. Tarihin tekerrür edeceğini varsaymayın. Tavsiye alın ve kendinize fırsatlar yaratmak için proaktif olun.",
+          "finance": "Önceki hatalarınız nedeniyle finansal geleceğiniz belirsiz görünebilir. Korkuya dayalı kararlar vermekten kaçının ve bunun yerine, eylemlerinizi yönlendirecek doğru bilgileri toplayın. Riskleri azaltmak için yatırımlarınızı çeşitlendirin."
+        }
+      }
+    },
+    {
+      "id": 28,
+      "name": "Değnek Yedilisi",
+      "image": "wands_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Hedeflerinizi ve niyetlerinizi netleştirmek için anlamlı sohbetler yapın. Planlarınızı konuşmak, düşüncelerinizi netleştirebilir ve eylemlerinizi öncelik sırasına koymanıza yardımcı olabilir.",
+          "love": "Açık iletişim kanalları ilişkinizi güçlendirebilir. Anlayış ve gelişimi teşvik etmek için partnerinizle daha derin duygularınızı ve beklentilerinizi konuşun.",
+          "career": "İş yerinde yapıcı tartışmaları kullanarak hedefleri netleştirin ve etkili bir şekilde işbirliği yapın. Uyumlu bir çalışma ortamı sağlamak için yanlış anlaşılmaları derhal giderin.",
+          "finance": "Güvenilir bir danışman veya akıl hocasıyla finansal planlarınızı görüşün. Yeni bir bakış açısı, yeni fırsatları ortaya çıkarabilir veya olası tuzakları ortaya çıkarabilir."
+        },
+        "reversed": {
+          "general": "Önemli tartışmalardan kaçınmak, fırsatların kaçırılmasına ve yanlış anlaşılmalara yol açabilir. İlerleme kaydetmek için net ve olumlu bir niyetle konuşmalara yeniden yaklaşın.",
+          "love": "Geçmişteki tartışmalar başarısız olmuşsa, bu pes etmek için bir işaret değildir. İhtiyaçlarınızı iletmek için farklı bir zaman veya yaklaşım seçin ve partnerinizi aktif olarak dinleyin.",
+          "career": "Önceki girişimler sonuçsuz kalmış olsa bile, iş yerinde diyalog kurmanın gerekliliğini göz ardı etmeyin. Doğru zamanda, iyi hazırlanmış bir konuşma durumu tersine çevirebilir.",
+          "finance": "Başlangıçta planlandığı gibi gitmeyen finansal görüşmeleri yeniden ele almak faydalı olabilir. Yaklaşımınızı ayarlayın ve gerçekler ve rakamlarla tam olarak hazır olduğunuzdan emin olun."
+        }
+      }
+    },
+    {
+      "id": 29,
+      "name": "Değnek Sekizlisi",
+      "image": "wands_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Hızlı değişiklikleri kucaklayın ve hayatınızın gidişatını iyileştirmek için hızlı ve kararlı seçimler yapın. Erteleme, ilerlemenizi geciktirebilir, bu nedenle fırsatlar ortaya çıktığında acilen harekete geçin.",
+          "love": "İlişkilerde hızlı iletişim ve risk almak, ödüllendirici gelişmelere yol açabilir. Önemli bir karar veya konuşma bekliyorsa, şimdi bunu doğrudan ele almanın tam zamanıdır.",
+          "career": "Hızlı tempolu bir ortamda çevik ve proaktif olmanız gerekir. Karşınıza çıkan yeni projeler veya roller, sizi rahatlık alanınızın dışına itse bile, hemen atılın.",
+          "finance": "Yeni yatırım fırsatları ortaya çıktığında hızlı hareket etmek gerekir. Finansal kazançlardan en iyi şekilde yararlanmak için hızlı ama kapsamlı bir değerlendirme yapın."
+        },
+        "reversed": {
+          "general": "Kararların gecikmesi durgunluğa neden oluyor. Kararsızlıktan kurtulun, durumun daha da kötüye gitmesini ve fırsatları kaçırmayı önleyin.",
+          "love": "Karar verme sürecinin tıkanması ilişkinizde gerginlik yaratıyor olabilir. Uzun vadeli etkilerden kaçınmak için sorunları derhal ele almak çok önemlidir.",
+          "career": "Kariyer seçimlerinde tereddüt etmeniz, fırsatları kaçırmanıza veya istenmeyen ayrılıklara yol açabilir. Profesyonel hayatınızı daha istikrarlı bir yöne yönlendirmek için kararlı bir şekilde hareket edin.",
+          "finance": "Finansal konularda harekete geçmemek, kayıplara veya karlı fırsatların kaçırılmasına neden olabilir. Artık yeniden değerlendirme yapma ve gerekli adımları gecikmeden atma zamanıdır."
+        }
+      }
+    },
+    {
+      "id": 30,
+      "name": "Değnek Dokuzlusu",
+      "image": "wands_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Zorluklarla doğrudan yüzleşin, çünkü bunlar büyüme fırsatlarıdır. Görevlerinizi öncelik sırasına koyun ve dikkatinizi dağıtan şeyleri aşmak için gerçekten önemli olan şeylere odaklanın. Başarıya giden yolu açmak için dirençli ve azimli olun.",
+          "love": "İlişkideki zorlukları açık iletişim ve sabırla aşın. Zorlukları, bağınızı güçlendirmek için birer basamak olarak kullanın. Küçük sorunları birlikte çözmeye odaklanın, böylece bunların daha büyük sorunlara dönüşmesini önleyebilirsiniz.",
+          "career": "Kariyerinizdeki engelleri, yeteneklerinizi kanıtlama fırsatları olarak kabul edin. Önemli görevlere odaklanın ve küçük aksiliklerin ilerlemenizi engellemesine izin vermeyin. Proaktif bir yaklaşım, profesyonel gelişim ve tanınırlık sağlayacaktır.",
+          "finance": "Finansal engeller, stratejik planlama ve disiplinli harcama gerektirir. Finansal hedeflerinizi öncelik sırasına koyun ve her seferinde tek bir zorluğun üstesinden gelin. Finansal istikrarı sağlamak için kaynaklarınızı yönetirken uyanık ve proaktif olun."
+        },
+        "reversed": {
+          "general": "Planlarınızı etkileyebilecek dışsal engellere, özellikle yakın ilişkilerinizden kaynaklananlara dikkat edin. Hedeflerinize odaklanın ve başkalarının sorunları yüzünden yolunuzdan sapmayın. Yolunuzu açık tutmak için sınırlarınızı koruyun.",
+          "love": "Başkalarının ilişki sorunları sizin hayatınıza da yansıyabilir. Destek olun, ancak duygusal sağlığınızı koruyun. Destekleyici bir eş veya arkadaş olurken, kendi ilişkinizde uyumu korumaya odaklanın.",
+          "career": "İş arkadaşlarınız veya ailenizden kaynaklanan iç çatışmalar veya dış etkenler işinizi engelliyorsa, odaklanmak çok önemlidir. Yanlış anlaşılmaları önlemek ve kariyer hedeflerinizi yolunda tutmak için iş yerinde ihtiyaçlarınızı ve sınırlarınızı açıkça belirtin.",
+          "finance": "Dışarıdan gelen finansal baskılar veya başkalarıyla ilgili yükümlülükler finansal planlarınızı etkileyebilir. Finansal durumunuzu düzenli tutun ve başkalarının finansal yüklerini üstlenirken dikkatli davranarak finansal sağlığınızı önceliklendirin."
+        }
+      }
+    },
+    {
+      "id": 31,
+      "name": "Değnek Onlusu",
+      "image": "wands_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Günlük rutinlerinizdeki ve sosyal etkileşimlerinizdeki iyileşmeleri kucaklayın. Bu değişikliklerin daha tatmin edici bir yaşamın basamakları olduğunu kabul edin. Bu iyileştirmelere aktif olarak uyum sağlayarak faydalarını en üst düzeye çıkarın.",
+          "love": "Romantik hayatınızda, birlikte yaşamaya başlamak veya evlenmek gibi toplumun saygı duyduğu ve desteklediği adımlar atmayı düşünün. Bu adımlar, aranızdaki bağı güçlendirebilir ve birbirinize ve çevrenize olan bağlılığınızı gösterebilir.",
+          "career": "Çalışma ortamınız iyileşiyor — belki daha iyi bir pozisyon veya daha uygun koşullar. Hızlı bir şekilde uyum sağlayarak ve artan sorumlulukları veya yeni rolleri üstlenmeye hazır olduğunuzu göstererek bu değişikliklerden tam olarak yararlanın.",
+          "finance": "Önemli bir satın alma fırsatı ortaya çıkabilir ve bu da sosyal statünüzü yükseltebilir. Bu yatırımı, finansal durumunuza sağlayacağı uzun vadeli faydalarını göz önünde bulundurarak dikkatlice değerlendirin."
+        },
+        "reversed": {
+          "general": "Dış koşullarınız iyileşmiş olsa da, hala eski alışkanlıklarınıza bağlı kalıyor olabilirsiniz. Bu değişikliklerden tam olarak yararlanmak için, mevcut durumunuza uygun yeni davranışlar benimsemek için kendinizi aktif olarak zorlayın.",
+          "love": "İlişkinizde yeni bir aşamaya gelmiş olabilirsiniz, ancak bunu tam olarak kabul etmekte tereddüt ediyorsunuz. Bu duygularınızı partnerinizle açıkça paylaşın ve yeni ilişki durumunuza uygun davranışlar sergilemek için birlikte çaba gösterin.",
+          "career": "Kariyerinizde yeni bir seviyeye ulaştınız, ancak kendinizi sahtekar gibi hissedebilirsiniz. Bu duygularla mücadele etmek için, bu yeni role aitmişsiniz gibi davranın, ta ki bu size doğal gelene kadar. Bu, konumunuzu ve özgüveninizi sağlamlaştırmanıza yardımcı olacaktır.",
+          "finance": "Finansal durumunuzda bir değişiklik yaşıyor olabilirsiniz, ancak buna tam olarak uyum sağlamaktan çekiniyor olabilirsiniz. Yeni finansal durumunuzun sahibi gibi davranmaya başlayın, bu daha bilinçli ve kendinden emin finansal kararlar almanıza yardımcı olacaktır."
+        }
+      }
+    },
+    {
+      "id": 32,
+      "name": "Değnek Prensi",
+      "image": "wands_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Hayatınızı kasıp kavuran değişim rüzgarlarını kucaklayın. Bu, yeni sosyal ortamlara ve taze ortamlara adım atmanın tam zamanıdır. Ortaya çıkan kişisel gelişim fırsatlarını aktif olarak arayın ve yakalayın.",
+          "love": "İlişkinizin dinamikleri değişiyor. Bu değişiklikleri sorunsuz bir şekilde atlatmak ve partnerinizle olan bağınızı güçlendirmek için açık bir şekilde iletişim kurun. İlişkinizin heyecanını canlı tutmak için birlikte yeni aktiviteler yapmayı düşünün.",
+          "career": "İş hayatınızın görünümü değişiyor. İster iş rolünüzde ister iş yerinizde bir değişiklik olsun, hızlıca uyum sağlayın ve öğrenmeye istekli olduğunuzu gösterin. Bu, önemli bir kariyer atılımı için bir basamak olabilir.",
+          "finance": "Finansal fırsatlar ortaya çıkıyor. Yeni yatırım olanaklarını araştırmak ve anlamak için proaktif olun. Finansal portföyünüzü çeşitlendirmek için iyi bir zaman, ancak bunu bilgili bir şekilde ve dikkatli bir şekilde yapın."
+        },
+        "reversed": {
+          "general": "Hayatınızı kasıp kavuran değişim rüzgarlarını kucaklayın. Bu, yeni sosyal ortamlara ve taze ortamlara adım atmanın tam zamanıdır. Ortaya çıkan kişisel gelişim fırsatlarını aktif olarak arayın ve yakalayın.",
+          "love": "İlişkinizin dinamikleri değişiyor. Bu değişiklikleri sorunsuz bir şekilde atlatmak ve partnerinizle olan bağınızı güçlendirmek için açık bir şekilde iletişim kurun. İlişkinizin heyecanını canlı tutmak için birlikte yeni aktiviteler yapmayı düşünün.",
+          "career": "İş hayatınızın görünümü değişiyor. İster iş rolünüzde ister iş yerinizde bir değişiklik olsun, hızlıca uyum sağlayın ve öğrenmeye istekli olduğunuzu gösterin. Bu, önemli bir kariyer ilerlemesi için bir basamak olabilir.",
+          "finance": "Finansal fırsatlar ortaya çıkıyor. Yeni yatırım olanaklarını araştırmak ve anlamak için proaktif olun. Finansal portföyünüzü çeşitlendirmek için iyi bir zaman, ancak bunu bilgili bir şekilde ve dikkatli bir şekilde yapın."
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "Değnek Şövalyesi",
+      "image": "wands_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Asa Şövalyesi, büyüme ve yönelim dönemini gösterir. Hayatınızda meydana gelen değişiklikleri değerlendirin ve bunların gidişatını anlayın. Uyum sağlayın ve mevcut yolunuzun ivmesini kullanmak için gerektiğinde yön değiştirmeye hazır olun.",
+          "love": "Aşk konusunda, bu kart son zamanlarda aldığınız kararların ilişkinizin geleceğini şekillendirdiğini gösteriyor. Bu değişikliklerin iletişiminize ve bağınıza etkilerini gözlemleyin. Bir şey yolunda gitmiyorsa, şimdi yaklaşımınızı değiştirmenin tam zamanı.",
+          "career": "Projeleriniz netlik kazanıyor. İlerlemeyi gözden geçirin ve stratejilerinizi değişen taleplere uyacak şekilde uyarlayın. Etkinizi ve büyümenizi en üst düzeye çıkarmak için çalışma ortamınızın dinamik yapısını benimseyin.",
+          "finance": "Finansal açıdan, Asa Şövalyesi proaktif bir katılım gerektirir. Yatırımlarınızın veya harcamalarınızın nasıl geliştiğini analiz edin. Son performansınıza veya ekonomik durumunuzdaki değişikliklere göre finansal planlarınızı ayarlamayı düşünün."
+        },
+        "reversed": {
+          "general": "Tersine çevrilmiş Asa Şövalyesi, dik anlamını yansıtır ve devam eden değişiklikler arasında uyanık ve uyumlu kalmanızı ister. İlerlemenizi değerlendirin ve yolunuzdan sapmamak için gerekli ayarlamaları yapmaya hazır olun.",
+          "love": "Tersine çevrilmiş enerjilerle, ilişkisel dinamiklerinizin hala yolunda olup olmadığını değerlendirin. Başarılı stratejileri güçlendirin veya ilişkilerinizde bağ ve büyümeyi teşvik edemeyen stratejileri yeniden düşünün.",
+          "career": "Zorluklar devam etse bile, kariyerinizde sürekli tetikte olmanız gerekir. Projenizin gidişatını net bir şekilde anlayın ve öngörülemeyen bir çalışma ortamında başarıyı garantilemek için sürekli uyum sağlayın.",
+          "finance": "Tersine durumlarda, finansal öngörü çok önemli hale gelir. Mevcut finansal stratejilerinizi yeniden değerlendirin, bunların en son gelişmelere uygun olduğundan ve uzun vadeli finansal hedeflerinizi karşılayabileceğinden emin olun."
+        }
+      }
+    },
+    {
+      "id": 34,
+      "name": "Değnek Kraliçesi",
+      "image": "wands_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Hayatın her alanında gerçek benliğinizi kucaklayın. Bu, benzersiz güçlü yönlerinizi fark edip kullanmanın yanı sıra, geliştirilmesi gereken alanları da kabul etmenin tam zamanıdır.",
+          "love": "İlişkilerde, samimiyetiniz en büyük varlığınızdır. Partnerinize veya potansiyel partnerlerinize kim olduğunuz konusunda açık ve dürüst olun ve onlardan da aynı düzeyde açıklık bekleyin.",
+          "career": "İş yerinde öne çıkmak için kendine özgü niteliklerini kullan. Seni diğerlerinden ayıran fikirlerin veya becerilerin varsa, şimdi bunları sergileme zamanı. Seni heyecanlandıran bir projede liderlik yapmaktan çekinme.",
+          "finance": "Finansal başarı, güçlü yönlerinizi kullanmaktan gelir. Bilginiz olan alanlara yatırım yapın ve finansal anlayışınızdaki eksiklikleri gidermek için tavsiye almayı düşünün."
+        },
+        "reversed": {
+          "general": "Olumsuz özelliklerinizin baskın olmasına izin vermeyin. Son zamanlarda aldığınız geri bildirimleri veya iyi gitmeyen durumları düşünmek için zaman ayırın ve nasıl gelişebileceğinizi planlayın.",
+          "love": "Romantik ilişkilerde, kontrol edilmeyen olumsuz özellikler sorunlara yol açabilir. Yanlış anlaşılmaları azaltmak ve bağları güçlendirmek için iletişim ve çatışma çözme becerilerinizi geliştirin.",
+          "career": "Kötü bir tutum veya geri bildirime direnç göstermenin kariyer gelişiminizi engellemesine izin vermeyin. Yapıcı eleştiriler arayın ve bunları profesyonel gelişiminizi desteklemek için kullanın.",
+          "finance": "Zayıflıklarınızdan kaynaklanan dürtüsel finansal kararlar almaktan kaçının. Bir adım geriye giderek finansal planlarınızı değerlendirin ve eylemlerinizin doğru olduğundan emin olmak için rehberlik alın."
+        }
+      }
+    },
+    {
+      "id": 35,
+      "name": "Değnek Kralı",
+      "image": "wands_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "değnekler",
+      "element": "ateş",
+      "meanings": {
+        "upright": {
+          "general": "Asaların Kralı, benzersiz özelliklerinizi ifade etmenizi teşvik ederken, gerçek benliğinizi kucaklayın. Bu, kendinizi kabul etme, büyümenizin bir parçası olarak hem güçlü hem de zayıf yönlerinizi fark etme zamanıdır.",
+          "love": "İlişkilerde, gerçek kişiliğinizi ortaya koyun. İsteklerinizi ve sınırlarınızı açıkça ifade edin, partnerinize karşı samimi ve şeffaf davranarak daha derin bir bağ kurun.",
+          "career": "İş yerinde doğal liderlik özelliklerinizi kullanın. Tutkularınız ve güçlü yönlerinizle uyumlu projelerde inisiyatif alın ve başkalarını yönlendirmekten çekinmeyin.",
+          "finance": "Güveniniz, akıllıca finansal kararlar almanıza yardımcı olabilir. İçgüdülerinize güvenin, ancak yeni yatırımlara veya finansal işlemelere girişirken tavsiye de alın."
+        },
+        "reversed": {
+          "general": "Olumsuz özelliklerinizin potansiyelinizi gölgelemesine izin vermeyin. Davranışlarınızı ve bunların kişisel gelişiminize ve ilişkilerinize nasıl etki ettiğini düşünmek için zaman ayırın.",
+          "love": "Aşkta, kusurlarınız sürtüşmelere neden olabilir. Yıkıcı davranış kalıplarını fark etmek ve bağları onarmak ve güçlendirmek için iletişim ve uzlaşma yolunda çalışmak çok önemlidir.",
+          "career": "Takdire şayan olmayan özellikleriniz, mesleki ilerlemenizi engelliyor olabilir. Çalışma ortamınızı etkileyebilecek verimsiz alışkanlıklarınızı veya tutumlarınızı belirleyin ve bunlarla ilgilenin.",
+          "finance": "Olumsuz özelliklerinizin etkisiyle dürtüsel finansal kararlar almaktan kaçının. Bir adım geri atın, planınızı iyice düşünün ve pahalı hatalardan kaçınmak için bir finans danışmanına danışın."
+        }
+      }
+    },
+    {
+      "id": 36,
+      "name": "Kupa Ası",
+      "image": "cups_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Bu, duygusal tatmin ve mutluluk dolu bir dönemdir. Bu geçici mutluluk anlarını fark edin ve tadını çıkarın, ancak hayallere kapılmamak için ayaklarınızı yere sağlam basın.",
+          "love": "Duygusal olarak dolup taşıyorsunuz, bu da aşkta yeni başlangıçlar veya mevcut duyguların yenilenmesini işaret ediyor. Bu dönemi açık ve dürüst bir şekilde kucaklayın, ancak hayal kırıklığı yaşamamak için beklentilerinizi gerçekçi tutun.",
+          "career": "İş yerinde özellikle ilham ve motivasyon dolu hissedebilirsiniz. Bu pozitif enerjiyi yaratıcı projelere veya ortak girişimlere yönlendirin, ancak heyecanınızın içinde ayrıntıları gözden kaçırmayın.",
+          "finance": "Finansal durumunuz için iyimser bir dönem, muhtemelen yeni gelir fırsatlarına işaret ediyor. Yatırım veya tasarruf planlarını düşünmek için iyi bir zaman olsa da, ilgili riskleri tam olarak anladığınızdan emin olun."
+        },
+        "reversed": {
+          "general": "Hızlı bir sevinç patlaması yaşayabilir, ancak bu sevinç kısa sürede hayal kırıklığına dönüşebilir. Duygularınızı kabul edin, ancak uzun süreli hayal kırıklığını önlemek için istikrarlı bir zemin arayın.",
+          "love": "Romantik hayatınızda başlangıçta hissettiğiniz heyecan, hayal kırıklıklarına yol açabilir. İletişim çok önemlidir: Yanlış anlaşılmaları ve kalp kırıklıklarını önlemek için duygularınızı ve beklentilerinizi açıkça konuşun.",
+          "career": "Bir proje veya iş iyi bir başlangıç yapabilir, ancak öngörülemeyen engellerle karşılaşabilir. Bu tür aksiliklerin üstesinden gelmek için uyumlu kalın ve stratejilerinizi yeniden değerlendirmeye hazır olun.",
+          "finance": "Umut verici bir finansal kazanç gibi görünen şey, beklendiği gibi sonuçlanmayabilir. Bunu, finansal stratejilerinizi yeniden değerlendirme ve iyileştirme fırsatı olarak değerlendirin."
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "Kupa İkilisi",
+      "image": "cups_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Yeni bağlantıları ve bunların getirdiği mutluluğu kucaklayın; bu, ortak ilgi alanlarını ve karşılıklı anlayışı kutlama zamanıdır. Etkileşimlerinizi hafif ve neşeli tutun, güçlü bağlar kurmaya odaklanın.",
+          "love": "Yeni bir ilişkiye başlıyorsanız, bu aşamanın heyecanını ve idealizmini yaşayın, ancak beklentileriniz konusunda gerçekçi olun. Zamanla daha da derinleşebilecek bir temel oluşturmak için açık iletişimi teşvik edin.",
+          "career": "Sizinle aynı heyecanı ve vizyonu paylaşan meslektaşlarınızla işbirliği yapın. Bu, yenilikçi fikirlerin ortaya çıkmasını sağlayacak ekip çalışması ve yaratıcı toplantılar için mükemmel bir zamandır.",
+          "finance": "Finansal girişimlerde ortaklıkları değerlendirin, ancak netlik ve ortak hedefler konusunda mutabakat sağlayarak ilerleyin. Karşılıklı fayda vaat eden ortak yatırımlar için uygun bir dönemdir."
+        },
+        "reversed": {
+          "general": "Son zamanlarda yaşadığınız çatışmaları gözden geçirin ve ilk bakışta fark edilmeyen altta yatan sorunları belirlemeye çalışın. Etkileşimlerinizde uyumu yeniden sağlamak için bu gizli gerilimleri ele alın.",
+          "love": "İlişkinizde gerginlik varsa, bunun nedeninin çözülmemiş sorunlar veya ifade edilmeyen beklentiler olup olmadığını düşünün. Yanlış anlamaları gidermek ve ilişkinizi yeniden düzenlemek için açık ve dürüst bir diyalog kurun.",
+          "career": "İşyerindeki anlaşmazlıkları, doğrudan ele alınmamış olabilecek altta yatan sorunlar açısından inceleyin. Proaktif bir yaklaşım, gerilimleri azaltabilir ve işbirliğini iyileştirebilir.",
+          "finance": "Stres altında veya finansal durumunuzu aşırı derecede eleştirdiğinizde finansal kararlar almaktan kaçının. Zaman ayırarak finansal durumunuzu sakin bir şekilde değerlendirin ve dürtüsel davranışlar yerine gerçekçi değerlendirmelere dayalı ayarlamalar yapın."
+        }
+      }
+    },
+    {
+      "id": 38,
+      "name": "Kupa Üçlüsü",
+      "image": "cups_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Şu anki başarınızı kutlayın, çünkü bu şanslı ama muhtemelen geçici bir andır. İşler yolunda giderken, bu zamanı gelecekteki zorluklar için temellerinizi güçlendirmek için kullanın. İyi zamanların tadını çıkarın, ancak hazırlıklı olun.",
+          "love": "Bu, romantik hayatınızda mutluluk ve şans dolu bir an. Partnerinizle olan uyumu ve bağı keyfini çıkarın, ancak aynı zamanda ilişkinizi gelecekte daha da güçlendirmek için anlayışınızı ve iletişiminizi derinleştirmeye çalışın.",
+          "career": "İş yerinde şanslı bir dönem geçiriyorsunuz, muhtemelen bir projeyi kazanacak veya takdir göreceksiniz. Bu başarıyı, ağ kurarak ve sonraki adımlar için hedefler belirleyerek değerlendirin. Unutmayın, bu tür başarılar geçici olabilir, bu nedenle gelecekteki adımlarınızı akıllıca planlayın.",
+          "finance": "Finansal açıdan, durum geçici olarak iyileşiyor olabilir. Kazançlarınızı gözden geçirip yeniden yatırım yapmak için iyi bir zaman. Ancak, ihtiyatlı davranmaya devam edin ve şansın sizin tarafınızda olmayabileceği dönemler için birikim yapın."
+        },
+        "reversed": {
+          "general": "Memnuniyetsizlik veya bir dönemin sona ermesi gibi bir dönemden geçiyor olabilirsiniz. Bu duyguları kabul edin, ancak yeni başlangıçlar için proaktif adımlar atın. Sona eren şeylere takılmayın; gelecek olanlara odaklanın.",
+          "love": "İlişkilerde, çözülmemiş sorunlar artık dikkat gerektirebilir ve bunları görmezden gelmek sonuçlara yol açabilir. Daha fazla karmaşıklığı önlemek için bu sorunları doğrudan ve dürüstçe ele alın.",
+          "career": "İş yerinde karşılaşılan zorluklar, dikkatli bir şekilde ele alınmazsa olumsuz sonuçlara yol açabilir. Mesleki itibarınızı etkileyebilecek olası çatışmaları önlemek için diplomatik davranın ve eylemlerinizde sorumluluk sahibi olun.",
+          "finance": "Finansal denetim zorluklara yol açabilir. Harcamalarınız ve yatırımlarınız konusunda daha dikkatli olmanın zamanı geldi. Finansal stratejilerinizi gözden geçirin ve paranızı yönetirken daha temkinli bir yaklaşım sergilemeye hazırlanın."
+        }
+      }
+    },
+    {
+      "id": 39,
+      "name": "Kupa Dörtlüsü",
+      "image": "cups_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Gerçeklik beklentilerinizi karşılamadığından hayal kırıklığına uğrayabilirsiniz. Bu uyumsuzluğu kabul edin ve netlik kazanmak için zihniyetinizi gerçekliğe daha uygun hale getirin.",
+          "love": "İlişkilerinizde, yüksek beklentileriniz memnuniyetsizliğe neden olabilir. İhtiyaçlarınız ve istekleriniz hakkında partnerinizle açıkça iletişim kurun, ancak daha uyumlu bir ilişki kurmak için beklentilerinizi de değiştirmeye hazır olun.",
+          "career": "İşyerindeki mevcut stratejileriniz beklediğiniz sonuçları vermiyorsa, yeni yaklaşımlar geliştirmenin zamanı gelmiştir. Geri bildirim alın ve durumu gerçekçi bir şekilde değerlendirerek yöntemlerinizi veya hedeflerinizi değiştirmeye açık olun.",
+          "finance": "Finansal sonuçlar beklentilerinizi karşılamayabilir. Finansal planlarınızı yeniden değerlendirin ve daha ulaşılabilir hedefler belirleyin, stratejilerinizin pratiklik temelinde olmasını sağlayın."
+        },
+        "reversed": {
+          "general": "Daha kötü durumda olan diğer insanlarla kendinizi karşılaştırarak durgunluğu haklı çıkarmaya çalışıyor olabilirsiniz, bu da bir tür kendini kandırmadır. Bu davranış kalıbını fark edin ve değişikliklere hazır olduğunuzu hissettiğinizde bunları uygulamaya hazır olun.",
+          "love": "Memnuniyetsiz ilişkinizin diğerlerine kıyasla \"o kadar da kötü olmadığını\" düşünerek kendinizi avutmaktan kaçının. Mutluluğunuz için hangi değişikliklerin gerekli olduğunu düşünün ve bunları küçük, yönetilebilir adımlarla uygulamaya başlayın.",
+          "career": "Kendinizi, tatmin edici olmayan kariyerinizin yeterli olduğuna inanarak teselli ediyor olabilirsiniz. Bu duruma razı olmayı bırakıp, hedeflerinize daha uygun bir kariyer hamlesi veya değişikliği planlamaya başlamak çok önemlidir.",
+          "finance": "Finans konusunda, durumun daha kötü olabileceğini düşünerek kendinizi teselli ediyor olabilirsiniz. Bu zihniyet, iyileşmeyi engeller. Gerçekçi tasarruf hedefleri belirlemek veya bir finans danışmanına danışmak gibi, finansal sağlığınızı iyileştirmek için aktif adımlar atmaya başlayın."
+        }
+      }
+    },
+    {
+      "id": 40,
+      "name": "Kupa Beşlisi",
+      "image": "cups_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Hayatınıza giren yeni bilgileri, önemli bir değer taşıdıkları için kucaklayın. Tavsiyelere ve beklenmedik bilgilere açık olun, ancak bunları etkili bir şekilde uygulamak için sağduyulu davranın.",
+          "love": "İlişkilerinizde, bir tarafın sık sık mentorluk rolü üstlendiğini fark edin. Bu dinamik zenginleştirici olabilir, ancak karşılıklı duygusal yakınlığı ve tutkuyu gölgede bırakmadığından emin olun.",
+          "career": "Yeni bir akıl hocası veya önemli bir tavsiye ortaya çıkabilir. Bu rehberliği memnuniyetle karşılayın; iş hayatında yeni bir bakış açısı kazanmanıza veya uzun süredir devam eden bir sorunu çözmenize yardımcı olabilir.",
+          "finance": "Yeni finansal bilgiler veya tavsiyelerle karşılaşmanız muhtemeldir. Bu bilgiler değerli olsa da, harekete geçmeden önce kaynaklarını ve etkilerini iyice araştırın."
+        },
+        "reversed": {
+          "general": "Konfor alanlarınız tanıdıktır, ancak büyümenizi engelleyebilir. Durgunluğu önlemek ve gelişimi kucaklamak için bu sınırların ötesine geçin.",
+          "love": "İlişkiniz rahat ve tanıdık gelse de, eskiden olduğu gibi heyecan eksikliği hissedebilirsiniz. Tutkuyu yeniden alevlendirmek ve duygusal bağları derinleştirmek için çaba gösterin.",
+          "career": "Tanıdık becerileri veya projeleri yeniden gözden geçirmek rahatlatıcı olabilir, ancak rehavete kapılmamaya dikkat edin. Kendinizi yeni öğrenme fırsatları peşinde koşmaya zorlayın.",
+          "finance": "Finansal konular yakında daha yönetilebilir veya tanıdık gelebilir, ancak rahatlık ihmaline yol açmasın. Değişen koşullara uyum sağlamak için finansal stratejilerinizi sürekli olarak gözden geçirin ve ayarlayın."
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Kupa Altılısı",
+      "image": "cups_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Geçmişteki başarılarınızı ve başarısızlıklarınızı düşünerek şu anki hayatınızın yönünü anlayın. Bu içgörülerden yararlanarak ileriye dönük bilinçli kararlar alın ve geçmişe takılıp kalmayın, ondan ders alın.",
+          "love": "Sevdiklerinizle mutlu anıları saklayın, ancak geçmiş ilişkilerinizin şu anki duygusal durumunuzu belirlemesine izin vermeyin. Mevcut ilişkilerinizi eski standartlarla karşılaştırmak yerine, yeni anılar yaratmaya açık olun.",
+          "career": "Geçmiş deneyimlerinizi kariyer kararlarınızda rehber olarak kullanın. Mesleki geçmişinizi onurlandırmak önemli olmakla birlikte, geçmişteki rolleriniz veya başarılarınızın özlemini duymaktansa, mevcut büyüme fırsatlarına odaklanın.",
+          "finance": "Geçmişteki finansal kararlarınızı gözden geçirerek, size fayda sağlayan veya kayıplara yol açan kalıpları belirleyin. Bu analizi, gelecekteki finansal planlamalarınızda kullanarak geçmişteki hataları tekrarlamaktan kaçının ve başarıları tekrarlayın."
+        },
+        "reversed": {
+          "general": "Geçmişinizden, mevcut zorluklarınıza uygulanabilecek beceri ve bilgileri belirleyin. Eski yöntemleri yeni bağlamlara uyacak şekilde yenilemekten çekinmeyin, geçmiş deneyimlerinizi bugünün değerli varlıklarına dönüştürün.",
+          "love": "Geçmiş ilişkilerinizden, mevcut veya gelecekteki romantik ilişkilerinizi olumlu yönde etkileyebilecek başarılı iletişim tarzlarını veya ilişki stratejilerini yeniden canlandırın. Bunları, mevcut ilişkinizin benzersiz bağlamına uyacak şekilde akıllıca uyarlayın.",
+          "career": "Geçmişteki başarılı çalışma stratejilerini veya projelerini mevcut iş ortamına yeniden dahil edin. Bu, bir proje yönetim stilini yeniden canlandırmak veya başarılı bir kampanya fikrini yeniden kullanmak, mevcut ihtiyaçlara göre gerekli ayarlamaları yapmak anlamına gelebilir.",
+          "finance": "Geçmişte sizin için işe yarayan finansal stratejileri yeniden uygulayın. İster bütçeleme tekniği ister yatırım yaklaşımı olsun, potansiyel faydaları en üst düzeye çıkarmak için mevcut finansal durumunuza uyarlayın."
+        }
+      }
+    },
+    {
+      "id": 42,
+      "name": "Kupa Yedilisi",
+      "image": "cups_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Çeşitli seçeneklerle karşı karşıya kalabilir ve bu durum kafanızı karıştırabilir. Her seçeneği dikkatlice değerlendirin ve sadece görünüşe aldanmayın; gerçeklik genellikle hayalden farklıdır.",
+          "love": "Birinin ideal versiyonuna aşık olmak kolaydır, ancak gerçek bir bağ kurmak için onun kusurlarını görmek ve kabul etmek gerekir. Daha derin ve daha samimi bir ilişki kurmak için açık bir şekilde iletişim kurun ve beklentilerinizi ayarlayın.",
+          "career": "Birden fazla kariyer seçeneği veya fikri cazip görünebilir, ancak uzun vadeli hedeflerinize en uygun olanı seçmeye odaklanın. Gelecekte hayal kırıklığı yaşamamak için her seçeneğin pratikliğini değerlendirin.",
+          "finance": "Gerçek olamayacak kadar cazip görünen finansal fırsatlara karşı dikkatli olun. Önemli yatırımlar yapmadan önce kapsamlı araştırma yapın ve uzmanlara danışın."
+        },
+        "reversed": {
+          "general": "Duygusal olarak tatminsiz hissedebilir ve diğerlerinden kopuk hissedebilirsiniz. Ruh halinizi iyileştiren ve benzer düşünen kişilerle bağlantı kurmanızı sağlayan etkinliklere katılarak proaktif adımlar atın.",
+          "love": "İlişkinizde ihmal edildiğinizi hissediyorsanız, partnerinizin bunu tahmin etmesini beklemek yerine ihtiyaçlarınızı açıkça dile getirin. Yapıcı diyalog, duygusal uçurumu kapatmaya yardımcı olabilir.",
+          "career": "İş yerinde takdir edilmediğini hissetmek moral bozucu olabilir. Kin beslemek yerine, geri bildirim isteyin ve üstlerinize hedeflerinizi anlatın. Kendinizi savunmak önemlidir.",
+          "finance": "Finansal getirilerinizden memnun olmayabilirsiniz. Mevcut stratejilerinizi yeniden değerlendirin ve finansal hedeflerinize daha iyi uyacak şekilde ayarlayın. Bazen yaklaşım değişikliği gerekebilir."
+        }
+      }
+    },
+    {
+      "id": 43,
+      "name": "Kupa Sekizlisi",
+      "image": "cups_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Bu belirsizlik dönemini değerli bir öğrenme süreci olarak kabul edin. Duygularınızı ve durumlarınızı aceleyle etiketlemeden, bunların karmaşıklığını keşfetmeye izin verin. Bu dönemi, her adımın daha fazla netlik getirdiği sisli bir yolda bir yolculuk olarak düşünün.",
+          "love": "İlişkilerde, her şeyi iyi ya da kötü olarak sınıflandırma dürtüsüne direnin. Belirsizlikleriniz hakkında açıkça iletişim kurun ve ilişkinizin dinamiklerini daha iyi anlamak için partnerinizin bakış açısını dinleyin.",
+          "career": "Kariyer yolunuz belirsizse, bunu hedeflerinizi yeniden değerlendirmek için bir fırsat olarak değerlendirin. Bu zamanı, daha fazla netlik veya beklenmedik fırsatlar sağlayabilecek farklı ilgi alanlarını veya becerileri keşfetmek için kullanın.",
+          "finance": "Finansal kararlar şu anda çok zor gelebilir. Aceleyle yatırım yapmaya veya büyük alımlar gerçekleştirmeye kalkışmak yerine, kendinize zaman tanıyarak konuyu iyice araştırın ve güvenilir kaynaklardan tavsiye alın."
+        },
+        "reversed": {
+          "general": "Belirsizlikle mücadeleniz size stres yaratıyor olabilir. Hemen bir çözüm bulmaya çalışmadan belirsizlikle bir arada yaşamayı öğrenin. Bazen geri adım atıp gözlemlemek yeni içgörüler sağlayabilir.",
+          "love": "Aşkta, belirsizliğe karşı direncin gerginlik yaratıyor olabilir. Durumun ne olduğu konusunda hemen cevap almaya olan ihtiyacını biraz gevşetmeye çalış ve partnerinle aranızdaki iyi şeyleri beslemeye odaklan.",
+          "career": "Kararsızlığınız kariyerinizde hayal kırıklıklarına yol açabilir. Bir karar vermek için kendinizi zorlamak yerine, meslektaşlarınızdan rehberlik veya geri bildirim isteyin. Bu, düşüncelerinizi netleştirmenize ve çabalarınızı daha verimli bir şekilde yönlendirmenize yardımcı olabilir.",
+          "finance": "Finansal kararsızlık felç edici olabilir. Finansal kararlarınıza güven kazanmak için küçük, yönetilebilir hedefler belirlemek önemlidir. Mevcut harcamalarınızı gözden geçirerek ve bir bütçe belirleyerek başlayın."
+        }
+      }
+    },
+    {
+      "id": 44,
+      "name": "Kupa Dokuzlusu",
+      "image": "cups_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Çevrenizdeki her şeyi koşulsuz kabul etme ve takdir etme zihniyetini benimseyin. Ruhunuzu besleyen ve olumlu katkı sağlayan ilişkilere ve tutkularınıza yatırım yapın. Unutmayın, gerçek mutluluk dışsal koşullardan değil, içsel bir duygudur.",
+          "love": "İlişkilerinizde kabul ve koşulsuz sevgiyi uygulayın. Partnerinizin özelliklerini değiştirmeye çalışmadan kabul edin ve değer verin. Karşılığında bir şey beklediğiniz için değil, size mutluluk verdiği için onların kişisel gelişimini destekleyin.",
+          "career": "Olumlu tutumunuz ve iş arkadaşlarınıza gösterdiğiniz samimi destek, uyumlu bir çalışma ortamı yaratacaktır. İşbirliği projelerine yatırım yapmaya devam edin ve dürüstlüğünüzü koruyun; bu yaklaşım, kişisel ve mesleki tatmin sağlayacaktır.",
+          "finance": "Finansal tatmin, değerlerinizle uyumlu akıllı yatırımlardan gelir. Zaten sahip olduklarınızın değerini anlamak için zaman ayırın ve anlık tatmin yerine uzun vadeli mutluluğunuza katkıda bulunacak finansal kararlar alın."
+        },
+        "reversed": {
+          "general": "Çabalarınızın fark edilmediğini düşünüyorsanız, beklentilerinizi yeniden gözden geçirin. Farklı türdeki getirileri kabul edin ve beklediğiniz şeyden ziyade, gerçekte elde ettiğiniz şeyi takdir edin.",
+          "love": "İlişkilerdeki duygusal yatırımlarınızı yeniden değerlendirin. Karşılıksız hissediyorsanız, suçlamadan duygularınızı açıkça ifade edin. Aşkın bazen beklenmedik şekillerde ortaya çıktığını anlayın ve sevgi vermek ve almak konusunda bakış açınızı değiştirmeyi düşünün.",
+          "career": "Mesleki katkılarınızı ve aldığınız takdirleri düşünün. Bir uyumsuzluk varsa, ihtiyaçlarınızı dile getirmeyi veya katkılarınızı yeniden değerlendirmeyi düşünün. Daha fazla tatmin hissetmek için çabalarınızı kariyer hedeflerinizle yeniden uyumlu hale getirmenin zamanı gelmiş olabilir.",
+          "finance": "Finansal çabalarınız beklendiği gibi sonuç vermiyorsa, yatırımlarınızı ve harcamalarınızı daha yakından inceleyin. Finansal hedeflerinize daha uygun hale getirmek için stratejilerinizi ayarlayın ve yatırımlarınızın gerçek değerini anlamak için danışmanlık almayı düşünün."
+        }
+      }
+    },
+    {
+      "id": 45,
+      "name": "Kupa Onlusu",
+      "image": "cups_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Hayatınızda önemli bir olayın tetikleyeceği, bakış açınızda önemli bir değişime hazır olun. Bu değişimi kucaklayın ve onu, değerleriniz ve inançlarınız hakkında daha derin bir anlayış geliştirmek için kullanın.",
+          "love": "İlişkinizde yeni duygular yaşıyorsanız, bunları tam olarak keşfedin. İster daha derin bir aşk olsun, ister partnerinizin yeni yönlerini keşfetmek olsun, ilişkinizi güçlendirmek için açık bir şekilde iletişim kurun.",
+          "career": "Ani bir farkındalık, kariyer yolunuza bakış açınızı değiştirebilir. Bu içgörü ilham verici ya da zorlayıcı olsun, onu profesyonel hedeflerinizi yeniden tanımlamak ve gerçek isteklerinizle daha uyumlu hale getirmek için kullanın.",
+          "finance": "Önemli yaşam olayları sonucunda yeni bir finansal bakış açısı ortaya çıkabilir. Bunun para yönetimi yaklaşımınızı nasıl değiştirdiğini değerlendirin ve finansal planlarınızı mevcut ihtiyaçlarınıza ve gelecekteki hedeflerinize uygun hale getirin."
+        },
+        "reversed": {
+          "general": "Bakış açınızda kademeli bir değişim yaşıyorsunuz. Düşüncelerinizdeki ve duygularınızdaki ince değişikliklere dikkat edin ve eylemlerinizi buna göre ayarlayarak, gelişen ideallerinizi yansıtmalarını sağlayın.",
+          "love": "İlişkilerde, duygularda veya anlayışta yavaş bir dönüşüm yaşanıyor. Zaman ayırarak partnerinizin ihtiyaçlarını ve duygusal değişimlerini gerçekten dinleyin ve öğrenin, böylece daha derin ve uyumlu bir bağ kurun.",
+          "career": "Kariyer tutumunuz yavaş yavaş değişiyor. İş ortamınızdaki ve kendinizdeki değişiklikleri gözlemleyin. Bu bilgileri, mesleki gelişiminiz ve kariyerinizle ilgili bilinçli kararlar almak için kullanın.",
+          "finance": "Finansal perspektifler yavaş yavaş değişiyor. Finansal hedeflerinizi ve bütçe stratejilerinizi düzenli olarak gözden geçirerek, değişen önceliklerinize ve koşullarınıza uyum sağlamak için gerekli değişiklikleri yaparak bu değişiklikleri takip edin."
+        }
+      }
+    },
+    {
+      "id": 46,
+      "name": "Kupa Prensi",
+      "image": "cups_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Duygusal dünyanızdaki değişimleri büyüme fırsatları olarak kabul edin. Kişisel gelişime yol açabilecek duygu ve algılarınızdaki değişikliklere açık olun. Duygusal tutumunuzda bir değişiklik hissederseniz, dürtüsel tepki vermek yerine bunu dikkatlice inceleyin.",
+          "love": "İlişkilerinizdeki duygularınız değişiyor olabilir. Yeni bir çekim hissediyorsanız veya duygularınızda bir değişiklik fark ediyorsanız, acele etmeden bunun ortaya çıkması için zaman tanıyın. Anlaşmayı kolaylaştırmak için, değişen duygularınız hakkında partnerinizle veya potansiyel partnerinizle açıkça iletişim kurun.",
+          "career": "Yeni bir duygusal bakış açısı, kariyerinizde yeni yollar açabilir. İşinizle daha bağlı hissediyorsanız veya işinizden hayal kırıklığına uğradıysanız, bu duyguların kariyer kararlarınızı nasıl yönlendirebileceğini düşünün. Bu duygusal içgörüyü, tutkularınızla daha uyumlu fırsatlar aramak için kullanın.",
+          "finance": "Finansal konulara karşı duygusal tepkileriniz değişiyor olabilir. Herhangi bir finansal karar vermeden önce, bu yeni duyguları anlamak için biraz zaman ayırın. Bu duygusal değişim dönemini, finansal hedeflerinizi ve stratejilerinizi net bir zihinle yeniden değerlendirmek için kullanın."
+        },
+        "reversed": {
+          "general": "Ters çevrilmiş olsa bile, Kupa Sayfası duygusal değişimleri bilinçli bir şekilde ele almayı önerir. Mevcut duygusal tepkilerinizi düşünün ve bunların bakış açınızı ve kararlarınızı nasıl etkilediğini değerlendirin. Duygularınızı yakından izleyin, çünkü bunlar sizi yeni içgörülere veya uyarılara yönlendirebilir.",
+          "love": "Aşkta, ters çevrildiğinde, bu kart hala gelişen duyguları ifade eder. Birine karşı hissettiğiniz duygulardaki bu ince değişiklikleri göz ardı etmemeye dikkat edin. Duygusal değişiklikleri ele almak için açık bir diyalog kurun, bu hem ilişkinizi derinleştirebilir hem de ihtiyaçlarınızı netleştirebilir.",
+          "career": "Tersine dönmüş enerjilerle, kariyeriniz hala değişen duyguların etkisinde olabilir. İş yerinde kopuk hissediyorsanız veya aşırı duygusal davranıyorsanız, bir adım geri çekilip duygularınızın neden değiştiğini değerlendirin. Bu değerlendirme, yeniden bağlılık gösterip göstermeyeceğinize veya yeni fırsatlar arayıp aramayacağınıza karar vermenize yardımcı olabilir.",
+          "finance": "Ters çevrildiğinde, Kupa Sayfası duyguların finansal kararlarınızı nasıl etkilediğini dikkatlice gözden geçirmenizi tavsiye eder. Geçici duyguların etkisiyle yapılan dürtüsel harcamalardan veya yatırımlardan kaçının. Finansal değişikliklere geçmeden önce duygularınızı dengelemek için zaman ayırın."
+        }
+      }
+    },
+    {
+      "id": 47,
+      "name": "Kupa Şövalyesi",
+      "image": "cups_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Kupaların Şövalyesi, duyguların derinleştiği ve geliştiği, bu nedenle yönetilmesi zorlaşabileceği bir dönemi işaret eder. Bunu bir büyüme dönemi olarak kabul edin: duygularınızı tam olarak yaşayın, ancak dengeyi de arayın. Duygularınızı bastırmak yerine, onları anlamaya çalışın.",
+          "love": "Aşkın yoğunlaşmasıyla birlikte, derin duygular ile geçici duygular arasında ayrım yapmak çok önemlidir. Bir ilişkiniz varsa, anlayış geliştirmek ve kırgınlıkların önlenmesi için duygularınızı açıkça ifade edin. Flört edenler için ise, duygusal yatırımınızın karşılıklı olduğundan emin olun.",
+          "career": "İşinize olan duygusal bağlılığınız artabilir ve kararlarınızı etkileyebilir. Bu tutkuyu, önem verdiğiniz projeleri savunmak için yapıcı bir şekilde kullanın. Ancak, profesyonelliğinizi koruyun ve işyerindeki çatışmalarda duygularınızın kararınızı etkilemesine izin vermeyin.",
+          "finance": "Mali kararlarınız, mevcut duygusal durumunuzdan etkilenebilir. İçgüdülerinizi takip etmek önemli olmakla birlikte, gerçeklere dayalı analizlere ve pratik planlamaya da güvenmeyi unutmayın. Yalnızca duygularınızın yönlendirdiği dürtüsel satın alımlardan veya yatırımlardan kaçının."
+        },
+        "reversed": {
+          "general": "Kupaların Şövalyesi ters çevrildiğinde, derinleşen duyguları yönetme zorluğu hala devam eder. Bu duygusal karmaşıklığı yolculuğunuzun bir parçası olarak kabul edin. Kendinizi bunaltmadan duygularınızı yapıcı bir şekilde ifade etmenin yollarını arayın.",
+          "love": "Kalp meselelerinde, tersine çevrilmiş kart, ilişkilerinizdeki temel sorunları ele alma ihtiyacını işaret eder. Huzur için sorunları görmezden gelmek cazip gelebilir, ancak gerçek çözüm, bu sorunlarla doğrudan ve dürüstçe yüzleşmeyi gerektirir.",
+          "career": "Ters çevrildiğinde, bu kart duygusal önyargıların kariyer kararlarınızı olumsuz etkileyebileceğini gösterir. Objektif olmaya çalışın ve duygusal yatırımlarınızın pratik olmayan seçimlere yol açmaması için güvenilir meslektaşlarınızdan tavsiye alın.",
+          "finance": "Duygularınızın finansal kararlarınızı etkilemesine izin vermeyin. Finansal fırsatlara dengeli bir bakış açısıyla yaklaşın, duygusal sezgi ile rasyonel analizi birleştirin. Bu, sağlam yatırım kararları almanıza yardımcı olacaktır."
+        }
+      }
+    },
+    {
+      "id": 48,
+      "name": "Kupa Kraliçesi",
+      "image": "cups_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Kupaların Kraliçesi doğal çevrenizde uyum ve kabullenmeyi önerdiği için, gerçek benliğinizi kucaklayın. Olduğunuz gibi takdir ediliyorsunuz, bu yüzden doğuştan gelen niteliklerinizi besleyin ve parlamalarına izin verin.",
+          "love": "Aşkta, Kupa Kraliçesi size gerçek kendiniz olmanızı teşvik eder. Açık sözlülük ve duygusal dürüstlük ilişkilerinizi güçlendirecektir. Duygularınızı açıkça ifade edin ve kırılganlığınızın daha derin bağlar kurmanıza olanak tanıyın.",
+          "career": "Bu kart, iş yerinizin sizin benzersiz katkılarınıza değer verdiğini gösteriyor. Projelere ve etkileşimlere kişisel dokunuşunuzu katmaya devam edin; sizi diğerlerinden ayıran ve başarıya ulaştıran şey, sizin kendine özgü yeteneğinizdir.",
+          "finance": "Finansal kararlar, değerlerinizi ve rahatlık düzeyinizi yansıtmalıdır. Paranızı yönetirken içgüdülerinize güvenin ve finansal felsefenize doğal olarak uyan yatırımlar arayın."
+        },
+        "reversed": {
+          "general": "Tersine çevrilmiş Kupa Kraliçesi, olumsuz özelliklerin hakim olmasına izin vermenin tehlikelerine karşı uyarıyor. Kendini yansıtmak için zaman ayır ve duygularının kararlarını olumsuz etkilemesini önlemek için duygularını dengelemeye çalış.",
+          "love": "İlişkilerde duygusal dengesizlik veya manipülasyona karşı dikkatli olun. Sağlıklı ilişkiler sürdürmek için olumsuz davranışları ele almak ve etkileşimlerinizde dürüstlük ve dengeyi sağlamak çok önemlidir.",
+          "career": "Duygularınızın profesyonel kararlarınızı etkilemesine izin vermeyin. Olumsuzluklar iş hayatınızı etkiliyor ise, yapıcı geri bildirimler alın ve zorluklara daha dengeli bir yaklaşım geliştirmek için çaba gösterin.",
+          "finance": "Tersine çevrilmiş Kraliçe, duygusal harcamalara dikkat edilmesi gerektiğini işaret eder. Finansal kararlarınızı dikkatlice değerlendirin ve bunların dürtü veya ruh halinizden ziyade ihtiyaç ve mantığa dayandığından emin olun."
+        }
+      }
+    },
+    {
+      "id": 49,
+      "name": "Kupa Kralı",
+      "image": "cups_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "kupalar",
+      "element": "su",
+      "meanings": {
+        "upright": {
+          "general": "Kupa Kralı'nın da belirttiği gibi, gerçek benliğinizi kucaklayın, çünkü şu anda özgünlüğün en büyük varlığınız olduğu bir konumdasınız. Etkileşimlerinizde ve kararlarınızda samimi olun, güçlü ve zayıf yönlerinizin sizi daha doyurucu bir hayata yönlendirmesine izin verin.",
+          "love": "İlişkilerde, Kupa Kralı duygusal olgunluk ve şefkat göstermenizi teşvik eder. Partnerinizin ihtiyaçlarını aktif olarak dinleyin ve bağınızı güçlendirmek için duygularınızı dürüstçe ifade edin.",
+          "career": "Kupaların Kralı, anlayış ve takım çalışmasının başarıya götüreceğini ima ettiğinden, iş yerinde diplomatik becerilerinizi kullanın. Duygusal zekanın çok önemli olduğu projelerde liderlik yapın.",
+          "finance": "Finansal bilgelik, Kupa Kralı tarafından vurgulanmaktadır. Kısa vadeli arzularınız yerine, uzun vadeli duygusal ve finansal refahınızla uyumlu kararlar alın."
+        },
+        "reversed": {
+          "general": "Tersine dönmüş Kupa Kralı, olumsuz özelliklerinizin hakim olmasına izin vermemeniz konusunda sizi uyarır. Eylemlerinizi ve tutumlarınızı düşünün ve en iyi halinizden uzak olduğunuz alanları iyileştirmek için bilinçli çaba gösterin.",
+          "love": "Aşk konusunda, bu kart ters çevrilmiş olarak, kişiliğinizin daha az olumlu yanlarını göstermiş olabileceğinizi işaret ediyor. Partnerinize karşı duygusal ifadelerinizde daha açık ve daha az tepkisel olmaya çalışın.",
+          "career": "İş yerinde duygusal dürtüselliğe karşı dikkatli olun, çünkü bu çatışmalara veya yanlış anlaşılmalara yol açabilir. Özellikle stresli durumlarda denge ve profesyonellik için çaba gösterin.",
+          "finance": "Ters çevrildiğinde, Kupa Kralı duyguların finansal kararlarınızı etkilemesine izin vermemenizi tavsiye eder. Dürtüsel satın alımlardan ve duygusal yatırımlardan kaçının. Bunun yerine, istikrarı arayın ve kararlarınızı iyice düşünün."
+        }
+      }
+    },
+    {
+      "id": 50,
+      "name": "Kılıç Ası",
+      "image": "swords_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Bir fikir zihninizi ele geçirmiş ve onu tüm gücünüzle takip etmenizi istiyor. Bu fikri uygulamaya koymadan önce, onun pratikliğini ve hayatınız üzerindeki etkisini değerlendirin ve uzun vadeli hedeflerinizle uyumlu olduğundan emin olun.",
+          "love": "İlişkilerde yeni bir anlayış veya içgörü ortaya çıkabilir. Bunun, ikinizin de gelecek vizyonunu desteklediğinden emin olmak için partnerinizle açıkça konuşun.",
+          "career": "Yeni bir proje veya strateji dikkatinizi çekti. Kaynaklarınızı ayırmadan önce, titizlikle plan yapın ve uygulanabilirliğini sağlamak için geri bildirim alın.",
+          "finance": "Yeni finansal fikrinizin kapsamlı bir değerlendirmeye ihtiyacı var. Rakamları inceleyin ve belki de bir finans danışmanına danışarak potansiyel başarısını risklerle karşılaştırın."
+        },
+        "reversed": {
+          "general": "Bir zamanlar umut vaat eden bir fikir başarısızlıkla sonuçlandı ve muhtemelen hayal kırıklığına yol açtı. Neyin yanlış gittiğini düşünün ve bu içgörüyü gelecekteki çabalarınızda yaklaşımınızı geliştirmek için kullanın.",
+          "love": "İlişkinizdeki bir kavram beklendiği gibi gelişmemiş olabilir ve bu da gerginliğe neden olabilir. Beklentilerinizi yeniden uyumlu hale getirmek ve anlayış geliştirmek için açık bir şekilde iletişim kurun.",
+          "career": "Kariyer planınız bir engelle karşılaştı. Bunu, yolunuzu yeniden değerlendirmek ve daha gerçekçi hedefler veya zaman çizelgeleri belirlemek için bir öğrenme fırsatı olarak değerlendirin.",
+          "finance": "Finansal planlar umulduğu gibi sonuçlanmamış olabilir ve bu da hayal kırıklığına yol açabilir. Finansal stratejilerinizi yeniden değerlendirin ve daha fazla aksilik yaşamamak için bütçenizi ayarlayın."
+        }
+      }
+    },
+    {
+      "id": 51,
+      "name": "Kılıç İkilisi",
+      "image": "swords_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "İki zıt görüşü değerlendirdikten sonra zihinsel bir dengeye ulaştınız. Farklı bakış açılarına açık kalarak bu dengeyi koruyun ve kararlarınızda uyumu aramaya devam edin.",
+          "love": "İlişkinizde, arkadaşlıktan rahatlık duyuyor olabilirsiniz ancak romantik tutku eksikliği yaşıyor olabilirsiniz. Duygusal yakınlığı yeniden canlandırmak için, ikinizin de heyecan verici ve yeni bulduğu aktiviteler planlayın.",
+          "career": "Bir durumun her iki tarafını da görebilme yeteneğiniz iş yerinde bir avantajdır. Bu beceriyi çatışmaları arabuluculuk yapmak ve iş arkadaşlarınızın takdir edeceği dengeli çözümler önermek için kullanın.",
+          "finance": "Harcama ve tasarruf arasında bir orta yol buldunuz. Net finansal hedefler belirleyerek ve bütçenizi düzenli olarak gözden geçirerek bu dengeyi koruyun ve gerektiğinde ayarlamalar yapın."
+        },
+        "reversed": {
+          "general": "İç çatışma, eylemlerinizde tutarsızlığa neden oluyor. Netlik kazanmak için, sizin için gerçekten önemli olan şeyleri düşünmek için zaman ayırın ve karar verme sürecinde bu değerlere öncelik verin.",
+          "love": "İradenin çatışması nedeniyle gerginlik artıyor olabilir. Konuşmayı domine etmeye çalışmadan, birbirinizin ihtiyaçlarını ve sınırlarını açıkça tartışarak iletişimi geliştirin.",
+          "career": "İşyerinde görevlerin çakışması veya iletişim sorunları nedeniyle anlaşmazlıklar ortaya çıkabilir. Ekibinizle rol ve sorumluluklarınızı netleştirerek, herkesin çabalarının rekabet yerine birbirini tamamlayıcı nitelikte olmasını sağlayın.",
+          "finance": "Finansal eylemleriniz çelişkili görünebilir, belki de tutumluluk ve savurganlık arasında gidip gelebilir. Kısa ve uzun vadeli hedefleri içeren ayrıntılı bir finansal plan oluşturarak daha tutarlı bir yaklaşım belirleyin."
+        }
+      }
+    },
+    {
+      "id": 52,
+      "name": "Kılıç Üçlüsü",
+      "image": "swords_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Mevcut durumunuz netlik veya öngörü eksikliğini gösterebilir, bu nedenle durup planlarınızı yeniden değerlendirmek çok önemlidir. Yanlış adımlar atmamak ve önemli ayrıntıları gözden kaçırmamak için mevcut tüm bilgileri dikkatlice inceleyin. Net ve iyi bilgilendirilmiş bir strateji belirleyerek doğaçlamadan kurtulmanın zamanı geldi.",
+          "love": "İlişkinizde iletişim, gözden kaçan ayrıntılar veya yanlış anlaşılmalar nedeniyle aksıyor olabilir. Partnerinizle dürüst ve açık bir diyalog kurarak bu sorunları doğrudan ele alın. Herhangi bir kopukluğu gidermek ve bağınızı güçlendirmek için duygularınızı ve beklentilerinizi net bir şekilde ifade edin.",
+          "career": "İş yerinde, hazırlıksız olmanın veya eksik bilginin sonuçlarını hissediyor olabilirsiniz. Buna karşı koymak için, projelerinizin veya rollerinizin tüm yönlerini tam olarak anlamak için inisiyatif alın. Beceri veya bilgi eksikliklerinizi gidermek için gerekirse tavsiye alın veya ek eğitim alın.",
+          "finance": "Yeterli bilgiye sahip olmadan alınan finansal kararlar sorunlara yol açabilir. Finansal planlarınızı ve bütçelerinizi yeniden değerlendirin, devam etmeden önce tüm bilgileri iki kez kontrol edin. Kararlarınızın sağlam temellere dayandığından emin olmak için bir finans danışmanına danışmayı düşünün."
+        },
+        "reversed": {
+          "general": "Hayallere tutunuyor ve durumunuzun gerçekliğinden kaçınıyor olabilirsiniz. Ne kadar rahatsız edici olursa olsun, gerçekle yüzleşmek çok önemlidir. Hayalleri bir kenara bırakarak başlayın ve zorluklarınızla gerçekçi ve dürüst bir şekilde yüzleşin.",
+          "love": "Kişisel ilişkilerde inkâr, daha derin sorunlara yol açabilir. İlişkinizin durumunun gerçeklerini kabul etmek çok önemlidir. Zor gerçeklerden kaçındığınızı fark ederseniz, onlarla doğrudan yüzleşme ve çözüm veya değişim için partnerinizle birlikte çalışma zamanı gelmiştir.",
+          "career": "Ters çevrildiğinde, bu kart kariyerinizdeki ilerlemeniz veya iş yerindeki dinamikler hakkında kendinizi kandırmamanız konusunda uyarıyor. Bir adım geri atın ve kariyerinizi eleştirel bir gözle değerlendirin. Gerçekçi hedefler belirleyerek ve iş arkadaşlarınızdan veya mentorlarınızdan dürüst geri bildirimler alarak gerekli ayarlamaları yapın.",
+          "finance": "Gerçekçi bir plan olmadan finansal başarıya dair hayaller, hayal kırıklığına yol açabilir. Finansal durumunuzu olduğu gibi kabul edin ve daha pragmatik bir yaklaşım benimseyin. Ayrıntılı bir bütçe oluşturun, gereksiz harcamaları azaltın ve gerçek gelirinizi ve hedeflerinizi yansıtan bir tasarruf planı yapın."
+        }
+      }
+    },
+    {
+      "id": 53,
+      "name": "Kılıç Dörtlüsü",
+      "image": "swords_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Bu, eylem değil, düşünme zamanıdır. Kışın bir bahçe gibi, zihninizi ve faaliyetlerinizi dinlendirerek gelecekteki büyümeye hazırlanın. Bu ara vermeyi, aceleyle değişiklikler yapmadan hedeflerinizi ve stratejilerinizi yeniden değerlendirmek için kullanın.",
+          "love": "İlişkilerde, şimdi geri adım atıp düşünmenin tam zamanı. Nehir, rahatsız edilmediğinde durulduğu gibi, şimdilik önemli kararlar almaktan veya derin tartışmalara girmekten kaçınarak duygusal bağlarınızın stabilize olmasına izin verin.",
+          "career": "Kariyerinizde yeni adımlar atmaktan veya yeni projeler başlatmaktan kaçının. Bu dönemi, büyük bir ilerleme öncesinde güçlerinizi topladığınız gibi stratejik bir geri çekilme olarak değerlendirin. Bu ara vermeyi, harekete geçmek yerine planlama ve hazırlık yapmak için kullanın.",
+          "finance": "Şu anda yeni finansal taahhütlerden veya yatırımlardan kaçının. Fırtına öncesi evinizi güvenli hale getirmek gibi, mevcut varlıklarınızı korumaya ve finansal durumunuzu gözden geçirmeye odaklanın, genişletmeye değil."
+        },
+        "reversed": {
+          "general": "Doğal duraklamaya direnmek hayal kırıklığına yol açabilir. Kilitli bir kapıya itmek gibi, bu da boşuna ve yorucu bir çabadır. Mola ihtiyacını kabul edin ve buna karşı mücadele etmek yerine, enerji toplamak için kullanın.",
+          "love": "Bu dönemde ilişkide ilerlemeyi zorlamak direnç ve gerginlik yaratabilir. Bunun yerine, statükoyu koruyun ve değişiklikleri zorlamadan kendinizi ve mevcut bağlarınızı beslemeye odaklanın.",
+          "career": "İş yerinde tıkanmış hissediyorsanız, daha fazla zorlamak engelleri aşmanıza yardımcı olmayabilir. Durmaksızın çalışmaya zorlandığında aşırı ısınan bir makine gibi, kendinize bir adım geri çekilip yaklaşımınızı yeniden değerlendirme izni verin.",
+          "finance": "Aceleci finansal kararlar alma dürtüsüne karşı koyun. Satranç oyuncusunun aceleci bir hamle yapması gibi, daha sonra pişman olabilirsiniz. Harekete geçmeden önce bu zamanı finansal stratejinizi iyice analiz etmek ve planlamak için kullanın."
+        }
+      }
+    },
+    {
+      "id": 54,
+      "name": "Kılıç Beşlisi",
+      "image": "swords_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Öfke veya hayal kırıklığıyla kendinizi bunalmış hissedebilirsiniz. İlişkilerinizi veya itibarınızı zedelememek için bir adım geri çekilip sakinleşmek çok önemlidir. Durumdan geçici olarak uzaklaşmak, daha yapıcı çözümler için gereken netliği sağlayabilir.",
+          "love": "İlişkilerde sert sözler veya davranışlar geri dönüşü olmayan hasarlara neden olabilir. Anlaşmazlıklar tırmanırsa, yıkıcı bir tartışmaya devam etmek yerine sakinleşmek için bir ara vermeyi önerin. Bu zamanı, ilişkinizde gerçekten önemli olan şeyleri düşünmek için kullanın.",
+          "career": "İşyerinde çatışmalar doruk noktasına ulaşabilir. Gerginliğin yüksek olduğu bir durumda kendinizi bulursanız, çatışmadan uzaklaşmak ve tarafsız bir kişiden arabuluculuk veya tavsiye istemek akıllıca olacaktır. Bu, profesyonel dürüstlüğü ve ilişkileri korumaya yardımcı olur.",
+          "finance": "Dürtüyle hareket etmek, pişmanlık duyulacak finansal kararlar alınmasına neden olabilir. Kendinizi özellikle tepkisel veya üzgün hissediyorsanız, sakin ve mantıklı bir ruh haline kavuşana kadar önemli finansal kararları erteleyin."
+        },
+        "reversed": {
+          "general": "Hayata bakış açınız olumsuzlukla dolu olabilir ve bu da başkalarını haksız yere suçlamanıza neden olabilir. Bununla başa çıkmak için, duygularınız ve eylemlerinizin sorumluluğunu üstlenin. Tutumlarınızın mevcut zorluklarınızı nasıl etkileyebileceğini düşünün ve daha olumlu bir bakış açısı benimsemeye çalışın.",
+          "love": "İlişkinize zarar verebileceğinden, hayal kırıklığını partnerinize yansıtmaktan kaçının. Yapıcı iletişim kurmaya odaklanın ve herhangi bir uyuşmazlıkta kendi payınızı kabul edin. Anlaşılmadan önce anlamaya çalışın, bu bağları iyileştirmeye ve güçlendirmeye yardımcı olabilir.",
+          "career": "Kişisel sorunlarınızı iş ortamınıza yansıtma riski vardır. Kişisel şikayetlerinizi ve hayal kırıklıklarınızı işyerinden uzak tutarak profesyonel davranışlarınızın kusursuz olmasını sağlayın. Gerekirse, kişisel sorunlarınızı etkili bir şekilde yönetmek için profesyonel yardım veya danışmanlık alın.",
+          "finance": "Ters çevrildiğinde, bu kart duygusal kararlar nedeniyle kaynakların yanlış yönetilebileceği konusunda uyarıda bulunur. Duygularınızı finansal kararlarınızdan ayırmak için bilinçli bir çaba gösterin ve finansal durumunuzu istikrarlı ve rasyonel tutmak için bir finans danışmanına danışmayı düşünün."
+        }
+      }
+    },
+    {
+      "id": 55,
+      "name": "Kılıç Altılısı",
+      "image": "swords_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Yerinde hissetmeme veya bir görevde başarısız olma hissinin öğrenmenin bir parçası olduğunu kabul edin. Bu gerçekleri bir engel olarak değil, bir basamak olarak kabul edin ve zorluklara yaklaşımınızı yeniden ayarlamak için kullanın.",
+          "love": "İlişkilerde, bir yanlış adım, iletişim eksikliği veya uyumsuz beklentilerin bir işareti olabilir. Bağınızı güçlendirmek için bu yanlış anlamaları açık ve dürüst bir şekilde ele alın.",
+          "career": "Bir proje veya rol planlandığı gibi gitmediyse, bunu önemli bir öğrenme fırsatı olarak değerlendirin. Neyin yanlış gittiğini analiz edin, geri bildirim isteyin ve bu bilgileri gelecekteki performansınızı iyileştirmek için kullanın.",
+          "finance": "Son sonuçlar beklentilerinizi karşılamadıysa, finansal stratejilerinizi yeniden değerlendirin. Bütçenizi revize etmenin veya daha iyi bir gelecek yönetimi için tavsiye almanın zamanı gelmiş olabilir."
+        },
+        "reversed": {
+          "general": "Çatışmaları çözmek ve faydalı anlaşmalara varmak için yapıcı diyaloglar kurun. Etkili müzakere becerisi, ilişkilerinizi ve fırsatlarınızı geliştirecektir.",
+          "love": "İlişkinizde etkili iletişim ve anlayışa odaklanın. Aktif bir şekilde dinleyin ve hem sizi hem de partnerinizi tatmin edecek çözümler bulmak için uzlaşmaya hazır olun.",
+          "career": "İş yerinde başarılı müzakereler, önemli ilerlemelere veya çözümlere yol açabilir. Kapsamlı bir hazırlık yapın ve karşılıklı fayda odaklı bir zihniyetle görüşmelere yaklaşın.",
+          "finance": "Tersine çevrilmiş Altı Kılıç, finansal anlaşmalar veya sözleşmeler için uygun bir zaman olduğunu gösterir. Bu görüşmelere net hedefler ve adil bir uzlaşma bulma isteği ile yaklaşın."
+        }
+      }
+    },
+    {
+      "id": 56,
+      "name": "Kılıç Yedilisi",
+      "image": "swords_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "İrade gücünüzü kullanarak hayatınızı büyümeye yönlendirin. Stratejilerinizi değerlendirin ve her zaman bir B planınız olsun. Her şeyi aşırı kontrol etmek strese yol açabileceğini unutmayın, bu yüzden denge çok önemlidir.",
+          "love": "İlişkilerde, liderlik etme arzunuz başkalarına manipülasyon gibi gelebilir. Açık olmaya çalışın ve uyum ve güveni teşvik etmek için karşılıklı karar almaya izin verin.",
+          "career": "Liderlik becerileriniz şu anda ön plana çıkıyor. Projeleri üstlenin ve ekibinizi netlik ve vizyonla yönlendirin, ancak herkesin kendini değerli hissetmesini sağlamak için onların geri bildirimlerini de dikkate aldığınızdan emin olun.",
+          "finance": "Finansal hareketlerinizi öngörülü bir şekilde dikkatlice planlayın. Dikkatli olmak iyidir, ancak gereksiz stresi önlemek için her kuruşu mikro düzeyde yönetmekten kaçının."
+        },
+        "reversed": {
+          "general": "Kontrolü kaybettiğinizi mi hissediyorsunuz? Artık kontrolü yeniden ele alma zamanı. Karar verme becerilerinize olan güveninizi yavaş yavaş geri kazanmak için küçük, ulaşılabilir hedefler belirleyerek başlayın.",
+          "love": "İlişkilerinizde liderlik etmek yerine takipçi bir rol üstlendiğinizi fark ederseniz, sorumluluktan neden kaçındığınızı düşünün. Dinamikleri dengelemek için ihtiyaçlarınızı ve isteklerinizi daha iddialı bir şekilde ifade edin.",
+          "career": "İş yerinde, sanki sadece başkalarının emirlerini yerine getiriyormuşsunuz gibi kendinizi kenara itilmiş hissedebilirsiniz. Fikirlerinizi açıkça dile getirin ve yeteneklerinizi sergilemek için daha özerk projeler arayın.",
+          "finance": "Finansal sorumluluklarınızı başkalarına devrettiyseniz, artık daha aktif bir rol üstlenme zamanıdır. Finansal hedeflerinizi gözden geçirip yeniden belirleyerek, kişisel değerleriniz ve ihtiyaçlarınızla uyumlu olduklarından emin olun."
+        }
+      }
+    },
+    {
+      "id": 57,
+      "name": "Kılıç Sekizlisi",
+      "image": "swords_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Artık mevcut durumunuza hizmet etmeyen alışkanlıklarınızın sizi kapana kısmış hissettirebileceğini kabul edin. Eski kalıplardan kurtulmanın ve zorluklara yeni bakış açılarıyla yaklaşmanın zamanı geldi.",
+          "love": "Bir zamanlar işe yarayan iletişim yöntemleri artık sürtüşmelere neden olabilir. Partnerinizle iletişim kurmak ve çatışmaları çözmek için yeni yöntemler benimsemek çok önemlidir.",
+          "career": "İş yerinde geleneksel yaklaşımlar başarısız oluyorsa, yenilikçi çözümleri değerlendirin. Uyum sağlayın ve mesleki engelleri aşmak için yeni beceriler veya stratejiler öğrenmeye açık olun.",
+          "finance": "Her zamanki finansal stratejileriniz şu anda eskisi kadar etkili olmayabilir. Mevcut bütçe ve yatırım yöntemlerinizi değerlendirin ve finansal hedeflerinize daha iyi uyum sağlamak için bunları ayarlamaya hazır olun."
+        },
+        "reversed": {
+          "general": "Değişime direnmek ve eski yöntemlere bağlı kalmak, yarardan çok zarar getiriyor olabilir. Esnekliği benimseyin ve değişen koşullara uyum sağlamaya izin verin.",
+          "love": "Romantizmde, inatla kendi yoluna devam etmek aranızda mesafe yaratabilir. İlişkinizin dinamiklerini düşün ve bağınızı güçlendirmek için gerekli değişiklikleri yapmaya hazır ol.",
+          "career": "İş yerinde etkisiz taktiklere ısrar etmek, tükenmişliğe ve fırsatların kaçırılmasına yol açabilir. Geri bildirimleri dinleyin ve daha iyi sonuçlar elde etmek için yaklaşımınızı revize etmeye hazır olun.",
+          "finance": "Eski finansal planlara aşırı bağlı kalmak kayıplara yol açabilir. Finansal durumunuzu yeniden değerlendirmenin ve yeni gelir ve yatırım yolları düşünmenin zamanı geldi."
+        }
+      }
+    },
+    {
+      "id": 58,
+      "name": "Kılıç Dokuzlusu",
+      "image": "swords_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Hayattaki her şeyin sizin kontrolünüz altında olmadığını kabul edin. Sonuçları kontrol etme dürtüsünden vazgeçin ve bunun yerine uyum sağlamaya ve esnek bir şekilde tepki vermeye odaklanın.",
+          "love": "İlişkilerde, diğer kişinin duygularını veya eylemlerini kontrol edemeyeceğinizi kabul edin. Anlayış ve uyum geliştirmeye odaklanın, ilişkinin doğal bir şekilde gelişmesine izin verin.",
+          "career": "Kariyerinizde, beklenmedik değişikliklerin olabileceğini ve olacağını kabul edin. Çok yönlü olun ve beklenmedik bir şekilde ortaya çıkabilecek yeni yöntemlere veya yollara açık olun.",
+          "finance": "Finansal piyasaların öngörülemez olduğunu kabul edin. Piyasayı zamanlamaya çalışmak yerine, farklı finansal koşullara dayanabilecek çeşitlendirilmiş bir portföy oluşturmaya odaklanın."
+        },
+        "reversed": {
+          "general": "Kabul etmekte zorlanmak kargaşaya yol açabilir. İlerlemek için, öncelikle durumla ilgili duygularınızı kabul edin ve ardından anlamaya ve kabullenmeye çalışın.",
+          "love": "İlişkilerinizde uyumsuzluk hissediyorsanız, sorunlarınızı doğrudan ele almanın zamanı gelmiştir. Endişelerinizi açıkça dile getirin ve uyumsuzluğun kökenini anlamaya çalışın.",
+          "career": "İş yerinde sıkışmış veya haksız muamele görmüş hissetmek moral bozucu olabilir. Bu sorunları çözmek için, rolünüzle ilgili açıklığa kavuşturma istemek veya endişelerinizi bir üstünüzle görüşmek gibi, uygulanabilir adımlar atın.",
+          "finance": "Finansal kayıpları kabul etmekte zorlanmak daha fazla strese yol açabilir. Bütçenizi ayarlamak veya istikrarı yeniden kazanmak için finansal danışmanlık almak gibi kontrol edebileceğiniz şeylere odaklanın."
+        }
+      }
+    },
+    {
+      "id": 59,
+      "name": "Kılıç Onlusu",
+      "image": "swords_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Kabul etmesi zor ancak büyüme için gerekli olan önemli bir son veya kayıpla karşı karşıyasınız. Duygularınızı kabul edin ve kendinize yas tutma izni verin, ancak bu sonun yer açtığı yeni olasılıkları da dört gözle bekleyin.",
+          "love": "Bir ilişki sona eriyor veya ciddi bir engelle karşılaşıyor olabilir. Zorlu konuşmalara yol açsa bile, duygularınızı ve ihtiyaçlarınızı açıkça ifade etmek önemlidir. Bu durumun size aşk ve ilişkiler hakkında ne gibi dersler verebileceğini düşünün.",
+          "career": "Bir proje veya kariyer yolu beklenmedik ve ani bir sonla karşılaşmış olabilir. Gelecekte benzer hataları tekrarlamamak için neyin işe yaramadığını ve nedenini düşünün. Bunu, profesyonel olarak atacağınız sonraki adımlara rehberlik edecek bir öğrenme deneyimi olarak kullanın.",
+          "finance": "Finansal bir aksilik veya kayıp ile karşı karşıya kalabilirsiniz. Finansal planlarınızı gözden geçirmek ve bütçenizi yeniden yapılandırmak çok önemlidir. Anlık kazançlar yerine uzun vadeli finansal güvenliğe odaklanın."
+        },
+        "reversed": {
+          "general": "Artık geçerli olmayan, kendine zarar veren bir yolu veya planı terk etmenin gerekliliğini fark ediyorsunuz. Acı verici olsa da, kayıplarınızı azaltıp yolunuza devam etme kararı alın, çünkü bu daha sağlıklı sonuçlar doğuracaktır.",
+          "love": "Mevcut ilişki modelini sürdürmenin boşuna olduğunu fark edebilirsiniz. Büyüme imkansız görünüyorsa, dinamikleri değiştirme veya yollarınızı ayırma zamanı gelmiştir. Bu zor seçim, nihayetinde duygusal sağlığınıza fayda sağlayacaktır.",
+          "career": "Belirli bir kariyer yolunun veya işin size uygun olmadığını fark ettiniz. Becerileriniz ve tutkularınızla daha uyumlu alternatifleri aktif olarak arayın. Vazgeçmek, daha tatmin edici bir profesyonel yaşam bulmanın ilk adımıdır.",
+          "finance": "Mevcut finansal stratejilerinizin işe yaramadığını anlıyorsunuz. Yaklaşımınızı değiştirmek için proaktif adımlar atın, örneğin bir finans danışmanından tavsiye alın veya bilinçli kararlar almak için finansal okuryazarlığa yatırım yapın."
+        }
+      }
+    },
+    {
+      "id": 60,
+      "name": "Kılıç Prensi",
+      "image": "swords_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Zihninizde filizlenen yeni fikirleri kucaklayın; bunlar, doğru şekilde beslenirse büyüyebilecek değişim tohumlarıdır. Bu düşünceleri derinlemesine düşünün ve gelecekteki hedeflerinizle uyumlu olup olmadıklarına karar verin. Bu fikirleri gerçeğe dönüştürmek için harekete geçmek gerekir.",
+          "love": "İlişkinizdeki iletişim, yeni bakış açıları getirebilir. Partnerinizle yeni fikirleri ve gelecek planlarını tartışın, ikinizin de düşüncelerinizi ifade edebileceğiniz bir alan olduğundan emin olun. Bu açıklık, daha derin bir anlayış ve bağlılığa yol açabilir.",
+          "career": "İş yerinde yeni bir proje veya konsept dikkatinizi çekebilir. Bu konuyu daha ayrıntılı olarak araştırmak için inisiyatif alın, örneğin bir toplantıda fikirlerinizi sunun veya ekibinizle paylaşmak üzere bir ön plan hazırlayın. Proaktif yaklaşımınız size yeni kariyer fırsatları sunabilir.",
+          "finance": "Etrafınızda finansal fırsatlar filizleniyor. Devam etmeden önce bu fikirleri dikkatlice inceleyin. Yeni bir yatırım yapmayı düşünmek veya varlıklarınızı çeşitlendirmek için doğru zaman olabilir, ancak riskleri azaltmak için kapsamlı bir araştırma yapın."
+        },
+        "reversed": {
+          "general": "Zihninizde filizlenen yeni fikirleri kucaklayın; bunlar, doğru şekilde beslenirse büyüyebilecek değişim tohumlarıdır. Bu düşünceleri derinlemesine düşünün ve gelecekteki hedeflerinizle uyumlu olup olmadıklarına karar verin. Bu fikirleri gerçeğe dönüştürmek için harekete geçmek gerekir.",
+          "love": "İlişkinizdeki iletişim, yeni bakış açıları getirebilir. Partnerinizle yeni fikirleri ve gelecek planlarını tartışın, ikinizin de düşüncelerinizi ifade edebileceğiniz bir alan olduğundan emin olun. Bu açıklık, daha derin bir anlayış ve bağlılığa yol açabilir.",
+          "career": "İş yerinde yeni bir proje veya konsept dikkatinizi çekebilir. Bu konuyu daha ayrıntılı olarak araştırmak için inisiyatif alın, örneğin bir toplantıda fikirlerinizi sunun veya ekibinizle paylaşmak üzere bir ön plan hazırlayın. Proaktif yaklaşımınız size yeni kariyer fırsatları sunabilir.",
+          "finance": "Etrafınızda finansal fırsatlar filizleniyor. Devam etmeden önce bu fikirleri dikkatlice inceleyin. Yeni bir yatırım yapmayı düşünmek veya varlıklarınızı çeşitlendirmek için doğru zaman olabilir, ancak riskleri azaltmak için kapsamlı bir araştırma yapın."
+        }
+      }
+    },
+    {
+      "id": 61,
+      "name": "Kılıç Şövalyesi",
+      "image": "swords_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Şimdi planlarınızı sağlamlaştırmanın ve net bir yön belirleyerek ilerlemenin tam zamanı. Hayatınızda meydana gelen değişiklikleri değerlendirin, bunların faydalarını fark edin ve bu anlayışı kullanarak bir sonraki adımlarınızı güvenle atın.",
+          "love": "İlişkilerde, son zamanlarda edindiğiniz içgörüler sizi daha derin bağlara yönlendirebilir. Gelecekle ilgili vizyonlarınızı açıkça paylaşın ve bunları uygulanabilir planlara dönüştürmek için partnerinizle birlikte çalışın.",
+          "career": "Kariyerinizde yeni kazandığınız netliği kullanın. Hedeflerinizi ve bu hedeflere ulaşmak için gerekli adımları belirleyin. Uzun vadeli hedeflerinizle uyumlu fırsatları kararlı ve proaktif bir şekilde takip edin.",
+          "finance": "Finansal açıdan, gelişmiş anlayışınızı kullanarak sağlam bir plan oluşturun. Geleceği göz önünde bulundurarak, revize ettiğiniz inanç ve hedeflerinize uygun yatırımları dikkate alarak bütçe oluşturun. Planınıza sadık kalın, ancak değişime uyum sağlayın."
+        },
+        "reversed": {
+          "general": "Şimdi planlarınızı sağlamlaştırmanın ve net bir yön belirleyerek ilerlemenin tam zamanı. Hayatınızda meydana gelen değişiklikleri değerlendirin, bunların faydalarını fark edin ve bu anlayışı kullanarak bir sonraki adımlarınızı güvenle atın.",
+          "love": "İlişkilerde, son zamanlarda edindiğiniz içgörüler sizi daha derin bağlara yönlendirebilir. Gelecekle ilgili vizyonlarınızı açıkça paylaşın ve bunları uygulanabilir planlara dönüştürmek için partnerinizle birlikte çalışın.",
+          "career": "Kariyerinizde yeni kazandığınız netliği kullanın. Hedeflerinizi ve bunları gerçekleştirmek için gerekli adımları belirleyin. Uzun vadeli hedeflerinizle uyumlu fırsatları kararlı ve proaktif bir şekilde takip edin.",
+          "finance": "Finansal açıdan, gelişmiş anlayışınızı kullanarak sağlam bir plan oluşturun. Geleceği göz önünde bulundurarak, revize ettiğiniz inanç ve hedeflerinize uygun yatırımları dikkate alarak bütçe oluşturun. Planınıza sadık kalın, ancak değişime uyum sağlayın."
+        }
+      }
+    },
+    {
+      "id": 62,
+      "name": "Kılıç Kraliçesi",
+      "image": "swords_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Mevcut ortamınızda gerçek benliğinizi kucaklayın, çünkü burası sizin olmanız gereken yerdir. Hem güçlü yanlarınızı hem de zayıf yanlarınızı kabul edin ve bu öz farkındalığı kararlarınızı ve etkileşimlerinizi yönlendirmek için kullanın.",
+          "love": "İlişkilerde, kendin olmak en büyük varlığın. İhtiyaçlarını ve isteklerini açıkça dile getir ve aynı şekilde partnerine de kendisi olabilmesi için alan tanı.",
+          "career": "Benzersiz becerileriniz ve kişisel özellikleriniz iş yerinizde çok önemlidir. Bireyselliğinizi kullanarak öne çıkın ve görevleri stratejik bir şekilde ele alın, güçlü yönlerinizi kullanın.",
+          "finance": "Finansal istikrar, harcama alışkanlıklarınızı ve finansal hedeflerinizi anlamaktan geçer. Bütçenizi kişisel değerlerinizle uyumlu hale getirin ve gerçek kişiliğinizi yansıtan bir denge kurmaya çalışın."
+        },
+        "reversed": {
+          "general": "Olumsuz özelliklerinizin olumlu özelliklerinizi gölgelemesine izin vermeyin. Bir an durup davranışlarınızı düşünün ve kişisel gelişim ve iyileştirme alanlarını belirleyin.",
+          "love": "Aşkta, çözülmemiş sorunlar, sizin daha az olumlu özelliklerinizi ortaya çıkarabilir. İletişim ve öz farkındalık üzerinde çalışarak, aranızdaki sorunları giderin ve daha sağlıklı bir ilişki dinamiği oluşturun.",
+          "career": "Olumsuzluklar iş hayatınıza sızıyorsa, bu durumu düzeltmek için harekete geçin. Davranışlarınızın iş arkadaşlarınızı ve çalışma ortamınızı nasıl etkilediğini düşünün ve olumlu değişiklikler yapmaya çalışın.",
+          "finance": "Finansal kararlarınız, dürtüsel veya olumsuz alışkanlıkların etkisinde kalabilir. Finansal durumunuzu değerlendirin ve zarar görmekten kaçınmak ve geleceğinizi güvence altına almak için bilinçli ve özenli kararlar alın."
+        }
+      }
+    },
+    {
+      "id": 63,
+      "name": "Kılıç Kralı",
+      "image": "swords_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "kılıçlar",
+      "element": "hava",
+      "meanings": {
+        "upright": {
+          "general": "Kılıçların Kralı'nın söylediği gibi, gerçek benliğinizi kucaklayın, çünkü özgünlük sizin gücünüzdür. Hayatı daha etkili bir şekilde yönlendirmek için hem güçlü yanlarınızı hem de zayıf yanlarınızı kabul edin.",
+          "love": "İlişkilerde, Kılıçların Kralı gibi dürüst ve açık olun. Net iletişim, bağlarınızı güçlendirecek ve yanlış anlaşılmaları önleyecektir.",
+          "career": "İş yerinde etkili kararlar almak için zekanızı ve kararlılığınızı kullanın. Netliğiniz ve adil davranışlarınız ekibinizi başarıya ulaştırabilir ve mesleki çevrenizde saygı kazanmanızı sağlayabilir.",
+          "finance": "Finansal durumunuza stratejik bir yaklaşım uygulayın. Yatırımlarınızın ve birikimlerinizin akıllıca yönetilmesini sağlamak için, Kılıçların Kralı gibi, iyi bilgilendirilmiş kararlar alın."
+        },
+        "reversed": {
+          "general": "Olumsuz özelliklerinizin potansiyelinizi gölgelemesine izin vermeyin. Öz farkındalığınızı geliştirin ve inatçılık veya olumsuzluk içinde kararlar almaktan kaçının.",
+          "love": "Romantik ortamlarda, kendinizi haksız sertlik veya eleştirel davranışlar açısından kontrol edin. Uyumu korumak için partnerinize karşı anlayışlı ve sabırlı olmaya çalışın.",
+          "career": "İş yerinde aşırı katı veya otoriter davranmaktan kaçının. Esnek bir yaklaşım ve başkalarının fikirlerine açık olmak, daha iyi işbirlikleri ve fırsatlar yaratacaktır.",
+          "finance": "Olumsuz bir zihniyetten kaynaklanabilecek dürtüsel finansal kararlar almaktan kaçının. Potansiyel riskleri iyice değerlendirmek için zaman ayırın ve gerekirse tavsiye alın."
+        }
+      }
+    },
+    {
+      "id": 64,
+      "name": "Tılsım Ası",
+      "image": "pentacles_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Bu, fırsatların ve refahın yeşerdiği bir dönemdir. Büyümeye odaklanın ve çevrenizdeki pozitif enerjiyi yakalayın. Zorlu projelerle veya çözülmemiş sorunlarla başa çıkmak için elverişli bir dönemdir.",
+          "love": "Aşk hayatında şans senin yanında. Bekar ya da bir ilişkide ol, anlamlı sohbetler başlat ya da daha derin bir bağlılık için adımlar at. Kalbinle tam olarak bağlan ve bağlantıların çiçek açmasını izle.",
+          "career": "Mesleki kariyeriniz potansiyel ile parlıyor. Yeni projelerde inisiyatif alın veya terfi arayışına girin. Çabalarınız muhtemelen başarı ile sonuçlanacak, bu nedenle bu dönemi iddialı kariyer hedefleri belirlemek için kullanın.",
+          "finance": "Finansal fırsatlar olgunlaşmış durumda. Yatırım yapmayı veya birikimlerinizi artırmayı düşünün. Getirinizi en üst düzeye çıkarmak için finansal portföyünüzü gözden geçirmek ve muhtemelen çeşitlendirmek için ideal bir zaman."
+        },
+        "reversed": {
+          "general": "Aşırı materyalist olmaya veya refahı değil zenginliği önceliklendirmeye dikkat edin. Denge çok önemlidir; sadece maddi kazançlara değil, duygusal ve ruhsal sağlığınıza da özen gösterin.",
+          "love": "Finansal odaklanma, ilişkilerinizi gölgede bırakıyor olabilir. Önceliklerinizi yeniden değerlendirin ve duygusal bağlar için yer açın. Unutmayın, zenginlik sadece parayla ilgili değil, aynı zamanda sevgi ve arkadaşlığın zenginliğiyle de ilgilidir.",
+          "career": "Mesleki motivasyonunuz tükenmişlik veya memnuniyetsizliğe yol açıyor olabilir. Bir adım geri atarak hedeflerinizi yeniden değerlendirin. İşinizin değerlerinizle uyumlu olduğundan ve maddi kazançların ötesinde bir tatmin sağladığından emin olun.",
+          "finance": "Kısa vadeli kazanç odaklılık nedeniyle finansal fırsatları yanlış değerlendirme riski vardır. Yeni finansal girişimlerde dikkatli olun ve uzun vadede pişmanlık yaratabilecek kararlar almamak için tavsiye alın."
+        }
+      }
+    },
+    {
+      "id": 65,
+      "name": "Tılsım İkilisi",
+      "image": "pentacles_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Çeşitli seçenekler arasında gidip geliyorsunuz, ancak hiçbiri ideal görünmüyor. Yolunuzu netleştirmek için, her seçeneğin artılarını ve eksilerini listeleyin, böylece hangisinin hedeflerinize daha uygun olduğunu daha iyi görebilirsiniz.",
+          "love": "İlişki seçimlerinde kararsız hissetmek, bir adım geri çekilip gerçek arzularınızı değerlendirmenin zamanı geldiğinin bir işareti olabilir. Potansiyel veya mevcut partnerlerinizle açık bir diyalog kurarak, bir ilişkiden gerçekten ne beklediğinizi keşfedin.",
+          "career": "İşinizde, çelişkili görevler veya projelerle karşılaşabilirsiniz. Görevlerinizi son teslim tarihine ve önemine göre öncelik sırasına koyun ve iş yükünüzü etkili bir şekilde yönetmek için tavsiye almaktan veya görevleri delege etmekten çekinmeyin.",
+          "finance": "Önünüzde birçok finansal fırsat veya zorluk varken, dengeli bir bütçe sürdürmek çok önemlidir. Gelir ve giderlerinizi dikkatlice takip edin ve daha net bir genel bakış elde edene kadar finansal olarak aşırı taahhütlerde bulunmaktan kaçının."
+        },
+        "reversed": {
+          "general": "Önemli kararları veya görevleri ertelemek strese neden olur. Görevlerinizi yönetilebilir adımlara bölün ve gelecekte sorun yaşamamak için her birine bir son tarih belirleyin.",
+          "love": "İlişki sorunlarını ele almaktan kaçınmak, daha derin sorunlara yol açabilir. İletişimde proaktif olun ve sorunlar ortaya çıktıkça bunları çözerek daha da kötüleşmelerini önleyin.",
+          "career": "İş yerinde tamamlanmamış projeler birikiyor. Bu görevleri tek tek ele almak için yapılandırılmış bir plan oluşturun ve tamamlanmaya en yakın veya en kritik olanlara öncelik verin.",
+          "finance": "Finansal yükümlülüklerin ertelenmesi, daha büyük borçlara veya sorunlara yol açabilir. Borçları ödemek veya finansal sorumlulukları bir programa göre yerine getirmek için bir plan oluşturun ve komplikasyonları önlemek için tutarlılık sağlayın."
+        }
+      }
+    },
+    {
+      "id": 66,
+      "name": "Tılsım Üçlüsü",
+      "image": "pentacles_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Çabalarınız meyve vermeye başlıyor ve takım çalışması ile planlamanın faydalarını ortaya koyuyor. Gördüğünüz sonuçlara göre işbirliğine devam edin ve stratejilerinizi geliştirin. Yapıcı geri bildirimler ve sürekli iyileştirme için en uygun zaman.",
+          "love": "İlişkinizde, yeni dinamiklerin etkileşiminizi nasıl şekillendirdiğini gözlemleyin. Gözlemlerinizi ve duygularınızı ileterek ilişkinizin gelişimini şekillendirme sürecine aktif olarak katılın. Birlikte inşa ettiğiniz temeli sağlamlaştırmanın zamanı geldi.",
+          "career": "Mesleki becerileriniz takdir ediliyor, bu da etkinizi genişletmek için ideal bir an. Meslektaşlarınızla daha fazla iletişim kurun ve katkılarınız hakkında geri bildirim alın. Uzmanlığınızın karşılıklı başarıya yol açabileceği projeler arayın.",
+          "finance": "Finansal planlamanızın meyveleri görülmeye başlıyor. Yatırımlarınızı izlemeye devam edin ve mevcut başarılarınıza göre bütçenizi ayarlayın. Bu ivmeden yararlanmak için karınızı yeniden yatırmayı düşünün."
+        },
+        "reversed": {
+          "general": "Eleştirel değerlendirmelerden kaçınmak ilerlemenizi engelliyor. Durumunuzun gerçekleriyle yüzleşin ve planlarınızı buna göre ayarlayın. Harekete geçmeden beklemek, iyileşmeye yol açmayacaktır.",
+          "love": "İlişkilerde sorunları ele almamak durgunluğa yol açabilir. Endişeleri tartışmak ve ikinizin de duruşunu netleştirmek için inisiyatif alın. Sorunları görmezden gelmek onların ortadan kalkmasını sağlamaz.",
+          "career": "Gerekli kariyer kararlarını ertelemek, profesyonel gelişiminizi yavaşlatabilir. Mevcut rolünüzü değerlendirin ve yeni fırsatlar veya becerilerinizi geliştirmek için yollar aramanın zamanı gelip gelmediğine karar verin.",
+          "finance": "Finansal stratejinizi gözden geçirme ve ayarlama konusunda tereddüt etmek, fırsatları kaçırmanıza neden olabilir. Finansal durumunuzu gerçekçi bir şekilde değerlendirin ve istikrar ve büyümeyi sağlamak için gerekli değişiklikleri yapın."
+        }
+      }
+    },
+    {
+      "id": 67,
+      "name": "Tılsım Dörtlüsü",
+      "image": "pentacles_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Şu anda, temel ihtiyaçlarınızı zar zor karşılayabildiğiniz bir dönemden geçiyorsunuz. Şu anda önemli olan, temel görevlere odaklanmak ve istikrarınızı korumaktır. Kaynaklarınızı daha iyi yönetmek için hayatınızı sadeleştirmeyi düşünün.",
+          "love": "İlişkiniz durgunlaşmış, tutku yerine alışkanlıkla devam ediyor gibi hissedebilirsiniz. Ateşi yeniden alevlendirmek için, basit de olsa düzenli ve anlamlı aktiviteler planlayarak bağınızı güçlendirin.",
+          "career": "İşiniz tatmin edici ve tekrarlayıcı gelebilir, büyüme veya yaratıcılık için çok az alan sunabilir. Mevcut görevlerinizde verimliliği önceliklendirin ve enerji sınırlarınız dahilinde mesleki becerilerinizi geliştirmek için küçük, ulaşılabilir yollar arayın.",
+          "finance": "Finansal büyüme şu anda durağan bir seyir izliyor ve gelirler sadece temel ihtiyaçları karşılıyor. Gereksiz harcamalardan kaçınmak ve temel finansal ihtiyaçlarınızı korumak için harcamalarınızı titizlikle takip edin."
+        },
+        "reversed": {
+          "general": "Enerji ve fırsatlar artıyor, bu da olumlu değişikliklerin zamanının geldiğini gösteriyor. Hayatınızın her alanında iyileştirme için yeni ve gerçekçi hedefler belirleyerek bu büyümeyi kucaklayın.",
+          "love": "İlişkilerinizde yeniden ilgi ve enerji var. Bu fırsatı değerlendirerek yeni deneyimleri paylaşın ve duygularınızı daha açık bir şekilde ifade ederek bağlarınızı derinleştirin.",
+          "career": "Kariyeriniz artan potansiyel aşamasına giriyor. İlerleme ve kişisel tatmin sağlayabilecek yeni zorlukları proaktif bir şekilde üstlenin.",
+          "finance": "Mali durumunuz iyileşiyor, bu da güvenli yatırım seçeneklerini değerlendirmeniz veya gelecekteki mali güvenliğiniz için tasarruf yapmaya başlamanız için ideal bir zaman olduğunu gösteriyor. Mali hedeflerinizi değerlendirin ve bu yeni büyümeyi karşılamak için bütçenizi ayarlayın."
+        }
+      }
+    },
+    {
+      "id": 68,
+      "name": "Tılsım Beşlisi",
+      "image": "pentacles_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Mevcut yeteneklerinizin ötesinde görünen zorluklar karşısında kendinizi çaresiz hissedebilirsiniz, bu da stratejilerinizi yeniden değerlendirmeniz gerektiğini gösterir. Körü körüne ilerlemek yerine, bir adım geri atın ve bu engelleri aşmak için daha yönetilebilir bir yaklaşım planlayın.",
+          "love": "İlişkilerde, kaldırabileceğinizden fazlasını üstlenmek memnuniyetsizliğe yol açabilir. Partnerinizle mevcut sorunlarınız hakkında açıkça iletişim kurun ve anında bir çözüm beklemek yerine, birlikte gerçekçi bir yol bulmaya çalışın.",
+          "career": "İş yerinde, mevcut becerilerinizin ötesinde görevlerle karşı karşıya kalabilirsiniz. Bu farkı kabul etmek ve sessizce mücadele etmek veya başarısızlık riskine girmek yerine rehberlik veya ek eğitim almak çok önemlidir.",
+          "finance": "Finansal açıdan, bu dönemde aceleci yatırımlardan ve aşırı harcamalardan kaçınmak gerekir. Hızlı kazanç vaat eden yüksek riskli fırsatların peşinden koşmak yerine, bütçe planlamasına ve bir güvenlik ağı oluşturmaya odaklanın."
+        },
+        "reversed": {
+          "general": "Karamsar bir bakış açısı, karar verme yeteneğinizi gölgeleyebilir ve ilerlemenizi engelleyebilir. Mevcut durumunuzun olumlu yönlerini belirlemeye çalışın ve buradan yola çıkarak, eksiklik odaklı düşünme alışkanlığınızı kırın.",
+          "love": "Aşkta, sadece olumsuzluklara odaklanmak ilişkileri sabote edebilir. Partnerinizin size kattıklarını takdir etmeye çalışın ve minnettarlığınızı ifade edin, bu ilişkinizin dinamiklerini değiştirebilir.",
+          "career": "İş yerinde sürekli olarak değersiz hissediyorsanız, bakış açınızı değiştirmenin zamanı gelmiş olabilir. Katkılarınıza odaklanın ve nasıl gelişebileceğinizi ve takdir edilebileceğinizi anlamak için geri bildirim alın.",
+          "finance": "Finansal açıdan, eksikliklerinize odaklanmak, mevcut fırsatları fark etmenizi engelleyebilir. Zihniyetinizi mevcut kaynaklarınızla neler başarabileceğinize kaydırın ve durumunuzu iyileştirmek için küçük, bilinçli finansal kararlar almaya başlayın."
+        }
+      }
+    },
+    {
+      "id": 69,
+      "name": "Tılsım Altılısı",
+      "image": "pentacles_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Bu, geçmişteki çabalarınızı gelecekteki başarılarınız için değerlendirmek için çok önemli bir andır. Size sunulan fırsatları fark edin ve değerlendirin; bunlar geçmişteki gayretlerinizin karşılığıdır. Bu elverişli dönemi en iyi şekilde değerlendirmek için kararlı bir şekilde hareket edin.",
+          "love": "İlişkilerde, bu dönemde partnerinizin çabalarını takdir etmenin ve karşılığını vermenin zamanıdır. Dengeli bir karşılıklı alışveriş şu anda çok önemlidir. Bekarsanız, duygusal olarak cömert davranın, çünkü bu anlamlı bir bağ kurmanıza yardımcı olabilir.",
+          "career": "Sıkı çalışmanız sayesinde kariyerinizde bir ilerleme söz konusu. Karşınıza çıkan yeni sorumlulukları veya projeleri kabul edin, çünkü bunlar daha büyük başarılara ulaşmanın basamaklarıdır. Fırsatlar ortaya çıktığında yeteneklerinizi gösterin.",
+          "finance": "Mali açıdan, kendinizi ya borç verecek ya da akıllıca yatırım yapacak bir konumda bulabilirsiniz. Paranızı nerede ve nasıl kullanacağınızı dikkatlice seçin, paranızın değer kazanabileceği veya anlamlı bir şeye katkıda bulunabileceği alanlara odaklanın."
+        },
+        "reversed": {
+          "general": "Odak noktanız çok dar olabilir ve bu da alternatif çözümleri veya yolları gözden kaçırmanıza neden olabilir. Karar vermeden önce bakış açınızı genişletin ve mevcut tüm seçenekleri değerlendirin. Esnek olmak, daha kapsamlı bir başarıya yol açabilir.",
+          "love": "İlişkilerde, belirli bir sonuca veya etkileşim biçimine takıntılı olmak sınırlayıcı olabilir. Yeni bağlantı kurma ve sorunları çözme yollarına kendinizi açın. Partnerinizin ihtiyaçlarını ve önerilerini aktif olarak dinleyin.",
+          "career": "Tek bir kariyer hedefine veya yönteme takılıp kalmak kısıtlayıcı olabilir. İş yerinde çeşitli fırsatları veya yaklaşımları keşfetmeye açık olun. Farklı senaryolara veya iş rollerine uyum sağlamak, sandığınızdan daha faydalı olabilir.",
+          "finance": "Finansal açıdan, tüm kaynaklarınızı tek bir yere veya projeye yatırmaktan kaçının. Yatırımlarınızı çeşitlendirin ve farklı finansal stratejileri keşfetmeye açık olun. Bu esneklik, varlıklarınızı korumaya ve getirinizi en üst düzeye çıkarmaya yardımcı olabilir."
+        }
+      }
+    },
+    {
+      "id": 70,
+      "name": "Tılsım Yedilisi",
+      "image": "pentacles_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Mevcut durumunuzdaki büyüme potansiyelini fark edin. Sabır ve sürekli çaba göstermeniz çok önemlidir, çünkü duygusal, fiziksel veya finansal olsun, yaptığınız yatırımlar meyvesini vermek üzere. Planlarınızı özenle beslemeye devam edin.",
+          "love": "İlişkilerde, bu dönem besleme ve sabır zamanıdır. Bağınızı bir bahçe gibi yetiştirin, büyümesine ve gelişmesine ihtiyaç duyduğu zamanı tanıyın. Küçük, tutarlı nezaket ve anlayış gösterileri uzun vadede ödüllendirilebilir.",
+          "career": "Kariyerinizde çabalarınızın meyvesini almak üzeresiniz. Anlık tatminlere değil, uzun vadeli hedeflere odaklanmaya devam edin. Projelerinize bağlı kalın, emeklerinizin karşılığını yakında göreceksiniz.",
+          "finance": "Bu, finansal kazançlar için umut verici bir dönemdir, ancak harcamalarınıza dikkat edin. Kısa vadeli arzularınıza kapılmak yerine, uzun vadeli finansal sağlığınıza yatırım yapmaya devam edin. Yatırımlarınızı değerlendirerek, finansal hedeflerinizle uyumlu olduklarından emin olun."
+        },
+        "reversed": {
+          "general": "Yeni bir zorluklarla karşı karşıya kalarak kendinizi bunalmış hissedebilirsiniz. Bunu kalıcı bir aksilik olarak değil, bir uyum aşaması olarak görmek önemlidir. Başarılı bir şekilde uyum sağlamak için içsel engelleri anlamaya ve aşmaya odaklanın.",
+          "love": "Aşkta, içinde bulunduğunuz ilişkiye layık olmadığınızı hissedebilir ve bu da çatışmalara yol açabilir. Partnerinizle güvensizlikleriniz hakkında açıkça iletişim kurun ve ilişkiniz için daha güvenli bir temel oluşturmak için birlikte çalışın.",
+          "career": "İş yerinde yeteneklerinizden şüphe duyuyor ve kendi başarınızı sabote ediyor olabilirsiniz. Korkularınızı kabul edin, ancak sorumluluklarınızı yerine getirmeye kararlı olun. Güveninizi ve performansınızı artırmak için geri bildirim ve mentorluk desteği alın.",
+          "finance": "Deneyimsizlik veya aşırı özgüven nedeniyle yeni finansal fırsatları yanlış yönetme riski vardır. Bir adım geri atarak finansal stratejilerinizi değerlendirin ve gerekirse tavsiye alın. Düşüncesiz harcamalardan kaçının ve istikrarlı bir finansal temel oluşturmaya odaklanın."
+        }
+      }
+    },
+    {
+      "id": 71,
+      "name": "Tılsım Sekizlisi",
+      "image": "pentacles_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Bu, gerçek tutkunuzun peşinden gitme zamanıdır. Tanıdık olanı bırakın ve yeni bir fırsatı kucaklayın, bu bilinmeyene adım atmak anlamına gelse bile. Yön değiştirmeye hazır olmanız cesaret gösterir ve yeni olasılıklara kapı açar.",
+          "love": "Kalp meselelerinde, gerçek ruh eşini aramak için çıkar ilişkilerinin ötesine geçmeyi düşünün. Bu, sizi duygusal olarak tatmin etmeyen mevcut ilişkinizi sonlandırmanızı gerektirebilir. Gerçek bir bağ kurmak için bu adımı atın.",
+          "career": "Önemli bir kariyer fırsatı ufukta görünüyor, ancak bunun için mevcut işinizden ayrılmanız gerekiyor. Bu fırsatı dikkatlice değerlendirin, ardından uzun vadeli hedeflerinize daha uygun bir rolü kabul etmek için kararlı bir şekilde harekete geçin.",
+          "finance": "Yeni bir finansal fırsat, yatırımlarınızı yeniden düşünmenizi veya bir girişim başlatmanızı gerektiriyor. Kapsamlı bir araştırma yapın ve kaynaklarınızı daha umut verici alanlara kaydırmaya hazırlanın. İlerlerken, ilgili riskleri anladığınızdan emin olun."
+        },
+        "reversed": {
+          "general": "Hayallerinin peşinden gitmekte tereddüt etmek, fırsatları kaçırmana ve gelecekte pişmanlık duymana neden olabilir. Bundan ders al ve bir dahaki sefere cesurca harekete geçmeye hazırlan. Bunu, korkularınla yüzleşmek ve onları yenmek için bir itici güç olarak gör.",
+          "love": "Daha derin ve anlamlı ilişkiler kurma çağrısını görmezden gelmek, başkalarının mutluluğu bulurken sizin yerinde saymanıza neden olabilir. Kalbinizin gerçekten arzuladığı şeye daha yakın olma fırsatını kaçırdığınızı düşünün ve gelecekteki karşılaşmalarda farklı davranmaya hazır olun.",
+          "career": "Kariyerinizde risk almayarak, başarabileceğiniz bir pozisyonda başka birinin ilerlemesini izlemek zorunda kalabilirsiniz. Bu durumu, ne kadar zor görünürse görünsün, bir sonraki fırsatı değerlendirmek için motivasyon kaynağı olarak kullanın.",
+          "finance": "Şu anda finansal risk almaktan kaçınırsanız, ileride daha zorlu bir yolla karşı karşıya kalabilirsiniz. Yaklaşan finansal zorlukları esnek bir şekilde aşmaya hazırlanın ve geçmişteki tereddütlerinizden ders alarak daha güçlü bir finansal strateji oluşturun."
+        }
+      }
+    },
+    {
+      "id": 72,
+      "name": "Tılsım Dokuzlusu",
+      "image": "pentacles_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Hayatınızdaki dengeli enerji akışını kucaklayın ve günlük aktivitelerinizde bu enerjiyi akıllıca kullanın. Şu anda sahip olduğunuz bolluk ve sağlık için şükran duyun. Bu memnuniyet, daha fazla olumlu sonuçlar doğuracaktır.",
+          "love": "Sizin ve partnerinizin birbirinize çok uygun olduğunuzu fark ederek, ilişkilerinizdeki uyumu değer verin ve besleyin. Bu mutluluk dolu durumu sürdürmek için ortak değerlere ve karşılıklı saygıya yatırım yapmaya devam edin.",
+          "career": "Mesleki hayatınız, iyi dağıtılmış enerjinizden faydalanıyor. Becerilerinizi görevler arasında eşit olarak kullanmaya devam edin ve sezgilerinizin sizi yönlendirdiği fırsatları takip edin. Doğru projelere yönelmek için içgüdülerinize güvenin.",
+          "finance": "Kaynakları etkin bir şekilde yönetme beceriniz sayesinde finansal istikrar sağlanmıştır. Harcamalarınızı isteklerinizden ziyade ihtiyaçlarınıza göre düzenlemeye devam edin ve paranın gerekli işler için verimli bir şekilde kullanıldığından emin olun."
+        },
+        "reversed": {
+          "general": "Gerçekten önemli olan şeylerden kopmamak için enerjinizi nereye yönlendirdiğinizi yeniden değerlendirin. Çabalarınızın verimli akışını yeniden kazanmak için başlangıçtaki hedeflerinize yeniden odaklanın.",
+          "love": "Gerçek bir ortaklığa giden yolun büyüme ve tutarlı çaba gerektirdiğini kabul edin. Daha tatmin edici bir ilişkiye doğru ilerlemek için dürüst iletişim ve ortak sorun çözme konusunda kararlı olun.",
+          "career": "Önemli kariyer hedeflerinden dikkatinizi başka yöne çevirmekten kaçının. Daha az önemli görevler yüzünden enerjinizin tükendiğini fark ederseniz, kariyer hedeflerinizi yeniden düzenlemenin zamanı gelmiştir.",
+          "finance": "Paranızı nereye ve nasıl yatıracağınıza dikkat edin. Finansal dikkat dağınıklıklarından kaçının ve bütçenize sadık kalın, kaynak akışını sürdürmek için stratejik finansal planlamaya odaklanın."
+        }
+      }
+    },
+    {
+      "id": 73,
+      "name": "Tılsım Onlusu",
+      "image": "pentacles_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Genel canlılığınız ve kaynaklarınızda bir artış yaşıyorsunuz. Bu artan enerjiyi, uzun vadeli hedeflerinizi sağlamlaştırmak ve günlük rutininizi dengelemek için kullanın. Bu aşamayı, verimli bir hasat sağlayacak bir bahçe dikmek olarak düşünün.",
+          "love": "İlişkilerinizde derin bir bağ ve karşılıklı anlayış hissi vardır. Hayallerinizi ve korkularınızı paylaşmaya devam ederek, sağlam bir ev kadar güvenli hissettiren sağlam bir temel oluşturarak bunu geliştirin.",
+          "career": "Çabalarınızın meyvesini vermesiyle kariyeriniz yükselişte. Enerjinizi anlamlı projelere ve ağ oluşturmaya yeniden yatırarak bundan faydalanın. Altın yumurtlayan tavuğu beslemek gibi, ne kadar çok özen gösterirseniz, o kadar büyük ödüller alırsınız.",
+          "finance": "Finansal durumunuz oldukça iyi. Uzun vadeli yatırımlar yapmayı veya tasarruf stratejinizi geliştirmeyi düşünmek için ideal bir zaman. Finansal durumunuzu iyi yağlanmış bir makine gibi düşünün ve her parçanın daha yüksek verimlilik ve çıktı için çalıştığından emin olun."
+        },
+        "reversed": {
+          "general": "İşler beklenenden daha kolay yolunda gidiyor. Zorluklara yaklaşımınızı basitleştirerek ve küçük başarılarda mutluluk bularak bu kolaylık dalgasını yakalayın. Bunu, yolculuğunuzu daha sorunsuz hale getirmek için tekerlekleri yağlamak olarak düşünün.",
+          "love": "İlişkileriniz, muhtemelen fazla çaba sarf etmeden sorunsuz bir şekilde ilerliyor. İlgi ve katılımınızı sürdürerek bu ivmeyi koruyun. Nazik bir akıntı gibi, etkileşimlerinizin doğal bir şekilde akmasına izin verin ve herhangi bir sonucu zorlamaktan kaçının.",
+          "career": "İşler daha az yorucu ve daha keyifli hale gelir. Bu dönemi, genellikle zor görünen görevleri yerine getirmek ve yeni yöntemler denemek için kullanın. Bisiklet sürerken rüzgârın arkadan esmesi gibi, daha az çabayla daha uzağa gitmek için bunu kullanın.",
+          "finance": "Finansal açıdan, işler minimum çabayla yolunda gidiyor. Otomatik tasarruf veya harcamalarınızı takip etmek gibi kolay ve akıllı taktiklerle finansmanınızı yöneterek bunu sürdürün. Bu, iyi işaretlenmiş bir yolu takip etmek gibidir; finansal yolculuğunuzu öngörülebilir ve güvenli hale getirir."
+        }
+      }
+    },
+    {
+      "id": 74,
+      "name": "Tılsım Prensi",
+      "image": "pentacles_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Değişimin rüzgarlarını, hayatınızda yeni bir başlangıç veya yeni bir yönün habercisi olarak kucaklayın. Şimdi merakınızı besleme ve yeni deneyimlerden öğrenmeye açık olma zamanı. Proaktif olun ve fırsatların sizi bulmasını beklemek yerine, büyüme fırsatlarını arayın.",
+          "love": "İlişkilerinizde, duygularınızı soğutabilecek ya da yeniden alevlendirebilecek değişiklikler bekleyin. İletişim çok önemli olacak; duygularınızı açıkça ifade edin ve partnerinizin de aynısını yapmasını teşvik edin. Bu karşılıklı anlayış, daha derin bir bağ kurmanıza veya gerekli ayarlamaları yapmanıza yol açabilir.",
+          "career": "İş dinamikleri değişiyor ve bu durum yeni roller veya projelerin habercisi olabilir. Uyanık ve esnek olun, uyum sağlama becerinizi ve öğrenme isteğinizi göstermeye hazır olun. Bu proaktif yaklaşım, geçiş dönemlerinde sizi değerli bir varlık haline getirebilir.",
+          "finance": "Finansal açıdan, bu, yatırımlarınızı veya tasarruf stratejilerinizi yeniden değerlendirmek ve potansiyel olarak çeşitlendirmek için uygun bir zamandır. Yeni fırsatları dikkatlice araştırın ve hızlı kazançlar yerine uzun vadeli faydaları göz önünde bulundurun. Bilgili olmak, finansal hedeflerinize uygun kararlar almanıza yardımcı olacaktır."
+        },
+        "reversed": {
+          "general": "Tersine dönse bile, değişim teması devam eder. Tanıdık olana tutunma dürtüsüne direnin ve bunun yerine, değişimi bir büyüme fırsatı olarak kabul edin. Hedeflerinizi yeniden gözden geçirin ve bunları daha etkili bir şekilde gerçekleştirmek için yolunuzu değiştirmeye hazır olun.",
+          "love": "Ters çevrildiğinde, bu kart ilişkilerinizdeki yaklaşımınızı yeniden gözden geçirmenizi tavsiye eder. Enerji seviyeniz düşüyorsa, ortak aktiviteler veya samimi konuşmalarla yeni bir soluk getirin. İlişkinizin gelişmesi için hangi kalıpların yenilenmesi gerektiğini fark edin.",
+          "career": "Kariyer açısından, tersine dönüş stratejik bir yeniden düşünme ihtiyacını işaret eder. Kendinizi durgun hissediyorsanız, aktif olarak eğitim veya yeni zorluklar arayın. Kariyer gelişiminizi destekleyebilecek konumdaki kişilere hedeflerinizi net bir şekilde belirtin.",
+          "finance": "Bu durumda finansal açıdan dikkatli olunması tavsiye edilir. Zaman ayırarak finansal planlarınızı gözden geçirin ve gerekirse yeniden düzenleyin. Düşüncesiz kararlar vermekten kaçının, bunun yerine dikkatli ve iyi araştırılmış seçimler yaparak ekonomik istikrarınızı sağlamaya odaklanın."
+        }
+      }
+    },
+    {
+      "id": 75,
+      "name": "Tılsım Şövalyesi",
+      "image": "pentacles_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Tutarlı çabalarınızın meyvesini almaya başladığınız bir aşamadayız. Küçük, istikrarlı adımların gözle görülür ilerlemelere yol açtığı bu dönemde, hedeflerinize aynı özveriyle enerji harcamaya devam edin. İlerlemenizi düzenli olarak takip ederek yolunuzdan sapmayın ve gerektiğinde değişiklikler yapın.",
+          "love": "İlişkilerinizde iletişim ve bağlılık olumlu etkilerini gösteriyor. Partnerinizle daha sıcak ve daha samimi bir atmosfer fark ediyorsanız, bunu zaman ve ilgiyle beslemeye devam edin. Aşkı arayanlar, samimi ilginizi gösterin ve çabalarınızda tutarlı olun.",
+          "career": "İşinizdeki özveriniz somut sonuçlar veriyor. Şimdi, sonuçları değerlendirmek ve sonraki adımlarınızı planlamak için iyi bir zaman. Mevcut başarılarınızı gelecekteki fırsatlar için nasıl değerlendirebileceğinizi düşünün. Değer katan ve güvenilirliğinizi gösteren görevlere odaklanmaya devam edin.",
+          "finance": "Finansal yatırımlarınız meyvelerini vermeye başlıyor. Getirileri gözden geçirin ve gerekirse stratejinizi ayarlayın. Göz alıcı, yüksek riskli fırsatlar yerine istikrarlı büyüme sunan yatırımlara öncelik vermeye devam edin. Kazançları konsolide etmek ve uzun vadeli istikrar için plan yapmak için iyi bir zaman."
+        },
+        "reversed": {
+          "general": "Tutarlı çabalarınızın meyvesini almaya başladığınız bir aşamadayız. Küçük, istikrarlı adımların gözle görülür ilerlemelere yol açtığı bu dönemde, hedeflerinize aynı özveriyle enerji harcamaya devam edin. İlerlemenizi düzenli olarak takip ederek yolunuzdan sapmayın ve gerektiğinde uyum sağlayın.",
+          "love": "İlişkilerinizde iletişim ve bağlılık olumlu etkilerini gösteriyor. Partnerinizle daha sıcak ve daha samimi bir atmosfer fark ediyorsanız, bunu zaman ve ilgiyle beslemeye devam edin. Aşkı arayanlar, samimi ilginizi gösterin ve çabalarınızda tutarlı olun.",
+          "career": "İşinizdeki özveriniz somut sonuçlar veriyor. Şimdi, sonuçları değerlendirmek ve sonraki adımlarınızı planlamak için iyi bir zaman. Mevcut başarılarınızı gelecekteki fırsatlar için nasıl değerlendirebileceğinizi düşünün. Değer katan ve güvenilirliğinizi gösteren görevlere odaklanmaya devam edin.",
+          "finance": "Finansal yatırımlarınız meyvelerini vermeye başlıyor. Getirileri gözden geçirin ve gerekirse stratejinizi ayarlayın. Göz alıcı, yüksek riskli fırsatlar yerine istikrarlı büyüme sunan yatırımlara öncelik vermeye devam edin. Kazançları konsolide etmek ve uzun vadeli istikrar için plan yapmak için iyi bir zaman."
+        }
+      }
+    },
+    {
+      "id": 76,
+      "name": "Tılsım Kraliçesi",
+      "image": "pentacles_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Düz pozisyondaki Pentacles Kraliçesi, gerçek benliğinizi kucaklamanızı önerir. Güçlü ve zayıf yönlerinizi düşünün ve bu öz farkındalığı kullanarak hayatınızı güvenle yönlendirin.",
+          "love": "Aşk konusunda, bu kart size samimi ve şefkatli olmanızı önerir. Partnerinizle açık bir şekilde iletişim kurun, gerçek duygularınızı ve hassas yönlerinizi gösterin.",
+          "career": "İş yerinde, Pentacles Kraliçesi gibi doğal yeteneklerinizi kullanın ve güvenilir olun. İş arkadaşlarınız güvenilirliğinize ve mantıklı yaklaşımınıza değer vereceklerdir.",
+          "finance": "Finansal açıdan, akıllı ve pratik davranmanın zamanıdır. İstikrarı sağlamak için tasarruf ve bütçe planlamasına odaklanarak kaynaklarınızı dikkatli bir şekilde yönetin."
+        },
+        "reversed": {
+          "general": "Ters çevrildiğinde, Pentacles Kraliçesi olumsuz özelliklerin sizi ele geçirmesine izin vermemeniz konusunda uyarıyor. İlerlemenizi engelleyebilecek kişisel kusurlarınızı düşünmek için zaman ayırın ve bu yönlerinizi iyileştirmek için çalışın.",
+          "love": "İlişkilerde bu tersine dönüş, ilişkinizi etkileyebilecek olumsuz davranışları ele alma ihtiyacını ortaya koymaktadır. Daha sağlıklı bir bağ kurmak için daha destekleyici ve daha az kontrolcü olmaya çalışın.",
+          "career": "Mesleki açıdan, aşırı inatçı olma veya değişime direnme eğilimlerine dikkat edin. İş yerinizde esnekliği ve yeni fikirlere açık olmayı benimseyin.",
+          "finance": "Finansal açıdan, ters çevrilmiş Pentacles Kraliçesi dikkatsiz harcamalara karşı uyarıyor. Dürtüselliği kontrol altına alın ve finansal tuzaklardan kaçınmak için bütçenizi daha titiz bir şekilde planlayın."
+        }
+      }
+    },
+    {
+      "id": 77,
+      "name": "Tılsım Kralı",
+      "image": "pentacles_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "tılsımlar",
+      "element": "toprak",
+      "meanings": {
+        "upright": {
+          "general": "Gerçek benliğinizi kucaklayın ve benzersizliğinizi takdir eden ortamlarda başarılı olun. Kişisel ve profesyonel hayatınızı şekillendiren hem güçlü hem de zayıf yönlerinizi kabul edin.",
+          "love": "İlişkilerde, kim olduğunuz konusunda samimi ve dürüst olun. Bu samimiyet, gerçek benliğinizi değer veren ve seven bir partneri çekecektir.",
+          "career": "Kariyerinizde benzersiz becerilerinizi ve özelliklerinizi kullanın. Kişiliğinizin bir engel değil, bir güç olduğu bir rol veya proje bulun.",
+          "finance": "Finansal istikrar, kişisel değerlerinizi ve yaşam tarzınızı yansıtan ihtiyatlı seçimler yapmaktan geçer. Anladığınız ve uzun vadeli hedeflerinizle uyumlu alanlara yatırım yapın."
+        },
+        "reversed": {
+          "general": "Olumsuz özelliklerinizin hakim olmasına izin vermeyin. Hayatınız üzerinde zararlı etkiler yaratmasını önlemek için öz farkındalık ve gelişim üzerinde aktif olarak çalışın.",
+          "love": "Aşkta, kusurlarınız sürtüşmelere neden olabilir. Davranışlarınızı düşünün ve iletişim ve anlayışa odaklanarak nasıl daha iyi bir partner olabileceğinizi düşünün.",
+          "career": "Kariyeriniz eksiklikleriniz nedeniyle zarar görüyorsa, bu sorunları doğrudan ele almanın zamanı gelmiştir. Geri bildirim alın, mesleki gelişimi benimseyin ve işte daha dengeli bir yaklaşım sergilemeye çalışın.",
+          "finance": "Dikkatsiz finansal kararlar istikrarsızlığa yol açabilir. Bir adım geri atın ve finansal planınızı dikkatli bir şekilde yapın, anlık kazançlar yerine geleceğinizi güvence altına almaya odaklanın."
+        }
+      }
+    }
+  ]
+}

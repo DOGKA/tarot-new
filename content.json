@@ -1,0 +1,3659 @@
+{
+    "taros": {
+        "items": [
+            {
+                "id": "2",
+                "show": true,
+                "free": true,
+                "position_available": "all",
+                "image": "card_T_01_MAG_Magician",
+                "name": "card_T_01_MAG_name",
+                "num_arab": 1,
+                "num_roman": "I",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_01_MAG_brief",
+                "tags": "card_T_01_MAG_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_01_MAG_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_01_MAG_D1_rec_text",
+                            "aspect": "card_T_01_MAG_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_01_MAG_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_01_MAG_A1_rec_text",
+                            "aspect": "card_T_01_MAG_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "3",
+                "show": true,
+                "free": true,
+                "position_available": "all",
+                "image": "card_T_02_HPT_Popess_High_Priestess",
+                "name": "card_T_02_HPT_name",
+                "num_arab": 2,
+                "num_roman": "II",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_02_HPT_brief",
+                "tags": "card_T_02_HPT_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_02_HPT_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_02_HPT_D1_rec_text",
+                            "aspect": "card_T_02_HPT_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_02_HPT_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_02_HPT_A1_rec_text",
+                            "aspect": "card_T_02_HPT_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "26",
+                "free": false,
+                "show": true,
+                "position_available": "all",
+                "image": "card_T_03_3oW_Three_of_Wands",
+                "name": "card_T_03_3oW_name",
+                "num_arab": 3,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "three",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_03_3oW_brief",
+                "tags": "card_T_03_3oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_03_3oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_03_3oW_D1_rec_text",
+                            "aspect": "card_T_03_3oW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_03_3oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_03_3oW_A1_rec_text",
+                            "aspect": "card_T_03_3oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "40",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_04_3oC_Three_of_Cups",
+                "name": "card_T_04_3oC_name",
+                "num_arab": 4,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "three",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_04_3oC_brief",
+                "tags": "card_T_04_3oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_04_3oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_04_3oC_D1_rec_text",
+                            "aspect": "card_T_04_3oC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_04_3oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_04_3oC_A1_rec_text",
+                            "aspect": "card_T_04_3oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "54",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_05_3oS_Three_of_Swords",
+                "name": "card_T_05_3oS_name",
+                "num_arab": 5,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "three",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_05_3oS_brief",
+                "tags": "card_T_05_3oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_05_3oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_05_3oS_D1_rec_text",
+                            "aspect": "card_T_05_3oS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_05_3oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_05_3oS_A1_rec_text",
+                            "aspect": "card_T_05_3oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "68",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_06_3oP_Three_of_Pentacles",
+                "name": "card_T_06_3oP_name",
+                "num_arab": 6,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "three",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_06_3oP_brief",
+                "tags": "card_T_06_3oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_06_3oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_06_3oP_D1_rec_text",
+                            "aspect": "card_T_06_3oP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_06_3oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_06_3oP_A1_rec_text",
+                            "aspect": "card_T_06_3oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "6",
+                "show": true,
+                "free": true,
+                "position_available": "all",
+                "image": "card_T_07_HRT_Pope_Hierophant",
+                "name": "card_T_07_HRT_name",
+                "num_arab": 7,
+                "num_roman": "V",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_07_HRT_brief",
+                "tags": "card_T_07_HRT_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_07_HRT_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_07_HRT_D1_rec_text",
+                            "aspect": "card_T_07_HRT_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_07_HRT_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_07_HRT_A1_rec_text",
+                            "aspect": "card_T_07_HRT_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "29",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_08_6oW_Six_of_Wands",
+                "name": "card_T_08_6oW_name",
+                "num_arab": 8,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "six",
+                "complexity_meanings": 3,
+                "complexity_aspects": 0,
+                "brief": "card_T_08_6oW_brief",
+                "tags": "card_T_08_6oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_08_6oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_08_6oW_D1_rec_text",
+                            "aspect": "card_T_08_6oW_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_08_6oW_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_08_6oW_D2_rec_text",
+                            "aspect": "card_T_08_6oW_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_08_6oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_08_6oW_A1_rec_text",
+                            "aspect": "card_T_08_6oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "43",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_09_6oC_Six_of_Cups",
+                "name": "card_T_09_6oC_name",
+                "num_arab": 9,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "six",
+                "complexity_meanings": 2,
+                "complexity_aspects": 1,
+                "brief": "card_T_09_6oC_brief",
+                "tags": "card_T_09_6oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_09_6oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_09_6oC_D1_rec_text",
+                            "aspect": "card_T_09_6oC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_09_6oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_09_6oC_A1_rec_text",
+                            "aspect": "card_T_09_6oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "57",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_10_6oS_Six_of_Swords",
+                "name": "card_T_10_6oS_name",
+                "num_arab": 10,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "six",
+                "complexity_meanings": 2,
+                "complexity_aspects": 2,
+                "brief": "card_T_10_6oS_brief",
+                "tags": "card_T_10_6oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_10_6oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_10_6oS_D1_rec_text",
+                            "aspect": "card_T_10_6oS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_10_6oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_10_6oS_A1_rec_text",
+                            "aspect": "card_T_10_6oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "71",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_11_6oP_Six_of_Pentacles",
+                "name": "card_T_11_6oP_name",
+                "num_arab": 11,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "six",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_11_6oP_brief",
+                "tags": "card_T_11_6oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_11_6oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_11_6oP_D1_rec_text",
+                            "aspect": "card_T_11_6oP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_11_6oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_11_6oP_A1_rec_text",
+                            "aspect": "card_T_11_6oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "7",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_12_LOV_Lovers",
+                "name": "card_T_12_LOV_name",
+                "num_arab": 12,
+                "num_roman": "VI",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 1,
+                "brief": "card_T_12_LOV_brief",
+                "tags": "card_T_12_LOV_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_12_LOV_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_12_LOV_D1_rec_text",
+                            "aspect": "card_T_12_LOV_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_12_LOV_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_12_LOV_A1_rec_text",
+                            "aspect": "card_T_12_LOV_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "8",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_13_CHA_Chariot",
+                "name": "card_T_13_CHA_name",
+                "num_arab": 13,
+                "num_roman": "VII",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 1,
+                "brief": "card_T_13_CHA_brief",
+                "tags": "card_T_13_CHA_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_13_CHA_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_13_CHA_D1_rec_text",
+                            "aspect": "card_T_13_CHA_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_13_CHA_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_13_CHA_A1_rec_text",
+                            "aspect": "card_T_13_CHA_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "30",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_14_7oW_Seven_of_Wands",
+                "name": "card_T_14_7oW_name",
+                "num_arab": 14,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "seven",
+                "complexity_meanings": 2,
+                "complexity_aspects": 2,
+                "brief": "card_T_14_7oW_brief",
+                "tags": "card_T_14_7oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_14_7oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_14_7oW_D1_rec_text",
+                            "aspect": "card_T_14_7oW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_14_7oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_14_7oW_A1_rec_text",
+                            "aspect": "card_T_14_7oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "44",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_15_7oC_Seven_of_Cups",
+                "name": "card_T_15_7oC_name",
+                "num_arab": 15,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "seven",
+                "complexity_meanings": 3,
+                "complexity_aspects": 0,
+                "brief": "card_T_15_7oC_brief",
+                "tags": "card_T_15_7oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_15_7oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_15_7oC_D1_rec_text",
+                            "aspect": "card_T_15_7oC_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_15_7oC_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_15_7oC_D2_rec_text",
+                            "aspect": "card_T_15_7oC_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_15_7oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_15_7oC_A1_rec_text",
+                            "aspect": "card_T_15_7oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "58",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_16_7oS_Seven_of_Swords",
+                "name": "card_T_16_7oS_name",
+                "num_arab": 16,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "seven",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_16_7oS_brief",
+                "tags": "card_T_16_7oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_16_7oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_16_7oS_D1_rec_text",
+                            "aspect": "card_T_16_7oS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_16_7oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_16_7oS_A1_rec_text",
+                            "aspect": "card_T_16_7oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "72",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_17_7oP_Seven_of_Pentacles",
+                "name": "card_T_17_7oP_name",
+                "num_arab": 17,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "seven",
+                "complexity_meanings": 3,
+                "complexity_aspects": 1,
+                "brief": "card_T_17_7oP_brief",
+                "tags": "card_T_17_7oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_17_7oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_17_7oP_D1_rec_text",
+                            "aspect": "card_T_17_7oP_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_17_7oP_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_17_7oP_D2_rec_text",
+                            "aspect": "card_T_17_7oP_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_17_7oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_17_7oP_A1_rec_text",
+                            "aspect": "card_T_17_7oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "24",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_18_AoW_Ace_of_Wands",
+                "name": "card_T_18_AoW_name",
+                "num_arab": 18,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "ace",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_18_AoW_brief",
+                "tags": "card_T_18_AoW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_18_AoW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_18_AoW_D1_rec_text",
+                            "aspect": "card_T_18_AoW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_18_AoW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_18_AoW_A1_rec_text",
+                            "aspect": "card_T_18_AoW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "38",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_19_AoC_Ace_of_Cups",
+                "name": "card_T_19_AoC_name",
+                "num_arab": 19,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "ace",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_19_AoC_brief",
+                "tags": "card_T_19_AoC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_19_AoC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_19_AoC_D1_rec_text",
+                            "aspect": "card_T_19_AoC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_19_AoC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_19_AoC_A1_rec_text",
+                            "aspect": "card_T_19_AoC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "52",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_20_AoS_Ace_of_Swords",
+                "name": "card_T_20_AoS_name",
+                "num_arab": 20,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "ace",
+                "complexity_meanings": 2,
+                "complexity_aspects": 3,
+                "brief": "card_T_20_AoS_brief",
+                "tags": "card_T_20_AoS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_20_AoS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_20_AoS_D1_rec_text",
+                            "aspect": "card_T_20_AoS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_20_AoS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_20_AoS_A1_rec_text",
+                            "aspect": "card_T_20_AoS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "66",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_21_AoP_Ace_of_Pentacles",
+                "name": "card_T_21_AoP_name",
+                "num_arab": 21,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "ace",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_21_AoP_brief",
+                "tags": "card_T_21_AoP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_21_AoP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_21_AoP_D1_rec_text",
+                            "aspect": "card_T_21_AoP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_21_AoP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_21_AoP_A1_rec_text",
+                            "aspect": "card_T_21_AoP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "25",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_22_2oW_Two_of_Wands",
+                "name": "card_T_22_2oW_name",
+                "num_arab": 22,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "two",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_22_2oW_brief",
+                "tags": "card_T_22_2oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_22_2oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_22_2oW_D1_rec_text",
+                            "aspect": "card_T_22_2oW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_22_2oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_22_2oW_A1_rec_text",
+                            "aspect": "card_T_22_2oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "39",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_23_2oC_Two_of_Cups",
+                "name": "card_T_23_2oC_name",
+                "num_arab": 23,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "two",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_23_2oC_brief",
+                "tags": "card_T_23_2oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_23_2oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_23_2oC_D1_rec_text",
+                            "aspect": "card_T_23_2oC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_23_2oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_23_2oC_A1_rec_text",
+                            "aspect": "card_T_23_2oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "53",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_24_2oS_Two_of_Swords",
+                "name": "card_T_24_2oS_name",
+                "num_arab": 24,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "two",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_24_2oS_brief",
+                "tags": "card_T_24_2oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_24_2oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_24_2oS_D1_rec_text",
+                            "aspect": "card_T_24_2oS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_24_2oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_24_2oS_A1_rec_text",
+                            "aspect": "card_T_24_2oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "67",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_25_2oP_Two_of_Pentacles",
+                "name": "card_T_25_2oP_name",
+                "num_arab": 25,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "two",
+                "complexity_meanings": 2,
+                "complexity_aspects": 1,
+                "brief": "card_T_25_2oP_brief",
+                "tags": "card_T_25_2oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_25_2oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_25_2oP_D1_rec_text",
+                            "aspect": "card_T_25_2oP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_25_2oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_25_2oP_A1_rec_text",
+                            "aspect": "card_T_25_2oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "4",
+                "show": true,
+                "free": true,
+                "position_available": "all",
+                "image": "card_T_26_EMS_Empress",
+                "name": "card_T_26_EMS_name",
+                "num_arab": 26,
+                "num_roman": "III",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_26_EMS_brief",
+                "tags": "card_T_26_EMS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_26_EMS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_26_EMS_D1_rec_text",
+                            "aspect": "card_T_26_EMS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_26_EMS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_26_EMS_A1_rec_text",
+                            "aspect": "card_T_26_EMS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "10",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_27_HMT_Hermit",
+                "name": "card_T_27_HMT_name",
+                "num_arab": 27,
+                "num_roman": "IX",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 3,
+                "complexity_aspects": 0,
+                "brief": "card_T_27_HMT_brief",
+                "tags": "card_T_27_HMT_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_27_HMT_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_27_HMT_D1_rec_text",
+                            "aspect": "card_T_27_HMT_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_27_HMT_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_27_HMT_D2_rec_text",
+                            "aspect": "card_T_27_HMT_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_27_HMT_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_27_HMT_A1_rec_text",
+                            "aspect": "card_T_27_HMT_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "70",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_28_5oP_Five_of_Pentacles",
+                "name": "card_T_28_5oP_name",
+                "num_arab": 28,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "five",
+                "complexity_meanings": 3,
+                "complexity_aspects": 0,
+                "brief": "card_T_28_5oP_brief",
+                "tags": "card_T_28_5oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_28_5oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_28_5oP_D1_rec_text",
+                            "aspect": "card_T_28_5oP_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_28_5oP_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_28_5oP_D2_rec_text",
+                            "aspect": "card_T_28_5oP_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_28_5oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_28_5oP_A1_rec_text",
+                            "aspect": "card_T_28_5oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "56",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_29_5oS_Five_of_Swords",
+                "name": "card_T_29_5oS_name",
+                "num_arab": 29,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "five",
+                "complexity_meanings": 3,
+                "complexity_aspects": 0,
+                "brief": "card_T_29_5oS_brief",
+                "tags": "card_T_29_5oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_29_5oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_29_5oS_D1_rec_text",
+                            "aspect": "card_T_29_5oS_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_29_5oS_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_29_5oS_D2_rec_text",
+                            "aspect": "card_T_29_5oS_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_29_5oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_29_5oS_A1_rec_text",
+                            "aspect": "card_T_29_5oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "42",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_30_5oC_Five_of_Cups",
+                "name": "card_T_30_5oC_name",
+                "num_arab": 30,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "five",
+                "complexity_meanings": 2,
+                "complexity_aspects": 1,
+                "brief": "card_T_30_5oC_brief",
+                "tags": "card_T_30_5oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_30_5oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_30_5oC_D1_rec_text",
+                            "aspect": "card_T_30_5oC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_30_5oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_30_5oC_A1_rec_text",
+                            "aspect": "card_T_30_5oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "28",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_31_5oW_Five_of_Wands",
+                "name": "card_T_31_5oW_name",
+                "num_arab": 31,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "five",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_31_5oW_brief",
+                "tags": "card_T_31_5oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_31_5oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_31_5oW_D1_rec_text",
+                            "aspect": "card_T_31_5oW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_31_5oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_31_5oW_A1_rec_text",
+                            "aspect": "card_T_31_5oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "69",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_32_4oP_Four_of_Pentacles",
+                "name": "card_T_32_4oP_name",
+                "num_arab": 32,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "four",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_32_4oP_brief",
+                "tags": "card_T_32_4oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_32_4oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_32_4oP_D1_rec_text",
+                            "aspect": "card_T_32_4oP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_32_4oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_32_4oP_A1_rec_text",
+                            "aspect": "card_T_32_4oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "55",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_33_4oS_Four_of_Swords",
+                "name": "card_T_33_4oS_name",
+                "num_arab": 33,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "four",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_33_4oS_brief",
+                "tags": "card_T_33_4oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_33_4oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_33_4oS_D1_rec_text",
+                            "aspect": "card_T_33_4oS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_33_4oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_33_4oS_A1_rec_text",
+                            "aspect": "card_T_33_4oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "41",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_34_4oC_Four_of_Cups",
+                "name": "card_T_34_4oC_name",
+                "num_arab": 34,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "four",
+                "complexity_meanings": 3,
+                "complexity_aspects": 1,
+                "brief": "card_T_34_4oC_brief",
+                "tags": "card_T_34_4oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_34_4oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_34_4oC_D1_rec_text",
+                            "aspect": "card_T_34_4oC_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_34_4oC_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_34_4oC_D2_rec_text",
+                            "aspect": "card_T_34_4oC_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_34_4oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_34_4oC_A1_rec_text",
+                            "aspect": "card_T_34_4oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "27",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_35_4oW_Four_of_Wands",
+                "name": "card_T_35_4oW_name",
+                "num_arab": 35,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "four",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_35_4oW_brief",
+                "tags": "card_T_35_4oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_35_4oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_35_4oW_D1_rec_text",
+                            "aspect": "card_T_35_4oW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_35_4oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_35_4oW_A1_rec_text",
+                            "aspect": "card_T_35_4oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "9",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_36_JUS_Justice",
+                "name": "card_T_36_JUS_name",
+                "num_arab": 36,
+                "num_roman": "VIII",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 3,
+                "brief": "card_T_36_JUS_brief",
+                "tags": "card_T_36_JUS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_36_JUS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_36_JUS_D1_rec_text",
+                            "aspect": "card_T_36_JUS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_36_JUS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_36_JUS_A1_rec_text",
+                            "aspect": "card_T_36_JUS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "14",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_37_DTH_Death",
+                "name": "card_T_37_DTH_name",
+                "num_arab": 37,
+                "num_roman": "XIII",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_37_DTH_brief",
+                "tags": "card_T_37_DTH_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_37_DTH_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_37_DTH_D1_rec_text",
+                            "aspect": "card_T_37_DTH_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_37_DTH_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_37_DTH_A1_rec_text",
+                            "aspect": "card_T_37_DTH_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "76",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_38_PoP_Page_of_Pentacles",
+                "name": "card_T_38_PoP_name",
+                "num_arab": 38,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "page",
+                "complexity_meanings": 1,
+                "complexity_aspects": 0,
+                "brief": "card_T_38_PoP_brief",
+                "tags": "card_T_38_PoP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_38_PoP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_38_PoP_D1_rec_text",
+                            "aspect": "card_T_38_PoP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_38_PoP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_38_PoP_A1_rec_text",
+                            "aspect": "card_T_38_PoP_A1_aspect",
+                            "same_meaning": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": "62",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_39_PoS_Page_of_Swords",
+                "name": "card_T_39_PoS_name",
+                "num_arab": 39,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "page",
+                "complexity_meanings": 1,
+                "complexity_aspects": 0,
+                "brief": "card_T_39_PoS_brief",
+                "tags": "card_T_39_PoS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_39_PoS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_39_PoS_D1_rec_text",
+                            "aspect": "card_T_39_PoS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_39_PoS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_39_PoS_A1_rec_text",
+                            "aspect": "card_T_39_PoS_A1_aspect",
+                            "same_meaning": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": "48",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_40_PoC_Page_of_Cups",
+                "name": "card_T_40_PoC_name",
+                "num_arab": 40,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "page",
+                "complexity_meanings": 1,
+                "complexity_aspects": 0,
+                "brief": "card_T_40_PoC_brief",
+                "tags": "card_T_40_PoC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_40_PoC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_40_PoC_D1_rec_text",
+                            "aspect": "card_T_40_PoC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_40_PoC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_40_PoC_A1_rec_text",
+                            "aspect": "card_T_40_PoC_A1_aspect",
+                            "same_meaning": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": "34",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_41_PoW_Page_of_Wands",
+                "name": "card_T_41_PoW_name",
+                "num_arab": 41,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "page",
+                "complexity_meanings": 1,
+                "complexity_aspects": 0,
+                "brief": "card_T_41_PoW_brief",
+                "tags": "card_T_41_PoW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_41_PoW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_41_PoW_D1_rec_text",
+                            "aspect": "card_T_41_PoW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_41_PoW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_41_PoW_A1_rec_text",
+                            "aspect": "card_T_41_PoW_A1_aspect",
+                            "same_meaning": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": "12",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_42_STH_Strength",
+                "name": "card_T_42_STH_name",
+                "num_arab": 42,
+                "num_roman": "XI",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 2,
+                "brief": "card_T_42_STH_brief",
+                "tags": "card_T_42_STH_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_42_STH_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_42_STH_D1_rec_text",
+                            "aspect": "card_T_42_STH_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_42_STH_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_42_STH_A1_rec_text",
+                            "aspect": "card_T_42_STH_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "11",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_43_WOF_Wheel_of_Fortune",
+                "name": "card_T_43_WOF_name",
+                "num_arab": 43,
+                "num_roman": "X",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_43_WOF_brief",
+                "tags": "card_T_43_WOF_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_43_WOF_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_43_WOF_D1_rec_text",
+                            "aspect": "card_T_43_WOF_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_43_WOF_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_43_WOF_A1_rec_text",
+                            "aspect": "card_T_43_WOF_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "35",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_44_KnW_Knight_of_Wands",
+                "name": "card_T_44_KnW_name",
+                "num_arab": 44,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "knight",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_44_KnW_brief",
+                "tags": "card_T_44_KnW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_44_KnW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_44_KnW_D1_rec_text",
+                            "aspect": "card_T_44_KnW_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_44_KnW_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_44_KnW_D2_rec_text",
+                            "aspect": "card_T_44_KnW_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_44_KnW_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_44_KnW_D3_rec_text",
+                            "aspect": "card_T_44_KnW_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_44_KnW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_44_KnW_A1_rec_text",
+                            "aspect": "card_T_44_KnW_A1_aspect",
+                            "same_meaning": true
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_44_KnW_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_44_KnW_A2_rec_text",
+                            "aspect": "card_T_44_KnW_A2_aspect",
+                            "same_meaning": true
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_44_KnW_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_44_KnW_A3_rec_text",
+                            "aspect": "card_T_44_KnW_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "49",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_45_KnC_Knight_of_Cups",
+                "name": "card_T_45_KnC_name",
+                "num_arab": 45,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "knight",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_45_KnC_brief",
+                "tags": "card_T_45_KnC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_45_KnC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_45_KnC_D1_rec_text",
+                            "aspect": "card_T_45_KnC_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_45_KnC_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_45_KnC_D2_rec_text",
+                            "aspect": "card_T_45_KnC_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_45_KnC_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_45_KnC_D3_rec_text",
+                            "aspect": "card_T_45_KnC_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_45_KnC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_45_KnC_A1_rec_text",
+                            "aspect": "card_T_45_KnC_A1_aspect",
+                            "same_meaning": true
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_45_KnC_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_45_KnC_A2_rec_text",
+                            "aspect": "card_T_45_KnC_A2_aspect",
+                            "same_meaning": true
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_45_KnC_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_45_KnC_A3_rec_text",
+                            "aspect": "card_T_45_KnC_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "63",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_46_KnS_Knight_of_Swords",
+                "name": "card_T_46_KnS_name",
+                "num_arab": 46,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "knight",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_46_KnS_brief",
+                "tags": "card_T_46_KnS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_46_KnS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_46_KnS_D1_rec_text",
+                            "aspect": "card_T_46_KnS_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_46_KnS_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_46_KnS_D2_rec_text",
+                            "aspect": "card_T_46_KnS_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_46_KnS_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_46_KnS_D3_rec_text",
+                            "aspect": "card_T_46_KnS_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_46_KnS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_46_KnS_A1_rec_text",
+                            "aspect": "card_T_46_KnS_A1_aspect",
+                            "same_meaning": true
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_46_KnS_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_46_KnS_A2_rec_text",
+                            "aspect": "card_T_46_KnS_A2_aspect",
+                            "same_meaning": true
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_46_KnS_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_46_KnS_A3_rec_text",
+                            "aspect": "card_T_46_KnS_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "77",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_47_KnP_Knight_of_Pentacles",
+                "name": "card_T_47_KnP_name",
+                "num_arab": 47,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "knight",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_47_KnP_brief",
+                "tags": "card_T_47_KnP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_47_KnP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_47_KnP_D1_rec_text",
+                            "aspect": "card_T_47_KnP_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_47_KnP_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_47_KnP_D2_rec_text",
+                            "aspect": "card_T_47_KnP_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_47_KnP_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_47_KnP_D3_rec_text",
+                            "aspect": "card_T_47_KnP_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_47_KnP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_47_KnP_A1_rec_text",
+                            "aspect": "card_T_47_KnP_A1_aspect",
+                            "same_meaning": true
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_47_KnP_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_47_KnP_A2_rec_text",
+                            "aspect": "card_T_47_KnP_A2_aspect",
+                            "same_meaning": true
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_47_KnP_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_47_KnP_A3_rec_text",
+                            "aspect": "card_T_47_KnP_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "13",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_48_HNG_Hanged_Man",
+                "name": "card_T_48_HNG_name",
+                "num_arab": 48,
+                "num_roman": "XII",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_48_HNG_brief",
+                "tags": "card_T_48_HNG_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_48_HNG_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_48_HNG_D1_rec_text",
+                            "aspect": "card_T_48_HNG_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_48_HNG_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_48_HNG_A1_rec_text",
+                            "aspect": "card_T_48_HNG_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "36",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_49_QoW_Queen_of_Wands",
+                "name": "card_T_49_QoW_name",
+                "num_arab": 49,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "queen",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_49_QoW_brief",
+                "tags": "card_T_49_QoW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_49_QoW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_49_QoW_D1_rec_text",
+                            "aspect": "card_T_49_QoW_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_49_QoW_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_49_QoW_D2_rec_text",
+                            "aspect": "card_T_49_QoW_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_49_QoW_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_49_QoW_D3_rec_text",
+                            "aspect": "card_T_49_QoW_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_49_QoW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_49_QoW_A1_rec_text",
+                            "aspect": "card_T_49_QoW_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_49_QoW_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_49_QoW_A2_rec_text",
+                            "aspect": "card_T_49_QoW_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_49_QoW_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_49_QoW_A3_rec_text",
+                            "aspect": "card_T_49_QoW_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "50",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_50_QoC_Queen_of_Cups",
+                "name": "card_T_50_QoC_name",
+                "num_arab": 50,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "queen",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_50_QoC_brief",
+                "tags": "card_T_50_QoC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_50_QoC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_50_QoC_D1_rec_text",
+                            "aspect": "card_T_50_QoC_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_50_QoC_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_50_QoC_D2_rec_text",
+                            "aspect": "card_T_50_QoC_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_50_QoC_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_50_QoC_D3_rec_text",
+                            "aspect": "card_T_50_QoC_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_50_QoC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_50_QoC_A1_rec_text",
+                            "aspect": "card_T_50_QoC_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_50_QoC_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_50_QoC_A2_rec_text",
+                            "aspect": "card_T_50_QoC_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_50_QoC_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_50_QoC_A3_rec_text",
+                            "aspect": "card_T_50_QoC_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "64",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_51_QoS_Queen_of_Swords",
+                "name": "card_T_51_QoS_name",
+                "num_arab": 51,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "queen",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_51_QoS_brief",
+                "tags": "card_T_51_QoS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_51_QoS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_51_QoS_D1_rec_text",
+                            "aspect": "card_T_51_QoS_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_51_QoS_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_51_QoS_D2_rec_text",
+                            "aspect": "card_T_51_QoS_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_51_QoS_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_51_QoS_D3_rec_text",
+                            "aspect": "card_T_51_QoS_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_51_QoS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_51_QoS_A1_rec_text",
+                            "aspect": "card_T_51_QoS_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_51_QoS_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_51_QoS_A2_rec_text",
+                            "aspect": "card_T_51_QoS_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_51_QoS_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_51_QoS_A3_rec_text",
+                            "aspect": "card_T_51_QoS_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "78",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_52_QoP_Queen_of_Pentacles",
+                "name": "card_T_52_QoP_name",
+                "num_arab": 52,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "queen",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_52_QoP_brief",
+                "tags": "card_T_52_QoP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_52_QoP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_52_QoP_D1_rec_text",
+                            "aspect": "card_T_52_QoP_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_52_QoP_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_52_QoP_D2_rec_text",
+                            "aspect": "card_T_52_QoP_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_52_QoP_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_52_QoP_D3_rec_text",
+                            "aspect": "card_T_52_QoP_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_52_QoP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_52_QoP_A1_rec_text",
+                            "aspect": "card_T_52_QoP_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_52_QoP_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_52_QoP_A2_rec_text",
+                            "aspect": "card_T_52_QoP_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_52_QoP_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_52_QoP_A3_rec_text",
+                            "aspect": "card_T_52_QoP_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "37",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_53_KiW_King_of_Wands",
+                "name": "card_T_53_KiW_name",
+                "num_arab": 53,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "king",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_53_KiW_brief",
+                "tags": "card_T_53_KiW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_53_KiW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_53_KiW_D1_rec_text",
+                            "aspect": "card_T_53_KiW_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_53_KiW_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_53_KiW_D2_rec_text",
+                            "aspect": "card_T_53_KiW_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_53_KiW_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_53_KiW_D3_rec_text",
+                            "aspect": "card_T_53_KiW_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_53_KiW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_53_KiW_A1_rec_text",
+                            "aspect": "card_T_53_KiW_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_53_KiW_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_53_KiW_A2_rec_text",
+                            "aspect": "card_T_53_KiW_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_53_KiW_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_53_KiW_A3_rec_text",
+                            "aspect": "card_T_53_KiW_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "51",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_54_KiC_King_of_Cups",
+                "name": "card_T_54_KiC_name",
+                "num_arab": 54,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "king",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_54_KiC_brief",
+                "tags": "card_T_54_KiC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_54_KiC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_54_KiC_D1_rec_text",
+                            "aspect": "card_T_54_KiC_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_54_KiC_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_54_KiC_D2_rec_text",
+                            "aspect": "card_T_54_KiC_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_54_KiC_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_54_KiC_D3_rec_text",
+                            "aspect": "card_T_54_KiC_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_54_KiC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_54_KiC_A1_rec_text",
+                            "aspect": "card_T_54_KiC_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_54_KiC_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_54_KiC_A2_rec_text",
+                            "aspect": "card_T_54_KiC_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_54_KiC_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_54_KiC_A3_rec_text",
+                            "aspect": "card_T_54_KiC_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "65",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_55_KiS_King_of_Swords",
+                "name": "card_T_55_KiS_name",
+                "num_arab": 55,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "king",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_55_KiS_brief",
+                "tags": "card_T_55_KiS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_55_KiS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_55_KiS_D1_rec_text",
+                            "aspect": "card_T_55_KiS_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_55_KiS_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_55_KiS_D2_rec_text",
+                            "aspect": "card_T_55_KiS_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_55_KiS_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_55_KiS_D3_rec_text",
+                            "aspect": "card_T_55_KiS_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_55_KiS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_55_KiS_A1_rec_text",
+                            "aspect": "card_T_55_KiS_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_55_KiS_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_55_KiS_A2_rec_text",
+                            "aspect": "card_T_55_KiS_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_55_KiS_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_55_KiS_A3_rec_text",
+                            "aspect": "card_T_55_KiS_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "79",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_56_KiP_King_of_Pentacles",
+                "name": "card_T_56_KiP_name",
+                "num_arab": 56,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "king",
+                "complexity_meanings": 6,
+                "complexity_aspects": 0,
+                "brief": "card_T_56_KiP_brief",
+                "tags": "card_T_56_KiP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_56_KiP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_56_KiP_D1_rec_text",
+                            "aspect": "card_T_56_KiP_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_56_KiP_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_56_KiP_D2_rec_text",
+                            "aspect": "card_T_56_KiP_D2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_56_KiP_D3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_56_KiP_D3_rec_text",
+                            "aspect": "card_T_56_KiP_D3_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_56_KiP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_56_KiP_A1_rec_text",
+                            "aspect": "card_T_56_KiP_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_56_KiP_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_56_KiP_A2_rec_text",
+                            "aspect": "card_T_56_KiP_A2_aspect"
+                        },
+                        "third_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_56_KiP_A3_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_56_KiP_A3_rec_text",
+                            "aspect": "card_T_56_KiP_A3_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "31",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_57_8oW_Eight_of_Wands",
+                "name": "card_T_57_8oW_name",
+                "num_arab": 57,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "eight",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_57_8oW_brief",
+                "tags": "card_T_57_8oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_57_8oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_57_8oW_D1_rec_text",
+                            "aspect": "card_T_57_8oW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_57_8oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_57_8oW_A1_rec_text",
+                            "aspect": "card_T_57_8oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "45",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_58_8oC_Eight_of_Cups",
+                "name": "card_T_58_8oC_name",
+                "num_arab": 58,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "eight",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_58_8oC_brief",
+                "tags": "card_T_58_8oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_58_8oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_58_8oC_D1_rec_text",
+                            "aspect": "card_T_58_8oC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_58_8oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_58_8oC_A1_rec_text",
+                            "aspect": "card_T_58_8oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "59",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_59_8oS_Eight_of_Swords",
+                "name": "card_T_59_8oS_name",
+                "num_arab": 59,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "eight",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_59_8oS_brief",
+                "tags": "card_T_59_8oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_59_8oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_59_8oS_D1_rec_text",
+                            "aspect": "card_T_59_8oS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_59_8oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_59_8oS_A1_rec_text",
+                            "aspect": "card_T_59_8oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "73",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_60_8oP_Eight_of_Pentacles",
+                "name": "card_T_60_8oP_name",
+                "num_arab": 60,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "eight",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_60_8oP_brief",
+                "tags": "card_T_60_8oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 1,
+                            "text": "card_T_60_8oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_60_8oP_D1_rec_text",
+                            "aspect": "card_T_60_8oP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_60_8oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_60_8oP_A1_rec_text",
+                            "aspect": "card_T_60_8oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "15",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_61_TMP_Temperance",
+                "name": "card_T_61_TMP_name",
+                "num_arab": 61,
+                "num_roman": "XIV",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 2,
+                "brief": "card_T_61_TMP_brief",
+                "tags": "card_T_61_TMP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_61_TMP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_61_TMP_D1_rec_text",
+                            "aspect": "card_T_61_TMP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_61_TMP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_61_TMP_A1_rec_text",
+                            "aspect": "card_T_61_TMP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "16",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_62_DVL_Devil",
+                "name": "card_T_62_DVL_name",
+                "num_arab": 62,
+                "num_roman": "XV",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 3,
+                "brief": "card_T_62_DVL_brief",
+                "tags": "card_T_62_DVL_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_62_DVL_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_62_DVL_D1_rec_text",
+                            "aspect": "card_T_62_DVL_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_62_DVL_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_62_DVL_A1_rec_text",
+                            "aspect": "card_T_62_DVL_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "17",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_63_TWR_Tower",
+                "name": "card_T_63_TWR_name",
+                "num_arab": 63,
+                "num_roman": "XVI",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_63_TWR_brief",
+                "tags": "card_T_63_TWR_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_63_TWR_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_63_TWR_D1_rec_text",
+                            "aspect": "card_T_63_TWR_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_63_TWR_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_63_TWR_A1_rec_text",
+                            "aspect": "card_T_63_TWR_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "18",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_64_STR_Star",
+                "name": "card_T_64_STR_name",
+                "num_arab": 64,
+                "num_roman": "XVII",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 4,
+                "complexity_aspects": 0,
+                "brief": "card_T_64_STR_brief",
+                "tags": "card_T_64_STR_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_64_STR_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_64_STR_D1_rec_text",
+                            "aspect": "card_T_64_STR_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_64_STR_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_64_STR_D2_rec_text",
+                            "aspect": "card_T_64_STR_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_64_STR_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_64_STR_A1_rec_text",
+                            "aspect": "card_T_64_STR_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_64_STR_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_64_STR_A2_rec_text",
+                            "aspect": "card_T_64_STR_A2_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "32",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_65_9oW_Nine_of_Wands",
+                "name": "card_T_65_9oW_name",
+                "num_arab": 65,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "nine",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_65_9oW_brief",
+                "tags": "card_T_65_9oW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_65_9oW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_65_9oW_D1_rec_text",
+                            "aspect": "card_T_65_9oW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_65_9oW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_65_9oW_A1_rec_text",
+                            "aspect": "card_T_65_9oW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "46",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_66_9oC_Nine_of_Cups",
+                "name": "card_T_66_9oC_name",
+                "num_arab": 66,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "nine",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_66_9oC_brief",
+                "tags": "card_T_66_9oC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_66_9oC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_66_9oC_D1_rec_text",
+                            "aspect": "card_T_66_9oC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_66_9oC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_66_9oC_A1_rec_text",
+                            "aspect": "card_T_66_9oC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "60",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_67_9oS_Nine_of_Swords",
+                "name": "card_T_67_9oS_name",
+                "num_arab": 67,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "nine",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_67_9oS_brief",
+                "tags": "card_T_67_9oS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_67_9oS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_67_9oS_D1_rec_text",
+                            "aspect": "card_T_67_9oS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_67_9oS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_67_9oS_A1_rec_text",
+                            "aspect": "card_T_67_9oS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "74",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_68_9oP_Nine_of_Pentacles",
+                "name": "card_T_68_9oP_name",
+                "num_arab": 68,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "nine",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_68_9oP_brief",
+                "tags": "card_T_68_9oP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_68_9oP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_68_9oP_D1_rec_text",
+                            "aspect": "card_T_68_9oP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_68_9oP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_68_9oP_A1_rec_text",
+                            "aspect": "card_T_68_9oP_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "19",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_69_MON_Moon",
+                "name": "card_T_69_MON_name",
+                "num_arab": 69,
+                "num_roman": "XVIII",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 4,
+                "complexity_aspects": 0,
+                "brief": "card_T_69_MON_brief",
+                "tags": "card_T_69_MON_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_69_MON_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_69_MON_D1_rec_text",
+                            "aspect": "card_T_69_MON_D1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_69_MON_D2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_69_MON_D2_rec_text",
+                            "aspect": "card_T_69_MON_D2_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_69_MON_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_69_MON_A1_rec_text",
+                            "aspect": "card_T_69_MON_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_69_MON_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_69_MON_A2_rec_text",
+                            "aspect": "card_T_69_MON_A2_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "20",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_70_SUN_Sun",
+                "name": "card_T_70_SUN_name",
+                "num_arab": 70,
+                "num_roman": "XIX",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_70_SUN_brief",
+                "tags": "card_T_70_SUN_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_70_SUN_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_70_SUN_D1_rec_text",
+                            "aspect": "card_T_70_SUN_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_70_SUN_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_70_SUN_A1_rec_text",
+                            "aspect": "card_T_70_SUN_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "21",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_71_JUD_Judgement",
+                "name": "card_T_71_JUD_name",
+                "num_arab": 71,
+                "num_roman": "XX",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_71_JUD_brief",
+                "tags": "card_T_71_JUD_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_71_JUD_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_71_JUD_D1_rec_text",
+                            "aspect": "card_T_71_JUD_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_71_JUD_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_71_JUD_A1_rec_text",
+                            "aspect": "card_T_71_JUD_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "33",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_72_ToW_Ten_of_Wands",
+                "name": "card_T_72_ToW_name",
+                "num_arab": 72,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "wands",
+                "rank": "ten",
+                "complexity_meanings": 2,
+                "complexity_aspects": 4,
+                "brief": "card_T_72_ToW_brief",
+                "tags": "card_T_72_ToW_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_72_ToW_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_72_ToW_D1_rec_text",
+                            "aspect": "card_T_72_ToW_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_72_ToW_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_72_ToW_A1_rec_text",
+                            "aspect": "card_T_72_ToW_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "47",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_73_ToC_Ten_of_Cups",
+                "name": "card_T_73_ToC_name",
+                "num_arab": 73,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "cups",
+                "rank": "ten",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_73_ToC_brief",
+                "tags": "card_T_73_ToC_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_73_ToC_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_73_ToC_D1_rec_text",
+                            "aspect": "card_T_73_ToC_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 0,
+                            "text": "card_T_73_ToC_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_73_ToC_A1_rec_text",
+                            "aspect": "card_T_73_ToC_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "61",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_74_ToS_Ten_of_Swords",
+                "name": "card_T_74_ToS_name",
+                "num_arab": 74,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "swords",
+                "rank": "ten",
+                "complexity_meanings": 2,
+                "complexity_aspects": 2,
+                "brief": "card_T_74_ToS_brief",
+                "tags": "card_T_74_ToS_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_74_ToS_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_74_ToS_D1_rec_text",
+                            "aspect": "card_T_74_ToS_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -3,
+                            "text": "card_T_74_ToS_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_74_ToS_A1_rec_text",
+                            "aspect": "card_T_74_ToS_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "75",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_75_ToP_Ten_of_Pentacles",
+                "name": "card_T_75_ToP_name",
+                "num_arab": 75,
+                "num_roman": "",
+                "arcana": "minor",
+                "suit": "pentacles",
+                "rank": "ten",
+                "complexity_meanings": 3,
+                "complexity_aspects": 3,
+                "brief": "card_T_75_ToP_brief",
+                "tags": "card_T_75_ToP_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_75_ToP_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_75_ToP_D1_rec_text",
+                            "aspect": "card_T_75_ToP_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_75_ToP_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_75_ToP_A1_rec_text",
+                            "aspect": "card_T_75_ToP_A1_aspect"
+                        },
+                        "second_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -1,
+                            "text": "card_T_75_ToP_A2_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_75_ToP_A2_rec_text",
+                            "aspect": "card_T_75_ToP_A2_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "1",
+                "show": true,
+                "free": true,
+                "position_available": "all",
+                "image": "card_T_76_FOL_Fool",
+                "name": "card_T_76_FOL_name",
+                "num_arab": 76,
+                "num_roman": "0",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_76_FOL_brief",
+                "tags": "card_T_76_FOL_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_76_FOL_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_76_FOL_D1_rec_text",
+                            "aspect": "card_T_76_FOL_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_76_FOL_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_76_FOL_A1_rec_text",
+                            "aspect": "card_T_76_FOL_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "23",
+                "show": true,
+                "free": false,
+                "position_available": "upright",
+                "image": "card_T_77_BLA_Blank_card",
+                "name": "card_T_77_BLA_name",
+                "num_arab": 77,
+                "num_roman": "",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 1,
+                "complexity_aspects": 1,
+                "brief": "card_T_77_BLA_brief",
+                "tags": "card_T_77_BLA_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_77_BLA_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_77_BLA_D1_rec_text",
+                            "aspect": "card_T_77_BLA_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_77_BLA_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_77_BLA_A1_rec_text",
+                            "aspect": "card_T_77_BLA_A1_aspect",
+                            "same_meaning": true
+                        }
+                    }
+                }
+            },
+            {
+                "id": "5",
+                "show": true,
+                "free": true,
+                "position_available": "all",
+                "image": "card_T_78_EMR_Emperor",
+                "name": "card_T_78_EMR_name",
+                "num_arab": 78,
+                "num_roman": "IV",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_78_EMR_brief",
+                "tags": "card_T_78_EMR_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_78_EMR_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_78_EMR_D1_rec_text",
+                            "aspect": "card_T_78_EMR_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": -2,
+                            "text": "card_T_78_EMR_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_78_EMR_A1_rec_text",
+                            "aspect": "card_T_78_EMR_A1_aspect"
+                        }
+                    }
+                }
+            },
+            {
+                "id": "22",
+                "show": true,
+                "free": false,
+                "position_available": "all",
+                "image": "card_T_79_WRL_World",
+                "name": "card_T_79_WRL_name",
+                "num_arab": 79,
+                "num_roman": "XXI",
+                "arcana": "major",
+                "suit": "",
+                "rank": "",
+                "complexity_meanings": 2,
+                "complexity_aspects": 0,
+                "brief": "card_T_79_WRL_brief",
+                "tags": "card_T_79_WRL_tags",
+                "story_ids": [193, 194, 195],
+                "description": {
+                    "position_default": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 3,
+                            "text": "card_T_79_WRL_D1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_79_WRL_D1_rec_text",
+                            "aspect": "card_T_79_WRL_D1_aspect"
+                        }
+                    },
+                    "position_alternative": {
+                        "first_description": {
+                            "scale_name": "card_T_scale_name",
+                            "scale_num": 2,
+                            "text": "card_T_79_WRL_A1_text",
+                            "rec_title": "card_T_rec_title",
+                            "rec_text": "card_T_79_WRL_A1_rec_text",
+                            "aspect": "card_T_79_WRL_A1_aspect"
+                        }
+                    }
+                }
+            }
+        ]
+    }
+}

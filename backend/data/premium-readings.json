@@ -1,0 +1,200 @@
+[
+  {
+    "timestamp": "2026-01-27T13:48:22.895Z",
+    "model": "gpt-4o",
+    "structureId": "ppf_v15_story",
+    "focusArea": null,
+    "request": {
+      "language": "tr",
+      "spread": "past_present_future",
+      "cards": [
+        {
+          "position": "past",
+          "name": "Kılıç Dörtlüsü",
+          "orientation": "upright"
+        },
+        {
+          "position": "present",
+          "name": "Kılıç Dokuzlusu",
+          "orientation": "reversed"
+        },
+        {
+          "position": "future",
+          "name": "Ermiş",
+          "orientation": "reversed"
+        }
+      ],
+      "focusArea": "general"
+    },
+    "response": {
+      "title": "Kılıç Dörtlüsü·Kılıç Dokuzlusu·Ermiş — Üç Kart",
+      "overall": "Geçmişteki dinginliğin yerini şimdi içsel bir huzursuzluk almış. Ancak bu durum seni yenmek yerine güçlendirebilir. Kendinle yüzleşip derin bir içgörü kazanabilirsin.",
+      "throughline": "İçsel huzursuzluğun, seni daha güçlü bir hale getirecek.",
+      "story": "Zamanında huzura kavuştuğun bir dönem vardı. Ancak şimdiki karışıklık seni zorlayabilir. Derin bir içsel sorgulama içindesin. Gelecekte, kendini anlamaya çalışırken yalnızlık duygusu baskın olabilir. Bu yalnızlık seni içsel olarak daha derinleştirecek.",
+      "beats": {
+        "past": "Geçmişte huzurluydun.",
+        "present": "Şimdi içsel bir çalkantı yaşanıyor.",
+        "future": "Gelecekte yalnızlık seni derinleştirebilir."
+      },
+      "choice": {
+        "pathA": "Kendi içine daha fazla dön ve huzur bul.",
+        "pathB": "Dış dünyadan destek alarak ilerle."
+      },
+      "keywords": [
+        "içgörü",
+        "huzursuzluk",
+        "yalnızlık"
+      ],
+      "mood": "yoğun",
+      "timing": "3-5 hafta",
+      "nextStep": "Kendinle yüzleşmeye devam et."
+    }
+  },
+  {
+    "timestamp": "2026-01-27T13:48:57.340Z",
+    "model": "gpt-4o",
+    "structureId": "ppf_v15_story",
+    "focusArea": null,
+    "request": {
+      "language": "en",
+      "spread": "past_present_future",
+      "cards": [
+        {
+          "position": "past",
+          "name": "The Hierophant",
+          "orientation": "reversed"
+        },
+        {
+          "position": "present",
+          "name": "Four of Cups",
+          "orientation": "reversed"
+        },
+        {
+          "position": "future",
+          "name": "The Hermit",
+          "orientation": "reversed"
+        }
+      ],
+      "focusArea": "general"
+    },
+    "response": {
+      "title": "The Hierophant·Four of Cups·The Hermit — Three Cards",
+      "overall": "You've been questioning traditional beliefs and feeling disconnected. Now, opportunities for emotional renewal are emerging. Soon, you may resist introspection, leading to feelings of isolation. Stay open to change.",
+      "throughline": "Embrace new perspectives to break free from stagnation.",
+      "story": "In the past, you challenged established norms, feeling restricted by conventional expectations. Currently, you're coming out of a period of emotional withdrawal, ready to engage with new experiences. If you continue to avoid self-reflection, you risk feeling isolated and directionless. Acknowledge your need for spiritual growth to find your way forward.",
+      "beats": {
+        "past": "You questioned authority, leading to a sense of alienation.",
+        "present": "You're beginning to reconnect emotionally.",
+        "future": "Avoidance of self-discovery could leave you feeling lost."
+      },
+      "choice": {
+        "pathA": "Embrace new opportunities for growth.",
+        "pathB": "Hold onto old beliefs and risk stagnation."
+      },
+      "keywords": [
+        "renewal",
+        "introspection",
+        "challenge"
+      ],
+      "mood": "reflective",
+      "timing": "3–5 weeks",
+      "nextStep": "Focus on inner growth to navigate future challenges."
+    }
+  },
+  {
+    "timestamp": "2026-01-27T13:49:18.190Z",
+    "model": "gpt-4o",
+    "structureId": "single_v15_minimal",
+    "focusArea": "career",
+    "request": {
+      "language": "en",
+      "spread": "single_card",
+      "card": {
+        "name": "Ten of Swords",
+        "orientation": "upright"
+      },
+      "focusArea": "career"
+    },
+    "response": {
+      "title": "Ten of Swords — Single Card",
+      "overall": "The Ten of Swords indicates a difficult ending or a sudden change in your career. It may feel overwhelming, but it's also a chance for new beginnings.",
+      "focusArea": "career",
+      "deepDive": "In your career, you might face a situation that feels like a complete breakdown or betrayal. This could mean the end of a job or project that you have been holding onto. While the situation feels dire, it's a signal to let go and explore new opportunities. It's time to think about what no longer serves you in your professional life.",
+      "shadow": "Ignoring this change can lead to prolonged stress and stagnation.",
+      "nextStep": "Acknowledge the end, release the past, and start planning your next move.",
+      "journal": "What lessons can I take from this career challenge to prepare for future opportunities?"
+    }
+  },
+  {
+    "timestamp": "2026-01-27T13:49:33.538Z",
+    "model": "gpt-4o",
+    "structureId": "single_v15_minimal",
+    "focusArea": "general",
+    "request": {
+      "language": "tr",
+      "spread": "single_card",
+      "card": {
+        "name": "Adalet",
+        "orientation": "reversed"
+      },
+      "focusArea": "general"
+    },
+    "response": {
+      "title": "Adalet — Tek Kart",
+      "overall": "Hayatında bir dengesizlik hissediyorsun. Kararların adil olmayabilir ve bu seni huzursuz ediyor.",
+      "focusArea": "general",
+      "deepDive": "Kendini sorgulamak zor olabilir ama gerekli. Objektifliğini kaybetmiş olman, ilişkilerini ve iç huzurunu etkiliyor. Adalet arayışında kendi hatalarını kabul etmelisin.",
+      "shadow": "Adaletsizlik duygusu, kendine karşı çok sert eleştiriler yapmana neden olabilir.",
+      "nextStep": "Kendinle dürüst bir hesaplaşma yap.",
+      "journal": "Hangi durumlarda adil olmadığını düşünüyorsun?"
+    }
+  },
+  {
+    "timestamp": "2026-01-27T13:49:55.770Z",
+    "model": "gpt-4o",
+    "structureId": "single_v15_minimal",
+    "focusArea": "career",
+    "request": {
+      "language": "tr",
+      "spread": "single_card",
+      "card": {
+        "name": "Kupa Beşlisi",
+        "orientation": "upright"
+      },
+      "focusArea": "career"
+    },
+    "response": {
+      "title": "Kupa Beşlisi — Tek Kart",
+      "overall": "Kariyerinde kayıplar ve hayal kırıklıkları yaşadığın bir dönemde olabilirsin. Ancak geride kalanlara takılı kalmak yerine, ileriye bakarak yeni fırsatlara yönelmen gerekiyor.",
+      "focusArea": "career",
+      "deepDive": "Kariyerindeki bazı hedeflere ulaşamamış olabilirsin. Ancak mevcut durumunu değerlendirerek ve geçmişteki hatalardan ders çıkararak yeni bir yön belirleyebilirsin. Gelecekteki başarıların, geçmişin gölgesi altında kalmamalı.",
+      "shadow": "Geçmişteki başarısızlıkların seni durdurmasına izin verme.",
+      "nextStep": "Bugünden itibaren, küçük de olsa bir hedef belirle ve ona odaklan.",
+      "journal": "Kariyerimde hangi hayal kırıklıkları beni hala etkiliyor ve bunların üstesinden nasıl gelebilirim?"
+    }
+  },
+  {
+    "timestamp": "2026-01-27T13:50:25.344Z",
+    "model": "gpt-4o",
+    "structureId": "single_v15_minimal",
+    "focusArea": "love",
+    "request": {
+      "language": "tr",
+      "spread": "single_card",
+      "card": {
+        "name": "Kupa Beşlisi",
+        "orientation": "upright"
+      },
+      "focusArea": "love"
+    },
+    "response": {
+      "title": "Kupa Beşlisi — Tek Kart",
+      "overall": "Geçmişte bir kayıp yaşadın ve bu kayıp seni hala etkiliyor. Hissettiğin acı, ileriye doğru atacağın adımları engelliyor.",
+      "focusArea": "love",
+      "deepDive": "Aşk hayatında hala geçmişteki acıların izlerini taşıyorsun. Bu izler, yeni ilişkilerde kendini tam anlamıyla ifade etmeni zorlaştırıyor. Geçmişi bırakıp, geleceğe umutla bakmayı öğrenmelisin.",
+      "shadow": "Geçmişle yüzleşmek yerine kaçmayı tercih ediyorsun.",
+      "nextStep": "Kendine dürüst ol ve geçmişteki duygularını kabul et.",
+      "journal": "Aşk hayatında geçmişte en çok hangi kayıptan etkilendin ve bu kaybı nasıl kabullenebilirsin?"
+    }
+  }
+]

@@ -1,0 +1,1798 @@
+{
+  "cards": [
+    {
+      "id": 0,
+      "name": "El Loco",
+      "image": "00_fool",
+      "arcana": "major",
+      "number": "0",
+      "suit": null,
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los nuevos comienzos y el poder creativo que hay en ti para forjar tu destino. Actúa con confianza e ignora a los detractores mientras trazas tu propio camino. Recuerda, cuando actúas con valentía, la vida te abre nuevas puertas.",
+          "love": "Entra en el mundo del romance con el corazón abierto y la voluntad de empezar de cero. Atrévete a expresar tus verdaderos sentimientos y deseos, lo que podría llevarte a conexiones emocionantes.",
+          "career": "Ahora es el momento de emprender nuevos proyectos audaces o cambiar de trayectoria profesional si has estado anhelando un cambio. La innovación y el espíritu pionero serán tus guías, atrayendo hacia ti las oportunidades y los colaboradores adecuados.",
+          "finance": "Considera enfoques poco convencionales para tus finanzas. Ahora podría ser el momento adecuado para invertir en esa idea única o iniciar un nuevo proyecto, ya que tu capacidad para tener éxito se ve reforzada por tu optimismo y tu nueva perspectiva."
+        },
+        "reversed": {
+          "general": "Enfrentarse a los mismos viejos miedos puede parecer un revés, pero considérelo como una oportunidad para superarlos de una vez por todas. Reúna su valor y afronte estos retos de frente para allanar el camino hacia el éxito.",
+          "love": "Los miedos de relaciones pasadas pueden resurgir, instándote a retirarte o a superarlos. Elige abordar estos miedos directamente para abrir el camino hacia relaciones más satisfactorias.",
+          "career": "Es posible que te encuentres con contratiempos similares a los que alguna vez detuvieron tu progreso. Aprovecha esta oportunidad para aprender de los errores del pasado y seguir adelante con renovada determinación.",
+          "finance": "Es posible que resurjan los temores financieros, posiblemente relacionados con pérdidas o fracasos del pasado. Afróntelos de frente reevaluando sus estrategias y, tal vez, buscando asesoramiento, para convertir los fracasos del pasado en éxitos futuros."
+        }
+      }
+    },
+    {
+      "id": 1,
+      "name": "El Mago",
+      "image": "01_magician",
+      "arcana": "major",
+      "number": "I",
+      "suit": null,
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Aprovecha tu potencial ahora; tienes todas las herramientas necesarias para hacer realidad tus ideas. Concéntrate en utilizar tus habilidades y toma medidas decisivas para hacer realidad tu visión.",
+          "love": "En las relaciones, tu creatividad y entusiasmo pueden conducir a conexiones más profundas. Inicia conversaciones significativas y crea momentos memorables que fortalezcan vuestro vínculo.",
+          "career": "Estás en una posición privilegiada para influir en tu trayectoria profesional. Aprovecha tus habilidades únicas e inicia proyectos que muestren tus puntos fuertes tanto a tus superiores como a tus compañeros.",
+          "finance": "Este es un momento oportuno para innovar su estrategia financiera. Considere inversiones o planes de ahorro que aprovechen su situación financiera actual para asegurar el crecimiento futuro."
+        },
+        "reversed": {
+          "general": "Reevalúa tus estrategias e ideas; la complicación excesiva o la negligencia podrían estar obstaculizando tu progreso. Simplifica tu enfoque y concéntrate en dar pasos prácticos hacia adelante.",
+          "love": "En el amor, la falta de comunicación o las expectativas poco realistas pueden estar causando fricciones. Tómate tu tiempo para reevaluar tus objetivos en la relación y comunícate abiertamente para volver a alinearte con tu pareja.",
+          "career": "Los posibles errores en tu carrera pueden deberse a una planificación excesiva o a una falta de acción. Cambia tu enfoque de la preparación a la ejecución para recuperar el impulso en el trabajo.",
+          "finance": "Es posible que debas revisar tus estrategias financieras. Evita riesgos innecesarios y perfecciona tu enfoque para asegurarte de que estás construyendo sobre una base sólida y pragmática."
+        }
+      }
+    },
+    {
+      "id": 2,
+      "name": "La Sacerdotisa",
+      "image": "02_high_priestess",
+      "arcana": "major",
+      "number": "II",
+      "suit": null,
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Confía en tu sabiduría interior para que te guíe a través de las complejidades de la vida. Mantente abierto a las revelaciones repentinas que pueden transformar tu forma de entender o abordar las cosas. Cuando llegue la claridad, actúa sin dudarlo.",
+          "love": "Presta atención a tu intuición, ya que puede revelarte verdades sobre tu relación o posibles parejas. Si algo te parece extraño, considera tener una conversación sincera para aclarar las cosas. Usa la comprensión y el tacto para navegar por las aguas del amor.",
+          "career": "Un momento de claridad podría revelarte nuevos caminos en tu vida profesional. Confía en tu instinto cuando surjan oportunidades y no rehúyas de los puestos que a primera vista parecen difíciles. Tu instinto es una guía poderosa.",
+          "finance": "Podrían surgir insights financieros inesperados. Presta mucha atención a estas revelaciones y utilízalas para ajustar tu presupuesto o estrategia de inversión. Es un buen momento para confiar en tu intuición a la hora de tomar decisiones financieras."
+        },
+        "reversed": {
+          "general": "Es posible que estés evitando ciertas verdades porque desafían tu perspectiva actual de la vida. Es fundamental afrontar estas realidades para crecer y avanzar. Busca la objetividad y estate dispuesto a replantearte tus creencias.",
+          "love": "En el amor, negar los problemas no conduce a una solución. Afrontar verdades incómodas puede ser difícil, pero es necesario para la salud de tu relación. Mantén un diálogo abierto y honesto para abordar los problemas.",
+          "career": "Resistirse al cambio en tu carrera por miedo a lo desconocido puede limitar tu crecimiento. Acepta las verdades sobre tu vida profesional, aunque te resulten incómodas. Esto puede implicar buscar opiniones o considerar diferentes trayectorias profesionales.",
+          "finance": "Es posible que esté ignorando señales financieras importantes porque no se ajustan a los resultados que esperaba. Tómese el tiempo necesario para reevaluar su estrategia financiera con honestidad. Ignorar estas señales puede provocar mayores pérdidas en el futuro."
+        }
+      }
+    },
+    {
+      "id": 3,
+      "name": "La Emperatriz",
+      "image": "03_empress",
+      "arcana": "major",
+      "number": "III",
+      "suit": null,
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Aprovecha los aspectos enriquecedores de tu naturaleza para fomentar el crecimiento a tu alrededor. Actúa con amabilidad y crea entornos que permitan a los demás prosperar. Sé el suelo que nutre las semillas del potencial en cada interacción.",
+          "love": "Céntrate en crear vínculos profundos y significativos. Comunícate abiertamente con tu pareja y esfuérzate por comprender sus necesidades y deseos. Si estás soltero, cultiva el amor propio para atraer una relación que complemente tu crecimiento personal.",
+          "career": "Utiliza tu influencia para apoyar y desarrollar a otras personas en tu lugar de trabajo. Participa en el trabajo en equipo y piensa en cómo tus contribuciones pueden mejorar al grupo en su conjunto. Busca oportunidades para orientar o guiar a los compañeros más nuevos.",
+          "finance": "Invierte en proyectos que prometan crecimiento y estabilidad. Piensa en tus finanzas como un jardín que necesita cuidados regulares: poda los gastos innecesarios y riega las semillas de tus inversiones con prudencia."
+        },
+        "reversed": {
+          "general": "Es posible que estés descuidando los aspectos más humanitarios de tu carácter, lo que puede frenar tu crecimiento personal y el de tu comunidad. Reflexiona sobre tus acciones para asegurarte de que no están perjudicando ni a ti mismo ni a los demás. Busca activamente formas de aportar positividad y apoyo a tus interacciones diarias.",
+          "love": "Evita encerrarte en ti mismo o ignorar las necesidades de tu pareja. La comunicación es fundamental; si surgen problemas, afróntalos con honestidad y voluntad de resolver los conflictos. Da prioridad al respeto y la comprensión mutuos para sanar y fortalecer tu relación.",
+          "career": "El aislamiento o la falta de cooperación podrían estar obstaculizando tu progreso profesional. Vuelve a conectar con tu equipo y comparte responsabilidades. Evita asumir demasiadas cosas por tu cuenta: la colaboración puede conducir a un mayor éxito y satisfacción laboral.",
+          "finance": "Reevalúa cómo gestionas tus recursos. El gasto excesivo o una mala planificación financiera pueden provocar inestabilidad. Crea un presupuesto que te permita ahorrar y recortar gastos innecesarios para restablecer el equilibrio de tu salud financiera."
+        }
+      }
+    },
+    {
+      "id": 4,
+      "name": "El Emperador",
+      "image": "04_emperor",
+      "arcana": "major",
+      "number": "IV",
+      "suit": null,
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Estás entrando en el camino correcto, aunque te sientas inseguro. Aprovecha esta etapa como un pilar para tu futuro, asegurándote de que tus acciones estén en consonancia con tus objetivos a largo plazo.",
+          "love": "En las relaciones, es hora de establecer estabilidad y estructura. Comunique claramente sus deseos y expectativas para fomentar un vínculo más seguro y comprensivo.",
+          "career": "Céntrate en alinear tus acciones profesionales con tus objetivos de crecimiento profesional. Es un buen momento para aceptar responsabilidades que pueden suponer un reto, pero que en última instancia te guiarán hacia la trayectoria profesional que deseas.",
+          "finance": "Ahora es fundamental mantener una disciplina financiera. Planifica tu presupuesto pensando en el futuro y evita las compras impulsivas. Considera inversiones que prometan beneficios a largo plazo en lugar de gratificaciones inmediatas."
+        },
+        "reversed": {
+          "general": "Es posible que te estés desviando del camino que te lleva a tu verdadero propósito. Reevalúa tus decisiones recientes y piensa en cómo te ayudan a alcanzar tus objetivos finales.",
+          "love": "En el amor, reconsidera si tu camino actual te está llevando a la relación que realmente deseas. Quizás sea el momento de cambiar de táctica o abordar los desajustes con tu pareja.",
+          "career": "En tu carrera profesional, ten cuidado con los atajos o las soluciones aparentemente fáciles. Es posible que no te lleven a un éxito duradero. Reorienta tu trabajo hacia tus aspiraciones profesionales a largo plazo.",
+          "finance": "Es posible que sea necesario reevaluar las decisiones financieras. Evite los gastos impulsivos o las inversiones arriesgadas que prometen altos rendimientos sin una base sólida."
+        }
+      }
+    },
+    {
+      "id": 5,
+      "name": "El Sumo Sacerdote",
+      "image": "05_hierophant",
+      "arcana": "major",
+      "number": "V",
+      "suit": null,
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Acepta el viaje de aprender de nuevas experiencias y personas que desafían tu forma de pensar. Mantén una actitud abierta ante las lecciones que la vida intenta enseñarte a través de circunstancias inusuales o desafiantes.",
+          "love": "Este es un momento para aprender de tu pareja o posibles parejas. Haz hincapié en la comunicación y la comprensión de los diferentes puntos de vista para fortaleceros juntos. Cada conflicto o diferencia es una oportunidad para profundizar vuestra conexión.",
+          "career": "Busca orientación o ofrece asesoramiento a otras personas en tu lugar de trabajo. Este intercambio de conocimientos no solo mejorará tus habilidades, sino que también fortalecerá tus relaciones profesionales. Busca oportunidades para aprender o enseñar.",
+          "finance": "Ten en cuenta los consejos financieros de personas con más experiencia y sé cauteloso con las inversiones que prometen ganancias rápidas. Infórmate sobre las diferentes estrategias financieras que se ajustan a tus objetivos a largo plazo."
+        },
+        "reversed": {
+          "general": "Evitar las oportunidades de crecimiento puede proporcionar comodidad a corto plazo, pero obstaculizará tu desarrollo a largo plazo. Reconsidera las ventajas de afrontar los retos de frente en lugar de huir de ellos.",
+          "love": "Si te encuentras alejándote de relaciones difíciles, piensa en las lecciones que podrías estar perdiéndote. Comprométete de forma profunda y honesta con tu pareja para superar juntos los obstáculos.",
+          "career": "Resistirse a la tutoría o la orientación en el trabajo puede parecer más fácil, pero aprovechar estas oportunidades puede conducir a un crecimiento profesional significativo. Busque comentarios y esté abierto a aprender nuevas formas de mejorar.",
+          "finance": "Evite tomar atajos financieros o descuidar los buenos consejos. Reevalúe los posibles beneficios a largo plazo de mantener la disciplina y estar informado sobre sus decisiones financieras."
+        }
+      }
+    },
+    {
+      "id": 6,
+      "name": "Los Enamorados",
+      "image": "06_lovers",
+      "arcana": "major",
+      "number": "VI",
+      "suit": null,
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Te encuentras en una encrucijada crucial, por lo que es imprescindible que tomes una decisión que esté en consonancia con tus valores más profundos. Escucha a tu corazón y deja que te guíe hacia la realización personal, aunque ello vaya en contra de las expectativas sociales.",
+          "love": "Este es un momento para elegir el amor que te desafía pero te enriquece, posiblemente desafiando las normas convencionales. Busca relaciones que te hagan sentir profundamente bien, incluso si vienen acompañadas de obstáculos sociales.",
+          "career": "Elige una trayectoria profesional que te resulte realmente satisfactoria, no solo aquella que quede bien en el currículum. Esto puede significar anteponer una pasión al sueldo, o un proyecto significativo a un puesto prestigioso.",
+          "finance": "Toma decisiones financieras que respalden tu visión personal a largo plazo, no solo las ganancias inmediatas. Esto puede implicar invertir en áreas que estén en consonancia con tus valores, aunque no sean las más lucrativas."
+        },
+        "reversed": {
+          "general": "Evitar tomar una decisión no es una opción; la indecisión solo complicará tu camino. Comprométete con una dirección para evitar el estancamiento y alinea tus elecciones con tus verdaderos deseos.",
+          "love": "En las relaciones, es fundamental tomar decisiones claras sobre lo que realmente quieres. La ambivalencia puede conducir a la insatisfacción, así que decide lo que buscas en una pareja y actúa en consecuencia.",
+          "career": "Dudar a la hora de elegir entre diferentes opciones laborales te impide progresar. Evalúa tus aspiraciones profesionales y toma una decisión firme que se ajuste mejor a tu crecimiento profesional.",
+          "finance": "Aplazar las decisiones financieras puede hacer que se pierdan oportunidades. Tome decisiones informadas sobre dónde asignar sus recursos para asegurar su futuro financiero."
+        }
+      }
+    },
+    {
+      "id": 7,
+      "name": "El Carro",
+      "image": "07_chariot",
+      "arcana": "major",
+      "number": "VII",
+      "suit": null,
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Acepta el rápido ritmo de cambio en tu vida como una señal de progreso. Mantén tu concentración y adáptate rápidamente a las nuevas situaciones para aprovechar el impulso de tus decisiones recientes.",
+          "love": "Tu relación puede estar avanzando rápidamente. Mantén una comunicación abierta y sé transparente con tus sentimientos para asegurarte de que ambos miembros de la pareja se sientan cómodos con el ritmo.",
+          "career": "Aprovecha los rápidos cambios en el trabajo. Toma la iniciativa en nuevos proyectos y demuestra tu liderazgo para destacar positivamente en tu carrera profesional.",
+          "finance": "Este es un momento oportuno para tomar decisiones financieras audaces. Considere inversiones que se ajusten a sus objetivos a largo plazo, pero asegúrese de investigar a fondo antes de comprometerse."
+        },
+        "reversed": {
+          "general": "Sentirse abrumado por el ritmo de los acontecimientos indica la necesidad de hacer una pausa estratégica y establecer prioridades. Decida qué oportunidades benefician realmente a su crecimiento antes de volver a sumergirse en ellas.",
+          "love": "Si la relación te parece precipitada, comunica tu necesidad de ir más despacio. Es importante asegurarse de que tanto tú como tu pareja estáis en sintonía en vuestra relación.",
+          "career": "Resiste la tentación de retirarte de los proyectos desafiantes. En su lugar, gestiona tu carga de trabajo delegando tareas y centrándote en lo que más valor añade a tu crecimiento profesional.",
+          "finance": "Evite tomar decisiones financieras precipitadas durante este período de aparente caos. Tómese el tiempo necesario para analizar y planificar, asegurándose de que cada acción financiera esté bien pensada."
+        }
+      }
+    },
+    {
+      "id": 8,
+      "name": "La Fuerza",
+      "image": "08_strength",
+      "arcana": "major",
+      "number": "VIII",
+      "suit": null,
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Aprovecha tu fuerza interior para poner orden en el caos que te rodea. Concéntrate en mejorar tus habilidades organizativas para gestionar y optimizar situaciones complejas de manera eficaz.",
+          "love": "Utiliza tu fuerte presencia y confianza para cultivar tus relaciones. Una comunicación clara y una actitud convincente te ayudarán a resolver conflictos y fortalecer vínculos.",
+          "career": "Canaliza tu energía para abordar proyectos o negociaciones difíciles en el trabajo. Tu mayor fuerza de voluntad y tus habilidades de liderazgo te convertirán en una pieza clave en la dinámica del equipo.",
+          "finance": "Organiza tus asuntos financieros con precisión. Este es un buen momento para revisar y sistematizar tu presupuesto y tus planes de inversión con el fin de garantizar la estabilidad a largo plazo."
+        },
+        "reversed": {
+          "general": "Reconozca dónde podría estar perdiendo energía debido a problemas externos no gestionados. Reevalúe su enfoque y recupere el control para evitar sentimientos de fracaso y frustración.",
+          "love": "Sé consciente de los momentos en los que tu energía en las relaciones puede verse mermada por problemas o conflictos sin resolver. Toma medidas para abordarlos directamente y restablecer la armonía.",
+          "career": "Evita que los contratiempos te desvíen de tu camino. Identifica qué es lo que interrumpe tu flujo de trabajo y afróntalo de frente para recuperar tu impulso profesional.",
+          "finance": "Ten cuidado con las oportunidades financieras perdidas debido a la desorganización. Toma medidas inmediatas para rectificar cualquier mala gestión y reajustar tus estrategias financieras."
+        }
+      }
+    },
+    {
+      "id": 9,
+      "name": "El Ermitaño",
+      "image": "09_hermit",
+      "arcana": "major",
+      "number": "IX",
+      "suit": null,
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "El Ermitaño señala una fase de introspección y autodescubrimiento. Aprovecha este momento para reflexionar sobre tus objetivos y en quién te estás convirtiendo. Es el momento perfecto para un retiro personal con el fin de recargar energías y aclarar tu camino.",
+          "love": "En tus relaciones románticas, tómate tu tiempo para pensar qué es lo que realmente necesitas de tu pareja. Si estás soltero, disfruta de este periodo de soledad para conocerte mejor a ti mismo antes de iniciar una nueva relación. Si tienes pareja, fomenta el espacio personal para fortalecer vuestro vínculo.",
+          "career": "Esta carta aconseja hacer una pausa para reflexionar sobre tu trayectoria profesional. Aléjate del ajetreo y evalúa tus objetivos a largo plazo. Es un momento ideal para el desarrollo profesional o para aprender nuevas habilidades que se ajusten a tus aspiraciones profesionales.",
+          "finance": "Céntrate en la planificación financiera y revisa cuidadosamente tus gastos e inversiones. Es un buen momento para analizar tu salud financiera y ajustar tu presupuesto para asegurar tu futuro. Evita las compras impulsivas e invierte en ahorros a largo plazo."
+        },
+        "reversed": {
+          "general": "Intentar parecer ocupado cuando no te sientes con ganas puede agotar aún más tu energía. Reconoce tu necesidad de descansar y evita comprometerte en exceso. Es importante escuchar a tu cuerpo y tomártelo con calma.",
+          "love": "En tu vida amorosa, fingir que estás bien cuando no lo estás puede causar más daño que bien. Comunícate abiertamente con tu pareja sobre la necesidad de tener un tiempo de tranquilidad para ti mismo. Esta honestidad puede evitar malentendidos y fortalecer tu relación.",
+          "career": "El Ermitaño invertido sugiere reevaluar la necesidad de tus actividades laborales actuales. Si las tareas te parecen improductivas o agotadoras, tal vez sea el momento de hablar con tu equipo o supervisor sobre la posibilidad de dar prioridad a un trabajo más significativo.",
+          "finance": "Evita tomar decisiones financieras apresuradas o bajo la apariencia de urgencia. Da un paso atrás y evalúa si tus movimientos financieros actuales son realmente beneficiosos o simplemente impulsivos. La paciencia y una planificación cuidadosa son fundamentales en este momento."
+        }
+      }
+    },
+    {
+      "id": 10,
+      "name": "La Rueda de la Fortuna",
+      "image": "10_wheel_of_fortune",
+      "arcana": "major",
+      "number": "X",
+      "suit": null,
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los cambios que se avecinan, ya que indican un cambio hacia un nivel superior de comprensión o situación. Mantén una actitud flexible y abierta, y comprende que, aunque los cambios pueden inquietarte al principio, están configurando un futuro más favorable.",
+          "love": "En las relaciones, este es un momento para evolucionar hacia niveles más profundos de conexión. Comuníquense abiertamente sobre sus visiones para el futuro y acepten los cambios en la dinámica de su pareja.",
+          "career": "Es probable que surjan oportunidades de ascenso o nuevos puestos de trabajo; muestre disposición para dar un paso adelante. Adáptese rápidamente a las nuevas funciones y responsabilidades para aprovechar al máximo este periodo de transición.",
+          "finance": "El crecimiento financiero está en el horizonte. Este puede ser un buen momento para considerar inversiones que se ajusten a los objetivos a largo plazo, pero proceda con un optimismo cauteloso y una investigación exhaustiva."
+        },
+        "reversed": {
+          "general": "Las oportunidades de crecimiento están ahí, pero debes decidir activamente aprovecharlas. Mantente atento a los cambios sutiles y sé proactivo a la hora de utilizar estos momentos para avanzar.",
+          "love": "Es posible que estés perdiendo señales u oportunidades para profundizar tus relaciones. Presta más atención a las necesidades y sugerencias de tu pareja, y considéralas como puertas hacia una conexión más satisfactoria.",
+          "career": "Esté atento a la nueva información u oportunidades en el trabajo que podría estar pasando por alto. Su próxima gran oportunidad podría estar oculta a simple vista y requerir su participación activa.",
+          "finance": "Las oportunidades financieras pueden pasar desapercibidas si no las buscas activamente. Mantente atento a las oportunidades de inversión o a las formas de mejorar tu estabilidad financiera: es necesario actuar para obtener beneficios."
+        }
+      }
+    },
+    {
+      "id": 11,
+      "name": "La Justicia",
+      "image": "11_justice",
+      "arcana": "major",
+      "number": "XI",
+      "suit": null,
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Aborda ahora los problemas sin resolver para evitar complicaciones más adelante. La procrastinación solo te enreda aún más en las dificultades, así que afronta los retos de frente para despejar el camino hacia el éxito.",
+          "love": "En las relaciones, es fundamental abordar los problemas a medida que surgen. Comuníquese abiertamente sobre los problemas antes de que se agraven, garantizando la equidad y la igualdad en su relación.",
+          "career": "Afrontar directamente los retos del lugar de trabajo y tratar de resolver cualquier problema legal o ético. Este enfoque proactivo protegerá su reputación profesional y le abrirá las puertas a nuevas oportunidades.",
+          "finance": "Cumpla con sus obligaciones financieras sin demora. Retrasar los pagos o ignorar las deudas podría acarrearle mayores problemas financieros. Liquide sus cuentas y organice su presupuesto para estar tranquilo."
+        },
+        "reversed": {
+          "general": "Deja de verte como una víctima y asume la responsabilidad de tu vida. Libérate del autoengaño y reconoce tu parte de responsabilidad en tus circunstancias actuales para iniciar el cambio.",
+          "love": "Si te encuentras culpando a tu pareja por los problemas de la relación, es hora de mirar hacia dentro. Reflexiona sobre tus acciones y trabaja para lograr el entendimiento mutuo y la responsabilidad.",
+          "career": "Evita culpar a otros en el trabajo. Reconoce cualquier error que hayas cometido y comprométete a enmendarlo y mejorar tu conducta profesional.",
+          "finance": "Asume la responsabilidad de tu situación financiera. Evita caer en la trampa de culpar a factores externos por tus problemas económicos y concéntrate en crear un plan sólido para recuperar la estabilidad financiera."
+        }
+      }
+    },
+    {
+      "id": 12,
+      "name": "El Colgado",
+      "image": "12_hanged_man",
+      "arcana": "major",
+      "number": "XII",
+      "suit": null,
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Es hora de afrontar y transformar los patrones que te han estado frenando. Considera esto como un estímulo para reevaluar tus hábitos y creencias profundamente arraigados, y atrévete a realizar los cambios necesarios.",
+          "love": "En las relaciones, es posible que te aferres a expectativas o roles obsoletos. Discute abiertamente nuevas posibilidades con tu pareja para fomentar el crecimiento y una conexión más profunda.",
+          "career": "Tu crecimiento profesional se ve frenado por metodologías obsoletas. Desafía el statu quo en el trabajo, propone ideas innovadoras o busca funciones que fomenten el pensamiento creativo.",
+          "finance": "Reexamine sus hábitos financieros y las suposiciones que los sustentan. Quizás sea el momento de liberarse de estrategias de inversión obsoletas y explorar oportunidades más actuales."
+        },
+        "reversed": {
+          "general": "Resistirse al cambio necesario solo agravará tus dificultades. Reconoce la incomodidad, pero empieza a buscar soluciones constructivas en lugar de mantenerte inflexible.",
+          "love": "La terquedad en las relaciones conduce al estancamiento. Reflexiona sobre tu papel en la dinámica relacional e inicia conversaciones sobre el cambio y el crecimiento con tu pareja.",
+          "career": "Aferrarse a las viejas costumbres en el trabajo podría perjudicar el avance de tu carrera profesional. Es fundamental adaptarse y ser flexible en tu enfoque para cumplir con los nuevos estándares del sector o los requisitos laborales.",
+          "finance": "Tu reticencia a adaptarte financieramente no te está beneficiando. Revisa y ajusta tus planes presupuestarios y de inversión para alinearlos mejor con el panorama económico."
+        }
+      }
+    },
+    {
+      "id": 13,
+      "name": "La Muerte",
+      "image": "13_death",
+      "arcana": "major",
+      "number": "XIII",
+      "suit": null,
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Este período de calma es una oportunidad para reflexionar profundamente. Analiza las experiencias pasadas, clasifícalas en lo que deseas conservar o descartar en tu vida, y utiliza estas ideas para tomar tus decisiones futuras.",
+          "love": "En las relaciones, piensa qué dinámicas del pasado valoras y cuáles te gustaría cambiar. Comunica estos deseos a tu pareja para asegurarte de que vuestro futuro juntos se ajusta a las visiones de ambos.",
+          "career": "Reflexiona sobre tu trayectoria profesional y decide qué elementos quieres conservar y cuáles dejar atrás. Utiliza esta introspección para orientar tus próximos pasos profesionales, quizá buscando puestos que se ajusten mejor a tus objetivos refinados.",
+          "finance": "Evalúa tus hábitos financieros revisando tus éxitos y fracasos pasados. Utiliza este análisis para crear un plan financiero proactivo que se centre en el crecimiento sostenible y la seguridad."
+        },
+        "reversed": {
+          "general": "La resistencia al cambio puede estancar tu desarrollo personal. Acepta los finales necesarios y empieza a definir deseos y prioridades claros que guíen tus decisiones.",
+          "love": "Evitar abordar los problemas de pareja puede generar insatisfacción. Sea proactivo a la hora de discutir y resolver los problemas subyacentes para fomentar una dinámica de pareja más saludable.",
+          "career": "Tu carrera profesional puede estancarse si te resistes a los cambios necesarios. Reconoce las áreas que necesitan mejorar o modificarse y toma medidas decisivas para abordarlas.",
+          "finance": "El progreso financiero puede verse obstaculizado por la reticencia a adaptarse. Reevalúe sus estrategias financieras y esté dispuesto a implementar los cambios necesarios para mejorar su estabilidad económica."
+        }
+      }
+    },
+    {
+      "id": 14,
+      "name": "La Templanza",
+      "image": "14_temperance",
+      "arcana": "major",
+      "number": "XIV",
+      "suit": null,
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "La paciencia es tu estrella guía en este momento. Comprende que los acontecimientos en tu vida se desarrollan a su ritmo natural. Mantén el rumbo y confía en el proceso, resistiendo la tentación de apresurar o forzar las situaciones.",
+          "love": "En tu vida sentimental, deja que las relaciones evolucionen lentamente. Cultiva la paciencia y la comprensión en lugar de presionar para obtener soluciones rápidas o compromisos. Este es un momento para profundizar las conexiones de forma natural.",
+          "career": "Tus proyectos profesionales están progresando, aunque no sea evidente de inmediato. Mantén un esfuerzo constante y sé paciente con los resultados. Evita presionar demasiado; deja que tu trabajo madure a su propio ritmo.",
+          "finance": "Desde el punto de vista financiero, es momento de mantener un optimismo cauteloso. Continúe con sus estrategias actuales y deje que las inversiones maduren. Resista cualquier tentación de tomar decisiones precipitadas basadas en las fluctuaciones a corto plazo del mercado."
+        },
+        "reversed": {
+          "general": "Cambia de marcha y adopta un enfoque más dinámico de la vida. Empieza a iniciar el cambio en lugar de esperar a que fuerzas externas te obliguen a moverte. Es hora de buscar activamente nuevas oportunidades y salir del estancamiento.",
+          "love": "Si tu relación se siente estancada, tal vez sea el momento de estimular el crecimiento a través de nuevas experiencias o conversaciones abiertas sobre objetivos futuros. Toma la iniciativa para fomentar el cambio y profundizar vuestra conexión.",
+          "career": "En tu carrera profesional, empieza a dar pasos audaces hacia el avance. Busca nuevos proyectos o funciones que te supongan un reto y te ofrezcan crecimiento. Es un momento favorable para dar pasos importantes que puedan impulsar tu vida profesional.",
+          "finance": "En el ámbito financiero, busque oportunidades para diversificar y ampliar su cartera. Considere estrategias de inversión más agresivas que se ajusten a sus objetivos financieros a largo plazo, pero asegúrese de investigar a fondo primero."
+        }
+      }
+    },
+    {
+      "id": 15,
+      "name": "El Diablo",
+      "image": "15_devil",
+      "arcana": "major",
+      "number": "XV",
+      "suit": null,
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Reconoce las cadenas de tus dependencias y toma medidas proactivas para liberarte. Ya sea un hábito perjudicial o un vínculo emocional, recupera tu autonomía estableciendo objetivos claros para tu liberación personal.",
+          "love": "En las relaciones, ten cuidado de no volverte demasiado dependiente o controlador. Fomenta la independencia y el crecimiento personal tanto en ti mismo como en tu pareja para cultivar una conexión más sana y equilibrada.",
+          "career": "Si tu carrera profesional te parece más una trampa que un camino hacia la realización personal, es hora de replanteártela. Plantéate desarrollar nuevas habilidades o explorar trayectorias profesionales alternativas que se ajusten mejor a tus pasiones y valores.",
+          "finance": "Los hábitos financieros pueden ser restrictivos. Revise críticamente sus hábitos de gasto y ahorro; si le están llevando a endeudarse o a sufrir estrés financiero, establezca un presupuesto más sostenible o busque asesoramiento financiero."
+        },
+        "reversed": {
+          "general": "Te encuentras en un momento crítico en el que existe el riesgo de caer en malos hábitos. Mantente alerta y elige conscientemente caminos que te alejen de posibles dependencias.",
+          "love": "Esté atento a los signos de codependencia o vínculos poco saludables que puedan surgir en sus relaciones. Mantenga una comunicación abierta y establezca límites para garantizar que ambos miembros de la pareja conserven su individualidad.",
+          "career": "Ten cuidado de no caer en la trampa de una oportunidad aparentemente lucrativa que podría resultar perjudicial a largo plazo. Examina minuciosamente las ofertas de trabajo y los compromisos de los proyectos antes de seguir adelante.",
+          "finance": "Es posible que te sientas tentado por planes financieros arriesgados o soluciones rápidas para tus problemas económicos. Actúa con precaución y prioriza la estabilidad financiera a largo plazo frente a las ganancias temporales."
+        }
+      }
+    },
+    {
+      "id": 16,
+      "name": "La Torre",
+      "image": "16_tower",
+      "arcana": "major",
+      "number": "XVI",
+      "suit": null,
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los cambios necesarios que eliminan los aspectos obsoletos de tu vida. Puede que te resulte perturbador, pero es una oportunidad para reconstruirte con más fuerza. Evalúa lo que se está desmoronando y por qué es beneficioso dejarlo ir.",
+          "love": "Si sientes que tu relación se está desmoronando, piensa en qué patrones o dinámicas debes abandonar. Aprovecha este momento turbulento para fortalecer vuestra comunicación y reconstruirla sobre bases más sólidas.",
+          "career": "Un cambio repentino en tu situación laboral, como un despido o la finalización abrupta de un proyecto, es una señal para reevaluar tu trayectoria profesional. Aprovecha este momento para orientarte hacia puestos que se ajusten mejor a tus habilidades y pasiones actuales.",
+          "finance": "La inestabilidad financiera puede ser una llamada de atención para revisar y reajustar tu presupuesto y tus hábitos de gasto. Da prioridad a saldar tus deudas y considera nuevas estrategias de ahorro para prepararte mejor ante futuras incertidumbres."
+        },
+        "reversed": {
+          "general": "Resistirse al cambio solo prolongará tu malestar. Reconoce lo que ya no te sirve y comienza conscientemente el proceso de dejarlo ir para dar paso a un nuevo crecimiento.",
+          "love": "Aferrarse a una relación que ya ha pasado su mejor momento puede impedirte experimentar conexiones satisfactorias. Reflexiona sobre lo que te mantiene atado y si vale la pena el coste emocional.",
+          "career": "Permanecer en un trabajo estancado por miedo al cambio puede obstaculizar tu crecimiento profesional. Ponte a prueba y explora nuevas oportunidades que, aunque al principio puedan parecer intimidantes, podrían proporcionarte una mayor satisfacción laboral.",
+          "finance": "Evitar los cambios financieros necesarios puede acarrear problemas mayores en el futuro. Empiece a implementar pequeños ajustes manejables en su planificación financiera para mejorar gradualmente su estabilidad económica."
+        }
+      }
+    },
+    {
+      "id": 17,
+      "name": "La Estrella",
+      "image": "17_star",
+      "arcana": "major",
+      "number": "XVII",
+      "suit": null,
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tus impulsos intuitivos, ya que te guían hacia el crecimiento personal. Deja atrás las limitaciones del pasado y permítete explorar nuevos caminos con confianza.",
+          "love": "Confía en tu instinto cuando se trata de relaciones. Si sientes una conexión profunda, persíguela aunque desafíe la lógica convencional. Este podría ser el momento de profundizar los lazos existentes o explorar nuevas posibilidades románticas.",
+          "career": "Sigue tu vocación interior en tu vida profesional, incluso si eso te aleja de tu camino actual. Considera nuevas oportunidades laborales o proyectos creativos que se ajusten mejor a tus pasiones.",
+          "finance": "Tu instinto podría llevarte a oportunidades financieras prometedoras. Investiga e invierte en áreas que te interesen profundamente, en lugar de seguir únicamente la sabiduría convencional."
+        },
+        "reversed": {
+          "general": "Es posible que estés dudando de tu intuición y resistiéndote a los cambios necesarios. Reconoce tus miedos, pero no dejes que te impidan realizar ajustes vitales en tu vida.",
+          "love": "En las relaciones, tu reticencia a confiar en tus instintos podría llevarte al estancamiento. Reevalúa tus sentimientos y piensa si tu resistencia se basa en el miedo o en una preocupación genuina.",
+          "career": "Es posible que estés ignorando tu verdadera vocación por miedo a lo desconocido. Reevalúa tus objetivos profesionales y piensa si permanecer en tu zona de confort está obstaculizando tu potencial.",
+          "finance": "Evitar las decisiones financieras instintivas puede hacer que se pierdan oportunidades. Reflexiona sobre tus dudas recientes y considera un enfoque más equilibrado entre la intuición y la planificación racional."
+        }
+      }
+    },
+    {
+      "id": 18,
+      "name": "La Luna",
+      "image": "18_moon",
+      "arcana": "major",
+      "number": "XVIII",
+      "suit": null,
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "La Luna que aparece en posición vertical sugiere que te enfrentes a tus miedos subconscientes. Estos miedos pueden bloquear tu progreso sin que te des cuenta. Reflexiona profundamente para identificar y abordar estos miedos ocultos.",
+          "love": "Tu relación puede verse empañada por miedos tácitos. Comunícate abiertamente con tu pareja sobre cualquier inseguridad o duda para aclarar malentendidos y profundizar vuestra conexión.",
+          "career": "En tu carrera profesional, los miedos irracionales pueden estar frenándote. Afronta estos miedos pidiendo opiniones, buscando orientación o asumiendo nuevos retos para ganar confianza.",
+          "finance": "Las decisiones financieras pueden verse influidas por miedos inconscientes. Es fundamental analizar tus opciones financieras, distinguiendo entre la prudencia y el miedo irracional, antes de tomar medidas importantes."
+        },
+        "reversed": {
+          "general": "Cuando está invertida, La Luna indica miedos externos que afectan a tu vida. Identifica estas presiones externas y trabaja en establecer límites para no dejar que gobiernen tus emociones o acciones.",
+          "love": "Las influencias externas pueden estar causando inquietud en tu relación. Es importante proteger tu relación de las influencias negativas y centrarse en construir un vínculo fuerte y privado con tu pareja.",
+          "career": "Invertida, La Luna sugiere que tus inquietudes profesionales podrían deberse a la negatividad externa. Asegúrate de no absorber los miedos o fracasos de los demás; mantén la concentración en tu propio camino y tus propios éxitos.",
+          "finance": "Sus temores financieros pueden verse amplificados por las presiones sociales o de sus compañeros. Tómese el tiempo necesario para revisar de forma independiente sus planes y decisiones financieras, evitando caer en la trampa de la histeria colectiva o las decisiones impulsadas por el pánico."
+        }
+      }
+    },
+    {
+      "id": 19,
+      "name": "El Sol",
+      "image": "19_sun",
+      "arcana": "major",
+      "number": "XIX",
+      "suit": null,
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Aprovecha la armonía actual en tu vida como una oportunidad única para expresar tu verdadero yo. Aprovecha esta fase estable para consolidar tus metas y ambiciones personales.",
+          "love": "Este es un momento prometedor para forjar vínculos más profundos en tu relación. Considera establecer metas compartidas o planificar proyectos a largo plazo juntos para fortalecer vuestro vínculo.",
+          "career": "La armonía que reina actualmente en tu lugar de trabajo te permite mostrar tus habilidades y tu personalidad. Toma la iniciativa en proyectos que se ajusten a tus puntos fuertes y a tus pasiones.",
+          "finance": "Con la estabilidad financiera, ahora es un buen momento para evaluar y reajustar sus objetivos financieros. Considere inversiones o planes de ahorro que reflejen sus aspiraciones a largo plazo."
+        },
+        "reversed": {
+          "general": "La perseverancia es clave a la hora de afrontar los retos actuales para equilibrar las acciones pasadas con los objetivos futuros. Mantén la concentración en tu visión a largo plazo y sé constante en tus esfuerzos.",
+          "love": "Supera los retos de la relación abordando abiertamente los problemas y comprometiéndote con el crecimiento mutuo. Esta fase, aunque difícil, puede fortalecer vuestra conexión si ambos os esforzáis por resolver los conflictos.",
+          "career": "A pesar de los contratiempos, tu perseverancia te llevará finalmente al éxito. Sigue invirtiendo en habilidades y relaciones en el trabajo, y sigue luchando por tus objetivos.",
+          "finance": "El progreso financiero puede ser lento ahora debido a decisiones tomadas en el pasado. Mantén un enfoque constante en la gestión de tus finanzas y sé paciente; la mejora está a la vista a medida que corriges el rumbo."
+        }
+      }
+    },
+    {
+      "id": 20,
+      "name": "El Juicio",
+      "image": "20_judgement",
+      "arcana": "major",
+      "number": "XX",
+      "suit": null,
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta este periodo de transformación significativa. Deja atrás tu yo pasado y acoge nuevas perspectivas y experiencias con el corazón abierto. Actúa con decisión para aprovechar al máximo este potente periodo de crecimiento.",
+          "love": "Este es el momento de llevar tu relación al siguiente nivel o de dar un nuevo paso romántico. Comunica claramente tus deseos y escucha activamente a tu pareja o posibles parejas para fomentar conexiones más profundas.",
+          "career": "Aprovecha la energía del cambio profundo buscando avanzar en tu carrera o dando un giro hacia un nuevo campo. Habla abiertamente sobre tus ambiciones, busca orientación y da pasos concretos hacia tus objetivos profesionales.",
+          "finance": "Desde el punto de vista financiero, es momento de evaluar y ajustar. Revise sus inversiones y estrategias de ahorro para alinearlas con sus objetivos financieros a largo plazo. Considere nuevas oportunidades de crecimiento, pero proceda con precaución y bien informado."
+        },
+        "reversed": {
+          "general": "Es posible que te aferres a creencias o comodidades obsoletas, lo que obstaculiza tu progreso. Identifica y abandona conscientemente estos elementos para permitir que se abra un nuevo capítulo. Da pasos pequeños y deliberados hacia el cambio.",
+          "love": "En las relaciones, los viejos patrones o los problemas sin resolver pueden estar frenándote. Aborda estos retos directamente y considera la posibilidad de buscar asesoramiento o mediación si es necesario para avanzar de forma positiva.",
+          "career": "La resistencia al cambio en tu vida profesional podría estar limitando tu potencial. Reflexiona sobre los miedos o hábitos que te están frenando y enfréntalos. Busca opiniones y mantén una actitud abierta para adaptarte a nuevos enfoques.",
+          "finance": "Desde el punto de vista financiero, la indecisión a la hora de adoptar nuevas estrategias puede resultar perjudicial. Infórmese sobre las tendencias financieras actuales y considere la posibilidad de consultar a un asesor financiero para que le ayude a realizar la transición hacia una gestión financiera más eficaz."
+        }
+      }
+    },
+    {
+      "id": 21,
+      "name": "El Mundo",
+      "image": "21_world",
+      "arcana": "major",
+      "number": "XXI",
+      "suit": null,
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Estás viviendo un momento de máxima armonía y éxito; mantén esta situación fomentando la positividad y la apertura en todos los ámbitos de tu vida.",
+          "love": "Tus relaciones están floreciendo. Sigue cultivándolas practicando la franqueza y la gratitud hacia tu pareja.",
+          "career": "Tu vida profesional está en pleno auge. Aprovecha este impulso para buscar nuevos proyectos o puestos de liderazgo que pongan a prueba tus habilidades.",
+          "finance": "La estabilidad financiera está a tu alcance. Consíguela equilibrando inversiones inteligentes con ahorros adecuados."
+        },
+        "reversed": {
+          "general": "Es posible que notes una disminución en tu habitual sensación de armonía. Combátela identificando los factores estresantes y buscando activamente la paz a través de la atención plena o la meditación.",
+          "love": "La falta de aceptación puede estar causando fricciones. Mejora la comunicación y expresa claramente tus necesidades y preocupaciones para restablecer la armonía.",
+          "career": "Sentirte inseguro en tu carrera profesional podría ser una señal para replantearte tus objetivos. Refuerza tu posición actualizando tus habilidades o aclarando tus aspiraciones profesionales con la ayuda de un mentor.",
+          "finance": "Puede surgir ansiedad financiera; aborde esta situación revisando y ajustando su presupuesto o plan financiero para recuperar la confianza en su salud financiera."
+        }
+      }
+    },
+    {
+      "id": 22,
+      "name": "As de Bastos",
+      "image": "wands_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Aprovecha este momento para empezar de nuevo, aceptando los cambios que mejoran tus experiencias e interacciones diarias. Invierte energía en tu crecimiento personal y observa cómo se abren nuevas puertas.",
+          "love": "Te espera una chispa de energía renovada en tu vida amorosa. Inicia conversaciones significativas o planifica experiencias novedosas con tu pareja para profundizar vuestra conexión.",
+          "career": "Se avecina una oportunidad para crecer profesionalmente. Demuestra iniciativa, ofrécete como voluntario para nuevos proyectos y da a conocer tus ambiciones a quienes pueden ayudarte a alcanzarlas.",
+          "finance": "Este es un momento oportuno para replantearse sus estrategias financieras. Considere nuevas vías de inversión o formas de optimizar sus ahorros, pero proceda con una investigación minuciosa."
+        },
+        "reversed": {
+          "general": "Las acciones precipitadas pueden haber alterado tu camino. Da un paso atrás, evalúa la situación con honestidad y haz los ajustes necesarios para volver a alinearte con tus objetivos.",
+          "love": "Los malentendidos o las decisiones precipitadas podrían estar causando fricciones. Aborda estos problemas abiertamente con tu pareja y esfuérzate por lograr claridad y comprensión en vuestras interacciones.",
+          "career": "Revisa las decisiones recientes en el trabajo, especialmente si han provocado contratiempos. Aprende de estos errores y busca orientación o comentarios para evitar errores futuros.",
+          "finance": "Los descuidos financieros o las compras impulsivas pueden ser motivo de preocupación. Reevalúa tu presupuesto, establece objetivos financieros claros y sigue un plan para recuperar el control."
+        }
+      }
+    },
+    {
+      "id": 23,
+      "name": "Dos de Bastos",
+      "image": "wands_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Te encuentras en una encrucijada en la que los métodos antiguos ya no te sirven. Acepta el reto de aprender nuevas habilidades para superar esta fase. Considera esto como una señal para evolucionar en lugar de resistirte al cambio.",
+          "love": "En las relaciones, es hora de romper con los viejos patrones que no funcionan. Comuníquense abiertamente sobre las nuevas necesidades y deseos, y estén dispuestos a adaptarse juntos.",
+          "career": "Tu vida profesional exige innovación. Sal de tu zona de confort y adquiere nuevas habilidades o emprende proyectos diferentes para mantener tu relevancia y competitividad.",
+          "finance": "Reconsidere sus estrategias financieras. Este puede ser el momento adecuado para informarse sobre inversiones o planes de ahorro que se ajusten a sus objetivos financieros futuros."
+        },
+        "reversed": {
+          "general": "Las oportunidades de crecimiento se están presentando de manera sutil. Escucha tu intuición y sé proactivo a la hora de explorar estas nuevas posibilidades. Ignorarlas podría llevarte a arrepentirte.",
+          "love": "Se presenta una oportunidad para profundizar en tus relaciones o entablar otras nuevas. Mantente atento a las señales y no dudes en explorar posibles perspectivas románticas que te parezcan adecuadas.",
+          "career": "Las nuevas ofertas de trabajo o proyectos pueden parecer menos importantes al principio, pero pueden conducir a un crecimiento sustancial. Evalúa estas oportunidades cuidadosamente y sigue tus instintos.",
+          "finance": "Las oportunidades financieras que a primera vista pueden no parecer prometedoras podrían reportar beneficios sustanciales. Actúe con la debida diligencia y considere la posibilidad de asumir riesgos calculados."
+        }
+      }
+    },
+    {
+      "id": 24,
+      "name": "Tres de Bastos",
+      "image": "wands_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Estás a punto de obtener grandes resultados gracias a tus últimas decisiones. Sigue avanzando y ampliando tus horizontes; el éxito está al alcance de tu mano.",
+          "love": "El progreso en tu relación es evidente a medida que tú y tu pareja emprenden mejoras significativas juntos. Sigue comunicándote abiertamente y alinea tus acciones con los objetivos mutuos para fortalecer vuestro vínculo.",
+          "career": "Tu carrera profesional está cobrando impulso con avances prometedores. Mejora tu entorno laboral o busca oportunidades que mejoren tu desplazamiento diario al trabajo y tu comodidad en el trabajo.",
+          "finance": "Este es un momento propicio para las inversiones y el crecimiento financiero. Tome decisiones informadas e invierta en proyectos que muestren potencial a largo plazo."
+        },
+        "reversed": {
+          "general": "Ten cuidado, ya que es posible que tus proyectos actuales no den los resultados esperados. Reevalúa tus estrategias y prepárate para ajustar tu rumbo a fin de evitar decepciones.",
+          "love": "Es posible que tus esfuerzos en tu relación no estén teniendo el efecto deseado. Reevalúa tu enfoque y asegúrate de que tus acciones y expectativas estén alineadas de manera realista con las de tu pareja.",
+          "career": "Tu carrera profesional puede enfrentarse a un estancamiento o a contratiempos inesperados. Mantente alerta y prepárate para adaptarte o cambiar de estrategia si los planes actuales no dan los resultados esperados.",
+          "finance": "Las inversiones realizadas ahora podrían no rendir tan bien como se esperaba. Revise sus planes financieros y considere posponer nuevas inversiones hasta que tenga una perspectiva más clara."
+        }
+      }
+    },
+    {
+      "id": 25,
+      "name": "Cuatro de Bastos",
+      "image": "wands_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Aprovecha la estabilidad y previsibilidad de tu rutina actual como base para el crecimiento. Aprovecha este periodo de calma para planificar tus ambiciones futuras y establecer objetivos claros.",
+          "love": "En tu relación, la rutina puede parecer monótona. Añade un poco de espontaneidad y nuevas experiencias compartidas para profundizar vuestra conexión y romper con la monotonía.",
+          "career": "Tu trabajo puede parecerte repetitivo y carente de creatividad. Toma la iniciativa y busca oportunidades para mejorar tus habilidades o asumir responsabilidades adicionales que te permitan romper con la rutina.",
+          "finance": "La estabilidad financiera está presente, pero no se confíe. Revise y ajuste sus planes financieros para prepararse mejor para las necesidades futuras y las posibles inversiones."
+        },
+        "reversed": {
+          "general": "Es posible que estés utilizando tus aficiones o distracciones para evitar afrontar los cambios necesarios. Concéntrate en abordar los problemas reales que tienes entre manos en lugar de huir de ellos.",
+          "love": "Si estás encontrando consuelo en alguien ajeno a tu relación principal, es hora de afrontar los problemas directamente con tu pareja en lugar de evitarlos.",
+          "career": "Si te sientes poco motivado en el trabajo, es posible que te aferres a pequeños aspectos positivos. Considera la posibilidad de establecer un plan de desarrollo profesional que incluya pasos realistas hacia funciones más satisfactorias.",
+          "finance": "Ten cuidado con utilizar los gastos impulsivos como vía de escape del aburrimiento. Establece un presupuesto que te permita darte algunos caprichos sin perder de vista tus objetivos financieros a largo plazo."
+        }
+      }
+    },
+    {
+      "id": 26,
+      "name": "Cinco de Bastos",
+      "image": "wands_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta la avalancha de cambios; actúa con decisión para darle un giro a tu vida. Es el momento de superar el miedo y disfrutar de la emoción de la transformación. Deja que el ritmo del cambio sea tu aliado mientras te adentras con valentía en nuevas experiencias.",
+          "love": "En las relaciones, este es un momento para abordar y resolver conflictos latentes. Aborda las conversaciones con franqueza y disposición para evolucionar juntos. Esto podría transformar drásticamente tu panorama relacional para mejor.",
+          "career": "En tu carrera profesional, desafía el statu quo e inicia los cambios necesarios. Ya sea proponiendo nuevas ideas o buscando nuevas oportunidades, ahora es el momento de actuar. Tu valentía para innovar podría abrirte nuevos caminos para el crecimiento profesional.",
+          "finance": "Desde el punto de vista financiero, considere diversificar o cambiar su estrategia de inversión. Evalúe su situación financiera actual con ojo crítico y realice cambios proactivos para mejorar su salud financiera."
+        },
+        "reversed": {
+          "general": "Es posible que te sientas indeciso después de iniciar los cambios; supera tus dudas y termina lo que has empezado. Convierte tu arrepentimiento en determinación y aborda las tareas pendientes con renovada determinación. Recuerda que retirarte ahora puede significar perder oportunidades.",
+          "love": "Si estás evitando tomar decisiones en tu relación, reconsidera tu enfoque. Abordar los problemas de frente puede ser desalentador, pero a menudo es necesario para crecer. Comunícate abiertamente para evitar que los problemas sin resolver se agraven.",
+          "career": "En tu carrera profesional, huir de los retos puede parecer una opción segura, pero puede obstaculizar tu crecimiento. Vuelve a retomar proyectos abandonados o decisiones pospuestas, aunque eso te obligue a salir de tu zona de confort. Tu desarrollo profesional depende de tu disposición a afrontar retos.",
+          "finance": "Desde el punto de vista financiero, si ha pospuesto decisiones importantes, es hora de reconsiderarlas y actuar. Evite que el miedo dicte sus estrategias financieras. Tome decisiones informadas y audaces para fortalecer su futuro financiero."
+        }
+      }
+    },
+    {
+      "id": 27,
+      "name": "Seis de Bastos",
+      "image": "wands_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Celebra tus logros y disfruta de la confianza que te aportan. Aprovecha este momento para fijarte metas más altas y ampliar tus horizontes. Disfruta del camino hacia el crecimiento personal y deja que tu éxito sea un ejemplo para los demás.",
+          "love": "Es probable que tu relación esté disfrutando de una fase de respeto mutuo y éxitos compartidos. Seguid respetando la individualidad del otro y apoyando las ambiciones del otro. Este equilibrio fomentará vínculos más profundos.",
+          "career": "Te encuentras en una etapa en la que se reconocen tus logros profesionales. Aprovecha esta visibilidad para asumir nuevas responsabilidades o proyectos innovadores. Haz networking de forma activa para consolidar tu estatus dentro de tu campo.",
+          "finance": "Sus decisiones financieras están dando sus frutos, lo que le permite disfrutar de un nivel de vida más cómodo. Considere la posibilidad de reinvertir sus ganancias en activos estables a largo plazo y controle sus gastos para mantener este crecimiento."
+        },
+        "reversed": {
+          "general": "Es posible que los fracasos del pasado te frenen, pero no dejes que nublen tu juicio actual. Aborda las situaciones nuevas con una perspectiva renovada y mantén una actitud abierta ante resultados inesperados. Aprende del pasado, pero vive el presente.",
+          "love": "Los patrones de relaciones pasadas pueden estar influyendo en tus expectativas actuales. Rompe este ciclo tomando conscientemente decisiones diferentes y comunicando abiertamente a tu pareja tus miedos y esperanzas.",
+          "career": "Si te sientes estancado debido a reveses profesionales del pasado, es hora de reevaluar la situación y trazar nuevas estrategias. No des por sentado que la historia se repetirá. Busca asesoramiento y sé proactivo a la hora de crear oportunidades para ti mismo.",
+          "finance": "Tu perspectiva financiera puede parecer incierta debido a errores cometidos en el pasado. Evita tomar decisiones basadas en el miedo y, en su lugar, recopila información precisa que te sirva de guía para tus acciones. Diversifica tus inversiones para mitigar los riesgos."
+        }
+      }
+    },
+    {
+      "id": 28,
+      "name": "Siete de Bastos",
+      "image": "wands_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Participa en conversaciones significativas para perfeccionar tus objetivos e intenciones. Hablar sobre tus planes puede cristalizar tus pensamientos y ayudarte a priorizar tus acciones.",
+          "love": "Los canales de comunicación abiertos pueden fortalecer tu relación. Habla con tu pareja sobre tus sentimientos y expectativas más profundos para fomentar el entendimiento y el crecimiento.",
+          "career": "Aprovecha las conversaciones constructivas en el trabajo para aclarar objetivos y colaborar de manera eficaz. Aborda rápidamente los malentendidos para mantener un ambiente de trabajo armonioso.",
+          "finance": "Discuta sus planes financieros con un asesor o mentor de confianza. Una nueva perspectiva podría revelar nuevas oportunidades o descubrir posibles obstáculos."
+        },
+        "reversed": {
+          "general": "Evitar las conversaciones esenciales puede dar lugar a oportunidades perdidas y malentendidos. Reanude las conversaciones con una intención clara y positiva de avanzar.",
+          "love": "Si las conversaciones anteriores han fracasado, no es motivo para rendirse. Elige otro momento o enfoque para comunicar tus necesidades y escucha activamente a tu pareja.",
+          "career": "No descarte la necesidad del diálogo en el trabajo, aunque los intentos anteriores hayan sido infructuosos. Una conversación oportuna y bien preparada puede cambiar el rumbo de las cosas.",
+          "finance": "Puede ser beneficioso retomar las conversaciones financieras que inicialmente no salieron según lo previsto. Ajuste su enfoque y asegúrese de estar completamente preparado con datos y cifras."
+        }
+      }
+    },
+    {
+      "id": 29,
+      "name": "Ocho de Bastos",
+      "image": "wands_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los cambios rápidos y toma decisiones decisivas con rapidez para mejorar la trayectoria de tu vida. La procrastinación puede retrasar tu progreso, así que actúa con urgencia cuando surjan oportunidades.",
+          "love": "En las relaciones, la comunicación rápida y el hecho de arriesgarse pueden conducir a avances gratificantes. Si hay una decisión o conversación importante pendiente, ahora es el momento de abordarla de frente.",
+          "career": "Un entorno dinámico requiere que seas ágil y proactivo. Aprovecha los nuevos proyectos o funciones que se te presenten, incluso si te sacan de tu zona de confort.",
+          "finance": "Es necesario actuar con rapidez cuando surgen nuevas oportunidades de inversión. Evalúelas con rapidez pero a fondo para sacar el máximo partido a las ganancias financieras."
+        },
+        "reversed": {
+          "general": "La demora en la toma de decisiones está provocando un estancamiento. Libérate de la indecisión para evitar que las situaciones empeoren y se pierdan oportunidades.",
+          "love": "La falta de decisión puede estar creando tensión en tu relación. Es fundamental abordar los problemas con prontitud para evitar repercusiones a largo plazo.",
+          "career": "Tu indecisión a la hora de tomar decisiones profesionales podría llevarte a perder oportunidades o a abandonarlas sin querer. Actúa con decisión para dirigir tu vida profesional hacia una dirección más estable.",
+          "finance": "La inacción en materia financiera puede provocar pérdidas o la pérdida de oportunidades rentables. Es hora de reevaluar la situación y tomar las medidas necesarias sin más demora."
+        }
+      }
+    },
+    {
+      "id": 30,
+      "name": "Nueve de Bastos",
+      "image": "wands_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Enfréntate a tus retos sin miedo, ya que son oportunidades para crecer. Prioriza tus tareas y concéntrate en lo que realmente importa para superar las distracciones. Mantén la resiliencia y la perseverancia para allanar el camino hacia el éxito.",
+          "love": "Afrontad los retos de la relación con comunicación abierta y paciencia. Utilizad las dificultades como peldaños para fortalecer vuestro vínculo. Centraos en resolver juntos los pequeños problemas para evitar que se acumulen y se conviertan en problemas mayores.",
+          "career": "Acepta los obstáculos en tu carrera como oportunidades para demostrar tus capacidades. Concéntrate en las tareas críticas y no dejes que los pequeños contratiempos te desvíen de tu progreso. Un enfoque proactivo te llevará al crecimiento profesional y al reconocimiento.",
+          "finance": "Los obstáculos financieros requieren una planificación estratégica y un gasto disciplinado. Prioriza tus objetivos financieros y aborda un reto cada vez. Mantente alerta y sé proactivo en la gestión de tus recursos para garantizar la estabilidad financiera."
+        },
+        "reversed": {
+          "general": "Ten en cuenta las perturbaciones externas, especialmente las procedentes de relaciones cercanas, que podrían afectar a tus planes. Mantén la concentración en tus objetivos y evita que los problemas de los demás te desvíen de tu camino. Mantén los límites para que tu camino siga estando despejado.",
+          "love": "Los problemas sentimentales de otras personas pueden afectar a tu vida. Ofrece tu apoyo, pero protege tu bienestar emocional. Concéntrate en mantener la armonía en tu propia relación, al tiempo que eres una pareja o un amigo comprensivo.",
+          "career": "Si los conflictos internos o las distracciones externas de tus compañeros de trabajo o familiares están obstaculizando tu trabajo, es fundamental que mantengas la concentración. Comunica claramente tus necesidades y límites en el trabajo para evitar malentendidos y mantener tus objetivos profesionales por el buen camino.",
+          "finance": "Las presiones financieras externas o las obligaciones relacionadas con otras personas podrían afectar a tus planes financieros. Mantén tus finanzas organizadas y prioriza tu salud financiera siendo cauteloso a la hora de asumir las cargas financieras de otras personas."
+        }
+      }
+    },
+    {
+      "id": 31,
+      "name": "Diez de Bastos",
+      "image": "wands_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta las mejoras en tus rutinas diarias y tus interacciones sociales. Reconoce que estos cambios son peldaños hacia una vida más satisfactoria. Adáptate activamente a estas mejoras para maximizar sus beneficios.",
+          "love": "En tu vida sentimental, considera dar pasos que la sociedad respete y apoye, como irse a vivir juntos o casarse. Estos pasos pueden fortalecer vuestro vínculo y demostrar vuestro compromiso mutuo y con quienes os rodean.",
+          "career": "Tu entorno laboral está mejorando, tal vez con un puesto mejor o condiciones más favorables. Aprovecha al máximo estos cambios adaptándote rápidamente y demostrando que estás preparado para asumir mayores responsabilidades o nuevas funciones.",
+          "finance": "Podría surgir una oportunidad para realizar una compra importante que mejore tu posición social. Asegúrate de evaluar cuidadosamente esta inversión, teniendo en cuenta sus beneficios a largo plazo para tu situación financiera."
+        },
+        "reversed": {
+          "general": "Aunque tus circunstancias externas hayan mejorado, es posible que sigas aferrado a viejos hábitos. Esfuérzate activamente por adoptar nuevos comportamientos que se ajusten a tu situación actual para aprovechar al máximo estos cambios.",
+          "love": "Es posible que hayas alcanzado una nueva etapa en tu relación, pero te cuesta aceptarla plenamente. Comunícate abiertamente con tu pareja sobre estos sentimientos y trabajen juntos para adaptar vuestro comportamiento a vuestra nueva situación sentimental.",
+          "career": "Has alcanzado un nuevo nivel en tu carrera profesional, pero quizá te sientas como un impostor. Combate estos sentimientos actuando como si estuvieras en tu lugar en este nuevo puesto hasta que te resulte natural, lo que te ayudará a consolidar tu posición y tu confianza.",
+          "finance": "Es posible que esté experimentando un cambio en su situación financiera, pero se resista a adaptarse por completo a él. Empiece a comportarse como el dueño de su nueva situación financiera, lo que le ayudará a tomar decisiones financieras más informadas y seguras."
+        }
+      }
+    },
+    {
+      "id": 32,
+      "name": "Sota de Bastos",
+      "image": "wands_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los vientos de cambio que soplan en tu vida. Es el momento de aventurarse en nuevos entornos sociales y nuevos ambientes. Busca activamente y aprovecha las oportunidades de crecimiento personal que se te presenten.",
+          "love": "La dinámica de tu relación está cambiando. Comunícate abiertamente para afrontar estos cambios con fluidez y mejorar la conexión con tu pareja. Considera la posibilidad de realizar nuevas actividades juntos para mantener viva la chispa.",
+          "career": "El panorama de tu vida laboral está cambiando. Ya sea un cambio de puesto o de lugar de trabajo, adáptate rápidamente y muestra tu interés por aprender. Esto podría ser un trampolín para un avance significativo en tu carrera profesional.",
+          "finance": "Están surgiendo oportunidades financieras. Sea proactivo a la hora de investigar y comprender las nuevas posibilidades de inversión. Es un buen momento para diversificar su cartera financiera, pero hágalo con precaución y bien informado."
+        },
+        "reversed": {
+          "general": "Acepta los vientos de cambio que barren tu vida. Este es el momento de aventurarte en nuevos entornos sociales y entornos frescos. Busca activamente y aprovecha las oportunidades de crecimiento personal que surjan.",
+          "love": "La dinámica de tu relación está cambiando. Comunícate abiertamente para afrontar estos cambios con fluidez y mejorar la conexión con tu pareja. Considera la posibilidad de realizar nuevas actividades juntos para mantener viva la chispa.",
+          "career": "El panorama de tu vida laboral está cambiando. Ya sea un cambio de puesto o de lugar de trabajo, adáptate rápidamente y muestra ganas de aprender. Esto podría ser tu trampolín hacia un importante avance profesional.",
+          "finance": "Están surgiendo oportunidades financieras. Sea proactivo a la hora de investigar y comprender las nuevas posibilidades de inversión. Es un buen momento para diversificar su cartera financiera, pero hágalo con precaución y bien informado."
+        }
+      }
+    },
+    {
+      "id": 33,
+      "name": "Caballo de Bastos",
+      "image": "wands_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "El Caballero de Bastos indica un periodo de crecimiento y orientación. Evalúa los cambios que se están produciendo en tu vida y comprende su trayectoria. Mantente flexible y preparado para cambiar de rumbo cuando sea necesario a fin de aprovechar el impulso de tu camino actual.",
+          "love": "En el amor, esta carta sugiere que las decisiones recientes están determinando el futuro de tu relación. Observa el impacto de estos cambios en tu comunicación y conexión. Si algo no funciona, ahora es el momento de ajustar tu enfoque.",
+          "career": "Tus proyectos están ganando claridad. Revisa el progreso y adapta tus estrategias para satisfacer las demandas cambiantes. Aprovecha la naturaleza dinámica de tu entorno laboral para maximizar tu impacto y crecimiento.",
+          "finance": "En el ámbito financiero, el Caballero de Bastos te invita a actuar de forma proactiva. Analiza cómo están evolucionando tus inversiones o gastos. Considera la posibilidad de ajustar tus planes financieros en función de los resultados recientes o los cambios en tu panorama económico."
+        },
+        "reversed": {
+          "general": "El Caballero de Bastos invertido se hace eco del significado del naipe en posición vertical, instándote a permanecer alerta y adaptable en medio de los cambios continuos. Evalúa tu progreso y prepárate para hacer los ajustes necesarios para mantener el rumbo.",
+          "love": "Con las energías invertidas, evalúa si la dinámica de tus relaciones sigue por buen camino. Refuerza las estrategias que funcionan o replantéate aquellas que no fomentan la conexión y el crecimiento en tus relaciones.",
+          "career": "Es necesario mantener una vigilancia constante en tu carrera profesional, incluso cuando persisten los retos. Mantén una comprensión clara de la trayectoria de tu proyecto y sigue adaptándote para garantizar el éxito en un entorno laboral impredecible.",
+          "finance": "En una situación adversa, la previsión financiera cobra una importancia crucial. Reevalúe sus estrategias financieras actuales, asegurándose de que respondan a los últimos acontecimientos y sean capaces de cumplir sus objetivos financieros a largo plazo."
+        }
+      }
+    },
+    {
+      "id": 34,
+      "name": "Reina de Bastos",
+      "image": "wands_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tu verdadero yo en todos los aspectos de la vida. Este es el momento de reconocer y aprovechar tus fortalezas únicas, así como de reconocer las áreas que puedes mejorar.",
+          "love": "En las relaciones, tu autenticidad es tu mayor activo. Sé abierto y honesto con tu pareja o posibles parejas sobre quién eres, y busca el mismo nivel de franqueza por su parte.",
+          "career": "Utiliza tus cualidades distintivas para destacar en el trabajo. Si tienes ideas o habilidades que te diferencian, ahora es el momento de mostrarlas. No tengas miedo de tomar la iniciativa en un proyecto que te entusiasme.",
+          "finance": "El éxito financiero se consigue aprovechando tus puntos fuertes. Invierte en áreas que conozcas bien y considera la posibilidad de buscar asesoramiento para subsanar cualquier laguna en tus conocimientos financieros."
+        },
+        "reversed": {
+          "general": "Ten cuidado de no dejar que tus rasgos menos favorables te dominen. Tómate un tiempo para reflexionar sobre los comentarios recientes o las situaciones que no salieron bien, y planifica cómo puedes mejorar.",
+          "love": "En las relaciones románticas, los rasgos negativos no controlados pueden crear problemas. Trabaja en tus habilidades de comunicación y resolución de conflictos para mitigar los malentendidos y fortalecer los lazos.",
+          "career": "Evita que una actitud negativa o la resistencia a aceptar comentarios negativos obstaculicen tu progresión profesional. Busca críticas constructivas y utilízalas para fomentar tu crecimiento profesional.",
+          "finance": "Evite tomar decisiones financieras impulsivas que se deriven de sus debilidades. Dé un paso atrás para evaluar sus planes financieros y busque asesoramiento para asegurarse de que sus acciones sean acertadas."
+        }
+      }
+    },
+    {
+      "id": 35,
+      "name": "Rey de Bastos",
+      "image": "wands_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "Bastos",
+      "element": "Fuego",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tu auténtico yo, ya que el Rey de Bastos te anima a expresar tus rasgos únicos. Este es un momento para la autoaceptación, para reconocer tanto tus fortalezas como tus debilidades como parte de tu crecimiento.",
+          "love": "En las relaciones, deja que tu verdadera naturaleza brille. Comunica abiertamente tus deseos y límites, fomentando una conexión más profunda al ser sincero y transparente con tu pareja.",
+          "career": "Aprovecha tus cualidades naturales de liderazgo en el trabajo. Toma la iniciativa en proyectos que se ajusten a tus pasiones y puntos fuertes, y no dudes en guiar a los demás.",
+          "finance": "Tu confianza puede llevarte a tomar decisiones financieras acertadas. Confía en tu instinto, pero también busca asesoramiento cuando te embarques en nuevas inversiones o transacciones financieras."
+        },
+        "reversed": {
+          "general": "Ten cuidado de no dejar que tus rasgos negativos eclipsen tu potencial. Tómate tu tiempo para reflexionar sobre tu comportamiento y cómo afecta a tu crecimiento personal y a tus relaciones.",
+          "love": "En el amor, tus defectos pueden estar causando fricciones. Es fundamental reconocer cualquier patrón destructivo y trabajar en la comunicación y el compromiso para reparar y fortalecer los lazos.",
+          "career": "Tus cualidades menos admirables podrían estar obstaculizando tu progreso profesional. Identifica y aborda cualquier hábito o actitud improductiva que pueda estar afectando tu entorno laboral.",
+          "finance": "Evita las acciones financieras impulsivas motivadas por tus rasgos menos favorables. Da un paso atrás, planifica minuciosamente y consulta con un asesor financiero para evitar errores costosos."
+        }
+      }
+    },
+    {
+      "id": 36,
+      "name": "As de Copas",
+      "image": "cups_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Este es un momento de plenitud emocional y alegría. Reconoce y saborea estos fugaces momentos de felicidad, pero mantén los pies en la tierra para evitar dejarte llevar por las ilusiones.",
+          "love": "Tu copa emocional está rebosante, lo que sugiere nuevos comienzos en el amor o una renovación de los sentimientos existentes. Aprovecha este momento con franqueza y honestidad, pero mantén tus expectativas realistas para evitar decepciones.",
+          "career": "Es posible que te sientas especialmente inspirado y motivado en el trabajo. Canaliza esta energía positiva hacia proyectos creativos o iniciativas colaborativas, pero no descuides los detalles en tu entusiasmo.",
+          "finance": "Una fase optimista para tu situación financiera, que posiblemente augura nuevas oportunidades de ingresos. Aunque es un buen momento para plantearse inversiones o planes de ahorro, asegúrate de comprender perfectamente los riesgos que conllevan."
+        },
+        "reversed": {
+          "general": "Es posible que experimentes una rápida explosión de alegría que se desvanece en frustración. Reconoce tus sentimientos, pero busca bases estables para evitar una decepción prolongada.",
+          "love": "La emoción inicial en tu vida romántica puede conducir a decepciones. La comunicación es clave: habla claramente sobre tus sentimientos y expectativas para mitigar los malentendidos y el dolor.",
+          "career": "Un proyecto o trabajo puede comenzar bien, pero puede encontrar obstáculos imprevistos. Manténgase adaptable y listo para reevaluar sus estrategias a fin de superar estos contratiempos.",
+          "finance": "Lo que parecía una ganancia financiera prometedora podría no salir como se esperaba. Aprovecha esta oportunidad para aprender, reevaluar y perfeccionar tus estrategias financieras."
+        }
+      }
+    },
+    {
+      "id": 37,
+      "name": "Dos de Copas",
+      "image": "cups_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Acepta las nuevas conexiones y la alegría que traen consigo; este es un momento para celebrar los intereses compartidos y el entendimiento mutuo. Mantén tus interacciones ligeras y alegres, centrándote en construir vínculos sólidos.",
+          "love": "Si estás empezando una nueva relación, disfruta de la emoción y el idealismo de esta fase, pero mantén tus expectativas dentro de la realidad. Fomenta la comunicación abierta para construir una base que pueda profundizarse con el tiempo.",
+          "career": "Colabora con compañeros que compartan tu entusiasmo y tu visión. Este es un momento excelente para el trabajo en equipo y las reuniones creativas que pueden dar lugar a ideas innovadoras.",
+          "finance": "Considera la posibilidad de establecer asociaciones en proyectos financieros, pero procede con claridad y con un entendimiento común de los objetivos. Es un período favorable para inversiones mutuas que prometen beneficios recíprocos."
+        },
+        "reversed": {
+          "general": "Revisa tus conflictos recientes e intenta identificar los problemas subyacentes que pueden no ser evidentes a primera vista. Aborda estas tensiones ocultas para restablecer la armonía en tus interacciones.",
+          "love": "Si hay tensión en tu relación, piensa si la causa son problemas sin resolver o expectativas no expresadas. Mantén un diálogo abierto y sincero para aclarar malentendidos y restablecer vuestra conexión.",
+          "career": "Examine cualquier conflicto laboral en busca de problemas subyacentes que puedan no haberse abordado directamente. Un enfoque proactivo puede aliviar las tensiones y mejorar la colaboración.",
+          "finance": "Evite tomar decisiones financieras bajo estrés o cuando se sienta demasiado crítico con su situación financiera. Tómese su tiempo para evaluar sus finanzas con calma y realice ajustes basados en valoraciones realistas, no en impulsos."
+        }
+      }
+    },
+    {
+      "id": 38,
+      "name": "Tres de Copas",
+      "image": "cups_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Celebra tu éxito actual, ya que es un momento afortunado, pero posiblemente efímero. Mientras las cosas vayan bien, aprovecha este tiempo para fortalecer tus bases de cara a futuros retos. Aprecia los buenos momentos, pero mantente preparado.",
+          "love": "Este es un momento de alegría y suerte en tu vida sentimental. Disfruta de la armonía y la conexión con tu pareja, pero también trabaja en profundizar vuestro entendimiento y comunicación para fortalecer vuestra relación de cara al futuro.",
+          "career": "Has tenido una racha de suerte en el trabajo, posiblemente ganando un proyecto o un reconocimiento. Aprovecha este éxito para establecer contactos y fijar objetivos para los próximos pasos. Recuerda que estos logros pueden ser temporales, así que planifica tus próximos movimientos con prudencia.",
+          "finance": "En lo financiero, las cosas pueden estar mejorando temporalmente. Es un buen momento para revisar y posiblemente reinvertir tus ganancias. Sin embargo, mantente cauteloso y ahorra para los momentos en los que la suerte podría no estar de tu lado."
+        },
+        "reversed": {
+          "general": "Es posible que estés pasando por un período de insatisfacción o que estés cerrando capítulos. Reconoce estos sentimientos, pero también toma medidas proactivas hacia nuevos comienzos. No te obsesiones con lo que está terminando; concéntrate en lo que vendrá después.",
+          "love": "En las relaciones, los problemas sin resolver pueden requerir ahora atención, y ignorarlos podría acarrear consecuencias. Aborda estos problemas de forma directa y honesta para evitar complicaciones adicionales.",
+          "career": "Los retos en el trabajo pueden tener repercusiones si no se gestionan con cuidado. Sea diplomático y responsable en sus acciones para evitar posibles conflictos que puedan afectar a su reputación profesional.",
+          "finance": "La supervisión financiera podría acarrear dificultades. Es hora de estar más atento a tus gastos e inversiones. Revisa tus estrategias financieras y prepárate para adoptar un enfoque más cauteloso en la gestión de tu dinero."
+        }
+      }
+    },
+    {
+      "id": 39,
+      "name": "Cuatro de Copas",
+      "image": "cups_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Es posible que te sientas desilusionado porque la realidad no cumple tus expectativas. Reconoce esta desconexión y ajusta tu mentalidad para alinearla más con la realidad y encontrar claridad.",
+          "love": "En tus relaciones, las altas expectativas pueden estar causando insatisfacción. Comunícate abiertamente con tu pareja sobre tus necesidades y deseos, pero también estate dispuesto a ajustar tus expectativas para fomentar una conexión más armoniosa.",
+          "career": "Si tus estrategias actuales en el trabajo no están dando los resultados esperados, es hora de desarrollar nuevos enfoques. Busca opiniones y mantén una actitud abierta para cambiar tus métodos u objetivos según evaluaciones realistas de la situación.",
+          "finance": "Es posible que los resultados financieros no estén a la altura de sus expectativas. Reevalúe sus planes financieros y establezca objetivos más alcanzables, asegurándose de que sus estrategias se basen en la practicidad."
+        },
+        "reversed": {
+          "general": "Es posible que estés justificando el estancamiento comparándote con otras personas que están en peor situación, lo cual es una forma de autoengaño. Reconoce este patrón y prepárate para hacer cambios cuando te sientas listo para aceptarlos.",
+          "love": "Evita consolarte pensando que tu relación insatisfactoria «no es tan mala» en comparación con otras. Piensa qué cambios son necesarios para tu felicidad y empieza a implementarlos con pasos pequeños y manejables.",
+          "career": "Es posible que te estés consolando a ti mismo creyendo que tu carrera insatisfactoria es satisfactoria. Es fundamental dejar de conformarte y empezar a planificar un cambio profesional que se ajuste mejor a tus aspiraciones.",
+          "finance": "En materia de finanzas, es posible que te consueles pensando que las cosas podrían ser peores. Esta mentalidad impide mejorar. Empieza a tomar medidas activas para mejorar tu salud financiera, como establecer objetivos de ahorro realistas o consultar a un asesor financiero."
+        }
+      }
+    },
+    {
+      "id": 40,
+      "name": "Cinco de Copas",
+      "image": "cups_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los nuevos conocimientos que llegan a tu vida, ya que tienen un gran valor. Mantente abierto a los consejos y a la información inesperada, pero ejerce tu discernimiento para aplicarlos de manera eficaz.",
+          "love": "En tus relaciones, reconoce si uno de los miembros de la pareja suele asumir un papel de mentor. Esta dinámica puede ser enriquecedora, pero asegúrate de que no eclipse la intimidad emocional y la pasión mutuas.",
+          "career": "Es probable que aparezca un nuevo mentor o un consejo crucial. Acoge con agrado esta orientación, ya que podría abrirte nuevas perspectivas o resolver un problema laboral que llevas mucho tiempo arrastrando.",
+          "finance": "Es probable que te encuentres con nueva información o consejos financieros. Aunque esta información es valiosa, asegúrate de examinar minuciosamente sus fuentes y sus implicaciones antes de actuar en consecuencia."
+        },
+        "reversed": {
+          "general": "Tus zonas de confort te resultan familiares, pero pueden estar obstaculizando tu crecimiento. Supera estos límites para evitar el estancamiento y abrazar el desarrollo.",
+          "love": "Aunque tu relación pueda parecer cómoda y familiar, es posible que le falte la chispa que tenía antes. Esfuérzate por reavivar la pasión y profundizar los vínculos emocionales.",
+          "career": "Revisar habilidades o proyectos familiares puede resultar reconfortante, pero hay que tener cuidado de no caer en la complacencia. Ponte a prueba y busca nuevas oportunidades de aprendizaje.",
+          "finance": "Es posible que pronto las finanzas le resulten más manejables o familiares, pero no permita que la comodidad le lleve a la negligencia. Revise y ajuste continuamente sus estrategias financieras para adaptarlas a las circunstancias cambiantes."
+        }
+      }
+    },
+    {
+      "id": 41,
+      "name": "Seis de Copas",
+      "image": "cups_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Reflexiona sobre los éxitos y fracasos del pasado para comprender la dirección que está tomando tu vida actualmente. Utiliza estas ideas para tomar decisiones informadas de cara al futuro, asegurándote de no quedarte anclado en lo que fue, sino de aprender de ello.",
+          "love": "Aprecia los recuerdos felices con tus seres queridos, pero no dejes que las relaciones pasadas dicten tu estado emocional actual. Mantén una actitud abierta para crear nuevos recuerdos en lugar de comparar las relaciones actuales con los estándares antiguos.",
+          "career": "Aprovecha tus experiencias pasadas para orientar tus decisiones profesionales. Aunque es importante valorar tu trayectoria profesional, céntrate en las oportunidades actuales para crecer en lugar de añorar puestos o éxitos pasados.",
+          "finance": "Revise sus decisiones financieras históricas para identificar patrones que le hayan resultado útiles o que le hayan llevado a sufrir pérdidas. Utilice este análisis para planificar su futuro financiero, evitando los errores del pasado y repitiendo los éxitos."
+        },
+        "reversed": {
+          "general": "Identifica las habilidades y conocimientos de tu pasado que pueden aplicarse a tus retos actuales. No dudes en innovar los métodos antiguos para adaptarlos a los nuevos contextos, convirtiendo las experiencias pasadas en activos valiosos para el presente.",
+          "love": "Recupera los estilos de comunicación o las estrategias relacionales que te han funcionado en tus relaciones pasadas y que podrían influir positivamente en tus compromisos románticos actuales o futuros. Adáptalos con prudencia para que se ajusten al contexto único de tu relación actual.",
+          "career": "Reintroduce estrategias o proyectos de trabajo exitosos de tu pasado en tu contexto laboral actual. Esto podría significar revivir un estilo de gestión de proyectos o reutilizar una idea de campaña exitosa, ajustándola según sea necesario a las necesidades actuales.",
+          "finance": "Vuelve a aplicar las estrategias financieras que te han funcionado en el pasado. Ya sea una técnica de presupuestación o un enfoque de inversión, adáptalo a tu situación financiera actual para maximizar los beneficios potenciales."
+        }
+      }
+    },
+    {
+      "id": 42,
+      "name": "Siete de Copas",
+      "image": "cups_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Es posible que te enfrentes a una gran variedad de opciones, lo que puede causarte cierta confusión. Evalúa cada opción cuidadosamente y no te dejes llevar por las apariencias; la realidad suele diferir de la fantasía.",
+          "love": "Es fácil enamorarse de la versión ideal de alguien, pero para establecer una conexión verdadera es necesario ver y aceptar sus defectos. Comunícate abiertamente y ajusta tus expectativas para fomentar una relación más profunda y auténtica.",
+          "career": "Aunque múltiples opciones o ideas profesionales puedan parecer atractivas, concéntrate en lo que mejor se ajuste a tus objetivos a largo plazo. Evalúa la viabilidad de cada opción para evitar decepciones futuras.",
+          "finance": "Desconfíe de las oportunidades financieras atractivas que parecen demasiado buenas para ser verdad. Investigue a fondo y consulte con expertos antes de realizar inversiones importantes."
+        },
+        "reversed": {
+          "general": "Es posible que te sientas emocionalmente insatisfecho y desconectado de los demás. Toma medidas proactivas participando en actividades que mejoren tu estado de ánimo y te conecten con personas afines.",
+          "love": "Si te sientes descuidado en tu relación, comunica tus necesidades con claridad en lugar de esperar a que tu pareja las adivine. El diálogo constructivo puede ayudar a salvar la brecha emocional.",
+          "career": "Sentirse infravalorado en el trabajo puede ser desalentador. En lugar de guardar rencor, pide opiniones y expresa tus aspiraciones a tus superiores. Es importante que defiendas tus intereses.",
+          "finance": "Es posible que no esté satisfecho con sus rendimientos financieros. Reevalúe sus estrategias actuales y ajústelas para que se adapten mejor a sus objetivos financieros. A veces, es necesario cambiar de enfoque."
+        }
+      }
+    },
+    {
+      "id": 43,
+      "name": "Ocho de Copas",
+      "image": "cups_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Acepta este período de incertidumbre como una valiosa curva de aprendizaje. Permítete explorar la complejidad de tus sentimientos y situaciones sin apresurarte a etiquetarlos. Considera este tiempo como un viaje a través de un camino neblinoso en el que cada paso te aporta más claridad.",
+          "love": "En las relaciones, resiste la tentación de clasificar todo como bueno o malo. Comunica abiertamente tus incertidumbres y escucha las opiniones de tu pareja para comprender mejor la dinámica de vuestra relación.",
+          "career": "Si tu trayectoria profesional no te parece clara, aprovecha esta oportunidad para replantearte tus objetivos. Aprovecha este tiempo para explorar diferentes intereses o habilidades que puedan aportarte más claridad o oportunidades inesperadas.",
+          "finance": "Las decisiones financieras pueden parecer abrumadoras en este momento. En lugar de precipitarse a realizar inversiones o compras importantes, tómese su tiempo para investigar a fondo y busque asesoramiento de fuentes fiables."
+        },
+        "reversed": {
+          "general": "Tu lucha contra la incertidumbre puede estar causándote estrés. Aprende a convivir con la ambigüedad sin forzar soluciones inmediatas. A veces, dar un paso atrás y observar puede aportar nuevas perspectivas.",
+          "love": "En el amor, tu resistencia a la incertidumbre podría estar creando tensión. Intenta relajar tu necesidad de obtener respuestas inmediatas sobre cómo están las cosas y concéntrate en cultivar lo que ya es bueno entre tú y tu pareja.",
+          "career": "Las frustraciones profesionales pueden surgir de tu indecisión. En lugar de forzar una decisión, busca la orientación o la opinión de tus compañeros, lo que puede ayudarte a aclarar tus ideas y dirigir tus esfuerzos de forma más productiva.",
+          "finance": "La indecisión financiera puede ser paralizante. Es importante establecer metas pequeñas y manejables para ganar confianza en tus decisiones financieras. Empieza por revisar tus gastos actuales y establecer un presupuesto."
+        }
+      }
+    },
+    {
+      "id": 44,
+      "name": "Nueve de Copas",
+      "image": "cups_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Adopta una mentalidad de aceptación incondicional y aprecio por lo que te rodea. Invierte en relaciones y pasiones que nutran tu alma y contribuyan positivamente. Recuerda, la verdadera satisfacción proviene del interior, no de circunstancias externas.",
+          "love": "En tus relaciones, practica la aceptación y el amor incondicional. Reconoce y aprecia las cualidades de tu pareja sin intentar cambiarlas. Apoya su crecimiento personal porque te aporta alegría, no porque esperes algo a cambio.",
+          "career": "Tu actitud positiva y tu apoyo sincero a tus compañeros de trabajo fomentarán un ambiente laboral armonioso. Sigue invirtiendo en proyectos colaborativos y mantén tu integridad; este enfoque te llevará a la realización personal y profesional.",
+          "finance": "La satisfacción financiera proviene de inversiones inteligentes que se ajustan a tus valores. Tómate tu tiempo para apreciar lo que ya tienes y toma decisiones financieras que contribuyan a tu felicidad a largo plazo, en lugar de a la gratificación inmediata."
+        },
+        "reversed": {
+          "general": "Si sientes que tus esfuerzos pasan desapercibidos, considera ajustar tus expectativas. Reconoce las diferentes formas de recompensa y aprecia lo que realmente recibes en lugar de lo que esperas.",
+          "love": "Reevalúa tus inversiones emocionales en las relaciones. Si sientes que no eres correspondido, comunica tus sentimientos con claridad y sin culpar a nadie. Comprende que el amor a veces se manifiesta de formas inesperadas y considera ajustar tu perspectiva sobre lo que significa dar y recibir amor.",
+          "career": "Reflexiona sobre tus contribuciones profesionales y el reconocimiento que recibes. Si hay una disparidad, considera expresar tus necesidades o reevaluar tus contribuciones. Quizás sea el momento de reajustar tus esfuerzos con tus objetivos profesionales para sentirte más realizado.",
+          "finance": "Si sus esfuerzos financieros no están dando los resultados esperados, analice detenidamente sus inversiones y gastos. Ajuste sus estrategias para alinearlas mejor con sus objetivos financieros y considere buscar asesoramiento para comprender el verdadero valor de sus inversiones."
+        }
+      }
+    },
+    {
+      "id": 45,
+      "name": "Diez de Copas",
+      "image": "cups_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Prepárate para un cambio significativo en tu perspectiva, posiblemente provocado por un acontecimiento importante en tu vida. Acepta este cambio y utilízalo para crecer y desarrollar una comprensión más profunda de tus valores y creencias.",
+          "love": "Si estás experimentando nuevos sentimientos en tu relación, explóralos a fondo. Ya sea un amor más profundo o el descubrimiento de nuevos aspectos de tu pareja, comunícate abiertamente para fortalecer vuestra conexión.",
+          "career": "Una revelación repentina puede cambiar tu forma de ver tu trayectoria profesional. Tanto si esta revelación te inspira como si te plantea un reto, utilízala para redefinir tus objetivos profesionales y alinearlos más estrechamente con tus verdaderas aspiraciones.",
+          "finance": "Es posible que surja una nueva perspectiva financiera, tal vez a raíz de acontecimientos importantes en tu vida. Evalúa cómo esto cambia tu enfoque respecto a la gestión del dinero y adapta tus planes financieros para asegurarte de que se ajustan a tus necesidades actuales y a tus objetivos futuros."
+        },
+        "reversed": {
+          "general": "Estás experimentando un cambio gradual en tu forma de ver las cosas. Presta atención a los sutiles cambios en tus pensamientos y sentimientos, y adapta tus acciones en consecuencia para asegurarte de que reflejen tus ideales en evolución.",
+          "love": "En las relaciones, se está produciendo una lenta transformación en los sentimientos o la comprensión. Tómate tu tiempo para escuchar realmente y conocer las necesidades y los cambios emocionales de tu pareja, fomentando así una conexión más profunda y en sintonía.",
+          "career": "Tu actitud hacia tu carrera profesional está cambiando poco a poco. Observa los cambios en tu entorno laboral y en ti mismo. Usa este conocimiento para tomar decisiones informadas sobre tu desarrollo profesional y tu trayectoria laboral.",
+          "finance": "Las perspectivas financieras están evolucionando gradualmente. Manténgase al tanto de estos cambios revisando periódicamente sus objetivos financieros y estrategias presupuestarias, y adaptándose según sea necesario para satisfacer sus prioridades y circunstancias cambiantes."
+        }
+      }
+    },
+    {
+      "id": 46,
+      "name": "Sota de Copas",
+      "image": "cups_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los cambios en tu panorama emocional como oportunidades para crecer. Mantente abierto a los cambios en tus sentimientos y percepciones, que podrían conducir al desarrollo personal. Si percibes un cambio en tu actitud emocional, explóralo detenidamente en lugar de reaccionar impulsivamente.",
+          "love": "Es posible que tus sentimientos en las relaciones estén evolucionando. Si sientes una nueva atracción o un cambio en tus sentimientos, dale tiempo para que se desarrolle sin prisas. Comunícate abiertamente con tu pareja o posible pareja sobre tus emociones cambiantes para fomentar el entendimiento.",
+          "career": "Una nueva perspectiva emocional podría revelar nuevos caminos en tu carrera profesional. Si te sientes más conectado o desencantado con tu trabajo, piensa en cómo estos sentimientos pueden guiar tus decisiones profesionales. Utiliza esta percepción emocional para buscar oportunidades que se ajusten mejor a tus pasiones.",
+          "finance": "Es posible que tus reacciones emocionales ante los asuntos financieros estén cambiando. Antes de tomar cualquier decisión financiera, tómate un momento para comprender estos nuevos sentimientos. Aprovecha este periodo de cambio emocional para reevaluar tus objetivos y estrategias financieras con la mente despejada."
+        },
+        "reversed": {
+          "general": "Incluso cuando se invierte, el Paje de Copas sugiere manejar los cambios emocionales de forma consciente. Reflexiona sobre tus respuestas emocionales actuales y considera cómo influyen en tu perspectiva y tus decisiones. Observa atentamente tus sentimientos, ya que pueden llevarte a nuevas percepciones o advertencias.",
+          "love": "En el amor, invertida, esta carta sigue hablando de emociones en evolución. Ten cuidado de no ignorar estos sutiles cambios en tus sentimientos hacia alguien. Mantén un diálogo abierto para abordar cualquier cambio emocional, lo que puede profundizar vuestra conexión o aclarar tus necesidades.",
+          "career": "Con las energías invertidas, tu carrera profesional puede seguir viéndose influida por cambios emocionales. Si te sientes desconectado o excesivamente emocional en el trabajo, da un paso atrás para evaluar por qué han cambiado tus sentimientos. Esta reflexión puede ayudarte a decidir si volver a comprometerte o buscar nuevas oportunidades.",
+          "finance": "Cuando aparece invertida, la carta del Paje de Copas aconseja revisar cuidadosamente cómo afectan las emociones a tus decisiones financieras. Evita los gastos impulsivos o las inversiones motivadas por sentimientos fugaces. Tómate tu tiempo para estabilizar tus emociones antes de proceder con cambios financieros."
+        }
+      }
+    },
+    {
+      "id": 47,
+      "name": "Caballo de Copas",
+      "image": "cups_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "El Caballero de Copas señala una fase en la que las emociones se intensifican y evolucionan, lo que puede hacer que sean más difíciles de manejar. Reconoce que se trata de un periodo de crecimiento: permítete experimentar plenamente tus sentimientos, pero busca el equilibrio. Sumérgete en la comprensión de tus emociones en lugar de reprimirlas.",
+          "love": "A medida que el enamoramiento se intensifica, es fundamental diferenciar entre los sentimientos profundos y las emociones pasajeras. Si estás en una relación, comunica abiertamente tus sentimientos para fomentar el entendimiento y evitar el resentimiento. Si estás saliendo con alguien, asegúrate de que tu inversión emocional sea recíproca.",
+          "career": "Tu apego emocional al trabajo puede aumentar, lo que influirá en tus decisiones. Utiliza esta pasión de forma constructiva para defender los proyectos que te importan. Sin embargo, mantén la profesionalidad y evita que las emociones nublen tu juicio en los conflictos laborales.",
+          "finance": "Tus decisiones financieras pueden verse influidas por tu estado emocional actual. Aunque es importante seguir tus instintos, asegúrate de basarte también en análisis objetivos y en una planificación práctica. Evita las compras o inversiones impulsivas motivadas únicamente por las emociones."
+        },
+        "reversed": {
+          "general": "Cuando el Caballero de Copas está invertido, el reto de gestionar emociones cada vez más profundas sigue vigente. Reconoce esta complejidad emocional como parte de tu viaje. Busca formas de expresar tus sentimientos de manera constructiva sin sentirte abrumado.",
+          "love": "En cuestiones del corazón, la carta invertida indica la necesidad de abordar los problemas subyacentes en tus relaciones. Puede resultar tentador pasar por alto los problemas en aras de la paz, pero la verdadera solución requiere afrontar estos problemas de forma directa y honesta.",
+          "career": "Invertida, esta carta sugiere que los prejuicios emocionales podrían estar afectando negativamente a tus decisiones profesionales. Esfuérzate por ser objetivo y busca el consejo de compañeros de confianza para asegurarte de que tu implicación emocional no te lleve a tomar decisiones poco prácticas.",
+          "finance": "No dejes que tus emociones dominen tus decisiones financieras. Aborda las oportunidades financieras con una perspectiva equilibrada, integrando tanto la intuición emocional como el análisis racional. Esto te ayudará a tomar decisiones de inversión acertadas."
+        }
+      }
+    },
+    {
+      "id": 48,
+      "name": "Reina de Copas",
+      "image": "cups_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tu auténtico yo, ya que la Reina de Copas sugiere armonía y aceptación en tu entorno natural. Se te aprecia por quien eres, así que cultiva tus cualidades innatas y déjalas brillar.",
+          "love": "En el amor, la Reina de Copas te anima a ser tú mismo. La franqueza y la honestidad emocional fortalecerán tus relaciones. Comunica tus sentimientos con claridad y deja que la vulnerabilidad te lleve a conexiones más profundas.",
+          "career": "Esta carta indica que tu lugar de trabajo valora tus contribuciones únicas. Sigue aportando tu toque personal a los proyectos y las interacciones; es tu estilo distintivo lo que te diferencia y te lleva al éxito.",
+          "finance": "Las decisiones financieras deben reflejar tus valores y tu nivel de comodidad. Confía en tu intuición a la hora de gestionar tu dinero y busca inversiones que encajen de forma natural con tu filosofía financiera."
+        },
+        "reversed": {
+          "general": "La Reina de Copas invertida advierte sobre los peligros de dejar que los rasgos negativos dominen. Tómate tiempo para reflexionar y trabaja en equilibrar tus emociones para evitar que afecten negativamente tus decisiones.",
+          "love": "En las relaciones, ten cuidado con la inestabilidad emocional o la manipulación. Es fundamental abordar los comportamientos negativos y esforzarse por mantener la honestidad y el equilibrio en tus interacciones para mantener relaciones saludables.",
+          "career": "Ten cuidado de no dejar que las emociones nublen tu criterio profesional. Si la negatividad está afectando tu vida laboral, busca comentarios constructivos y concéntrate en desarrollar un enfoque más equilibrado ante los desafíos.",
+          "finance": "La reina invertida sugiere la necesidad de ser consciente del gasto emocional. Evalúa cuidadosamente tus decisiones financieras, asegurándote de que estén motivadas por la necesidad y la razón, y no por impulsos o estados de ánimo."
+        }
+      }
+    },
+    {
+      "id": 49,
+      "name": "Rey de Copas",
+      "image": "cups_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "Copas",
+      "element": "Agua",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tu verdadero yo, tal y como sugiere el Rey de Copas, ya que te encuentras en una posición en la que la autenticidad es tu mayor baza. Mantén la sinceridad en tus interacciones y decisiones, y deja que tus fortalezas y debilidades te guíen hacia una vida más plena.",
+          "love": "En las relaciones, el Rey de Copas te anima a mostrar madurez emocional y compasión. Escucha activamente las necesidades de tu pareja y expresa tus sentimientos con sinceridad para fortalecer vuestro vínculo.",
+          "career": "Aprovecha tus habilidades diplomáticas en el trabajo, ya que el Rey de Copas sugiere que la comprensión y el trabajo en equipo te llevarán al éxito. Toma la iniciativa en proyectos donde la inteligencia emocional sea crucial.",
+          "finance": "El Rey de Copas destaca la sabiduría financiera. Toma decisiones que se ajusten a tu bienestar emocional y financiero a largo plazo, en lugar de a tus deseos a corto plazo."
+        },
+        "reversed": {
+          "general": "El Rey de Copas invertido advierte sobre dejar que tus rasgos negativos dominen. Reflexiona sobre tus acciones y actitudes, y haz un esfuerzo consciente por mejorar aquellas áreas en las que no has dado lo mejor de ti.",
+          "love": "En el amor, esta carta invertida sugiere que podrías estar mostrando los aspectos menos favorables de tu personalidad. Esfuérzate por ser más abierto y menos reactivo en tus expresiones emocionales con tu pareja.",
+          "career": "Ten cuidado con los impulsos emocionales en el trabajo, ya que pueden provocar conflictos o malentendidos. Esfuérzate por mantener el equilibrio y la profesionalidad, especialmente en situaciones estresantes.",
+          "finance": "Invertida, el Rey de Copas aconseja no dejar que las emociones impulsen tus decisiones financieras. Evita las compras impulsivas y las inversiones motivadas por las emociones. En su lugar, busca la estabilidad y reflexiona sobre tus decisiones."
+        }
+      }
+    },
+    {
+      "id": 50,
+      "name": "As de Espadas",
+      "image": "swords_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Una idea ha cautivado tus pensamientos, impulsándote a perseguirla con todas tus fuerzas. Evalúa su viabilidad y su impacto en tu vida antes de lanzarte a ella, asegurándote de que se ajusta a tus objetivos a largo plazo.",
+          "love": "En las relaciones, puede surgir una nueva comprensión o perspectiva. Discútelo abiertamente con su pareja para asegurarse de que respalda las visiones que ambos tienen del futuro.",
+          "career": "Un nuevo proyecto o estrategia ha captado tu atención. Planifica meticulosamente y solicita opiniones para garantizar su viabilidad antes de comprometer tus recursos.",
+          "finance": "Tu nueva idea financiera necesita una evaluación exhaustiva. Analiza los números y tal vez consulta a un asesor financiero para medir su potencial éxito frente a los riesgos."
+        },
+        "reversed": {
+          "general": "Una idea que en su momento parecía prometedora ha fracasado, lo que posiblemente haya provocado decepción. Reflexiona sobre lo que salió mal y utiliza esta información para perfeccionar tu enfoque en futuros proyectos.",
+          "love": "Es posible que un aspecto de tu relación no haya salido como esperabas, lo que ha provocado tensión. Comunícate abiertamente para reajustar tus expectativas y fomentar el entendimiento.",
+          "career": "Tu plan profesional ha encontrado un obstáculo. Aprovecha esta oportunidad para aprender, reevaluar tu trayectoria y establecer objetivos o plazos más realistas.",
+          "finance": "Es posible que los planes financieros no hayan salido como se esperaba, lo que ha provocado frustración. Reevalúa tus estrategias financieras y ajusta tu presupuesto para evitar más contratiempos."
+        }
+      }
+    },
+    {
+      "id": 51,
+      "name": "Dos de Espadas",
+      "image": "swords_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Has alcanzado un equilibrio mental tras considerar dos puntos de vista opuestos. Mantén este equilibrio permaneciendo abierto a diferentes perspectivas y sigue buscando la armonía en tus decisiones.",
+          "love": "En tu relación, es posible que encuentres consuelo en la amistad, pero que te falte pasión romántica. Para reavivar la intimidad emocional, planifica actividades que ambos encontréis emocionantes y novedosas.",
+          "career": "Tu capacidad para ver ambos lados de una situación es una ventaja en el lugar de trabajo. Utiliza esta habilidad para mediar en conflictos y proponer soluciones equilibradas que serán apreciadas por tus compañeros.",
+          "finance": "Has encontrado un término medio entre gastar y ahorrar. Mantén este equilibrio estableciendo objetivos financieros claros y revisando tu presupuesto con regularidad para ajustarlo según sea necesario."
+        },
+        "reversed": {
+          "general": "El conflicto interno está provocando incoherencia en tus acciones. Para encontrar claridad, tómate tiempo para reflexionar sobre lo que realmente te importa y prioriza estos valores en tu toma de decisiones.",
+          "love": "La tensión puede estar aumentando debido a un choque de voluntades. Mejora la comunicación hablando abiertamente sobre las necesidades y los límites de cada uno sin intentar dominar la conversación.",
+          "career": "Las disputas en el lugar de trabajo pueden surgir por la superposición de funciones o por malentendidos. Aclara tu función y tus responsabilidades con tu equipo para garantizar que los esfuerzos de todos sean complementarios y no competitivos.",
+          "finance": "Sus acciones financieras pueden parecer contradictorias, tal vez oscilando entre el ahorro y el derroche. Establezca un enfoque más coherente creando un plan financiero detallado que incluya objetivos tanto a corto como a largo plazo."
+        }
+      }
+    },
+    {
+      "id": 52,
+      "name": "Tres de Espadas",
+      "image": "swords_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Tu situación actual puede indicar una falta de claridad o previsión, por lo que es esencial hacer una pausa y reevaluar tus planes. Revisa cuidadosamente toda la información disponible para evitar errores y asegurarte de que no se te escapan detalles importantes. Es hora de dejar de improvisar y establecer una estrategia clara y bien fundamentada.",
+          "love": "Es posible que la comunicación en tu relación esté fallando, quizá debido a detalles que se han pasado por alto o a malentendidos. Aborda estos problemas de frente manteniendo diálogos sinceros y abiertos con tu pareja. Aclara tus sentimientos y expectativas para reparar cualquier daño y fortalecer vuestro vínculo.",
+          "career": "En el trabajo, es posible que sientas las consecuencias de la falta de preparación o de la información incompleta. Para contrarrestar esto, toma la iniciativa de comprender plenamente todos los aspectos de tus proyectos o funciones. Busca asesoramiento o formación adicional si es necesario para cubrir cualquier laguna en tus habilidades o conocimientos.",
+          "finance": "Las decisiones financieras tomadas sin un conocimiento profundo pueden acarrear problemas. Reevalúe sus planes financieros y presupuestos, y compruebe dos veces todos los datos antes de proceder. Considere la posibilidad de consultar a un asesor financiero para asegurarse de que sus decisiones se basan en fundamentos sólidos."
+        },
+        "reversed": {
+          "general": "Es posible que te estés aferrando a ilusiones y evitando la realidad de tu situación. Es fundamental afrontar la verdad, por muy incómoda que sea. Empieza por despojarte de las fantasías y afronta tus retos con realismo y honestidad.",
+          "love": "La negación en las relaciones personales puede conducir a problemas más profundos. Es fundamental reconocer la realidad del estado de tu relación. Si te das cuenta de que estás evitando verdades difíciles, es hora de enfrentarlas directamente y trabajar junto con tu pareja para encontrar una solución o un cambio.",
+          "career": "Invertida, esta carta advierte sobre el autoengaño en relación con tu progreso profesional o la dinámica de tu lugar de trabajo. Da un paso atrás y evalúa tu carrera con ojo crítico. Realiza los ajustes necesarios fijándote objetivos realistas y buscando opiniones sinceras de tus compañeros o mentores.",
+          "finance": "Las fantasías sobre el éxito financiero sin un plan realista pueden llevar a la decepción. Reconozca el estado real de sus finanzas y adopte un enfoque más pragmático. Cree un presupuesto detallado, recorte los gastos innecesarios y elabore un plan de ahorro que refleje sus ingresos y objetivos reales."
+        }
+      }
+    },
+    {
+      "id": 53,
+      "name": "Cuatro de Espadas",
+      "image": "swords_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Este es un momento para reflexionar, no para actuar. Al igual que un jardín en invierno, deja que tu mente y tus actividades descansen para prepararte para el crecimiento futuro. Aprovecha esta pausa para reevaluar tus objetivos y estrategias sin precipitarte a realizar cambios.",
+          "love": "En las relaciones, ahora es el momento de dar un paso atrás y reflexionar. Al igual que un río se calma cuando no se le perturba, deja que tus conexiones emocionales se estabilicen evitando tomar decisiones importantes o mantener discusiones profundas por ahora.",
+          "career": "No tomes decisiones importantes en tu carrera profesional ni empieces nuevos proyectos. Considera este periodo como un retiro estratégico, similar a reunir tus fuerzas antes de un gran avance. Aprovecha esta pausa para planificar y prepararte, en lugar de actuar.",
+          "finance": "Evite nuevos compromisos financieros o inversiones en este momento. Al igual que se asegura su casa antes de una tormenta, concéntrese en proteger sus activos actuales y revisar su salud financiera en lugar de expandirla."
+        },
+        "reversed": {
+          "general": "Resistirse a la pausa natural puede provocar frustración. Es como empujar una puerta cerrada con llave: inútil y agotador. Reconozca la necesidad de un descanso y utilícelo para recargar energías en lugar de luchar contra él.",
+          "love": "Intentar forzar el progreso en una relación durante este periodo puede generar resistencia y tensión. En su lugar, mantén el statu quo y céntrate en cuidarte a ti mismo y en tus vínculos actuales sin presionar para que se produzcan cambios.",
+          "career": "Si te sientes bloqueado en el trabajo, esforzarte más no necesariamente te ayudará a superar los obstáculos. Al igual que una máquina que se sobrecalienta cuando se la obliga a trabajar sin descanso, date permiso para dar un paso atrás y reevaluar tu enfoque.",
+          "finance": "Resista la tentación de tomar decisiones financieras precipitadas. Al igual que un jugador de ajedrez que se apresura a hacer un movimiento, es posible que luego se arrepienta. Aproveche este tiempo para analizar y planificar minuciosamente su estrategia financiera antes de actuar."
+        }
+      }
+    },
+    {
+      "id": 54,
+      "name": "Cinco de Espadas",
+      "image": "swords_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Es posible que te sientas abrumado por la ira o la frustración. Es fundamental dar un paso atrás y buscar la calma para evitar dañar tus relaciones o tu reputación. Alejarte temporalmente de la situación puede proporcionarte la claridad necesaria para encontrar soluciones más constructivas.",
+          "love": "En las relaciones, las palabras o acciones duras pueden causar daños irreversibles. Si los conflictos se intensifican, propone un descanso para calmar los ánimos en lugar de continuar con una discusión destructiva. Aprovecha este tiempo para reflexionar sobre lo que realmente importa en tu relación.",
+          "career": "Los conflictos en el lugar de trabajo pueden llegar a un punto crítico. Si te encuentras en una situación de gran tensión, lo más sensato es alejarte del conflicto inmediato y buscar la mediación o el consejo de una parte neutral. Esto te ayudará a mantener tu integridad profesional y tus relaciones.",
+          "finance": "Actuar por impulso puede llevar a tomar decisiones financieras lamentables. Si te sientes especialmente reactivo o alterado, pospone cualquier acción financiera importante hasta que hayas recuperado la calma y la racionalidad."
+        },
+        "reversed": {
+          "general": "Tu visión de la vida puede estar teñida de negatividad, lo que te lleva a culpar injustamente a los demás. Para contrarrestar esto, asume la responsabilidad de tus emociones y acciones. Reflexiona sobre cómo tus actitudes pueden influir en tus retos actuales y esfuérzate por adoptar una perspectiva más positiva.",
+          "love": "Evita descargar tu frustración en tu pareja, ya que puede dañar vuestra relación. Céntrate en la comunicación constructiva y reconoce tu parte de responsabilidad en cualquier desacuerdo. Intenta comprender antes de ser comprendido, lo que puede ayudar a sanar y fortalecer los lazos.",
+          "career": "Existe el riesgo de proyectar problemas personales en tu entorno laboral. Asegúrate de que tu comportamiento profesional sea impecable manteniendo las quejas y frustraciones personales fuera del lugar de trabajo. Si es necesario, busca ayuda profesional o asesoramiento para gestionar eficazmente tus problemas personales.",
+          "finance": "Invertida, esta carta advierte sobre una posible mala gestión de los recursos debido a la toma de decisiones emocionales. Haz un esfuerzo consciente por separar los sentimientos de las decisiones financieras y considera la posibilidad de consultar con un asesor financiero para mantener tus finanzas estables y racionales."
+        }
+      }
+    },
+    {
+      "id": 55,
+      "name": "Seis de Espadas",
+      "image": "swords_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Reconoce que sentirte fuera de lugar o fracasar en una tarea es parte del aprendizaje. Acepta estas realidades como peldaños en lugar de contratiempos, y utilízalas para recalibrar tu enfoque ante los retos.",
+          "love": "En las relaciones, un paso en falso puede ser señal de falta de comunicación o de expectativas incompatibles. Aborda estos malentendidos de forma abierta y honesta para fortalecer vuestro vínculo.",
+          "career": "Si un proyecto o una función no han salido según lo previsto, considéralo una oportunidad de aprendizaje crucial. Analiza qué ha fallado, pide opiniones y utiliza este conocimiento para mejorar tu rendimiento en el futuro.",
+          "finance": "Reevalúa tus estrategias financieras si los resultados recientes no han cumplido tus expectativas. Quizás sea el momento de revisar tu presupuesto o buscar asesoramiento para garantizar una mejor gestión en el futuro."
+        },
+        "reversed": {
+          "general": "Participa en diálogos constructivos para resolver conflictos y alcanzar acuerdos beneficiosos. La capacidad de negociar eficazmente mejorará tus relaciones y oportunidades.",
+          "love": "Céntrate en la comunicación eficaz y el entendimiento en tu relación. Escucha activamente y muéstrate dispuesto a transigir para encontrar soluciones que satisfagan tanto a ti como a tu pareja.",
+          "career": "Las negociaciones exitosas en el trabajo pueden conducir a avances o resoluciones significativas. Prepárese a fondo y aborde las discusiones con una mentalidad orientada al beneficio mutuo.",
+          "finance": "Un Seis de Espadas invertido sugiere que es un momento oportuno para negociar acuerdos financieros o contratos. Aborde estas conversaciones con objetivos claros y la voluntad de encontrar un compromiso justo."
+        }
+      }
+    },
+    {
+      "id": 56,
+      "name": "Siete de Espadas",
+      "image": "swords_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Aprovecha tu fuerza de voluntad para dirigir tu vida hacia el crecimiento. Evalúa tus estrategias y ten siempre preparado un plan B. Recuerda que controlar en exceso todos los aspectos puede provocar estrés, por lo que la clave está en encontrar el equilibrio.",
+          "love": "En las relaciones, tu deseo de liderar puede parecer manipulación para los demás. Practica la franqueza y permite la toma de decisiones conjunta para fomentar la armonía y la confianza.",
+          "career": "Ahora se destacan tus habilidades de liderazgo. Hazte cargo de los proyectos y guía a tu equipo con claridad y visión, pero asegúrate de incorporar sus comentarios para garantizar que todos se sientan valorados.",
+          "finance": "Planifica cuidadosamente tus movimientos financieros con previsión. Aunque es bueno estar atento, evita controlar cada céntimo para evitar estrés innecesario."
+        },
+        "reversed": {
+          "general": "¿Te sientes fuera de control? Es hora de recuperar tu capacidad de decisión. Empieza por fijarte metas pequeñas y alcanzables para recuperar gradualmente la confianza en tu capacidad de tomar decisiones.",
+          "love": "Si te das cuenta de que en tus relaciones tiendes a seguir más que a liderar, piensa por qué podrías estar evitando la responsabilidad. Comunica tus necesidades y deseos de manera más asertiva para equilibrar la dinámica.",
+          "career": "Es posible que te sientas marginado en el trabajo, como si solo estuvieras ejecutando las órdenes de otros. Expresa tus ideas y busca proyectos más autónomos para demostrar tus capacidades.",
+          "finance": "Si ha delegado sus responsabilidades financieras, es hora de asumir un papel más activo. Revise y reafirme sus objetivos financieros para asegurarse de que se ajustan a sus valores y necesidades personales."
+        }
+      }
+    },
+    {
+      "id": 57,
+      "name": "Ocho de Espadas",
+      "image": "swords_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Reconoce que quizás te sientas atrapado por acciones habituales que ya no te sirven en tu situación actual. Es hora de liberarte de los viejos patrones y afrontar los retos con nuevas perspectivas.",
+          "love": "Los métodos de comunicación que antes funcionaban ahora pueden estar causando fricciones. Es fundamental adoptar nuevas formas de conectar y resolver conflictos con tu pareja.",
+          "career": "Si los enfoques tradicionales en el trabajo están fallando, considera soluciones innovadoras. Mantente adaptable y abierto a aprender nuevas habilidades o estrategias para superar los obstáculos profesionales.",
+          "finance": "Es posible que tus estrategias financieras habituales ya no sean tan eficaces. Evalúa tus métodos actuales de presupuestación e inversión, y prepárate para ajustarlos con el fin de alcanzar mejor tus objetivos financieros."
+        },
+        "reversed": {
+          "general": "Resistirse al cambio y aferrarse a métodos obsoletos probablemente cause más daño que beneficio. Adopte la flexibilidad y permítase adaptarse a las circunstancias cambiantes.",
+          "love": "En el amor, aferrarse obstinadamente a tus costumbres podría crear distancia. Reflexiona sobre la dinámica de tu relación y estate dispuesto a hacer los cambios necesarios para fortalecer vuestro vínculo.",
+          "career": "Persistir con tácticas ineficaces en el trabajo puede provocar agotamiento y oportunidades perdidas. Escucha los comentarios y estate dispuesto a revisar tu enfoque para obtener mejores resultados.",
+          "finance": "El esfuerzo excesivo por ceñirse a los antiguos planes financieros puede provocar pérdidas. Es hora de reevaluar su salud financiera y considerar nuevas vías de ingresos e inversión."
+        }
+      }
+    },
+    {
+      "id": 58,
+      "name": "Nueve de Espadas",
+      "image": "swords_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Acepta que no todo en la vida está bajo tu control. Deja de lado la necesidad de controlar los resultados y, en su lugar, concéntrate en adaptarte y responder con resiliencia.",
+          "love": "En las relaciones, reconoce que no puedes controlar los sentimientos ni las acciones de la otra persona. Concéntrate en desarrollar la comprensión y la adaptabilidad, permitiendo que la relación evolucione de forma natural.",
+          "career": "En tu carrera profesional, reconoce que pueden producirse cambios inesperados y que, de hecho, se producirán. Prepárate siendo versátil y abierto a nuevos métodos o caminos que puedan surgir de forma inesperada.",
+          "finance": "Acepte que los mercados financieros son impredecibles. En lugar de intentar predecir el comportamiento del mercado, concéntrese en crear una cartera diversificada que pueda soportar diferentes climas financieros."
+        },
+        "reversed": {
+          "general": "Luchar contra la aceptación puede provocar confusión. Para seguir adelante, empieza por reconocer tus sentimientos sobre la situación y luego trabaja para comprenderla y aceptarla.",
+          "love": "Si sientes que tus relaciones no están en sintonía, es hora de abordar tus retos directamente. Comunica tus preocupaciones abiertamente y trata de comprender la raíz del desacuerdo.",
+          "career": "Sentirse estancado o tratado injustamente en el trabajo puede ser desalentador. Tome medidas concretas para abordar estos problemas, ya sea buscando aclaraciones sobre su función o hablando de sus preocupaciones con un supervisor.",
+          "finance": "La dificultad para aceptar las pérdidas económicas puede generar más estrés. Concéntrese en lo que puede controlar, como ajustar su presupuesto o buscar asesoramiento financiero para recuperar la estabilidad."
+        }
+      }
+    },
+    {
+      "id": 59,
+      "name": "Diez de Espadas",
+      "image": "swords_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Te enfrentas a un final o una pérdida importantes que son difíciles de aceptar, pero necesarios para crecer. Reconoce tus sentimientos y permítete llorar, pero también espera con ilusión las nuevas posibilidades que este final te abre.",
+          "love": "Una relación puede estar llegando a su fin o atravesando un grave obstáculo. Es importante comunicar abiertamente tus sentimientos y necesidades, aunque ello dé lugar a conversaciones difíciles. Piensa en las lecciones que esta situación puede enseñarte sobre el amor y las relaciones.",
+          "career": "Es posible que un proyecto o una trayectoria profesional hayan llegado a un final inesperado y abrupto. Reflexiona sobre lo que no funcionó y por qué, para evitar caer en errores similares en el futuro. Aprovecha esta experiencia como aprendizaje para orientar tus próximos pasos profesionales.",
+          "finance": "Es posible que se enfrente a un revés financiero o a una pérdida. Es fundamental que revise sus planes financieros y, posiblemente, reestructure su presupuesto. Céntrese en la seguridad financiera a largo plazo en lugar de en las ganancias inmediatas."
+        },
+        "reversed": {
+          "general": "Estás reconociendo la necesidad de abandonar un camino autodestructivo o un plan que ya no es viable. Toma la decisión de cortar por lo sano y seguir adelante, aunque sea doloroso, ya que te llevará a resultados más saludables.",
+          "love": "Es posible que te des cuenta de que continuar con el patrón actual de tu relación es inútil. Es hora de cambiar la dinámica o separarse si el crecimiento parece imposible. Esta difícil decisión, en última instancia, beneficiará tu bienestar emocional.",
+          "career": "Has identificado que cierta trayectoria profesional o trabajo no es adecuado para ti. Busca activamente alternativas que se ajusten mejor a tus habilidades y pasiones. Dejarlo atrás es el primer paso para encontrar una vida profesional más satisfactoria.",
+          "finance": "Usted comprende que sus estrategias financieras actuales no están funcionando. Tome medidas proactivas para cambiar su enfoque, como buscar el asesoramiento de un asesor financiero o invertir en educación financiera para tomar decisiones informadas."
+        }
+      }
+    },
+    {
+      "id": 60,
+      "name": "Sota de Espadas",
+      "image": "swords_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Acepta las nuevas ideas que están surgiendo en tu mente; son semillas de cambio que podrían crecer si se nutren adecuadamente. Reflexiona sobre estos pensamientos y decide si se alinean con tus objetivos futuros. Es necesario actuar para transformar estas ideas en realidad.",
+          "love": "La comunicación en tu relación puede aportar nuevas perspectivas. Habla con tu pareja sobre nuevas ideas y planes de futuro, asegurándote de que ambos tengáis espacio para expresar vuestras opiniones. Esta franqueza puede conducir a un mayor entendimiento y compromiso.",
+          "career": "Un nuevo proyecto o concepto en el trabajo podría llamar tu atención. Toma la iniciativa para explorarlo más a fondo, tal vez proponiendo tus ideas en una reunión o redactando un plan preliminar para compartir con tu equipo. Tu enfoque proactivo podría abrirte nuevas perspectivas profesionales.",
+          "finance": "Las oportunidades financieras están surgiendo a tu alrededor. Examina estas ideas cuidadosamente antes de proceder. Puede que sea el momento adecuado para considerar una nueva inversión o diversificar tus activos, pero asegúrate de investigar a fondo para mitigar los riesgos."
+        },
+        "reversed": {
+          "general": "Acepta las nuevas ideas que están surgiendo en tu mente; son semillas de cambio que podrían crecer si se nutren adecuadamente. Reflexiona sobre estos pensamientos y decide si se alinean con tus objetivos futuros. Es necesario actuar para transformar estas ideas en realidad.",
+          "love": "La comunicación en tu relación puede aportar nuevas perspectivas. Habla con tu pareja sobre nuevas ideas y planes de futuro, asegurándote de que ambos tenéis espacio para expresar vuestras opiniones. Esta franqueza puede conducir a un mayor entendimiento y compromiso.",
+          "career": "Un nuevo proyecto o concepto en el trabajo podría llamar tu atención. Toma la iniciativa para explorarlo más a fondo, tal vez proponiendo tus ideas en una reunión o redactando un plan preliminar para compartir con tu equipo. Tu enfoque proactivo podría abrirte nuevas perspectivas profesionales.",
+          "finance": "Las oportunidades financieras están surgiendo a tu alrededor. Examina estas ideas cuidadosamente antes de proceder. Puede que sea el momento adecuado para considerar una nueva inversión o diversificar tus activos, pero asegúrate de investigar a fondo para mitigar los riesgos."
+        }
+      }
+    },
+    {
+      "id": 61,
+      "name": "Caballo de Espadas",
+      "image": "swords_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Ahora es el momento de consolidar tus planes y avanzar con una dirección clara. Evalúa los cambios que se han producido en tu vida, reconoce sus beneficios y utiliza esta comprensión para dar los siguientes pasos con confianza.",
+          "love": "En las relaciones, tus recientes conocimientos pueden guiarte hacia conexiones más profundas. Comunica abiertamente tus visiones para el futuro y trabaja junto con tu pareja para convertirlas en planes viables.",
+          "career": "Aprovecha la nueva claridad que has adquirido en tu carrera profesional. Define tus objetivos y los pasos necesarios para alcanzarlos. Sé decisivo y proactivo a la hora de buscar oportunidades que se ajusten a tus objetivos a largo plazo.",
+          "finance": "En el ámbito financiero, utilice sus nuevos conocimientos para crear un plan sólido. Elabore un presupuesto pensando en el futuro y tenga en cuenta las inversiones que se ajusten a sus nuevas creencias y objetivos. Cíñase a su plan, pero manténgase flexible ante los cambios."
+        },
+        "reversed": {
+          "general": "Ahora es el momento de consolidar tus planes y avanzar con una dirección clara. Evalúa los cambios que se han producido en tu vida, reconoce sus beneficios y utiliza esta comprensión para dar los siguientes pasos con confianza.",
+          "love": "En las relaciones, tus recientes conocimientos pueden guiarte hacia conexiones más profundas. Comunica abiertamente tus visiones para el futuro y trabaja junto con tu pareja para convertirlas en planes viables.",
+          "career": "Aprovecha la nueva claridad que has adquirido en tu carrera profesional. Define tus objetivos y los pasos necesarios para alcanzarlos. Sé decisivo y proactivo a la hora de buscar oportunidades que se ajusten a tus objetivos a largo plazo.",
+          "finance": "En el ámbito financiero, utilice sus nuevos conocimientos para crear un plan sólido. Elabore un presupuesto pensando en el futuro, teniendo en cuenta inversiones que se ajusten a sus nuevas creencias y objetivos. Cíñase a su plan, pero manténgase flexible ante los cambios."
+        }
+      }
+    },
+    {
+      "id": 62,
+      "name": "Reina de Espadas",
+      "image": "swords_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tu verdadero yo en tu entorno actual, ya que es donde debes estar. Reconoce tanto tus fortalezas como tus debilidades, y utiliza esta conciencia de ti mismo para guiar tus decisiones e interacciones.",
+          "love": "En las relaciones, ser auténtico es tu mayor activo. Comunica abiertamente tus necesidades y deseos, y del mismo modo, deja a tu pareja el espacio necesario para que sea ella misma.",
+          "career": "Tus habilidades únicas y rasgos personales son cruciales en tu lugar de trabajo. Aprovecha tu individualidad para destacar y abordar las tareas de forma estratégica, sacando partido a tus puntos fuertes.",
+          "finance": "La estabilidad financiera se consigue comprendiendo tus hábitos de gasto y tus objetivos financieros. Adapta tu presupuesto a tus valores personales y busca un equilibrio que refleje quién eres realmente."
+        },
+        "reversed": {
+          "general": "Ten cuidado de no dejar que tus rasgos negativos dominen a los positivos. Tómate un momento para reflexionar sobre tu comportamiento e identificar áreas de crecimiento y mejora personal.",
+          "love": "En el amor, los problemas sin resolver pueden hacer que muestres tus rasgos menos favorables. Trabaja en la comunicación y la conciencia de ti mismo para limar asperezas y fomentar una dinámica de relación más saludable.",
+          "career": "Si la negatividad se está infiltrando en tu vida profesional, toma medidas para corregir este rumbo. Reflexiona sobre cómo tu comportamiento afecta a tus compañeros y al entorno laboral, y esfuérzate por introducir cambios positivos.",
+          "finance": "Tus decisiones financieras pueden verse afectadas por hábitos impulsivos o negativos. Haz un balance de tu salud financiera y toma decisiones conscientes y deliberadas para evitar perjuicios y asegurar tu futuro."
+        }
+      }
+    },
+    {
+      "id": 63,
+      "name": "Rey de Espadas",
+      "image": "swords_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "Espadas",
+      "element": "Aire",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tu verdadero yo, ya que el Rey de Espadas sugiere que la autenticidad es tu fortaleza. Reconoce tanto tus fortalezas como tus debilidades para navegar por la vida de manera más eficaz.",
+          "love": "En las relaciones, sé honesto y directo, tal y como haría el Rey de Espadas. Una comunicación clara fortalecerá tus vínculos y evitará malentendidos.",
+          "career": "Utiliza tu intelecto y tu capacidad de decisión para tomar decisiones impactantes en el trabajo. Tu claridad y tu imparcialidad pueden guiar a tu equipo hacia el éxito y ganarte el respeto en tu círculo profesional.",
+          "finance": "Aplica un enfoque estratégico a tus finanzas. Toma decisiones bien informadas, al igual que el Rey de Espadas, para garantizar que tus inversiones y ahorros se gestionen de forma inteligente."
+        },
+        "reversed": {
+          "general": "Ten cuidado de no dejar que tus rasgos negativos eclipsen tu potencial. Trabaja en tu autoconciencia y evita tomar decisiones en un estado de terquedad o negatividad.",
+          "love": "En situaciones románticas, comprueba si estás siendo injustamente severo o crítico. Esfuérzate por comprender y ser paciente con tu pareja para mantener la armonía.",
+          "career": "Ten cuidado de no ser demasiado rígido o autoritario en el trabajo. Un enfoque flexible y una actitud abierta hacia las ideas de los demás fomentarán una mejor colaboración y más oportunidades.",
+          "finance": "Evite tomar decisiones financieras impulsivas que puedan derivarse de una mentalidad negativa. Tómese el tiempo necesario para evaluar minuciosamente los posibles riesgos y busque asesoramiento si es necesario."
+        }
+      }
+    },
+    {
+      "id": 64,
+      "name": "As de Oros",
+      "image": "pentacles_01_ace",
+      "arcana": "minor",
+      "number": "1",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Este es un momento de oportunidades florecientes y prosperidad. Concéntrate en el crecimiento y aprovecha la energía positiva que te rodea. Es un período favorable para abordar cualquier proyecto desafiante o asunto sin resolver.",
+          "love": "La suerte está de tu lado en tu vida amorosa. Tanto si estás soltero como si tienes pareja, inicia conversaciones significativas o da pasos hacia un compromiso más profundo. Comprométete plenamente con tu corazón y observa cómo florecen las conexiones.",
+          "career": "Tu trayectoria profesional está llena de posibilidades. Toma la iniciativa en nuevos proyectos o busca ascensos. Es probable que tus esfuerzos tengan éxito, así que aprovecha este momento para fijarte metas profesionales ambiciosas.",
+          "finance": "Las oportunidades financieras están maduras para ser aprovechadas. Considere la posibilidad de invertir o ampliar sus ahorros. Es un momento ideal para revisar y, posiblemente, diversificar su cartera financiera con el fin de maximizar los rendimientos."
+        },
+        "reversed": {
+          "general": "Ten cuidado de no volverte demasiado materialista ni priorizar la riqueza por encima del bienestar. El equilibrio es clave; asegúrate de cuidar tu salud emocional y espiritual, no solo las ganancias materiales.",
+          "love": "Es posible que el enfoque financiero esté eclipsando tus relaciones. Reevalúa tus prioridades y deja espacio para la conexión emocional. Recuerda que la riqueza no solo se refiere al dinero, sino también a la riqueza del amor y la compañía.",
+          "career": "Tu ambición profesional puede estar provocándote agotamiento o insatisfacción. Da un paso atrás para reevaluar tus objetivos. Asegúrate de que tu trabajo se ajusta a tus valores y te aporta satisfacción más allá de las ganancias económicas.",
+          "finance": "Existe el riesgo de juzgar erróneamente las oportunidades financieras debido a un enfoque centrado en las ganancias a corto plazo. Sea prudente con las nuevas iniciativas financieras y busque asesoramiento para evitar tomar decisiones que puedan provocar remordimientos a largo plazo."
+        }
+      }
+    },
+    {
+      "id": 65,
+      "name": "Dos de Oros",
+      "image": "pentacles_02",
+      "arcana": "minor",
+      "number": "2",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Estás barajando varias opciones, ninguna de las cuales parece ideal. Para aclarar tu camino, haz una lista de las ventajas y desventajas de cada opción para visualizar mejor cuál se ajusta más a tus objetivos.",
+          "love": "Sentirse indeciso en sus elecciones sentimentales podría ser una señal para dar un paso atrás y evaluar sus verdaderos deseos. Mantenga diálogos abiertos con sus parejas potenciales o actuales para explorar lo que realmente busca en una relación.",
+          "career": "En tu trabajo, es posible que te enfrentes a tareas o proyectos conflictivos. Prioriza tus tareas por fecha límite e importancia, y no dudes en pedir consejo o delegar para gestionar tu carga de trabajo de forma eficaz.",
+          "finance": "Con múltiples oportunidades o retos financieros por delante, es fundamental mantener un presupuesto equilibrado. Lleve un control minucioso de sus ingresos y gastos, y evite comprometerse en exceso financieramente hasta que tenga una visión general más clara."
+        },
+        "reversed": {
+          "general": "Aplazar decisiones o tareas importantes genera estrés. Divida sus tareas en pasos manejables y establezca plazos para cada una de ellas a fin de evitar complicaciones futuras.",
+          "love": "Evitar abordar los problemas de pareja puede conducir a problemas más graves. Sea proactivo en la comunicación y aborde los problemas a medida que surjan para evitar que se agraven.",
+          "career": "Los proyectos pendientes en el trabajo se están acumulando. Crea un plan estructurado para abordar estas tareas una por una, dando prioridad a las que están más cerca de completarse o son más críticas.",
+          "finance": "Aplazar las obligaciones financieras puede generar deudas más grandes o problemas. Establezca un plan para saldar las deudas o gestionar las responsabilidades financieras según un calendario, asegurando la coherencia para evitar complicaciones."
+        }
+      }
+    },
+    {
+      "id": 66,
+      "name": "Tres de Oros",
+      "image": "pentacles_03",
+      "arcana": "minor",
+      "number": "3",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Vuestros esfuerzos están empezando a dar sus frutos, lo que pone de manifiesto las ventajas del trabajo en equipo y la planificación. Seguid colaborando y perfeccionando vuestras estrategias basándoos en los resultados que estáis obteniendo. Es el momento ideal para realizar comentarios constructivos y seguir mejorando.",
+          "love": "En tu relación, observa cómo las nuevas dinámicas están dando forma a vuestra interacción. Participa activamente en el desarrollo de vuestra relación comunicando tus observaciones y sentimientos. Es hora de consolidar los cimientos que estáis construyendo juntos.",
+          "career": "Tus habilidades profesionales están siendo reconocidas, lo que hace que este sea un momento ideal para ampliar tu influencia. Interactúa más con tus compañeros y pide opiniones sobre tus contribuciones. Busca proyectos en los que tu experiencia pueda conducir al éxito mutuo.",
+          "finance": "Los frutos de su planificación financiera están empezando a verse. Siga supervisando sus inversiones y ajuste su presupuesto en función de los éxitos actuales. Considere la posibilidad de reinvertir los beneficios para aprovechar el impulso."
+        },
+        "reversed": {
+          "general": "Evitar las evaluaciones críticas está obstaculizando tu progreso. Afronta la realidad de tu situación y ajusta tus planes en consecuencia. Es poco probable que esperar sin actuar te lleve a mejorar.",
+          "love": "En las relaciones, no abordar los problemas puede llevar al estancamiento. Toma la iniciativa para hablar de lo que te preocupa y aclarar cuál es la postura de cada uno. Ignorar los problemas no hará que desaparezcan.",
+          "career": "Aplazar la toma de decisiones profesionales necesarias puede frenar tu crecimiento profesional. Evalúa tu puesto actual y decide si es el momento de buscar nuevas oportunidades o formas de mejorar tus habilidades.",
+          "finance": "La indecisión a la hora de revisar y ajustar su estrategia financiera puede hacer que pierda oportunidades. Analice de forma realista su salud financiera y realice los cambios necesarios para garantizar la estabilidad y el crecimiento."
+        }
+      }
+    },
+    {
+      "id": 67,
+      "name": "Cuatro de Oros",
+      "image": "pentacles_04",
+      "arcana": "minor",
+      "number": "4",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Estás en una fase en la que apenas te las arreglas para cubrir tus necesidades básicas. Ahora es fundamental que te centres en las tareas esenciales y mantengas tu estabilidad. Considera la posibilidad de simplificar tu vida para gestionar mejor tus recursos.",
+          "love": "Tu relación puede parecer estancada, sobreviviendo más por costumbre que por pasión. Para reavivar la chispa, planifica actividades regulares y significativas juntos, aunque sean sencillas, para fortalecer vuestro vínculo.",
+          "career": "Tu trabajo puede parecer poco satisfactorio y repetitivo, y ofrecer pocas oportunidades de crecimiento o creatividad. Prioriza la eficiencia en tus tareas actuales y busca formas pequeñas y factibles de mejorar tus habilidades profesionales dentro de tus límites energéticos.",
+          "finance": "El crecimiento financiero se encuentra actualmente estancado, y los ingresos apenas cubren lo esencial. Lleve un control meticuloso de sus gastos para evitar gastos innecesarios y proteger sus necesidades financieras esenciales."
+        },
+        "reversed": {
+          "general": "La energía y las oportunidades están en aumento, lo que indica que es el momento de cambios positivos. Aprovecha este crecimiento estableciendo nuevos objetivos realistas para mejorar en todos los ámbitos de tu vida.",
+          "love": "Hay un renovado interés y energía en tus relaciones. Aprovecha esta oportunidad para profundizar tus vínculos compartiendo nuevas experiencias y expresando tus sentimientos más abiertamente.",
+          "career": "Tu carrera profesional está entrando en una fase de mayor potencial. Sé proactivo a la hora de asumir nuevos retos que puedan conducir al avance y la satisfacción personal.",
+          "finance": "Tu situación financiera está mejorando, por lo que es el momento ideal para considerar opciones de inversión seguras o empezar a ahorrar para garantizar tu seguridad financiera en el futuro. Evalúa tus objetivos financieros y ajusta tu presupuesto para adaptarlo a este nuevo crecimiento."
+        }
+      }
+    },
+    {
+      "id": 68,
+      "name": "Cinco de Oros",
+      "image": "pentacles_05",
+      "arcana": "minor",
+      "number": "5",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Es posible que te sientas abrumado por retos que parecen estar más allá de tus capacidades actuales, lo que indica la necesidad de reevaluar tus estrategias. En lugar de avanzar a ciegas, da un paso atrás y planifica un enfoque más manejable para abordar estos obstáculos.",
+          "love": "En las relaciones, abarcar más de lo que se puede manejar puede llevar a la insatisfacción. Comuníquese abiertamente con su pareja sobre sus dificultades actuales y trabajen juntos para encontrar una solución realista, en lugar de esperar una solución instantánea.",
+          "career": "En el trabajo, es posible que te enfrentes a tareas que superan tus habilidades actuales. Es fundamental reconocer esta carencia y buscar orientación o formación adicional, en lugar de luchar en silencio o arriesgarse al fracaso.",
+          "finance": "Desde el punto de vista financiero, este es un momento para evitar inversiones precipitadas o gastos extravagantes. Concéntrese en elaborar un presupuesto y crear una red de seguridad, en lugar de perseguir oportunidades de alto riesgo que prometen ganancias rápidas."
+        },
+        "reversed": {
+          "general": "Una perspectiva pesimista puede nublar tu juicio y obstaculizar el progreso. Ponte a prueba para identificar los aspectos positivos de tu situación actual y construye a partir de ahí, rompiendo el hábito de pensar en términos negativos.",
+          "love": "En el amor, centrarse solo en los aspectos negativos puede sabotear las relaciones. Esfuérzate por apreciar lo que tu pareja aporta y exprésale tu gratitud, lo que puede transformar la dinámica de vuestra relación.",
+          "career": "Si constantemente te sientes infravalorado en el trabajo, tal vez sea el momento de cambiar tu perspectiva. Concéntrate en tus contribuciones y pide opiniones para comprender cómo puedes mejorar y obtener reconocimiento.",
+          "finance": "Desde el punto de vista financiero, centrarse en lo que le falta puede impedirle reconocer las oportunidades disponibles. Cambie su mentalidad y concéntrese en lo que puede lograr con sus recursos actuales, y comience a tomar pequeñas decisiones financieras informadas para mejorar su situación."
+        }
+      }
+    },
+    {
+      "id": 69,
+      "name": "Seis de Oros",
+      "image": "pentacles_06",
+      "arcana": "minor",
+      "number": "6",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Este es un momento crucial para aprovechar tus esfuerzos pasados y alcanzar el éxito en el futuro. Reconoce y aprovecha las oportunidades que se te presentan; son la recompensa por tu diligencia en el pasado. Actúa con decisión para sacar el máximo partido a esta fase favorable.",
+          "love": "En las relaciones, este es un momento para reconocer los esfuerzos de tu pareja y corresponderle. Ahora es fundamental mantener un equilibrio entre lo que das y lo que recibes. Si estás soltero, sé generoso en tus muestras de afecto, ya que esto podría atraer una conexión significativa.",
+          "career": "Gracias a tu esfuerzo, se avecina un ascenso profesional. Acepta las nuevas responsabilidades o proyectos que se te presenten, ya que son un trampolín hacia un mayor éxito. Demuestra tu capacidad cuando surjan oportunidades.",
+          "finance": "Desde el punto de vista financiero, es posible que te encuentres en una posición en la que puedas prestar dinero o invertirlo de forma inteligente. Elige con cuidado dónde y cómo contribuir financieramente, centrándote en aquellos lugares en los que tu dinero pueda crecer o ayudar a hacer crecer algo significativo."
+        },
+        "reversed": {
+          "general": "Es posible que tu enfoque sea demasiado limitado, lo que te impide ver soluciones o caminos alternativos. Amplía tu perspectiva y considera todas las opciones disponibles antes de tomar decisiones. Ser flexible puede conducir a un éxito más completo.",
+          "love": "En las relaciones, obsesionarse con un resultado específico o una forma concreta de interactuar puede resultar limitante. Ábrete a nuevas formas de conectar y resolver problemas. Escucha activamente las necesidades y sugerencias de tu pareja.",
+          "career": "Centrarse en un único objetivo profesional o método puede resultar limitante. Mantén una actitud abierta a explorar diversas oportunidades o enfoques en el trabajo. Adaptarte a diferentes situaciones o funciones laborales podría resultar más beneficioso de lo que imaginas.",
+          "finance": "Desde el punto de vista financiero, evite invertir todos sus recursos en un solo lugar o proyecto. Diversifique sus inversiones y mantenga una actitud abierta a la hora de explorar diferentes estrategias financieras. Esta flexibilidad puede ayudarle a proteger sus activos y maximizar la rentabilidad."
+        }
+      }
+    },
+    {
+      "id": 70,
+      "name": "Siete de Oros",
+      "image": "pentacles_07",
+      "arcana": "minor",
+      "number": "7",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Reconoce el potencial de crecimiento en tu situación actual. La paciencia y el esfuerzo continuo son fundamentales, ya que las inversiones que has realizado, ya sean emocionales, físicas o financieras, están a punto de dar sus frutos. Sigue alimentando tus planes con mucha atención.",
+          "love": "En las relaciones, este es un momento para cuidar y tener paciencia. Cultiva tu conexión como si fuera un jardín, dándole el tiempo que necesita para crecer y florecer. Los pequeños gestos constantes de amabilidad y comprensión pueden dar lugar a recompensas a largo plazo.",
+          "career": "Tus esfuerzos están a punto de dar sus frutos en tu carrera profesional. Sigue centrándote en los objetivos a largo plazo y no en la gratificación inmediata. Mantén tu compromiso con tus proyectos y pronto verás los frutos de tu trabajo.",
+          "finance": "Este es un momento prometedor para obtener ganancias financieras, pero controle sus gastos. Continúe invirtiendo en su salud financiera a largo plazo en lugar de satisfacer sus deseos a corto plazo. Evalúe sus inversiones para asegurarse de que se ajusten a sus objetivos financieros."
+        },
+        "reversed": {
+          "general": "Es posible que te sientas abrumado por un nuevo nivel de desafíos. Es importante reconocer esto como una fase de adaptación y no como un revés permanente. Concéntrate en comprender y superar los bloqueos internos para adaptarte con éxito.",
+          "love": "En el amor, es posible que sientas que no mereces la relación en la que estás, lo que puede provocar conflictos. Comunica abiertamente tus inseguridades a tu pareja y trabajad juntos para construir una base más sólida para vuestra relación.",
+          "career": "Es posible que estés dudando de tus habilidades en el trabajo, lo que podría estar saboteando tu propio éxito. Reconoce tus miedos, pero comprométete con tus responsabilidades. Busca comentarios y orientación para mejorar tu confianza y tu rendimiento.",
+          "finance": "Existe el riesgo de gestionar mal las nuevas oportunidades financieras debido a la inexperiencia o al exceso de confianza. Da un paso atrás para evaluar tus estrategias financieras y busca asesoramiento si es necesario. Evita los gastos impulsivos y concéntrate en construir una base financiera estable."
+        }
+      }
+    },
+    {
+      "id": 71,
+      "name": "Ocho de Oros",
+      "image": "pentacles_08",
+      "arcana": "minor",
+      "number": "8",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Este es tu momento para perseguir tu verdadera pasión. Deja atrás lo conocido y aprovecha una nueva oportunidad, aunque eso signifique adentrarte en lo desconocido. Tu disposición a cambiar de rumbo demuestra valentía y abre las puertas a nuevas posibilidades.",
+          "love": "En cuestiones del corazón, considera ir más allá de las relaciones de conveniencia para buscar a tu verdadera alma gemela. Esto podría requerir poner fin a una relación actual que no te satisfaga emocionalmente. Da el salto hacia una conexión genuina.",
+          "career": "Se avecina una importante oportunidad profesional, pero requiere dejar tu trabajo actual. Evalúa cuidadosamente esta oportunidad y luego actúa con decisión para aceptar un puesto que se ajuste mejor a tus aspiraciones a largo plazo.",
+          "finance": "Una nueva oportunidad financiera le invita a replantearse sus inversiones o a iniciar un nuevo proyecto. Investigue a fondo y prepárese para trasladar sus recursos a áreas más prometedoras. Asegúrese de comprender los riesgos que conlleva antes de dar el paso."
+        },
+        "reversed": {
+          "general": "La indecisión a la hora de perseguir tus sueños puede llevarte a perder oportunidades y a arrepentirte en el futuro. Aprende de esto y prepárate para actuar con valentía la próxima vez. Reconoce esto como un impulso para enfrentarte a tus miedos y superarlos.",
+          "love": "Ignorar la llamada a buscar relaciones más profundas y significativas puede dar lugar a que veas cómo otros encuentran la felicidad mientras tú te quedas estancado. Reflexiona sobre esta oportunidad perdida de acercarte a lo que tu corazón realmente desea y prepárate para actuar de forma diferente en futuros encuentros.",
+          "career": "Si no te arriesgas profesionalmente, es posible que veas cómo otra persona avanza en lo que tú podrías haber logrado. Utiliza esto como motivación para aprovechar la próxima oportunidad, por muy intimidante que pueda parecer.",
+          "finance": "Si evitas asumir riesgos financieros ahora, es posible que te enfrentes a un camino más difícil más adelante. Prepárate para afrontar las próximas dificultades financieras con resiliencia y aprende de tus dudas pasadas para construir una estrategia financiera más sólida."
+        }
+      }
+    },
+    {
+      "id": 72,
+      "name": "Nueve de Oros",
+      "image": "pentacles_09",
+      "arcana": "minor",
+      "number": "9",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Acepta el flujo equilibrado de energía en tu vida y asegúrate de distribuirla sabiamente entre tus actividades diarias. Cultiva la gratitud por la abundancia y el bienestar que experimentas actualmente. Esta satisfacción fomentará más resultados positivos.",
+          "love": "Aprecia y cultiva la armonía en tus relaciones, reconociendo que tú y tu pareja están bien alineados. Continúa invirtiendo en valores compartidos y respeto mutuo para mantener este estado de felicidad.",
+          "career": "Tu vida profesional se está beneficiando de tu energía bien distribuida. Sigue aplicando tus habilidades de manera uniforme en todas las tareas y estate atento a las oportunidades que te indique tu intuición. Confía en tu instinto para que te guíe hacia los proyectos adecuados.",
+          "finance": "La estabilidad financiera está presente, gracias a tu capacidad para gestionar los recursos de forma eficaz. Sigue ajustando tus gastos a tus necesidades en lugar de a tus deseos, asegurándote de que el dinero se utiliza de forma eficiente para las tareas necesarias."
+        },
+        "reversed": {
+          "general": "Reevalúa hacia dónde estás dirigiendo tu energía para evitar desconectarte de lo que realmente importa. Vuelve a centrarte en tus objetivos iniciales para recuperar el flujo productivo de tus esfuerzos.",
+          "love": "Reconozca que el camino hacia una verdadera relación de pareja requiere crecimiento y esfuerzo constante. Comprométase a mantener una comunicación honesta y a resolver los problemas de forma conjunta para avanzar hacia una relación más satisfactoria.",
+          "career": "Evita desviar tu atención de los objetivos profesionales importantes. Si notas que las tareas menos importantes te están consumiendo energía, es hora de volver a centrarte en tus ambiciones profesionales.",
+          "finance": "Ten cuidado con dónde y cómo inviertes tu dinero. Evita las distracciones financieras y cíñete a tu presupuesto, centrándote en una planificación financiera estratégica para mantener el flujo de recursos."
+        }
+      }
+    },
+    {
+      "id": 73,
+      "name": "Diez de Oros",
+      "image": "pentacles_10",
+      "arcana": "minor",
+      "number": "10",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Estás experimentando un aumento en tu vitalidad y recursos generales. Aprovecha esta mayor energía para consolidar tus objetivos a largo plazo y estabilizar tu rutina diaria. Piensa en esta fase como si estuvieras plantando un jardín que dará una cosecha fructífera.",
+          "love": "En tus relaciones, hay una sensación de conexión profunda y comprensión mutua. Fomenta esto continuando compartiendo tus sueños y miedos, construyendo una base sólida que se sienta tan segura como una casa bien construida.",
+          "career": "Tu carrera está en auge y tus esfuerzos están dando sus frutos. Aprovecha esta situación reinvirtiendo tu energía en proyectos significativos y en crear redes de contactos. Al igual que cuando se cuida a una gallina de los huevos de oro, cuanto más cuidado le dediques, mayores serán las recompensas.",
+          "finance": "Tu panorama financiero está floreciendo. Este es un momento ideal para pensar en inversiones a largo plazo o mejorar tu estrategia de ahorro. Trata tus finanzas como una máquina bien engrasada, asegurándote de que cada parte funcione con mayor eficiencia y rendimiento."
+        },
+        "reversed": {
+          "general": "Las cosas están saliendo mejor de lo esperado. Aprovecha esta racha de facilidad simplificando tu enfoque ante los retos y disfrutando de los pequeños éxitos. Piensa en ello como si estuvieras engrasando las ruedas para que tu viaje sea más suave.",
+          "love": "Tus relaciones fluyen con facilidad, posiblemente sin mucho esfuerzo. Mantén el impulso manteniéndote comprometido y presente. Como un suave arroyo, deja que tus interacciones fluyan con naturalidad, evitando forzar ningún resultado.",
+          "career": "El trabajo resulta menos agotador y más agradable. Aprovecha este periodo para abordar tareas que normalmente te parecen abrumadoras y experimentar con nuevos métodos. Es como tener viento a favor cuando vas en bicicleta: úsalo para llegar más lejos con menos esfuerzo.",
+          "finance": "En lo financiero, las cosas están saliendo bien sin grandes complicaciones. Mantén esta situación gestionando tus finanzas con tácticas sencillas e inteligentes, como el ahorro automático o el seguimiento de tus gastos. Es como seguir un camino bien marcado, lo que hace que tu trayectoria financiera sea predecible y segura."
+        }
+      }
+    },
+    {
+      "id": 74,
+      "name": "Sota de Oros",
+      "image": "pentacles_11_page",
+      "arcana": "minor",
+      "number": "11",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Acepta los vientos de cambio cuando lleguen, ya que anuncian un nuevo comienzo o una nueva dirección en tu vida. Ahora es el momento de cultivar la curiosidad y mantenerte abierto a aprender de nuevas experiencias. Sé proactivo y busca oportunidades para crecer en lugar de esperar a que ellas te encuentren.",
+          "love": "En tus relaciones, espera cambios que pueden enfriar o reavivar las emociones. La comunicación será clave; habla abiertamente sobre tus sentimientos y anima a tu pareja a hacer lo mismo. Este entendimiento mutuo puede allanar el camino para una conexión más profunda o los ajustes necesarios.",
+          "career": "La dinámica laboral está cambiando, lo que posiblemente augure nuevos roles o proyectos. Manténgase alerta y flexible, listo para demostrar su capacidad de adaptación y su entusiasmo por aprender. Este enfoque proactivo puede convertirle en un activo valioso durante las transiciones.",
+          "finance": "Desde el punto de vista financiero, este es un momento para reevaluar y, posiblemente, diversificar sus inversiones o estrategias de ahorro. Investigue cuidadosamente nuevas oportunidades y considere los beneficios a largo plazo en lugar de las ganancias rápidas. Mantenerse informado le ayudará a tomar decisiones que se ajusten a sus objetivos financieros."
+        },
+        "reversed": {
+          "general": "Incluso en la reversión, el tema del cambio persiste. Resiste la tentación de aferrarte a lo familiar y, en su lugar, acoge el cambio como una oportunidad para crecer. Revisa tus objetivos y estate dispuesto a ajustar tu camino para alcanzarlos de forma más eficaz.",
+          "love": "Invertida, esta carta te insta a reconsiderar tu enfoque en las relaciones. Si los niveles de energía están disminuyendo, inyecta nueva vida a través de actividades compartidas o conversaciones sinceras. Reconoce cuándo es necesario renovar los patrones para que la relación prospere.",
+          "career": "En el ámbito profesional, la inversión indica la necesidad de replantearse la estrategia. Si te sientes estancado, busca formación o nuevos retos de forma activa. Deja claras tus aspiraciones a aquellas personas que pueden apoyar tu crecimiento profesional.",
+          "finance": "Se recomienda precaución financiera en esta situación. Tómese su tiempo para revisar y, posiblemente, recalibrar sus planes financieros. Evite las decisiones impulsivas y céntrese en asegurar su estabilidad económica mediante elecciones meditadas y bien documentadas."
+        }
+      }
+    },
+    {
+      "id": 75,
+      "name": "Caballo de Oros",
+      "image": "pentacles_12_knight",
+      "arcana": "minor",
+      "number": "12",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Te encuentras en una fase en la que tus esfuerzos constantes están empezando a dar sus frutos. Sigue invirtiendo energía en tus objetivos con la misma dedicación, ya que este es un momento en el que los pequeños pasos constantes conducen a un progreso visible. Supervisa tu progreso con regularidad para mantenerte en el buen camino y adaptarte según sea necesario.",
+          "love": "En tus relaciones, la comunicación y el compromiso están mostrando sus efectos positivos. Si notas un ambiente más cálido y comprometido con tu pareja, sigue cultivándolo con tiempo y atención. Para aquellos que buscan el amor, muestra tu interés genuino y sé constante en tus esfuerzos.",
+          "career": "Tu dedicación en el trabajo está dando resultados tangibles. Ahora es un buen momento para evaluar los resultados y planificar tus próximos pasos. Piensa en cómo puedes aprovechar tus logros actuales para futuras oportunidades. Sigue centrándote en tareas que aporten valor y demuestren tu fiabilidad.",
+          "finance": "Tus inversiones financieras están empezando a dar sus frutos. Revisa los rendimientos y ajusta tu estrategia si es necesario. Sigue dando prioridad a las inversiones que ofrecen un crecimiento constante frente a las oportunidades llamativas y de alto riesgo. Es un buen momento para consolidar las ganancias y planificar la estabilidad a largo plazo."
+        },
+        "reversed": {
+          "general": "Te encuentras en una fase en la que tus esfuerzos constantes están empezando a dar sus frutos. Sigue invirtiendo energía en tus objetivos con la misma dedicación, ya que este es un momento en el que los pequeños pasos constantes conducen a un progreso visible. Supervisa tu progreso con regularidad para mantenerte en el buen camino y adaptarte según sea necesario.",
+          "love": "En tus relaciones, la comunicación y el compromiso están mostrando sus efectos positivos. Si notas un ambiente más cálido y comprometido con tu pareja, sigue cultivándolo con tiempo y atención. Para aquellos que buscan el amor, muestra tu interés genuino y sé constante en tus esfuerzos.",
+          "career": "Tu dedicación en el trabajo está dando resultados tangibles. Ahora es un buen momento para evaluar los resultados y planificar tus próximos pasos. Piensa en cómo puedes aprovechar tus logros actuales para futuras oportunidades. Sigue centrándote en tareas que aporten valor y demuestren tu fiabilidad.",
+          "finance": "Tus inversiones financieras están empezando a dar sus frutos. Revisa los rendimientos y ajusta tu estrategia si es necesario. Sigue dando prioridad a las inversiones que ofrecen un crecimiento constante frente a las oportunidades llamativas y de alto riesgo. Es un buen momento para consolidar las ganancias y planificar la estabilidad a largo plazo."
+        }
+      }
+    },
+    {
+      "id": 76,
+      "name": "Reina de Oros",
+      "image": "pentacles_13_queen",
+      "arcana": "minor",
+      "number": "13",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "La Reina de Oros en posición vertical sugiere que aceptes tu verdadero yo. Reflexiona sobre tus fortalezas y debilidades, y utiliza esta conciencia de ti mismo para navegar por la vida con confianza.",
+          "love": "En el amor, esta carta te anima a ser sincero y cariñoso. Comunícate abiertamente con tu pareja, mostrando tus verdaderos sentimientos y vulnerabilidades.",
+          "career": "En el trabajo, aprovecha tus talentos naturales y sé confiable, tal como lo haría la Reina de los Pentáculos. Tus colegas valorarán tu fiabilidad y tu enfoque sensato.",
+          "finance": "Desde el punto de vista financiero, es momento de ser prudente y práctico. Administra tus recursos con cuidado, enfocándote en ahorrar y hacer un presupuesto para garantizar la estabilidad."
+        },
+        "reversed": {
+          "general": "Cuando aparece invertida, la Reina de Oros advierte contra dejar que los rasgos negativos te dominen. Tómate tu tiempo para reflexionar sobre los defectos personales que pueden estar obstaculizando tu progreso y trabaja para mejorar estos aspectos.",
+          "love": "En las relaciones, este cambio sugiere la necesidad de abordar los comportamientos negativos que podrían estar afectando a vuestra conexión. Esfuérzate por ser más comprensivo y menos controlador para fomentar un vínculo más saludable.",
+          "career": "En el ámbito profesional, ten cuidado con la tendencia a ser demasiado obstinado o reacio al cambio. Adopta una actitud flexible y abierta a las nuevas ideas en tu lugar de trabajo.",
+          "finance": "En el ámbito financiero, la Reina de Oros invertida advierte contra los gastos imprudentes. Controla tu impulsividad y planifica tu presupuesto con más meticulosidad para evitar problemas financieros."
+        }
+      }
+    },
+    {
+      "id": 77,
+      "name": "Rey de Oros",
+      "image": "pentacles_14_king",
+      "arcana": "minor",
+      "number": "14",
+      "suit": "Oros",
+      "element": "Tierra",
+      "meanings": {
+        "upright": {
+          "general": "Acepta tu verdadero yo y prospera en entornos que aprecien tu singularidad. Reconoce tanto tus fortalezas como tus debilidades, ya que estas dan forma a tu vida personal y profesional.",
+          "love": "En las relaciones, sé sincero y honesto sobre quién eres. Esta autenticidad atraerá a una pareja que valore y ame tu verdadero yo.",
+          "career": "Aprovecha tus habilidades y rasgos únicos en tu carrera profesional. Encuentra un puesto o un proyecto en el que tu individualidad sea una fortaleza, no un obstáculo.",
+          "finance": "La estabilidad financiera se consigue tomando decisiones prudentes que reflejen tus valores personales y tu estilo de vida. Invierte en áreas que comprendas y que estén en consonancia con tus objetivos a largo plazo."
+        },
+        "reversed": {
+          "general": "Ten cuidado de no dejar que tus rasgos negativos te dominen. Trabaja activamente en tu autoconciencia y mejora para evitar que tengan un impacto perjudicial en tu vida.",
+          "love": "En el amor, tus defectos pueden estar causando fricciones. Reflexiona sobre tu comportamiento y piensa en cómo puedes ser una mejor pareja, centrándote en la comunicación y la comprensión.",
+          "career": "Si tu carrera profesional se está viendo afectada por tus deficiencias, es hora de abordar estos problemas directamente. Busca opiniones, apuesta por el desarrollo profesional y esfuérzate por adoptar un enfoque más equilibrado en el trabajo.",
+          "finance": "Las decisiones financieras imprudentes pueden provocar inestabilidad. Da un paso atrás y planifica tus finanzas con cautela, centrándote en asegurar tu futuro en lugar de en obtener ganancias inmediatas."
+        }
+      }
+    }
+  ]
+}
