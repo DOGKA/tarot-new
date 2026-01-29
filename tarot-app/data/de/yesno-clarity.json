@@ -1,0 +1,1952 @@
+{
+  "Narr": {
+    "clarityWeight": 15,
+    "keywords": {
+      "general": [
+        "Anfang",
+        "Freiheit"
+      ],
+      "love": [
+        "Abenteuer",
+        "Spontanität"
+      ],
+      "career": [
+        "Risiko",
+        "Innovation"
+      ],
+      "finance": [
+        "Chance",
+        "Wagnis"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, du stehst kurz davor, ein neues Kapitel aufzuschlagen.",
+      "reversed": "Nein; ein Schritt, der ohne nachzudenken getan wird, wird später eine Liebesmüh sein."
+    }
+  },
+  "Magier": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "Macht",
+        "Fähigkeit"
+      ],
+      "love": [
+        "Anziehung",
+        "Kommunikation"
+      ],
+      "career": [
+        "Geschick",
+        "Erfolg"
+      ],
+      "finance": [
+        "Gelegenheit",
+        "Ressourcen"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, die Mittel, die dir zur Verfügung stehen, reichen aus, um deine Absichten in die Tat umzusetzen.",
+      "reversed": "Nein, die Absicht ist da, aber die Vorbereitung ist unorganisiert."
+    }
+  },
+  "Hohepriesterin": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "Intuition",
+        "Geheimnis"
+      ],
+      "love": [
+        "Geheimnis",
+        "Tiefe"
+      ],
+      "career": [
+        "Geduld",
+        "Wissen"
+      ],
+      "finance": [
+        "Warten",
+        "verborgen"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, es gibt diejenigen, die hinter den Kulissen bleiben, also urteile nicht vorschnell.",
+      "reversed": "Nein, deine innere Stimme warnt dich, aber das Bild ist noch unscharf."
+    }
+  },
+  "Herrscherin": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Fülle",
+        "Fruchtbarkeit"
+      ],
+      "love": [
+        "Liebe",
+        "Fürsorge"
+      ],
+      "career": [
+        "Kreativität",
+        "Wachstum"
+      ],
+      "finance": [
+        "Fülle",
+        "Zunahme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es gibt eine hohe Wahrscheinlichkeit für Unterstützung, Wohlstand und Wachstum.",
+      "reversed": "Nein; ein vernachlässigter Bereich unterbricht das Ergebnis."
+    }
+  },
+  "Herrscher": {
+    "clarityWeight": 27,
+    "keywords": {
+      "general": [
+        "Autorität",
+        "Struktur"
+      ],
+      "love": [
+        "Sicherheit",
+        "Schutz"
+      ],
+      "career": [
+        "Führung",
+        "Kontrolle"
+      ],
+      "finance": [
+        "Stabilität",
+        "Macht"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, wenn du einen klaren Rahmen absteckst, hast du die Kontrolle.",
+      "reversed": "Nein; Machtkämpfe oder Starrheit verderben den Fortschritt."
+    }
+  },
+  "Hierophant": {
+    "clarityWeight": 15,
+    "keywords": {
+      "general": [
+        "Tradition",
+        "Führung"
+      ],
+      "love": [
+        "Hingabe",
+        "Werte"
+      ],
+      "career": [
+        "Mentoring",
+        "Bildung"
+      ],
+      "finance": [
+        "Tradition",
+        "Regeln"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, bekannte Methoden und die richtige Anleitung werden funktionieren.",
+      "reversed": "Nein; der aktuelle Regelsatz passt nicht zu dir, der Pfad muss neu gezeichnet werden."
+    }
+  },
+  "Liebenden": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "Wahl",
+        "Harmonie"
+      ],
+      "love": [
+        "Liebe",
+        "Vereinigung"
+      ],
+      "career": [
+        "Partnerschaft",
+        "Entscheidung"
+      ],
+      "finance": [
+        "Wahl",
+        "Balance"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Harmonie kann erreicht werden, wenn die Entscheidung von Herzen kommt.",
+      "reversed": "Nein; das Dilemma wächst, mach keinen Schritt bevor es klar ist."
+    }
+  },
+  "Wagen": {
+    "clarityWeight": 28,
+    "keywords": {
+      "general": [
+        "Sieg",
+        "Willenskraft"
+      ],
+      "love": [
+        "Fortschritt",
+        "Entschlossenheit"
+      ],
+      "career": [
+        "Erfolg",
+        "Antrieb"
+      ],
+      "finance": [
+        "Gewinn",
+        "Fortschritt"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, mit Willenskraft und Disziplin wird das Ziel erreicht.",
+      "reversed": "Nein, das Lenkrad verrutscht, die Richtung ist offen für den Zerfall."
+    }
+  },
+  "Kraft": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Stärke",
+        "Mut"
+      ],
+      "love": [
+        "Geduld",
+        "Mitgefühl"
+      ],
+      "career": [
+        "Ausdauer",
+        "Beharrlichkeit"
+      ],
+      "finance": [
+        "Kontrolle",
+        "Geduld"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, wenn du mit ruhiger Kraft reingehst, wirst du Ergebnisse erzielen.",
+      "reversed": "Nein, das Selbstvertrauen ist am Boden, es wird nicht durch Druck wiederhergestellt, sondern durch Geduld."
+    }
+  },
+  "Eremit": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "Selbstbetrachtung",
+        "Suche"
+      ],
+      "love": [
+        "Einsamkeit",
+        "Reflexion"
+      ],
+      "career": [
+        "Analyse",
+        "Planung"
+      ],
+      "finance": [
+        "Sparen",
+        "Überprüfung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein; ohne Selbstbeobachtung gibt es keine klare Antwort.",
+      "reversed": "Nein, Isolation ist keine Lösung. Lass dich von der richtigen Person beraten."
+    }
+  },
+  "Rad des Schicksals": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Glück",
+        "Zyklus"
+      ],
+      "love": [
+        "Schicksal",
+        "Wandel"
+      ],
+      "career": [
+        "Gelegenheit",
+        "Wendepunkt"
+      ],
+      "finance": [
+        "Glück",
+        "Wandlung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, du wartest auf den Moment der Gelegenheit.",
+      "reversed": "Nein; das Timing ist falsch, der gleiche Zyklus kann sich wiederholen."
+    }
+  },
+  "Gerechtigkeit": {
+    "clarityWeight": 25,
+    "keywords": {
+      "general": [
+        "Gerechtigkeit",
+        "Balance"
+      ],
+      "love": [
+        "Ehrlichkeit",
+        "Gleichheit"
+      ],
+      "career": [
+        "Recht",
+        "Vertrag"
+      ],
+      "finance": [
+        "Balance",
+        "Gesetz"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, die faire und gerechte Seite gewinnt.",
+      "reversed": "Nein; das Gleichgewicht ist gestört, es ist riskant, mit unvollständigen Informationen Urteile zu fällen."
+    }
+  },
+  "Gehängte": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "Warten",
+        "Perspektive"
+      ],
+      "love": [
+        "Geduld",
+        "Opfer"
+      ],
+      "career": [
+        "Pause",
+        "Sichtweise"
+      ],
+      "finance": [
+        "Verzögerung",
+        "Bewertung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, du musst warten und deine Perspektive ändern.",
+      "reversed": "Nein, es lässt sich nicht öffnen, wenn ich es mit Gewalt öffne, es ist einfach stur."
+    }
+  },
+  "Tod": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "Transformation",
+        "Ende"
+      ],
+      "love": [
+        "Abschluss",
+        "Erneuerung"
+      ],
+      "career": [
+        "Wandel",
+        "Ende"
+      ],
+      "finance": [
+        "Bereinigung",
+        "Wiedergeburt"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, du kannst die Tür zum Neuen nicht öffnen, ohne das Alte zu schließen.",
+      "reversed": "Nein; der Widerstand gegen Veränderungen verzögert die Arbeit."
+    }
+  },
+  "Mäßigkeit": {
+    "clarityWeight": 15,
+    "keywords": {
+      "general": [
+        "Balance",
+        "Harmonie"
+      ],
+      "love": [
+        "Geduld",
+        "Mäßigung"
+      ],
+      "career": [
+        "Harmonie",
+        "Zusammenarbeit"
+      ],
+      "finance": [
+        "Balance",
+        "Sparen"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja; wenn du das Gleichgewicht herstellst, läuft der Prozess von selbst.",
+      "reversed": "Nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein, nein."
+    }
+  },
+  "Teufel": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "Bindung",
+        "Einschränkung"
+      ],
+      "love": [
+        "Leidenschaft",
+        "Anhaftung"
+      ],
+      "career": [
+        "Falle",
+        "Zwang"
+      ],
+      "finance": [
+        "Schulden",
+        "Übermaß"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein; es gibt eine Gewohnheit oder eine Beziehung des Interesses.",
+      "reversed": "Nein, das Tauwetter beginnt, aber es ist noch nicht sicher."
+    }
+  },
+  "Turm": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "Umbruch",
+        "Veränderung"
+      ],
+      "love": [
+        "Krise",
+        "Trennung"
+      ],
+      "career": [
+        "Zusammenbruch",
+        "Erschütterung"
+      ],
+      "finance": [
+        "Verlust",
+        "Schock"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, eine plötzliche Unterbrechung könnte den Plan durchkreuzen.",
+      "reversed": "Nein, das Zittern geht weiter, Vorsicht ist geboten."
+    }
+  },
+  "Stern": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Hoffnung",
+        "Inspiration"
+      ],
+      "love": [
+        "Heilung",
+        "Offenheit"
+      ],
+      "career": [
+        "Vision",
+        "Potenzial"
+      ],
+      "finance": [
+        "Hoffnung",
+        "Zukunft"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es gibt Hoffnung und der Weg wird langsam frei.",
+      "reversed": "Nein, das Licht geht nicht aus, aber stelle zuerst den Glauben wieder her."
+    }
+  },
+  "Mond": {
+    "clarityWeight": 3,
+    "keywords": {
+      "general": [
+        "Unsicherheit",
+        "Intuition"
+      ],
+      "love": [
+        "Nebel",
+        "Zweifel"
+      ],
+      "career": [
+        "Unklarheit",
+        "verborgen"
+      ],
+      "finance": [
+        "Risiko",
+        "Illusion"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein; es gibt Nebel, jetzt ist nicht die Zeit für eine klare Entscheidung.",
+      "reversed": "Nein; einige Dinge kommen heraus, aber es ist noch nicht klar."
+    }
+  },
+  "Sonne": {
+    "clarityWeight": 30,
+    "keywords": {
+      "general": [
+        "Erfolg",
+        "Freude"
+      ],
+      "love": [
+        "Glück",
+        "Vereinigung"
+      ],
+      "career": [
+        "Sieg",
+        "Anerkennung"
+      ],
+      "finance": [
+        "Fülle",
+        "Gewinn"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, das Ergebnis ist erfreulich, die positive Entwicklung ist sichtbar.",
+      "reversed": "Nein, es gibt eine Verzögerung, die Bedingungen sind noch nicht reif."
+    }
+  },
+  "Gericht": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Erwachen",
+        "Urteil"
+      ],
+      "love": [
+        "Erneuerung",
+        "Vergebung"
+      ],
+      "career": [
+        "Bewertung",
+        "Beförderung"
+      ],
+      "finance": [
+        "Abrechnung",
+        "Ergebnis"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, die Entscheidung ist endgültig, die Vergangenheit ist erledigt.",
+      "reversed": "Nein, Prokrastination und Unentschlossenheit sind auf derselben Seite."
+    }
+  },
+  "Welt": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "Vollendung",
+        "Erfolg"
+      ],
+      "love": [
+        "Ganzheit",
+        "Erfüllung"
+      ],
+      "career": [
+        "Leistung",
+        "Erfolg"
+      ],
+      "finance": [
+        "Wohlstand",
+        "Abschluss"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, der Prozess ist abgeschlossen, das Ziel ist erreicht.",
+      "reversed": "Nein, der letzte Schritt fehlt, erst wenn er abgeschlossen ist."
+    }
+  },
+  "As der Stäbe": {
+    "clarityWeight": 25,
+    "keywords": {
+      "general": [
+        "Anfang",
+        "Energie"
+      ],
+      "love": [
+        "Leidenschaft",
+        "Anziehung"
+      ],
+      "career": [
+        "Gelegenheit",
+        "Initiative"
+      ],
+      "finance": [
+        "Investition",
+        "Start"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es gibt einen starken Funken, ideal um ihn zu starten.",
+      "reversed": "Nein, es gibt zwar Enthusiasmus, aber die Energie ist verstreut, sie verblasst schnell."
+    }
+  },
+  "Zwei Stäbe": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "Planung",
+        "Entscheidung"
+      ],
+      "love": [
+        "Wahl",
+        "Warten"
+      ],
+      "career": [
+        "Strategie",
+        "Partnerschaft"
+      ],
+      "finance": [
+        "Planung",
+        "Optionen"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, wenn du den Plan klärst, wird er den Weg frei machen.",
+      "reversed": "Nein, ein vorschnelles Urteil ist verfrüht, nicht bevor du die Optionen gesehen hast."
+    }
+  },
+  "Drei Stäbe": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Fortschritt",
+        "Expansion"
+      ],
+      "love": [
+        "Wachstum",
+        "Entwicklung"
+      ],
+      "career": [
+        "Gelegenheit",
+        "Expansion"
+      ],
+      "finance": [
+        "Investition",
+        "Rendite"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, der Horizont erweitert sich, der Fortschritt geht weiter.",
+      "reversed": "Nein; Verzögerungen und Unterbrechungen verlängern den Prozess."
+    }
+  },
+  "Vier Stäbe": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "Feier",
+        "Harmonie"
+      ],
+      "love": [
+        "Vereinigung",
+        "Heim"
+      ],
+      "career": [
+        "Erfolg",
+        "Feier"
+      ],
+      "finance": [
+        "Stabilität",
+        "Fundament"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, das Umfeld ist günstig, es gibt Unterstützung und Zusammenhalt.",
+      "reversed": "Nein, das Fundament ist nicht solide, stelle erst einmal Ordnung her."
+    }
+  },
+  "Fünf Stäbe": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "Konflikt",
+        "Wettbewerb"
+      ],
+      "love": [
+        "Streit",
+        "Spannung"
+      ],
+      "career": [
+        "Wettbewerb",
+        "Kampf"
+      ],
+      "finance": [
+        "Wettbewerb",
+        "Verlust"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, das passiert, aber es schreitet mit Streit und Wettbewerb voran.",
+      "reversed": "Nein; unnötige Diskussionen rauben Energie."
+    }
+  },
+  "Sechs Stäbe": {
+    "clarityWeight": 26,
+    "keywords": {
+      "general": [
+        "Sieg",
+        "Anerkennung"
+      ],
+      "love": [
+        "Erfolg",
+        "Zustimmung"
+      ],
+      "career": [
+        "Sieg",
+        "Beförderung"
+      ],
+      "finance": [
+        "Gewinn",
+        "Erfolg"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, mit einer hohen Wahrscheinlichkeit von sichtbarem Erfolg und Zustimmung.",
+      "reversed": "Nein, die Unterstützung ist schwach, der Beifall verzögert sich."
+    }
+  },
+  "Sieben Stäbe": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "Verteidigung",
+        "Widerstand"
+      ],
+      "love": [
+        "Kampf",
+        "Schutz"
+      ],
+      "career": [
+        "Verteidigung",
+        "Position"
+      ],
+      "finance": [
+        "Schutz",
+        "Widerstand"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, wenn du deine Position hältst, wirst du Ergebnisse erzielen.",
+      "reversed": "Nein; die Verteidigung fällt, allein die Last ist schwer."
+    }
+  },
+  "Acht Stäbe": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Geschwindigkeit",
+        "Fortschritt"
+      ],
+      "love": [
+        "schnelle Entwicklung",
+        "Bewegung"
+      ],
+      "career": [
+        "Tempo",
+        "Dynamik"
+      ],
+      "finance": [
+        "schnelle Rendite",
+        "Fluss"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, schnelle Nachrichten und Schwung.",
+      "reversed": "Nein, die Kommunikation bricht zusammen, die Arbeit wird unterbrochen."
+    }
+  },
+  "Neun Stäbe": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "Widerstandskraft",
+        "Ausdauer"
+      ],
+      "love": [
+        "Geduld",
+        "Vertrauen"
+      ],
+      "career": [
+        "Ausdauer",
+        "letzter Schritt"
+      ],
+      "finance": [
+        "Schutz",
+        "Vorsicht"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, auch wenn du müde bist, du bist auf der Zielgeraden, halte durch.",
+      "reversed": "Nein, Müdigkeit kann dein Urteilsvermögen trüben, mach eine Pause."
+    }
+  },
+  "Zehn Stäbe": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "Last",
+        "Verantwortung"
+      ],
+      "love": [
+        "Druck",
+        "Erschöpfung"
+      ],
+      "career": [
+        "Überarbeitung",
+        "Stress"
+      ],
+      "finance": [
+        "Schulden",
+        "Last"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, das ist möglich, aber um den Preis von Last und Verantwortung.",
+      "reversed": "Nein; die Last ist nicht übermäßig groß, sie kann nicht ohne Vereinfachung bewältigt werden."
+    }
+  },
+  "Bube der Stäbe": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "Nachricht",
+        "Begeisterung"
+      ],
+      "love": [
+        "neues Interesse",
+        "Abenteuer"
+      ],
+      "career": [
+        "Gelegenheit",
+        "Lernen"
+      ],
+      "finance": [
+        "neues Einkommen",
+        "Nachricht"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, eine neue Nachricht oder Gelegenheit steht vor der Tür.",
+      "reversed": "Nein; die Begeisterung ist groß, die Stabilität ist gering."
+    }
+  },
+  "Ritter der Stäbe": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "Aktion",
+        "Mut"
+      ],
+      "love": [
+        "Leidenschaft",
+        "Abenteuer"
+      ],
+      "career": [
+        "Initiative",
+        "Energie"
+      ],
+      "finance": [
+        "Risiko",
+        "Bewegung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, ein mutiger Ausstieg öffnet Türen und gewinnt an Geschwindigkeit.",
+      "reversed": "Nein, Impulsivität macht Fehler, verbrennt und vernichtet."
+    }
+  },
+  "Königin der Stäbe": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Selbstvertrauen",
+        "Charisma"
+      ],
+      "love": [
+        "Anziehung",
+        "Selbstsicherheit"
+      ],
+      "career": [
+        "Führung",
+        "Kreativität"
+      ],
+      "finance": [
+        "Unabhängigkeit",
+        "Erfolg"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Selbstvertrauen und Seriosität sind das A und O.",
+      "reversed": "Nein, Eifersucht und Unruhe stören die Ordnung."
+    }
+  },
+  "König der Stäbe": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Führung",
+        "Vision"
+      ],
+      "love": [
+        "Leidenschaft",
+        "Autorität"
+      ],
+      "career": [
+        "Unternehmertum",
+        "Erfolg"
+      ],
+      "finance": [
+        "Investition",
+        "Führung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Vision und Führung werden den Weg weisen.",
+      "reversed": "Nein, Kontrolle ist kontraproduktiv."
+    }
+  },
+  "As der Kelche": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "emotionaler Anfang",
+        "Liebe"
+      ],
+      "love": [
+        "neue Liebe",
+        "Öffnung"
+      ],
+      "career": [
+        "Zufriedenheit",
+        "Erfüllung"
+      ],
+      "finance": [
+        "emotionale Erfüllung",
+        "Fülle"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es gibt einen Anfang und eine Öffnung vom Herzen her.",
+      "reversed": "Nein; das emotionale Karma trifft keine klare Entscheidung."
+    }
+  },
+  "Zwei Kelche": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Vereinigung",
+        "Partnerschaft"
+      ],
+      "love": [
+        "Verbindung",
+        "Harmonie"
+      ],
+      "career": [
+        "Zusammenarbeit",
+        "Partnerschaft"
+      ],
+      "finance": [
+        "Partnerschaft",
+        "Vereinbarung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, gegenseitiges Binden und Verstehen ist möglich.",
+      "reversed": "Nein, das Gleichgewicht ist gestört, es gibt keine Gleichheit."
+    }
+  },
+  "Drei Kelche": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Feier",
+        "Freundschaft"
+      ],
+      "love": [
+        "sozial",
+        "Freude"
+      ],
+      "career": [
+        "Team",
+        "Erfolg"
+      ],
+      "finance": [
+        "Teilen",
+        "Fülle"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, die Nachbarschaft unterstützt, feiert und ist sich einig.",
+      "reversed": "Nein; unorganisierte soziale Energie schwächt die Arbeit."
+    }
+  },
+  "Vier Kelche": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "Apathie",
+        "Kontemplation"
+      ],
+      "love": [
+        "Desinteresse",
+        "Warten"
+      ],
+      "career": [
+        "Unzufriedenheit",
+        "Pause"
+      ],
+      "finance": [
+        "Unzufriedenheit",
+        "Warten"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, das Herz ist nicht da, der Wille ist gering.",
+      "reversed": "Nein, die Chance ist da, aber du ignorierst sie."
+    }
+  },
+  "Fünf Kelche": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "Verlust",
+        "Trauer"
+      ],
+      "love": [
+        "Enttäuschung",
+        "Trauer"
+      ],
+      "career": [
+        "Misserfolg",
+        "Reue"
+      ],
+      "finance": [
+        "Verlust",
+        "Enttäuschung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, der Groll ist zu stark, es braucht Zeit, um sich zu erholen.",
+      "reversed": "Nein; die Genesung beginnt, aber erwarte nicht sofortige Ergebnisse."
+    }
+  },
+  "Sechs Kelche": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "Nostalgie",
+        "Erinnerung"
+      ],
+      "love": [
+        "Vergangenheit",
+        "Unschuld"
+      ],
+      "career": [
+        "frühere Verbindung",
+        "vertraut"
+      ],
+      "finance": [
+        "Erbe",
+        "Geschenk"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es gibt eine Unterstützung oder einen warmen Kontakt aus der Vergangenheit.",
+      "reversed": "Nein, das Verweilen in der Vergangenheit hält den Fortschritt auf."
+    }
+  },
+  "Sieben Kelche": {
+    "clarityWeight": 3,
+    "keywords": {
+      "general": [
+        "Illusion",
+        "Wahlmöglichkeiten"
+      ],
+      "love": [
+        "Unentschlossenheit",
+        "Fantasie"
+      ],
+      "career": [
+        "Optionen",
+        "Unsicherheit"
+      ],
+      "finance": [
+        "Fantasie",
+        "unrealistisch"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein; es gibt viele Möglichkeiten, es ist nicht klar, welche davon real ist.",
+      "reversed": "Nein; der Nebel lichtet sich, aber es ist noch etwas Zeit für eine klare Entscheidung."
+    }
+  },
+  "Acht Kelche": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "Abschied",
+        "Suche"
+      ],
+      "love": [
+        "Verlassen",
+        "Scheideweg"
+      ],
+      "career": [
+        "Kündigung",
+        "Wandel"
+      ],
+      "finance": [
+        "Aufgabe",
+        "neue Richtung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, es ist besser, von diesem Weg abzurücken, als ihn weiterzugehen.",
+      "reversed": "Nein, es ist schwer, aufzuhören, aber es ist anstrengend, zu bleiben."
+    }
+  },
+  "Neun Kelche": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "Wunsch",
+        "Zufriedenheit"
+      ],
+      "love": [
+        "Glück",
+        "Erfüllung"
+      ],
+      "career": [
+        "Erfolg",
+        "Zufriedenheit"
+      ],
+      "finance": [
+        "Fülle",
+        "Zufriedenheit"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Wünsche werden wahr, Zufriedenheit kommt.",
+      "reversed": "Nein; überzogene Erwartungen führen zu Enttäuschungen."
+    }
+  },
+  "Zehn Kelche": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "Glück",
+        "Harmonie"
+      ],
+      "love": [
+        "Familie",
+        "Erfüllung"
+      ],
+      "career": [
+        "Teamharmonie",
+        "Erfolg"
+      ],
+      "finance": [
+        "Familienwohlstand",
+        "Stabilität"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Frieden, Harmonie und Erfüllung erscheinen.",
+      "reversed": "Nein, es gibt ein Defizit in der häuslichen/emotionalen Bilanz."
+    }
+  },
+  "Bube der Kelche": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "Nachricht",
+        "emotional"
+      ],
+      "love": [
+        "Angebot",
+        "romantisch"
+      ],
+      "career": [
+        "kreative Gelegenheit",
+        "Nachricht"
+      ],
+      "finance": [
+        "unerwartet",
+        "kleines Einkommen"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, eine emotionale Nachricht oder ein süßes Angebot.",
+      "reversed": "Nein; die Sensibilität hat zugenommen, Missverständnisse sind leicht möglich."
+    }
+  },
+  "Ritter der Kelche": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "Angebot",
+        "romantisch"
+      ],
+      "love": [
+        "Liebhaber",
+        "Antrag"
+      ],
+      "career": [
+        "kreatives Projekt",
+        "Einladung"
+      ],
+      "finance": [
+        "Angebot",
+        "Gelegenheit"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es wäre ein romantischer Schritt oder eine sanfte Annäherung.",
+      "reversed": "Nein; Versprechen können eingehalten werden oder auch nicht, bitte um Klarheit."
+    }
+  },
+  "Königin der Kelche": {
+    "clarityWeight": 17,
+    "keywords": {
+      "general": [
+        "Intuition",
+        "Mitgefühl"
+      ],
+      "love": [
+        "Verständnis",
+        "tiefe Bindung"
+      ],
+      "career": [
+        "Empathie",
+        "Unterstützung"
+      ],
+      "finance": [
+        "intuitiv",
+        "Vertrauen"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Verständnis und Mitgefühl bringen Lösungen.",
+      "reversed": "Nein, die Emotionen kochen über, gesunde Grenzen sind gefragt."
+    }
+  },
+  "König der Kelche": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "emotionale Balance",
+        "Weisheit"
+      ],
+      "love": [
+        "Reife",
+        "Verständnis"
+      ],
+      "career": [
+        "Führung",
+        "Diplomatie"
+      ],
+      "finance": [
+        "ausgeglichen",
+        "zuverlässig"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, eine ausgereifte und ausgewogene Haltung reicht völlig aus.",
+      "reversed": "Nein, Emotionen sind schwer zu kontrollieren, die Kontrolle kann entgleiten."
+    }
+  },
+  "As der Schwerter": {
+    "clarityWeight": 25,
+    "keywords": {
+      "general": [
+        "Klarheit",
+        "Wahrheit"
+      ],
+      "love": [
+        "Ehrlichkeit",
+        "Offenheit"
+      ],
+      "career": [
+        "Durchbruch",
+        "Erfolg"
+      ],
+      "finance": [
+        "klare Entscheidung",
+        "Klarheit"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Klarheit kommt, die richtige Entscheidung wird geschärft.",
+      "reversed": "Nein, die Informationen sind schmutzig, die Wahrscheinlichkeit einer falschen Entscheidung ist hoch."
+    }
+  },
+  "Zwei Schwerter": {
+    "clarityWeight": 2,
+    "keywords": {
+      "general": [
+        "Unentschlossenheit",
+        "Patt"
+      ],
+      "love": [
+        "Unsicherheit",
+        "Warten"
+      ],
+      "career": [
+        "Entscheidung",
+        "Balance"
+      ],
+      "finance": [
+        "Unsicherheit",
+        "warten"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, die Entscheidung steht noch aus, man muss den Tatsachen ins Auge sehen.",
+      "reversed": "Nein, der innere Konflikt wächst, nicht bevor etwas aufgedeckt wird."
+    }
+  },
+  "Drei Schwerter": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "Herzschmerz",
+        "Schmerz"
+      ],
+      "love": [
+        "Trennung",
+        "Verrat"
+      ],
+      "career": [
+        "Enttäuschung",
+        "Konflikt"
+      ],
+      "finance": [
+        "Verlust",
+        "Stress"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, es gibt Frakturen und Schmerzen, das hält nicht mehr stand.",
+      "reversed": "Nein, die Wunde schließt sich, aber die Narben bleiben."
+    }
+  },
+  "Vier Schwerter": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "Ruhe",
+        "Erholung"
+      ],
+      "love": [
+        "Pause",
+        "Reflexion"
+      ],
+      "career": [
+        "Pause",
+        "Planung"
+      ],
+      "finance": [
+        "Warten",
+        "Bewertung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, man muss aufhören, sich ausruhen und sich erholen.",
+      "reversed": "Nein, der Geist ist noch müde, ein überstürzter Abgang würde schaden."
+    }
+  },
+  "Fünf Schwerter": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "Konflikt",
+        "Verlust"
+      ],
+      "love": [
+        "Streit",
+        "Ego"
+      ],
+      "career": [
+        "Wettbewerb",
+        "Ungerechtigkeit"
+      ],
+      "finance": [
+        "Verlust",
+        "Betrug"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, auch wenn du gewinnst, verlierst du, der Preis ist hoch.",
+      "reversed": "Nein; die Spannung wird reduziert, aber das Vertrauen kehrt nicht sofort zurück."
+    }
+  },
+  "Sechs Schwerter": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "Übergang",
+        "Heilung"
+      ],
+      "love": [
+        "Weitergehen",
+        "Neuanfang"
+      ],
+      "career": [
+        "Wandel",
+        "Umzug"
+      ],
+      "finance": [
+        "Übergang",
+        "Erholung"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es ist möglich, an einen ruhigeren Ort zu ziehen.",
+      "reversed": "Nein, das Festhalten an der Vergangenheit verhindert den Fortschritt."
+    }
+  },
+  "Sieben Schwerter": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "Täuschung",
+        "Flucht"
+      ],
+      "love": [
+        "Betrug",
+        "Geheimhaltung"
+      ],
+      "career": [
+        "Strategie",
+        "Vorsicht"
+      ],
+      "finance": [
+        "Diebstahl",
+        "Vorsicht"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, es gibt Hintergedanken, das Vertrauen wird beschädigt.",
+      "reversed": "Nein, was verborgen ist, kommt ans Licht, aber das ist ein Schock."
+    }
+  },
+  "Acht Schwerter": {
+    "clarityWeight": 4,
+    "keywords": {
+      "general": [
+        "gefangen",
+        "Einschränkung"
+      ],
+      "love": [
+        "festgefahren",
+        "Angst"
+      ],
+      "career": [
+        "Sackgasse",
+        "Blockade"
+      ],
+      "finance": [
+        "Einschränkung",
+        "Schulden"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, er fühlt sich eingeengt, gefesselt.",
+      "reversed": "Nein; die Tür öffnet sich, aber nicht die volle Freiheit."
+    }
+  },
+  "Neun Schwerter": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "Angst",
+        "Furcht"
+      ],
+      "love": [
+        "Sorge",
+        "Schlaflosigkeit"
+      ],
+      "career": [
+        "Stress",
+        "Angst"
+      ],
+      "finance": [
+        "Schuldenangst",
+        "Stress"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, Angst und Wahnvorstellungen vernebeln dein Urteilsvermögen.",
+      "reversed": "Nein, die Belastung wird reduziert, aber der Verstand hört nicht sofort auf."
+    }
+  },
+  "Zehn Schwerter": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "Ende",
+        "Tiefpunkt"
+      ],
+      "love": [
+        "Ende",
+        "Verrat"
+      ],
+      "career": [
+        "Kündigung",
+        "Ende"
+      ],
+      "finance": [
+        "Bankrott",
+        "Ende"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein; es gibt einen scharfen Abschluss, alles andere wäre schwierig.",
+      "reversed": "Nein; der Boden beginnt sich zu drehen, aber der Prozess ist langsam."
+    }
+  },
+  "Bube der Schwerter": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "Nachricht",
+        "Neugier"
+      ],
+      "love": [
+        "Kommunikation",
+        "Entdeckung"
+      ],
+      "career": [
+        "Forschung",
+        "Lernen"
+      ],
+      "finance": [
+        "Information",
+        "Nachricht"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, sorgfältige Untersuchungen und Wachsamkeit werden helfen.",
+      "reversed": "Nein; Gerüchte/Falschinformationen werden es verderben."
+    }
+  },
+  "Ritter der Schwerter": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "Geschwindigkeit",
+        "Entschlossenheit"
+      ],
+      "love": [
+        "hastig",
+        "direkt"
+      ],
+      "career": [
+        "schnelle Aktion",
+        "aggressiv"
+      ],
+      "finance": [
+        "schnelle Entscheidung",
+        "Risiko"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, schnelles und präzises Handeln führt zu Ergebnissen.",
+      "reversed": "Nein, angreifen ohne nachzudenken ist kontraproduktiv."
+    }
+  },
+  "Königin der Schwerter": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Klarheit",
+        "Unabhängigkeit"
+      ],
+      "love": [
+        "Ehrlichkeit",
+        "Grenzen"
+      ],
+      "career": [
+        "Analyse",
+        "Objektivität"
+      ],
+      "finance": [
+        "Logik",
+        "scharf"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, Logik und Grenzen bringen das richtige Ergebnis.",
+      "reversed": "Nein; Härte und Bitterkeit verschließt Türen."
+    }
+  },
+  "König der Schwerter": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "Autorität",
+        "Gerechtigkeit"
+      ],
+      "love": [
+        "Logik",
+        "Ehrlichkeit"
+      ],
+      "career": [
+        "Führung",
+        "Entscheidung"
+      ],
+      "finance": [
+        "Strategie",
+        "Analyse"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, wenn du die Regeln aufstellst und sie gerecht anwendest.",
+      "reversed": "Nein, Autorität ist schädlich, wenn sie missbraucht wird."
+    }
+  },
+  "As der Münzen": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "Gelegenheit",
+        "Anfang"
+      ],
+      "love": [
+        "Sicherheit",
+        "Stabilität"
+      ],
+      "career": [
+        "Jobchance",
+        "Angebot"
+      ],
+      "finance": [
+        "Geld",
+        "Investition"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es gibt eine konkrete und solide Möglichkeit.",
+      "reversed": "Nein; die Materialbasis ist unbeständig, das Risiko wächst."
+    }
+  },
+  "Zwei Münzen": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "Balance",
+        "Anpassung"
+      ],
+      "love": [
+        "Balancieren",
+        "mehrere"
+      ],
+      "career": [
+        "Multitasking",
+        "Balance"
+      ],
+      "finance": [
+        "Budget",
+        "Balance"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, ein Gleichgewicht kann hergestellt und verwaltet werden.",
+      "reversed": "Nein, das ist zu viel, es wird irgendwo überlaufen."
+    }
+  },
+  "Drei Münzen": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Zusammenarbeit",
+        "Meisterschaft"
+      ],
+      "love": [
+        "Teamarbeit",
+        "Harmonie"
+      ],
+      "career": [
+        "Teamarbeit",
+        "Anerkennung"
+      ],
+      "finance": [
+        "Projekt",
+        "Investition"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, mit dem richtigen Team und Plan funktioniert es.",
+      "reversed": "Nein; die Koordination ist gestört, die Qualität sinkt."
+    }
+  },
+  "Vier Münzen": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "Sicherheit",
+        "Kontrolle"
+      ],
+      "love": [
+        "Besitzanspruch",
+        "Schutz"
+      ],
+      "career": [
+        "Stabilität",
+        "Konservatismus"
+      ],
+      "finance": [
+        "Sparen",
+        "Horten"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, zu viel Haftung und Kontrolle unterbricht den Fluss.",
+      "reversed": "Nein; die Kontrolle wechselt den Besitzer, das Vertrauen schwindet."
+    }
+  },
+  "Fünf Münzen": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "Härte",
+        "Verlust"
+      ],
+      "love": [
+        "Einsamkeit",
+        "Ablehnung"
+      ],
+      "career": [
+        "Arbeitslosigkeit",
+        "Härte"
+      ],
+      "finance": [
+        "finanzielle Schwierigkeiten",
+        "Schulden"
+      ]
+    },
+    "shortReason": {
+      "upright": "Nein, es gibt einen finanziellen/emotionalen Engpass, ich brauche Unterstützung.",
+      "reversed": "Nein, es wird eine Erholung geben, aber es braucht Zeit, um wieder zu Kräften zu kommen."
+    }
+  },
+  "Sechs Münzen": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Großzügigkeit",
+        "Teilen"
+      ],
+      "love": [
+        "Geben",
+        "Nehmen"
+      ],
+      "career": [
+        "faire Bezahlung",
+        "Anerkennung"
+      ],
+      "finance": [
+        "Hilfe",
+        "Spende"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, einen fairen Anteil an Unterstützung oder Möglichkeiten.",
+      "reversed": "Nein, das Geben und Nehmen ist unausgewogen, kläre die Bedingungen."
+    }
+  },
+  "Sieben Münzen": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "Geduld",
+        "Bewertung"
+      ],
+      "love": [
+        "Warten",
+        "Investition"
+      ],
+      "career": [
+        "Bewertung",
+        "Planung"
+      ],
+      "finance": [
+        "langfristig",
+        "Geduld"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja; Geduld zahlt sich aus, das Ergebnis kommt mit der Zeit.",
+      "reversed": "Nein; die Tendenz, früh aufzugeben, verdirbt den Gewinn."
+    }
+  },
+  "Acht Münzen": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Fleiß",
+        "Meisterschaft"
+      ],
+      "love": [
+        "Anstrengung",
+        "Wachstum"
+      ],
+      "career": [
+        "Fähigkeit",
+        "Ausbildung"
+      ],
+      "finance": [
+        "Verdienst",
+        "Arbeit"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, mit Arbeit und Einfallsreichtum ist das Ergebnis eindeutig.",
+      "reversed": "Nein, Schlamperei und Wiederholungen sind Verlierer."
+    }
+  },
+  "Neun Münzen": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "Unabhängigkeit",
+        "Luxus"
+      ],
+      "love": [
+        "Selbstständigkeit",
+        "Freiheit"
+      ],
+      "career": [
+        "Erfolg",
+        "Anerkennung"
+      ],
+      "finance": [
+        "Wohlstand",
+        "Unabhängigkeit"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, du wirst auf deinen eigenen Füßen stehen und erfolgreich sein.",
+      "reversed": "Nein; es fehlt das innere Vertrauen, vorschnelle Investitionen sind nicht richtig."
+    }
+  },
+  "Zehn Münzen": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "Erbe",
+        "Vermächtnis"
+      ],
+      "love": [
+        "Familie",
+        "langfristig"
+      ],
+      "career": [
+        "Ruhestand",
+        "Vermächtnis"
+      ],
+      "finance": [
+        "Reichtum",
+        "Erbe"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, dauerhafte Erfolge und eine solide Basis sind möglich.",
+      "reversed": "Nein; das Fundament ist schwach, die Organisation von Familie und Arbeit ist nicht geregelt."
+    }
+  },
+  "Bube der Münzen": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "Gelegenheit",
+        "Lernen"
+      ],
+      "love": [
+        "neue Bekanntschaft",
+        "Geduld"
+      ],
+      "career": [
+        "Praktikum",
+        "Ausbildung"
+      ],
+      "finance": [
+        "kleiner Anfang",
+        "Sparen"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es gibt eine Möglichkeit, durch Lernen zu wachsen.",
+      "reversed": "Nein, wenn der Fokus verstreut ist, ist der Anfang unvollständig."
+    }
+  },
+  "Ritter der Münzen": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "Zuverlässigkeit",
+        "Geduld"
+      ],
+      "love": [
+        "Treue",
+        "Stabilität"
+      ],
+      "career": [
+        "Fleiß",
+        "Methode"
+      ],
+      "finance": [
+        "Stabilität",
+        "Sicherheit"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, langsam aber sicher.",
+      "reversed": "Nein, Sturheit und Trägheit werden es verhindern."
+    }
+  },
+  "Königin der Münzen": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "Praktikabilität",
+        "Fülle"
+      ],
+      "love": [
+        "Fürsorge",
+        "Heim"
+      ],
+      "career": [
+        "Produktivität",
+        "Erfolg"
+      ],
+      "finance": [
+        "Wohlstand",
+        "Sicherheit"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es wird eine praktische Lösung und eine beruhigende Ordnung geschaffen.",
+      "reversed": "Nein; das Vertrauen wird durch unausgewogene Ausgaben oder Nachlässigkeit untergraben."
+    }
+  },
+  "König der Münzen": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "Erfolg",
+        "Sicherheit"
+      ],
+      "love": [
+        "Solidität",
+        "Vertrauen"
+      ],
+      "career": [
+        "Führung",
+        "Reichtum"
+      ],
+      "finance": [
+        "Reichtum",
+        "Stabilität"
+      ]
+    },
+    "shortReason": {
+      "upright": "Ja, es sorgt für eine solide Verwaltung und sichere Ergebnisse.",
+      "reversed": "Nein, ein eigennütziger Ansatz zerstört die Ordnung."
+    }
+  }
+}

@@ -1,0 +1,704 @@
+{
+  "The Fool": {
+    "clarityWeight": 15,
+    "keywords": {
+      "tr": { "general": ["başlangıç", "özgürlük"], "love": ["macera", "spontanlık"], "career": ["risk", "yenilik"], "finance": ["fırsat", "kumar"] },
+      "en": { "general": ["beginning", "freedom"], "love": ["adventure", "spontaneity"], "career": ["risk", "innovation"], "finance": ["opportunity", "gamble"] },
+      "de": { "general": ["Anfang", "Freiheit"], "love": ["Abenteuer", "Spontanität"], "career": ["Risiko", "Innovation"], "finance": ["Chance", "Wagnis"] },
+      "es": { "general": ["comienzo", "libertad"], "love": ["aventura", "espontaneidad"], "career": ["riesgo", "innovación"], "finance": ["oportunidad", "apuesta"] }
+    }
+  },
+  "The Magician": {
+    "clarityWeight": 22,
+    "keywords": {
+      "tr": { "general": ["güç", "yetenek"], "love": ["çekim", "iletişim"], "career": ["beceri", "başarı"], "finance": ["fırsat", "kaynak"] },
+      "en": { "general": ["power", "skill"], "love": ["attraction", "communication"], "career": ["skill", "success"], "finance": ["opportunity", "resources"] },
+      "de": { "general": ["Macht", "Fähigkeit"], "love": ["Anziehung", "Kommunikation"], "career": ["Geschick", "Erfolg"], "finance": ["Gelegenheit", "Ressourcen"] },
+      "es": { "general": ["poder", "habilidad"], "love": ["atracción", "comunicación"], "career": ["destreza", "éxito"], "finance": ["oportunidad", "recursos"] }
+    }
+  },
+  "The High Priestess": {
+    "clarityWeight": 5,
+    "keywords": {
+      "tr": { "general": ["sezgi", "gizem"], "love": ["sır", "derinlik"], "career": ["sabır", "bilgi"], "finance": ["bekleme", "gizli"] },
+      "en": { "general": ["intuition", "mystery"], "love": ["secret", "depth"], "career": ["patience", "knowledge"], "finance": ["waiting", "hidden"] },
+      "de": { "general": ["Intuition", "Geheimnis"], "love": ["Geheimnis", "Tiefe"], "career": ["Geduld", "Wissen"], "finance": ["Warten", "verborgen"] },
+      "es": { "general": ["intuición", "misterio"], "love": ["secreto", "profundidad"], "career": ["paciencia", "conocimiento"], "finance": ["espera", "oculto"] }
+    }
+  },
+  "The Empress": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["bereket", "bolluk"], "love": ["aşk", "şefkat"], "career": ["yaratıcılık", "büyüme"], "finance": ["bolluk", "artış"] },
+      "en": { "general": ["abundance", "fertility"], "love": ["love", "nurture"], "career": ["creativity", "growth"], "finance": ["abundance", "increase"] },
+      "de": { "general": ["Fülle", "Fruchtbarkeit"], "love": ["Liebe", "Fürsorge"], "career": ["Kreativität", "Wachstum"], "finance": ["Fülle", "Zunahme"] },
+      "es": { "general": ["abundancia", "fertilidad"], "love": ["amor", "cuidado"], "career": ["creatividad", "crecimiento"], "finance": ["abundancia", "aumento"] }
+    }
+  },
+  "The Emperor": {
+    "clarityWeight": 27,
+    "keywords": {
+      "tr": { "general": ["otorite", "düzen"], "love": ["güven", "koruma"], "career": ["liderlik", "kontrol"], "finance": ["istikrar", "güç"] },
+      "en": { "general": ["authority", "structure"], "love": ["security", "protection"], "career": ["leadership", "control"], "finance": ["stability", "power"] },
+      "de": { "general": ["Autorität", "Struktur"], "love": ["Sicherheit", "Schutz"], "career": ["Führung", "Kontrolle"], "finance": ["Stabilität", "Macht"] },
+      "es": { "general": ["autoridad", "estructura"], "love": ["seguridad", "protección"], "career": ["liderazgo", "control"], "finance": ["estabilidad", "poder"] }
+    }
+  },
+  "The Hierophant": {
+    "clarityWeight": 15,
+    "keywords": {
+      "tr": { "general": ["gelenek", "rehberlik"], "love": ["bağlılık", "değerler"], "career": ["mentorluk", "eğitim"], "finance": ["gelenek", "kural"] },
+      "en": { "general": ["tradition", "guidance"], "love": ["commitment", "values"], "career": ["mentorship", "education"], "finance": ["tradition", "rules"] },
+      "de": { "general": ["Tradition", "Führung"], "love": ["Hingabe", "Werte"], "career": ["Mentoring", "Bildung"], "finance": ["Tradition", "Regeln"] },
+      "es": { "general": ["tradición", "guía"], "love": ["compromiso", "valores"], "career": ["mentoría", "educación"], "finance": ["tradición", "reglas"] }
+    }
+  },
+  "The Lovers": {
+    "clarityWeight": 14,
+    "keywords": {
+      "tr": { "general": ["seçim", "uyum"], "love": ["aşk", "birlik"], "career": ["ortaklık", "karar"], "finance": ["seçim", "denge"] },
+      "en": { "general": ["choice", "harmony"], "love": ["love", "union"], "career": ["partnership", "decision"], "finance": ["choice", "balance"] },
+      "de": { "general": ["Wahl", "Harmonie"], "love": ["Liebe", "Vereinigung"], "career": ["Partnerschaft", "Entscheidung"], "finance": ["Wahl", "Balance"] },
+      "es": { "general": ["elección", "armonía"], "love": ["amor", "unión"], "career": ["asociación", "decisión"], "finance": ["elección", "equilibrio"] }
+    }
+  },
+  "The Chariot": {
+    "clarityWeight": 28,
+    "keywords": {
+      "tr": { "general": ["zafer", "irade"], "love": ["ilerleme", "kararlılık"], "career": ["başarı", "motivasyon"], "finance": ["kazanç", "ilerleme"] },
+      "en": { "general": ["victory", "willpower"], "love": ["progress", "determination"], "career": ["success", "drive"], "finance": ["gain", "progress"] },
+      "de": { "general": ["Sieg", "Willenskraft"], "love": ["Fortschritt", "Entschlossenheit"], "career": ["Erfolg", "Antrieb"], "finance": ["Gewinn", "Fortschritt"] },
+      "es": { "general": ["victoria", "voluntad"], "love": ["progreso", "determinación"], "career": ["éxito", "impulso"], "finance": ["ganancia", "progreso"] }
+    }
+  },
+  "Strength": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["güç", "cesaret"], "love": ["sabır", "şefkat"], "career": ["dayanıklılık", "azim"], "finance": ["kontrol", "sabır"] },
+      "en": { "general": ["strength", "courage"], "love": ["patience", "compassion"], "career": ["endurance", "perseverance"], "finance": ["control", "patience"] },
+      "de": { "general": ["Stärke", "Mut"], "love": ["Geduld", "Mitgefühl"], "career": ["Ausdauer", "Beharrlichkeit"], "finance": ["Kontrolle", "Geduld"] },
+      "es": { "general": ["fuerza", "coraje"], "love": ["paciencia", "compasión"], "career": ["resistencia", "perseverancia"], "finance": ["control", "paciencia"] }
+    }
+  },
+  "The Hermit": {
+    "clarityWeight": 10,
+    "keywords": {
+      "tr": { "general": ["içe dönüş", "arayış"], "love": ["yalnızlık", "düşünce"], "career": ["analiz", "planlama"], "finance": ["tasarruf", "inceleme"] },
+      "en": { "general": ["introspection", "search"], "love": ["solitude", "reflection"], "career": ["analysis", "planning"], "finance": ["saving", "review"] },
+      "de": { "general": ["Selbstbetrachtung", "Suche"], "love": ["Einsamkeit", "Reflexion"], "career": ["Analyse", "Planung"], "finance": ["Sparen", "Überprüfung"] },
+      "es": { "general": ["introspección", "búsqueda"], "love": ["soledad", "reflexión"], "career": ["análisis", "planificación"], "finance": ["ahorro", "revisión"] }
+    }
+  },
+  "Wheel of Fortune": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["şans", "döngü"], "love": ["kader", "değişim"], "career": ["fırsat", "dönüm"], "finance": ["şans", "dönüşüm"] },
+      "en": { "general": ["luck", "cycle"], "love": ["fate", "change"], "career": ["opportunity", "turning"], "finance": ["luck", "transformation"] },
+      "de": { "general": ["Glück", "Zyklus"], "love": ["Schicksal", "Wandel"], "career": ["Gelegenheit", "Wendepunkt"], "finance": ["Glück", "Wandlung"] },
+      "es": { "general": ["suerte", "ciclo"], "love": ["destino", "cambio"], "career": ["oportunidad", "giro"], "finance": ["suerte", "transformación"] }
+    }
+  },
+  "Justice": {
+    "clarityWeight": 25,
+    "keywords": {
+      "tr": { "general": ["adalet", "denge"], "love": ["dürüstlük", "eşitlik"], "career": ["hak", "sözleşme"], "finance": ["denge", "kural"] },
+      "en": { "general": ["justice", "balance"], "love": ["honesty", "equality"], "career": ["rights", "contract"], "finance": ["balance", "law"] },
+      "de": { "general": ["Gerechtigkeit", "Balance"], "love": ["Ehrlichkeit", "Gleichheit"], "career": ["Recht", "Vertrag"], "finance": ["Balance", "Gesetz"] },
+      "es": { "general": ["justicia", "equilibrio"], "love": ["honestidad", "igualdad"], "career": ["derecho", "contrato"], "finance": ["equilibrio", "ley"] }
+    }
+  },
+  "The Hanged Man": {
+    "clarityWeight": 5,
+    "keywords": {
+      "tr": { "general": ["bekleme", "perspektif"], "love": ["sabır", "fedakarlık"], "career": ["duraklama", "bakış"], "finance": ["erteleme", "değerlendirme"] },
+      "en": { "general": ["waiting", "perspective"], "love": ["patience", "sacrifice"], "career": ["pause", "viewpoint"], "finance": ["delay", "assessment"] },
+      "de": { "general": ["Warten", "Perspektive"], "love": ["Geduld", "Opfer"], "career": ["Pause", "Sichtweise"], "finance": ["Verzögerung", "Bewertung"] },
+      "es": { "general": ["espera", "perspectiva"], "love": ["paciencia", "sacrificio"], "career": ["pausa", "punto de vista"], "finance": ["retraso", "evaluación"] }
+    }
+  },
+  "Death": {
+    "clarityWeight": 16,
+    "keywords": {
+      "tr": { "general": ["dönüşüm", "son"], "love": ["kapanış", "yenilenme"], "career": ["değişim", "bitiş"], "finance": ["tasfiye", "yeniden"] },
+      "en": { "general": ["transformation", "ending"], "love": ["closure", "renewal"], "career": ["change", "ending"], "finance": ["clearing", "rebirth"] },
+      "de": { "general": ["Transformation", "Ende"], "love": ["Abschluss", "Erneuerung"], "career": ["Wandel", "Ende"], "finance": ["Bereinigung", "Wiedergeburt"] },
+      "es": { "general": ["transformación", "final"], "love": ["cierre", "renovación"], "career": ["cambio", "final"], "finance": ["liquidación", "renacimiento"] }
+    }
+  },
+  "Temperance": {
+    "clarityWeight": 15,
+    "keywords": {
+      "tr": { "general": ["denge", "uyum"], "love": ["sabır", "ılımlılık"], "career": ["uyum", "işbirliği"], "finance": ["denge", "tasarruf"] },
+      "en": { "general": ["balance", "harmony"], "love": ["patience", "moderation"], "career": ["harmony", "cooperation"], "finance": ["balance", "saving"] },
+      "de": { "general": ["Balance", "Harmonie"], "love": ["Geduld", "Mäßigung"], "career": ["Harmonie", "Zusammenarbeit"], "finance": ["Balance", "Sparen"] },
+      "es": { "general": ["equilibrio", "armonía"], "love": ["paciencia", "moderación"], "career": ["armonía", "cooperación"], "finance": ["equilibrio", "ahorro"] }
+    }
+  },
+  "The Devil": {
+    "clarityWeight": 8,
+    "keywords": {
+      "tr": { "general": ["bağımlılık", "kısıtlama"], "love": ["tutku", "bağ"], "career": ["tuzak", "zorlama"], "finance": ["borç", "aşırılık"] },
+      "en": { "general": ["bondage", "restriction"], "love": ["passion", "attachment"], "career": ["trap", "compulsion"], "finance": ["debt", "excess"] },
+      "de": { "general": ["Bindung", "Einschränkung"], "love": ["Leidenschaft", "Anhaftung"], "career": ["Falle", "Zwang"], "finance": ["Schulden", "Übermaß"] },
+      "es": { "general": ["atadura", "restricción"], "love": ["pasión", "apego"], "career": ["trampa", "compulsión"], "finance": ["deuda", "exceso"] }
+    }
+  },
+  "The Tower": {
+    "clarityWeight": 14,
+    "keywords": {
+      "tr": { "general": ["yıkım", "değişim"], "love": ["kriz", "ayrılık"], "career": ["çöküş", "sarsıntı"], "finance": ["kayıp", "şok"] },
+      "en": { "general": ["upheaval", "change"], "love": ["crisis", "separation"], "career": ["collapse", "shock"], "finance": ["loss", "shock"] },
+      "de": { "general": ["Umbruch", "Veränderung"], "love": ["Krise", "Trennung"], "career": ["Zusammenbruch", "Erschütterung"], "finance": ["Verlust", "Schock"] },
+      "es": { "general": ["cambio", "ruptura"], "love": ["crisis", "separación"], "career": ["colapso", "conmoción"], "finance": ["pérdida", "shock"] }
+    }
+  },
+  "The Star": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["umut", "ilham"], "love": ["iyileşme", "açıklık"], "career": ["vizyon", "potansiyel"], "finance": ["umut", "gelecek"] },
+      "en": { "general": ["hope", "inspiration"], "love": ["healing", "openness"], "career": ["vision", "potential"], "finance": ["hope", "future"] },
+      "de": { "general": ["Hoffnung", "Inspiration"], "love": ["Heilung", "Offenheit"], "career": ["Vision", "Potenzial"], "finance": ["Hoffnung", "Zukunft"] },
+      "es": { "general": ["esperanza", "inspiración"], "love": ["sanación", "apertura"], "career": ["visión", "potencial"], "finance": ["esperanza", "futuro"] }
+    }
+  },
+  "The Moon": {
+    "clarityWeight": 3,
+    "keywords": {
+      "tr": { "general": ["belirsizlik", "sezgi"], "love": ["sis", "kuşku"], "career": ["muğlaklık", "gizem"], "finance": ["risk", "yanılsama"] },
+      "en": { "general": ["uncertainty", "intuition"], "love": ["fog", "doubt"], "career": ["ambiguity", "hidden"], "finance": ["risk", "illusion"] },
+      "de": { "general": ["Unsicherheit", "Intuition"], "love": ["Nebel", "Zweifel"], "career": ["Unklarheit", "verborgen"], "finance": ["Risiko", "Illusion"] },
+      "es": { "general": ["incertidumbre", "intuición"], "love": ["niebla", "duda"], "career": ["ambigüedad", "oculto"], "finance": ["riesgo", "ilusión"] }
+    }
+  },
+  "The Sun": {
+    "clarityWeight": 30,
+    "keywords": {
+      "tr": { "general": ["başarı", "mutluluk"], "love": ["neşe", "birlik"], "career": ["zafer", "tanınma"], "finance": ["bolluk", "kazanç"] },
+      "en": { "general": ["success", "joy"], "love": ["happiness", "union"], "career": ["victory", "recognition"], "finance": ["abundance", "profit"] },
+      "de": { "general": ["Erfolg", "Freude"], "love": ["Glück", "Vereinigung"], "career": ["Sieg", "Anerkennung"], "finance": ["Fülle", "Gewinn"] },
+      "es": { "general": ["éxito", "alegría"], "love": ["felicidad", "unión"], "career": ["victoria", "reconocimiento"], "finance": ["abundancia", "ganancia"] }
+    }
+  },
+  "Judgement": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["uyanış", "karar"], "love": ["yenilenme", "af"], "career": ["değerlendirme", "terfi"], "finance": ["hesap", "sonuç"] },
+      "en": { "general": ["awakening", "judgment"], "love": ["renewal", "forgiveness"], "career": ["evaluation", "promotion"], "finance": ["reckoning", "result"] },
+      "de": { "general": ["Erwachen", "Urteil"], "love": ["Erneuerung", "Vergebung"], "career": ["Bewertung", "Beförderung"], "finance": ["Abrechnung", "Ergebnis"] },
+      "es": { "general": ["despertar", "juicio"], "love": ["renovación", "perdón"], "career": ["evaluación", "ascenso"], "finance": ["ajuste", "resultado"] }
+    }
+  },
+  "The World": {
+    "clarityWeight": 22,
+    "keywords": {
+      "tr": { "general": ["tamamlanma", "başarı"], "love": ["bütünlük", "tatmin"], "career": ["zirve", "başarı"], "finance": ["refah", "tamamlanma"] },
+      "en": { "general": ["completion", "success"], "love": ["wholeness", "fulfillment"], "career": ["achievement", "success"], "finance": ["prosperity", "completion"] },
+      "de": { "general": ["Vollendung", "Erfolg"], "love": ["Ganzheit", "Erfüllung"], "career": ["Leistung", "Erfolg"], "finance": ["Wohlstand", "Abschluss"] },
+      "es": { "general": ["finalización", "éxito"], "love": ["plenitud", "satisfacción"], "career": ["logro", "éxito"], "finance": ["prosperidad", "finalización"] }
+    }
+  },
+  "Ace of Wands": {
+    "clarityWeight": 25,
+    "keywords": {
+      "tr": { "general": ["başlangıç", "enerji"], "love": ["tutku", "çekim"], "career": ["fırsat", "girişim"], "finance": ["yatırım", "başlangıç"] },
+      "en": { "general": ["beginning", "energy"], "love": ["passion", "attraction"], "career": ["opportunity", "initiative"], "finance": ["investment", "start"] },
+      "de": { "general": ["Anfang", "Energie"], "love": ["Leidenschaft", "Anziehung"], "career": ["Gelegenheit", "Initiative"], "finance": ["Investition", "Start"] },
+      "es": { "general": ["comienzo", "energía"], "love": ["pasión", "atracción"], "career": ["oportunidad", "iniciativa"], "finance": ["inversión", "inicio"] }
+    }
+  },
+  "Two of Wands": {
+    "clarityWeight": 12,
+    "keywords": {
+      "tr": { "general": ["planlama", "karar"], "love": ["seçim", "bekleyiş"], "career": ["strateji", "ortaklık"], "finance": ["planlama", "seçenek"] },
+      "en": { "general": ["planning", "decision"], "love": ["choice", "waiting"], "career": ["strategy", "partnership"], "finance": ["planning", "options"] },
+      "de": { "general": ["Planung", "Entscheidung"], "love": ["Wahl", "Warten"], "career": ["Strategie", "Partnerschaft"], "finance": ["Planung", "Optionen"] },
+      "es": { "general": ["planificación", "decisión"], "love": ["elección", "espera"], "career": ["estrategia", "asociación"], "finance": ["planificación", "opciones"] }
+    }
+  },
+  "Three of Wands": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["ilerleme", "genişleme"], "love": ["gelişme", "büyüme"], "career": ["fırsat", "genişleme"], "finance": ["yatırım", "getiri"] },
+      "en": { "general": ["progress", "expansion"], "love": ["growth", "development"], "career": ["opportunity", "expansion"], "finance": ["investment", "returns"] },
+      "de": { "general": ["Fortschritt", "Expansion"], "love": ["Wachstum", "Entwicklung"], "career": ["Gelegenheit", "Expansion"], "finance": ["Investition", "Rendite"] },
+      "es": { "general": ["progreso", "expansión"], "love": ["crecimiento", "desarrollo"], "career": ["oportunidad", "expansión"], "finance": ["inversión", "retornos"] }
+    }
+  },
+  "Four of Wands": {
+    "clarityWeight": 22,
+    "keywords": {
+      "tr": { "general": ["kutlama", "uyum"], "love": ["birlik", "ev"], "career": ["başarı", "kutlama"], "finance": ["istikrar", "temel"] },
+      "en": { "general": ["celebration", "harmony"], "love": ["union", "home"], "career": ["success", "celebration"], "finance": ["stability", "foundation"] },
+      "de": { "general": ["Feier", "Harmonie"], "love": ["Vereinigung", "Heim"], "career": ["Erfolg", "Feier"], "finance": ["Stabilität", "Fundament"] },
+      "es": { "general": ["celebración", "armonía"], "love": ["unión", "hogar"], "career": ["éxito", "celebración"], "finance": ["estabilidad", "base"] }
+    }
+  },
+  "Five of Wands": {
+    "clarityWeight": 8,
+    "keywords": {
+      "tr": { "general": ["çatışma", "rekabet"], "love": ["tartışma", "gerilim"], "career": ["rekabet", "mücadele"], "finance": ["rekabet", "kayıp"] },
+      "en": { "general": ["conflict", "competition"], "love": ["argument", "tension"], "career": ["competition", "struggle"], "finance": ["competition", "loss"] },
+      "de": { "general": ["Konflikt", "Wettbewerb"], "love": ["Streit", "Spannung"], "career": ["Wettbewerb", "Kampf"], "finance": ["Wettbewerb", "Verlust"] },
+      "es": { "general": ["conflicto", "competencia"], "love": ["discusión", "tensión"], "career": ["competencia", "lucha"], "finance": ["competencia", "pérdida"] }
+    }
+  },
+  "Six of Wands": {
+    "clarityWeight": 26,
+    "keywords": {
+      "tr": { "general": ["zafer", "tanınma"], "love": ["başarı", "onay"], "career": ["zafer", "terfi"], "finance": ["kazanç", "başarı"] },
+      "en": { "general": ["victory", "recognition"], "love": ["success", "approval"], "career": ["victory", "promotion"], "finance": ["gain", "success"] },
+      "de": { "general": ["Sieg", "Anerkennung"], "love": ["Erfolg", "Zustimmung"], "career": ["Sieg", "Beförderung"], "finance": ["Gewinn", "Erfolg"] },
+      "es": { "general": ["victoria", "reconocimiento"], "love": ["éxito", "aprobación"], "career": ["victoria", "ascenso"], "finance": ["ganancia", "éxito"] }
+    }
+  },
+  "Seven of Wands": {
+    "clarityWeight": 12,
+    "keywords": {
+      "tr": { "general": ["savunma", "direnç"], "love": ["mücadele", "koruma"], "career": ["savunma", "pozisyon"], "finance": ["koruma", "direnç"] },
+      "en": { "general": ["defense", "resistance"], "love": ["struggle", "protection"], "career": ["defense", "position"], "finance": ["protection", "resistance"] },
+      "de": { "general": ["Verteidigung", "Widerstand"], "love": ["Kampf", "Schutz"], "career": ["Verteidigung", "Position"], "finance": ["Schutz", "Widerstand"] },
+      "es": { "general": ["defensa", "resistencia"], "love": ["lucha", "protección"], "career": ["defensa", "posición"], "finance": ["protección", "resistencia"] }
+    }
+  },
+  "Eight of Wands": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["hız", "ilerleme"], "love": ["hızlı gelişme", "hareket"], "career": ["hız", "momentum"], "finance": ["hızlı getiri", "akış"] },
+      "en": { "general": ["speed", "progress"], "love": ["rapid development", "movement"], "career": ["speed", "momentum"], "finance": ["quick returns", "flow"] },
+      "de": { "general": ["Geschwindigkeit", "Fortschritt"], "love": ["schnelle Entwicklung", "Bewegung"], "career": ["Tempo", "Dynamik"], "finance": ["schnelle Rendite", "Fluss"] },
+      "es": { "general": ["velocidad", "progreso"], "love": ["desarrollo rápido", "movimiento"], "career": ["velocidad", "impulso"], "finance": ["retornos rápidos", "flujo"] }
+    }
+  },
+  "Nine of Wands": {
+    "clarityWeight": 12,
+    "keywords": {
+      "tr": { "general": ["dayanıklılık", "azim"], "love": ["sabır", "güven"], "career": ["direnç", "son adım"], "finance": ["koruma", "dikkat"] },
+      "en": { "general": ["resilience", "persistence"], "love": ["patience", "trust"], "career": ["endurance", "final step"], "finance": ["protection", "caution"] },
+      "de": { "general": ["Widerstandskraft", "Ausdauer"], "love": ["Geduld", "Vertrauen"], "career": ["Ausdauer", "letzter Schritt"], "finance": ["Schutz", "Vorsicht"] },
+      "es": { "general": ["resiliencia", "persistencia"], "love": ["paciencia", "confianza"], "career": ["resistencia", "último paso"], "finance": ["protección", "precaución"] }
+    }
+  },
+  "Ten of Wands": {
+    "clarityWeight": 8,
+    "keywords": {
+      "tr": { "general": ["yük", "sorumluluk"], "love": ["baskı", "yorgunluk"], "career": ["aşırı iş", "stres"], "finance": ["borç", "yük"] },
+      "en": { "general": ["burden", "responsibility"], "love": ["pressure", "exhaustion"], "career": ["overwork", "stress"], "finance": ["debt", "burden"] },
+      "de": { "general": ["Last", "Verantwortung"], "love": ["Druck", "Erschöpfung"], "career": ["Überarbeitung", "Stress"], "finance": ["Schulden", "Last"] },
+      "es": { "general": ["carga", "responsabilidad"], "love": ["presión", "agotamiento"], "career": ["sobrecarga", "estrés"], "finance": ["deuda", "carga"] }
+    }
+  },
+  "Page of Wands": {
+    "clarityWeight": 14,
+    "keywords": {
+      "tr": { "general": ["haber", "heyecan"], "love": ["yeni ilgi", "macera"], "career": ["fırsat", "öğrenme"], "finance": ["yeni gelir", "haber"] },
+      "en": { "general": ["news", "enthusiasm"], "love": ["new interest", "adventure"], "career": ["opportunity", "learning"], "finance": ["new income", "news"] },
+      "de": { "general": ["Nachricht", "Begeisterung"], "love": ["neues Interesse", "Abenteuer"], "career": ["Gelegenheit", "Lernen"], "finance": ["neues Einkommen", "Nachricht"] },
+      "es": { "general": ["noticia", "entusiasmo"], "love": ["nuevo interés", "aventura"], "career": ["oportunidad", "aprendizaje"], "finance": ["nuevo ingreso", "noticia"] }
+    }
+  },
+  "Knight of Wands": {
+    "clarityWeight": 16,
+    "keywords": {
+      "tr": { "general": ["aksiyon", "cesaret"], "love": ["tutku", "macera"], "career": ["girişim", "enerji"], "finance": ["risk", "hareket"] },
+      "en": { "general": ["action", "courage"], "love": ["passion", "adventure"], "career": ["initiative", "energy"], "finance": ["risk", "movement"] },
+      "de": { "general": ["Aktion", "Mut"], "love": ["Leidenschaft", "Abenteuer"], "career": ["Initiative", "Energie"], "finance": ["Risiko", "Bewegung"] },
+      "es": { "general": ["acción", "coraje"], "love": ["pasión", "aventura"], "career": ["iniciativa", "energía"], "finance": ["riesgo", "movimiento"] }
+    }
+  },
+  "Queen of Wands": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["güven", "karizma"], "love": ["çekicilik", "özgüven"], "career": ["liderlik", "yaratıcılık"], "finance": ["bağımsızlık", "başarı"] },
+      "en": { "general": ["confidence", "charisma"], "love": ["attraction", "self-assurance"], "career": ["leadership", "creativity"], "finance": ["independence", "success"] },
+      "de": { "general": ["Selbstvertrauen", "Charisma"], "love": ["Anziehung", "Selbstsicherheit"], "career": ["Führung", "Kreativität"], "finance": ["Unabhängigkeit", "Erfolg"] },
+      "es": { "general": ["confianza", "carisma"], "love": ["atracción", "seguridad"], "career": ["liderazgo", "creatividad"], "finance": ["independencia", "éxito"] }
+    }
+  },
+  "King of Wands": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["liderlik", "vizyon"], "love": ["tutku", "otorite"], "career": ["girişimcilik", "başarı"], "finance": ["yatırım", "liderlik"] },
+      "en": { "general": ["leadership", "vision"], "love": ["passion", "authority"], "career": ["entrepreneurship", "success"], "finance": ["investment", "leadership"] },
+      "de": { "general": ["Führung", "Vision"], "love": ["Leidenschaft", "Autorität"], "career": ["Unternehmertum", "Erfolg"], "finance": ["Investition", "Führung"] },
+      "es": { "general": ["liderazgo", "visión"], "love": ["pasión", "autoridad"], "career": ["emprendimiento", "éxito"], "finance": ["inversión", "liderazgo"] }
+    }
+  },
+  "Ace of Cups": {
+    "clarityWeight": 22,
+    "keywords": {
+      "tr": { "general": ["duygusal başlangıç", "aşk"], "love": ["yeni aşk", "açılım"], "career": ["memnuniyet", "tatmin"], "finance": ["duygusal tatmin", "bolluk"] },
+      "en": { "general": ["emotional beginning", "love"], "love": ["new love", "opening"], "career": ["satisfaction", "fulfillment"], "finance": ["emotional fulfillment", "abundance"] },
+      "de": { "general": ["emotionaler Anfang", "Liebe"], "love": ["neue Liebe", "Öffnung"], "career": ["Zufriedenheit", "Erfüllung"], "finance": ["emotionale Erfüllung", "Fülle"] },
+      "es": { "general": ["comienzo emocional", "amor"], "love": ["nuevo amor", "apertura"], "career": ["satisfacción", "plenitud"], "finance": ["satisfacción emocional", "abundancia"] }
+    }
+  },
+  "Two of Cups": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["birlik", "ortaklık"], "love": ["bağ", "uyum"], "career": ["işbirliği", "ortaklık"], "finance": ["ortaklık", "anlaşma"] },
+      "en": { "general": ["union", "partnership"], "love": ["connection", "harmony"], "career": ["collaboration", "partnership"], "finance": ["partnership", "agreement"] },
+      "de": { "general": ["Vereinigung", "Partnerschaft"], "love": ["Verbindung", "Harmonie"], "career": ["Zusammenarbeit", "Partnerschaft"], "finance": ["Partnerschaft", "Vereinbarung"] },
+      "es": { "general": ["unión", "asociación"], "love": ["conexión", "armonía"], "career": ["colaboración", "asociación"], "finance": ["asociación", "acuerdo"] }
+    }
+  },
+  "Three of Cups": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["kutlama", "arkadaşlık"], "love": ["sosyal", "neşe"], "career": ["takım", "başarı"], "finance": ["paylaşım", "bolluk"] },
+      "en": { "general": ["celebration", "friendship"], "love": ["social", "joy"], "career": ["team", "success"], "finance": ["sharing", "abundance"] },
+      "de": { "general": ["Feier", "Freundschaft"], "love": ["sozial", "Freude"], "career": ["Team", "Erfolg"], "finance": ["Teilen", "Fülle"] },
+      "es": { "general": ["celebración", "amistad"], "love": ["social", "alegría"], "career": ["equipo", "éxito"], "finance": ["compartir", "abundancia"] }
+    }
+  },
+  "Four of Cups": {
+    "clarityWeight": 6,
+    "keywords": {
+      "tr": { "general": ["kayıtsızlık", "düşünce"], "love": ["ilgisizlik", "bekleme"], "career": ["tatminsizlik", "duraklama"], "finance": ["memnuniyetsizlik", "bekleme"] },
+      "en": { "general": ["apathy", "contemplation"], "love": ["disinterest", "waiting"], "career": ["dissatisfaction", "pause"], "finance": ["discontent", "waiting"] },
+      "de": { "general": ["Apathie", "Kontemplation"], "love": ["Desinteresse", "Warten"], "career": ["Unzufriedenheit", "Pause"], "finance": ["Unzufriedenheit", "Warten"] },
+      "es": { "general": ["apatía", "contemplación"], "love": ["desinterés", "espera"], "career": ["insatisfacción", "pausa"], "finance": ["descontento", "espera"] }
+    }
+  },
+  "Five of Cups": {
+    "clarityWeight": 6,
+    "keywords": {
+      "tr": { "general": ["kayıp", "üzüntü"], "love": ["hayal kırıklığı", "yas"], "career": ["başarısızlık", "pişmanlık"], "finance": ["kayıp", "hayal kırıklığı"] },
+      "en": { "general": ["loss", "grief"], "love": ["disappointment", "mourning"], "career": ["failure", "regret"], "finance": ["loss", "disappointment"] },
+      "de": { "general": ["Verlust", "Trauer"], "love": ["Enttäuschung", "Trauer"], "career": ["Misserfolg", "Reue"], "finance": ["Verlust", "Enttäuschung"] },
+      "es": { "general": ["pérdida", "duelo"], "love": ["decepción", "luto"], "career": ["fracaso", "arrepentimiento"], "finance": ["pérdida", "decepción"] }
+    }
+  },
+  "Six of Cups": {
+    "clarityWeight": 16,
+    "keywords": {
+      "tr": { "general": ["nostalji", "hatıra"], "love": ["geçmiş", "saflık"], "career": ["geçmiş bağ", "tanıdık"], "finance": ["miras", "hediye"] },
+      "en": { "general": ["nostalgia", "memory"], "love": ["past", "innocence"], "career": ["past connection", "familiar"], "finance": ["inheritance", "gift"] },
+      "de": { "general": ["Nostalgie", "Erinnerung"], "love": ["Vergangenheit", "Unschuld"], "career": ["frühere Verbindung", "vertraut"], "finance": ["Erbe", "Geschenk"] },
+      "es": { "general": ["nostalgia", "recuerdo"], "love": ["pasado", "inocencia"], "career": ["conexión pasada", "familiar"], "finance": ["herencia", "regalo"] }
+    }
+  },
+  "Seven of Cups": {
+    "clarityWeight": 3,
+    "keywords": {
+      "tr": { "general": ["hayal", "seçim"], "love": ["kararsızlık", "fantezi"], "career": ["seçenek", "belirsizlik"], "finance": ["hayal", "gerçekçi değil"] },
+      "en": { "general": ["illusion", "choices"], "love": ["indecision", "fantasy"], "career": ["options", "uncertainty"], "finance": ["fantasy", "unrealistic"] },
+      "de": { "general": ["Illusion", "Wahlmöglichkeiten"], "love": ["Unentschlossenheit", "Fantasie"], "career": ["Optionen", "Unsicherheit"], "finance": ["Fantasie", "unrealistisch"] },
+      "es": { "general": ["ilusión", "opciones"], "love": ["indecisión", "fantasía"], "career": ["opciones", "incertidumbre"], "finance": ["fantasía", "irreal"] }
+    }
+  },
+  "Eight of Cups": {
+    "clarityWeight": 10,
+    "keywords": {
+      "tr": { "general": ["ayrılık", "arayış"], "love": ["terk", "yol ayrımı"], "career": ["istifa", "değişim"], "finance": ["bırakma", "yeni yön"] },
+      "en": { "general": ["departure", "search"], "love": ["leaving", "crossroads"], "career": ["resignation", "change"], "finance": ["abandonment", "new direction"] },
+      "de": { "general": ["Abschied", "Suche"], "love": ["Verlassen", "Scheideweg"], "career": ["Kündigung", "Wandel"], "finance": ["Aufgabe", "neue Richtung"] },
+      "es": { "general": ["partida", "búsqueda"], "love": ["abandono", "encrucijada"], "career": ["renuncia", "cambio"], "finance": ["abandono", "nueva dirección"] }
+    }
+  },
+  "Nine of Cups": {
+    "clarityWeight": 24,
+    "keywords": {
+      "tr": { "general": ["dilek", "memnuniyet"], "love": ["mutluluk", "tatmin"], "career": ["başarı", "tatmin"], "finance": ["bolluk", "tatmin"] },
+      "en": { "general": ["wish", "satisfaction"], "love": ["happiness", "fulfillment"], "career": ["success", "contentment"], "finance": ["abundance", "satisfaction"] },
+      "de": { "general": ["Wunsch", "Zufriedenheit"], "love": ["Glück", "Erfüllung"], "career": ["Erfolg", "Zufriedenheit"], "finance": ["Fülle", "Zufriedenheit"] },
+      "es": { "general": ["deseo", "satisfacción"], "love": ["felicidad", "plenitud"], "career": ["éxito", "satisfacción"], "finance": ["abundancia", "satisfacción"] }
+    }
+  },
+  "Ten of Cups": {
+    "clarityWeight": 24,
+    "keywords": {
+      "tr": { "general": ["mutluluk", "uyum"], "love": ["aile", "tatmin"], "career": ["takım uyumu", "başarı"], "finance": ["aile refahı", "istikrar"] },
+      "en": { "general": ["happiness", "harmony"], "love": ["family", "fulfillment"], "career": ["team harmony", "success"], "finance": ["family prosperity", "stability"] },
+      "de": { "general": ["Glück", "Harmonie"], "love": ["Familie", "Erfüllung"], "career": ["Teamharmonie", "Erfolg"], "finance": ["Familienwohlstand", "Stabilität"] },
+      "es": { "general": ["felicidad", "armonía"], "love": ["familia", "plenitud"], "career": ["armonía de equipo", "éxito"], "finance": ["prosperidad familiar", "estabilidad"] }
+    }
+  },
+  "Page of Cups": {
+    "clarityWeight": 14,
+    "keywords": {
+      "tr": { "general": ["mesaj", "duygusal"], "love": ["teklif", "romantik"], "career": ["yaratıcı fırsat", "haber"], "finance": ["beklenmedik", "küçük gelir"] },
+      "en": { "general": ["message", "emotional"], "love": ["offer", "romantic"], "career": ["creative opportunity", "news"], "finance": ["unexpected", "small income"] },
+      "de": { "general": ["Nachricht", "emotional"], "love": ["Angebot", "romantisch"], "career": ["kreative Gelegenheit", "Nachricht"], "finance": ["unerwartet", "kleines Einkommen"] },
+      "es": { "general": ["mensaje", "emocional"], "love": ["oferta", "romántico"], "career": ["oportunidad creativa", "noticia"], "finance": ["inesperado", "pequeño ingreso"] }
+    }
+  },
+  "Knight of Cups": {
+    "clarityWeight": 16,
+    "keywords": {
+      "tr": { "general": ["teklif", "romantik"], "love": ["aşık", "teklif"], "career": ["yaratıcı proje", "davet"], "finance": ["teklif", "fırsat"] },
+      "en": { "general": ["offer", "romantic"], "love": ["lover", "proposal"], "career": ["creative project", "invitation"], "finance": ["offer", "opportunity"] },
+      "de": { "general": ["Angebot", "romantisch"], "love": ["Liebhaber", "Antrag"], "career": ["kreatives Projekt", "Einladung"], "finance": ["Angebot", "Gelegenheit"] },
+      "es": { "general": ["oferta", "romántico"], "love": ["amante", "propuesta"], "career": ["proyecto creativo", "invitación"], "finance": ["oferta", "oportunidad"] }
+    }
+  },
+  "Queen of Cups": {
+    "clarityWeight": 17,
+    "keywords": {
+      "tr": { "general": ["sezgi", "şefkat"], "love": ["anlayış", "derin bağ"], "career": ["empati", "destek"], "finance": ["sezgisel", "güven"] },
+      "en": { "general": ["intuition", "compassion"], "love": ["understanding", "deep bond"], "career": ["empathy", "support"], "finance": ["intuitive", "trust"] },
+      "de": { "general": ["Intuition", "Mitgefühl"], "love": ["Verständnis", "tiefe Bindung"], "career": ["Empathie", "Unterstützung"], "finance": ["intuitiv", "Vertrauen"] },
+      "es": { "general": ["intuición", "compasión"], "love": ["comprensión", "vínculo profundo"], "career": ["empatía", "apoyo"], "finance": ["intuitivo", "confianza"] }
+    }
+  },
+  "King of Cups": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["duygusal denge", "bilgelik"], "love": ["olgunluk", "anlayış"], "career": ["liderlik", "diplomasi"], "finance": ["dengeli", "güvenilir"] },
+      "en": { "general": ["emotional balance", "wisdom"], "love": ["maturity", "understanding"], "career": ["leadership", "diplomacy"], "finance": ["balanced", "reliable"] },
+      "de": { "general": ["emotionale Balance", "Weisheit"], "love": ["Reife", "Verständnis"], "career": ["Führung", "Diplomatie"], "finance": ["ausgeglichen", "zuverlässig"] },
+      "es": { "general": ["equilibrio emocional", "sabiduría"], "love": ["madurez", "comprensión"], "career": ["liderazgo", "diplomacia"], "finance": ["equilibrado", "confiable"] }
+    }
+  },
+  "Ace of Swords": {
+    "clarityWeight": 25,
+    "keywords": {
+      "tr": { "general": ["netlik", "gerçek"], "love": ["dürüstlük", "açıklık"], "career": ["çığır", "başarı"], "finance": ["keskin karar", "netlik"] },
+      "en": { "general": ["clarity", "truth"], "love": ["honesty", "openness"], "career": ["breakthrough", "success"], "finance": ["sharp decision", "clarity"] },
+      "de": { "general": ["Klarheit", "Wahrheit"], "love": ["Ehrlichkeit", "Offenheit"], "career": ["Durchbruch", "Erfolg"], "finance": ["klare Entscheidung", "Klarheit"] },
+      "es": { "general": ["claridad", "verdad"], "love": ["honestidad", "apertura"], "career": ["avance", "éxito"], "finance": ["decisión clara", "claridad"] }
+    }
+  },
+  "Two of Swords": {
+    "clarityWeight": 2,
+    "keywords": {
+      "tr": { "general": ["kararsızlık", "çıkmaz"], "love": ["belirsizlik", "bekleme"], "career": ["karar", "denge"], "finance": ["belirsizlik", "bekle"] },
+      "en": { "general": ["indecision", "stalemate"], "love": ["uncertainty", "waiting"], "career": ["decision", "balance"], "finance": ["uncertainty", "wait"] },
+      "de": { "general": ["Unentschlossenheit", "Patt"], "love": ["Unsicherheit", "Warten"], "career": ["Entscheidung", "Balance"], "finance": ["Unsicherheit", "warten"] },
+      "es": { "general": ["indecisión", "punto muerto"], "love": ["incertidumbre", "espera"], "career": ["decisión", "equilibrio"], "finance": ["incertidumbre", "esperar"] }
+    }
+  },
+  "Three of Swords": {
+    "clarityWeight": 8,
+    "keywords": {
+      "tr": { "general": ["kalp kırıklığı", "acı"], "love": ["ayrılık", "ihanet"], "career": ["hayal kırıklığı", "çatışma"], "finance": ["kayıp", "stres"] },
+      "en": { "general": ["heartbreak", "pain"], "love": ["separation", "betrayal"], "career": ["disappointment", "conflict"], "finance": ["loss", "stress"] },
+      "de": { "general": ["Herzschmerz", "Schmerz"], "love": ["Trennung", "Verrat"], "career": ["Enttäuschung", "Konflikt"], "finance": ["Verlust", "Stress"] },
+      "es": { "general": ["desamor", "dolor"], "love": ["separación", "traición"], "career": ["decepción", "conflicto"], "finance": ["pérdida", "estrés"] }
+    }
+  },
+  "Four of Swords": {
+    "clarityWeight": 10,
+    "keywords": {
+      "tr": { "general": ["dinlenme", "toparlanma"], "love": ["ara", "düşünce"], "career": ["mola", "planlama"], "finance": ["bekleme", "değerlendirme"] },
+      "en": { "general": ["rest", "recovery"], "love": ["break", "reflection"], "career": ["pause", "planning"], "finance": ["waiting", "assessment"] },
+      "de": { "general": ["Ruhe", "Erholung"], "love": ["Pause", "Reflexion"], "career": ["Pause", "Planung"], "finance": ["Warten", "Bewertung"] },
+      "es": { "general": ["descanso", "recuperación"], "love": ["pausa", "reflexión"], "career": ["pausa", "planificación"], "finance": ["espera", "evaluación"] }
+    }
+  },
+  "Five of Swords": {
+    "clarityWeight": 6,
+    "keywords": {
+      "tr": { "general": ["çatışma", "kayıp"], "love": ["tartışma", "ego"], "career": ["rekabet", "haksızlık"], "finance": ["kayıp", "dolandırıcılık"] },
+      "en": { "general": ["conflict", "loss"], "love": ["argument", "ego"], "career": ["competition", "unfairness"], "finance": ["loss", "fraud"] },
+      "de": { "general": ["Konflikt", "Verlust"], "love": ["Streit", "Ego"], "career": ["Wettbewerb", "Ungerechtigkeit"], "finance": ["Verlust", "Betrug"] },
+      "es": { "general": ["conflicto", "pérdida"], "love": ["discusión", "ego"], "career": ["competencia", "injusticia"], "finance": ["pérdida", "fraude"] }
+    }
+  },
+  "Six of Swords": {
+    "clarityWeight": 14,
+    "keywords": {
+      "tr": { "general": ["geçiş", "iyileşme"], "love": ["uzaklaşma", "yeni başlangıç"], "career": ["değişim", "taşınma"], "finance": ["geçiş", "iyileşme"] },
+      "en": { "general": ["transition", "healing"], "love": ["moving on", "new beginning"], "career": ["change", "relocation"], "finance": ["transition", "recovery"] },
+      "de": { "general": ["Übergang", "Heilung"], "love": ["Weitergehen", "Neuanfang"], "career": ["Wandel", "Umzug"], "finance": ["Übergang", "Erholung"] },
+      "es": { "general": ["transición", "sanación"], "love": ["seguir adelante", "nuevo comienzo"], "career": ["cambio", "reubicación"], "finance": ["transición", "recuperación"] }
+    }
+  },
+  "Seven of Swords": {
+    "clarityWeight": 5,
+    "keywords": {
+      "tr": { "general": ["hile", "kaçış"], "love": ["aldatma", "gizlilik"], "career": ["strateji", "dikkat"], "finance": ["hırsızlık", "dikkat"] },
+      "en": { "general": ["deception", "escape"], "love": ["cheating", "secrecy"], "career": ["strategy", "caution"], "finance": ["theft", "caution"] },
+      "de": { "general": ["Täuschung", "Flucht"], "love": ["Betrug", "Geheimhaltung"], "career": ["Strategie", "Vorsicht"], "finance": ["Diebstahl", "Vorsicht"] },
+      "es": { "general": ["engaño", "escape"], "love": ["infidelidad", "secreto"], "career": ["estrategia", "precaución"], "finance": ["robo", "precaución"] }
+    }
+  },
+  "Eight of Swords": {
+    "clarityWeight": 4,
+    "keywords": {
+      "tr": { "general": ["sıkışmışlık", "kısıtlama"], "love": ["tuzak", "korku"], "career": ["çıkmaz", "blokaj"], "finance": ["kısıtlama", "borç"] },
+      "en": { "general": ["trapped", "restriction"], "love": ["stuck", "fear"], "career": ["deadlock", "blockage"], "finance": ["restriction", "debt"] },
+      "de": { "general": ["gefangen", "Einschränkung"], "love": ["festgefahren", "Angst"], "career": ["Sackgasse", "Blockade"], "finance": ["Einschränkung", "Schulden"] },
+      "es": { "general": ["atrapado", "restricción"], "love": ["estancado", "miedo"], "career": ["punto muerto", "bloqueo"], "finance": ["restricción", "deuda"] }
+    }
+  },
+  "Nine of Swords": {
+    "clarityWeight": 5,
+    "keywords": {
+      "tr": { "general": ["kaygı", "korku"], "love": ["endişe", "uykusuzluk"], "career": ["stres", "kaygı"], "finance": ["borç kaygısı", "stres"] },
+      "en": { "general": ["anxiety", "fear"], "love": ["worry", "insomnia"], "career": ["stress", "anxiety"], "finance": ["debt worry", "stress"] },
+      "de": { "general": ["Angst", "Furcht"], "love": ["Sorge", "Schlaflosigkeit"], "career": ["Stress", "Angst"], "finance": ["Schuldenangst", "Stress"] },
+      "es": { "general": ["ansiedad", "miedo"], "love": ["preocupación", "insomnio"], "career": ["estrés", "ansiedad"], "finance": ["preocupación por deudas", "estrés"] }
+    }
+  },
+  "Ten of Swords": {
+    "clarityWeight": 8,
+    "keywords": {
+      "tr": { "general": ["son", "dipnokta"], "love": ["bitiş", "ihanet"], "career": ["işten çıkarma", "son"], "finance": ["iflas", "son"] },
+      "en": { "general": ["ending", "rock bottom"], "love": ["end", "betrayal"], "career": ["termination", "ending"], "finance": ["bankruptcy", "ending"] },
+      "de": { "general": ["Ende", "Tiefpunkt"], "love": ["Ende", "Verrat"], "career": ["Kündigung", "Ende"], "finance": ["Bankrott", "Ende"] },
+      "es": { "general": ["final", "punto más bajo"], "love": ["final", "traición"], "career": ["despido", "final"], "finance": ["quiebra", "final"] }
+    }
+  },
+  "Page of Swords": {
+    "clarityWeight": 12,
+    "keywords": {
+      "tr": { "general": ["haber", "merak"], "love": ["iletişim", "keşif"], "career": ["araştırma", "öğrenme"], "finance": ["bilgi", "haber"] },
+      "en": { "general": ["news", "curiosity"], "love": ["communication", "discovery"], "career": ["research", "learning"], "finance": ["information", "news"] },
+      "de": { "general": ["Nachricht", "Neugier"], "love": ["Kommunikation", "Entdeckung"], "career": ["Forschung", "Lernen"], "finance": ["Information", "Nachricht"] },
+      "es": { "general": ["noticia", "curiosidad"], "love": ["comunicación", "descubrimiento"], "career": ["investigación", "aprendizaje"], "finance": ["información", "noticia"] }
+    }
+  },
+  "Knight of Swords": {
+    "clarityWeight": 16,
+    "keywords": {
+      "tr": { "general": ["hız", "kararlılık"], "love": ["acele", "direkt"], "career": ["hızlı aksiyon", "agresif"], "finance": ["hızlı karar", "risk"] },
+      "en": { "general": ["speed", "determination"], "love": ["hasty", "direct"], "career": ["quick action", "aggressive"], "finance": ["quick decision", "risk"] },
+      "de": { "general": ["Geschwindigkeit", "Entschlossenheit"], "love": ["hastig", "direkt"], "career": ["schnelle Aktion", "aggressiv"], "finance": ["schnelle Entscheidung", "Risiko"] },
+      "es": { "general": ["velocidad", "determinación"], "love": ["apresurado", "directo"], "career": ["acción rápida", "agresivo"], "finance": ["decisión rápida", "riesgo"] }
+    }
+  },
+  "Queen of Swords": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["netlik", "bağımsızlık"], "love": ["dürüstlük", "sınırlar"], "career": ["analiz", "objektiflik"], "finance": ["mantık", "keskin"] },
+      "en": { "general": ["clarity", "independence"], "love": ["honesty", "boundaries"], "career": ["analysis", "objectivity"], "finance": ["logic", "sharp"] },
+      "de": { "general": ["Klarheit", "Unabhängigkeit"], "love": ["Ehrlichkeit", "Grenzen"], "career": ["Analyse", "Objektivität"], "finance": ["Logik", "scharf"] },
+      "es": { "general": ["claridad", "independencia"], "love": ["honestidad", "límites"], "career": ["análisis", "objetividad"], "finance": ["lógica", "agudo"] }
+    }
+  },
+  "King of Swords": {
+    "clarityWeight": 20,
+    "keywords": {
+      "tr": { "general": ["otorite", "adalet"], "love": ["mantık", "dürüstlük"], "career": ["liderlik", "karar"], "finance": ["strateji", "analiz"] },
+      "en": { "general": ["authority", "justice"], "love": ["logic", "honesty"], "career": ["leadership", "decision"], "finance": ["strategy", "analysis"] },
+      "de": { "general": ["Autorität", "Gerechtigkeit"], "love": ["Logik", "Ehrlichkeit"], "career": ["Führung", "Entscheidung"], "finance": ["Strategie", "Analyse"] },
+      "es": { "general": ["autoridad", "justicia"], "love": ["lógica", "honestidad"], "career": ["liderazgo", "decisión"], "finance": ["estrategia", "análisis"] }
+    }
+  },
+  "Ace of Pentacles": {
+    "clarityWeight": 24,
+    "keywords": {
+      "tr": { "general": ["fırsat", "başlangıç"], "love": ["güvenlik", "istikrar"], "career": ["iş fırsatı", "teklif"], "finance": ["para", "yatırım"] },
+      "en": { "general": ["opportunity", "beginning"], "love": ["security", "stability"], "career": ["job opportunity", "offer"], "finance": ["money", "investment"] },
+      "de": { "general": ["Gelegenheit", "Anfang"], "love": ["Sicherheit", "Stabilität"], "career": ["Jobchance", "Angebot"], "finance": ["Geld", "Investition"] },
+      "es": { "general": ["oportunidad", "comienzo"], "love": ["seguridad", "estabilidad"], "career": ["oportunidad laboral", "oferta"], "finance": ["dinero", "inversión"] }
+    }
+  },
+  "Two of Pentacles": {
+    "clarityWeight": 10,
+    "keywords": {
+      "tr": { "general": ["denge", "uyum"], "love": ["denge kurma", "çoklu"], "career": ["çoklu görev", "denge"], "finance": ["bütçe", "denge"] },
+      "en": { "general": ["balance", "adaptation"], "love": ["balancing", "multiple"], "career": ["multitasking", "balance"], "finance": ["budget", "balance"] },
+      "de": { "general": ["Balance", "Anpassung"], "love": ["Balancieren", "mehrere"], "career": ["Multitasking", "Balance"], "finance": ["Budget", "Balance"] },
+      "es": { "general": ["equilibrio", "adaptación"], "love": ["equilibrar", "múltiple"], "career": ["multitarea", "equilibrio"], "finance": ["presupuesto", "equilibrio"] }
+    }
+  },
+  "Three of Pentacles": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["işbirliği", "ustalık"], "love": ["ortak çalışma", "uyum"], "career": ["takım çalışması", "tanınma"], "finance": ["proje", "yatırım"] },
+      "en": { "general": ["collaboration", "mastery"], "love": ["teamwork", "harmony"], "career": ["teamwork", "recognition"], "finance": ["project", "investment"] },
+      "de": { "general": ["Zusammenarbeit", "Meisterschaft"], "love": ["Teamarbeit", "Harmonie"], "career": ["Teamarbeit", "Anerkennung"], "finance": ["Projekt", "Investition"] },
+      "es": { "general": ["colaboración", "maestría"], "love": ["trabajo en equipo", "armonía"], "career": ["trabajo en equipo", "reconocimiento"], "finance": ["proyecto", "inversión"] }
+    }
+  },
+  "Four of Pentacles": {
+    "clarityWeight": 10,
+    "keywords": {
+      "tr": { "general": ["güvenlik", "kontrol"], "love": ["sahiplenme", "koruma"], "career": ["istikrar", "tutuculuk"], "finance": ["tasarruf", "biriktirme"] },
+      "en": { "general": ["security", "control"], "love": ["possessiveness", "protection"], "career": ["stability", "conservatism"], "finance": ["saving", "hoarding"] },
+      "de": { "general": ["Sicherheit", "Kontrolle"], "love": ["Besitzanspruch", "Schutz"], "career": ["Stabilität", "Konservatismus"], "finance": ["Sparen", "Horten"] },
+      "es": { "general": ["seguridad", "control"], "love": ["posesividad", "protección"], "career": ["estabilidad", "conservadurismo"], "finance": ["ahorro", "acumulación"] }
+    }
+  },
+  "Five of Pentacles": {
+    "clarityWeight": 6,
+    "keywords": {
+      "tr": { "general": ["zorluk", "kayıp"], "love": ["yalnızlık", "reddedilme"], "career": ["işsizlik", "zorluk"], "finance": ["mali sıkıntı", "borç"] },
+      "en": { "general": ["hardship", "loss"], "love": ["loneliness", "rejection"], "career": ["unemployment", "hardship"], "finance": ["financial difficulty", "debt"] },
+      "de": { "general": ["Härte", "Verlust"], "love": ["Einsamkeit", "Ablehnung"], "career": ["Arbeitslosigkeit", "Härte"], "finance": ["finanzielle Schwierigkeiten", "Schulden"] },
+      "es": { "general": ["dificultad", "pérdida"], "love": ["soledad", "rechazo"], "career": ["desempleo", "dificultad"], "finance": ["dificultad financiera", "deuda"] }
+    }
+  },
+  "Six of Pentacles": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["cömertlik", "paylaşım"], "love": ["verme", "alma"], "career": ["adil ücret", "tanınma"], "finance": ["yardım", "bağış"] },
+      "en": { "general": ["generosity", "sharing"], "love": ["giving", "receiving"], "career": ["fair pay", "recognition"], "finance": ["help", "donation"] },
+      "de": { "general": ["Großzügigkeit", "Teilen"], "love": ["Geben", "Nehmen"], "career": ["faire Bezahlung", "Anerkennung"], "finance": ["Hilfe", "Spende"] },
+      "es": { "general": ["generosidad", "compartir"], "love": ["dar", "recibir"], "career": ["pago justo", "reconocimiento"], "finance": ["ayuda", "donación"] }
+    }
+  },
+  "Seven of Pentacles": {
+    "clarityWeight": 12,
+    "keywords": {
+      "tr": { "general": ["sabır", "değerlendirme"], "love": ["bekleme", "yatırım"], "career": ["değerlendirme", "planlama"], "finance": ["uzun vade", "sabır"] },
+      "en": { "general": ["patience", "assessment"], "love": ["waiting", "investment"], "career": ["evaluation", "planning"], "finance": ["long-term", "patience"] },
+      "de": { "general": ["Geduld", "Bewertung"], "love": ["Warten", "Investition"], "career": ["Bewertung", "Planung"], "finance": ["langfristig", "Geduld"] },
+      "es": { "general": ["paciencia", "evaluación"], "love": ["espera", "inversión"], "career": ["evaluación", "planificación"], "finance": ["largo plazo", "paciencia"] }
+    }
+  },
+  "Eight of Pentacles": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["çalışkanlık", "ustalık"], "love": ["emek", "gelişim"], "career": ["beceri", "eğitim"], "finance": ["kazanç", "çalışma"] },
+      "en": { "general": ["diligence", "mastery"], "love": ["effort", "growth"], "career": ["skill", "training"], "finance": ["earnings", "work"] },
+      "de": { "general": ["Fleiß", "Meisterschaft"], "love": ["Anstrengung", "Wachstum"], "career": ["Fähigkeit", "Ausbildung"], "finance": ["Verdienst", "Arbeit"] },
+      "es": { "general": ["diligencia", "maestría"], "love": ["esfuerzo", "crecimiento"], "career": ["habilidad", "formación"], "finance": ["ganancias", "trabajo"] }
+    }
+  },
+  "Nine of Pentacles": {
+    "clarityWeight": 22,
+    "keywords": {
+      "tr": { "general": ["bağımsızlık", "lüks"], "love": ["kendi kendine yetme", "özgürlük"], "career": ["başarı", "tanınma"], "finance": ["refah", "bağımsızlık"] },
+      "en": { "general": ["independence", "luxury"], "love": ["self-sufficiency", "freedom"], "career": ["success", "recognition"], "finance": ["prosperity", "independence"] },
+      "de": { "general": ["Unabhängigkeit", "Luxus"], "love": ["Selbstständigkeit", "Freiheit"], "career": ["Erfolg", "Anerkennung"], "finance": ["Wohlstand", "Unabhängigkeit"] },
+      "es": { "general": ["independencia", "lujo"], "love": ["autosuficiencia", "libertad"], "career": ["éxito", "reconocimiento"], "finance": ["prosperidad", "independencia"] }
+    }
+  },
+  "Ten of Pentacles": {
+    "clarityWeight": 24,
+    "keywords": {
+      "tr": { "general": ["miras", "kalıcılık"], "love": ["aile", "uzun vadeli"], "career": ["emeklilik", "miras"], "finance": ["servet", "miras"] },
+      "en": { "general": ["inheritance", "legacy"], "love": ["family", "long-term"], "career": ["retirement", "legacy"], "finance": ["wealth", "inheritance"] },
+      "de": { "general": ["Erbe", "Vermächtnis"], "love": ["Familie", "langfristig"], "career": ["Ruhestand", "Vermächtnis"], "finance": ["Reichtum", "Erbe"] },
+      "es": { "general": ["herencia", "legado"], "love": ["familia", "largo plazo"], "career": ["jubilación", "legado"], "finance": ["riqueza", "herencia"] }
+    }
+  },
+  "Page of Pentacles": {
+    "clarityWeight": 14,
+    "keywords": {
+      "tr": { "general": ["fırsat", "öğrenme"], "love": ["yeni tanışma", "sabır"], "career": ["staj", "eğitim"], "finance": ["küçük başlangıç", "tasarruf"] },
+      "en": { "general": ["opportunity", "learning"], "love": ["new meeting", "patience"], "career": ["internship", "training"], "finance": ["small start", "saving"] },
+      "de": { "general": ["Gelegenheit", "Lernen"], "love": ["neue Bekanntschaft", "Geduld"], "career": ["Praktikum", "Ausbildung"], "finance": ["kleiner Anfang", "Sparen"] },
+      "es": { "general": ["oportunidad", "aprendizaje"], "love": ["nuevo encuentro", "paciencia"], "career": ["pasantía", "formación"], "finance": ["pequeño comienzo", "ahorro"] }
+    }
+  },
+  "Knight of Pentacles": {
+    "clarityWeight": 16,
+    "keywords": {
+      "tr": { "general": ["güvenilirlik", "sabır"], "love": ["sadakat", "istikrar"], "career": ["çalışkanlık", "metot"], "finance": ["istikrar", "güvenlik"] },
+      "en": { "general": ["reliability", "patience"], "love": ["loyalty", "stability"], "career": ["diligence", "method"], "finance": ["stability", "security"] },
+      "de": { "general": ["Zuverlässigkeit", "Geduld"], "love": ["Treue", "Stabilität"], "career": ["Fleiß", "Methode"], "finance": ["Stabilität", "Sicherheit"] },
+      "es": { "general": ["confiabilidad", "paciencia"], "love": ["lealtad", "estabilidad"], "career": ["diligencia", "método"], "finance": ["estabilidad", "seguridad"] }
+    }
+  },
+  "Queen of Pentacles": {
+    "clarityWeight": 18,
+    "keywords": {
+      "tr": { "general": ["pratiklik", "bolluk"], "love": ["şefkat", "ev"], "career": ["verimlilik", "başarı"], "finance": ["refah", "güvenlik"] },
+      "en": { "general": ["practicality", "abundance"], "love": ["nurturing", "home"], "career": ["productivity", "success"], "finance": ["prosperity", "security"] },
+      "de": { "general": ["Praktikabilität", "Fülle"], "love": ["Fürsorge", "Heim"], "career": ["Produktivität", "Erfolg"], "finance": ["Wohlstand", "Sicherheit"] },
+      "es": { "general": ["practicidad", "abundancia"], "love": ["cuidado", "hogar"], "career": ["productividad", "éxito"], "finance": ["prosperidad", "seguridad"] }
+    }
+  },
+  "King of Pentacles": {
+    "clarityWeight": 22,
+    "keywords": {
+      "tr": { "general": ["başarı", "güvenlik"], "love": ["sağlamlık", "güven"], "career": ["liderlik", "zenginlik"], "finance": ["servet", "istikrar"] },
+      "en": { "general": ["success", "security"], "love": ["solidity", "trust"], "career": ["leadership", "wealth"], "finance": ["wealth", "stability"] },
+      "de": { "general": ["Erfolg", "Sicherheit"], "love": ["Solidität", "Vertrauen"], "career": ["Führung", "Reichtum"], "finance": ["Reichtum", "Stabilität"] },
+      "es": { "general": ["éxito", "seguridad"], "love": ["solidez", "confianza"], "career": ["liderazgo", "riqueza"], "finance": ["riqueza", "estabilidad"] }
+    }
+  }
+}

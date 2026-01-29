@@ -5,12 +5,65 @@ const OpenAI = require("openai");
 const fs = require("fs");
 const path = require("path");
 
+// Import language-specific prompts
+const { getSystemMessage, buildSinglePrompt, buildPpfPrompt, buildYesNoPrompt } = require("./prompts");
+
 const app = express();
 app.use(cors());
 app.use(express.json());
 
 const logsDir = path.join(__dirname, "data");
 const logsFilePath = path.join(logsDir, "premium-readings.json");
+
+// Data folder base path
+const dataBasePath = path.join(__dirname, "../tarot-app/data");
+
+// Load Yes/No data for all languages
+const yesNoClarityByLang = {};
+const yesNoAnswersByLang = {};
+const supportedLanguages = ['tr', 'en', 'de', 'es'];
+
+supportedLanguages.forEach(lang => {
+  // Load clarity data: data/{lang}/yesno-clarity.json
+  const clarityPath = path.join(dataBasePath, lang, "yesno-clarity.json");
+  try {
+    yesNoClarityByLang[lang] = JSON.parse(fs.readFileSync(clarityPath, "utf8"));
+    console.log(`Loaded ${lang}/yesno-clarity.json`);
+  } catch (e) {
+    console.warn(`Could not load ${lang}/yesno-clarity.json:`, e.message);
+  }
+  
+  // Load answers data: data/{lang}/yesno-answers.json
+  const answersPath = path.join(dataBasePath, lang, "yesno-answers.json");
+  try {
+    yesNoAnswersByLang[lang] = JSON.parse(fs.readFileSync(answersPath, "utf8"));
+    console.log(`Loaded ${lang}/yesno-answers.json`);
+  } catch (e) {
+    console.warn(`Could not load ${lang}/yesno-answers.json:`, e.message);
+  }
+});
+
+// Get clarity data for a specific language (fallback to TR then EN)
+const getYesNoClarityData = (language, cardName) => {
+  if (yesNoClarityByLang[language] && yesNoClarityByLang[language][cardName]) {
+    return yesNoClarityByLang[language][cardName];
+  }
+  if (yesNoClarityByLang.en && yesNoClarityByLang.en[cardName]) {
+    return yesNoClarityByLang.en[cardName];
+  }
+  return null;
+};
+
+// Get Yes/No answer based on card, orientation and language
+const getYesNoAnswer = (language, cardName, orientation) => {
+  const langAnswers = yesNoAnswersByLang[language] || yesNoAnswersByLang.en;
+  if (langAnswers && langAnswers[cardName] && langAnswers[cardName][orientation]) {
+    return langAnswers[cardName][orientation];
+  }
+  // Fallback to simple rule (should not happen if data is correct)
+  console.warn(`Answer not found for: ${language}/${cardName}/${orientation}`);
+  return orientation === "upright" ? "yes" : "no";
+};
 
 const ensureLogsFile = () => {
   if (!fs.existsSync(logsDir)) {
@@ -39,136 +92,103 @@ const openai = new OpenAI({
 
 const languageProfiles = {
   tr: {
+    code: "tr",
     nativeName: "Türkçe",
     singleLabel: "Tek Kart",
     threeLabel: "Üç Kart",
+    yesNoLabel: "Evet / Hayır",
     tone: "Modern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.",
     address: "Tüm metin 'sen' diliyle yazılacak. 'siz' kullanma.",
     singleRules:
       "Her zaman hem nextStep (1 cümle) hem journal (1 soru) üret. focusArea dışındaki alanlardan bahsetme. nextStep emir kipinde tek aksiyon olsun. journal tek soru işareti ile bitsin.",
     orientation: { upright: "Düz", reversed: "Ters" },
-    timingFormat: "X–Y hafta",
-    timingExample: "2–4 hafta",
-    timingRegex: /\d+\s*[–-]\s*\d+\s*hafta/i,
+    yesNoAnswer: { yes: "Evet", no: "Hayır" },
   },
   en: {
+    code: "en",
     nativeName: "English",
     singleLabel: "Single Card",
     threeLabel: "Three Cards",
+    yesNoLabel: "Yes / No",
     tone: "Write in a modern, direct, practical tone. Short, clear sentences.",
     address: "Use a direct 'you' voice throughout.",
     singleRules:
       "Always include nextStep (1 sentence) and journal (1 question). Do not mention areas outside focusArea. nextStep must be an imperative single action. journal must end with a single question mark.",
     orientation: { upright: "Upright", reversed: "Reversed" },
-    timingFormat: "X–Y weeks",
-    timingExample: "2–4 weeks",
-    timingRegex: /\d+\s*[–-]\s*\d+\s*weeks/i,
+    yesNoAnswer: { yes: "Yes", no: "No" },
   },
   de: {
+    code: "de",
     nativeName: "Deutsch",
     singleLabel: "Einzelkarte",
     threeLabel: "Drei Karten",
+    yesNoLabel: "Ja / Nein",
     tone: "Schreibe modern, klar und psychologisch präzise. Kurze Sätze.",
     address: "Direkte Anrede in der Du-Form.",
     singleRules:
       "Erzeuge immer nextStep (1 Satz) und journal (1 Frage). Sprich nur über focusArea. nextStep als klarer Imperativ mit einer Aktion. journal endet mit genau einem Fragezeichen.",
     orientation: { upright: "Aufrecht", reversed: "Umgekehrt" },
-    timingFormat: "X–Y Wochen",
-    timingExample: "2–4 Wochen",
-    timingRegex: /\d+\s*[–-]\s*\d+\s*Wochen/i,
+    yesNoAnswer: { yes: "Ja", no: "Nein" },
   },
   es: {
+    code: "es",
     nativeName: "Español",
     singleLabel: "Una carta",
     threeLabel: "Tres cartas",
+    yesNoLabel: "Sí / No",
     tone: "Escribe con un tono moderno, directo y psicológico. Frases cortas.",
     address: "Usa la segunda persona (tú) en todo el texto.",
     singleRules:
       "Incluye siempre nextStep (1 frase) y journal (1 pregunta). No menciones áreas fuera de focusArea. nextStep debe ser un imperativo con una sola acción. journal termina con un solo signo de interrogación.",
     orientation: { upright: "Derecha", reversed: "Invertida" },
-    timingFormat: "X–Y semanas",
-    timingExample: "2–4 semanas",
-    timingRegex: /\d+\s*[–-]\s*\d+\s*semanas/i,
+    yesNoAnswer: { yes: "Sí", no: "No" },
   },
 };
 
 const allowedFocusAreas = ["general", "love", "career", "finance"];
+const allowedLanguages = ["tr", "en", "de", "es"];
 
-const buildSinglePrompt = ({ profile, cardName, orientationLabel, focusArea }) => {
-  return `
-${profile.tone}
-${profile.address}
-${profile.singleRules}
-Dil: ${profile.nativeName}. Başlık ve tüm metin bu dilde olacak.
-Başlık formatı: "${cardName} — ${profile.singleLabel}". Başlıkta kart adı mutlaka geçsin.
-Odak alanı: ${focusArea}. Yalnızca bu alanın perspektifinden yaz.
-Kart: ${cardName} (${orientationLabel})
+// Prompts are now in separate files: backend/prompts/{tr,en,de,es}.js
 
-JSON dışında hiçbir şey döndürme. Tek bir JSON object ver:
-{
-  "title": "${cardName} — ${profile.singleLabel}",
-  "overall": "2–3 cümle",
-  "focusArea": "${focusArea}",
-  "deepDive": "2–4 cümle",
-  "shadow": "1 cümle",
-  "nextStep": "1 cümle (hemen uygulanabilir aksiyon)",
-  "journal": "1 soru"
-}
-`.trim();
+// Calculate confidence for Yes/No (deterministic)
+// clarityWeight tüm dillerde aynı
+const calculateConfidence = (language, cardName, orientation) => {
+  const clarityData = getYesNoClarityData(language, cardName) || { clarityWeight: 10 };
+  const base = 55;
+  const orientationAdj = orientation === "upright" ? 5 : -5;
+  return Math.min(90, Math.max(55, base + clarityData.clarityWeight + orientationAdj));
 };
 
-const buildPpfPrompt = ({
-  profile,
-  pastCard,
-  presentCard,
-  futureCard,
-  pastOrientation,
-  presentOrientation,
-  futureOrientation,
-}) => {
-  return `
-${profile.tone}
-${profile.address}
-Dil: ${profile.nativeName}. Başlık ve tüm metin bu dilde olacak.
-Başlık formatı: "${pastCard}·${presentCard}·${futureCard} — ${profile.threeLabel}".
-Kartlar:
-- Geçmiş: ${pastCard} (${pastOrientation})
-- Şimdi: ${presentCard} (${presentOrientation})
-- Gelecek: ${futureCard} (${futureOrientation})
-
-Kurallar:
-- story: 4–6 cümle, kart isimleri story içinde en fazla 1 kez geçsin.
-- overall: 3–4 cümle (özet + gerilim + yön).
-- timing formatı: ${profile.timingFormat}
-- keywords tam 3 adet, mood tek kelime.
-
-JSON dışında hiçbir şey döndürme. Tek bir JSON object ver:
-{
-  "title": "${pastCard}·${presentCard}·${futureCard} — ${profile.threeLabel}",
-  "overall": "3–4 cümle",
-  "throughline": "1 cümle",
-  "story": "4–6 cümle",
-  "beats": {
-    "past": "1–2 cümle",
-    "present": "1–2 cümle",
-    "future": "1–2 cümle"
-  },
-  "choice": {
-    "pathA": "1 cümle",
-    "pathB": "1 cümle"
-  },
-  "keywords": ["...", "...", "..."],
-  "mood": "tek kelime",
-  "timing": "${profile.timingExample}",
-  "nextStep": "1 cümle"
-}
-`.trim();
+// Get keywords for Yes/No explanation (fallback when shortReason not available)
+const getYesNoKeywords = (cardName, language, focusArea) => {
+  const clarityData = getYesNoClarityData(language, cardName);
+  if (!clarityData || !clarityData.keywords) {
+    return ["enerji", "işaret"];
+  }
+  return clarityData.keywords[focusArea] || clarityData.keywords.general || ["enerji", "işaret"];
 };
 
-const SYSTEM_MESSAGE =
-  "You are a professional tarot reader. Return only a single JSON object. No markdown, no extra text.";
-const RETRY_SYSTEM_MESSAGE =
-  "Your previous response was invalid. Return only a single JSON object with all required fields. No extra text.";
+// FREE Yes/No explanation templates (deterministic fallback)
+const yesNoFreeTemplates = {
+  tr: {
+    upright: (kw1, kw2) => `Kart dik geldiği için yanıt Evet. ${kw1}, ${kw2} teması öne çıkıyor.`,
+    reversed: (kw1, kw2) => `Kart ters geldiği için yanıt Hayır. ${kw1}, ${kw2} konusunda dikkat gerekiyor.`
+  },
+  en: {
+    upright: (kw1, kw2) => `Card is upright, the answer is Yes. ${kw1}, ${kw2} theme emerges.`,
+    reversed: (kw1, kw2) => `Card is reversed, the answer is No. Caution needed regarding ${kw1}, ${kw2}.`
+  },
+  de: {
+    upright: (kw1, kw2) => `Die Karte ist aufrecht, die Antwort ist Ja. ${kw1}, ${kw2} Thema tritt hervor.`,
+    reversed: (kw1, kw2) => `Die Karte ist umgekehrt, die Antwort ist Nein. Vorsicht bei ${kw1}, ${kw2}.`
+  },
+  es: {
+    upright: (kw1, kw2) => `La carta está derecha, la respuesta es Sí. El tema de ${kw1}, ${kw2} emerge.`,
+    reversed: (kw1, kw2) => `La carta está invertida, la respuesta es No. Precaución con ${kw1}, ${kw2}.`
+  }
+};
+
+// System messages are now in separate files: backend/prompts/{tr,en,de,es}.js
 
 const splitSentences = (text) => {
   const matches = text.match(/[^.!?]+[.!?]+/g);
@@ -253,7 +273,7 @@ const validateSingle = (data) => {
 
 const validatePpf = (data, profile) => {
   if (!data || typeof data !== "object") return false;
-  const required = ["title", "overall", "throughline", "story", "beats", "choice", "keywords", "mood", "timing", "nextStep"];
+  const required = ["title", "overall", "throughline", "story", "beats", "choice", "keywords", "mood", "nextStep"];
   for (const key of required) {
     if (data[key] === undefined || data[key] === null) return false;
   }
@@ -262,7 +282,6 @@ const validatePpf = (data, profile) => {
   if (typeof data.throughline !== "string" || !data.throughline.trim()) return false;
   if (typeof data.story !== "string" || !data.story.trim()) return false;
   if (typeof data.mood !== "string" || !data.mood.trim()) return false;
-  if (typeof data.timing !== "string" || !data.timing.trim()) return false;
   if (typeof data.nextStep !== "string" || !data.nextStep.trim()) return false;
 
   if (!data.beats || typeof data.beats !== "object") return false;
@@ -272,7 +291,6 @@ const validatePpf = (data, profile) => {
   if (!Array.isArray(data.keywords) || data.keywords.length !== 3) return false;
   if (!data.keywords.every((k) => typeof k === "string" && k.trim())) return false;
   if (/\s/.test(data.mood.trim())) return false;
-  if (!profile.timingRegex.test(data.timing.trim())) return false;
 
   const sentenceCount = splitSentences(data.story).length;
   if (sentenceCount < 4) return false;
@@ -288,12 +306,138 @@ const parseJsonFromContent = (content) => {
 app.post("/api/reading", async (req, res) => {
   try {
     const { language, spread, card, cards } = req.body;
-    const profile = languageProfiles[language] || languageProfiles.en;
+    
+    // Strict language validation
+    if (!allowedLanguages.includes(language)) {
+      return res.status(400).json({
+        error: "Invalid language",
+        message: `Language must be one of: ${allowedLanguages.join(", ")}`,
+        received: language,
+      });
+    }
+    
+    const profile = languageProfiles[language];
     const requestedFocusArea =
-      spread === "single_card" ? req.body.focusArea : null;
+      (spread === "single_card" || spread === "yes_no") ? req.body.focusArea : null;
     const focusArea = allowedFocusAreas.includes(requestedFocusArea)
       ? requestedFocusArea
       : "general";
+    const isPremium = req.body.isPremium === true;
+    
+    // YES/NO SPREAD HANDLER
+    if (spread === "yes_no" && card) {
+      const answer = getYesNoAnswer(language, card.name, card.orientation);
+      const confidence = calculateConfidence(language, card.name, card.orientation);
+      const orientationLabel = card.orientation === "upright" 
+        ? profile.orientation.upright 
+        : profile.orientation.reversed;
+      
+      // FREE: Deterministic response
+      if (!isPremium) {
+        let explanation = "";
+        let keywords = [];
+        
+        const clarityData = getYesNoClarityData(language, card.name);
+        
+        if (clarityData && clarityData.shortReason) {
+          // Use language-specific shortReason + keywords
+          explanation = clarityData.shortReason[card.orientation];
+          keywords = clarityData.keywords[focusArea] || clarityData.keywords.general || [];
+        } else {
+          // Fallback: Use template system
+          keywords = getYesNoKeywords(card.name, language, focusArea);
+          const template = yesNoFreeTemplates[language] || yesNoFreeTemplates.en;
+          explanation = template[card.orientation](keywords[0], keywords[1]);
+        }
+        
+        const freeResponse = {
+          title: `${card.name} — ${profile.yesNoLabel}`,
+          focusArea,
+          answer,
+          confidence,
+          explanation,
+          keywords, // focusArea'ya göre keywords
+        };
+        
+        appendLog({
+          timestamp: new Date().toISOString(),
+          type: "yes_no_free",
+          language,
+          focusArea,
+          card: { name: card.name, orientation: card.orientation },
+          response: freeResponse,
+        });
+        
+        return res.json(freeResponse);
+      }
+      
+      // PREMIUM: GPT call for explanation
+      const yesNoPrompt = buildYesNoPrompt(language, {
+        profile,
+        cardName: card.name,
+        orientationLabel,
+        focusArea,
+        answer,
+        confidence,
+      });
+      
+      // Get keywords from JSON (same as FREE)
+      const clarityData = getYesNoClarityData(language, card.name);
+      const keywords = clarityData?.keywords?.[focusArea] || clarityData?.keywords?.general || [];
+      
+      try {
+        const systemMessage = getSystemMessage(language);
+        const completion = await openai.chat.completions.create({
+          model: "gpt-4o",
+          messages: [
+            { role: "system", content: systemMessage },
+            { role: "user", content: yesNoPrompt },
+          ],
+          temperature: 0.7,
+          max_tokens: 200,
+        });
+        
+        const content = completion.choices[0]?.message?.content || "";
+        const parsed = parseJsonFromContent(content);
+        
+        const premiumResponse = {
+          title: `${card.name} — ${profile.yesNoLabel}`,
+          focusArea,
+          answer,
+          confidence, // Always deterministic (netlik derecesi)
+          explanation: parsed.explanation || "No explanation available.",
+          keywords, // focusArea'ya göre keywords (JSON'dan)
+        };
+        
+        appendLog({
+          timestamp: new Date().toISOString(),
+          type: "yes_no_premium",
+          language,
+          focusArea,
+          card: { name: card.name, orientation: card.orientation },
+          prompt: yesNoPrompt,
+          rawResponse: content,
+          response: premiumResponse,
+        });
+        
+        return res.json(premiumResponse);
+      } catch (error) {
+        console.error("Yes/No Premium error:", error);
+        // Fallback to FREE response on error
+        const keywords = getYesNoKeywords(card.name, language, focusArea);
+        const template = yesNoFreeTemplates[language] || yesNoFreeTemplates.en;
+        const explanation = template[card.orientation](keywords[0], keywords[1]);
+        
+        return res.json({
+          title: `${card.name} — ${profile.yesNoLabel}`,
+          focusArea,
+          answer,
+          confidence,
+          explanation,
+        });
+      }
+    }
+    
     const structureId = spread === "single_card" ? "single_v15_minimal" : "ppf_v15_story";
 
     let prompt = "";
@@ -301,7 +445,7 @@ app.post("/api/reading", async (req, res) => {
     if (spread === "single_card" && card) {
       const orientationLabel =
         card.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
-      prompt = buildSinglePrompt({
+      prompt = buildSinglePrompt(language, {
         profile,
         cardName: card.name,
         orientationLabel,
@@ -323,7 +467,7 @@ app.post("/api/reading", async (req, res) => {
           ? profile.orientation.upright
           : profile.orientation.reversed;
 
-      prompt = buildPpfPrompt({
+      prompt = buildPpfPrompt(language, {
         profile,
         pastCard: past?.name || "?",
         presentCard: present?.name || "?",
@@ -360,8 +504,11 @@ app.post("/api/reading", async (req, res) => {
 
     let jsonResponse;
     let rawContent = "";
+    const systemMessage = getSystemMessage(language);
+    const retrySystemMessage = getSystemMessage(language, true);
+    
     try {
-      const firstAttempt = await runAttempt(SYSTEM_MESSAGE);
+      const firstAttempt = await runAttempt(systemMessage);
       jsonResponse = firstAttempt.parsed;
       rawContent = firstAttempt.content;
       const valid =
@@ -369,7 +516,7 @@ app.post("/api/reading", async (req, res) => {
           ? validateSingle(jsonResponse)
           : validatePpf(jsonResponse, profile);
       if (!valid) {
-        const retryAttempt = await runAttempt(RETRY_SYSTEM_MESSAGE);
+        const retryAttempt = await runAttempt(retrySystemMessage);
         jsonResponse = retryAttempt.parsed;
         rawContent = retryAttempt.content;
         const validRetry =

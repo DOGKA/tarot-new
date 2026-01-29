@@ -15,6 +15,7 @@ export default function RootLayout() {
             <Stack.Screen name="pick/[spread]" options={{ headerShown: false }} />
             <Stack.Screen name="result" options={{ headerShown: false }} />
             <Stack.Screen name="premium-result" options={{ headerShown: false }} />
+            <Stack.Screen name="yesno-result" options={{ headerShown: false }} />
           </Stack>
           <StatusBar style="light" />
         </AppProvider>

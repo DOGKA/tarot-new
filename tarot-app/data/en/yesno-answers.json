@@ -1,0 +1,314 @@
+{
+  "The Fool": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Magician": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The High Priestess": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "The Empress": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Emperor": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Hierophant": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Lovers": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Chariot": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Strength": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Hermit": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Wheel of Fortune": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Justice": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Hanged Man": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Death": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Temperance": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Devil": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "The Tower": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "The Star": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The Moon": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "The Sun": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Judgement": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "The World": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ace of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Two of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Three of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Four of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Five of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Six of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Seven of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Eight of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Nine of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ten of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Page of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Knight of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Queen of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "King of Wands": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ace of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Two of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Three of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Four of Cups": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Five of Cups": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Six of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Seven of Cups": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Eight of Cups": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Nine of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ten of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Page of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Knight of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Queen of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "King of Cups": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ace of Swords": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Two of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Three of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Four of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Five of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Six of Swords": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Seven of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Eight of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Nine of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Ten of Swords": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Page of Swords": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Knight of Swords": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Queen of Swords": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "King of Swords": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ace of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Two of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Three of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Four of Pentacles": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Five of Pentacles": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Six of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Seven of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Eight of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Nine of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ten of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Page of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Knight of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Queen of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "King of Pentacles": {
+    "upright": "yes",
+    "reversed": "no"
+  }
+}

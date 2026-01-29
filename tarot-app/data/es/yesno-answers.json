@@ -1,0 +1,314 @@
+{
+  "El Loco": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Mago": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "La Sacerdotisa": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "La Emperatriz": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Emperador": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Sumo Sacerdote": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Los Enamorados": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Carro": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "La Fuerza": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Ermitaño": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "La Rueda de la Fortuna": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "La Justicia": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Colgado": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "La Muerte": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "La Templanza": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Diablo": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "La Torre": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "La Estrella": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "La Luna": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "El Sol": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Juicio": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "El Mundo": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Dos de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tres de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Cuatro de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Cinco de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Seis de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Siete de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ocho de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Nueve de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Diez de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sota de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Caballo de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Reina de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Rey de Bastos": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Dos de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tres de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Cuatro de Copas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Cinco de Copas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Seis de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Siete de Copas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Ocho de Copas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Nueve de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Diez de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sota de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Caballo de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Reina de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Rey de Copas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As de Espadas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Dos de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Tres de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Cuatro de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Cinco de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Seis de Espadas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Siete de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Ocho de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Nueve de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Diez de Espadas": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Sota de Espadas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Caballo de Espadas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Reina de Espadas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Rey de Espadas": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Dos de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tres de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Cuatro de Oros": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Cinco de Oros": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Seis de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Siete de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ocho de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Nueve de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Diez de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sota de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Caballo de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Reina de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Rey de Oros": {
+    "upright": "yes",
+    "reversed": "no"
+  }
+}

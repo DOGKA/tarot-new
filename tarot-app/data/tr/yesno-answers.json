@@ -1,0 +1,314 @@
+{
+  "Deli": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Büyücü": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Azize": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "İmparatoriçe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "İmparator": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Aziz": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Aşıklar": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Savaş Arabası": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Güç": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ermiş": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kader Çarkı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Adalet": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Asılan Adam": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Ölüm": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Denge": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Şeytan": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Yıkılan Kule": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Yıldız": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ay": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Güneş": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Mahkeme": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Dünya": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Ası": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek İkilisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Üçlüsü": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Dörtlüsü": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Beşlisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Altılısı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Yedilisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Sekizlisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Dokuzlusu": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Onlusu": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Prensi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Şövalyesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Kraliçesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Değnek Kralı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Ası": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa İkilisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Üçlüsü": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Dörtlüsü": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kupa Beşlisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kupa Altılısı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Yedilisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kupa Sekizlisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kupa Dokuzlusu": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Onlusu": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Prensi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Şövalyesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Kraliçesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kupa Kralı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kılıç Ası": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kılıç İkilisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Üçlüsü": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Dörtlüsü": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Beşlisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Altılısı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kılıç Yedilisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Sekizlisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Dokuzlusu": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Onlusu": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Kılıç Prensi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kılıç Şövalyesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kılıç Kraliçesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kılıç Kralı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Ası": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım İkilisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Üçlüsü": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Dörtlüsü": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Tılsım Beşlisi": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Tılsım Altılısı": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Yedilisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Sekizlisi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Dokuzlusu": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Onlusu": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Prensi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Şövalyesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Kraliçesi": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Tılsım Kralı": {
+    "upright": "yes",
+    "reversed": "no"
+  }
+}

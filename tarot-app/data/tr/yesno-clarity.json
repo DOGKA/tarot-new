@@ -1,0 +1,1952 @@
+{
+  "Deli": {
+    "clarityWeight": 15,
+    "keywords": {
+      "general": [
+        "başlangıç",
+        "özgürlük"
+      ],
+      "love": [
+        "macera",
+        "spontanlık"
+      ],
+      "career": [
+        "risk",
+        "yenilik"
+      ],
+      "finance": [
+        "fırsat",
+        "kumar"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; yeni bir sayfa açmak için uygun bir eşiktesin.",
+      "reversed": "Hayır; düşünmeden atılan adım sonradan uğraştırır."
+    }
+  },
+  "Büyücü": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "güç",
+        "yetenek"
+      ],
+      "love": [
+        "çekim",
+        "iletişim"
+      ],
+      "career": [
+        "beceri",
+        "başarı"
+      ],
+      "finance": [
+        "fırsat",
+        "kaynak"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; elindeki imkanlar niyetini gerçeğe çevirmeye yeter.",
+      "reversed": "Hayır; niyet var ama hazırlık dağınık, önce toparla."
+    }
+  },
+  "Azize": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "sezgi",
+        "gizem"
+      ],
+      "love": [
+        "sır",
+        "derinlik"
+      ],
+      "career": [
+        "sabır",
+        "bilgi"
+      ],
+      "finance": [
+        "bekleme",
+        "gizli"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; perde arkasında kalanlar var, acele hüküm verme.",
+      "reversed": "Hayır; iç sesin uyarıyor, ama tablo hâlâ bulanık."
+    }
+  },
+  "İmparatoriçe": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "bereket",
+        "bolluk"
+      ],
+      "love": [
+        "aşk",
+        "şefkat"
+      ],
+      "career": [
+        "yaratıcılık",
+        "büyüme"
+      ],
+      "finance": [
+        "bolluk",
+        "artış"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; destek, bereket ve büyüme ihtimali yüksek.",
+      "reversed": "Hayır; ihmal edilen bir alan sonucu kesiyor."
+    }
+  },
+  "İmparator": {
+    "clarityWeight": 27,
+    "keywords": {
+      "general": [
+        "otorite",
+        "düzen"
+      ],
+      "love": [
+        "güven",
+        "koruma"
+      ],
+      "career": [
+        "liderlik",
+        "kontrol"
+      ],
+      "finance": [
+        "istikrar",
+        "güç"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; net çerçeve kurarsan kontrol sende kalır.",
+      "reversed": "Hayır; güç savaşı ya da katılık ilerlemeyi bozar."
+    }
+  },
+  "Aziz": {
+    "clarityWeight": 15,
+    "keywords": {
+      "general": [
+        "gelenek",
+        "rehberlik"
+      ],
+      "love": [
+        "bağlılık",
+        "değerler"
+      ],
+      "career": [
+        "mentorluk",
+        "eğitim"
+      ],
+      "finance": [
+        "gelenek",
+        "kural"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; bilinen yöntem ve doğru rehberlik iş görür.",
+      "reversed": "Hayır; mevcut kural seti sana uymuyor, yol yeniden çizilmeli."
+    }
+  },
+  "Aşıklar": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "seçim",
+        "uyum"
+      ],
+      "love": [
+        "aşk",
+        "birlik"
+      ],
+      "career": [
+        "ortaklık",
+        "karar"
+      ],
+      "finance": [
+        "seçim",
+        "denge"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; uyum yakalanır, seçim kalpten yapılırsa.",
+      "reversed": "Hayır; ikilem büyüyor, netleşmeden adım atma."
+    }
+  },
+  "Savaş Arabası": {
+    "clarityWeight": 28,
+    "keywords": {
+      "general": [
+        "zafer",
+        "irade"
+      ],
+      "love": [
+        "ilerleme",
+        "kararlılık"
+      ],
+      "career": [
+        "başarı",
+        "motivasyon"
+      ],
+      "finance": [
+        "kazanç",
+        "ilerleme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; irade ve disiplinle hedefe varılır.",
+      "reversed": "Hayır; direksiyon kaçıyor, yön dağılmaya açık."
+    }
+  },
+  "Güç": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "güç",
+        "cesaret"
+      ],
+      "love": [
+        "sabır",
+        "şefkat"
+      ],
+      "career": [
+        "dayanıklılık",
+        "azim"
+      ],
+      "finance": [
+        "kontrol",
+        "sabır"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; sakin güçle ilerlersen sonuç alırsın.",
+      "reversed": "Hayır; özgüven düşmüş, baskıyla değil sabırla toparlanır."
+    }
+  },
+  "Ermiş": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "içe dönüş",
+        "arayış"
+      ],
+      "love": [
+        "yalnızlık",
+        "düşünce"
+      ],
+      "career": [
+        "analiz",
+        "planlama"
+      ],
+      "finance": [
+        "tasarruf",
+        "inceleme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; içe dönüp düşünmeden net bir cevap çıkmaz.",
+      "reversed": "Hayır; yalnızlaşmak çözüm değil, doğru kişiden fikir al."
+    }
+  },
+  "Kader Çarkı": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "şans",
+        "döngü"
+      ],
+      "love": [
+        "kader",
+        "değişim"
+      ],
+      "career": [
+        "fırsat",
+        "dönüm"
+      ],
+      "finance": [
+        "şans",
+        "dönüşüm"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; şartlar lehine dönebilir, fırsat anını kollayorsun.",
+      "reversed": "Hayır; zamanlama ters, aynı döngü tekrar edebilir."
+    }
+  },
+  "Adalet": {
+    "clarityWeight": 25,
+    "keywords": {
+      "general": [
+        "adalet",
+        "denge"
+      ],
+      "love": [
+        "dürüstlük",
+        "eşitlik"
+      ],
+      "career": [
+        "hak",
+        "sözleşme"
+      ],
+      "finance": [
+        "denge",
+        "kural"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; adil ve doğru olan taraf kazanır.",
+      "reversed": "Hayır; denge bozulmuş, eksik bilgiyle hüküm vermek riskli."
+    }
+  },
+  "Asılan Adam": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "bekleme",
+        "perspektif"
+      ],
+      "love": [
+        "sabır",
+        "fedakarlık"
+      ],
+      "career": [
+        "duraklama",
+        "bakış"
+      ],
+      "finance": [
+        "erteleme",
+        "değerlendirme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; beklemek ve bakış açısını değiştirmek gerekiyor.",
+      "reversed": "Hayır; zorlayınca açılmıyor, inat uzatır."
+    }
+  },
+  "Ölüm": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "dönüşüm",
+        "son"
+      ],
+      "love": [
+        "kapanış",
+        "yenilenme"
+      ],
+      "career": [
+        "değişim",
+        "bitiş"
+      ],
+      "finance": [
+        "tasfiye",
+        "yeniden"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; eski kapanmadan yeniye kapı açılmaz.",
+      "reversed": "Hayır; değişime direnç işi geciktiriyor."
+    }
+  },
+  "Denge": {
+    "clarityWeight": 15,
+    "keywords": {
+      "general": [
+        "denge",
+        "uyum"
+      ],
+      "love": [
+        "sabır",
+        "ılımlılık"
+      ],
+      "career": [
+        "uyum",
+        "işbirliği"
+      ],
+      "finance": [
+        "denge",
+        "tasarruf"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; dengeyi kurarsan süreç kendiliğinden akar.",
+      "reversed": "Hayır; ölçü kaçmış, önce ayar tuttur."
+    }
+  },
+  "Şeytan": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "bağımlılık",
+        "kısıtlama"
+      ],
+      "love": [
+        "tutku",
+        "bağ"
+      ],
+      "career": [
+        "tuzak",
+        "zorlama"
+      ],
+      "finance": [
+        "borç",
+        "aşırılık"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; bağlayan bir alışkanlık ya da çıkar ilişkisi var.",
+      "reversed": "Hayır; çözülme başlıyor ama henüz güvenli değil."
+    }
+  },
+  "Yıkılan Kule": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "yıkım",
+        "değişim"
+      ],
+      "love": [
+        "kriz",
+        "ayrılık"
+      ],
+      "career": [
+        "çöküş",
+        "sarsıntı"
+      ],
+      "finance": [
+        "kayıp",
+        "şok"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; ani bir kırılma planı altüst edebilir.",
+      "reversed": "Hayır; sarsıntının etkisi sürüyor, temkin şart."
+    }
+  },
+  "Yıldız": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "umut",
+        "ilham"
+      ],
+      "love": [
+        "iyileşme",
+        "açıklık"
+      ],
+      "career": [
+        "vizyon",
+        "potansiyel"
+      ],
+      "finance": [
+        "umut",
+        "gelecek"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; umut var ve yol yavaş yavaş açılıyor.",
+      "reversed": "Hayır; ışık sönmüyor ama önce inancı tazele."
+    }
+  },
+  "Ay": {
+    "clarityWeight": 3,
+    "keywords": {
+      "general": [
+        "belirsizlik",
+        "sezgi"
+      ],
+      "love": [
+        "sis",
+        "kuşku"
+      ],
+      "career": [
+        "muğlaklık",
+        "gizem"
+      ],
+      "finance": [
+        "risk",
+        "yanılsama"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; sis var, şu an net karar zamanı değil.",
+      "reversed": "Hayır; bazı şeyler ortaya çıkıyor ama henüz tam aydınlık değil."
+    }
+  },
+  "Güneş": {
+    "clarityWeight": 30,
+    "keywords": {
+      "general": [
+        "başarı",
+        "mutluluk"
+      ],
+      "love": [
+        "neşe",
+        "birlik"
+      ],
+      "career": [
+        "zafer",
+        "tanınma"
+      ],
+      "finance": [
+        "bolluk",
+        "kazanç"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; sonuç aydınlık, olumlu gelişme görünür.",
+      "reversed": "Hayır; gecikme var, şartlar henüz olgunlaşmadı."
+    }
+  },
+  "Mahkeme": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "uyanış",
+        "karar"
+      ],
+      "love": [
+        "yenilenme",
+        "af"
+      ],
+      "career": [
+        "değerlendirme",
+        "terfi"
+      ],
+      "finance": [
+        "hesap",
+        "sonuç"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; karar netleşir, geçmişin hesabı kapanır.",
+      "reversed": "Hayır; erteleme ve kararsızlık aynı noktada tutar."
+    }
+  },
+  "Dünya": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "tamamlanma",
+        "başarı"
+      ],
+      "love": [
+        "bütünlük",
+        "tatmin"
+      ],
+      "career": [
+        "zirve",
+        "başarı"
+      ],
+      "finance": [
+        "refah",
+        "tamamlanma"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; süreç tamamlanır, hedefe varılır.",
+      "reversed": "Hayır; son adım eksik, bitirmeden olmaz."
+    }
+  },
+  "Değnek Ası": {
+    "clarityWeight": 25,
+    "keywords": {
+      "general": [
+        "başlangıç",
+        "enerji"
+      ],
+      "love": [
+        "tutku",
+        "çekim"
+      ],
+      "career": [
+        "fırsat",
+        "girişim"
+      ],
+      "finance": [
+        "yatırım",
+        "başlangıç"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; güçlü bir kıvılcım var, başlatmak için ideal.",
+      "reversed": "Hayır; heves var ama enerji dağınık, çabuk söner."
+    }
+  },
+  "Değnek İkilisi": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "planlama",
+        "karar"
+      ],
+      "love": [
+        "seçim",
+        "bekleyiş"
+      ],
+      "career": [
+        "strateji",
+        "ortaklık"
+      ],
+      "finance": [
+        "planlama",
+        "seçenek"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; planı netleştirirsen yol açılır.",
+      "reversed": "Hayır; acele karar erken, seçenekleri görmeden olmaz."
+    }
+  },
+  "Değnek Üçlüsü": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "ilerleme",
+        "genişleme"
+      ],
+      "love": [
+        "gelişme",
+        "büyüme"
+      ],
+      "career": [
+        "fırsat",
+        "genişleme"
+      ],
+      "finance": [
+        "yatırım",
+        "getiri"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; ufuk genişliyor, ilerleme devam eder.",
+      "reversed": "Hayır; gecikme ve aksaklıklar süreci uzatır."
+    }
+  },
+  "Değnek Dörtlüsü": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "kutlama",
+        "uyum"
+      ],
+      "love": [
+        "birlik",
+        "ev"
+      ],
+      "career": [
+        "başarı",
+        "kutlama"
+      ],
+      "finance": [
+        "istikrar",
+        "temel"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; ortam uygun, destek ve uyum var.",
+      "reversed": "Hayır; temel sağlam değil, önce düzen kur."
+    }
+  },
+  "Değnek Beşlisi": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "çatışma",
+        "rekabet"
+      ],
+      "love": [
+        "tartışma",
+        "gerilim"
+      ],
+      "career": [
+        "rekabet",
+        "mücadele"
+      ],
+      "finance": [
+        "rekabet",
+        "kayıp"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; olur ama çekişme ve rekabetle ilerler.",
+      "reversed": "Hayır; gereksiz tartışma enerjiyi tüketir."
+    }
+  },
+  "Değnek Altılısı": {
+    "clarityWeight": 26,
+    "keywords": {
+      "general": [
+        "zafer",
+        "tanınma"
+      ],
+      "love": [
+        "başarı",
+        "onay"
+      ],
+      "career": [
+        "zafer",
+        "terfi"
+      ],
+      "finance": [
+        "kazanç",
+        "başarı"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; görünür başarı ve onay ihtimali yüksek.",
+      "reversed": "Hayır; destek zayıf, alkış gecikir."
+    }
+  },
+  "Değnek Yedilisi": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "savunma",
+        "direnç"
+      ],
+      "love": [
+        "mücadele",
+        "koruma"
+      ],
+      "career": [
+        "savunma",
+        "pozisyon"
+      ],
+      "finance": [
+        "koruma",
+        "direnç"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; pozisyonunu korursan sonuç alırsın.",
+      "reversed": "Hayır; savunma düşüyor, yük tek başına ağır."
+    }
+  },
+  "Değnek Sekizlisi": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "hız",
+        "ilerleme"
+      ],
+      "love": [
+        "hızlı gelişme",
+        "hareket"
+      ],
+      "career": [
+        "hız",
+        "momentum"
+      ],
+      "finance": [
+        "hızlı getiri",
+        "akış"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; hızlı haber ve ivme gelir.",
+      "reversed": "Hayır; iletişim dağılır, işler aksar."
+    }
+  },
+  "Değnek Dokuzlusu": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "dayanıklılık",
+        "azim"
+      ],
+      "love": [
+        "sabır",
+        "güven"
+      ],
+      "career": [
+        "direnç",
+        "son adım"
+      ],
+      "finance": [
+        "koruma",
+        "dikkat"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; yorulsan da son düzlüğe girdin, dayan.",
+      "reversed": "Hayır; yorgunluk kararını bozabilir, ara ver."
+    }
+  },
+  "Değnek Onlusu": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "yük",
+        "sorumluluk"
+      ],
+      "love": [
+        "baskı",
+        "yorgunluk"
+      ],
+      "career": [
+        "aşırı iş",
+        "stres"
+      ],
+      "finance": [
+        "borç",
+        "yük"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; olur ama bedeli yük ve sorumluluk olur.",
+      "reversed": "Hayır; yük taşmıyor, sadeleştirmeden yürünmez."
+    }
+  },
+  "Değnek Prensi": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "haber",
+        "heyecan"
+      ],
+      "love": [
+        "yeni ilgi",
+        "macera"
+      ],
+      "career": [
+        "fırsat",
+        "öğrenme"
+      ],
+      "finance": [
+        "yeni gelir",
+        "haber"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; yeni bir haber ya da fırsat kapıda.",
+      "reversed": "Hayır; heves çok, istikrar az."
+    }
+  },
+  "Değnek Şövalyesi": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "aksiyon",
+        "cesaret"
+      ],
+      "love": [
+        "tutku",
+        "macera"
+      ],
+      "career": [
+        "girişim",
+        "enerji"
+      ],
+      "finance": [
+        "risk",
+        "hareket"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; cesur çıkış kapı açar, hız kazandırır.",
+      "reversed": "Hayır; fevrilik hata yaptırır, yakar yıkar."
+    }
+  },
+  "Değnek Kraliçesi": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "güven",
+        "karizma"
+      ],
+      "love": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "career": [
+        "liderlik",
+        "yaratıcılık"
+      ],
+      "finance": [
+        "bağımsızlık",
+        "başarı"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; özgüven ve çekim gücü işi taşır.",
+      "reversed": "Hayır; kıskançlık ve huzursuzluk düzeni bozar."
+    }
+  },
+  "Değnek Kralı": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "liderlik",
+        "vizyon"
+      ],
+      "love": [
+        "tutku",
+        "otorite"
+      ],
+      "career": [
+        "girişimcilik",
+        "başarı"
+      ],
+      "finance": [
+        "yatırım",
+        "liderlik"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; vizyon ve liderlikle yol alınır.",
+      "reversed": "Hayır; kontrol hırsı ters teper."
+    }
+  },
+  "Kupa Ası": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "duygusal başlangıç",
+        "aşk"
+      ],
+      "love": [
+        "yeni aşk",
+        "açılım"
+      ],
+      "career": [
+        "memnuniyet",
+        "tatmin"
+      ],
+      "finance": [
+        "duygusal tatmin",
+        "bolluk"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; kalpten bir başlangıç ve açılım var.",
+      "reversed": "Hayır; duygu karması net karar verdirmez."
+    }
+  },
+  "Kupa İkilisi": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "birlik",
+        "ortaklık"
+      ],
+      "love": [
+        "bağ",
+        "uyum"
+      ],
+      "career": [
+        "işbirliği",
+        "ortaklık"
+      ],
+      "finance": [
+        "ortaklık",
+        "anlaşma"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; karşılıklı bağ ve anlaşma mümkün.",
+      "reversed": "Hayır; denge bozulmuş, eşitlik yok."
+    }
+  },
+  "Kupa Üçlüsü": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "kutlama",
+        "arkadaşlık"
+      ],
+      "love": [
+        "sosyal",
+        "neşe"
+      ],
+      "career": [
+        "takım",
+        "başarı"
+      ],
+      "finance": [
+        "paylaşım",
+        "bolluk"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; çevreden destek, kutlama ve birliktelik var.",
+      "reversed": "Hayır; dağınık sosyal enerji işi zayıflatır."
+    }
+  },
+  "Kupa Dörtlüsü": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "kayıtsızlık",
+        "düşünce"
+      ],
+      "love": [
+        "ilgisizlik",
+        "bekleme"
+      ],
+      "career": [
+        "tatminsizlik",
+        "duraklama"
+      ],
+      "finance": [
+        "memnuniyetsizlik",
+        "bekleme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; gönül orada değil, istek düşük.",
+      "reversed": "Hayır; fırsat var ama görmezden geliyorsun."
+    }
+  },
+  "Kupa Beşlisi": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "kayıp",
+        "üzüntü"
+      ],
+      "love": [
+        "hayal kırıklığı",
+        "yas"
+      ],
+      "career": [
+        "başarısızlık",
+        "pişmanlık"
+      ],
+      "finance": [
+        "kayıp",
+        "hayal kırıklığı"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; kırgınlık ağır basıyor, toparlanma zaman ister.",
+      "reversed": "Hayır; iyileşme başlar ama acele sonuç bekleme."
+    }
+  },
+  "Kupa Altılısı": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "nostalji",
+        "hatıra"
+      ],
+      "love": [
+        "geçmiş",
+        "saflık"
+      ],
+      "career": [
+        "geçmiş bağ",
+        "tanıdık"
+      ],
+      "finance": [
+        "miras",
+        "hediye"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; geçmişten bir destek ya da sıcak bir temas gelir.",
+      "reversed": "Hayır; geçmişe takılmak ilerlemeyi keser."
+    }
+  },
+  "Kupa Yedilisi": {
+    "clarityWeight": 3,
+    "keywords": {
+      "general": [
+        "hayal",
+        "seçim"
+      ],
+      "love": [
+        "kararsızlık",
+        "fantezi"
+      ],
+      "career": [
+        "seçenek",
+        "belirsizlik"
+      ],
+      "finance": [
+        "hayal",
+        "gerçekçi değil"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; çok seçenek var, hangisi gerçek belli değil.",
+      "reversed": "Hayır; sis dağılıyor ama net seçim için biraz daha zaman var."
+    }
+  },
+  "Kupa Sekizlisi": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "ayrılık",
+        "arayış"
+      ],
+      "love": [
+        "terk",
+        "yol ayrımı"
+      ],
+      "career": [
+        "istifa",
+        "değişim"
+      ],
+      "finance": [
+        "bırakma",
+        "yeni yön"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; bu yolda devam etmek yerine uzaklaşmak daha doğru.",
+      "reversed": "Hayır; bırakmak zor ama kalmak da yorar."
+    }
+  },
+  "Kupa Dokuzlusu": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "dilek",
+        "memnuniyet"
+      ],
+      "love": [
+        "mutluluk",
+        "tatmin"
+      ],
+      "career": [
+        "başarı",
+        "tatmin"
+      ],
+      "finance": [
+        "bolluk",
+        "tatmin"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; dilek gerçekleşir, tatmin gelir.",
+      "reversed": "Hayır; beklenti şişmiş, hayal kırıklığı doğurur."
+    }
+  },
+  "Kupa Onlusu": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "mutluluk",
+        "uyum"
+      ],
+      "love": [
+        "aile",
+        "tatmin"
+      ],
+      "career": [
+        "takım uyumu",
+        "başarı"
+      ],
+      "finance": [
+        "aile refahı",
+        "istikrar"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; huzur, uyum ve tamamlanma görünür.",
+      "reversed": "Hayır; ev içi/duygusal dengede açık var."
+    }
+  },
+  "Kupa Prensi": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "mesaj",
+        "duygusal"
+      ],
+      "love": [
+        "teklif",
+        "romantik"
+      ],
+      "career": [
+        "yaratıcı fırsat",
+        "haber"
+      ],
+      "finance": [
+        "beklenmedik",
+        "küçük gelir"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; duygusal bir haber ya da tatlı bir teklif gelir.",
+      "reversed": "Hayır; hassasiyet artmış, yanlış anlaşılma kolay."
+    }
+  },
+  "Kupa Şövalyesi": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "teklif",
+        "romantik"
+      ],
+      "love": [
+        "aşık",
+        "teklif"
+      ],
+      "career": [
+        "yaratıcı proje",
+        "davet"
+      ],
+      "finance": [
+        "teklif",
+        "fırsat"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; romantik bir adım veya nazik bir yaklaşım olur.",
+      "reversed": "Hayır; söz verilip tutulmayabilir, netlik iste."
+    }
+  },
+  "Kupa Kraliçesi": {
+    "clarityWeight": 17,
+    "keywords": {
+      "general": [
+        "sezgi",
+        "şefkat"
+      ],
+      "love": [
+        "anlayış",
+        "derin bağ"
+      ],
+      "career": [
+        "empati",
+        "destek"
+      ],
+      "finance": [
+        "sezgisel",
+        "güven"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; anlayış ve şefkat çözüm getirir.",
+      "reversed": "Hayır; duygular taşmış, sağlıklı sınır şart."
+    }
+  },
+  "Kupa Kralı": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "duygusal denge",
+        "bilgelik"
+      ],
+      "love": [
+        "olgunluk",
+        "anlayış"
+      ],
+      "career": [
+        "liderlik",
+        "diplomasi"
+      ],
+      "finance": [
+        "dengeli",
+        "güvenilir"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; olgun ve dengeli duruş işi toparlar.",
+      "reversed": "Hayır; duyguyu yönetmek zor, kontrol kaçabilir."
+    }
+  },
+  "Kılıç Ası": {
+    "clarityWeight": 25,
+    "keywords": {
+      "general": [
+        "netlik",
+        "gerçek"
+      ],
+      "love": [
+        "dürüstlük",
+        "açıklık"
+      ],
+      "career": [
+        "çığır",
+        "başarı"
+      ],
+      "finance": [
+        "keskin karar",
+        "netlik"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; netlik gelir, doğru karar keskinleşir.",
+      "reversed": "Hayır; bilgi kirli, yanlış karar ihtimali yüksek."
+    }
+  },
+  "Kılıç İkilisi": {
+    "clarityWeight": 2,
+    "keywords": {
+      "general": [
+        "kararsızlık",
+        "çıkmaz"
+      ],
+      "love": [
+        "belirsizlik",
+        "bekleme"
+      ],
+      "career": [
+        "karar",
+        "denge"
+      ],
+      "finance": [
+        "belirsizlik",
+        "bekle"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; karar askıda, gerçeklerle yüzleşmek gerekiyor.",
+      "reversed": "Hayır; iç çatışma büyüyor, bir şey açığa çıkmadan olmaz."
+    }
+  },
+  "Kılıç Üçlüsü": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "kalp kırıklığı",
+        "acı"
+      ],
+      "love": [
+        "ayrılık",
+        "ihanet"
+      ],
+      "career": [
+        "hayal kırıklığı",
+        "çatışma"
+      ],
+      "finance": [
+        "kayıp",
+        "stres"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; kırılma ve acı var, şu an desteklemez.",
+      "reversed": "Hayır; yara kapanıyor ama izleri sürer."
+    }
+  },
+  "Kılıç Dörtlüsü": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "dinlenme",
+        "toparlanma"
+      ],
+      "love": [
+        "ara",
+        "düşünce"
+      ],
+      "career": [
+        "mola",
+        "planlama"
+      ],
+      "finance": [
+        "bekleme",
+        "değerlendirme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; durup dinlenmek, toparlanmak gerekiyor.",
+      "reversed": "Hayır; zihin hâlâ yorgun, acele çıkış zarar verir."
+    }
+  },
+  "Kılıç Beşlisi": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "çatışma",
+        "kayıp"
+      ],
+      "love": [
+        "tartışma",
+        "ego"
+      ],
+      "career": [
+        "rekabet",
+        "haksızlık"
+      ],
+      "finance": [
+        "kayıp",
+        "dolandırıcılık"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; kazansan da kaybettirir, bedeli yüksek.",
+      "reversed": "Hayır; gerilim azalır ama güven hemen dönmez."
+    }
+  },
+  "Kılıç Altılısı": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "geçiş",
+        "iyileşme"
+      ],
+      "love": [
+        "uzaklaşma",
+        "yeni başlangıç"
+      ],
+      "career": [
+        "değişim",
+        "taşınma"
+      ],
+      "finance": [
+        "geçiş",
+        "iyileşme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; daha sakin bir yere geçiş mümkün.",
+      "reversed": "Hayır; geçmişe tutunmak ilerlemeyi engeller."
+    }
+  },
+  "Kılıç Yedilisi": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "hile",
+        "kaçış"
+      ],
+      "love": [
+        "aldatma",
+        "gizlilik"
+      ],
+      "career": [
+        "strateji",
+        "dikkat"
+      ],
+      "finance": [
+        "hırsızlık",
+        "dikkat"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; gizli niyetler var, güven zedelenir.",
+      "reversed": "Hayır; saklanan açığa çıkar ama bu da sarsar."
+    }
+  },
+  "Kılıç Sekizlisi": {
+    "clarityWeight": 4,
+    "keywords": {
+      "general": [
+        "sıkışmışlık",
+        "kısıtlama"
+      ],
+      "love": [
+        "tuzak",
+        "korku"
+      ],
+      "career": [
+        "çıkmaz",
+        "blokaj"
+      ],
+      "finance": [
+        "kısıtlama",
+        "borç"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; kısıtlı hissettirir, el kol bağlı.",
+      "reversed": "Hayır; kapı aralanıyor ama tam özgürlük değil."
+    }
+  },
+  "Kılıç Dokuzlusu": {
+    "clarityWeight": 5,
+    "keywords": {
+      "general": [
+        "kaygı",
+        "korku"
+      ],
+      "love": [
+        "endişe",
+        "uykusuzluk"
+      ],
+      "career": [
+        "stres",
+        "kaygı"
+      ],
+      "finance": [
+        "borç kaygısı",
+        "stres"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; kaygı ve kuruntu kararını gölgeler.",
+      "reversed": "Hayır; yük azalır ama zihin hemen susmaz."
+    }
+  },
+  "Kılıç Onlusu": {
+    "clarityWeight": 8,
+    "keywords": {
+      "general": [
+        "son",
+        "dipnokta"
+      ],
+      "love": [
+        "bitiş",
+        "ihanet"
+      ],
+      "career": [
+        "işten çıkarma",
+        "son"
+      ],
+      "finance": [
+        "iflas",
+        "son"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; keskin bir bitiş var, daha fazlası zorlar.",
+      "reversed": "Hayır; dipten dönüş başlar ama süreç yavaş."
+    }
+  },
+  "Kılıç Prensi": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "haber",
+        "merak"
+      ],
+      "love": [
+        "iletişim",
+        "keşif"
+      ],
+      "career": [
+        "araştırma",
+        "öğrenme"
+      ],
+      "finance": [
+        "bilgi",
+        "haber"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; dikkatli soruşturma ve uyanıklık işe yarar.",
+      "reversed": "Hayır; dedikodu/yanlış bilgi işi bozar."
+    }
+  },
+  "Kılıç Şövalyesi": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "hız",
+        "kararlılık"
+      ],
+      "love": [
+        "acele",
+        "direkt"
+      ],
+      "career": [
+        "hızlı aksiyon",
+        "agresif"
+      ],
+      "finance": [
+        "hızlı karar",
+        "risk"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; hızlı ve net hamleyle sonuç alınır.",
+      "reversed": "Hayır; düşünmeden saldırmak ters teper."
+    }
+  },
+  "Kılıç Kraliçesi": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "netlik",
+        "bağımsızlık"
+      ],
+      "love": [
+        "dürüstlük",
+        "sınırlar"
+      ],
+      "career": [
+        "analiz",
+        "objektiflik"
+      ],
+      "finance": [
+        "mantık",
+        "keskin"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; mantık ve sınır koymak doğru sonucu getirir.",
+      "reversed": "Hayır; sertlik ve kırıcılık kapıları kapatır."
+    }
+  },
+  "Kılıç Kralı": {
+    "clarityWeight": 20,
+    "keywords": {
+      "general": [
+        "otorite",
+        "adalet"
+      ],
+      "love": [
+        "mantık",
+        "dürüstlük"
+      ],
+      "career": [
+        "liderlik",
+        "karar"
+      ],
+      "finance": [
+        "strateji",
+        "analiz"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; kuralı koyup adil yönetirsen olur.",
+      "reversed": "Hayır; otorite yanlış kullanılırsa zarar verir."
+    }
+  },
+  "Tılsım Ası": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "fırsat",
+        "başlangıç"
+      ],
+      "love": [
+        "güvenlik",
+        "istikrar"
+      ],
+      "career": [
+        "iş fırsatı",
+        "teklif"
+      ],
+      "finance": [
+        "para",
+        "yatırım"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; somut ve sağlam bir fırsat var.",
+      "reversed": "Hayır; maddi zemin oynak, risk büyür."
+    }
+  },
+  "Tılsım İkilisi": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "denge",
+        "uyum"
+      ],
+      "love": [
+        "denge kurma",
+        "çoklu"
+      ],
+      "career": [
+        "çoklu görev",
+        "denge"
+      ],
+      "finance": [
+        "bütçe",
+        "denge"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; denge kurulur, idare edilebilir.",
+      "reversed": "Hayır; yük fazla, bir yerden taşar."
+    }
+  },
+  "Tılsım Üçlüsü": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "işbirliği",
+        "ustalık"
+      ],
+      "love": [
+        "ortak çalışma",
+        "uyum"
+      ],
+      "career": [
+        "takım çalışması",
+        "tanınma"
+      ],
+      "finance": [
+        "proje",
+        "yatırım"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; doğru ekip ve planla iş çıkar.",
+      "reversed": "Hayır; koordinasyon bozuk, kalite düşer."
+    }
+  },
+  "Tılsım Dörtlüsü": {
+    "clarityWeight": 10,
+    "keywords": {
+      "general": [
+        "güvenlik",
+        "kontrol"
+      ],
+      "love": [
+        "sahiplenme",
+        "koruma"
+      ],
+      "career": [
+        "istikrar",
+        "tutuculuk"
+      ],
+      "finance": [
+        "tasarruf",
+        "biriktirme"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; aşırı tutunma ve kontrol akışı keser.",
+      "reversed": "Hayır; kontrol el değiştirir, güven zayıflar."
+    }
+  },
+  "Tılsım Beşlisi": {
+    "clarityWeight": 6,
+    "keywords": {
+      "general": [
+        "zorluk",
+        "kayıp"
+      ],
+      "love": [
+        "yalnızlık",
+        "reddedilme"
+      ],
+      "career": [
+        "işsizlik",
+        "zorluk"
+      ],
+      "finance": [
+        "mali sıkıntı",
+        "borç"
+      ]
+    },
+    "shortReason": {
+      "upright": "Hayır; maddi/duygusal sıkışıklık var, destek gerek.",
+      "reversed": "Hayır; toparlanma olur ama güç toplamak zaman ister."
+    }
+  },
+  "Tılsım Altılısı": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "cömertlik",
+        "paylaşım"
+      ],
+      "love": [
+        "verme",
+        "alma"
+      ],
+      "career": [
+        "adil ücret",
+        "tanınma"
+      ],
+      "finance": [
+        "yardım",
+        "bağış"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; adil bir destek ya da fırsat paylaşımı gelir.",
+      "reversed": "Hayır; al-ver dengesi bozuk, şartları netleştir."
+    }
+  },
+  "Tılsım Yedilisi": {
+    "clarityWeight": 12,
+    "keywords": {
+      "general": [
+        "sabır",
+        "değerlendirme"
+      ],
+      "love": [
+        "bekleme",
+        "yatırım"
+      ],
+      "career": [
+        "değerlendirme",
+        "planlama"
+      ],
+      "finance": [
+        "uzun vade",
+        "sabır"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; sabır karşılığını verir, sonuç zamanla gelir.",
+      "reversed": "Hayır; erken vazgeçme eğilimi kazanımı bozar."
+    }
+  },
+  "Tılsım Sekizlisi": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "çalışkanlık",
+        "ustalık"
+      ],
+      "love": [
+        "emek",
+        "gelişim"
+      ],
+      "career": [
+        "beceri",
+        "eğitim"
+      ],
+      "finance": [
+        "kazanç",
+        "çalışma"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; emek ve ustalıkla net sonuç alınır.",
+      "reversed": "Hayır; özensizlik ve tekrar hatası kaybettirir."
+    }
+  },
+  "Tılsım Dokuzlusu": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "bağımsızlık",
+        "lüks"
+      ],
+      "love": [
+        "kendi kendine yetme",
+        "özgürlük"
+      ],
+      "career": [
+        "başarı",
+        "tanınma"
+      ],
+      "finance": [
+        "refah",
+        "bağımsızlık"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; kendi ayakların üzerinde durup başarı alırsın.",
+      "reversed": "Hayır; iç güven eksik, acele yatırım doğru değil."
+    }
+  },
+  "Tılsım Onlusu": {
+    "clarityWeight": 24,
+    "keywords": {
+      "general": [
+        "miras",
+        "kalıcılık"
+      ],
+      "love": [
+        "aile",
+        "uzun vadeli"
+      ],
+      "career": [
+        "emeklilik",
+        "miras"
+      ],
+      "finance": [
+        "servet",
+        "miras"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; kalıcı kazanç ve sağlam zemin mümkün.",
+      "reversed": "Hayır; temel zayıf, aile/iş düzeni oturmuyor."
+    }
+  },
+  "Tılsım Prensi": {
+    "clarityWeight": 14,
+    "keywords": {
+      "general": [
+        "fırsat",
+        "öğrenme"
+      ],
+      "love": [
+        "yeni tanışma",
+        "sabır"
+      ],
+      "career": [
+        "staj",
+        "eğitim"
+      ],
+      "finance": [
+        "küçük başlangıç",
+        "tasarruf"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; öğrenerek büyüyecek bir fırsat var.",
+      "reversed": "Hayır; odak dağılırsa başlangıç yarım kalır."
+    }
+  },
+  "Tılsım Şövalyesi": {
+    "clarityWeight": 16,
+    "keywords": {
+      "general": [
+        "güvenilirlik",
+        "sabır"
+      ],
+      "love": [
+        "sadakat",
+        "istikrar"
+      ],
+      "career": [
+        "çalışkanlık",
+        "metot"
+      ],
+      "finance": [
+        "istikrar",
+        "güvenlik"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; yavaş ama sağlam ilerlersin.",
+      "reversed": "Hayır; inat ve durağanlık işi kilitler."
+    }
+  },
+  "Tılsım Kraliçesi": {
+    "clarityWeight": 18,
+    "keywords": {
+      "general": [
+        "pratiklik",
+        "bolluk"
+      ],
+      "love": [
+        "şefkat",
+        "ev"
+      ],
+      "career": [
+        "verimlilik",
+        "başarı"
+      ],
+      "finance": [
+        "refah",
+        "güvenlik"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; pratik çözüm ve güven veren düzen kurulur.",
+      "reversed": "Hayır; dengesiz harcama ya da ihmalle güven sarsılır."
+    }
+  },
+  "Tılsım Kralı": {
+    "clarityWeight": 22,
+    "keywords": {
+      "general": [
+        "başarı",
+        "güvenlik"
+      ],
+      "love": [
+        "sağlamlık",
+        "güven"
+      ],
+      "career": [
+        "liderlik",
+        "zenginlik"
+      ],
+      "finance": [
+        "servet",
+        "istikrar"
+      ]
+    },
+    "shortReason": {
+      "upright": "Evet; sağlam yönetim ve güvenli sonuç verir.",
+      "reversed": "Hayır; çıkar odaklı yaklaşım düzeni bozar."
+    }
+  }
+}

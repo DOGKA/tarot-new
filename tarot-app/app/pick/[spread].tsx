@@ -11,13 +11,13 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
-import type { Card, SelectedCard, SpreadType, TarotData } from "../../types/tarot";
+import type { Card, SelectedCard, SpreadType, TarotData, FocusArea } from "../../types/tarot";
 
-// Import tarot data based on language
-import enData from "../../data/en-tarot-template.json";
-import trData from "../../data/tr-tarot-template.json";
-import deData from "../../data/de-tarot-template.json";
-import esData from "../../data/es-tarot-template.json";
+// Import tarot data based on language (new folder structure)
+import enData from "../../data/en/tarot-template.json";
+import trData from "../../data/tr/tarot-template.json";
+import deData from "../../data/de/tarot-template.json";
+import esData from "../../data/es/tarot-template.json";
 
 const { width } = Dimensions.get("window");
 const CARD_WIDTH = (width - 60) / 5;
@@ -39,17 +39,20 @@ function shuffleArray<T>(array: T[]): T[] {
   return newArray;
 }
 
+const focusAreas: FocusArea[] = ["general", "love", "career", "finance"];
+
 export default function PickScreen() {
   const { spread } = useLocalSearchParams<{ spread: SpreadType }>();
   const router = useRouter();
   const { t } = useTranslation();
-  const { language, setSelectedCards } = useApp();
+  const { language, setSelectedCards, focusArea, setFocusArea, isPremium } = useApp();
 
   const [deck, setDeck] = useState<Card[]>([]);
   const [revealedCards, setRevealedCards] = useState<Set<number>>(new Set());
   const [selected, setSelected] = useState<SelectedCard[]>([]);
+  const [showFocusSelector, setShowFocusSelector] = useState(spread === "yes_no");
 
-  const requiredCards = spread === "single_card" ? 1 : 3;
+  const requiredCards = spread === "single_card" || spread === "yes_no" ? 1 : 3;
   const positions: Array<"past" | "present" | "future"> = [
     "past",
     "present",
@@ -83,7 +86,13 @@ export default function PickScreen() {
 
   const handleContinue = () => {
     setSelectedCards(selected);
-    router.push("/result");
+    if (spread === "yes_no") {
+      router.push("/yesno-result");
+    } else if (isPremium) {
+      router.push("/premium-result");
+    } else {
+      router.push("/result");
+    }
   };
 
   const handleShuffle = () => {
@@ -100,12 +109,45 @@ export default function PickScreen() {
           <Text style={styles.backButton}>← {t("back")}</Text>
         </TouchableOpacity>
         <Text style={styles.title}>
-          {spread === "single_card" ? t("singleCard") : t("threeCards")}
+          {spread === "single_card" ? t("singleCard") : spread === "yes_no" ? t("yesNo") : t("threeCards")}
         </Text>
-        <TouchableOpacity onPress={handleShuffle}>
-          <Text style={styles.shuffleButton}>{t("shuffle")}</Text>
+        <TouchableOpacity onPress={handleShuffle} disabled={selected.length > 0}>
+          <Text style={[styles.shuffleButton, selected.length > 0 && styles.shuffleButtonDisabled]}>
+            {t("shuffle")}
+          </Text>
         </TouchableOpacity>
       </View>
+
+      {/* Focus Area Selector for Yes/No - disabled after card selection */}
+      {spread === "yes_no" && (
+        <View style={styles.focusSection}>
+          <Text style={styles.focusSectionTitle}>{t("selectFocusArea")}</Text>
+          <View style={styles.focusGrid}>
+            {focusAreas.map((area) => (
+              <TouchableOpacity
+                key={area}
+                style={[
+                  styles.focusButton,
+                  focusArea === area && styles.focusButtonActive,
+                  selected.length > 0 && styles.focusButtonDisabled,
+                ]}
+                onPress={() => setFocusArea(area)}
+                disabled={selected.length > 0}
+              >
+                <Text
+                  style={[
+                    styles.focusButtonText,
+                    focusArea === area && styles.focusButtonTextActive,
+                    selected.length > 0 && focusArea !== area && styles.focusButtonTextDisabled,
+                  ]}
+                >
+                  {t(area)}
+                </Text>
+              </TouchableOpacity>
+            ))}
+          </View>
+        </View>
+      )}
 
       {/* Selected Cards Display */}
       <View style={styles.selectedSection}>
@@ -194,6 +236,48 @@ const styles = StyleSheet.create({
   shuffleButton: {
     color: "#9b59b6",
     fontSize: 16,
+  },
+  shuffleButtonDisabled: {
+    color: "#444",
+  },
+  focusSection: {
+    padding: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: "#333",
+  },
+  focusSectionTitle: {
+    color: "#888",
+    fontSize: 14,
+    marginBottom: 12,
+  },
+  focusGrid: {
+    flexDirection: "row",
+    gap: 10,
+  },
+  focusButton: {
+    flex: 1,
+    paddingVertical: 10,
+    paddingHorizontal: 8,
+    borderRadius: 8,
+    backgroundColor: "#252540",
+    alignItems: "center",
+  },
+  focusButtonActive: {
+    backgroundColor: "#9b59b6",
+  },
+  focusButtonDisabled: {
+    opacity: 0.5,
+  },
+  focusButtonText: {
+    color: "#888",
+    fontSize: 12,
+    fontWeight: "500",
+  },
+  focusButtonTextActive: {
+    color: "#fff",
+  },
+  focusButtonTextDisabled: {
+    color: "#444",
   },
   selectedSection: {
     padding: 16,

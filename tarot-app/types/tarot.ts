@@ -34,7 +34,7 @@ export interface SelectedCard {
 }
 
 // Spread types
-export type SpreadType = "single_card" | "past_present_future";
+export type SpreadType = "single_card" | "past_present_future" | "yes_no";
 
 // Language types
 export type Language = "en" | "tr" | "de" | "es";
@@ -92,6 +92,36 @@ export interface ThreeCardReading {
   };
   keywords: string[];
   mood: string;
-  timing: string;
   nextStep: string;
+}
+
+// Yes/No Request
+export interface YesNoRequest {
+  language: Language;
+  spread: "yes_no";
+  focusArea: FocusArea;
+  card: {
+    name: string;
+    orientation: "upright" | "reversed";
+  };
+}
+
+// Yes/No Reading Output
+export interface YesNoReading {
+  title: string;
+  focusArea: FocusArea;
+  answer: "yes" | "no";
+  confidence: number; // 55-90
+  explanation: string;
+  keywords?: string[]; // focusArea'ya göre keywords
+}
+
+// Yes/No Clarity Data (for JSON file)
+export interface YesNoClarityData {
+  clarityWeight: number;
+  keywords: {
+    [lang in Language]: {
+      [area in FocusArea]: [string, string];
+    };
+  };
 }

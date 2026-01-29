@@ -65,12 +65,12 @@ export default function HomeScreen() {
           </View>
         </View>
 
-        {/* Spread Selection */}
+        {/* General Category */}
         <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("selectSpread")}</Text>
-          <View style={styles.spreadOptions}>
+          <Text style={styles.categoryTitle}>{t("generalCategory")}</Text>
+          <View style={styles.spreadGrid}>
             <TouchableOpacity
-              style={styles.spreadButton}
+              style={styles.spreadCard}
               onPress={() => handleSpreadSelect("single_card")}
             >
               <Text style={styles.spreadIcon}>🃏</Text>
@@ -79,12 +79,21 @@ export default function HomeScreen() {
             </TouchableOpacity>
 
             <TouchableOpacity
-              style={styles.spreadButton}
+              style={styles.spreadCard}
               onPress={() => handleSpreadSelect("past_present_future")}
             >
               <Text style={styles.spreadIcon}>🃏🃏🃏</Text>
               <Text style={styles.spreadTitle}>{t("threeCards")}</Text>
               <Text style={styles.spreadDesc}>3 cards</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("yes_no")}
+            >
+              <Text style={styles.spreadIcon}>🎴❓</Text>
+              <Text style={styles.spreadTitle}>{t("yesNo")}</Text>
+              <Text style={styles.spreadDesc}>1 card</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -161,27 +170,38 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 16,
   },
-  spreadOptions: {
-    gap: 16,
+  categoryTitle: {
+    fontSize: 20,
+    fontWeight: "bold",
+    color: "#9b59b6",
+    marginBottom: 16,
   },
-  spreadButton: {
+  spreadGrid: {
+    flexDirection: "row",
+    flexWrap: "wrap",
+    gap: 12,
+  },
+  spreadCard: {
     backgroundColor: "#252540",
     borderRadius: 16,
-    padding: 24,
+    padding: 20,
     alignItems: "center",
+    width: "31%",
+    minWidth: 100,
   },
   spreadIcon: {
-    fontSize: 40,
-    marginBottom: 12,
+    fontSize: 32,
+    marginBottom: 8,
   },
   spreadTitle: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 14,
     fontWeight: "600",
     marginBottom: 4,
+    textAlign: "center",
   },
   spreadDesc: {
     color: "#888",
-    fontSize: 14,
+    fontSize: 12,
   },
 });

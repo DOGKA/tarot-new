@@ -229,10 +229,6 @@ export default function PremiumResultScreen() {
                 <Text style={styles.metaLabel}>Mood</Text>
                 <Text style={styles.metaValue}>{threeReading.mood}</Text>
               </View>
-              <View style={styles.metaItem}>
-                <Text style={styles.metaLabel}>Zamanlama</Text>
-                <Text style={styles.metaValue}>{threeReading.timing}</Text>
-              </View>
             </View>
 
             <View style={styles.keywordsRow}>

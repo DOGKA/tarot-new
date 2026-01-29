@@ -1,0 +1,314 @@
+{
+  "Narr": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Magier": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Hohepriesterin": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Herrscherin": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Herrscher": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Hierophant": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Liebenden": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Wagen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Kraft": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Eremit": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Rad des Schicksals": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Gerechtigkeit": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Gehängte": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Tod": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Mäßigkeit": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Teufel": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Turm": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Stern": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Mond": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Sonne": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Gericht": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Welt": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As der Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Zwei Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Drei Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Vier Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Fünf Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sechs Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sieben Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Acht Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Neun Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Zehn Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Bube der Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ritter der Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Königin der Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "König der Stäbe": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As der Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Zwei Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Drei Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Vier Kelche": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Fünf Kelche": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Sechs Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sieben Kelche": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Acht Kelche": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Neun Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Zehn Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Bube der Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ritter der Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Königin der Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "König der Kelche": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As der Schwerter": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Zwei Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Drei Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Vier Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Fünf Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Sechs Schwerter": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sieben Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Acht Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Neun Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Zehn Schwerter": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Bube der Schwerter": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ritter der Schwerter": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Königin der Schwerter": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "König der Schwerter": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "As der Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Zwei Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Drei Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Vier Münzen": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Fünf Münzen": {
+    "upright": "no",
+    "reversed": "no"
+  },
+  "Sechs Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Sieben Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Acht Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Neun Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Zehn Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Bube der Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Ritter der Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "Königin der Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  },
+  "König der Münzen": {
+    "upright": "yes",
+    "reversed": "no"
+  }
+}
