@@ -10,6 +10,14 @@ import type {
   DestinysEmbraceReading,
   LoveChoiceReading,
   PathToLoveReading,
+  NewMoonRitualReading,
+  FullMoonReleaseReading,
+  MindBodySpiritReading,
+  CelestialIlluminationReading,
+  CareerClarityReading,
+  CareerPathGuideReading,
+  NewBusinessExplorationReading,
+  WealthFlowReading,
 } from "../types/tarot";
 
 // Backend API URL - prefers EXPO_PUBLIC_API_URL, falls back to Expo host IP
@@ -80,6 +88,99 @@ interface PathToLovePayload {
   isPremium: boolean;
   cards: Array<{
     position: "self" | "block" | "need" | "action" | "potential";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+// Spiritual Spread Payloads
+interface NewMoonRitualPayload {
+  language: Language;
+  spread: "new_moon_ritual";
+  isPremium: boolean;
+  cards: Array<{
+    position: "intention" | "seed" | "shadow" | "support" | "firstStep";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+interface FullMoonReleasePayload {
+  language: Language;
+  spread: "full_moon_release";
+  isPremium: boolean;
+  cards: Array<{
+    position: "illumination" | "tension" | "lesson" | "release" | "integration";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+interface MindBodySpiritPayload {
+  language: Language;
+  spread: "mind_body_spirit";
+  isPremium: boolean;
+  cards: Array<{
+    position: "mind" | "body" | "spirit";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+interface CelestialIlluminationPayload {
+  language: Language;
+  spread: "celestial_illumination";
+  isPremium: boolean;
+  cards: Array<{
+    position: "signal" | "guidance" | "integration";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+// ============================================
+// CAREER SPREAD PAYLOADS
+// ============================================
+
+interface CareerClarityPayload {
+  language: Language;
+  spread: "career_clarity";
+  isPremium: boolean;
+  cards: Array<{
+    position: "current" | "challenge" | "clarity";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+interface CareerPathGuidePayload {
+  language: Language;
+  spread: "career_path_guide";
+  isPremium: boolean;
+  cards: Array<{
+    position: "strength" | "opportunity" | "direction";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+interface NewBusinessExplorationPayload {
+  language: Language;
+  spread: "new_business_exploration";
+  isPremium: boolean;
+  cards: Array<{
+    position: "idea" | "foundation" | "challenge" | "opportunity" | "shift";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
+interface WealthFlowPayload {
+  language: Language;
+  spread: "wealth_flow";
+  isPremium: boolean;
+  cards: Array<{
+    position: "income" | "block" | "resource" | "growth" | "balance";
     name: string;
     orientation: "upright" | "reversed";
   }>;
@@ -334,6 +435,342 @@ export function useReading() {
     }
   };
 
+  // ============================================
+  // SPIRITUAL SPREADS
+  // ============================================
+
+  const getNewMoonRitualReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<NewMoonRitualReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: NewMoonRitualPayload = {
+      language,
+      spread: "new_moon_ritual",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "intention" | "seed" | "shadow" | "support" | "firstStep",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as NewMoonRitualReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getFullMoonReleaseReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<FullMoonReleaseReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: FullMoonReleasePayload = {
+      language,
+      spread: "full_moon_release",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "illumination" | "tension" | "lesson" | "release" | "integration",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as FullMoonReleaseReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getMindBodySpiritReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<MindBodySpiritReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: MindBodySpiritPayload = {
+      language,
+      spread: "mind_body_spirit",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "mind" | "body" | "spirit",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as MindBodySpiritReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getCelestialIlluminationReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<CelestialIlluminationReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: CelestialIlluminationPayload = {
+      language,
+      spread: "celestial_illumination",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "signal" | "guidance" | "integration",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as CelestialIlluminationReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // ============================================
+  // CAREER SPREAD API FUNCTIONS
+  // ============================================
+
+  const getCareerClarityReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<CareerClarityReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: CareerClarityPayload = {
+      language,
+      spread: "career_clarity",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "current" | "challenge" | "clarity",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as CareerClarityReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getCareerPathGuideReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<CareerPathGuideReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: CareerPathGuidePayload = {
+      language,
+      spread: "career_path_guide",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "strength" | "opportunity" | "direction",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as CareerPathGuideReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getNewBusinessExplorationReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<NewBusinessExplorationReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: NewBusinessExplorationPayload = {
+      language,
+      spread: "new_business_exploration",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "idea" | "foundation" | "challenge" | "opportunity" | "shift",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as NewBusinessExplorationReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const getWealthFlowReading = async (
+    language: Language,
+    selectedCards: SelectedCard[]
+  ): Promise<WealthFlowReading | null> => {
+    setLoading(true);
+    setError(null);
+
+    const payload: WealthFlowPayload = {
+      language,
+      spread: "wealth_flow",
+      isPremium: true,
+      cards: selectedCards.map((sel) => ({
+        position: sel.position as "income" | "block" | "resource" | "growth" | "balance",
+        name: sel.card.name,
+        orientation: sel.orientation,
+      })),
+    };
+
+    try {
+      const response = await fetch(`${API_URL}/api/reading`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+
+      if (!response.ok) {
+        throw new Error(`API Error: ${response.status}`);
+      }
+
+      const data = await response.json();
+      return data as WealthFlowReading;
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Unknown error");
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
   const resetPremiumLogs = async (): Promise<boolean> => {
     try {
       const response = await fetch(`${API_URL}/api/logs/reset`, {
@@ -354,6 +791,14 @@ export function useReading() {
     getDestinysEmbraceReading,
     getLoveChoiceReading,
     getPathToLoveReading,
+    getNewMoonRitualReading,
+    getFullMoonReleaseReading,
+    getMindBodySpiritReading,
+    getCelestialIlluminationReading,
+    getCareerClarityReading,
+    getCareerPathGuideReading,
+    getNewBusinessExplorationReading,
+    getWealthFlowReading,
     resetPremiumLogs,
   };
 }

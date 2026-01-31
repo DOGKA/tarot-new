@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import {
   View,
   Text,
@@ -6,11 +6,12 @@ import {
   StyleSheet,
   ScrollView,
   Dimensions,
+  Animated,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
+import { GradientBackground, GlassCard } from "../../components/ui";
 import type { Card, SelectedCard, SpreadType, TarotData, FocusArea } from "../../types/tarot";
 
 // Import tarot data based on language (new folder structure)
@@ -41,6 +42,121 @@ function shuffleArray<T>(array: T[]): T[] {
 
 const focusAreas: FocusArea[] = ["general", "love", "career", "spiritual"];
 
+// Animated FlipCard Component using React Native's Animated API
+interface FlipCardProps {
+  card: Card;
+  index: number;
+  isRevealed: boolean;
+  orientation?: "upright" | "reversed";
+  onPress: () => void;
+  disabled: boolean;
+}
+
+function FlipCard({ card, index, isRevealed, orientation, onPress, disabled }: FlipCardProps) {
+  const flipAnim = useRef(new Animated.Value(0)).current;
+  const [showFront, setShowFront] = useState(false);
+
+  useEffect(() => {
+    if (isRevealed && !showFront) {
+      Animated.timing(flipAnim, {
+        toValue: 1,
+        duration: 600,
+        useNativeDriver: true,
+      }).start();
+      
+      const timer = setTimeout(() => setShowFront(true), 300);
+      return () => clearTimeout(timer);
+    }
+  }, [isRevealed]);
+
+  const backRotateY = flipAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: ["0deg", "180deg"],
+  });
+
+  const frontRotateY = flipAnim.interpolate({
+    inputRange: [0, 1],
+    outputRange: ["180deg", "360deg"],
+  });
+
+  const backOpacity = flipAnim.interpolate({
+    inputRange: [0, 0.5, 0.5, 1],
+    outputRange: [1, 1, 0, 0],
+  });
+
+  const frontOpacity = flipAnim.interpolate({
+    inputRange: [0, 0.5, 0.5, 1],
+    outputRange: [0, 0, 1, 1],
+  });
+
+  const glowColor = orientation === "upright" 
+    ? "rgba(34, 197, 94, 0.6)" 
+    : orientation === "reversed"
+    ? "rgba(239, 68, 68, 0.6)"
+    : undefined;
+
+  const borderColor = orientation === "upright" 
+    ? "#22c55e" 
+    : orientation === "reversed"
+    ? "#ef4444"
+    : "#7c6b9e";
+
+  return (
+    <TouchableOpacity
+      onPress={onPress}
+      disabled={disabled || isRevealed}
+      activeOpacity={0.8}
+    >
+      <View style={styles.flipCardContainer}>
+        {/* Back - unrevealed */}
+        <Animated.View 
+          style={[
+            styles.flipCard, 
+            styles.flipCardBack,
+            {
+              transform: [{ perspective: 1000 }, { rotateY: backRotateY }],
+              opacity: backOpacity,
+            }
+          ]}
+        >
+          <View style={styles.cardBackDesign}>
+            <Text style={styles.starIcon}>✦</Text>
+          </View>
+        </Animated.View>
+
+        {/* Front - revealed */}
+        <Animated.View
+          style={[
+            styles.flipCard,
+            styles.flipCardFront,
+            {
+              transform: [
+                { perspective: 1000 }, 
+                { rotateY: frontRotateY },
+                ...(orientation === "reversed" ? [{ rotate: "180deg" }] : []),
+              ],
+              opacity: frontOpacity,
+            },
+            showFront && {
+              borderColor,
+              shadowColor: glowColor,
+              shadowOffset: { width: 0, height: 0 },
+              shadowOpacity: 1,
+              shadowRadius: 10,
+            },
+          ]}
+        >
+          {showFront && (
+            <Text style={styles.flipCardName} numberOfLines={2} adjustsFontSizeToFit>
+              {card.name}
+            </Text>
+          )}
+        </Animated.View>
+      </View>
+    </TouchableOpacity>
+  );
+}
+
 export default function PickScreen() {
   const { spread } = useLocalSearchParams<{ spread: SpreadType }>();
   const router = useRouter();
@@ -48,47 +164,55 @@ export default function PickScreen() {
   const { language, setSelectedCards, focusArea, setFocusArea, isPremium } = useApp();
 
   const [deck, setDeck] = useState<Card[]>([]);
-  const [revealedCards, setRevealedCards] = useState<Set<number>>(new Set());
+  const [revealedCards, setRevealedCards] = useState<Map<number, "upright" | "reversed">>(new Map());
   const [selected, setSelected] = useState<SelectedCard[]>([]);
-  const [showFocusSelector, setShowFocusSelector] = useState(spread === "yes_no");
 
   const requiredCards = spread === "single_card" || spread === "yes_no" ? 1 
-    : spread === "love_choice" || spread === "path_to_love" ? 5 
+    : spread === "love_choice" || spread === "path_to_love" || spread === "new_moon_ritual" || spread === "full_moon_release" || spread === "new_business_exploration" || spread === "wealth_flow" ? 5 
     : 3;
-  const ppfPositions: Array<"past" | "present" | "future"> = [
-    "past",
-    "present",
-    "future",
-  ];
-  const soaPositions: Array<"situation" | "obstacle" | "advice"> = [
-    "situation",
-    "obstacle",
-    "advice",
-  ];
-  const destinyPositions: Array<"destiny" | "path" | "union"> = [
-    "destiny",
-    "path",
-    "union",
-  ];
-  const loveChoicePositions: Array<"optionA" | "optionA_outcome" | "optionB" | "optionB_outcome" | "advice"> = [
-    "optionA",
-    "optionA_outcome",
-    "optionB",
-    "optionB_outcome",
-    "advice",
-  ];
-  const pathToLovePositions: Array<"self" | "block" | "need" | "action" | "potential"> = [
-    "self",
-    "block",
-    "need",
-    "action",
-    "potential",
-  ];
+
+  // Position arrays for different spreads
+  const positionArrays: Record<string, string[]> = {
+    past_present_future: ["past", "present", "future"],
+    situation_obstacle_advice: ["situation", "obstacle", "advice"],
+    destinys_embrace: ["destiny", "path", "union"],
+    love_choice: ["optionA", "optionA_outcome", "optionB", "optionB_outcome", "advice"],
+    path_to_love: ["self", "block", "need", "action", "potential"],
+    new_moon_ritual: ["intention", "seed", "shadow", "support", "firstStep"],
+    full_moon_release: ["illumination", "tension", "lesson", "release", "integration"],
+    mind_body_spirit: ["mind", "body", "spirit"],
+    celestial_illumination: ["signal", "guidance", "integration"],
+    career_clarity: ["current", "challenge", "clarity"],
+    career_path_guide: ["strength", "opportunity", "direction"],
+    new_business_exploration: ["idea", "foundation", "challenge", "opportunity", "shift"],
+    wealth_flow: ["income", "block", "resource", "growth", "balance"],
+  };
+
+  const getSpreadTitle = () => {
+    const titles: Record<string, string> = {
+      single_card: "singleCard",
+      yes_no: "yesNo",
+      past_present_future: "threeCards",
+      situation_obstacle_advice: "situationObstacleAdvice",
+      destinys_embrace: "destinysEmbrace",
+      love_choice: "loveChoice",
+      path_to_love: "pathToLove",
+      new_moon_ritual: "newMoonRitual",
+      full_moon_release: "fullMoonRelease",
+      mind_body_spirit: "mindBodySpirit",
+      celestial_illumination: "celestialIllumination",
+      career_clarity: "careerClarity",
+      career_path_guide: "careerPathGuide",
+      new_business_exploration: "newBusinessExploration",
+      wealth_flow: "wealthFlow",
+    };
+    return t(titles[spread || ""] || "threeCards");
+  };
 
   useEffect(() => {
     const data = tarotDataMap[language] || tarotDataMap.en;
     setDeck(shuffleArray(data.cards));
-    setRevealedCards(new Set());
+    setRevealedCards(new Map());
     setSelected([]);
   }, [language]);
 
@@ -96,18 +220,12 @@ export default function PickScreen() {
     if (selected.length >= requiredCards) return;
     if (revealedCards.has(index)) return;
 
-    const orientation = Math.random() > 0.5 ? "upright" : "reversed";
-    let position: "past" | "present" | "future" | "situation" | "obstacle" | "advice" | "destiny" | "path" | "union" | "optionA" | "optionA_outcome" | "optionB" | "optionB_outcome" | "self" | "block" | "need" | "action" | "potential" | undefined;
-    if (spread === "past_present_future") {
-      position = ppfPositions[selected.length];
-    } else if (spread === "situation_obstacle_advice") {
-      position = soaPositions[selected.length];
-    } else if (spread === "destinys_embrace") {
-      position = destinyPositions[selected.length];
-    } else if (spread === "love_choice") {
-      position = loveChoicePositions[selected.length];
-    } else if (spread === "path_to_love") {
-      position = pathToLovePositions[selected.length];
+    const orientation: "upright" | "reversed" = Math.random() > 0.5 ? "upright" : "reversed";
+    
+    let position: SelectedCard["position"];
+    const positions = positionArrays[spread || ""];
+    if (positions) {
+      position = positions[selected.length] as SelectedCard["position"];
     }
 
     const newSelected: SelectedCard = {
@@ -116,7 +234,7 @@ export default function PickScreen() {
       position,
     };
 
-    setRevealedCards((prev) => new Set([...prev, index]));
+    setRevealedCards((prev) => new Map(prev).set(index, orientation));
     setSelected((prev) => [...prev, newSelected]);
   };
 
@@ -134,31 +252,18 @@ export default function PickScreen() {
   const handleShuffle = () => {
     const data = tarotDataMap[language] || tarotDataMap.en;
     setDeck(shuffleArray(data.cards));
-    setRevealedCards(new Set());
+    setRevealedCards(new Map());
     setSelected([]);
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <GradientBackground>
+      {/* Header */}
       <View style={styles.header}>
         <TouchableOpacity onPress={() => router.back()}>
           <Text style={styles.backButton}>← {t("back")}</Text>
         </TouchableOpacity>
-        <Text style={styles.title}>
-          {spread === "single_card" 
-            ? t("singleCard") 
-            : spread === "yes_no" 
-              ? t("yesNo") 
-              : spread === "situation_obstacle_advice"
-                ? t("situationObstacleAdvice")
-                : spread === "destinys_embrace"
-                  ? t("destinysEmbrace")
-                  : spread === "love_choice"
-                    ? t("loveChoice")
-                    : spread === "path_to_love"
-                      ? t("pathToLove")
-                      : t("threeCards")}
-        </Text>
+        <Text style={styles.title}>{getSpreadTitle()}</Text>
         <TouchableOpacity onPress={handleShuffle} disabled={selected.length > 0}>
           <Text style={[styles.shuffleButton, selected.length > 0 && styles.shuffleButtonDisabled]}>
             {t("shuffle")}
@@ -166,7 +271,7 @@ export default function PickScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Focus Area Selector for Yes/No - disabled after card selection */}
+      {/* Focus Area Selector for Yes/No - Flat design */}
       {spread === "yes_no" && (
         <View style={styles.focusSection}>
           <Text style={styles.focusSectionTitle}>{t("selectFocusArea")}</Text>
@@ -174,19 +279,18 @@ export default function PickScreen() {
             {focusAreas.map((area) => (
               <TouchableOpacity
                 key={area}
+                onPress={() => setFocusArea(area)}
+                disabled={selected.length > 0}
                 style={[
                   styles.focusButton,
                   focusArea === area && styles.focusButtonActive,
                   selected.length > 0 && styles.focusButtonDisabled,
                 ]}
-                onPress={() => setFocusArea(area)}
-                disabled={selected.length > 0}
               >
                 <Text
                   style={[
                     styles.focusButtonText,
                     focusArea === area && styles.focusButtonTextActive,
-                    selected.length > 0 && focusArea !== area && styles.focusButtonTextDisabled,
                   ]}
                 >
                   {t(area)}
@@ -197,53 +301,49 @@ export default function PickScreen() {
         </View>
       )}
 
-      {/* Selected Cards Display */}
+      {/* Selected Cards Display - Minimal chips */}
       <View style={styles.selectedSection}>
         <Text style={styles.selectedTitle}>
           {selected.length}/{requiredCards} {t("selectCard")}
         </Text>
-        <View style={styles.selectedCards}>
-          {selected.map((sel, i) => (
-            <View key={i} style={styles.selectedCard}>
-              <Text style={styles.selectedCardName}>{sel.card.name}</Text>
-              <Text style={styles.selectedCardOrientation}>
-                {sel.orientation === "upright" ? "↑" : "↓"}{" "}
-                {t(sel.orientation)}
-              </Text>
-              {sel.position && (
-                <Text style={styles.selectedCardPosition}>
-                  {t(sel.position)}
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
+          <View style={styles.selectedCards}>
+            {selected.map((sel, i) => (
+              <View key={i} style={styles.selectedCard}>
+                <Text style={styles.selectedCardName}>{sel.card.name}</Text>
+                <Text style={[
+                  styles.selectedCardOrientation,
+                  { color: sel.orientation === "upright" ? "#22c55e" : "#ef4444" }
+                ]}>
+                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
                 </Text>
-              )}
-            </View>
-          ))}
-        </View>
+                {sel.position && (
+                  <Text style={styles.selectedCardPosition}>
+                    {t(sel.position === "shadow" ? "hiddenResistance" : sel.position)}
+                  </Text>
+                )}
+              </View>
+            ))}
+          </View>
+        </ScrollView>
       </View>
 
-      {/* Card Deck */}
+      {/* Card Deck with Flip Animation */}
       <ScrollView contentContainerStyle={styles.deckContainer}>
         <View style={styles.deck}>
           {deck.map((card, index) => {
+            const orientation = revealedCards.get(index);
             const isRevealed = revealedCards.has(index);
             return (
-              <TouchableOpacity
+              <FlipCard
                 key={`${card.id}-${index}`}
-                style={[styles.card, isRevealed && styles.cardRevealed]}
+                card={card}
+                index={index}
+                isRevealed={isRevealed}
+                orientation={orientation}
                 onPress={() => handleCardTap(card, index)}
-                disabled={isRevealed || selected.length >= requiredCards}
-              >
-                {isRevealed ? (
-                  <View style={styles.cardFront}>
-                    <Text style={styles.cardName} numberOfLines={2}>
-                      {card.name}
-                    </Text>
-                  </View>
-                ) : (
-                  <View style={styles.cardBack}>
-                    <Text style={styles.cardBackPattern}>✧</Text>
-                  </View>
-                )}
-              </TouchableOpacity>
+                disabled={selected.length >= requiredCards}
+              />
             );
           })}
         </View>
@@ -255,25 +355,21 @@ export default function PickScreen() {
           <Text style={styles.continueText}>{t("yourReading")} →</Text>
         </TouchableOpacity>
       )}
-    </SafeAreaView>
+    </GradientBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#1a1a2e",
-  },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: "#333",
+    borderBottomColor: "rgba(255, 255, 255, 0.1)",
   },
   backButton: {
-    color: "#9b59b6",
+    color: "#a855f7",
     fontSize: 16,
   },
   title: {
@@ -282,19 +378,19 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   shuffleButton: {
-    color: "#9b59b6",
+    color: "#a855f7",
     fontSize: 16,
   },
   shuffleButtonDisabled: {
-    color: "#444",
+    color: "rgba(255, 255, 255, 0.3)",
   },
   focusSection: {
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: "#333",
+    borderBottomColor: "rgba(255, 255, 255, 0.1)",
   },
   focusSectionTitle: {
-    color: "#888",
+    color: "rgba(255, 255, 255, 0.5)",
     fontSize: 14,
     marginBottom: 12,
   },
@@ -303,69 +399,63 @@ const styles = StyleSheet.create({
     gap: 10,
   },
   focusButton: {
-    flex: 1,
     paddingVertical: 10,
-    paddingHorizontal: 8,
-    borderRadius: 8,
-    backgroundColor: "#252540",
-    alignItems: "center",
+    paddingHorizontal: 16,
+    borderRadius: 10,
   },
   focusButtonActive: {
-    backgroundColor: "#9b59b6",
+    backgroundColor: "rgba(168, 85, 247, 0.2)",
+    borderWidth: 1,
+    borderColor: "#a855f7",
   },
   focusButtonDisabled: {
-    opacity: 0.5,
+    opacity: 0.4,
   },
   focusButtonText: {
-    color: "#888",
-    fontSize: 12,
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 14,
     fontWeight: "500",
   },
   focusButtonTextActive: {
     color: "#fff",
-  },
-  focusButtonTextDisabled: {
-    color: "#444",
+    fontWeight: "600",
   },
   selectedSection: {
     padding: 16,
     borderBottomWidth: 1,
-    borderBottomColor: "#333",
+    borderBottomColor: "rgba(255, 255, 255, 0.1)",
   },
   selectedTitle: {
-    color: "#888",
+    color: "rgba(255, 255, 255, 0.5)",
     fontSize: 14,
     marginBottom: 12,
   },
   selectedCards: {
     flexDirection: "row",
-    gap: 12,
+    gap: 8,
   },
   selectedCard: {
-    flex: 1,
-    backgroundColor: "#252540",
-    borderRadius: 12,
-    padding: 12,
-    alignItems: "center",
+    paddingHorizontal: 12,
+    paddingVertical: 10,
   },
   selectedCardName: {
     color: "#fff",
-    fontSize: 12,
+    fontSize: 13,
     fontWeight: "600",
-    textAlign: "center",
   },
   selectedCardOrientation: {
-    color: "#9b59b6",
-    fontSize: 11,
-    marginTop: 4,
+    fontSize: 12,
+    marginTop: 2,
+    fontWeight: "600",
   },
   selectedCardPosition: {
-    color: "#888",
-    fontSize: 10,
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 11,
     marginTop: 2,
   },
   deckContainer: {
     padding: 16,
+    paddingBottom: 100,
   },
   deck: {
     flexDirection: "row",
@@ -373,47 +463,58 @@ const styles = StyleSheet.create({
     gap: 8,
     justifyContent: "center",
   },
-  card: {
+  // FlipCard styles
+  flipCardContainer: {
     width: CARD_WIDTH,
     height: CARD_HEIGHT,
+    margin: 2,
+  },
+  flipCard: {
+    position: "absolute",
+    width: "100%",
+    height: "100%",
     borderRadius: 8,
-    overflow: "hidden",
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 2,
+    backfaceVisibility: "hidden",
   },
-  cardBack: {
-    flex: 1,
+  flipCardBack: {
     backgroundColor: "#4a3f6b",
-    justifyContent: "center",
-    alignItems: "center",
-    borderWidth: 2,
-    borderColor: "#9b59b6",
+    borderColor: "#7c6b9e",
   },
-  cardBackPattern: {
-    fontSize: 20,
-    color: "#9b59b6",
-  },
-  cardRevealed: {
-    opacity: 0.7,
-  },
-  cardFront: {
-    flex: 1,
-    backgroundColor: "#252540",
-    justifyContent: "center",
-    alignItems: "center",
+  flipCardFront: {
+    backgroundColor: "#2a2545",
+    borderColor: "rgba(255, 255, 255, 0.2)",
     padding: 4,
-    borderWidth: 2,
-    borderColor: "#666",
   },
-  cardName: {
+  cardBackDesign: {
+    opacity: 0.6,
+  },
+  starIcon: {
+    fontSize: 18,
+    color: "#9b87c4",
+  },
+  flipCardName: {
+    fontSize: 8,
+    fontWeight: "600",
     color: "#fff",
-    fontSize: 9,
     textAlign: "center",
   },
   continueButton: {
-    backgroundColor: "#9b59b6",
-    margin: 16,
+    position: "absolute",
+    bottom: 20,
+    left: 16,
+    right: 16,
+    backgroundColor: "#a855f7",
     padding: 18,
-    borderRadius: 12,
+    borderRadius: 16,
     alignItems: "center",
+    shadowColor: "#a855f7",
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.4,
+    shadowRadius: 8,
+    elevation: 8,
   },
   continueText: {
     color: "#fff",

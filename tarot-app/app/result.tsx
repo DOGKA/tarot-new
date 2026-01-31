@@ -6,22 +6,16 @@ import {
   StyleSheet,
   ScrollView,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
+import { GradientBackground, GlassCard, PremiumPreview } from "../components/ui";
+import { LinearGradient } from "expo-linear-gradient";
 
 export default function ResultScreen() {
   const router = useRouter();
   const { t } = useTranslation();
-  const {
-    selectedCards,
-    isPremium,
-    spreadType,
-    resetReading,
-    focusArea,
-  } =
-    useApp();
+  const { selectedCards, isPremium, spreadType, resetReading, focusArea } = useApp();
   const [showPremiumModal, setShowPremiumModal] = useState(false);
 
   const handleNewReading = () => {
@@ -37,22 +31,49 @@ export default function ResultScreen() {
     }
   };
 
+  // Get focus area based on spread type
+  const getCardMeaning = (card: typeof selectedCards[0]) => {
+    if (spreadType === "single_card") {
+      return card.card.meanings[card.orientation][focusArea];
+    }
+    
+    // Spread-specific focus areas
+    const spreadFocusMap: Record<string, keyof typeof card.card.meanings.upright> = {
+      destinys_embrace: "love",
+      love_choice: "love",
+      path_to_love: "love",
+      career_clarity: "career",
+      career_path_guide: "career",
+      new_business_exploration: "career",
+      wealth_flow: "career",
+      new_moon_ritual: "spiritual",
+      full_moon_release: "spiritual",
+      mind_body_spirit: "spiritual",
+      celestial_illumination: "spiritual",
+    };
+    
+    const focus = spreadFocusMap[spreadType || ""] || "general";
+    return card.card.meanings[card.orientation][focus];
+  };
+
   if (selectedCards.length === 0) {
     return (
-      <SafeAreaView style={styles.container}>
+      <GradientBackground>
         <View style={styles.emptyState}>
           <Text style={styles.emptyText}>No cards selected</Text>
-          <TouchableOpacity style={styles.newButton} onPress={handleNewReading}>
-            <Text style={styles.newButtonText}>{t("newReading")}</Text>
+          <TouchableOpacity onPress={handleNewReading}>
+            <GlassCard style={styles.newButton}>
+              <Text style={styles.newButtonText}>{t("newReading")}</Text>
+            </GlassCard>
           </TouchableOpacity>
         </View>
-      </SafeAreaView>
+      </GradientBackground>
     );
   }
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView>
+    <GradientBackground>
+      <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.title}>{t("yourReading")}</Text>
@@ -61,289 +82,214 @@ export default function ResultScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Cards Summary */}
-        <View style={styles.cardsSummary}>
+        {/* Cards Summary - Minimal Chips */}
+        <ScrollView 
+          horizontal 
+          showsHorizontalScrollIndicator={false}
+          contentContainerStyle={styles.cardsSummary}
+        >
           {selectedCards.map((sel, i) => (
-            <View key={i} style={styles.cardSummaryItem}>
-              <View
-                style={[
-                  styles.cardBadge,
-                  sel.orientation === "reversed" && styles.cardBadgeReversed,
-                ]}
-              >
-                <Text
-                  style={[
-                    styles.cardBadgeText,
-                    sel.orientation === "reversed" && { transform: [{ rotate: "180deg" }] },
-                  ]}
-                >
-                  🃏
-                </Text>
-              </View>
-              <Text style={styles.cardSummaryName}>{sel.card.name}</Text>
-              <Text style={styles.cardSummaryOrientation}>
-                {t(sel.orientation)}
+            <View key={i} style={styles.cardChip}>
+              <Text style={styles.cardChipName} numberOfLines={1}>
+                {sel.card.name}
               </Text>
-              {sel.position && (
-                <Text style={styles.cardSummaryPosition}>{t(sel.position)}</Text>
-              )}
+              <Text style={[
+                styles.cardChipOrientation,
+                { color: sel.orientation === "upright" ? "#22c55e" : "#ef4444" }
+              ]}>
+                {sel.orientation === "upright" ? "↑" : "↓"}
+              </Text>
             </View>
+          ))}
+        </ScrollView>
+
+        {/* Single Card - focus area badge */}
+        {spreadType === "single_card" && (
+          <View style={styles.focusBadgeContainer}>
+            <View style={styles.focusBadge}>
+              <Text style={styles.focusBadgeText}>{t(focusArea)}</Text>
+            </View>
+          </View>
+        )}
+
+        {/* Card Meanings */}
+        <View style={styles.meaningsSection}>
+          {selectedCards.map((sel, i) => (
+            <GlassCard key={i} style={styles.meaningCard}>
+              {/* Position Label */}
+              {sel.position && (
+                <Text style={[
+                  styles.positionLabel,
+                  { color: sel.orientation === "upright" ? "#22c55e" : "#ef4444" }
+                ]}>
+                  {t(sel.position === "shadow" ? "hiddenResistance" : sel.position)}
+                </Text>
+              )}
+              
+              {/* Card Name */}
+              <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
+              
+              {/* Orientation */}
+              <Text style={[
+                styles.orientationLabel,
+                { color: sel.orientation === "upright" ? "#22c55e" : "#ef4444" }
+              ]}>
+                {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
+              </Text>
+              
+              {/* Meaning */}
+              <Text style={styles.meaningText}>
+                {getCardMeaning(sel)}
+              </Text>
+            </GlassCard>
           ))}
         </View>
 
-        {spreadType === "single_card" && (
-          <View style={styles.meaningsSection}>
-            {/* Focus Area Badge */}
-            <View style={styles.focusAreaBadge}>
-              <Text style={styles.focusAreaText}>{t(focusArea)}</Text>
-            </View>
-            
-            {selectedCards.map((sel, i) => (
-              <View key={i} style={styles.meaningCard}>
-                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
-                <Text style={styles.orientationLabel}>
-                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
-                </Text>
-                <Text style={styles.meaningText}>
-                  {sel.card.meanings[sel.orientation][focusArea]}
-                </Text>
-              </View>
-            ))}
-          </View>
+        {/* Premium Section */}
+        {isPremium ? (
+          // Premium User - Go Dive Button
+          <TouchableOpacity onPress={handleGoDive} activeOpacity={0.8}>
+            <LinearGradient
+              colors={["#a855f7", "#6366f1"]}
+              style={styles.goDiveButton}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 1 }}
+            >
+              <Text style={styles.goDiveButtonText}>✨ {t("goDive")}</Text>
+            </LinearGradient>
+          </TouchableOpacity>
+        ) : (
+          // Free User - Premium Preview (spread-specific)
+          <PremiumPreview 
+            spreadType={spreadType || "single_card"} 
+            focusArea={focusArea}
+            onUnlock={() => setShowPremiumModal(true)} 
+          />
         )}
 
-        {spreadType === "past_present_future" && (
-          <View style={styles.meaningsSection}>
-            {selectedCards.map((sel, i) => (
-              <View key={i} style={styles.meaningCard}>
-                {sel.position && (
-                  <Text style={styles.positionLabel}>{t(sel.position)}</Text>
-                )}
-                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
-                <Text style={styles.orientationLabel}>
-                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
-                </Text>
-                <Text style={styles.meaningText}>
-                  {sel.card.meanings[sel.orientation].general}
-                </Text>
-              </View>
-            ))}
-          </View>
-        )}
-
-        {spreadType === "situation_obstacle_advice" && (
-          <View style={styles.meaningsSection}>
-            {selectedCards.map((sel, i) => (
-              <View key={i} style={styles.meaningCard}>
-                {sel.position && (
-                  <Text style={styles.positionLabel}>{t(sel.position)}</Text>
-                )}
-                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
-                <Text style={styles.orientationLabel}>
-                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
-                </Text>
-                <Text style={styles.meaningText}>
-                  {sel.card.meanings[sel.orientation].general}
-                </Text>
-              </View>
-            ))}
-          </View>
-        )}
-
-        {/* Destiny's Embrace - FREE */}
-        {spreadType === "destinys_embrace" && (
-          <View style={styles.meaningsSection}>
-            {selectedCards.map((sel, i) => (
-              <View key={i} style={styles.meaningCard}>
-                {sel.position && (
-                  <Text style={styles.positionLabel}>{t(sel.position)}</Text>
-                )}
-                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
-                <Text style={styles.orientationLabel}>
-                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
-                </Text>
-                <Text style={styles.meaningText}>
-                  {sel.card.meanings[sel.orientation].love}
-                </Text>
-              </View>
-            ))}
-          </View>
-        )}
-
-        {/* Love Choice - FREE */}
-        {spreadType === "love_choice" && (
-          <View style={styles.meaningsSection}>
-            {selectedCards.map((sel, i) => (
-              <View key={i} style={styles.meaningCard}>
-                {sel.position && (
-                  <Text style={styles.positionLabel}>
-                    {sel.position === "advice" ? t("heartGuidance") : t(sel.position)}
-                  </Text>
-                )}
-                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
-                <Text style={styles.orientationLabel}>
-                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
-                </Text>
-                <Text style={styles.meaningText}>
-                  {sel.card.meanings[sel.orientation].love}
-                </Text>
-              </View>
-            ))}
-          </View>
-        )}
-
-        {/* Path to Love - FREE */}
-        {spreadType === "path_to_love" && (
-          <View style={styles.meaningsSection}>
-            {selectedCards.map((sel, i) => (
-              <View key={i} style={styles.meaningCard}>
-                {sel.position && (
-                  <Text style={styles.positionLabel}>{t(sel.position)}</Text>
-                )}
-                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
-                <Text style={styles.orientationLabel}>
-                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
-                </Text>
-                <Text style={styles.meaningText}>
-                  {sel.card.meanings[sel.orientation].love}
-                </Text>
-              </View>
-            ))}
-          </View>
-        )}
-
-        {/* Go Dive Button (Premium) */}
-        <TouchableOpacity
-          style={[styles.goDiveButton, isPremium && styles.goDiveButtonPremium]}
-          onPress={handleGoDive}
-        >
-          <Text style={styles.goDiveButtonText}>
-            {isPremium ? `✨ ${t("goDive")}` : `🔒 ${t("goDive")} - ${t("premiumFeature")}`}
-          </Text>
-        </TouchableOpacity>
+        <View style={styles.bottomPadding} />
       </ScrollView>
 
       {/* Premium Modal */}
       {showPremiumModal && (
         <View style={styles.modalOverlay}>
-          <View style={styles.modal}>
+          <GlassCard style={styles.modal}>
             <Text style={styles.modalTitle}>{t("premiumFeature")}</Text>
             <Text style={styles.modalText}>
               Unlock deep dive readings with shadow analysis, blockers, mantras,
               and journal prompts.
             </Text>
             <TouchableOpacity
-              style={styles.modalButton}
               onPress={() => setShowPremiumModal(false)}
             >
-              <Text style={styles.modalButtonText}>Close</Text>
+              <LinearGradient
+                colors={["#a855f7", "#6366f1"]}
+                style={styles.modalButton}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+              >
+                <Text style={styles.modalButtonText}>Close</Text>
+              </LinearGradient>
             </TouchableOpacity>
-          </View>
+          </GlassCard>
         </View>
       )}
-
-    </SafeAreaView>
+    </GradientBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
+  emptyState: {
     flex: 1,
-    backgroundColor: "#1a1a2e",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+  },
+  emptyText: {
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 18,
+    marginBottom: 20,
+  },
+  newButton: {
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+  },
+  newButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "600",
   },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "#333",
+    padding: 20,
   },
   title: {
     color: "#fff",
-    fontSize: 24,
+    fontSize: 26,
     fontWeight: "bold",
   },
   newReadingLink: {
-    color: "#9b59b6",
+    color: "#a855f7",
     fontSize: 14,
+    fontWeight: "500",
   },
   cardsSummary: {
-    flexDirection: "row",
-    padding: 16,
-    gap: 12,
-    justifyContent: "center",
-  },
-  cardSummaryItem: {
-    alignItems: "center",
-    backgroundColor: "#252540",
-    borderRadius: 12,
-    padding: 16,
-    flex: 1,
-    maxWidth: 120,
-  },
-  cardBadge: {
-    width: 50,
-    height: 70,
-    backgroundColor: "#4a3f6b",
-    borderRadius: 6,
-    justifyContent: "center",
-    alignItems: "center",
-    marginBottom: 8,
-    borderWidth: 2,
-    borderColor: "#9b59b6",
-  },
-  cardBadgeReversed: {
-    backgroundColor: "#6b3f4a",
-    borderColor: "#b659a0",
-  },
-  cardBadgeText: {
-    fontSize: 24,
-  },
-  cardSummaryName: {
-    color: "#fff",
-    fontSize: 12,
-    fontWeight: "600",
-    textAlign: "center",
-  },
-  cardSummaryOrientation: {
-    color: "#9b59b6",
-    fontSize: 11,
-    marginTop: 4,
-  },
-  cardSummaryPosition: {
-    color: "#888",
-    fontSize: 10,
-    marginTop: 2,
-  },
-  focusAreaBadge: {
-    alignSelf: "flex-start",
-    backgroundColor: "#3a3a5a",
     paddingHorizontal: 16,
-    paddingVertical: 8,
-    borderRadius: 20,
-    marginBottom: 8,
+    paddingBottom: 12,
+    gap: 8,
   },
-  focusAreaText: {
+  cardChip: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "rgba(255, 255, 255, 0.05)",
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 8,
+    gap: 8,
+  },
+  cardChipName: {
     color: "#fff",
+    fontSize: 13,
+    fontWeight: "500",
+    maxWidth: 100,
+  },
+  cardChipOrientation: {
     fontSize: 14,
+    fontWeight: "bold",
+  },
+  focusBadgeContainer: {
+    alignItems: "center",
+    marginBottom: 16,
+  },
+  focusBadge: {
+    backgroundColor: "rgba(168, 85, 247, 0.3)",
+    paddingHorizontal: 16,
+    paddingVertical: 6,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#a855f7",
+  },
+  focusBadgeText: {
+    color: "#a855f7",
+    fontSize: 13,
     fontWeight: "600",
+    textTransform: "capitalize",
   },
   meaningsSection: {
     padding: 16,
-    gap: 16,
+    gap: 12,
   },
   meaningCard: {
-    backgroundColor: "#252540",
-    borderRadius: 12,
-    padding: 16,
+    marginBottom: 4,
   },
   positionLabel: {
-    color: "#9b59b6",
-    fontSize: 12,
-    fontWeight: "600",
+    fontSize: 13,
+    fontWeight: "700",
     textTransform: "uppercase",
-    marginBottom: 4,
+    marginBottom: 6,
+    letterSpacing: 1,
   },
   cardNameLabel: {
     color: "#fff",
@@ -352,49 +298,29 @@ const styles = StyleSheet.create({
     marginBottom: 4,
   },
   orientationLabel: {
-    color: "#888",
-    fontSize: 12,
+    fontSize: 13,
+    fontWeight: "600",
     marginBottom: 12,
   },
   meaningText: {
-    color: "#ccc",
-    fontSize: 14,
-    lineHeight: 22,
+    color: "rgba(255, 255, 255, 0.8)",
+    fontSize: 15,
+    lineHeight: 24,
   },
   goDiveButton: {
-    backgroundColor: "#333",
-    margin: 16,
+    marginHorizontal: 16,
+    marginTop: 8,
     padding: 18,
-    borderRadius: 12,
+    borderRadius: 16,
     alignItems: "center",
-  },
-  goDiveButtonPremium: {
-    backgroundColor: "#9b59b6",
   },
   goDiveButtonText: {
     color: "#fff",
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: "600",
   },
-  emptyState: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center",
-  },
-  emptyText: {
-    color: "#888",
-    fontSize: 18,
-    marginBottom: 20,
-  },
-  newButton: {
-    backgroundColor: "#9b59b6",
-    paddingHorizontal: 24,
-    paddingVertical: 12,
-    borderRadius: 8,
-  },
-  newButtonText: {
-    color: "#fff",
-    fontSize: 16,
+  bottomPadding: {
+    height: 40,
   },
   modalOverlay: {
     position: "absolute",
@@ -402,15 +328,14 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: "rgba(0,0,0,0.8)",
+    backgroundColor: "rgba(0, 0, 0, 0.7)",
     justifyContent: "center",
     alignItems: "center",
+    padding: 20,
   },
   modal: {
-    backgroundColor: "#252540",
-    borderRadius: 16,
-    padding: 24,
-    margin: 20,
+    width: "100%",
+    maxWidth: 320,
     alignItems: "center",
   },
   modalTitle: {
@@ -420,19 +345,20 @@ const styles = StyleSheet.create({
     marginBottom: 12,
   },
   modalText: {
-    color: "#ccc",
-    fontSize: 14,
+    color: "rgba(255, 255, 255, 0.7)",
+    fontSize: 15,
     textAlign: "center",
     marginBottom: 20,
+    lineHeight: 22,
   },
   modalButton: {
-    backgroundColor: "#9b59b6",
-    paddingHorizontal: 24,
+    paddingHorizontal: 32,
     paddingVertical: 12,
-    borderRadius: 8,
+    borderRadius: 12,
   },
   modalButtonText: {
     color: "#fff",
     fontSize: 16,
+    fontWeight: "600",
   },
 });

@@ -1,9 +1,9 @@
 import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
+import { GradientBackground, GlassCard, SpreadCard } from "../components/ui";
 import type { Language, SpreadType, FocusArea } from "../types/tarot";
 
 const languages: { code: Language; label: string; flag: string }[] = [
@@ -12,6 +12,14 @@ const languages: { code: Language; label: string; flag: string }[] = [
   { code: "de", label: "Deutsch", flag: "🇩🇪" },
   { code: "es", label: "Español", flag: "🇪🇸" },
 ];
+
+// Category colors
+const COLORS = {
+  general: "#a855f7",
+  love: "#ec4899",
+  career: "#f59e0b",
+  spiritual: "#6366f1",
+};
 
 export default function HomeScreen() {
   const router = useRouter();
@@ -30,8 +38,13 @@ export default function HomeScreen() {
     router.push(`/pick/${spread}`);
   };
 
+  // Get description based on premium status
+  const getDesc = (key: string) => {
+    return isPremium ? t(`${key}Premium`) : t(key);
+  };
+
   return (
-    <SafeAreaView style={styles.container}>
+    <GradientBackground>
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
@@ -46,21 +59,25 @@ export default function HomeScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Language Selection */}
+        {/* Language Selection - Clean flat design */}
         <View style={styles.section}>
           <Text style={styles.sectionTitle}>{t("selectLanguage")}</Text>
           <View style={styles.languageGrid}>
             {languages.map((lang) => (
               <TouchableOpacity
                 key={lang.code}
+                onPress={() => handleLanguageSelect(lang.code)}
+                activeOpacity={0.7}
                 style={[
                   styles.languageButton,
                   language === lang.code && styles.languageSelected,
                 ]}
-                onPress={() => handleLanguageSelect(lang.code)}
               >
                 <Text style={styles.flag}>{lang.flag}</Text>
-                <Text style={styles.languageLabel}>{lang.label}</Text>
+                <Text style={[
+                  styles.languageLabel,
+                  language === lang.code && styles.languageLabelSelected
+                ]}>{lang.label}</Text>
               </TouchableOpacity>
             ))}
           </View>
@@ -68,154 +85,223 @@ export default function HomeScreen() {
 
         {/* General Category */}
         <View style={styles.section}>
-          <Text style={styles.categoryTitle}>{t("generalCategory")}</Text>
-          <View style={styles.spreadGrid}>
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("single_card", "general")}
-            >
-              <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
-              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("past_present_future")}
-            >
-              <Text style={styles.spreadTitle}>{t("threeCards")}</Text>
-              <Text style={styles.spreadDesc}>{t("threeCardsCount")}</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("yes_no")}
-            >
-              <Text style={styles.spreadTitle}>{t("yesNo")}</Text>
-              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("situation_obstacle_advice")}
-            >
-              <Text style={styles.spreadTitle}>{t("situationObstacleAdvice")}</Text>
-              <Text style={styles.spreadDesc}>{t("threeCardsCount")}</Text>
-            </TouchableOpacity>
-          </View>
+          <Text style={[styles.categoryTitle, { color: COLORS.general }]}>
+            ✨ {t("generalCategory")}
+          </Text>
+          
+          <SpreadCard
+            title={t("singleCard")}
+            description={getDesc("singleCardDesc")}
+            cardCount="single"
+            categoryColor={COLORS.general}
+            onPress={() => handleSpreadSelect("single_card", "general")}
+          />
+          
+          <SpreadCard
+            title={t("threeCards")}
+            description={getDesc("threeCardsDesc")}
+            cardCount="three"
+            categoryColor={COLORS.general}
+            onPress={() => handleSpreadSelect("past_present_future")}
+          />
+          
+          <SpreadCard
+            title={t("yesNo")}
+            description={getDesc("yesNoDesc")}
+            cardCount="single"
+            categoryColor={COLORS.general}
+            onPress={() => handleSpreadSelect("yes_no")}
+          />
+          
+          <SpreadCard
+            title={t("situationObstacleAdvice")}
+            description={getDesc("situationObstacleAdviceDesc")}
+            cardCount="three"
+            categoryColor={COLORS.general}
+            onPress={() => handleSpreadSelect("situation_obstacle_advice")}
+          />
         </View>
 
         {/* Love Category */}
         <View style={styles.section}>
-          <Text style={[styles.categoryTitle, styles.loveCategory]}>{t("loveCategory")}</Text>
-          <View style={styles.spreadGrid}>
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("single_card", "love")}
-            >
-              <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
-              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("destinys_embrace", "love")}
-            >
-              <Text style={styles.spreadTitle}>{t("destinysEmbrace")}</Text>
-              <Text style={styles.spreadDesc}>{t("threeCardsCount")}</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("love_choice", "love")}
-            >
-              <Text style={styles.spreadTitle}>{t("loveChoice")}</Text>
-              <Text style={styles.spreadDesc}>{t("fiveCards")}</Text>
-            </TouchableOpacity>
-
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("path_to_love", "love")}
-            >
-              <Text style={styles.spreadTitle}>{t("pathToLove")}</Text>
-              <Text style={styles.spreadDesc}>{t("fiveCards")}</Text>
-            </TouchableOpacity>
-          </View>
+          <Text style={[styles.categoryTitle, { color: COLORS.love }]}>
+            💖 {t("loveCategory")}
+          </Text>
+          
+          <SpreadCard
+            title={t("singleCard")}
+            description={getDesc("singleCardDesc")}
+            cardCount="single"
+            categoryColor={COLORS.love}
+            onPress={() => handleSpreadSelect("single_card", "love")}
+          />
+          
+          <SpreadCard
+            title={t("destinysEmbrace")}
+            description={getDesc("destinysEmbraceDesc")}
+            cardCount="three"
+            categoryColor={COLORS.love}
+            onPress={() => handleSpreadSelect("destinys_embrace", "love")}
+          />
+          
+          <SpreadCard
+            title={t("loveChoice")}
+            description={getDesc("loveChoiceDesc")}
+            cardCount="five"
+            categoryColor={COLORS.love}
+            onPress={() => handleSpreadSelect("love_choice", "love")}
+          />
+          
+          <SpreadCard
+            title={t("pathToLove")}
+            description={getDesc("pathToLoveDesc")}
+            cardCount="five"
+            categoryColor={COLORS.love}
+            onPress={() => handleSpreadSelect("path_to_love", "love")}
+          />
         </View>
 
         {/* Career Category */}
         <View style={styles.section}>
-          <Text style={[styles.categoryTitle, styles.careerCategory]}>{t("careerCategory")}</Text>
-          <View style={styles.spreadGrid}>
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("single_card", "career")}
-            >
-              <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
-              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
-            </TouchableOpacity>
-          </View>
+          <Text style={[styles.categoryTitle, { color: COLORS.career }]}>
+            💼 {t("careerCategory")}
+          </Text>
+          
+          <SpreadCard
+            title={t("singleCard")}
+            description={getDesc("singleCardDesc")}
+            cardCount="single"
+            categoryColor={COLORS.career}
+            onPress={() => handleSpreadSelect("single_card", "career")}
+          />
+          
+          <SpreadCard
+            title={t("careerClarity")}
+            description={getDesc("careerClarityDesc")}
+            cardCount="three"
+            categoryColor={COLORS.career}
+            onPress={() => handleSpreadSelect("career_clarity", "career")}
+          />
+          
+          <SpreadCard
+            title={t("careerPathGuide")}
+            description={getDesc("careerPathGuideDesc")}
+            cardCount="three"
+            categoryColor={COLORS.career}
+            onPress={() => handleSpreadSelect("career_path_guide", "career")}
+          />
+          
+          <SpreadCard
+            title={t("newBusinessExploration")}
+            description={getDesc("newBusinessExplorationDesc")}
+            cardCount="five"
+            categoryColor={COLORS.career}
+            onPress={() => handleSpreadSelect("new_business_exploration", "career")}
+          />
+          
+          <SpreadCard
+            title={t("wealthFlow")}
+            description={getDesc("wealthFlowDesc")}
+            cardCount="five"
+            categoryColor={COLORS.career}
+            onPress={() => handleSpreadSelect("wealth_flow", "career")}
+          />
         </View>
 
         {/* Spiritual Category */}
         <View style={styles.section}>
-          <Text style={[styles.categoryTitle, styles.spiritualCategory]}>{t("spiritualCategory")}</Text>
-          <View style={styles.spreadGrid}>
-            <TouchableOpacity
-              style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("single_card", "spiritual")}
-            >
-              <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
-              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
-            </TouchableOpacity>
-          </View>
+          <Text style={[styles.categoryTitle, { color: COLORS.spiritual }]}>
+            🔮 {t("spiritualCategory")}
+          </Text>
+          
+          <SpreadCard
+            title={t("singleCard")}
+            description={getDesc("singleCardDesc")}
+            cardCount="single"
+            categoryColor={COLORS.spiritual}
+            onPress={() => handleSpreadSelect("single_card", "spiritual")}
+          />
+          
+          <SpreadCard
+            title={t("newMoonRitual")}
+            description={getDesc("newMoonRitualDesc")}
+            cardCount="five"
+            categoryColor={COLORS.spiritual}
+            onPress={() => handleSpreadSelect("new_moon_ritual", "spiritual")}
+          />
+          
+          <SpreadCard
+            title={t("fullMoonRelease")}
+            description={getDesc("fullMoonReleaseDesc")}
+            cardCount="five"
+            categoryColor={COLORS.spiritual}
+            onPress={() => handleSpreadSelect("full_moon_release", "spiritual")}
+          />
+          
+          <SpreadCard
+            title={t("mindBodySpirit")}
+            description={getDesc("mindBodySpiritDesc")}
+            cardCount="three"
+            categoryColor={COLORS.spiritual}
+            onPress={() => handleSpreadSelect("mind_body_spirit", "spiritual")}
+          />
+          
+          <SpreadCard
+            title={t("celestialIllumination")}
+            description={getDesc("celestialIlluminationDesc")}
+            cardCount="three"
+            categoryColor={COLORS.spiritual}
+            onPress={() => handleSpreadSelect("celestial_illumination", "spiritual")}
+          />
         </View>
+        
+        <View style={styles.bottomPadding} />
       </ScrollView>
-    </SafeAreaView>
+    </GradientBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#1a1a2e",
-  },
   content: {
     flex: 1,
     padding: 20,
-    paddingBottom: 40,
   },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 40,
-    marginTop: 20,
+    marginBottom: 30,
+    marginTop: 10,
   },
   title: {
     fontSize: 32,
     fontWeight: "bold",
-    color: "#eee",
+    color: "#fff",
   },
   premiumBadge: {
     paddingHorizontal: 16,
     paddingVertical: 8,
     borderRadius: 20,
-    backgroundColor: "#333",
+    backgroundColor: "rgba(255, 255, 255, 0.1)",
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.2)",
   },
   premiumActive: {
-    backgroundColor: "#9b59b6",
+    backgroundColor: "rgba(168, 85, 247, 0.4)",
+    borderColor: "#a855f7",
   },
   premiumText: {
     color: "#fff",
     fontWeight: "600",
+    fontSize: 14,
   },
   section: {
-    marginBottom: 30,
+    marginBottom: 24,
   },
   sectionTitle: {
-    fontSize: 18,
-    color: "#888",
-    marginBottom: 16,
+    fontSize: 16,
+    color: "rgba(255, 255, 255, 0.5)",
+    marginBottom: 12,
   },
   languageGrid: {
     flexDirection: "row",
@@ -226,60 +312,33 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     paddingHorizontal: 16,
-    paddingVertical: 12,
-    borderRadius: 12,
-    backgroundColor: "#252540",
+    paddingVertical: 10,
     gap: 8,
+    borderRadius: 12,
   },
   languageSelected: {
-    backgroundColor: "#4a4a6a",
-    borderWidth: 2,
-    borderColor: "#9b59b6",
+    backgroundColor: "rgba(168, 85, 247, 0.2)",
+    borderWidth: 1,
+    borderColor: "#a855f7",
   },
   flag: {
     fontSize: 24,
   },
   languageLabel: {
+    color: "rgba(255, 255, 255, 0.6)",
+    fontSize: 15,
+  },
+  languageLabelSelected: {
     color: "#fff",
-    fontSize: 16,
+    fontWeight: "600",
   },
   categoryTitle: {
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: "bold",
-    color: "#9b59b6",
     marginBottom: 16,
+    marginTop: 8,
   },
-  loveCategory: {
-    color: "#e74c3c",
-  },
-  careerCategory: {
-    color: "#3498db",
-  },
-  spiritualCategory: {
-    color: "#9b59b6",
-  },
-  spreadGrid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 12,
-  },
-  spreadCard: {
-    backgroundColor: "#252540",
-    borderRadius: 16,
-    padding: 20,
-    alignItems: "center",
-    width: "31%",
-    minWidth: 100,
-  },
-  spreadTitle: {
-    color: "#fff",
-    fontSize: 14,
-    fontWeight: "600",
-    marginBottom: 4,
-    textAlign: "center",
-  },
-  spreadDesc: {
-    color: "#888",
-    fontSize: 12,
+  bottomPadding: {
+    height: 40,
   },
 });

@@ -7,10 +7,11 @@ import {
   ScrollView,
   ActivityIndicator,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
+import { GradientBackground, GlassCard } from "../components/ui";
+import { LinearGradient } from "expo-linear-gradient";
 import type { YesNoReading } from "../types/tarot";
 import Constants from "expo-constants";
 
@@ -20,10 +21,10 @@ const API_URL = process.env.EXPO_PUBLIC_API_URL || `http://${host}:3001`;
 
 // Confidence renk sistemi (netlik derecesi)
 const getConfidenceColor = (confidence: number): string => {
-  if (confidence >= 85) return "#27ae60"; // Yeşil - Çok Net
-  if (confidence >= 75) return "#f1c40f"; // Sarı - İyi
-  if (confidence >= 65) return "#e67e22"; // Turuncu - Orta
-  return "#e74c3c"; // Kırmızı - Belirsiz
+  if (confidence >= 85) return "#22c55e"; // Yeşil - Çok Net
+  if (confidence >= 75) return "#f59e0b"; // Amber - İyi
+  if (confidence >= 65) return "#f97316"; // Turuncu - Orta
+  return "#ef4444"; // Kırmızı - Belirsiz
 };
 
 const getConfidenceLabel = (confidence: number, t: (key: string) => string): string => {
@@ -89,35 +90,45 @@ export default function YesNoResultScreen() {
 
   if (loading) {
     return (
-      <SafeAreaView style={styles.container}>
+      <GradientBackground>
         <View style={styles.loadingContainer}>
-          <ActivityIndicator size="large" color="#9b59b6" />
+          <ActivityIndicator size="large" color="#a855f7" />
           <Text style={styles.loadingText}>
             {isPremium ? "Yorumunuz hazırlanıyor..." : "Yükleniyor..."}
           </Text>
         </View>
-      </SafeAreaView>
+      </GradientBackground>
     );
   }
 
   if (error || !reading) {
     return (
-      <SafeAreaView style={styles.container}>
+      <GradientBackground>
         <View style={styles.errorContainer}>
-          <Text style={styles.errorText}>Hata: {error}</Text>
-          <TouchableOpacity style={styles.retryButton} onPress={handleNewReading}>
-            <Text style={styles.retryButtonText}>{t("newReading")}</Text>
-          </TouchableOpacity>
+          <GlassCard style={styles.errorCard}>
+            <Text style={styles.errorText}>Hata: {error}</Text>
+            <TouchableOpacity onPress={handleNewReading}>
+              <LinearGradient
+                colors={["#a855f7", "#6366f1"]}
+                style={styles.retryButton}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+              >
+                <Text style={styles.retryButtonText}>{t("newReading")}</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          </GlassCard>
         </View>
-      </SafeAreaView>
+      </GradientBackground>
     );
   }
 
   const isYes = reading.answer === "yes";
+  const answerColor = isYes ? "#22c55e" : "#ef4444";
 
   return (
-    <SafeAreaView style={styles.container}>
-      <ScrollView contentContainerStyle={styles.scrollContent}>
+    <GradientBackground>
+      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.title}>{reading.title}</Text>
@@ -126,19 +137,26 @@ export default function YesNoResultScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Answer Display */}
-        <View style={[styles.answerContainer, isYes ? styles.yesContainer : styles.noContainer]}>
-          <Text style={[styles.answerEmoji, !isYes && styles.reversedCard]}>🎴</Text>
-          <Text style={styles.answerText}>
+        {/* Answer Display - Clean bold design */}
+        <GlassCard
+          variant={isYes ? "upright" : "reversed"}
+          style={styles.answerContainer}
+        >
+          <View style={[styles.answerCircle, { borderColor: answerColor, shadowColor: answerColor }]}>
+            <Text style={[styles.arrowIcon, { color: answerColor }]}>
+              {isYes ? "↑" : "↓"}
+            </Text>
+          </View>
+          <Text style={[styles.answerText, { color: answerColor }]}>
             {isYes ? t("yes") : t("no")}
           </Text>
           <Text style={styles.orientationLabel}>
-            {isYes ? "↑ " + t("upright") : "↓ " + t("reversed")}
+            {t(isYes ? "upright" : "reversed")}
           </Text>
-        </View>
+        </GlassCard>
 
-        {/* Confidence Bar */}
-        <View style={styles.confidenceSection}>
+        {/* Confidence Section */}
+        <GlassCard style={styles.confidenceSection}>
           <View style={styles.confidenceHeader}>
             <Text style={styles.confidenceLabel}>{t("confidence")}</Text>
             <View style={styles.confidenceValueContainer}>
@@ -152,18 +170,20 @@ export default function YesNoResultScreen() {
             </View>
           </View>
           <View style={styles.confidenceBarBg}>
-            <View
-              style={[
-                styles.confidenceBarFill,
-                { width: `${reading.confidence}%`, backgroundColor: getConfidenceColor(reading.confidence) },
-              ]}
+            <LinearGradient
+              colors={[getConfidenceColor(reading.confidence), getConfidenceColor(reading.confidence) + "88"]}
+              style={[styles.confidenceBarFill, { width: `${reading.confidence}%` }]}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 1, y: 0 }}
             />
           </View>
-        </View>
+        </GlassCard>
 
         {/* Focus Area Badge */}
-        <View style={styles.focusBadge}>
-          <Text style={styles.focusBadgeText}>{t(reading.focusArea)}</Text>
+        <View style={styles.focusBadgeContainer}>
+          <View style={styles.focusBadge}>
+            <Text style={styles.focusBadgeText}>{t(reading.focusArea)}</Text>
+          </View>
         </View>
 
         {/* Keywords */}
@@ -178,26 +198,29 @@ export default function YesNoResultScreen() {
         )}
 
         {/* Explanation */}
-        <View style={styles.explanationSection}>
+        <GlassCard style={styles.explanationSection}>
           <Text style={styles.explanationText}>{reading.explanation}</Text>
-        </View>
+        </GlassCard>
 
         {/* Premium Badge */}
         {isPremium && (
-          <View style={styles.premiumBadge}>
+          <LinearGradient
+            colors={["#a855f7", "#6366f1"]}
+            style={styles.premiumBadge}
+            start={{ x: 0, y: 0 }}
+            end={{ x: 1, y: 1 }}
+          >
             <Text style={styles.premiumBadgeText}>★ Premium</Text>
-          </View>
+          </LinearGradient>
         )}
+
+        <View style={styles.bottomPadding} />
       </ScrollView>
-    </SafeAreaView>
+    </GradientBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#1a1a2e",
-  },
   scrollContent: {
     padding: 20,
   },
@@ -207,7 +230,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   loadingText: {
-    color: "#888",
+    color: "rgba(255, 255, 255, 0.5)",
     marginTop: 16,
     fontSize: 16,
   },
@@ -217,81 +240,90 @@ const styles = StyleSheet.create({
     alignItems: "center",
     padding: 20,
   },
+  errorCard: {
+    alignItems: "center",
+    width: "100%",
+    maxWidth: 320,
+  },
   errorText: {
-    color: "#e74c3c",
+    color: "#ef4444",
     fontSize: 16,
     textAlign: "center",
     marginBottom: 20,
   },
   retryButton: {
-    backgroundColor: "#9b59b6",
     paddingHorizontal: 24,
     paddingVertical: 12,
-    borderRadius: 8,
+    borderRadius: 12,
   },
   retryButtonText: {
     color: "#fff",
     fontSize: 16,
+    fontWeight: "600",
   },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 24,
+    marginBottom: 20,
   },
   title: {
     color: "#fff",
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
     flex: 1,
   },
   newReadingLink: {
-    color: "#9b59b6",
+    color: "#a855f7",
     fontSize: 14,
+    fontWeight: "500",
   },
   answerContainer: {
     alignItems: "center",
-    padding: 32,
-    borderRadius: 20,
-    marginBottom: 24,
+    paddingVertical: 32,
+    marginBottom: 16,
   },
-  yesContainer: {
-    backgroundColor: "rgba(39, 174, 96, 0.2)",
-    borderWidth: 2,
-    borderColor: "#27ae60",
+  answerCircle: {
+    width: 90,
+    height: 90,
+    borderRadius: 45,
+    borderWidth: 4,
+    justifyContent: "center",
+    alignItems: "center",
+    marginBottom: 20,
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.9,
+    shadowRadius: 25,
+    elevation: 12,
+    backgroundColor: "rgba(0, 0, 0, 0.4)",
   },
-  noContainer: {
-    backgroundColor: "rgba(231, 76, 60, 0.2)",
-    borderWidth: 2,
-    borderColor: "#e74c3c",
-  },
-  answerEmoji: {
-    fontSize: 64,
-    marginBottom: 8,
-  },
-  reversedCard: {
-    transform: [{ rotate: "180deg" }],
+  arrowIcon: {
+    fontSize: 48,
+    fontWeight: "bold",
   },
   answerText: {
-    fontSize: 36,
-    fontWeight: "bold",
-    color: "#fff",
+    fontSize: 48,
+    fontWeight: "900",
+    letterSpacing: 2,
+    textTransform: "uppercase",
   },
   orientationLabel: {
     fontSize: 14,
-    color: "#aaa",
+    fontWeight: "500",
     marginTop: 8,
+    color: "rgba(255, 255, 255, 0.5)",
+    textTransform: "capitalize",
   },
   confidenceSection: {
-    marginBottom: 20,
+    marginBottom: 16,
   },
   confidenceHeader: {
     flexDirection: "row",
     justifyContent: "space-between",
-    marginBottom: 8,
+    marginBottom: 10,
   },
   confidenceLabel: {
-    color: "#888",
+    color: "rgba(255, 255, 255, 0.5)",
     fontSize: 14,
   },
   confidenceValueContainer: {
@@ -314,7 +346,7 @@ const styles = StyleSheet.create({
   },
   confidenceBarBg: {
     height: 12,
-    backgroundColor: "#333",
+    backgroundColor: "rgba(255, 255, 255, 0.1)",
     borderRadius: 6,
     overflow: "hidden",
   },
@@ -322,56 +354,64 @@ const styles = StyleSheet.create({
     height: "100%",
     borderRadius: 6,
   },
+  focusBadgeContainer: {
+    alignItems: "center",
+    marginBottom: 16,
+  },
   focusBadge: {
-    alignSelf: "flex-start",
-    backgroundColor: "#3a3a5a",
-    paddingHorizontal: 12,
+    backgroundColor: "rgba(168, 85, 247, 0.3)",
+    paddingHorizontal: 16,
     paddingVertical: 6,
-    borderRadius: 999,
-    marginBottom: 12,
+    borderRadius: 20,
+    borderWidth: 1,
+    borderColor: "#a855f7",
   },
   focusBadgeText: {
-    color: "#fff",
-    fontSize: 12,
+    color: "#a855f7",
+    fontSize: 13,
     fontWeight: "600",
+    textTransform: "capitalize",
   },
   keywordsSection: {
     flexDirection: "row",
     flexWrap: "wrap",
+    justifyContent: "center",
     gap: 8,
-    marginBottom: 20,
+    marginBottom: 16,
   },
   keywordBadge: {
-    backgroundColor: "#4a3f6b",
-    paddingHorizontal: 12,
-    paddingVertical: 6,
+    backgroundColor: "rgba(168, 85, 247, 0.2)",
+    paddingHorizontal: 14,
+    paddingVertical: 8,
     borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "rgba(168, 85, 247, 0.4)",
   },
   keywordText: {
-    color: "#ddd",
+    color: "#fff",
     fontSize: 13,
+    fontWeight: "500",
   },
   explanationSection: {
-    backgroundColor: "#252540",
-    borderRadius: 16,
-    padding: 20,
     marginBottom: 20,
   },
   explanationText: {
-    color: "#ccc",
+    color: "rgba(255, 255, 255, 0.85)",
     fontSize: 16,
-    lineHeight: 24,
+    lineHeight: 26,
   },
   premiumBadge: {
     alignSelf: "center",
-    backgroundColor: "#9b59b6",
-    paddingHorizontal: 16,
-    paddingVertical: 8,
+    paddingHorizontal: 20,
+    paddingVertical: 10,
     borderRadius: 20,
   },
   premiumBadgeText: {
     color: "#fff",
-    fontSize: 12,
+    fontSize: 13,
     fontWeight: "600",
+  },
+  bottomPadding: {
+    height: 20,
   },
 });

@@ -107,6 +107,102 @@ const buildPathToLovePrompt = (language, params) => {
   return langPrompts.buildPathToLovePrompt(params).trim();
 };
 
+// ============================================
+// SPIRITUAL SPREADS
+// ============================================
+
+/**
+ * Build New Moon Ritual reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildNewMoonPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildNewMoonPrompt(params).trim();
+};
+
+/**
+ * Build Full Moon Release reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildFullMoonPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildFullMoonPrompt(params).trim();
+};
+
+/**
+ * Build Mind Body Spirit reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildMbsPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildMbsPrompt(params).trim();
+};
+
+/**
+ * Build Celestial Illumination reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildCelestialPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildCelestialPrompt(params).trim();
+};
+
+// ============================================
+// CAREER SPREADS
+// ============================================
+
+/**
+ * Build Career Clarity reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildCareerClarityPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildCareerClarityPrompt(params).trim();
+};
+
+/**
+ * Build Career Path Guide reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildCareerPathGuidePrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildCareerPathGuidePrompt(params).trim();
+};
+
+/**
+ * Build New Business Exploration reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildNewBusinessPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildNewBusinessPrompt(params).trim();
+};
+
+/**
+ * Build Wealth Flow reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildWealthFlowPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildWealthFlowPrompt(params).trim();
+};
+
 module.exports = {
   getPrompts,
   getSystemMessage,
@@ -116,5 +212,13 @@ module.exports = {
   buildSoaPrompt,
   buildDestinysEmbracePrompt,
   buildLoveChoicePrompt,
-  buildPathToLovePrompt
+  buildPathToLovePrompt,
+  buildNewMoonPrompt,
+  buildFullMoonPrompt,
+  buildMbsPrompt,
+  buildCelestialPrompt,
+  buildCareerClarityPrompt,
+  buildCareerPathGuidePrompt,
+  buildNewBusinessPrompt,
+  buildWealthFlowPrompt
 };
