@@ -7,24 +7,49 @@ Modern psikolojik tarot okumaları sunan mobil uygulama. FREE kullanıcılar har
 ## Özellikler
 
 - **4 Dil Desteği:** Türkçe (TR), İngilizce (EN), Almanca (DE), İspanyolca (ES)
-- **7 Farklı Spread:** Tekli Kart, Üçlü Kart (PPF), Evet/Hayır, Durum/Engel/Tavsiye (SOA), Kaderin Kucağı, Aşk Seçimi, Aşka Giden Yol
-- **FREE:** JSON'dan hardcoded anlamlar (backend yok)
+- **4 Kategori, 15+ Spread:** Genel, Aşk, Kariyer, Ruhsal
+- **FREE:** JSON'dan hardcoded anlamlar + spread bazlı premium preview teaser'ları
 - **PREMIUM:** GPT-4o ile psikolojik davranış analizi
+- **Glassmorphism UI:** Modern, temiz, minimalist tasarım
 - **Loglama:** Tüm premium okumalar `premium-readings.json`'a kaydedilir
 
 ---
 
 ## Spread Yapısı Özeti
 
-| Spread | Kod | Kart Sayısı | Kategori |
-|--------|-----|-------------|----------|
-| Tekli Kart | `single_card` | 1 | Genel / Aşk / Kariyer / Finans |
-| Zamanın Akışı (PPF) | `past_present_future` | 3 | Genel |
-| Evet / Hayır | `yes_no` | 1 | Genel |
-| Yolun Haritası (SOA) | `situation_obstacle_advice` | 3 | Genel |
-| Kaderin Dokunuşu | `destinys_embrace` | 3 | Aşk |
-| Aşk Kavşağı | `love_choice` | 5 | Aşk |
-| Kalbin Rotası | `path_to_love` | 5 | Aşk |
+### 🌟 Genel Kategori
+| Spread | Kod | Kart | Açıklama |
+|--------|-----|------|----------|
+| Tekli Kart | `single_card` | 1 | Hızlı içgörü |
+| Zamanın Akışı | `past_present_future` | 3 | Geçmiş-Şimdi-Gelecek |
+| Evet / Hayır | `yes_no` | 1 | Net cevap |
+| Yolun Haritası | `situation_obstacle_advice` | 3 | Durum-Engel-Tavsiye |
+
+### 💖 Aşk Kategorisi
+| Spread | Kod | Kart | Açıklama |
+|--------|-----|------|----------|
+| Tekli Kart | `single_card` | 1 | Aşk odaklı |
+| Kaderin Dokunuşu | `destinys_embrace` | 3 | İlişki dinamiği |
+| Aşk Kavşağı | `love_choice` | 5 | İki yol karşılaştırma |
+| Kalbin Rotası | `path_to_love` | 5 | Aşka giden yol |
+
+### 💼 Kariyer Kategorisi
+| Spread | Kod | Kart | Açıklama |
+|--------|-----|------|----------|
+| Tekli Kart | `single_card` | 1 | Kariyer odaklı |
+| Kariyer Netliği | `career_clarity` | 3 | Durum analizi |
+| Kariyer Rehberi | `career_path_guide` | 3 | Güçlü yönler & fırsatlar |
+| Yeni İş Keşfi | `new_business_exploration` | 5 | İş fikri analizi |
+| Para Akışı | `wealth_flow` | 5 | Finansal denge |
+
+### 🔮 Ruhsal Kategori
+| Spread | Kod | Kart | Açıklama |
+|--------|-----|------|----------|
+| Tekli Kart | `single_card` | 1 | Ruhsal odaklı |
+| Yeni Ay Ritüeli | `new_moon_ritual` | 5 | Niyet belirleme |
+| Dolunay Arınması | `full_moon_release` | 5 | Bırakma & arınma |
+| Zihin-Beden-Ruh | `mind_body_spirit` | 3 | İçsel denge |
+| Kozmik Aydınlanma | `celestial_illumination` | 3 | Evrensel rehberlik |
 
 ---
 
@@ -52,6 +77,14 @@ TAROT-NEW/
 │   │   ├── premium-result.tsx# PREMIUM sonuç ekranı
 │   │   └── yesno-result.tsx  # Evet/Hayır sonuç ekranı
 │   │
+│   ├── components/ui/        # Yeniden kullanılabilir UI bileşenleri
+│   │   ├── GradientBackground.tsx
+│   │   ├── GlassCard.tsx
+│   │   ├── SpreadCard.tsx
+│   │   ├── FlipCard.tsx
+│   │   ├── PremiumPreview.tsx
+│   │   └── index.ts
+│   │
 │   ├── data/                 # Dil bazlı JSON veriler
 │   │   ├── tr/
 │   │   │   ├── tarot-template.json
@@ -68,352 +101,233 @@ TAROT-NEW/
 │   │   └── tarot.ts          # TypeScript tipleri
 │   │
 │   └── i18n/
-│       └── translations.ts   # UI çevirileri
+│       └── translations.ts   # UI çevirileri (1000+ satır)
 │
 └── README.md
 ```
 
 ---
 
-## Detaylı Spread Tabloları
+## FREE vs PREMIUM Sistem
 
-### 1. Tekli Kart (`single_card`)
+### Ana Ekran Açıklamaları
+- **FREE kullanıcı** → Kısa, açıklayıcı açıklamalar görür
+- **PREMIUM kullanıcı** → Detaylı, sentez içeren açıklamalar görür
 
-**Kart Pozisyonları:** Yok (tek kart)
+Örnek (Kariyer Netliği):
+| | Açıklama |
+|---|----------|
+| **FREE** | "Kariyerde bugünkü tabloyu ve netleşen yönü gösterir." |
+| **PREMIUM** | "Kariyer tablosunu sakin bir akışla çözümler; ana mesajı ve odaklanılması faydalı alanı gösterir." |
 
-| | FREE | PREMIUM |
-|---|------|---------|
-| **Input** | `card.name`, `card.orientation`, `focusArea` | `card.name`, `card.orientation`, `focusArea`, `language` |
-| **Backend** | ❌ Yok | ✅ GPT-4o |
-| **Output** | `meanings[orientation][focusArea]` (1 paragraf) | `title`, `overall`, `focusArea`, `deepDive`, `shadow`, `nextStep`, `journal` |
+### Premium Preview Teaser Sistemi
+FREE kullanıcılar sonuç ekranında "🔒 Premium'da Neler Açılıyor?" bölümünü görür:
 
-**Örnek FREE Output (Türkçe, Aşk):**
 ```
-"Derin duygusal bağ, karşılıklı çekim, önemli seçimler, ruh eşi potansiyeli"
+┌─────────────────────────────┐
+│  FREE SONUÇ EKRANI          │
+│  ─────────────────────────  │
+│  [Kart yorumları - FREE]    │
+│                             │
+│  🔒 Premium'da Neler Var?   │
+│  ├─ Hikâyenin Özeti        │
+│  │  └─ Büyük resim         │
+│  ├─ Ana Mesaj              │
+│  │  └─ Asıl mesaj          │
+│  └─ Kendine Sor            │
+│     └─ Derin soru          │
+│                             │
+│  [✨ Premium ile Aç]        │
+└─────────────────────────────┘
 ```
 
-**Örnek PREMIUM Output:**
-```json
-{
-  "title": "The Lovers — Aşk Okuması",
-  "overall": "Karşında bir seçim var ve bu seçim sadece kişilerle değil, değerlerinle de ilgili.",
-  "focusArea": "love",
-  "deepDive": "Bu kart, yüzeydeki çekimin ötesine geçmeni istiyor...",
-  "shadow": "Karar vermekten kaçınmak da bir karar.",
-  "nextStep": "Bu hafta içsel değerlerini yazıya dök.",
-  "journal": "Aşkta beni gerçekten ne tatmin eder?"
-}
-```
+Her spread'in kendi premium output'larına göre teaser'lar gösterilir.
 
 ---
 
-### 2. Zamanın Akışı (`past_present_future`)
+## UI Başlıkları (Revize - 4 Dil)
 
-**Kart Pozisyonları:**
-- `past` → Geçmiş Dinamiği
-- `present` → Şu Anki Durum
-- `future` → Gelişen Yön
-
-| | FREE | PREMIUM |
-|---|------|---------|
-| **Input** | `cards[3]` (position, name, orientation) | `cards[3]` (position, name, orientation), `language` |
-| **Backend** | ❌ Yok | ✅ GPT-4o |
-| **Output** | Her kart için `meanings[orientation].general` | `title`, `overall`, `throughline`, `story`, `beats`, `choice`, `keywords`, `mood`, `nextStep` |
-
-**Örnek FREE Output:**
-```
-Past: "Geçmişte yaşanan kayıplar ve hayal kırıklıkları..."
-Present: "Şu an bir dönüm noktasındasın..."
-Future: "Önünde yeni başlangıçlar var..."
-```
-
-**Örnek PREMIUM Output:**
-```json
-{
-  "title": "Five of Cups·Wheel of Fortune·The Star — Zaman Akışı",
-  "overall": "Geçmişteki kayıplar seni buraya getirdi, şimdi değişim kapıda...",
-  "throughline": "Kayıptan umuda uzanan bir yolculuk.",
-  "story": "Geçmişte bazı şeyler planladığın gibi gitmedi...",
-  "beats": {
-    "past": "Kaybettiklerin seni şekillendirdi.",
-    "present": "Şimdi tekerlek dönüyor, kontrol senin elinde değil.",
-    "future": "Umut var, ama aktif adım gerekiyor."
-  },
-  "choice": {
-    "pathA": "Akışa bırakırsan...",
-    "pathB": "Aktif adım atarsan..."
-  },
-  "keywords": ["dönüşüm", "kabul", "yenilenme"],
-  "mood": "umutlu",
-  "nextStep": "Bu hafta bir şeyi bilinçli olarak bırak."
-}
-```
-
----
-
-### 3. Evet / Hayır (`yes_no`)
-
-**Kart Pozisyonları:** Yok (tek kart)
-
-| | FREE | PREMIUM |
-|---|------|---------|
-| **Input** | `card.name`, `card.orientation`, `focusArea` | `card.name`, `card.orientation`, `focusArea`, `language` |
-| **Backend** | ✅ Deterministik hesaplama | ✅ GPT-4o |
-| **Output** | `answer`, `confidence`, `explanation`, `keywords` | `title`, `focusArea`, `answer`, `confidence`, `explanation`, `keywords` |
-
-**Confidence Hesaplama (FREE):**
-```
-confidence = 55 + (clarityWeight × 35)
-clarityWeight: 0.0 - 1.0 (kart bazlı)
-```
-
-**Örnek Output:**
-```json
-{
-  "answer": "yes",
-  "confidence": 78,
-  "explanation": "Bu kart açık bir evet sinyali veriyor...",
-  "keywords": ["netlik", "ilerleme"]
-}
-```
-
----
-
-### 4. Yolun Haritası (`situation_obstacle_advice`)
-
-**Kart Pozisyonları:**
-- `situation` → Şu Anki Tablo
-- `obstacle` → Önündeki Engel
-- `advice` → Yol Gösterici
-
-| | FREE | PREMIUM |
-|---|------|---------|
-| **Input** | `cards[3]` (position, name, orientation) | `cards[3]`, `language` |
-| **Backend** | ❌ Yok | ✅ GPT-4o |
-| **Output** | Her kart için `meanings[orientation].general` | `title`, `overall`, `beats`, `nextStep` |
-
-**Örnek PREMIUM Output:**
-```json
-{
-  "title": "The Tower·Eight of Swords·The Star — Durum Analizi",
-  "overall": "Ani bir değişim yaşıyorsun ve zihinsel engeller seni tutuyor.",
-  "beats": {
-    "situation": "Beklenmedik bir yıkım veya değişim yaşandı.",
-    "obstacle": "Zihinsel kısıtlamalar seni hapsetmiş durumda.",
-    "advice": "Umudunu koru, küçük adımlarla ilerle."
-  },
-  "nextStep": "Bu hafta bir korkunla yüzleş."
-}
-```
-
----
-
-### 5. Kaderin Dokunuşu (`destinys_embrace`)
-
-**Kart Pozisyonları:** 
-- `destiny` → Bağın Özü
-- `path` → Kaderin Akışı
-- `union` → Birleşmenin Anahtarı
-
-**Rol:** İlişki yön pusulası — "Bu bağın yönü ne?"
-
-| | FREE | PREMIUM |
-|---|------|---------|
-| **Input** | `cards[3]` (position, name, orientation) | `cards[3]`, `language` |
-| **Backend** | ❌ Yok | ✅ GPT-4o |
-| **Output** | Her kart için `meanings[orientation].love` | `title`, `overall`, `beats`, `nextStep`, `keywords` |
-
-**Örnek PREMIUM Output:**
-```json
-{
-  "title": "The Star·Two of Cups·The Lovers — Kaderin Kucağı",
-  "overall": "Bu bağ umut taşıyor ama bilinçli seçimler gerektiriyor.",
-  "beats": {
-    "destiny": "İyileşme ve açıklık bu ilişkinin temel teması.",
-    "path": "Karşılıklı iletişim bağı güçlendirir.",
-    "union": "Birleşme için her ikisinin de aktif adım atması gerekiyor."
-  },
-  "nextStep": "Bu hafta duygularını açıkça ifade et.",
-  "keywords": ["umut", "iletişim", "seçim"]
-}
-```
-
----
-
-### 6. Aşk Kavşağı (`love_choice`)
-
-**Kart Pozisyonları (5 kart):**
-- `optionA` → Birinci Yol
-- `optionA_outcome` → Birinci Yolun Kaderi
-- `optionB` → İkinci Yol
-- `optionB_outcome` → İkinci Yolun Kaderi
-- `advice` → Kalbin Rehberi
-
-**Rol:** Karar filtresi — "Bu iki yolun psikolojik farkı ne?"
-
-| | FREE | PREMIUM |
-|---|------|---------|
-| **Input** | `cards[5]` (position, name, orientation) | `cards[5]`, `language` |
-| **Backend** | ❌ Yok | ✅ GPT-4o |
-| **Output** | Her kart için `meanings[orientation].love` | `title`, `overall`, `beats` (5), `decisionLens`, `nextStep`, `keywords` |
-
-**Örnek FREE Output:**
-```
-Option A: "Derin duygusal bağ, karşılıklı çekim..."
-Option A Outcome: "Başarı, tanınma, liderlik..."
-Option B: "Kayıp hissi, pişmanlık, ileriye bakma..."
-Option B Outcome: "Denge, adalet, önemli kararlar..."
-Advice: "İç bilgelik, yalnızlık, arayış..."
-```
-
-**Örnek PREMIUM Output:**
-```json
-{
-  "title": "The Lovers·The Sun·Five of Cups·Justice·The Hermit — Aşk Seçimi",
-  "overall": "İki yol arasında net bir fark var: biri tutkulu ama yoğun, diğeri sakin ama mesafeli.",
-  "beats": {
-    "optionA": "A yolu tutkulu bir bağlanma sunuyor.",
-    "optionA_outcome": "Bu yolda başarı ve tanınma var ama yoğunluk yorucu olabilir.",
-    "optionB": "B yolu daha mesafeli ama dengeli.",
-    "optionB_outcome": "Bu yolda adalet ve denge var ama duygusal derinlik eksik kalabilir.",
-    "advice": "Kararını vermeden önce kendi içine dön."
-  },
-  "decisionLens": "Hangi yol seni daha çok sen yapıyor?",
-  "nextStep": "Bu hafta her iki seçeneği de yazıya dök ve hislerini karşılaştır.",
-  "keywords": ["tutku", "denge", "içgörü"]
-}
-```
-
----
-
-### 7. Kalbin Rotası (`path_to_love`)
-
-**Kart Pozisyonları (5 kart):**
-- `self` → Kalbin Bugünü
-- `block` → Kalpteki Engel
-- `need` → Kalbin İhtiyacı
-- `action` → Atılacak Adım
-- `potential` → Açılan Yol
-
-**Rol:** Gelişim stratejisi — "Aşka giden yolda beni ne geliştirir?"
-
-| | FREE | PREMIUM |
-|---|------|---------|
-| **Input** | `cards[5]` (position, name, orientation) | `cards[5]`, `language` |
-| **Backend** | ❌ Yok | ✅ GPT-4o |
-| **Output** | Her kart için `meanings[orientation].love` | `title`, `overall`, `beats` (5), `strategy`, `nextStep`, `keywords` |
-
-**Örnek PREMIUM Output:**
-```json
-{
-  "title": "The Hermit·Eight of Swords·Queen of Cups·Knight of Wands·The Sun — Aşka Giden Yol",
-  "overall": "Şu an içe dönük bir dönemdesin, zihinsel engeller seni tutuyor ama potansiyel parlak.",
-  "beats": {
-    "self": "Şu an kendi içine dönmüş, izole hissediyorsun.",
-    "block": "Zihinsel kısıtlamalar ve korkular seni engelliyor.",
-    "need": "Duygusal derinlik ve empati geliştirmen gerekiyor.",
-    "action": "Cesur adımlar at, risk al, harekete geç.",
-    "potential": "Bu yolda mutluluk ve canlılık seni bekliyor."
-  },
-  "strategy": "Korkulara rağmen küçük ama cesur adımlar at.",
-  "nextStep": "Bu hafta bir sosyal etkinliğe katıl.",
-  "keywords": ["cesaret", "empati", "açılma"]
-}
-```
-
----
-
-## UI Output Başlıkları (4 Dil)
-
-Aşağıdaki tablolar, her spread için UI'da görünen label'ların tüm dillerdeki çevirilerini gösterir.
-
-### Tekli Kart (Single Card) — PREMIUM
+### Genel Pozisyon Başlıkları
 
 | Key | TR | EN | DE | ES |
 |-----|----|----|----|----|
-| deepDive | Derinlemesine | Deep Dive | Tiefgang | Inmersión |
-| shadow | Gölge | Shadow | Schatten | Sombra |
-| nextStep | Sonraki Adım | Next Step | Nächster Schritt | Próximo paso |
-| journal | Günlük | Journal | Journal | Diario |
-
----
-
-### Zamanın Akışı (PPF) — FREE & PREMIUM
-
-| Key | TR | EN | DE | ES |
-|-----|----|----|----|----|
-| past | Geçmiş Dinamiği | Past Influence | Vergangene Dynamik | Influencia Pasada |
-| present | Şu Anki Durum | Current State | Aktueller Zustand | Estado Actual |
-| future | Gelişen Yön | Emerging Direction | Entstehende Richtung | Dirección Emergente |
-| throughline | Ana Tema | Core Theme | Kernthema | Tema Central |
-| story | Hikaye | Story | Geschichte | Historia |
-| timeline | Zaman Akışı | Timeline | Zeitverlauf | Línea de Tiempo |
-| decisionFrame | Seçim Noktası | Decision Point | Entscheidungspunkt | Punto de Decisión |
-| pathA | Seçenek A | Option A | Option A | Opción A |
-| pathB | Seçenek B | Option B | Option B | Opción B |
-| emotionalTone | Duygusal Ton | Emotional Tone | Emotionaler Ton | Tono Emocional |
-| actionStep | Somut Adım | Action Step | Konkreter Schritt | Paso Concreto |
-
----
-
-### Evet / Hayır (Yes/No)
-
-| Key | TR | EN | DE | ES |
-|-----|----|----|----|----|
-| yes | Evet | Yes | Ja | Sí |
-| no | Hayır | No | Nein | No |
-| confidence | Netlik | Confidence | Klarheit | Claridad |
-| veryClean | Çok Net | Very Clear | Sehr Klar | Muy Claro |
-| good | İyi | Good | Gut | Bueno |
-| moderate | Orta | Moderate | Mittel | Moderado |
-| uncertain | Belirsiz | Uncertain | Unsicher | Incierto |
-
----
-
-### Yolun Haritası (SOA)
-
-| Key | TR | EN | DE | ES |
-|-----|----|----|----|----|
+| past | Seni Buraya Getiren | What Brought You Here | Was dich hierher brachte | Lo que te trajo aquí |
+| present | Şu An Nerdesin | Where You Are Now | Wo du jetzt bist | Dónde estás ahora |
+| future | Olası Yön | Possible Direction | Mögliche Richtung | Posible dirección |
 | situation | Şu Anki Tablo | Current Picture | Aktuelles Bild | Imagen Actual |
-| obstacle | Önündeki Engel | The Obstacle Ahead | Das Hindernis Voraus | El Obstáculo Adelante |
-| advice | Yol Gösterici | The Guide | Der Wegweiser | El Guía |
-| nextStep | Sonraki Adım | Next Step | Nächster Schritt | Próximo paso |
+| obstacle | Seni Durduran | What's Holding You Back | Was dich zurückhält | Lo que te detiene |
+| advice | Yol Gösterici Mesaj | Guiding Message | Leitende Botschaft | Mensaje guía |
 
----
-
-### Kaderin Dokunuşu (Destiny's Embrace)
+### Aşk Pozisyon Başlıkları
 
 | Key | TR | EN | DE | ES |
 |-----|----|----|----|----|
-| destiny | Bağın Özü | Essence of the Bond | Essenz der Bindung | Esencia del Vínculo |
-| path | Kaderin Akışı | Flow of Destiny | Fluss des Schicksals | Flujo del Destino |
-| union | Birleşmenin Anahtarı | Key to Union | Schlüssel zur Vereinigung | Clave de Unión |
+| destiny | İlişkinin Temel Enerjisi | Core Energy of the Bond | Kernenergie der Bindung | Energía central del vínculo |
+| path | Aranızdaki Akış | The Flow Between You | Der Fluss zwischen euch | El flujo entre ustedes |
+| union | Nereye Gidebilir | Where It Could Lead | Wohin es führen könnte | A dónde podría llevar |
+| self | Aşkta Bugün | Love Today | Liebe heute | El amor hoy |
+| block | Aşkı Tutan | What's Holding Love Back | Was die Liebe zurückhält | Lo que retiene al amor |
+| need | Kalbinin İhtiyacı | What Your Heart Needs | Was dein Herz braucht | Lo que tu corazón necesita |
 
----
-
-### Aşk Kavşağı (Love Choice)
-
-| Key | TR | EN | DE | ES |
-|-----|----|----|----|----|
-| optionA | Birinci Yol | First Path | Erster Weg | Primer Camino |
-| optionA_outcome | Birinci Yolun Kaderi | Fate of the First Path | Schicksal des Ersten Weges | Destino del Primer Camino |
-| optionB | İkinci Yol | Second Path | Zweiter Weg | Segundo Camino |
-| optionB_outcome | İkinci Yolun Kaderi | Fate of the Second Path | Schicksal des Zweiten Weges | Destino del Segundo Camino |
-| heartGuidance | Kalbin Rehberi | Heart's Guidance | Führung des Herzens | Guía del Corazón |
-| decisionLens | Karar Pusulası | Decision Compass | Entscheidungskompass | Brújula de Decisión |
-
----
-
-### Kalbin Rotası (Path to Love)
+### Kariyer Pozisyon Başlıkları
 
 | Key | TR | EN | DE | ES |
 |-----|----|----|----|----|
-| self | Kalbin Bugünü | Heart's Current State | Aktueller Zustand des Herzens | Estado Actual del Corazón |
-| block | Kalpteki Engel | Heart Block | Blockade des Herzens | Bloqueo del Corazón |
-| need | Kalbin İhtiyacı | Heart's Need | Bedürfnis des Herzens | Necesidad del Corazón |
-| action | Atılacak Adım | Next Heart Step | Nächster Herzschritt | Próximo Paso del Corazón |
-| potential | Açılan Yol | The Opening Path | Sich Öffnender Weg | Camino que se Abre |
-| strategy | Kalbin Stratejisi | Heart's Strategy | Herzensstrategie | Estrategia del Corazón |
+| current | Kariyerde Bugün | Career Today | Karriere heute | Carrera hoy |
+| clarity | Beliren Yön | Emerging Direction | Aufkommende Richtung | Dirección emergente |
+| strength | Avantajın | Your Advantage | Dein Vorteil | Tu ventaja |
+| opportunity | Açılan Kapı | Opening Door | Sich öffnende Tür | Puerta que se abre |
+| income | Paranın Gelişi | How Money Comes | Wie Geld kommt | Cómo llega el dinero |
+| growth | Büyüme Alanı | Growth Area | Wachstumsbereich | Área de crecimiento |
+
+### Ruhsal Pozisyon Başlıkları
+
+| Key | TR | EN | DE | ES |
+|-----|----|----|----|----|
+| intention | Niyet | Intention | Absicht | Intención |
+| seed | Atılan Tohum | Seed Planted | Gepflanzter Samen | Semilla Plantada |
+| hiddenResistance | Gizli Direnç | Hidden Resistance | Verborgener Widerstand | Resistencia Oculta |
+| illumination | Açığa Çıkan Gerçek | Revealed Truth | Offenbarte Wahrheit | Verdad Revelada |
+| release | Bırakılması Gereken | To Be Released | Freizugeben | Para Liberar |
+| mind | Zihinsel Alan | Mental Realm | Mentaler Bereich | Ámbito Mental |
+| body | Bedensel Sinyal | Body Signal | Körpersignal | Señal Corporal |
+| spirit | Ruhsal Mesaj | Spiritual Message | Spirituelle Botschaft | Mensaje Espiritual |
+
+### Premium Output Başlıkları
+
+| Key | TR | EN | DE | ES |
+|-----|----|----|----|----|
+| overall | Hikâyenin Özeti | Story Summary | Zusammenfassung | Resumen |
+| throughline | Ana Mesaj | Main Message | Hauptbotschaft | Mensaje principal |
+| deepDive | Hayatına Yansıması | How It Reflects in Life | Wie es sich widerspiegelt | Cómo se refleja |
+| shadow | Gizli Mesaj | Hidden Message | Verborgene Botschaft | Mensaje oculto |
+| emotionalTone | Hakim Duygu | Dominant Emotion | Vorherrschendes Gefühl | Emoción dominante |
+| nextStep | Yönelim Önerisi | Direction Hint | Richtungshinweis | Indicación de dirección |
+| journal | Kendine Sor | Ask Yourself | Frag dich selbst | Pregúntate |
+| directionHint | Odaklanılması Faydalı Alan | Area Worth Focusing On | Fokussierenswerter Bereich | Área que vale enfocar |
+
+---
+
+## UI Bileşenleri
+
+### GradientBackground
+Tüm ekranlarda kullanılan gradient arka plan.
+
+### GlassCard
+Glassmorphism efektli kart bileşeni. iOS'ta BlurView, Android'de yarı saydam arka plan.
+
+### SpreadCard
+Ana ekrandaki spread seçim kartları. Kategori rengi, kart sayısı ikonu ve açıklama gösterir.
+
+### FlipCard
+Kart seçim ekranındaki dönen kart animasyonu. React Native Animated API kullanır.
+
+### PremiumPreview
+FREE kullanıcılara spread bazlı premium teaser'ları gösteren bileşen.
+
+---
+
+## Kariyer Spread'leri (Yeni)
+
+### Kariyer Netliği (`career_clarity`)
+**Pozisyonlar:** current, challenge, clarity
+
+**FREE:** Her kart için `meanings[orientation].career`
+
+**PREMIUM Output:**
+```json
+{
+  "title": "Kariyer Netliği Okuması",
+  "overall": "Genel kariyer tablosu",
+  "throughline": "Ana mesaj",
+  "directionHint": "Odaklanılması faydalı alan",
+  "journal": "Kariyer üzerine düşünme sorusu"
+}
+```
+
+### Para Akışı (`wealth_flow`)
+**Pozisyonlar:** income, block, resource, growth, balance
+
+**FREE:** Her kart için `meanings[orientation].career`
+
+**PREMIUM Output:**
+```json
+{
+  "title": "Para Akışı Okuması",
+  "overall": "Finansal tablo",
+  "flowInsight": "Paranın davranışı",
+  "optimization": "İyileştirme alanı",
+  "directionHint": "Finansal farkındalık",
+  "journal": "Para üzerine düşünme sorusu"
+}
+```
+
+---
+
+## Ruhsal Spread'leri (Yeni)
+
+### Yeni Ay Ritüeli (`new_moon_ritual`)
+**Pozisyonlar:** intention, seed, shadow, support, firstStep
+
+**FREE:** Her kart için `meanings[orientation].spiritual`
+
+**PREMIUM Output:**
+```json
+{
+  "title": "Yeni Ay Ritüeli",
+  "overall": "Genel enerji",
+  "ritualTheme": "Niyet kapısı",
+  "affirmation": "İçsel cümle",
+  "nextStep": "Sonraki adım",
+  "journal": "İçsel farkındalık sorusu"
+}
+```
+
+### Dolunay Arınması (`full_moon_release`)
+**Pozisyonlar:** illumination, tension, lesson, release, integration
+
+**PREMIUM Output:**
+```json
+{
+  "title": "Dolunay Arınması",
+  "overall": "Genel enerji",
+  "releaseTheme": "Bırakma eşiği",
+  "cleansingAdvice": "Arınma rehberi",
+  "affirmation": "İçsel cümle",
+  "nextStep": "Sonraki adım",
+  "journal": "Düşünme sorusu"
+}
+```
+
+### Zihin-Beden-Ruh (`mind_body_spirit`)
+**Pozisyonlar:** mind, body, spirit
+
+**PREMIUM Output:**
+```json
+{
+  "title": "Zihin-Beden-Ruh Dengesi",
+  "overall": "Genel denge",
+  "harmonyScore": "İçsel denge",
+  "alignmentAdvice": "Ruhsal hizalanma",
+  "nextStep": "Sonraki adım",
+  "journal": "Düşünme sorusu"
+}
+```
+
+### Kozmik Aydınlanma (`celestial_illumination`)
+**Pozisyonlar:** signal, guidance, integration
+
+**PREMIUM Output:**
+```json
+{
+  "title": "Kozmik Aydınlanma",
+  "overall": "Genel mesaj",
+  "celestialMessage": "Kozmik fısıltı",
+  "omenKeywords": "Evrensel semboller",
+  "nextStep": "Sonraki adım",
+  "journal": "Ruhsal düşünme sorusu"
+}
+```
 
 ---
 
@@ -421,116 +335,22 @@ Aşağıdaki tablolar, her spread için UI'da görünen label'ların tüm diller
 
 > **Tek Satır Özet:** "Tarot temalı, psikoloji/koçluk tonunda, yargısız-yönlendirici, 'netleştir–sadeleştir–küçük adım' odaklı modern Türkçe."
 
----
-
 ### Temel Tarz: "Modern Farkındalık ve Rehberlik"
 
-Bu uygulama bir "fal uygulaması" değil, kartları araç olarak kullanan bir **"dijital rehberlik / kişisel farkındalık"** platformudur.
+- **Psikolojik Derinlik:** Kartların anlamları içsel durumlara odaklanır
+- **Falcılık Değil, Strateji:** Olasılıkları ve yönetim önerileri sunar
+- **Güçlendirici:** Kullanıcıya kontrol hissi verir
 
-- **Psikolojik Derinlik:** Kartların anlamları, dışsal olaylardan (zengin olacaksın, evleneceksin) ziyade içsel durumlara (korku, cesaret, zihinsel bariyerler, bakış açısı) odaklanıyor.
-- **Falcılık Değil, Strateji:** Geleceği kesin bir dille bildirmek yerine, olasılıkları ve bu olasılıkları nasıl yöneteceğini anlatıyor.
-- **Hedef Etki:** Okuyucuda "kader" hissinden çok **kontrol geri geliyor** hissi yaratmayı amaçlıyor. "Kehanet" yerine "yön bulma" ve "öz-düzenleme" çalışıyor.
+### Kariyer için Özel Kurallar (Yeni)
+- ❌ Sert aksiyon yok ("Şunu yap" gibi)
+- ✅ Doğal akış ve hafif yön
+- ✅ Karar kullanıcıda
+- ✅ Hukuken güvenli dil
 
----
-
-### Ton (Voice)
-
-**Modern, şehirli, "terapi dili"ne yakın:**
-- "iç ses", "tetiklenmek", "yüzleşme", "ihtiyaç", "sınır", "duyguyu yönetmek" gibi kavramlar kullanılıyor.
-
-**Yargısız ama direkt:**
-- Kehanet gibi "kesin olacak" demiyor; daha çok **olasılık + farkındalık + yönlendirme** var.
-
-**Destekleyici / koçvari:**
-- Okuyucuya sürekli eylem çağrısı yapıyor: "isimlendir", "sadeleştir", "netleştir", "yazılı hale getir", "kural koy".
-
-**Güçlendirici (Empowering):**
-- Kullanıcıyı kurban psikolojisinden çıkarıp, kontrolü ona veriyor: "Kendi yolunu seçerken...", "İpler elinde..." gibi ifadeler.
-
-**Gerçekçi ve Dengeli:**
-- "Yıkılan Kule" veya "Ölüm" gibi kartlarda bile felaket senaryosu yazmıyor; bunları "gerekli temizlik" veya "yeni başlangıç" olarak rasyonel bir çerçeveye oturtuyor.
-
-**Yapıcı (Constructive):**
-- Ters (reversed) anlamlarda bile suçlayıcı değil, uyarıcı ve çözüm odaklı. "Hata yaptın" demek yerine "Dersi al ve yönünü düzelt" diyor.
-
----
-
-### İçerik Yaklaşımı
-
-Tarot dilini mistik kehanetten çok **psikolojik içgörü formatına** çekiyor.
-
-**Her paragraf şu şablonda:**
-1. Durumu tarif et
-2. İç dinamik (korku/alışkanlık/inanç) koy
-3. Somut bir küçük aksiyon öner
-
-**Upright vs Reversed ayrımı:**
-- "İyi–kötü" gibi değil; **"akışta" vs "blokajda"** gibi kurgulanmış.
-- Reversed bölümler özellikle **uyarı + düzeltme planı** gibi yazılmış.
-
----
-
-### Dil ve Üslup (Mikro Özellikler)
-
-| Özellik | Açıklama |
-|---------|----------|
-| **Şahıs** | 2. tekil şahıs ("-sin/-sın") ile yakın konuşma |
-| **Ritim** | Kısa–orta cümleler + noktalı virgül (;) ile ritim |
-| **Metaforlar** | Eşik, kapı, çark, sis, zincir, bahçe vb. (soyut kavramı somutlaştırıyor) |
-| **Denge** | "iyimsersin ama bütçe sınırını netleştir", "sezgi + veri" gibi ikili denge cümleleri |
-
-**Yüksek Tekrar Eden Anahtar Kelimeler:**
-```
-netlik, disiplin, sınır, plan, küçük adım, yüzleşme, sadeleştirme
-```
-
----
-
-### Yasak Kelimeler (Spiritüel-Kader Bağlamında)
-
-```
-❌ evren, enerji akışı, kozmik, titreşim, ruhsal, ruh eşi, kader yazısı
-❌ "evren sana mesaj gönderiyor"
-❌ "kaderin bu yönde"
-❌ kehanet dili, kesinlik ifadeleri
-```
-
-### Kullanılması Gereken Dil
-
-```
-✅ "bu davranış şu sonucu doğurur"
-✅ "bu yol seni şuna götürür"
-✅ "şu blok seni kapatıyor"
-✅ "ilişkinin doğal eğilimi"
-✅ davranış analizi, psikolojik içgörü
-✅ "Risk alacaksan, küçük ama net adımlarla başla."
-```
-
----
-
-### Kritik Yazım Kuralları
-
-1. **Her beat kart temasına referans içermeli** (kart adı değil, imge/tema)
-2. **Metin akıcı olmalı, liste hissi vermemeli**
-3. **Uydurma detay (isim, tarih, olay) ekleme**
-4. **Kehanet yazma, davranış analizi yaz**
-
----
-
-### Hedef Kitle
-
-| Segment | Açıklama |
-|---------|----------|
-| **Gen Z ve Y Kuşağı** | Klasik fal uygulamalarındaki basmakalıp sözlerden sıkılmış, kişisel gelişim, mindfulness ve psikolojiye ilgi duyan kitle |
-| **Çözüm Arayanlar** | Sadece "Ne olacak?" diye merak edenler değil, "Ne yapmalıyım?" diye soranlar |
-
----
-
-### UX/UI Tasarım Önerileri
-
-- **Görsel Dil:** Ağır, kadife perdeli, küreleri olan "eski tip falcı" temasından kaçın. Bunun yerine **minimalist, ferah, modern tipografi** kullanan, hafif kozmik ama temiz (clean) bir arayüz.
-- **Öne Çıkarılacak Özellik:** Metinler çok net tavsiyeler içeriyor. **"Günün Aksiyonu"** veya **"Odaklanman Gereken Şey"** gibi tek maddelik özet (takeaway) eklenebilir.
-- **Kategori Simgeleri:** "Aşk", "Kariyer", "Finans" ayrımları çok net. Kullanıcının sadece ilgilendiği alana odaklanmasını sağlayan filtreler kullanılabilir.
+### Ruhsal için Özel Kurallar (Yeni)
+- `focusArea = spiritual` kullanılır
+- Kartlardan `meanings.spiritual` çekilir
+- İçgörü ve farkındalık odaklı dil
 
 ---
 
@@ -572,18 +392,16 @@ Expo Go ile QR kodu okut.
 
 Tüm premium okumalar için tek endpoint.
 
-**Request Body (Örnek - Love Choice):**
+**Request Body (Örnek - Career Clarity):**
 ```json
 {
   "language": "tr",
-  "spread": "love_choice",
+  "spread": "career_clarity",
   "isPremium": true,
   "cards": [
-    { "position": "optionA", "name": "The Lovers", "orientation": "upright" },
-    { "position": "optionA_outcome", "name": "The Sun", "orientation": "upright" },
-    { "position": "optionB", "name": "Five of Cups", "orientation": "reversed" },
-    { "position": "optionB_outcome", "name": "Justice", "orientation": "upright" },
-    { "position": "advice", "name": "The Hermit", "orientation": "upright" }
+    { "position": "current", "name": "The Tower", "orientation": "reversed" },
+    { "position": "challenge", "name": "Eight of Swords", "orientation": "upright" },
+    { "position": "clarity", "name": "The Star", "orientation": "upright" }
   ]
 }
 ```
@@ -600,10 +418,12 @@ Premium log dosyasını temizler.
 - Premium okumalar `backend/data/premium-readings.json`'a loglanır
 - FREE okumalar tamamen client-side çalışır, backend gerektirmez
 - Tüm promptlar 4 dilde optimize edilmiştir
+- Kariyer spread'lerinde aksiyon dili yerine farkındalık dili kullanılır
 
 ---
 
 ## Versiyon
 
+- **v3.0** — Kariyer & Ruhsal spread'leri, Glassmorphism UI, FREE/PREMIUM açıklama ayrımı
 - **v2.0** — 5 kartlık aşk spread'leri, psikolojik tarot motoru
 - **Platform:** React Native (Expo) + Express.js + GPT-4o
