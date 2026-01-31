@@ -1,89 +1,89 @@
 {
-  "Narr": {
+  "Der Narr": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Magier": {
+  "Der Magier": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Hohepriesterin": {
+  "Die Hohepriesterin": {
     "upright": "no",
     "reversed": "no"
   },
-  "Herrscherin": {
+  "Die Herrscherin": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Herrscher": {
+  "Der Herrscher": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Hierophant": {
+  "Der Hierophant": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Liebenden": {
+  "Die Liebenden": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Wagen": {
+  "Der Wagen": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Kraft": {
+  "Die Kraft": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Eremit": {
+  "Der Eremit": {
     "upright": "no",
     "reversed": "no"
   },
-  "Rad des Schicksals": {
+  "Das Rad des Schicksals": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Gerechtigkeit": {
+  "Die Gerechtigkeit": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Gehängte": {
+  "Der Gehängte": {
     "upright": "no",
     "reversed": "no"
   },
-  "Tod": {
+  "Der Tod": {
     "upright": "no",
     "reversed": "no"
   },
-  "Mäßigkeit": {
+  "Die Mäßigkeit": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Teufel": {
+  "Der Teufel": {
     "upright": "no",
     "reversed": "no"
   },
-  "Turm": {
+  "Der Turm": {
     "upright": "no",
     "reversed": "no"
   },
-  "Stern": {
+  "Der Stern": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Mond": {
+  "Der Mond": {
     "upright": "no",
     "reversed": "no"
   },
-  "Sonne": {
+  "Die Sonne": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Gericht": {
+  "Das Gericht": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Welt": {
+  "Die Welt": {
     "upright": "yes",
     "reversed": "no"
   },
@@ -107,27 +107,27 @@
     "upright": "yes",
     "reversed": "no"
   },
-  "Sechs Stäbe": {
+  "Sechs der Stäbe": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Sieben Stäbe": {
+  "Sieben der Stäbe": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Acht Stäbe": {
+  "Acht der Stäbe": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Neun Stäbe": {
+  "Neun der Stäbe": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Zehn Stäbe": {
+  "Zehn der Stäbe": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Bube der Stäbe": {
+  "Prinz der Stäbe": {
     "upright": "yes",
     "reversed": "no"
   },
@@ -143,7 +143,7 @@
     "upright": "yes",
     "reversed": "no"
   },
-  "As der Kelche": {
+  "Ass der Kelche": {
     "upright": "yes",
     "reversed": "no"
   },
@@ -159,7 +159,7 @@
     "upright": "no",
     "reversed": "no"
   },
-  "Fünf Kelche": {
+  "Fünf der Kelche": {
     "upright": "no",
     "reversed": "no"
   },
@@ -167,19 +167,19 @@
     "upright": "yes",
     "reversed": "no"
   },
-  "Sieben Kelche": {
+  "Sieben der Kelche": {
     "upright": "no",
     "reversed": "no"
   },
-  "Acht Kelche": {
+  "Acht der Kelche": {
     "upright": "no",
     "reversed": "no"
   },
-  "Neun Kelche": {
+  "Neun der Kelche": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Zehn Kelche": {
+  "Zehn der Kelche": {
     "upright": "yes",
     "reversed": "no"
   },
@@ -199,19 +199,19 @@
     "upright": "yes",
     "reversed": "no"
   },
-  "As der Schwerter": {
+  "Ass der Schwerter": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Zwei Schwerter": {
+  "Duo der Schwerter": {
     "upright": "no",
     "reversed": "no"
   },
-  "Drei Schwerter": {
+  "Trio der Schwerter": {
     "upright": "no",
     "reversed": "no"
   },
-  "Vier Schwerter": {
+  "Vier der Schwerter": {
     "upright": "no",
     "reversed": "no"
   },
@@ -219,27 +219,27 @@
     "upright": "no",
     "reversed": "no"
   },
-  "Sechs Schwerter": {
+  "Sechs der Schwerter": {
     "upright": "yes",
     "reversed": "no"
   },
-  "Sieben Schwerter": {
+  "Sieben der Schwerter": {
     "upright": "no",
     "reversed": "no"
   },
-  "Acht Schwerter": {
+  "Acht der Schwerter": {
     "upright": "no",
     "reversed": "no"
   },
-  "Neun Schwerter": {
+  "Neun der Schwerter": {
     "upright": "no",
     "reversed": "no"
   },
-  "Zehn Schwerter": {
+  "Zehn der Schwerter": {
     "upright": "no",
     "reversed": "no"
   },
-  "Bube der Schwerter": {
+  "Prinz der Schwerter": {
     "upright": "yes",
     "reversed": "no"
   },

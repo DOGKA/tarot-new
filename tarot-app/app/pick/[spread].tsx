@@ -39,7 +39,7 @@ function shuffleArray<T>(array: T[]): T[] {
   return newArray;
 }
 
-const focusAreas: FocusArea[] = ["general", "love", "career", "finance"];
+const focusAreas: FocusArea[] = ["general", "love", "career", "spiritual"];
 
 export default function PickScreen() {
   const { spread } = useLocalSearchParams<{ spread: SpreadType }>();
@@ -52,11 +52,37 @@ export default function PickScreen() {
   const [selected, setSelected] = useState<SelectedCard[]>([]);
   const [showFocusSelector, setShowFocusSelector] = useState(spread === "yes_no");
 
-  const requiredCards = spread === "single_card" || spread === "yes_no" ? 1 : 3;
-  const positions: Array<"past" | "present" | "future"> = [
+  const requiredCards = spread === "single_card" || spread === "yes_no" ? 1 
+    : spread === "love_choice" || spread === "path_to_love" ? 5 
+    : 3;
+  const ppfPositions: Array<"past" | "present" | "future"> = [
     "past",
     "present",
     "future",
+  ];
+  const soaPositions: Array<"situation" | "obstacle" | "advice"> = [
+    "situation",
+    "obstacle",
+    "advice",
+  ];
+  const destinyPositions: Array<"destiny" | "path" | "union"> = [
+    "destiny",
+    "path",
+    "union",
+  ];
+  const loveChoicePositions: Array<"optionA" | "optionA_outcome" | "optionB" | "optionB_outcome" | "advice"> = [
+    "optionA",
+    "optionA_outcome",
+    "optionB",
+    "optionB_outcome",
+    "advice",
+  ];
+  const pathToLovePositions: Array<"self" | "block" | "need" | "action" | "potential"> = [
+    "self",
+    "block",
+    "need",
+    "action",
+    "potential",
   ];
 
   useEffect(() => {
@@ -71,8 +97,18 @@ export default function PickScreen() {
     if (revealedCards.has(index)) return;
 
     const orientation = Math.random() > 0.5 ? "upright" : "reversed";
-    const position =
-      spread === "past_present_future" ? positions[selected.length] : undefined;
+    let position: "past" | "present" | "future" | "situation" | "obstacle" | "advice" | "destiny" | "path" | "union" | "optionA" | "optionA_outcome" | "optionB" | "optionB_outcome" | "self" | "block" | "need" | "action" | "potential" | undefined;
+    if (spread === "past_present_future") {
+      position = ppfPositions[selected.length];
+    } else if (spread === "situation_obstacle_advice") {
+      position = soaPositions[selected.length];
+    } else if (spread === "destinys_embrace") {
+      position = destinyPositions[selected.length];
+    } else if (spread === "love_choice") {
+      position = loveChoicePositions[selected.length];
+    } else if (spread === "path_to_love") {
+      position = pathToLovePositions[selected.length];
+    }
 
     const newSelected: SelectedCard = {
       card,
@@ -109,7 +145,19 @@ export default function PickScreen() {
           <Text style={styles.backButton}>← {t("back")}</Text>
         </TouchableOpacity>
         <Text style={styles.title}>
-          {spread === "single_card" ? t("singleCard") : spread === "yes_no" ? t("yesNo") : t("threeCards")}
+          {spread === "single_card" 
+            ? t("singleCard") 
+            : spread === "yes_no" 
+              ? t("yesNo") 
+              : spread === "situation_obstacle_advice"
+                ? t("situationObstacleAdvice")
+                : spread === "destinys_embrace"
+                  ? t("destinysEmbrace")
+                  : spread === "love_choice"
+                    ? t("loveChoice")
+                    : spread === "path_to_love"
+                      ? t("pathToLove")
+                      : t("threeCards")}
         </Text>
         <TouchableOpacity onPress={handleShuffle} disabled={selected.length > 0}>
           <Text style={[styles.shuffleButton, selected.length > 0 && styles.shuffleButtonDisabled]}>

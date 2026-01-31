@@ -6,7 +6,7 @@ const fs = require("fs");
 const path = require("path");
 
 // Import language-specific prompts
-const { getSystemMessage, buildSinglePrompt, buildPpfPrompt, buildYesNoPrompt } = require("./prompts");
+const { getSystemMessage, buildSinglePrompt, buildPpfPrompt, buildYesNoPrompt, buildSoaPrompt, buildDestinysEmbracePrompt, buildLoveChoicePrompt, buildPathToLovePrompt } = require("./prompts");
 
 const app = express();
 app.use(cors());
@@ -97,6 +97,10 @@ const languageProfiles = {
     singleLabel: "Tek Kart",
     threeLabel: "Üç Kart",
     yesNoLabel: "Evet / Hayır",
+    soaLabel: "Durum/Engel/Tavsiye",
+    destinysEmbraceLabel: "Kaderin Kucağı",
+    loveChoiceLabel: "Aşk Seçimi",
+    pathToLoveLabel: "Aşka Giden Yol",
     tone: "Modern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.",
     address: "Tüm metin 'sen' diliyle yazılacak. 'siz' kullanma.",
     singleRules:
@@ -110,6 +114,10 @@ const languageProfiles = {
     singleLabel: "Single Card",
     threeLabel: "Three Cards",
     yesNoLabel: "Yes / No",
+    soaLabel: "Situation/Obstacle/Advice",
+    destinysEmbraceLabel: "Destiny's Embrace",
+    loveChoiceLabel: "Love Choice",
+    pathToLoveLabel: "Path to Love",
     tone: "Write in a modern, direct, practical tone. Short, clear sentences.",
     address: "Use a direct 'you' voice throughout.",
     singleRules:
@@ -123,6 +131,10 @@ const languageProfiles = {
     singleLabel: "Einzelkarte",
     threeLabel: "Drei Karten",
     yesNoLabel: "Ja / Nein",
+    soaLabel: "Situation/Hindernis/Rat",
+    destinysEmbraceLabel: "Umarmung des Schicksals",
+    loveChoiceLabel: "Liebeswahl",
+    pathToLoveLabel: "Weg zur Liebe",
     tone: "Schreibe modern, klar und psychologisch präzise. Kurze Sätze.",
     address: "Direkte Anrede in der Du-Form.",
     singleRules:
@@ -136,6 +148,10 @@ const languageProfiles = {
     singleLabel: "Una carta",
     threeLabel: "Tres cartas",
     yesNoLabel: "Sí / No",
+    soaLabel: "Situación/Obstáculo/Consejo",
+    destinysEmbraceLabel: "Abrazo del Destino",
+    loveChoiceLabel: "Elección de Amor",
+    pathToLoveLabel: "Camino al Amor",
     tone: "Escribe con un tono moderno, directo y psicológico. Frases cortas.",
     address: "Usa la segunda persona (tú) en todo el texto.",
     singleRules:
@@ -145,7 +161,7 @@ const languageProfiles = {
   },
 };
 
-const allowedFocusAreas = ["general", "love", "career", "finance"];
+const allowedFocusAreas = ["general", "love", "career", "spiritual"];
 const allowedLanguages = ["tr", "en", "de", "es"];
 
 // Prompts are now in separate files: backend/prompts/{tr,en,de,es}.js
@@ -248,9 +264,9 @@ const focusLeakWarns = ({ focusArea, text }) => {
   const leakTerms = {
     love: ["love", "relationship", "partner", "aşk", "ilişki", "romantik", "liebe", "beziehung", "amor", "relación"],
     career: ["career", "job", "work", "kariyer", "iş", "meslek", "beruf", "arbeit", "carrera", "trabajo"],
-    finance: ["money", "finance", "budget", "para", "finans", "bütçe", "geld", "finanzen", "dinero", "finanzas", "yatırım", "gelir", "harcama"],
+    spiritual: ["spiritual", "soul", "inner", "ruhsal", "ruh", "içsel", "spirituell", "seele", "espiritual", "alma", "meditasyon", "farkındalık"],
   };
-  ["love", "career", "finance"].forEach((area) => {
+  ["love", "career", "spiritual"].forEach((area) => {
     if (area === focusArea) return;
     if (leakTerms[area].some((w) => t.includes(w))) {
       warns.push(`focusLeak:${area}`);
@@ -268,7 +284,7 @@ const validateSingle = (data) => {
   if (!data.journal.trim().endsWith("?")) return false;
   if (getQuestionMarkCount(data.journal.trim()) !== 1) return false;
   if (splitSentences(data.nextStep).length > 1) return false;
-  return ["general", "love", "career", "finance"].includes(data.focusArea);
+  return ["general", "love", "career", "spiritual"].includes(data.focusArea);
 };
 
 const validatePpf = (data, profile) => {
@@ -297,6 +313,83 @@ const validatePpf = (data, profile) => {
   return true;
 };
 
+const validateSoa = (data) => {
+  if (!data || typeof data !== "object") return false;
+  const required = ["title", "overall", "beats", "nextStep"];
+  for (const key of required) {
+    if (data[key] === undefined || data[key] === null) return false;
+  }
+  if (typeof data.title !== "string" || !data.title.trim()) return false;
+  if (typeof data.overall !== "string" || !data.overall.trim()) return false;
+  if (typeof data.nextStep !== "string" || !data.nextStep.trim()) return false;
+
+  if (!data.beats || typeof data.beats !== "object") return false;
+  if (!["situation", "obstacle", "advice"].every((k) => typeof data.beats[k] === "string" && data.beats[k].trim())) return false;
+
+  return true;
+};
+
+const validateDestinysEmbrace = (data) => {
+  if (!data || typeof data !== "object") return false;
+  const required = ["title", "overall", "beats", "nextStep", "keywords"];
+  for (const key of required) {
+    if (data[key] === undefined || data[key] === null) return false;
+  }
+  if (typeof data.title !== "string" || !data.title.trim()) return false;
+  if (typeof data.overall !== "string" || !data.overall.trim()) return false;
+  if (typeof data.nextStep !== "string" || !data.nextStep.trim()) return false;
+
+  if (!data.beats || typeof data.beats !== "object") return false;
+  if (!["destiny", "path", "union"].every((k) => typeof data.beats[k] === "string" && data.beats[k].trim())) return false;
+
+  if (!Array.isArray(data.keywords) || data.keywords.length !== 3) return false;
+  if (!data.keywords.every((k) => typeof k === "string" && k.trim())) return false;
+
+  return true;
+};
+
+const validateLoveChoice = (data) => {
+  if (!data || typeof data !== "object") return false;
+  const required = ["title", "overall", "beats", "decisionLens", "nextStep", "keywords"];
+  for (const key of required) {
+    if (data[key] === undefined || data[key] === null) return false;
+  }
+  if (typeof data.title !== "string" || !data.title.trim()) return false;
+  if (typeof data.overall !== "string" || !data.overall.trim()) return false;
+  if (typeof data.decisionLens !== "string" || !data.decisionLens.trim()) return false;
+  if (typeof data.nextStep !== "string" || !data.nextStep.trim()) return false;
+
+  if (!data.beats || typeof data.beats !== "object") return false;
+  // 5 kart: optionA, optionA_outcome, optionB, optionB_outcome, advice
+  if (!["optionA", "optionA_outcome", "optionB", "optionB_outcome", "advice"].every((k) => typeof data.beats[k] === "string" && data.beats[k].trim())) return false;
+
+  if (!Array.isArray(data.keywords) || data.keywords.length !== 3) return false;
+  if (!data.keywords.every((k) => typeof k === "string" && k.trim())) return false;
+
+  return true;
+};
+
+const validatePathToLove = (data) => {
+  if (!data || typeof data !== "object") return false;
+  const required = ["title", "overall", "beats", "strategy", "nextStep", "keywords"];
+  for (const key of required) {
+    if (data[key] === undefined || data[key] === null) return false;
+  }
+  if (typeof data.title !== "string" || !data.title.trim()) return false;
+  if (typeof data.overall !== "string" || !data.overall.trim()) return false;
+  if (typeof data.strategy !== "string" || !data.strategy.trim()) return false;
+  if (typeof data.nextStep !== "string" || !data.nextStep.trim()) return false;
+
+  if (!data.beats || typeof data.beats !== "object") return false;
+  // 5 kart: self, block, need, action, potential
+  if (!["self", "block", "need", "action", "potential"].every((k) => typeof data.beats[k] === "string" && data.beats[k].trim())) return false;
+
+  if (!Array.isArray(data.keywords) || data.keywords.length !== 3) return false;
+  if (!data.keywords.every((k) => typeof k === "string" && k.trim())) return false;
+
+  return true;
+};
+
 const parseJsonFromContent = (content) => {
   const jsonMatch = content.match(/\{[\s\S]*\}/);
   const raw = jsonMatch ? jsonMatch[0] : content;
@@ -306,6 +399,15 @@ const parseJsonFromContent = (content) => {
 app.post("/api/reading", async (req, res) => {
   try {
     const { language, spread, card, cards } = req.body;
+    
+    // Debug log
+    console.log("=== API REQUEST ===");
+    console.log("Spread:", spread);
+    console.log("Language:", language);
+    console.log("Cards:", cards ? cards.length : "undefined");
+    if (cards) {
+      console.log("Card positions:", cards.map(c => c.position));
+    }
     
     // Strict language validation
     if (!allowedLanguages.includes(language)) {
@@ -476,6 +578,114 @@ app.post("/api/reading", async (req, res) => {
         presentOrientation,
         futureOrientation,
       });
+    } else if (spread === "situation_obstacle_advice" && cards) {
+      // SOA SPREAD HANDLER
+      const situation = cards.find((c) => c.position === "situation");
+      const obstacle = cards.find((c) => c.position === "obstacle");
+      const advice = cards.find((c) => c.position === "advice");
+
+      const situationOrientation =
+        situation?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const obstacleOrientation =
+        obstacle?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const adviceOrientation =
+        advice?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+
+      prompt = buildSoaPrompt(language, {
+        profile,
+        situationCard: situation?.name || "?",
+        obstacleCard: obstacle?.name || "?",
+        adviceCard: advice?.name || "?",
+        situationOrientation,
+        obstacleOrientation,
+        adviceOrientation,
+      });
+    } else if (spread === "destinys_embrace" && cards) {
+      // DESTINY'S EMBRACE HANDLER
+      const destiny = cards.find((c) => c.position === "destiny");
+      const path = cards.find((c) => c.position === "path");
+      const union = cards.find((c) => c.position === "union");
+
+      const destinyOrientation =
+        destiny?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const pathOrientation =
+        path?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const unionOrientation =
+        union?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+
+      prompt = buildDestinysEmbracePrompt(language, {
+        profile,
+        destinyCard: destiny?.name || "?",
+        pathCard: path?.name || "?",
+        unionCard: union?.name || "?",
+        destinyOrientation,
+        pathOrientation,
+        unionOrientation,
+      });
+    } else if (spread === "love_choice" && cards) {
+      // LOVE CHOICE HANDLER - 5 cards
+      const optionA = cards.find((c) => c.position === "optionA");
+      const optionAOutcome = cards.find((c) => c.position === "optionA_outcome");
+      const optionB = cards.find((c) => c.position === "optionB");
+      const optionBOutcome = cards.find((c) => c.position === "optionB_outcome");
+      const advice = cards.find((c) => c.position === "advice");
+
+      const optionAOrientation =
+        optionA?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const optionAOutcomeOrientation =
+        optionAOutcome?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const optionBOrientation =
+        optionB?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const optionBOutcomeOrientation =
+        optionBOutcome?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const adviceOrientation =
+        advice?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+
+      prompt = buildLoveChoicePrompt(language, {
+        profile,
+        optionACard: optionA?.name || "?",
+        optionAOutcomeCard: optionAOutcome?.name || "?",
+        optionBCard: optionB?.name || "?",
+        optionBOutcomeCard: optionBOutcome?.name || "?",
+        adviceCard: advice?.name || "?",
+        optionAOrientation,
+        optionAOutcomeOrientation,
+        optionBOrientation,
+        optionBOutcomeOrientation,
+        adviceOrientation,
+      });
+    } else if (spread === "path_to_love" && cards) {
+      // PATH TO LOVE HANDLER - 5 cards
+      const self = cards.find((c) => c.position === "self");
+      const block = cards.find((c) => c.position === "block");
+      const need = cards.find((c) => c.position === "need");
+      const action = cards.find((c) => c.position === "action");
+      const potential = cards.find((c) => c.position === "potential");
+
+      const selfOrientation =
+        self?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const blockOrientation =
+        block?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const needOrientation =
+        need?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const actionOrientation =
+        action?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+      const potentialOrientation =
+        potential?.orientation === "upright" ? profile.orientation.upright : profile.orientation.reversed;
+
+      prompt = buildPathToLovePrompt(language, {
+        profile,
+        selfCard: self?.name || "?",
+        blockCard: block?.name || "?",
+        needCard: need?.name || "?",
+        actionCard: action?.name || "?",
+        potentialCard: potential?.name || "?",
+        selfOrientation,
+        blockOrientation,
+        needOrientation,
+        actionOrientation,
+        potentialOrientation,
+      });
     } else {
       return res.status(400).json({ error: "Invalid request" });
     }
@@ -507,22 +717,27 @@ app.post("/api/reading", async (req, res) => {
     const systemMessage = getSystemMessage(language);
     const retrySystemMessage = getSystemMessage(language, true);
     
+    // Validation function based on spread type
+    const getValidator = (spreadType) => {
+      if (spreadType === "single_card") return validateSingle;
+      if (spreadType === "situation_obstacle_advice") return validateSoa;
+      if (spreadType === "destinys_embrace") return validateDestinysEmbrace;
+      if (spreadType === "love_choice") return validateLoveChoice;
+      if (spreadType === "path_to_love") return validatePathToLove;
+      return (data) => validatePpf(data, profile);
+    };
+
     try {
       const firstAttempt = await runAttempt(systemMessage);
       jsonResponse = firstAttempt.parsed;
       rawContent = firstAttempt.content;
-      const valid =
-        spread === "single_card"
-          ? validateSingle(jsonResponse)
-          : validatePpf(jsonResponse, profile);
+      const validator = getValidator(spread);
+      const valid = validator(jsonResponse);
       if (!valid) {
         const retryAttempt = await runAttempt(retrySystemMessage);
         jsonResponse = retryAttempt.parsed;
         rawContent = retryAttempt.content;
-        const validRetry =
-          spread === "single_card"
-            ? validateSingle(jsonResponse)
-            : validatePpf(jsonResponse, profile);
+        const validRetry = validator(jsonResponse);
         if (!validRetry) {
           return res.status(500).json({ error: "Schema validation failed" });
         }

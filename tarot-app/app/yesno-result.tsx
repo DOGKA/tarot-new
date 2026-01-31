@@ -12,8 +12,11 @@ import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
 import type { YesNoReading } from "../types/tarot";
+import Constants from "expo-constants";
 
-const API_URL = "http://192.168.5.123:3001";
+// Backend API URL - dynamic based on Expo host
+const host = Constants.expoConfig?.hostUri?.split(":")[0] || "localhost";
+const API_URL = process.env.EXPO_PUBLIC_API_URL || `http://${host}:3001`;
 
 // Confidence renk sistemi (netlik derecesi)
 const getConfidenceColor = (confidence: number): string => {

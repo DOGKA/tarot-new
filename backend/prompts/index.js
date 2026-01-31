@@ -63,10 +63,58 @@ const buildYesNoPrompt = (language, params) => {
   return langPrompts.buildYesNoPrompt(params).trim();
 };
 
+/**
+ * Build SOA (Situation/Obstacle/Advice) reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildSoaPrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildSoaPrompt(params).trim();
+};
+
+/**
+ * Build Destiny's Embrace reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildDestinysEmbracePrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildDestinysEmbracePrompt(params).trim();
+};
+
+/**
+ * Build Love Choice reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildLoveChoicePrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildLoveChoicePrompt(params).trim();
+};
+
+/**
+ * Build Path to Love reading prompt
+ * @param {string} language - Language code
+ * @param {object} params - Prompt parameters
+ * @returns {string} Formatted prompt
+ */
+const buildPathToLovePrompt = (language, params) => {
+  const langPrompts = getPrompts(language);
+  return langPrompts.buildPathToLovePrompt(params).trim();
+};
+
 module.exports = {
   getPrompts,
   getSystemMessage,
   buildSinglePrompt,
   buildPpfPrompt,
-  buildYesNoPrompt
+  buildYesNoPrompt,
+  buildSoaPrompt,
+  buildDestinysEmbracePrompt,
+  buildLoveChoicePrompt,
+  buildPathToLovePrompt
 };

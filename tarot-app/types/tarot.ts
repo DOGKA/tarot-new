@@ -17,10 +17,10 @@ export interface CategoryMeanings {
   general: string;
   love: string;
   career: string;
-  finance: string;
+  spiritual: string;
 }
 
-export type FocusArea = "general" | "love" | "career" | "finance";
+export type FocusArea = "general" | "love" | "career" | "spiritual";
 
 export interface TarotData {
   cards: Card[];
@@ -30,11 +30,11 @@ export interface TarotData {
 export interface SelectedCard {
   card: Card;
   orientation: "upright" | "reversed";
-  position?: "past" | "present" | "future";
+  position?: "past" | "present" | "future" | "situation" | "obstacle" | "advice" | "destiny" | "path" | "union" | "optionA" | "optionA_outcome" | "optionB" | "optionB_outcome" | "self" | "block" | "need" | "action" | "potential";
 }
 
 // Spread types
-export type SpreadType = "single_card" | "past_present_future" | "yes_no";
+export type SpreadType = "single_card" | "past_present_future" | "yes_no" | "situation_obstacle_advice" | "destinys_embrace" | "love_choice" | "path_to_love";
 
 // Language types
 export type Language = "en" | "tr" | "de" | "es";
@@ -95,6 +95,30 @@ export interface ThreeCardReading {
   nextStep: string;
 }
 
+// SOA (Situation/Obstacle/Advice) Reading Output
+export interface SOAReading {
+  title: string;
+  overall: string;
+  beats: {
+    situation: string;
+    obstacle: string;
+    advice: string;
+  };
+  nextStep: string;
+}
+
+// SOA Request
+export interface SOARequest {
+  language: Language;
+  spread: "situation_obstacle_advice";
+  isPremium: boolean;
+  cards: Array<{
+    position: "situation" | "obstacle" | "advice";
+    name: string;
+    orientation: "upright" | "reversed";
+  }>;
+}
+
 // Yes/No Request
 export interface YesNoRequest {
   language: Language;
@@ -124,4 +148,49 @@ export interface YesNoClarityData {
       [area in FocusArea]: [string, string];
     };
   };
+}
+
+// Destiny's Embrace Reading Output
+export interface DestinysEmbraceReading {
+  title: string;
+  overall: string;
+  beats: {
+    destiny: string;
+    path: string;
+    union: string;
+  };
+  nextStep: string;
+  keywords: string[];
+}
+
+// Love Choice Reading Output (5 kart)
+export interface LoveChoiceReading {
+  title: string;
+  overall: string;
+  beats: {
+    optionA: string;
+    optionA_outcome: string;
+    optionB: string;
+    optionB_outcome: string;
+    advice: string;
+  };
+  decisionLens: string;
+  nextStep: string;
+  keywords: string[];
+}
+
+// Path to Love Reading Output (5 kart)
+export interface PathToLoveReading {
+  title: string;
+  overall: string;
+  beats: {
+    self: string;
+    block: string;
+    need: string;
+    action: string;
+    potential: string;
+  };
+  strategy: string;
+  nextStep: string;
+  keywords: string[];
 }

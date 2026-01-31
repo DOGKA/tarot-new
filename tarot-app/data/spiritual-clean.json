@@ -1,0 +1,392 @@
+[
+  {
+    "kart": "Deli",
+    "duz": "Yeni bir eşiğin önündesin; merakın ve içsel canlılığın seni harekete çağırıyor. Henüz her şey net değil ama bu belirsizlik yaratıcılığı besliyor. İç dinamikte cesaret ile temkin arasında bir denge arıyorsun. Kontrol ihtiyacını biraz gevşetmek, deneyime alan açmanı sağlayabilir. Küçük bir adım olarak, aklında ertelediğin fikri yazılı hale getir ve sadece ilk adımı tanımla; tamamını değil.",
+    "ters": "İlerlemek isterken içten içe geri duruyor olabilirsin; ya aşırı temkin ya da dağınık bir cesaret söz konusu. İç dinamikte, hata yapma korkusu ile kaçış arasında gidip geliyorsun. Bu kart tersken, dikkatsiz bir atlayış ya da tamamen donma riski var. Küçük bir düzeltme olarak, karar vermeden önce tek bir sınır koy: bu adımı atarken neyi kesinlikle yapmayacağını netleştir."
+  },
+  {
+    "kart": "Büyücü",
+    "duz": "Elinde yeterli araç, bilgi ve beceri var; mesele bunları bilinçli kullanmak. Zihinsel odak yüksek ve ifade gücün açık. İç dinamikte niyet ile eylem hizalanmak istiyor. Dağılmak yerine gücünü tek noktada topladığında ilerleme hızlanır. Küçük bir aksiyon olarak, bugün tek bir hedef seç ve tüm dikkatini 30 dakika boyunca yalnızca ona ver.",
+    "ters": "Potansiyel var ama ya kendine güven sarsılmış ya da enerji yanlış yere akıyor. İç dinamikte manipülasyon, erteleme veya ‘yeterli değilim’ inancı çalışıyor olabilir. Bu durumda güç dağılır. Küçük bir düzeltme olarak, yapabildiklerinin kısa bir listesini çıkar; başkalarına değil, kendine kanıt oluştur."
+  },
+  {
+    "kart": "Azize",
+    "duz": "İç sesin güçleniyor; dış gürültüden ziyade sezgisel farkındalık öne çıkıyor. Her şeyi konuşmak zorunda değilsin. İç dinamikte sabır, gözlem ve derinlik ihtiyacı var. Bilgi henüz olgunlaşma aşamasında. Küçük bir adım olarak, karar vermeden önce bir gün bekle ve hislerini yazıya dök.",
+    "ters": "Sezgini bastırıyor ya da dış onaya fazla yaslanıyor olabilirsin. İç dinamikte kendi bilgine güvenmekte zorlanma var. Bu, içsel sessizliği kaybettirebilir. Küçük bir düzeltme olarak, başkasından fikir almadan önce kendi cevabını tek cümleyle not et."
+  },
+  {
+    "kart": "İmparatoriçe",
+    "duz": "Besleyici, üretken ve genişleyen bir dönemdesin. Kendine ve çevrene alan açtığında doğal bir akış oluşuyor. İç dinamikte öz-şefkat ve yaratıcılık öne çıkıyor. Fazlalık değil, verim söz konusu. Küçük bir aksiyon olarak, sana iyi gelen bir rutini haftana bilinçli şekilde ekle.",
+    "ters": "Kendini ihmal etmek ya da aşırı vermek söz konusu olabilir. İç dinamikte değer algısı dengesizleşmiş; ya tükenme ya da suçluluk hissi var. Küçük bir düzeltme olarak, bugün yalnızca kendin için yapılan tek bir şeyi planla ve uygulamayı erteleme."
+  },
+  {
+    "kart": "İmparator",
+    "duz": "Yapı kurma ve sorumluluk alma zamanı. Net sınırlar ve düzen, güven hissini artırıyor. İç dinamikte kontrol ihtiyacı sağlıklı bir çerçeveye oturmak istiyor. Küçük bir adım olarak, hayatındaki tek bir alanda kuralı yazılı hale getir.",
+    "ters": "Ya aşırı kontrol ediyorsun ya da tamamen otoriteden kaçıyorsun. İç dinamikte güçle ilgili bir gerilim var. Bu durum kararsızlık yaratabilir. Küçük bir düzeltme olarak, hangi konuda sorumluluk almaktan kaçtığını dürüstçe isimlendir."
+  },
+  {
+    "kart": "Aziz",
+    "duz": "Gelenek, bilgi ve rehberlik ön planda. Öğrenmek ve anlamı yapılandırmak istiyorsun. İç dinamikte aidiyet ve değerler netleşiyor. Küçük bir adım olarak, güvendiğin bir kaynaktan öğrendiğin tek prensibi hayatına uygula.",
+    "ters": "Kalıplar sıkıştırıyor ya da körü körüne uyum söz konusu. İç dinamikte özgünlük ihtiyacı bastırılmış olabilir. Küçük bir düzeltme olarak, ‘böyle olmalı’ dediğin bir kuralı sorgula ve esnet."
+  },
+  {
+    "kart": "Aşıklar",
+    "duz": "Bir seçim kapısı açılıyor; değerlerinle uyumlu karar verme zamanı. İç dinamikte bağ kurma ve dürüstlük ihtiyacı var. Küçük bir aksiyon olarak, bu kararın senin için neyi temsil ettiğini tek cümleyle yaz.",
+    "ters": "Kararsızlık ya da değer çatışması söz konusu. İç dinamikte kaçınma ve memnun etme eğilimi olabilir. Küçük bir düzeltme olarak, istemediğin seçeneği net biçimde ele."
+  },
+  {
+    "kart": "Savaş Arabası",
+    "duz": "İrade ve yön netliği artıyor. Hedefe odaklandığında dış engeller geri planda kalır. İç dinamikte disiplin ve kararlılık dengeleniyor. Küçük bir adım olarak, haftanın tek önceliğini belirle.",
+    "ters": "Enerji dağınık ya da aşırı zorlanma var. İç dinamikte kontrol kaygısı ilerlemeyi bloke edebilir. Küçük bir düzeltme olarak, tempoyu düşür ve hedefi sadeleştir."
+  },
+  {
+    "kart": "Güç",
+    "duz": "Yumuşak ama kararlı bir güç devrede. İçsel dayanıklılık ve öz-şefkat artıyor. Küçük bir aksiyon olarak, zor bir durumda ses tonunu bilinçli yumuşat.",
+    "ters": "Öz-güven sarsılmış ya da bastırılmış öfke var. İç dinamikte kendine sertlik çalışıyor. Küçük bir düzeltme olarak, kendinle konuşma dilini fark et ve yumuşat."
+  },
+  {
+    "kart": "Ermiş",
+    "duz": "İçe dönme ve sadeleşme ihtiyacı öne çıkıyor. İç dinamikte bilgelik yalnızlıkla değil, netlikle geliyor. Küçük bir adım olarak, gün içinde sessiz bir zaman yarat.",
+    "ters": "İzolasyon ya da iç sesi duymamak söz konusu. İç dinamikte kaçınma olabilir. Küçük bir düzeltme olarak, güvendiğin biriyle düşünceni paylaş."
+  },
+  {
+    "kart": "Kader Çarkı",
+    "duz": "Değişim kaçınılmaz ama yön verilebilir. İç dinamikte esneklik şans yaratıyor. Küçük bir adım olarak, kontrol edebileceğin tek alanı seç.",
+    "ters": "Aynı döngü tekrar ediyor olabilir. İç dinamikte farkındalık eksikliği var. Küçük bir düzeltme olarak, tekrar eden paterni isimlendir."
+  },
+  {
+    "kart": "Adalet",
+    "duz": "Denge, dürüstlük ve netlik ön planda. İç dinamikte sorumluluk alma zamanı. Küçük bir aksiyon olarak, kararını objektif kriterlerle yaz.",
+    "ters": "Haksızlık algısı ya da içsel çelişki var. Küçük bir düzeltme olarak, kendi payını sakinlikle değerlendir."
+  },
+  {
+    "kart": "Asılan Adam",
+    "duz": "Beklemek ve bakış açısını değiştirmek fayda sağlıyor. İç dinamikte teslimiyet var. Küçük bir adım olarak, acele etmeme kararı al.",
+    "ters": "Gereksiz fedakârlık ya da inat söz konusu. Küçük bir düzeltme olarak, neyi bırakman gerektiğini yaz."
+  },
+  {
+    "kart": "Ölüm",
+    "duz": "Bir döngü kapanıyor; bu alan açmakla ilgili. İç dinamikte vedaya hazır olma var. Küçük bir adım olarak, artık işlevini yitiren şeyi netleştir.",
+    "ters": "Tutunma ve değişim korkusu öne çıkıyor. Küçük bir düzeltme olarak, küçük bir vedayı bilinçli yap."
+  },
+  {
+    "kart": "Denge",
+    "duz": "Uyum ve ölçülülük güçleniyor. İç dinamikte sabırla harmanlama var. Küçük bir aksiyon olarak, günlük ritmini dengele.",
+    "ters": "Aşırılıklar yoruyor olabilir. Küçük bir düzeltme olarak, uçlardan birini bilinçli kıs."
+  },
+  {
+    "kart": "Şeytan",
+    "duz": "Bağlılıklar ve alışkanlıklar görünür hale geliyor; seni tutan şey artık gizli değil. Durum, bir dış zorunluluktan çok içsel bir bağlanma hissiyle ilgili. İç dinamikte konfor alanı ile özgürlük ihtiyacı çarpışıyor; kontrol sende olsa bile bunu kullanmaktan kaçınıyor olabilirsin. Bu kart, suçluluk değil farkındalık çağrısı yapar. Küçük bir adım olarak, seni en çok sınırlayan alışkanlığı net bir cümleyle yaz ve bu alışkanlığın sana ne verdiğini dürüstçe isimlendir.",
+    "ters": "Bağlar gevşemeye başlamış; eskiden güçlü görünen zincir artık eskisi kadar sağlam değil. Durum, özgürleşmeye hazır bir farkındalığa işaret ediyor. İç dinamikte cesaret artıyor ama son adımı atmadan önce tereddüt var. Bu kart tersken, değişim kapıda ama bilinçli bir hamle istiyor. Küçük bir düzeltme olarak, seni sınırlayan davranışı bugün yalnızca bir kez ertelemeyi dene ve yarattığı etkiyi gözlemle."
+  },
+  {
+    "kart": "Yıkılan Kule",
+    "duz": "Ani bir fark ediş ya da beklenmedik bir gerçek, mevcut yapıyı sarsıyor. Durum rahatsız edici olabilir ama bu sarsıntı uzun süredir görmezden gelinen bir noktayı açığa çıkarır. İç dinamikte inkâr ile yüzleşme arasında bir eşik var. Bu kart yıkımı değil, yanlış temelin çözülmesini anlatır. Küçük bir adım olarak, artık geçerliliğini yitirdiğini fark ettiğin inancı açıkça yaz ve onu savunmayı bırak.",
+    "ters": "Değişimi erteleme eğilimi var; yapı çatlıyor ama henüz yıkılmadı. İç dinamikte kontrollü kalma isteği, gerekli dönüşümü geciktiriyor olabilir. Bu kart tersken, ani bir kırılma yerine bilinçli bir çözülme önerir. Küçük bir düzeltme olarak, büyük bir kopuş yerine tek bir alışkanlığı bilinçli şekilde sonlandır."
+  },
+  {
+    "kart": "Yıldız",
+    "duz": "Zorlayıcı bir sürecin ardından içsel bir ferahlama hissi doğuyor. Durum, iyileşme ve yeniden güven kurma evresine işaret eder. İç dinamikte umut pasif bir beklenti değil; kendine yeniden inanma pratiğidir. Bu kart, küçük ama tutarlı adımların önemini vurgular. Küçük bir aksiyon olarak, geleceğe dair tek bir niyeti yaz ve onu hatırlatacak basit bir sembol seç.",
+    "ters": "Umut zayıflamış ya da yorgunluk algıyı daraltmış olabilir. Durum kalıcı değil; daha çok tükenmişlikten kaynaklanan geçici bir bulanıklık söz konusu. İç dinamikte kendine yüklenme eğilimi var. Küçük bir düzeltme olarak, bugün kendinden beklentini bilinçli şekilde düşür ve dinlenmeye alan aç."
+  },
+  {
+    "kart": "Ay",
+    "duz": "Belirsizlik ve duygusal dalgalanma ön planda. Durum, net cevaplardan çok sezgisel farkındalık gerektiriyor. İç dinamikte korkular görünür hale geliyor; ancak bu korkular gerçeğin kendisi değil, zihnin ürettiği gölgeler olabilir. Küçük bir adım olarak, seni huzursuz eden belirsizliği somut bir soruya dönüştür ve yaz.",
+    "ters": "Sis yavaş yavaş dağılıyor; gerçekler daha net seçilmeye başlıyor. İç dinamikte sezgi ile akıl arasında denge kuruluyor. Bu kart tersken, kafa karışıklığından çıkış mümkün. Küçük bir düzeltme olarak, varsayım ile gerçeği iki ayrı başlık altında ayır."
+  },
+  {
+    "kart": "Güneş",
+    "duz": "Açıklık, canlılık ve görünürlük artıyor. Durum, kendini ifade etmenin ve sahici olmanın rahatlığını getiriyor. İç dinamikte özgüven, başkalarından onay almadan da var olabileceğini hatırlatıyor. Küçük bir aksiyon olarak, tamamladığın bir şeyi bilinçli şekilde kutla.",
+    "ters": "Enerji düşmüş ya da neşe bastırılmış olabilir. İç dinamikte aşırı ciddiyet ya da kendini geri çekme eğilimi var. Bu kart tersken, ışık kaybolmaz; sadece gölgelenir. Küçük bir düzeltme olarak, seni eskiden besleyen basit bir aktiviteye geri dön."
+  },
+  {
+    "kart": "Mahkeme",
+    "duz": "Bir farkındalık çağrısı var; geçmiş deneyimler yeni bir anlam kazanıyor. Durum, eski bir döngüyü değerlendirme ve bilinçli bir karar alma aşamasına işaret eder. İç dinamikte kendini affetme ve sorumluluk alma birlikte çalışıyor. Küçük bir adım olarak, vermekte zorlandığın kararı net bir cümleyle ifade et.",
+    "ters": "Kendini sert biçimde yargılama eğilimi öne çıkıyor. İç dinamikte suçluluk ya da pişmanlık ilerlemeyi yavaşlatıyor olabilir. Bu kart tersken, affetme içe doğru yönelir. Küçük bir düzeltme olarak, geçmişteki bir kararı bugünün bilgisiyle yeniden değerlendir."
+  },
+  {
+    "kart": "Dünya",
+    "duz": "Bir döngü tamamlanıyor; bütünlük ve tatmin hissi oluşuyor. Durum, emeğinin karşılığını fark etme ve süreci kapatma zamanı olduğunu gösterir. İç dinamikte ‘yeterlilik’ hissi güçleniyor. Küçük bir aksiyon olarak, biten bu süreci sembolik bir ritüelle kapat.",
+    "ters": "Tamamlanmaya çok yakınsın ama son adımı erteleyebilirsin. İç dinamikte veda etmekte zorlanma ya da eksik hissetme var. Bu kart tersken, kapanış bilinç ister. Küçük bir düzeltme olarak, yarım kalan son detayı netleştir ve bitir."
+  },
+  {
+    "kart": "Değnek Ası",
+    "duz": "Yeni bir kıvılcım ortaya çıkıyor; içten gelen bir istek seni harekete çağırıyor. Durum, henüz şekil almamış ama güçlü bir potansiyele işaret eder. İç dinamikte motivasyon, heyecan ve kendini ifade etme ihtiyacı öne çıkıyor. Bu enerji plansız bırakıldığında hızla dağılabilir. Küçük bir adım olarak, seni heyecanlandıran bu fikri tek cümleyle tanımla ve ilk somut hamleyi belirle.",
+    "ters": "İçindeki kıvılcım bastırılmış ya da ertelenmiş olabilir. Durum, motivasyon düşüklüğünden çok yönsüzlükle ilgilidir. İç dinamikte ‘doğru zaman değil’ inancı çalışıyor olabilir. Küçük bir düzeltme olarak, mükemmel anı beklemeyi bırak ve bu isteği çok küçük bir denemeyle test et."
+  },
+  {
+    "kart": "Değnek İkilisi",
+    "duz": "Bir yön seçme aşamasındasın; potansiyelini nereye akıtacağını tartıyorsun. Durum, vizyon geliştirme ve ufku genişletme ihtiyacını gösterir. İç dinamikte kontrol ile keşif arasında bir denge arayışı var. Küçük bir adım olarak, iki seçenekten hangisinin seni daha çok büyüttüğünü yaz.",
+    "ters": "Kararsızlık ya da dar bakış açısı ilerlemeyi yavaşlatıyor olabilir. İç dinamikte riskten kaçınma öne çıkıyor. Küçük bir düzeltme olarak, en azından bir seçeneği bilinçli şekilde ele."
+  },
+  {
+    "kart": "Değnek Üçlüsü",
+    "duz": "Emek verdiğin şeyin ilk sonuçları görünmeye başlıyor. Durum, ilerleme hissi ve genişleme potansiyeli taşır. İç dinamikte sabır ve güven birlikte çalışıyor. Küçük bir aksiyon olarak, attığın adımları gözden geçir ve bir sonraki hamleyi netleştir.",
+    "ters": "Beklentiler gecikmiş ya da ilerleme görünmüyor olabilir. İç dinamikte acelecilik var. Küçük bir düzeltme olarak, süreci yeniden planla ve zaman çizelgesini sadeleştir."
+  },
+  {
+    "kart": "Değnek Dörtlüsü",
+    "duz": "Geçici bir denge ve güven hissi oluşuyor. Durum, kutlama ve yerleşme ihtiyacını anlatır. İç dinamikte aidiyet ve rahatlama öne çıkıyor. Küçük bir adım olarak, tamamlanan bir süreci bilinçli şekilde takdir et.",
+    "ters": "Denge bozulmuş ya da geçici huzur ertelenmiş olabilir. İç dinamikte ‘hak etmedim’ düşüncesi çalışıyor olabilir. Küçük bir düzeltme olarak, başarıyı küçümsemeyi bırak."
+  },
+  {
+    "kart": "Değnek Beşlisi",
+    "duz": "Fikir çatışmaları ve rekabet ön planda. Durum, dış gerginlikten çok içsel kıyaslamayla ilgilidir. İç dinamikte kendini kanıtlama ihtiyacı var. Küçük bir adım olarak, enerjini karşılaştırmaya değil gelişime yönlendir.",
+    "ters": "Çatışmadan kaçınma ya da bastırma söz konusu olabilir. İç dinamikte uyum uğruna geri çekilme var. Küçük bir düzeltme olarak, rahatsız eden noktayı sakin bir dille ifade et."
+  },
+  {
+    "kart": "Değnek Altılısı",
+    "duz": "Takdir ve görünürlük artıyor. Durum, emeğinin fark edilmesiyle ilgili. İç dinamikte özgüven güçleniyor. Küçük bir aksiyon olarak, başarını sahiplen ve paylaş.",
+    "ters": "Takdir eksikliği ya da içsel tatminsizlik var. İç dinamikte onay ihtiyacı öne çıkıyor. Küçük bir düzeltme olarak, kendi ilerleme ölçütünü tanımla."
+  },
+  {
+    "kart": "Değnek Yedilisi",
+    "duz": "Kendi alanını savunma zamanı. Durum, sınır koyma gerektiriyor. İç dinamikte öz-değer bilinci öne çıkıyor. Küçük bir adım olarak, ‘hayır’ demen gereken noktayı netleştir.",
+    "ters": "Geri çekilme ya da tükenmişlik hissi var. İç dinamikte aşırı yüklenme olabilir. Küçük bir düzeltme olarak, sorumlulukları sadeleştir."
+  },
+  {
+    "kart": "Değnek Sekizlisi",
+    "duz": "Hız ve akış artıyor. Durum, ivmenin yükseldiğini gösterir. İç dinamikte netlik hareketi kolaylaştırıyor. Küçük bir aksiyon olarak, beklemeden ilerle.",
+    "ters": "Dağınıklık ya da gecikme var. İç dinamikte öncelik karmaşası olabilir. Küçük bir düzeltme olarak, işleri sıraya koy."
+  },
+  {
+    "kart": "Değnek Dokuzlusu",
+    "duz": "Yorgunluğa rağmen direnç devam ediyor. Durum, son bir eşiğe işaret eder. İç dinamikte dayanıklılık ve sınır bilinci var. Küçük bir adım olarak, kendini koruyacak önlemi al.",
+    "ters": "Tükenmişlik artmış olabilir. İç dinamikte ‘devam etmeliyim’ baskısı var. Küçük bir düzeltme olarak, mola vermeyi kabul et."
+  },
+  {
+    "kart": "Değnek Onlusu",
+    "duz": "Aşırı yük ve sorumluluk baskısı var. Durum, tek başına taşımaya çalışma eğilimini gösterir. İç dinamikte kontrol ihtiyacı öne çıkıyor. Küçük bir adım olarak, yükü paylaş.",
+    "ters": "Yük hafiflemeye hazır. İç dinamikte bırakma isteği var. Küçük bir düzeltme olarak, gereksiz sorumluluğu bırak."
+  },
+  {
+    "kart": "Değnek Uşağı",
+    "duz": "Merak ve öğrenme isteği canlı. Durum, keşif ve deneme evresini anlatır. İç dinamikte heves var. Küçük bir aksiyon olarak, yeni fikri dene.",
+    "ters": "Heves dağılmış ya da yönsüz. İç dinamikte erteleme var. Küçük bir düzeltme olarak, başlangıcı küçült."
+  },
+  {
+    "kart": "Değnek Şövalyesi",
+    "duz": "Tutku ve hareket ön planda. Durum, hızlı aksiyon çağrısı yapar. İç dinamikte cesaret yüksek. Küçük bir adım olarak, enerjini tek hedefte topla.",
+    "ters": "Acelecilik ya da yönsüzlük var. İç dinamikte sabırsızlık çalışıyor. Küçük bir düzeltme olarak, hızını ayarla."
+  },
+  {
+    "kart": "Değnek Kraliçesi",
+    "duz": "Özgüven ve karizma öne çıkıyor. Durum, kendin olarak liderlik etmeyi anlatır. İç dinamikte içsel güç var. Küçük bir aksiyon olarak, fikrini açıkça paylaş.",
+    "ters": "Özgüven dalgalı olabilir. İç dinamikte başkalarıyla kıyaslama var. Küçük bir düzeltme olarak, kendi gücünü hatırla."
+  },
+  {
+    "kart": "Değnek Kralı",
+    "duz": "Vizyoner ve kararlı bir liderlik söz konusu. Durum, büyük resmi görme becerisini gösterir. İç dinamikte sorumluluk ve ilham dengede. Küçük bir adım olarak, yönünü net ilan et.",
+    "ters": "Kontrolcülük ya da ilham kaybı var. İç dinamikte baskı artmış olabilir. Küçük bir düzeltme olarak, liderliği yumuşat."
+  },
+  {
+    "kart": "Kılıç Ası",
+    "duz": "Zihinsel bir netlik anı doğuyor; uzun süredir bulanık olan bir konu artık daha açık görünüyor. Durum, gerçeği olduğu gibi görmeye ve süslemeyi bırakmaya hazır olduğunu gösterir. İç dinamikte dürüstlük ihtiyacı öne çıkıyor; hem kendine hem başkalarına karşı daha açık olma isteği var. Bu kart, duyguları bastırmak değil, düşünceyi berraklaştırmakla ilgilidir. Küçük bir adım olarak, kafanı kurcalayan ana soruyu tek bir net cümle halinde yaz ve etrafındaki yan konuları şimdilik kenara bırak.",
+    "ters": "Zihin karışık ve düşünceler keskinliğini kaybetmiş olabilir. Durum, fazla bilgi, içsel çelişki ya da kaçınılan bir gerçekle ilgilidir. İç dinamikte yüzleşme korkusu, netlikten kaçmaya neden oluyor olabilir. Bu kart tersken, acele kararlar hataya sürükleyebilir. Küçük bir düzeltme olarak, bugün önemli bir konuda karar vermek yerine yalnızca sorunu doğru tanımlamaya odaklan."
+  },
+  {
+    "kart": "Kılıç İkilisi",
+    "duz": "Kararsızlık hali baskın; iki düşünce arasında sıkışmış olabilirsin. Durum, duyguları devre dışı bırakıp mantıkla denge kurma çabasını gösterir. İç dinamikte çatışmadan kaçınma ve ‘yanlış yapmayayım’ isteği var. Bu kart, beklemenin de bilinçli bir seçim olabileceğini hatırlatır. Küçük bir adım olarak, iki seçeneğin artı ve eksilerini yaz ve hangisinin seni uzun vadede daha rahatlatacağını işaretle.",
+    "ters": "Gözlerini kapalı tutma hali sona eriyor; karar kaçınılmaz hale gelmiş olabilir. İç dinamikte bastırılan duygular yüzeye çıkıyor. Bu kart tersken, erteleme artık koruyucu değil. Küçük bir düzeltme olarak, karar vermeni en çok geciktiren korkuyu isimlendir."
+  },
+  {
+    "kart": "Kılıç Üçlüsü",
+    "duz": "Zihinsel ya da duygusal bir kırılma yaşanmış olabilir. Durum, hayal kırıklığı veya incinme temasını taşır. İç dinamikte acıyı anlamlandırma ihtiyacı var; yok saymak iyileştirmiyor. Bu kart, can yakıcı olsa da gerçeği net biçimde gösterir. Küçük bir adım olarak, seni inciten durumu duygudan arındırarak tek cümleyle tanımla.",
+    "ters": "İyileşme süreci başlamış; acı artık eskisi kadar keskin değil. İç dinamikte kabulleniş ve bırakma çalışıyor. Bu kart tersken, geçmiş yarayı sürekli deşmek yerine ilerlemek mümkündür. Küçük bir düzeltme olarak, kendinle barıştığın noktayı yaz."
+  },
+  {
+    "kart": "Kılıç Dörtlüsü",
+    "duz": "Zihinsel yorgunluk dikkat çekiyor; durup dinlenme ihtiyacı var. Durum, geri çekilmenin kaçış değil, onarım olduğunu hatırlatır. İç dinamikte kendine alan açma ihtiyacı öne çıkıyor. Küçük bir adım olarak, bugün bilinçli bir mola planla.",
+    "ters": "Dinlenme ertelenmiş ya da zihnin sürekli meşgul. İç dinamikte ‘devam etmeliyim’ baskısı var. Bu kart tersken, aşırı yüklenme riski artar. Küçük bir düzeltme olarak, tempoyu düşür."
+  },
+  {
+    "kart": "Kılıç Beşlisi",
+    "duz": "Kazananı olmayan bir zihinsel mücadele söz konusu. Durum, haklı çıkma ihtiyacının ilişkilere zarar verebileceğini gösterir. İç dinamikte ego ve savunma mekanizmaları çalışıyor. Küçük bir adım olarak, bu tartışmada gerçekten ne kazanmak istediğini netleştir.",
+    "ters": "Gerginliği düşürme ve geri adım atma ihtiyacı öne çıkıyor. İç dinamikte barışma isteği var. Küçük bir düzeltme olarak, uzlaşma için ilk küçük adımı at."
+  },
+  {
+    "kart": "Kılıç Altılısı",
+    "duz": "Zihinsel bir geçiş sürecindesin; daha sakin bir alana doğru ilerliyorsun. Durum, sorunları arkada bırakma niyetini gösterir. İç dinamikte iyileşme ve mesafe koyma ihtiyacı var. Küçük bir adım olarak, seni yoran düşünceden bilinçli olarak uzaklaş.",
+    "ters": "Geçmişe takılı kalma ya da eski meseleleri taşıma söz konusu. İç dinamikte bırakmakta zorlanma var. Küçük bir düzeltme olarak, geride kalması gereken düşünceyi yaz."
+  },
+  {
+    "kart": "Kılıç Yedilisi",
+    "duz": "Açık olmayan bir durum ya da kaçamak düşünceler ön planda. Durum, dürüstlük sınavını gösterir. İç dinamikte kendine karşı bile net olmama riski var. Küçük bir adım olarak, sakladığın düşünceyi kendine itiraf et.",
+    "ters": "Gizlenen şeyler açığa çıkmaya hazır. İç dinamikte doğruluk ihtiyacı güçleniyor. Küçük bir düzeltme olarak, açık iletişimi seç."
+  },
+  {
+    "kart": "Kılıç Sekizlisi",
+    "duz": "Zihinsel bir sıkışmışlık hissi var. Durum, engellerin büyük kısmının düşünce kaynaklı olduğunu gösterir. İç dinamikte çaresizlik algısı öne çıkıyor. Küçük bir adım olarak, kontrol edebileceğin tek alanı belirle.",
+    "ters": "Kısıtların farkına varılıyor ve çözülme başlıyor. İç dinamikte güçlenme var. Küçük bir düzeltme olarak, ilk özgürleşme hamlesini yap."
+  },
+  {
+    "kart": "Kılıç Dokuzlusu",
+    "duz": "Kaygı ve zihinsel yük ağırlaşmış olabilir. Durum, gece zihninin susmamasıyla ilişkilidir. İç dinamikte suçluluk veya korku çalışıyor. Küçük bir adım olarak, endişeni yazıya dök.",
+    "ters": "Kaygı azalıyor; düşünceler daha yönetilebilir. İç dinamikte rahatlama başlıyor. Küçük bir düzeltme olarak, kendine karşı daha yumuşak ol."
+  },
+  {
+    "kart": "Kılıç Onlusu",
+    "duz": "Bir zihinsel döngü bitmiş durumda; devam ettirmek gereksiz. Durum, kabul edilmesi zor ama net bir sonu anlatır. İç dinamikte dirençten çok kabulleniş gereklidir. Küçük bir adım olarak, bu döngüyü kapattığını yaz.",
+    "ters": "Toparlanma süreci başlıyor. İç dinamikte yeniden ayağa kalkma var. Küçük bir düzeltme olarak, küçük bir başlangıç yap."
+  },
+  {
+    "kart": "Kılıç Uşağı",
+    "duz": "Merak ve zihinsel canlılık yüksek. Durum, öğrenmeye açıklığı gösterir. İç dinamikte soru sorma cesareti var. Küçük bir adım olarak, merak ettiğin konuyu araştır.",
+    "ters": "Dikkat dağınık ya da düşünceler yüzeysel. İç dinamikte sabırsızlık var. Küçük bir düzeltme olarak, odağını daralt."
+  },
+  {
+    "kart": "Kılıç Şövalyesi",
+    "duz": "Hızlı düşünme ve direktlik ön planda. Durum, aksiyon alma isteğini gösterir. İç dinamikte acelecilik riski var. Küçük bir adım olarak, konuşmadan önce düşün.",
+    "ters": "Aşırı sertlik ya da düşünmeden hareket etme söz konusu. Küçük bir düzeltme olarak, hızını bilinçli yavaşlat."
+  },
+  {
+    "kart": "Kılıç Kraliçesi",
+    "duz": "Zihinsel olgunluk ve netlik öne çıkıyor. Durum, duygudan kopmadan mantıkla hareket etmeyi anlatır. İç dinamikte sınırlar sağlam. Küçük bir adım olarak, gerçeği sakinlikle ifade et.",
+    "ters": "Soğukluk ya da aşırı eleştirellik var. İç dinamikte duygusal mesafe artmış olabilir. Küçük bir düzeltme olarak, empatiyi bilinçli ekle."
+  },
+  {
+    "kart": "Kılıç Kralı",
+    "duz": "Stratejik düşünce ve zihinsel liderlik ön planda. Durum, büyük resmi görme becerisini gösterir. İç dinamikte sorumluluk ve adalet dengede. Küçük bir adım olarak, kararını net ve sakin şekilde duyur.",
+    "ters": "Kontrolcü düşünce ya da katılık riski var. İç dinamikte esneklik kaybolmuş olabilir. Küçük bir düzeltme olarak, farklı bakış açısına alan aç."
+  },
+  {
+    "kart": "Kupa Ası",
+    "duz": "Duygusal olarak taze bir başlangıç noktasındasın. İçinde kendini ifade etme ve bağ kurma isteği yükseliyor. Bu durum, mantığından çok hislerine güvenmen gereken bir evre. Bastırdığın duygular artık yüzeye çıkmak istiyor; buna izin ver. Duygularını olduğu gibi kabul etmek seni rahatlatacak. Hemen şimdi, şu an hissettiğin baskın duyguyu tek bir kelimeyle tanımla ve bir yere not et.",
+    "ters": "Duygularını bastırıyor veya görmezden geliyorsun. Kendini korumak için ördüğün duvarlar, aslında seni sıkıştırıyor olabilir. İçerideki baskı artmadan bir tahliye alanı yaratmalısın. Kırılmaktan korkmak, hissetmekten kaçmana neden olmamalı. Bugün, seni rahatsız eden konuyu kendine dürüstçe itiraf et ve sadece 10 dakika bu hisle kal."
+  },
+  {
+    "kart": "Kupa İkilisi",
+    "duz": "Karşılıklı anlayış ve sağlıklı bir iletişim zeminindesin. İster iş ister özel hayat olsun, 'ben' ve 'biz' dengesini kurabiliyorsun. Bağ kurmak şu an sana iyi geliyor ve seni besliyor. Uyum, kendi sınırlarını koruyarak ötekini anlamaktan geçer. Bugün, değer verdiğin birine net ve samimi bir takdir cümlesi kur.",
+    "ters": "İletişimde kopukluk veya yanlış anlaşılma riski var. Beklentilerinle gerçekler uyuşmuyor olabilir. Karşı tarafı suçlamadan önce kendi ihtiyaçlarını netleştirmen gerekiyor. Kendini ifade edemediğin yeri fark et. İlişkideki en temel ihtiyacını isimlendir ve bunu kendine nasıl verebileceğine odaklan."
+  },
+  {
+    "kart": "Kupa Üçlüsü",
+    "duz": "Sosyal çevrenle bir arada olma ve paylaşım yapma zamanı. Destek görmek ve kutlamak moralini yükseltiyor. Yalnız kalmak yerine insan içine karışmak zihnini açacak. Arkadaşlıkların sana güç verdiği bir dönemdesin. Bugün, sana iyi gelen bir arkadaşını ara ve gündemsiz, keyifli bir sohbet başlat.",
+    "ters": "Kalabalıklar içinde yalnız hissediyor olabilirsin. Sosyal çevren seni yoruyor veya dışlanmış hissediyorsun. Belki de dedikodu veya yüzeysel ilişkiler enerjini tüketiyor. Kendi alanına çekilmek şu an en doğrusu olabilir. Bugün, gitmek istemediğin bir planı iptal et ve kendine zaman ayır."
+  },
+  {
+    "kart": "Kupa Dörtlüsü",
+    "duz": "Mevcut duruma karşı bir ilgisizlik ve bıkkınlık yaşıyorsun. Fırsatlar önünde duruyor ama senin canın hiçbirini istemiyor. Bu duygusal durgunluk, aslında ne istediğini sorgulaman için bir fırsat. Dışarıya kapanmak yerine bakış açını değiştirmen gerekebilir. Bugün, rutininde seni sıkan tek bir şeyi fark et ve küçük bir değişiklik yap.",
+    "ters": "Üzerindeki ağırlık kalkıyor ve motivasyonun geri geliyor. Harekete geçmek ve yeni fırsatları değerlendirmek için isteklisin. İçe kapanma dönemi bitti; artık dış dünyayla ilgilenmeye hazırsın. Bu uyanışı değerlendir. Ertelediğin bir işe veya hobiye bugün taze bir enerjiyle başla."
+  },
+  {
+    "kart": "Kupa Beşlisi",
+    "duz": "Odak noktan tamamen kaybettiklerinde veya hayal kırıklıklarında. Olan biteni değiştiremeyeceğin gerçeğiyle yüzleşmek zor geliyor. Yas tutmak doğal ama orada takılı kalmak seni kilitler. Geriye kalan sağlam kaynaklarına bakma zamanı. Bugün, seni üzen konuyu yaz, sonra yanına şu an elinde olan iki olumlu şeyi ekle.",
+    "ters": "Yaralarını sarıyor ve geleceğe bakmaya başlıyorsun. Geçmişin yükü hafifliyor, kabullenme süreci başladı. Hatalardan ders çıkarıp yola devam etme bilincindesin. Bu, toparlanma sürecinin en önemli adımıdır. Geçmişteki bir hatayı kendine affettiğini sesli olarak söyle ve konuyu kapat."
+  },
+  {
+    "kart": "Kupa Altılısı",
+    "duz": "Geçmişin güvenli ve tanıdık hislerine ihtiyaç duyuyorsun. Eski anılar veya köklerinle temas etmek sana iyi geliyor. Hayatı daha basit ve samimi bir yerden algılama isteğindesin. Bu nostalji sana bugünü inşa etmen için güç verebilir. Çocukken sevdiğin basit bir aktiviteyi bugün 15 dakika boyunca yap.",
+    "ters": "Geçmişe saplanıp bugünü kaçırıyor olabilirsin. Büyümekten kaçmak veya sorumluluk almamak için eski günlere sığınıyorsun. Nostalji bir kaçış alanına dönüşmemeli. Şimdiye odaklanman gerekiyor. Seni geçmişte tutan eski bir eşyayı veya fotoğrafı bugün göz önünden kaldır."
+  },
+  {
+    "kart": "Kupa Yedilisi",
+    "duz": "Zihnin seçeneklerle dolu ama eylem eksik. Hayal kurmak güvenli bir kaçış alanı yaratıyor olabilir. Her şeyi istemek, bazen hiçbir şeyi seçememektir. Önceliklerini belirlemezsen enerjin dağılır. Bugün, aklındaki projelerden sadece birini seç ve onun için somut bir ilk adım at.",
+    "ters": "Belirsizlik dağılıyor ve ne yapman gerektiğini net görüyorsun. Hayal dünyasından çıkıp gerçekçi planlar yapma zamanı. Seçenekleri eledin ve odaklanmaya hazırsın. Bu netlik seni hedefine hızla götürecek. Yapılacaklar listeni sadeleştir ve en önemli maddeyi hemen tamamla."
+  },
+  {
+    "kart": "Kupa Sekizlisi",
+    "duz": "Sana artık iyi gelmeyen bir durumu geride bırakma cesareti gösteriyorsun. Bu bir vazgeçiş değil, daha anlamlı bir şey arama yolculuğu. Konfor alanından çıkmak korkutucu olsa da kalmak daha yorucu. Gitme vaktinin geldiğini kabul et. Bugün, hayatında sadece alışkanlıktan tuttuğun bir şeyi tespit et ve vedalaş.",
+    "ters": "Gitmen gerektiğini biliyorsun ama adım atamıyorsun. Bilinmezlik korkusu seni mutsuz olduğun yere zincirliyor. Kararsızlık enerjini tüketiyor. Kendine bu eziyeti yapmayı bırakmalısın. Seni durduran korkuyu isimlendir ve 'burada kalmanın bedeli ne?' diye sor."
+  },
+  {
+    "kart": "Kupa Dokuzlusu",
+    "duz": "Bireysel bir tatmin ve özgüven noktasındasın. Kendi kendine yetmenin ve başardıklarının keyfini sürüyorsun. Dış onaya ihtiyaç duymadan mutlu olabilmek büyük bir güçtür. Bu anın tadını çıkar ve kendini takdir et. Bugün, sırf kendin için keyifli bir mola ver ve bunu hak ettiğini hatırla.",
+    "ters": "Dışarıdan her şey yolunda görünse de içinde bir boşluk var. Mutluluğu yanlış yerlerde veya yüzeysel hazlarda arıyor olabilirsin. 'Neyim eksik?' sorusu zihnini kurcalıyor. Gerçek doyum içsel huzurla gelir. Bugün, seni oyalayan yüzeysel bir hazzı durdur ve ruhuna iyi gelecek sade bir eylem yap."
+  },
+  {
+    "kart": "Kupa Onlusu",
+    "duz": "Duygusal bütünlük ve ait hissetme duygusu ön planda. Ailenle veya sevdiklerinle huzurlu bir uyum içindesin. İlişkilerde güven ve destek hissediyorsun. Bu dengeli ortamın kıymetini bilmek önemlidir. Bugün, sevdiklerine ne kadar değerli olduklarını hissettiren samimi bir mesaj gönder.",
+    "ters": "İlişkilerde veya aile içinde bir uyumsuzluk hissediyorsun. 'Mükemmel görünme' çabası gerçek bağları zayıflatıyor olabilir. Beklentilerin karşılanmaması hayal kırıklığı yaratıyor. Sorunları halı altına süpürmek yerine konuşmalısın. Rahatsız olduğun bir konuyu, suçlamadan 'ben dili' ile ifade et."
+  },
+  {
+    "kart": "Kupa Uşağı",
+    "duz": "Duygusal bir merak ve öğrenme hevesi içindesin. Sezgilerin sana yeni bir yön fısıldıyor olabilir. Mantıktan çok hislerine güvenmen gereken, naif bir başlangıç enerjisi var. Beklenmedik bir habere veya ilhama açık ol. Bugün, aklına gelen yaratıcı veya duygusal bir fikri yargılamadan not et.",
+    "ters": "Duygusal olarak alıngan veya savunmasız hissediyorsun. Küçük meseleleri büyütme veya yanlış anlama eğilimin var. İçindeki çocuk biraz hırçınlaşmış olabilir. Tepki vermeden önce sakinleşmeye ihtiyacın var. Tetiklendiğin anda dur, derin nefes al ve olaylara yetişkin gözüyle bak."
+  },
+  {
+    "kart": "Kupa Şövalyesi",
+    "duz": "Duygularının peşinden gitme ve harekete geçme zamanı. Mantık ikinci planda, tutku ve idealler direksiyonda. Romantik veya yaratıcı bir konuda adım atmaya isteklisin. Bu enerji sana hız katar. Bugün, tutku duyduğun konuda beklemeyi bırak ve niyetini belli eden nazik bir adım at.",
+    "ters": "Duygusal dalgalanmalar kararlarını etkiliyor. Bir gün çok istekli, ertesi gün tamamen vazgeçmiş olabilirsin. Gerçekçi olmayan beklentiler seni yoruyor. Hislerin seni savurduğunda büyük kararlar alma. Ayaklarını yere bas ve duygusal yoğunluğun geçmesini bekle."
+  },
+  {
+    "kart": "Kupa Kraliçesi",
+    "duz": "Empati yeteneğin ve sezgilerin çok güçlü. Hem kendini hem de başkalarını anlayışla dinleyebiliyorsun. Duygusal zekan şu an en büyük rehberin. Kendi sınırlarını korurken şefkat göstermeyi başarıyorsun. Bugün, bir sorunu çözmeye çalışmadan sadece dinle; bazen en iyi destek budur.",
+    "ters": "Başkalarının dertlerini fazla sahiplenip kendini tüketiyorsun. Sınırların belirsizleştiği için duygusal yükün artıyor. Kendini feda etme rolünden çıkmalısın. Önce kendi maskeni takman gerekiyor. Bugün, 'hayır' demekte zorlandığın bir talebi reddet ve o zamanı kendine ayır."
+  },
+  {
+    "kart": "Kupa Kralı",
+    "duz": "Duygusal olgunluk ve denge halindesin. Kriz anlarında bile sakin kalabiliyor, hislerini yönetebiliyorsun. Çevrene güven veren bir duruşun var. Bu denge, doğru kararlar almanı sağlıyor. Zorlayıcı bir durumda tepki vermek yerine dur ve olaylara en sakin tarafınla yaklaş.",
+    "ters": "Duygularını kontrol etmekte zorlanıyor ya da tamamen kapatıyorsun. Manipülatif davranışlar veya duygusal patlamalar yaşanabilir. İçindeki fırtına ilişkilerine zarar vermeden önlem almalısın. Gergin olduğun anlarda iletişimi kes ve sakinleşene kadar kendine mola ver."
+  },
+  {
+    "kart": "Tılsım Ası",
+    "duz": "Somut bir başlangıç kapısı açılıyor; bu bir fikirden çok uygulanabilir bir fırsat. Durum, güvenlik, istikrar ve gerçekçi ilerleme ihtiyacını vurgular. İç dinamikte sağlam bir temel kurma arzusu var; hızlı değil, kalıcı olanı istiyorsun. Bu kart, küçük ama elle tutulur adımların önemini hatırlatır. Küçük bir adım olarak, hayatında büyütmek istediğin alanı netleştir ve bugün onun için yapılabilecek en basit somut hamleyi belirle.",
+    "ters": "Bir fırsat gözünün önünde olabilir ama ya küçümseniyor ya da erteleniyor. İç dinamikte değersizlik hissi ya da ‘henüz hazır değilim’ inancı çalışıyor olabilir. Bu kart tersken, potansiyeli görüp görmediğini sorgulatır. Küçük bir düzeltme olarak, elindeki imkanları yaz ve gerçekten neye sahip olduğunu somutlaştır."
+  },
+  {
+    "kart": "Tılsım İkilisi",
+    "duz": "Denge kurma çabası ön planda; zaman, para veya enerji arasında gidip geliyorsun. Durum, çoklu sorumlulukları yönetme becerini test eder. İç dinamikte esneklik var ama dağılma riski de mevcut. Küçük bir adım olarak, bugün önceliği olmayan bir işi bilinçli şekilde ertele.",
+    "ters": "Denge bozulmuş olabilir; her şeye yetişmeye çalışmak yoruyor. İç dinamikte kontrolü kaybetme korkusu var. Küçük bir düzeltme olarak, aynı anda yürüttüğün işlerden birini sadeleştir."
+  },
+  {
+    "kart": "Tılsım Üçlüsü",
+    "duz": "Birlikte üretme ve öğrenme sürecindesin. Durum, emeğinin görünür olmaya başladığını gösterir. İç dinamikte katkı sunma ve takdir edilme ihtiyacı var. Küçük bir adım olarak, geri bildirim almaya açık ol.",
+    "ters": "Ekip çalışmasında uyumsuzluk ya da değerinin görülmediği hissi olabilir. İç dinamikte motivasyon düşüyor. Küçük bir düzeltme olarak, beklentini net ifade et."
+  },
+  {
+    "kart": "Tılsım Dörtlüsü",
+    "duz": "Tutma ve koruma ihtiyacı öne çıkıyor. Durum, güvenlik arzusunun seni sıkılaştırdığını gösterir. İç dinamikte kaybetme korkusu var. Küçük bir adım olarak, gereksiz kontrolü fark et.",
+    "ters": "Bırakmaya ve gevşemeye hazırsın. İç dinamikte paylaşma isteği artıyor. Küçük bir düzeltme olarak, fazlalık bir şeyi bilinçli şekilde elden çıkar."
+  },
+  {
+    "kart": "Tılsım Beşlisi",
+    "duz": "Yetersizlik ya da dışlanmışlık hissi baskın olabilir. Durum, maddi veya duygusal güvensizlikle ilgilidir. İç dinamikte destek istemekte zorlanma var. Küçük bir adım olarak, yardım alabileceğin bir noktayı belirle.",
+    "ters": "Zorlayıcı dönem geride kalmaya başlıyor. İç dinamikte umut yeniden filizleniyor. Küçük bir düzeltme olarak, destek kabul etmeye açık ol."
+  },
+  {
+    "kart": "Tılsım Altılısı",
+    "duz": "Verme ve alma dengesi gündemde. Durum, paylaşımın adil olup olmadığını sorgulatır. İç dinamikte değer algısı çalışıyor. Küçük bir adım olarak, katkı–karşılık dengesini gözden geçir.",
+    "ters": "Dengesiz bir alışveriş söz konusu olabilir. İç dinamikte borçluluk ya da hak ediş karmaşası var. Küçük bir düzeltme olarak, sınırlarını netleştir."
+  },
+  {
+    "kart": "Tılsım Yedilisi",
+    "duz": "Sabır ve değerlendirme zamanı. Durum, emek verdiğin şeyin henüz olgunlaşma aşamasında olduğunu gösterir. İç dinamikte bekleme isteği var. Küçük bir adım olarak, ilerlemeyi ölç.",
+    "ters": "Sabırsızlık artmış olabilir. İç dinamikte ‘boşa mı uğraşıyorum’ düşüncesi var. Küçük bir düzeltme olarak, hedefi yeniden tanımla."
+  },
+  {
+    "kart": "Tılsım Sekizlisi",
+    "duz": "Odak ve disiplin ön planda. Durum, ustalaşma sürecini anlatır. İç dinamikte emek verme isteği güçlü. Küçük bir adım olarak, bugün işine tam dikkatle odaklan.",
+    "ters": "Dikkat dağılmış ya da iş mekanikleşmiş olabilir. İç dinamikte anlam kaybı var. Küçük bir düzeltme olarak, yaptığın işin amacını hatırla."
+  },
+  {
+    "kart": "Tılsım Dokuzlusu",
+    "duz": "Bağımsızlık ve öz-yeterlilik hissi güçleniyor. Durum, emeğinin karşılığını aldığını gösterir. İç dinamikte kendinle gurur duyma var. Küçük bir adım olarak, bu başarıyı fark et.",
+    "ters": "Dış başarıya rağmen içsel tatminsizlik olabilir. İç dinamikte yalnızlık hissi var. Küçük bir düzeltme olarak, paylaşımı artır."
+  },
+  {
+    "kart": "Tılsım Onlusu",
+    "duz": "Uzun vadeli güvenlik ve aidiyet ön planda. Durum, kalıcı yapıların değerini vurgular. İç dinamikte köklenme isteği var. Küçük bir adım olarak, geleceğe dair planı yaz.",
+    "ters": "Aile veya düzenle ilgili gerilim olabilir. İç dinamikte beklenti baskısı var. Küçük bir düzeltme olarak, kendi yolunu ayır."
+  },
+  {
+    "kart": "Tılsım Uşağı",
+    "duz": "Öğrenmeye açık ve istekli bir enerji var. Durum, somut beceri geliştirme sürecini anlatır. İç dinamikte merak ve disiplin birleşiyor. Küçük bir adım olarak, yeni bir şey öğrenmeye başla.",
+    "ters": "Erteleme ya da ciddiyetsizlik söz konusu olabilir. İç dinamikte motivasyon dalgalı. Küçük bir düzeltme olarak, hedefi küçült."
+  },
+  {
+    "kart": "Tılsım Şövalyesi",
+    "duz": "Sorumluluk ve istikrar ön planda. Durum, ağır ama sağlam ilerlemeyi anlatır. İç dinamikte güvenilirlik var. Küçük bir adım olarak, rutini sürdür.",
+    "ters": "Aşırı katılık ya da durağanlık olabilir. İç dinamikte esneklik kaybı var. Küçük bir düzeltme olarak, yöntemi gözden geçir."
+  },
+  {
+    "kart": "Tılsım Kraliçesi",
+    "duz": "Besleyici ve koruyucu bir denge söz konusu. Durum, maddi ve duygusal güveni bir arada kurmayı anlatır. İç dinamikte şefkatli pratiklik var. Küçük bir adım olarak, kendine bakım alanı aç.",
+    "ters": "Kendini ihmal etme ya da aşırı yüklenme olabilir. İç dinamikte tükenmişlik riski var. Küçük bir düzeltme olarak, sınır koy."
+  },
+  {
+    "kart": "Tılsım Kralı",
+    "duz": "Uzun vadeli başarı ve sağlam liderlik ön planda. Durum, güven veren bir istikrarı temsil eder. İç dinamikte sorumluluk ve bilgelik dengede. Küçük bir adım olarak, kararını sakin ve net biçimde uygula.",
+    "ters": "Aşırı maddiyatçılık ya da kontrolcülük riski var. İç dinamikte esneklik kaybolmuş olabilir. Küçük bir düzeltme olarak, değerlerini yeniden hatırla."
+  }
+]

@@ -1,10 +1,10 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
-import type { Language, SpreadType } from "../types/tarot";
+import type { Language, SpreadType, FocusArea } from "../types/tarot";
 
 const languages: { code: Language; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -16,7 +16,7 @@ const languages: { code: Language; label: string; flag: string }[] = [
 export default function HomeScreen() {
   const router = useRouter();
   const { t, i18n } = useTranslation();
-  const { language, setLanguage, isPremium, togglePremium, setSpreadType } =
+  const { language, setLanguage, isPremium, togglePremium, setSpreadType, setFocusArea } =
     useApp();
 
   const handleLanguageSelect = (lang: Language) => {
@@ -24,14 +24,15 @@ export default function HomeScreen() {
     i18n.changeLanguage(lang);
   };
 
-  const handleSpreadSelect = (spread: SpreadType) => {
+  const handleSpreadSelect = (spread: SpreadType, focus: FocusArea = "general") => {
     setSpreadType(spread);
+    setFocusArea(focus);
     router.push(`/pick/${spread}`);
   };
 
   return (
     <SafeAreaView style={styles.container}>
-      <View style={styles.content}>
+      <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
           <Text style={styles.title}>{t("appName")}</Text>
@@ -71,33 +72,104 @@ export default function HomeScreen() {
           <View style={styles.spreadGrid}>
             <TouchableOpacity
               style={styles.spreadCard}
-              onPress={() => handleSpreadSelect("single_card")}
+              onPress={() => handleSpreadSelect("single_card", "general")}
             >
-              <Text style={styles.spreadIcon}>🃏</Text>
               <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
-              <Text style={styles.spreadDesc}>1 card</Text>
+              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
               style={styles.spreadCard}
               onPress={() => handleSpreadSelect("past_present_future")}
             >
-              <Text style={styles.spreadIcon}>🃏🃏🃏</Text>
               <Text style={styles.spreadTitle}>{t("threeCards")}</Text>
-              <Text style={styles.spreadDesc}>3 cards</Text>
+              <Text style={styles.spreadDesc}>{t("threeCardsCount")}</Text>
             </TouchableOpacity>
 
             <TouchableOpacity
               style={styles.spreadCard}
               onPress={() => handleSpreadSelect("yes_no")}
             >
-              <Text style={styles.spreadIcon}>🎴❓</Text>
               <Text style={styles.spreadTitle}>{t("yesNo")}</Text>
-              <Text style={styles.spreadDesc}>1 card</Text>
+              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("situation_obstacle_advice")}
+            >
+              <Text style={styles.spreadTitle}>{t("situationObstacleAdvice")}</Text>
+              <Text style={styles.spreadDesc}>{t("threeCardsCount")}</Text>
             </TouchableOpacity>
           </View>
         </View>
-      </View>
+
+        {/* Love Category */}
+        <View style={styles.section}>
+          <Text style={[styles.categoryTitle, styles.loveCategory]}>{t("loveCategory")}</Text>
+          <View style={styles.spreadGrid}>
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("single_card", "love")}
+            >
+              <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
+              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("destinys_embrace", "love")}
+            >
+              <Text style={styles.spreadTitle}>{t("destinysEmbrace")}</Text>
+              <Text style={styles.spreadDesc}>{t("threeCardsCount")}</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("love_choice", "love")}
+            >
+              <Text style={styles.spreadTitle}>{t("loveChoice")}</Text>
+              <Text style={styles.spreadDesc}>{t("fiveCards")}</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("path_to_love", "love")}
+            >
+              <Text style={styles.spreadTitle}>{t("pathToLove")}</Text>
+              <Text style={styles.spreadDesc}>{t("fiveCards")}</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+
+        {/* Career Category */}
+        <View style={styles.section}>
+          <Text style={[styles.categoryTitle, styles.careerCategory]}>{t("careerCategory")}</Text>
+          <View style={styles.spreadGrid}>
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("single_card", "career")}
+            >
+              <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
+              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+
+        {/* Spiritual Category */}
+        <View style={styles.section}>
+          <Text style={[styles.categoryTitle, styles.spiritualCategory]}>{t("spiritualCategory")}</Text>
+          <View style={styles.spreadGrid}>
+            <TouchableOpacity
+              style={styles.spreadCard}
+              onPress={() => handleSpreadSelect("single_card", "spiritual")}
+            >
+              <Text style={styles.spreadTitle}>{t("singleCard")}</Text>
+              <Text style={styles.spreadDesc}>{t("oneCard")}</Text>
+            </TouchableOpacity>
+          </View>
+        </View>
+      </ScrollView>
     </SafeAreaView>
   );
 }
@@ -110,6 +182,7 @@ const styles = StyleSheet.create({
   content: {
     flex: 1,
     padding: 20,
+    paddingBottom: 40,
   },
   header: {
     flexDirection: "row",
@@ -176,6 +249,15 @@ const styles = StyleSheet.create({
     color: "#9b59b6",
     marginBottom: 16,
   },
+  loveCategory: {
+    color: "#e74c3c",
+  },
+  careerCategory: {
+    color: "#3498db",
+  },
+  spiritualCategory: {
+    color: "#9b59b6",
+  },
   spreadGrid: {
     flexDirection: "row",
     flexWrap: "wrap",
@@ -188,10 +270,6 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "31%",
     minWidth: 100,
-  },
-  spreadIcon: {
-    fontSize: 32,
-    marginBottom: 8,
   },
   spreadTitle: {
     color: "#fff",

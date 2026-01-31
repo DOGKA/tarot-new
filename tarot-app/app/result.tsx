@@ -10,9 +10,6 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
-import type { FocusArea } from "../types/tarot";
-
-type Category = "general" | "love" | "career" | "finance";
 
 export default function ResultScreen() {
   const router = useRouter();
@@ -22,14 +19,10 @@ export default function ResultScreen() {
     isPremium,
     spreadType,
     resetReading,
-    setFocusArea,
+    focusArea,
   } =
     useApp();
-  const [activeCategory, setActiveCategory] = useState<Category>("general");
   const [showPremiumModal, setShowPremiumModal] = useState(false);
-  const [showFocusModal, setShowFocusModal] = useState(false);
-
-  const categories: Category[] = ["general", "love", "career", "finance"];
 
   const handleNewReading = () => {
     resetReading();
@@ -38,20 +31,10 @@ export default function ResultScreen() {
 
   const handleGoDive = () => {
     if (isPremium) {
-      if (spreadType === "single_card") {
-        setShowFocusModal(true);
-      } else {
-        router.push("/premium-result");
-      }
+      router.push("/premium-result");
     } else {
       setShowPremiumModal(true);
     }
-  };
-
-  const handleFocusSelect = (area: FocusArea) => {
-    setFocusArea(area);
-    setShowFocusModal(false);
-    router.push("/premium-result");
   };
 
   if (selectedCards.length === 0) {
@@ -109,48 +92,24 @@ export default function ResultScreen() {
         </View>
 
         {spreadType === "single_card" && (
-          <>
-            {/* Category Tabs */}
-            <View style={styles.categoryTabs}>
-              {categories.map((cat) => (
-                <TouchableOpacity
-                  key={cat}
-                  style={[
-                    styles.categoryTab,
-                    activeCategory === cat && styles.categoryTabActive,
-                  ]}
-                  onPress={() => setActiveCategory(cat)}
-                >
-                  <Text
-                    style={[
-                      styles.categoryTabText,
-                      activeCategory === cat && styles.categoryTabTextActive,
-                    ]}
-                  >
-                    {t(cat)}
-                  </Text>
-                </TouchableOpacity>
-              ))}
+          <View style={styles.meaningsSection}>
+            {/* Focus Area Badge */}
+            <View style={styles.focusAreaBadge}>
+              <Text style={styles.focusAreaText}>{t(focusArea)}</Text>
             </View>
-
-            {/* Meanings */}
-            <View style={styles.meaningsSection}>
-              {selectedCards.map((sel, i) => (
-                <View key={i} style={styles.meaningCard}>
-                  {sel.position && (
-                    <Text style={styles.positionLabel}>{t(sel.position)}</Text>
-                  )}
-                  <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
-                  <Text style={styles.orientationLabel}>
-                    {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
-                  </Text>
-                  <Text style={styles.meaningText}>
-                    {sel.card.meanings[sel.orientation][activeCategory]}
-                  </Text>
-                </View>
-              ))}
-            </View>
-          </>
+            
+            {selectedCards.map((sel, i) => (
+              <View key={i} style={styles.meaningCard}>
+                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
+                <Text style={styles.orientationLabel}>
+                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
+                </Text>
+                <Text style={styles.meaningText}>
+                  {sel.card.meanings[sel.orientation][focusArea]}
+                </Text>
+              </View>
+            ))}
+          </View>
         )}
 
         {spreadType === "past_present_future" && (
@@ -166,6 +125,87 @@ export default function ResultScreen() {
                 </Text>
                 <Text style={styles.meaningText}>
                   {sel.card.meanings[sel.orientation].general}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {spreadType === "situation_obstacle_advice" && (
+          <View style={styles.meaningsSection}>
+            {selectedCards.map((sel, i) => (
+              <View key={i} style={styles.meaningCard}>
+                {sel.position && (
+                  <Text style={styles.positionLabel}>{t(sel.position)}</Text>
+                )}
+                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
+                <Text style={styles.orientationLabel}>
+                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
+                </Text>
+                <Text style={styles.meaningText}>
+                  {sel.card.meanings[sel.orientation].general}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {/* Destiny's Embrace - FREE */}
+        {spreadType === "destinys_embrace" && (
+          <View style={styles.meaningsSection}>
+            {selectedCards.map((sel, i) => (
+              <View key={i} style={styles.meaningCard}>
+                {sel.position && (
+                  <Text style={styles.positionLabel}>{t(sel.position)}</Text>
+                )}
+                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
+                <Text style={styles.orientationLabel}>
+                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
+                </Text>
+                <Text style={styles.meaningText}>
+                  {sel.card.meanings[sel.orientation].love}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {/* Love Choice - FREE */}
+        {spreadType === "love_choice" && (
+          <View style={styles.meaningsSection}>
+            {selectedCards.map((sel, i) => (
+              <View key={i} style={styles.meaningCard}>
+                {sel.position && (
+                  <Text style={styles.positionLabel}>
+                    {sel.position === "advice" ? t("heartGuidance") : t(sel.position)}
+                  </Text>
+                )}
+                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
+                <Text style={styles.orientationLabel}>
+                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
+                </Text>
+                <Text style={styles.meaningText}>
+                  {sel.card.meanings[sel.orientation].love}
+                </Text>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {/* Path to Love - FREE */}
+        {spreadType === "path_to_love" && (
+          <View style={styles.meaningsSection}>
+            {selectedCards.map((sel, i) => (
+              <View key={i} style={styles.meaningCard}>
+                {sel.position && (
+                  <Text style={styles.positionLabel}>{t(sel.position)}</Text>
+                )}
+                <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
+                <Text style={styles.orientationLabel}>
+                  {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
+                </Text>
+                <Text style={styles.meaningText}>
+                  {sel.card.meanings[sel.orientation].love}
                 </Text>
               </View>
             ))}
@@ -202,32 +242,6 @@ export default function ResultScreen() {
         </View>
       )}
 
-      {showFocusModal && (
-        <View style={styles.modalOverlay}>
-          <View style={styles.modal}>
-            <Text style={styles.modalTitle}>{t("selectIntent")}</Text>
-            <View style={styles.focusOptions}>
-              {(["general", "love", "career", "finance"] as FocusArea[]).map(
-                (area) => (
-                  <TouchableOpacity
-                    key={area}
-                    style={styles.focusButton}
-                    onPress={() => handleFocusSelect(area)}
-                  >
-                    <Text style={styles.focusButtonText}>{t(area)}</Text>
-                  </TouchableOpacity>
-                )
-              )}
-            </View>
-            <TouchableOpacity
-              style={styles.modalButton}
-              onPress={() => setShowFocusModal(false)}
-            >
-              <Text style={styles.modalButtonText}>{t("cancel")}</Text>
-            </TouchableOpacity>
-          </View>
-        </View>
-      )}
     </SafeAreaView>
   );
 }
@@ -302,28 +316,18 @@ const styles = StyleSheet.create({
     fontSize: 10,
     marginTop: 2,
   },
-  categoryTabs: {
-    flexDirection: "row",
+  focusAreaBadge: {
+    alignSelf: "flex-start",
+    backgroundColor: "#3a3a5a",
     paddingHorizontal: 16,
-    gap: 8,
+    paddingVertical: 8,
+    borderRadius: 20,
+    marginBottom: 8,
   },
-  categoryTab: {
-    flex: 1,
-    paddingVertical: 12,
-    borderRadius: 8,
-    backgroundColor: "#252540",
-    alignItems: "center",
-  },
-  categoryTabActive: {
-    backgroundColor: "#9b59b6",
-  },
-  categoryTabText: {
-    color: "#888",
-    fontSize: 12,
-    fontWeight: "600",
-  },
-  categoryTabTextActive: {
+  focusAreaText: {
     color: "#fff",
+    fontSize: 14,
+    fontWeight: "600",
   },
   meaningsSection: {
     padding: 16,
@@ -430,21 +434,5 @@ const styles = StyleSheet.create({
   modalButtonText: {
     color: "#fff",
     fontSize: 16,
-  },
-  focusOptions: {
-    width: "100%",
-    gap: 10,
-    marginBottom: 12,
-  },
-  focusButton: {
-    backgroundColor: "#3a3a5a",
-    paddingVertical: 10,
-    borderRadius: 8,
-    alignItems: "center",
-  },
-  focusButtonText: {
-    color: "#fff",
-    fontSize: 16,
-    fontWeight: "600",
   },
 });
