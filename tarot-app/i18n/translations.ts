@@ -43,6 +43,7 @@ export const translations = {
       no: "No",
       uncertainAnswer: "Uncertain",
       // Yes/No - Revised
+      clarityLevel: "Clarity Level",
       confidence: "Clarity Level",
       veryClean: "Very Clear",
       good: "Good",
@@ -350,6 +351,7 @@ export const translations = {
       no: "Hayır",
       uncertainAnswer: "Belirsiz",
       // Evet/Hayır - Revize
+      clarityLevel: "Netlik Düzeyi",
       confidence: "Netlik Düzeyi",
       veryClean: "Çok Net",
       good: "İyi",
@@ -657,6 +659,7 @@ export const translations = {
       no: "Nein",
       uncertainAnswer: "Unsicher",
       // Ja/Nein - Überarbeitet
+      clarityLevel: "Klarheitsstufe",
       confidence: "Klarheitsstufe",
       veryClean: "Sehr Klar",
       good: "Gut",
@@ -964,6 +967,7 @@ export const translations = {
       no: "No",
       uncertainAnswer: "Incierto",
       // Sí/No - Revisado
+      clarityLevel: "Nivel de claridad",
       confidence: "Nivel de claridad",
       veryClean: "Muy Claro",
       good: "Bueno",

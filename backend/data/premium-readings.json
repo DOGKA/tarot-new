@@ -2712,5 +2712,1330 @@
       "answerMayChange": false,
       "conditionMessage": null
     }
+  },
+  {
+    "timestamp": "2026-02-03T07:19:30.487Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Aşıklar",
+      "image": "06_lovers",
+      "orientation": "upright"
+    },
+    "tendency": "belirsiz",
+    "response": {
+      "title": "Aşıklar — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "uncertain",
+      "confidence": 75,
+      "clarityLabel": "Net",
+      "explanation": "Belirsiz; bir kararın eşiğindesin. Cevap kalbinin yöneldiği yerde.",
+      "keywords": [
+        "seçim",
+        "uyum"
+      ],
+      "baseTendency": "belirsiz",
+      "answerMayChange": true,
+      "conditionMessage": "Koşullara göre netleşir"
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:19:49.145Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Tılsım Şövalyesi",
+      "image": "75_knight_pentacles",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Tılsım Şövalyesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 79,
+      "clarityLabel": "Net",
+      "explanation": "Evet; sabırla ve adım adım ilerlemek seni sağlam temellere götürür. Süreç güven veriyor.",
+      "keywords": [
+        "sadakat",
+        "istikrar"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:20:09.968Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Kılıç Kraliçesi",
+      "image": "62_queen_swords",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Kılıç Kraliçesi — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 81,
+      "clarityLabel": "Net",
+      "explanation": "Evet; mantık, net sınırlar ve dürüstlük doğru sonucu getirir.",
+      "keywords": [
+        "netlik",
+        "bağımsızlık"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:20:20.573Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "spiritual",
+    "card": {
+      "name": "Tılsım Üçlüsü",
+      "image": "66_three_pentacles",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Tılsım Üçlüsü — Evet / Hayır",
+      "focusArea": "spiritual",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Şartlı Evet; takım içi uyumsuzluk ya da yetersiz katkı kararları gölgeliyor olabilir. Güvenilir zemini gözden geçir.",
+      "keywords": [
+        "zanaat",
+        "öğrenme"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:20:27.281Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "spiritual",
+    "card": {
+      "name": "Değnek Yedilisi",
+      "image": "28_seven_wands",
+      "orientation": "upright"
+    },
+    "tendency": "belirsiz",
+    "response": {
+      "title": "Değnek Yedilisi — Evet / Hayır",
+      "focusArea": "spiritual",
+      "answer": "uncertain",
+      "confidence": 75,
+      "clarityLabel": "Net",
+      "explanation": "Evet; duruşunu koruyorsan ve haklı bir zemindeysen destek seninle.",
+      "keywords": [
+        "sınır",
+        "duruş"
+      ],
+      "baseTendency": "belirsiz",
+      "answerMayChange": true,
+      "conditionMessage": "Koşullara göre netleşir"
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:20:41.375Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Kupa Kralı",
+      "image": "49_king_cups",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Kupa Kralı — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 81,
+      "clarityLabel": "Net",
+      "explanation": "Evet; duygularla barışık, dengeli bir yaklaşım çözüm getiriyor. İçsel olgunluk sonuç alır.",
+      "keywords": [
+        "duygusal denge",
+        "bilgelik"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:26:32.618Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Değnek Dörtlüsü",
+      "image": "25_four_wands",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Değnek Dörtlüsü — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 85,
+      "clarityLabel": "Net",
+      "explanation": "Evet; kutlama, istikrar ve ortak sevinç enerjisiyle destekleniyor. Zemin sağlam.",
+      "keywords": [
+        "kutlama",
+        "uyum"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:36:04.344Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Asılan Adam",
+      "image": "12_hanged_man",
+      "orientation": "upright"
+    },
+    "tendency": "belirsiz",
+    "response": {
+      "title": "Asılan Adam — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "uncertain",
+      "confidence": 68,
+      "clarityLabel": "Şartlı",
+      "explanation": "Belirsiz; henüz netlik için gereken içsel teslimiyet oluşmamış olabilir. Süreç devam ediyor.",
+      "keywords": [
+        "bekleme",
+        "perspektif"
+      ],
+      "baseTendency": "belirsiz",
+      "answerMayChange": true,
+      "conditionMessage": "Koşullara göre netleşir"
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:36:19.048Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Kupa Yedilisi",
+      "image": "42_seven_cups",
+      "orientation": "upright"
+    },
+    "tendency": "belirsiz",
+    "response": {
+      "title": "Kupa Yedilisi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "uncertain",
+      "confidence": 66,
+      "clarityLabel": "Şartlı",
+      "explanation": "Belirsiz; çok fazla seçenek ya da hayal arasında kalmış olabilirsin. Netlik buğulu olabilir.",
+      "keywords": [
+        "kararsızlık",
+        "fantezi"
+      ],
+      "baseTendency": "belirsiz",
+      "answerMayChange": true,
+      "conditionMessage": "Koşullara göre netleşir"
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:36:26.814Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Değnek Ası",
+      "image": "22_ace_wands",
+      "orientation": "upright"
+    },
+    "tendency": "güçlü_evet",
+    "response": {
+      "title": "Değnek Ası — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 88,
+      "clarityLabel": "Net",
+      "explanation": "Evet; içsel kıvılcım ve yaratıcı dürtü harekete geçmek için seni çağırıyor.",
+      "keywords": [
+        "fırsat",
+        "girişim"
+      ],
+      "baseTendency": "güçlü_evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:36:36.376Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "spiritual",
+    "card": {
+      "name": "Şeytan",
+      "image": "15_devil",
+      "orientation": "reversed"
+    },
+    "tendency": "hayır",
+    "response": {
+      "title": "Şeytan — Evet / Hayır",
+      "focusArea": "spiritual",
+      "answer": "no",
+      "confidence": 51,
+      "clarityLabel": "Belirsiz",
+      "explanation": "Hayır; yüzleşmeden kaçtığın bir durum, seni görünmez şekilde bağlı tutuyor olabilir. Özgürleşmeden adım atmak riskli.",
+      "keywords": [
+        "gölge",
+        "bilinçdışı"
+      ],
+      "baseTendency": "hayır",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:39:21.048Z",
+    "type": "yes_no_free_v2",
+    "language": "en",
+    "focusArea": "general",
+    "card": {
+      "name": "Six of Swords",
+      "image": "55_six_swords",
+      "orientation": "reversed"
+    },
+    "tendency": "yes",
+    "response": {
+      "title": "Six of Swords — Yes / No",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 57,
+      "clarityLabel": "Conditional",
+      "explanation": "Conditional Yes; holding on to the past slows progress. Clarity is difficult without letting go.",
+      "keywords": [
+        "transition",
+        "recovery"
+      ],
+      "baseTendency": "yes",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:39:31.494Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Tılsım Dörtlüsü",
+      "image": "67_four_pentacles",
+      "orientation": "reversed"
+    },
+    "tendency": "hayır",
+    "response": {
+      "title": "Tılsım Dörtlüsü — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "no",
+      "confidence": 53,
+      "clarityLabel": "Belirsiz",
+      "explanation": "Şartlı Evet; bırakma isteği var ama hâlâ içsel bir tedirginlik taşıyorsun. Cesaretin kararla buluşması gerek.",
+      "keywords": [
+        "sahiplenme",
+        "koruma"
+      ],
+      "baseTendency": "hayır",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:39:41.715Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Tılsım Dörtlüsü",
+      "image": "67_four_pentacles",
+      "orientation": "reversed"
+    },
+    "tendency": "hayır",
+    "response": {
+      "title": "Tılsım Dörtlüsü — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "no",
+      "confidence": 53,
+      "clarityLabel": "Belirsiz",
+      "explanation": "Şartlı Evet; bırakma isteği var ama hâlâ içsel bir tedirginlik taşıyorsun. Cesaretin kararla buluşması gerek.",
+      "keywords": [
+        "istikrar",
+        "tutuculuk"
+      ],
+      "baseTendency": "hayır",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:39:58.843Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Tılsım İkilisi",
+      "image": "65_two_pentacles",
+      "orientation": "reversed"
+    },
+    "tendency": "belirsiz",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Tılsım İkilisi (Ters)\nCevap: Belirsiz\nNetlik: Belirsiz\nBağlam: Çok belirsiz, zamanlama önemli.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Bu kartın enerjisi \"belirsiz\" bir cevap veriyor\n- Neden belirsiz olduğunu açıkla (kartın doğası, koşullar, zamanlama)\n- Netlik için nelerin değişmesi gerektiğine kısaca değin\n- Umut kırıcı olma ama gerçekçi ol\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Kariyerinde kararsızlık hakim. Denge ve esneklik eksikliği belirsizlik yaratıyor. Netlik için önceliklerini belirlemelisin.\"}",
+    "response": {
+      "title": "Tılsım İkilisi — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "uncertain",
+      "confidence": 47,
+      "clarityLabel": "Belirsiz",
+      "explanation": "Kariyerinde kararsızlık hakim. Denge ve esneklik eksikliği belirsizlik yaratıyor. Netlik için önceliklerini belirlemelisin.",
+      "keywords": [
+        "çoklu görev",
+        "denge"
+      ],
+      "baseTendency": "belirsiz",
+      "answerMayChange": true,
+      "conditionMessage": "Koşullara göre netleşir"
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:40:14.718Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Tılsım Kralı",
+      "image": "77_king_pentacles",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Tılsım Kralı (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Net ve güçlü bir yön var.\nOdak alanı: general\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Kendine güvenin ve sağlam duruşun sana başarı getirecek. Maddi güvence ve istikrar enerjisi güçlü. Hedeflerine odaklan, sonuçlar olumlu olacak.\"}",
+    "response": {
+      "title": "Tılsım Kralı — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 85,
+      "clarityLabel": "Net",
+      "explanation": "Kendine güvenin ve sağlam duruşun sana başarı getirecek. Maddi güvence ve istikrar enerjisi güçlü. Hedeflerine odaklan, sonuçlar olumlu olacak.",
+      "keywords": [
+        "başarı",
+        "güvenlik"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:40:23.457Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "spiritual",
+    "card": {
+      "name": "Ölüm",
+      "image": "13_death",
+      "orientation": "upright"
+    },
+    "tendency": "hayır",
+    "response": {
+      "title": "Ölüm — Evet / Hayır",
+      "focusArea": "spiritual",
+      "answer": "no",
+      "confidence": 79,
+      "clarityLabel": "Net",
+      "explanation": "Evet; kapanan bir kapı yeni bir başlangıcın önünü açıyor. Dönüşüme direnme.",
+      "keywords": [
+        "bırakma",
+        "yeniden doğuş"
+      ],
+      "baseTendency": "hayır",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:40:34.972Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "spiritual",
+    "card": {
+      "name": "Kılıç Yedilisi",
+      "image": "56_seven_swords",
+      "orientation": "upright"
+    },
+    "tendency": "hayır",
+    "response": {
+      "title": "Kılıç Yedilisi — Evet / Hayır",
+      "focusArea": "spiritual",
+      "answer": "no",
+      "confidence": 68,
+      "clarityLabel": "Şartlı",
+      "explanation": "Hayır; gizli niyetler ya da açık olmayan hamleler güveni zedeliyor.",
+      "keywords": [
+        "gölge",
+        "gizli niyet"
+      ],
+      "baseTendency": "hayır",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:40:50.523Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "spiritual",
+    "card": {
+      "name": "Yıldız",
+      "image": "17_star",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Yıldız (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: spiritual\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Evet, ama dikkatli ol. Umutların sönükleşebilir. İçsel rehberliğe ihtiyacın var. Kendi gücünü sorgularken, ruhsal farkındalığını artır.\"}",
+    "response": {
+      "title": "Yıldız — Evet / Hayır",
+      "focusArea": "spiritual",
+      "answer": "yes",
+      "confidence": 63,
+      "clarityLabel": "Şartlı",
+      "explanation": "Evet, ama dikkatli ol. Umutların sönükleşebilir. İçsel rehberliğe ihtiyacın var. Kendi gücünü sorgularken, ruhsal farkındalığını artır.",
+      "keywords": [
+        "inanç",
+        "rehberlik"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:41:13.080Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Tılsım Dörtlüsü",
+      "image": "67_four_pentacles",
+      "orientation": "upright"
+    },
+    "tendency": "hayır",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Tılsım Dörtlüsü (Düz)\nCevap: Hayır\nNetlik: Şartlı\nBağlam: Belirli koşullara bağlı bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Kariyerinde sahip olduklarına sıkı sıkıya tutunuyorsun. Değişime direnmek, büyüme fırsatlarını engelliyor. Risk almak, ilerlemenin anahtarı olabilir.\"}",
+    "response": {
+      "title": "Tılsım Dörtlüsü — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "no",
+      "confidence": 73,
+      "clarityLabel": "Şartlı",
+      "explanation": "Kariyerinde sahip olduklarına sıkı sıkıya tutunuyorsun. Değişime direnmek, büyüme fırsatlarını engelliyor. Risk almak, ilerlemenin anahtarı olabilir.",
+      "keywords": [
+        "istikrar",
+        "tutuculuk"
+      ],
+      "baseTendency": "hayır",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:41:28.804Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Kupa Altılısı",
+      "image": "41_six_cups",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Kupa Altılısı (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Belirli koşullara bağlı bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Geçmiş başarılar kariyerinde yeni fırsatlara kapı açıyor. Eski temaslar canlanabilir. İçsel huzuru dışa yansıtarak ilerle. Beklenen cevap evet.\"}",
+    "response": {
+      "title": "Kupa Altılısı — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 79,
+      "clarityLabel": "Net",
+      "explanation": "Geçmiş başarılar kariyerinde yeni fırsatlara kapı açıyor. Eski temaslar canlanabilir. İçsel huzuru dışa yansıtarak ilerle. Beklenen cevap evet.",
+      "keywords": [
+        "geçmiş bağ",
+        "tanıdık"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:42:32.128Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Kupa Altılısı",
+      "image": "41_six_cups",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Kupa Altılısı (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Belirli koşullara bağlı bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Geçmişteki deneyimlerin kariyerinde olumlu etki yaratacak. Yeniliklere açık kalırsan başarıya ulaşacaksın. Şu anki koşullar avantaj sağlıyor.\"}",
+    "response": {
+      "title": "Kupa Altılısı — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 79,
+      "clarityLabel": "Net",
+      "explanation": "Geçmişteki deneyimlerin kariyerinde olumlu etki yaratacak. Yeniliklere açık kalırsan başarıya ulaşacaksın. Şu anki koşullar avantaj sağlıyor.",
+      "keywords": [
+        "geçmiş bağ",
+        "tanıdık"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:42:43.416Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Kupa Altılısı",
+      "image": "41_six_cups",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Kupa Altılısı (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Belirli koşullara bağlı bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Geçmiş deneyimlerin kariyerine olumlu yansıyor. Eski bağlantılarını değerlendir. Başarı için nostaljik bir yaklaşım benimse.\"}",
+    "response": {
+      "title": "Kupa Altılısı — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 79,
+      "clarityLabel": "Net",
+      "explanation": "Geçmiş deneyimlerin kariyerine olumlu yansıyor. Eski bağlantılarını değerlendir. Başarı için nostaljik bir yaklaşım benimse.",
+      "keywords": [
+        "geçmiş bağ",
+        "tanıdık"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:42:52.221Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Kupa Altılısı",
+      "image": "41_six_cups",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Kupa Altılısı (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Belirli koşullara bağlı bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Geçmiş deneyimlerin kariyerinde olumlu sonuçlar getirecek. İlişkiler ve işbirlikleri başarıyı destekliyor. Koşullar doğru olmalı.\"}",
+    "response": {
+      "title": "Kupa Altılısı — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 79,
+      "clarityLabel": "Net",
+      "explanation": "Geçmiş deneyimlerin kariyerinde olumlu sonuçlar getirecek. İlişkiler ve işbirlikleri başarıyı destekliyor. Koşullar doğru olmalı.",
+      "keywords": [
+        "geçmiş bağ",
+        "tanıdık"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:43:12.279Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Kupa Altılısı",
+      "image": "41_six_cups",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Kupa Altılısı (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Belirli koşullara bağlı bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Geçmiş tecrübeler kariyerinde olumlu bir değişim yaratacak. Eski bağlantılar veya beceriler fırsatlar sunabilir. İlerlemenin anahtarı içsel tatminde.\"}",
+    "response": {
+      "title": "Kupa Altılısı — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 79,
+      "clarityLabel": "Net",
+      "explanation": "Geçmiş tecrübeler kariyerinde olumlu bir değişim yaratacak. Eski bağlantılar veya beceriler fırsatlar sunabilir. İlerlemenin anahtarı içsel tatminde.",
+      "keywords": [
+        "geçmiş bağ",
+        "tanıdık"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:43:36.868Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Değnek Kralı",
+      "image": "35_king_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Değnek Kralı — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 63,
+      "clarityLabel": "Şartlı",
+      "explanation": "Şartlı Evet; yön belli ama strateji eksik olabilir. Yanmadan yakmaya çalış.",
+      "keywords": [
+        "liderlik",
+        "vizyon"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:43:36.954Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Değnek Kralı",
+      "image": "35_king_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Değnek Kralı — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 63,
+      "clarityLabel": "Şartlı",
+      "explanation": "Şartlı Evet; yön belli ama strateji eksik olabilir. Yanmadan yakmaya çalış.",
+      "keywords": [
+        "liderlik",
+        "vizyon"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:44:29.372Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Kılıç Kraliçesi",
+      "image": "62_queen_swords",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Kılıç Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: general\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Düşüncelerin bulanık, netliğe ihtiyaç var. Evet ama dikkat et. Yanıltıcı etkiler ve kararsızlık seni zorlayabilir. Dikkatli ol.\"}",
+    "response": {
+      "title": "Kılıç Kraliçesi — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Düşüncelerin bulanık, netliğe ihtiyaç var. Evet ama dikkat et. Yanıltıcı etkiler ve kararsızlık seni zorlayabilir. Dikkatli ol.",
+      "keywords": [
+        "netlik",
+        "bağımsızlık"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:45:10.953Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Evet, ama dikkatli ol. Aşk konusunda kontrolü kaybetme riski var. İçsel güven eksikliği, ilişkileri zayıflatabilir. Dengeyi bulmaya odaklan.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Evet, ama dikkatli ol. Aşk konusunda kontrolü kaybetme riski var. İçsel güven eksikliği, ilişkileri zayıflatabilir. Dengeyi bulmaya odaklan.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:47:02.369Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Kıskançlık ve güvensizlik aşk hayatını gölgeleyebilir. Duyguları dengede tut. İçsel gücünle ilişkini besle, engelleri aşabilirsin.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Kıskançlık ve güvensizlik aşk hayatını gölgeleyebilir. Duyguları dengede tut. İçsel gücünle ilişkini besle, engelleri aşabilirsin.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:47:03.553Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Aşk hayatında belirsizlikler var. İçsel güvensizlikler yüzünden zayıf bir eğilim söz konusu. Dikkatli ol, tutkularını kontrol et.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Aşk hayatında belirsizlikler var. İçsel güvensizlikler yüzünden zayıf bir eğilim söz konusu. Dikkatli ol, tutkularını kontrol et.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:47:19.207Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"İlişkinde dikkatli ol. Enerji dengesiz ve zayıf. Kıskançlık veya güvensizlikler aşka gölge düşürebilir. Duygusal istikrar önemli.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "İlişkinde dikkatli ol. Enerji dengesiz ve zayıf. Kıskançlık veya güvensizlikler aşka gölge düşürebilir. Duygusal istikrar önemli.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:47:20.061Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Arzularını sorguluyorsun, bu karışıklık yaratabilir. İlişkinde cesaret ve dikkatle ilerle. İhtimaller var, ama netleşmelisin.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Arzularını sorguluyorsun, bu karışıklık yaratabilir. İlişkinde cesaret ve dikkatle ilerle. İhtimaller var, ama netleşmelisin.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:48:21.057Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Duygusal yoğunluk seni zorluyor. Dikkatli ol! Zayıf bir eğilim var, ama yine de umut var. İçsel gücünü kullan.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Duygusal yoğunluk seni zorluyor. Dikkatli ol! Zayıf bir eğilim var, ama yine de umut var. İçsel gücünü kullan.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:48:21.301Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Ters enerji, ilişkide dengesizlik ve güvensizlik yaratabilir. Duygusal dürtülerin seni yanıltmasın. İçsel güveni bul, dikkatli yaklaş.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Ters enerji, ilişkide dengesizlik ve güvensizlik yaratabilir. Duygusal dürtülerin seni yanıltmasın. İçsel güveni bul, dikkatli yaklaş.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:48:34.326Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Kalbindeki tereddütlerle yüzleş. Zayıf bir eğilim var ama dikkatli olursan sevgi yolunu bulabilirsin. İçsel netliğe odaklan.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Kalbindeki tereddütlerle yüzleş. Zayıf bir eğilim var ama dikkatli olursan sevgi yolunu bulabilirsin. İçsel netliğe odaklan.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:48:34.482Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Aşk hayatında belirsizlikler var. İçgüdülerine güven, ama acele etme. Duygusal dengesizlikler ilişkini etkileyebilir. Sabırlı ol ve içsel gücünü kullan.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Aşk hayatında belirsizlikler var. İçgüdülerine güven, ama acele etme. Duygusal dengesizlikler ilişkini etkileyebilir. Sabırlı ol ve içsel gücünü kullan.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:12.524Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Evet, ancak dikkatli olmalısın. İçsel güven eksikliği ilişkini etkileyebilir. Potansiyel var, ama enerji dengesiz. Duygularını netleştir.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Evet, ancak dikkatli olmalısın. İçsel güven eksikliği ilişkini etkileyebilir. Potansiyel var, ama enerji dengesiz. Duygularını netleştir.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:12.528Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Aşk hayatında belirsizlikler var. Güç ve güven kaybı hissediyorsun. İçsel gücünü toparlayarak dikkatli hareket etmelisin. İlerleme, senin adımlarına bağlı.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Aşk hayatında belirsizlikler var. Güç ve güven kaybı hissediyorsun. İçsel gücünü toparlayarak dikkatli hareket etmelisin. İlerleme, senin adımlarına bağlı.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:26.069Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Kalbin zayıf bir çekimle dolu. Dikkatli ol, çünkü ters enerji seni yanıltabilir. Kendi arzularının peşinden git.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Kalbin zayıf bir çekimle dolu. Dikkatli ol, çünkü ters enerji seni yanıltabilir. Kendi arzularının peşinden git.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:26.676Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Karmaşık duyguların var. İçsel güvensizlik aşkı gölgeleyebilir. Dikkatli ol, çünkü ters enerji seni yanlış yönlendirebilir. Şüphelerini sorgula, netlik kazan.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Karmaşık duyguların var. İçsel güvensizlik aşkı gölgeleyebilir. Dikkatli ol, çünkü ters enerji seni yanlış yönlendirebilir. Şüphelerini sorgula, netlik kazan.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:31.055Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"İlişkinde zayıf bir eğilim var. Dikkatli olmalısın. İçsel güven eksikliği yüzünden duygusal dengesizlik çekiyorsun. Daha açık ve dürüst ol.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "İlişkinde zayıf bir eğilim var. Dikkatli olmalısın. İçsel güven eksikliği yüzünden duygusal dengesizlik çekiyorsun. Daha açık ve dürüst ol.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:31.577Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Kraliçesi",
+      "image": "34_queen_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Kraliçesi (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Zayıf bir eğilim var, dikkatli ol.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Duygusal bağlar güçlenebilir, ancak kontrolsüz duygular ve aceleci davranışlar engel olabilir. Dengeyi bul, sabırlı ol.\"}",
+    "response": {
+      "title": "Değnek Kraliçesi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 61,
+      "clarityLabel": "Şartlı",
+      "explanation": "Duygusal bağlar güçlenebilir, ancak kontrolsüz duygular ve aceleci davranışlar engel olabilir. Dengeyi bul, sabırlı ol.",
+      "keywords": [
+        "çekicilik",
+        "özgüven"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:49.972Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Değnek Sekizlisi",
+      "image": "29_eight_wands",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Sekizlisi (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Net ve güçlü bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Hızla ilerleyen fırsatlar seni bekliyor. Kariyerinde hareketlilik var. Enerjin projelere odaklanıp başarıyı yakalamanı sağlayacak. Hızlı kararlar alman gerekebilir.\"}",
+    "response": {
+      "title": "Değnek Sekizlisi — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 83,
+      "clarityLabel": "Net",
+      "explanation": "Hızla ilerleyen fırsatlar seni bekliyor. Kariyerinde hareketlilik var. Enerjin projelere odaklanıp başarıyı yakalamanı sağlayacak. Hızlı kararlar alman gerekebilir.",
+      "keywords": [
+        "hız",
+        "momentum"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:49:49.979Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Değnek Sekizlisi",
+      "image": "29_eight_wands",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Sekizlisi (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Net ve güçlü bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Hızla gelişen olaylar seni bekliyor. Kariyerinde ilerleme zamanı. Enerji yüksek, fırsatlar kapıda. Harekete geç, başarı seninle.\"}",
+    "response": {
+      "title": "Değnek Sekizlisi — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 83,
+      "clarityLabel": "Net",
+      "explanation": "Hızla gelişen olaylar seni bekliyor. Kariyerinde ilerleme zamanı. Enerji yüksek, fırsatlar kapıda. Harekete geç, başarı seninle.",
+      "keywords": [
+        "hız",
+        "momentum"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:50:11.342Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Kupa Ası",
+      "image": "36_ace_cups",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Kupa Ası (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Net ve güçlü bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Başarılı bir kariyer hamlesi için evet. İçsel potansiyelin ve fırsatların birleşimi seni bekliyor. Hedeflerine odaklan, fırsat kapını çalacak.\"}",
+    "response": {
+      "title": "Kupa Ası — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 85,
+      "clarityLabel": "Net",
+      "explanation": "Başarılı bir kariyer hamlesi için evet. İçsel potansiyelin ve fırsatların birleşimi seni bekliyor. Hedeflerine odaklan, fırsat kapını çalacak.",
+      "keywords": [
+        "memnuniyet",
+        "tatmin"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:50:25.848Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Tılsım Prensi",
+      "image": "74_page_pentacles",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Tılsım Prensi — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 77,
+      "clarityLabel": "Net",
+      "explanation": "Evet; yeni bir öğrenme ya da gelişim fırsatı var. Başlangıçlar köklenmek üzere seni bekliyor.",
+      "keywords": [
+        "yeni tanışma",
+        "sabır"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
   }
 ]

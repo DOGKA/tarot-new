@@ -6,14 +6,19 @@ import {
   StyleSheet,
   ScrollView,
   ActivityIndicator,
+  Dimensions,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
 import { GradientBackground, GlassCard, PremiumPreview } from "../components/ui";
 import { LinearGradient } from "expo-linear-gradient";
+import Svg, { Circle, Defs, RadialGradient, Stop } from "react-native-svg";
 import type { YesNoReading } from "../types/tarot";
 import Constants from "expo-constants";
+
+const { width: SCREEN_WIDTH } = Dimensions.get("window");
+const CIRCLE_SIZE = Math.min(SCREEN_WIDTH * 0.65, 260);
 
 // Backend API URL - dynamic based on Expo host
 const host = Constants.expoConfig?.hostUri?.split(":")[0] || "localhost";
@@ -26,26 +31,36 @@ const getAnswerColor = (answer: string): string => {
   return "#a855f7"; // Mor - Belirsiz
 };
 
-// Answer icons
-const getAnswerIcon = (answer: string): string => {
-  if (answer === "yes") return "↑";
-  if (answer === "no") return "↓";
-  return "◐"; // Belirsiz için yarım daire
+// Answer glow colors (lighter version for glow)
+const getAnswerGlowColor = (answer: string): string => {
+  if (answer === "yes") return "#4ade80";
+  if (answer === "no") return "#f87171";
+  return "#c084fc";
 };
 
-// Confidence renk sistemi (netlik derecesi)
-const getConfidenceColor = (confidence: number, answer: string): string => {
-  // Belirsiz cevaplar için mor tonları
-  if (answer === "uncertain") {
-    if (confidence >= 60) return "#a855f7"; // Mor
-    return "#8b5cf6"; // Koyu Mor
-  }
-  // Evet/Hayır için yeşil-sarı-turuncu-kırmızı
-  if (confidence >= 80) return "#22c55e"; // Yeşil - Net
-  if (confidence >= 65) return "#f59e0b"; // Amber - Şartlı
-  if (confidence >= 50) return "#f97316"; // Turuncu - Düşük
-  return "#ef4444"; // Kırmızı - Çok Düşük
+// Answer dark colors (for inner shadow)
+const getAnswerDarkColor = (answer: string): string => {
+  if (answer === "yes") return "#166534";
+  if (answer === "no") return "#991b1b";
+  return "#6b21a8";
 };
+
+// Answer icons - horizontal arrows based on design
+const getAnswerIcon = (answer: string): string => {
+  if (answer === "yes") return "→";
+  if (answer === "no") return "←";
+  return "?";
+};
+
+// Progress bar gradients based on answer type
+const getProgressBarGradient = (answer: string): readonly [string, string, string] => {
+  if (answer === "yes") return ["#22c55e", "#16a34a", "#15803d"] as const; // Green
+  if (answer === "no") return ["#ef4444", "#dc2626", "#b91c1c"] as const; // Red
+  return ["#fbbf24", "#f59e0b", "#d97706"] as const; // Orange/Yellow for uncertain
+};
+
+// Moon icon color
+const MOON_ICON_COLOR = "#60a5fa";
 
 export default function YesNoResultScreen() {
   const router = useRouter();
@@ -75,7 +90,7 @@ export default function YesNoResultScreen() {
             isPremium,
             card: {
               name: selectedCards[0].card.name,
-              image: selectedCards[0].card.image, // cardKey for v2 system
+              image: selectedCards[0].card.image,
               orientation: selectedCards[0].orientation,
             },
           }),
@@ -108,7 +123,7 @@ export default function YesNoResultScreen() {
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color="#a855f7" />
           <Text style={styles.loadingText}>
-            {isPremium ? "Yorumunuz hazırlanıyor..." : "Yükleniyor..."}
+            {isPremium ? t("preparingReading") || "Yorumunuz hazırlanıyor..." : t("loading") || "Yükleniyor..."}
           </Text>
         </View>
       </GradientBackground>
@@ -120,7 +135,7 @@ export default function YesNoResultScreen() {
       <GradientBackground>
         <View style={styles.errorContainer}>
           <GlassCard style={styles.errorCard}>
-            <Text style={styles.errorText}>Hata: {error}</Text>
+            <Text style={styles.errorText}>{t("error")}: {error}</Text>
             <TouchableOpacity onPress={handleNewReading}>
               <LinearGradient
                 colors={["#a855f7", "#6366f1"]}
@@ -137,25 +152,21 @@ export default function YesNoResultScreen() {
     );
   }
 
-  // Answer display logic
   const answer = reading.answer || "uncertain";
   const answerColor = getAnswerColor(answer);
+  const answerGlowColor = getAnswerGlowColor(answer);
+  const answerDarkColor = getAnswerDarkColor(answer);
   const answerIcon = getAnswerIcon(answer);
   const isUncertain = answer === "uncertain";
-  
-  // Get answer text
+
   const getAnswerText = () => {
-    if (answer === "yes") return t("yes");
-    if (answer === "no") return t("no");
-    return t("uncertainAnswer") || "Belirsiz";
+    if (answer === "yes") return t("yes") || "EVET";
+    if (answer === "no") return t("no") || "HAYIR";
+    return t("uncertainAnswer") || "BELİRSİZ";
   };
-  
-  // Get variant for GlassCard
-  const getVariant = () => {
-    if (answer === "yes") return "upright";
-    if (answer === "no") return "reversed";
-    return undefined; // neutral for uncertain
-  };
+
+  // Confidence percentage for progress bar
+  const confidencePercent = reading.confidence || 0;
 
   return (
     <GradientBackground>
@@ -168,74 +179,141 @@ export default function YesNoResultScreen() {
           </TouchableOpacity>
         </View>
 
-        {/* Answer Display - Clean bold design */}
-        <GlassCard
-          variant={getVariant()}
-          style={styles.answerContainer}
-        >
-          <View style={[styles.answerCircle, { borderColor: answerColor, shadowColor: answerColor }]}>
-            <Text style={[styles.arrowIcon, { color: answerColor }]}>
-              {answerIcon}
-            </Text>
+        {/* Main Answer Display */}
+        <View style={styles.answerSection}>
+          {/* Outer Glow Circle */}
+          <View style={[styles.glowContainer, { shadowColor: answerGlowColor }]}>
+            {/* SVG Circle with Glow */}
+            <Svg width={CIRCLE_SIZE + 40} height={CIRCLE_SIZE + 40} style={styles.svgCircle}>
+              <Defs>
+                <RadialGradient id="circleGlow" cx="50%" cy="50%" rx="50%" ry="50%">
+                  <Stop offset="0%" stopColor={answerColor} stopOpacity="0.3" />
+                  <Stop offset="70%" stopColor={answerColor} stopOpacity="0.1" />
+                  <Stop offset="100%" stopColor={answerColor} stopOpacity="0" />
+                </RadialGradient>
+              </Defs>
+              <Circle
+                cx={(CIRCLE_SIZE + 40) / 2}
+                cy={(CIRCLE_SIZE + 40) / 2}
+                r={CIRCLE_SIZE / 2 + 15}
+                fill="url(#circleGlow)"
+              />
+            </Svg>
+
+            {/* Main Circle */}
+            <View
+              style={[
+                styles.mainCircle,
+                {
+                  width: CIRCLE_SIZE,
+                  height: CIRCLE_SIZE,
+                  borderRadius: CIRCLE_SIZE / 2,
+                  borderColor: answerColor,
+                  shadowColor: answerColor,
+                },
+              ]}
+            >
+              {/* Inner Dark Background */}
+              <View
+                style={[
+                  styles.innerCircle,
+                  {
+                    width: CIRCLE_SIZE - 16,
+                    height: CIRCLE_SIZE - 16,
+                    borderRadius: (CIRCLE_SIZE - 16) / 2,
+                    backgroundColor: answerDarkColor + "40",
+                  },
+                ]}
+              >
+                {/* Arrow Icon */}
+                <Text style={[styles.arrowIcon, { color: answerColor }]}>
+                  {answerIcon}
+                </Text>
+
+                {/* Answer Text */}
+                <Text style={[styles.answerText, { color: answerColor }]}>
+                  {getAnswerText()}
+                </Text>
+
+                {/* Clarity Label */}
+                {reading.clarityLabel && (
+                  <Text style={[styles.clarityLabel, { color: answerColor }]}>
+                    {reading.clarityLabel}
+                  </Text>
+                )}
+              </View>
+            </View>
           </View>
-          <Text style={[styles.answerText, { color: answerColor }]}>
-            {getAnswerText()}
-          </Text>
-          {/* Clarity Label from API */}
-          {reading.clarityLabel && (
-            <Text style={[styles.clarityLabel, { color: answerColor }]}>
-              {reading.clarityLabel}
-            </Text>
-          )}
+
+        {/* Confidence Bar - Horizontal Progress */}
+        <View style={styles.confidenceBarContainer}>
+          {/* Label */}
+          <Text style={styles.confidenceBarLabel}>{t("clarityLevel") || "Netlik Düzeyi"}</Text>
+          
+          {/* Progress Bar with Moon Icon */}
+          <View style={styles.progressBarWrapper}>
+            {/* Moon Icon - Overlapping left edge */}
+            <View style={styles.moonIconCircle}>
+              <Text style={styles.moonIcon}>☽</Text>
+              <Text style={styles.moonRunes}>ᛗᚨᛃᛁᚱ</Text>
+            </View>
+            
+            {/* Progress Bar with text inside */}
+            <View style={styles.progressBarOuter}>
+              <LinearGradient
+                colors={getProgressBarGradient(answer)}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 0 }}
+                style={[styles.progressBarFill, { width: `${confidencePercent}%` }]}
+              />
+              {/* Percentage Text Inside Bar */}
+              <View style={styles.progressBarTextContainer}>
+                <Text style={styles.progressBarText}>
+                  {reading.confidence}% ({reading.clarityLabel})
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+
           {/* Condition Message for Uncertain */}
           {isUncertain && reading.conditionMessage && (
             <Text style={styles.conditionMessage}>
               {reading.conditionMessage}
             </Text>
           )}
-        </GlassCard>
-
-        {/* Confidence Section */}
-        <GlassCard style={styles.confidenceSection}>
-          <View style={styles.confidenceHeader}>
-            <Text style={styles.confidenceLabel}>{t("confidence")}</Text>
-            <View style={styles.confidenceValueContainer}>
-              <View style={[styles.confidenceDot, { backgroundColor: getConfidenceColor(reading.confidence, answer) }]} />
-              <Text style={[styles.confidenceValue, { color: getConfidenceColor(reading.confidence, answer) }]}>
-                {reading.confidence}%
-              </Text>
-              {reading.clarityLabel && (
-                <Text style={[styles.confidenceLabelText, { color: getConfidenceColor(reading.confidence, answer) }]}>
-                  ({reading.clarityLabel})
-                </Text>
-              )}
-            </View>
-          </View>
-          <View style={styles.confidenceBarBg}>
-            <LinearGradient
-              colors={[getConfidenceColor(reading.confidence, answer), getConfidenceColor(reading.confidence, answer) + "88"]}
-              style={[styles.confidenceBarFill, { width: `${reading.confidence}%` }]}
-              start={{ x: 0, y: 0 }}
-              end={{ x: 1, y: 0 }}
-            />
-          </View>
-        </GlassCard>
-
-        {/* Focus Area Badge */}
-        <View style={styles.focusBadgeContainer}>
-          <View style={styles.focusBadge}>
-            <Text style={styles.focusBadgeText}>{t(reading.focusArea)}</Text>
-          </View>
         </View>
 
-        {/* Keywords */}
+        {/* Keywords Section - Circular Badges */}
         {reading.keywords && reading.keywords.length > 0 && (
           <View style={styles.keywordsSection}>
-            {reading.keywords.map((keyword, index) => (
-              <View key={index} style={styles.keywordBadge}>
-                <Text style={styles.keywordText}>{keyword}</Text>
-              </View>
-            ))}
+            {reading.keywords.map((keyword, index) => {
+              // Dynamic font size based on keyword length
+              const fontSize = keyword.length > 10 ? 10 : keyword.length > 7 ? 11 : 13;
+              return (
+                <View
+                  key={index}
+                  style={[
+                    styles.keywordCircle,
+                    {
+                      borderColor: answerColor,
+                      shadowColor: answerColor,
+                    },
+                  ]}
+                >
+                  <View style={[styles.keywordInner, { backgroundColor: answerDarkColor + "60" }]}>
+                    <Text
+                      style={[styles.keywordText, { fontSize }]}
+                      numberOfLines={1}
+                      adjustsFontSizeToFit
+                      minimumFontScale={0.7}
+                    >
+                      {keyword}
+                    </Text>
+                  </View>
+                </View>
+              );
+            })}
           </View>
         )}
 
@@ -250,7 +328,6 @@ export default function YesNoResultScreen() {
             spreadType="yes_no"
             focusArea={reading.focusArea}
             onUnlock={() => {
-              // TODO: Implement premium unlock flow
               console.log("Premium unlock requested");
             }}
           />
@@ -276,7 +353,10 @@ export default function YesNoResultScreen() {
 
 const styles = StyleSheet.create({
   scrollContent: {
-    padding: 20,
+    paddingHorizontal: 20,
+    paddingBottom: 20,
+    paddingTop: 50,
+    alignItems: "center",
   },
   loadingContainer: {
     flex: 1,
@@ -319,11 +399,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 20,
+    marginBottom: 24,
+    width: "100%",
   },
   title: {
     color: "#fff",
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: "bold",
     flex: 1,
   },
@@ -332,141 +413,206 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: "500",
   },
-  answerContainer: {
+  answerSection: {
     alignItems: "center",
-    paddingVertical: 32,
-    marginBottom: 16,
+    marginBottom: 24,
   },
-  answerCircle: {
-    width: 90,
-    height: 90,
-    borderRadius: 45,
+  glowContainer: {
+    alignItems: "center",
+    justifyContent: "center",
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.8,
+    shadowRadius: 40,
+    elevation: 20,
+  },
+  svgCircle: {
+    position: "absolute",
+  },
+  mainCircle: {
     borderWidth: 4,
     justifyContent: "center",
     alignItems: "center",
-    marginBottom: 20,
     shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.9,
-    shadowRadius: 25,
-    elevation: 12,
-    backgroundColor: "rgba(0, 0, 0, 0.4)",
+    shadowOpacity: 1,
+    shadowRadius: 30,
+    elevation: 15,
+    backgroundColor: "rgba(0, 10, 30, 0.8)",
+  },
+  innerCircle: {
+    justifyContent: "center",
+    alignItems: "center",
   },
   arrowIcon: {
-    fontSize: 48,
+    fontSize: 56,
     fontWeight: "bold",
+    marginBottom: 8,
+    textShadowColor: "rgba(0, 0, 0, 0.5)",
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 10,
   },
   answerText: {
-    fontSize: 48,
+    fontSize: 42,
     fontWeight: "900",
-    letterSpacing: 2,
+    letterSpacing: 3,
     textTransform: "uppercase",
+    textShadowColor: "rgba(0, 0, 0, 0.5)",
+    textShadowOffset: { width: 0, height: 2 },
+    textShadowRadius: 10,
   },
   clarityLabel: {
-    fontSize: 16,
+    fontSize: 18,
     fontWeight: "600",
     marginTop: 8,
     textTransform: "capitalize",
   },
+  confidenceBarContainer: {
+    alignItems: "center",
+    marginTop: 20,
+    width: "100%",
+    paddingHorizontal: 20,
+  },
+  confidenceBarLabel: {
+    color: "rgba(255, 255, 255, 0.9)",
+    fontSize: 14,
+    fontWeight: "500",
+    marginBottom: 12,
+    letterSpacing: 1,
+  },
+  progressBarWrapper: {
+    flexDirection: "row",
+    alignItems: "center",
+    width: "100%",
+    maxWidth: 320,
+    position: "relative",
+  },
+  moonIconCircle: {
+    width: 50,
+    height: 50,
+    borderRadius: 25,
+    backgroundColor: "rgba(15, 23, 42, 0.9)",
+    borderWidth: 2,
+    borderColor: "#60a5fa",
+    justifyContent: "center",
+    alignItems: "center",
+    position: "absolute",
+    left: 0,
+    zIndex: 10,
+    shadowColor: "#60a5fa",
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.8,
+    shadowRadius: 10,
+    elevation: 10,
+  },
+  moonIcon: {
+    fontSize: 22,
+    color: "#60a5fa",
+    textShadowColor: "#60a5fa",
+    textShadowOffset: { width: 0, height: 0 },
+    textShadowRadius: 8,
+  },
+  moonRunes: {
+    fontSize: 6,
+    color: "#60a5fa",
+    marginTop: -2,
+    letterSpacing: 0.5,
+  },
+  progressBarOuter: {
+    flex: 1,
+    height: 32,
+    backgroundColor: "rgba(255, 255, 255, 0.1)",
+    borderRadius: 16,
+    overflow: "hidden",
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.2)",
+    marginLeft: 25,
+    justifyContent: "center",
+  },
+  progressBarFill: {
+    position: "absolute",
+    left: 0,
+    top: 0,
+    bottom: 0,
+    borderRadius: 16,
+  },
+  progressBarTextContainer: {
+    position: "absolute",
+    left: 0,
+    right: 0,
+    top: 0,
+    bottom: 0,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingLeft: 25,
+  },
+  progressBarText: {
+    color: "#ffffff",
+    fontSize: 13,
+    fontWeight: "bold",
+    textShadowColor: "rgba(0, 0, 0, 0.5)",
+    textShadowOffset: { width: 0, height: 1 },
+    textShadowRadius: 3,
+  },
   conditionMessage: {
     fontSize: 14,
     fontWeight: "400",
-    marginTop: 12,
+    marginTop: 16,
     color: "rgba(255, 255, 255, 0.7)",
     textAlign: "center",
     fontStyle: "italic",
-    paddingHorizontal: 16,
-  },
-  confidenceSection: {
-    marginBottom: 16,
-  },
-  confidenceHeader: {
-    flexDirection: "row",
-    justifyContent: "space-between",
-    marginBottom: 10,
-  },
-  confidenceLabel: {
-    color: "rgba(255, 255, 255, 0.5)",
-    fontSize: 14,
-  },
-  confidenceValueContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 6,
-  },
-  confidenceDot: {
-    width: 10,
-    height: 10,
-    borderRadius: 5,
-  },
-  confidenceValue: {
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  confidenceLabelText: {
-    fontSize: 12,
-    fontWeight: "500",
-  },
-  confidenceBarBg: {
-    height: 12,
-    backgroundColor: "rgba(255, 255, 255, 0.1)",
-    borderRadius: 6,
-    overflow: "hidden",
-  },
-  confidenceBarFill: {
-    height: "100%",
-    borderRadius: 6,
-  },
-  focusBadgeContainer: {
-    alignItems: "center",
-    marginBottom: 16,
-  },
-  focusBadge: {
-    backgroundColor: "rgba(168, 85, 247, 0.3)",
-    paddingHorizontal: 16,
-    paddingVertical: 6,
-    borderRadius: 20,
-    borderWidth: 1,
-    borderColor: "#a855f7",
-  },
-  focusBadgeText: {
-    color: "#a855f7",
-    fontSize: 13,
-    fontWeight: "600",
-    textTransform: "capitalize",
+    paddingHorizontal: 20,
+    maxWidth: 300,
   },
   keywordsSection: {
     flexDirection: "row",
-    flexWrap: "wrap",
     justifyContent: "center",
-    gap: 8,
-    marginBottom: 16,
+    gap: 16,
+    marginBottom: 24,
+    flexWrap: "wrap",
   },
-  keywordBadge: {
-    backgroundColor: "rgba(168, 85, 247, 0.2)",
-    paddingHorizontal: 14,
-    paddingVertical: 8,
-    borderRadius: 16,
-    borderWidth: 1,
-    borderColor: "rgba(168, 85, 247, 0.4)",
+  keywordCircle: {
+    width: 90,
+    height: 90,
+    borderRadius: 45,
+    borderWidth: 3,
+    justifyContent: "center",
+    alignItems: "center",
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.6,
+    shadowRadius: 15,
+    elevation: 8,
+  },
+  keywordInner: {
+    width: 78,
+    height: 78,
+    borderRadius: 39,
+    justifyContent: "center",
+    alignItems: "center",
+    paddingHorizontal: 6,
   },
   keywordText: {
-    color: "#fff",
     fontSize: 13,
-    fontWeight: "500",
+    fontWeight: "600",
+    textAlign: "center",
+    textTransform: "capitalize",
+    flexShrink: 1,
+    color: "#ffffff",
   },
   explanationSection: {
     marginBottom: 20,
+    width: "100%",
   },
   explanationText: {
     color: "rgba(255, 255, 255, 0.85)",
     fontSize: 16,
     lineHeight: 26,
+    textAlign: "center",
   },
   premiumBadge: {
     alignSelf: "center",
     paddingHorizontal: 20,
     paddingVertical: 10,
     borderRadius: 20,
+    marginTop: 10,
   },
   premiumBadgeText: {
     color: "#fff",
@@ -474,6 +620,6 @@ const styles = StyleSheet.create({
     fontWeight: "600",
   },
   bottomPadding: {
-    height: 20,
+    height: 30,
   },
 });
