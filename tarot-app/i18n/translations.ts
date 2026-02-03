@@ -162,6 +162,15 @@ export const translations = {
       premiumPreviewDirectionDesc: "Areas worth paying attention to",
       premiumPreviewJournal: "Ask Yourself",
       premiumPreviewJournalDesc: "A deep question to ask yourself",
+      // Yes/No Preview
+      premiumPreviewDeepAnalysis: "Deep Analysis",
+      premiumPreviewDeepAnalysisDesc: "The energy behind the answer and its nuances",
+      premiumPreviewTimingInsight: "Timing Insight",
+      premiumPreviewTimingInsightDesc: "When conditions might shift or clarify",
+      premiumPreviewConditions: "Conditions",
+      premiumPreviewConditionsDesc: "What could change the answer",
+      premiumPreviewEnergyFlow: "Energy Flow",
+      premiumPreviewEnergyFlowDesc: "The direction the energy is moving",
       // Love Preview
       premiumPreviewBondAnalysis: "Bond Analysis",
       premiumPreviewBondAnalysisDesc: "The deep dynamics of your connection",
@@ -460,6 +469,15 @@ export const translations = {
       premiumPreviewDirectionDesc: "Dikkat etmenin faydalı olacağı alan",
       premiumPreviewJournal: "Kendine Sor",
       premiumPreviewJournalDesc: "Kendine sorabileceğin derin bir soru",
+      // Evet/Hayır Preview
+      premiumPreviewDeepAnalysis: "Derin Analiz",
+      premiumPreviewDeepAnalysisDesc: "Cevabın ardındaki enerji ve nüanslar",
+      premiumPreviewTimingInsight: "Zamanlama İçgörüsü",
+      premiumPreviewTimingInsightDesc: "Koşulların ne zaman değişebileceği veya netleşeceği",
+      premiumPreviewConditions: "Koşullar",
+      premiumPreviewConditionsDesc: "Cevabı nelerin değiştirebileceği",
+      premiumPreviewEnergyFlow: "Enerji Akışı",
+      premiumPreviewEnergyFlowDesc: "Enerjinin hangi yöne aktığı",
       // Aşk Preview
       premiumPreviewBondAnalysis: "Bağ Analizi",
       premiumPreviewBondAnalysisDesc: "Aranızdaki bağın derin dinamiği",
@@ -758,6 +776,15 @@ export const translations = {
       premiumPreviewDirectionDesc: "Bereiche, auf die es sich lohnt zu achten",
       premiumPreviewJournal: "Frag dich selbst",
       premiumPreviewJournalDesc: "Eine tiefe Frage an dich selbst",
+      // Ja/Nein Vorschau
+      premiumPreviewDeepAnalysis: "Tiefenanalyse",
+      premiumPreviewDeepAnalysisDesc: "Die Energie hinter der Antwort und ihre Nuancen",
+      premiumPreviewTimingInsight: "Timing-Einblick",
+      premiumPreviewTimingInsightDesc: "Wann sich die Bedingungen ändern oder klären könnten",
+      premiumPreviewConditions: "Bedingungen",
+      premiumPreviewConditionsDesc: "Was die Antwort ändern könnte",
+      premiumPreviewEnergyFlow: "Energiefluss",
+      premiumPreviewEnergyFlowDesc: "Die Richtung, in die die Energie fließt",
       // Liebe Vorschau
       premiumPreviewBondAnalysis: "Bindungsanalyse",
       premiumPreviewBondAnalysisDesc: "Die tiefe Dynamik eurer Verbindung",
@@ -1056,6 +1083,15 @@ export const translations = {
       premiumPreviewDirectionDesc: "Áreas que vale la pena observar",
       premiumPreviewJournal: "Pregúntate",
       premiumPreviewJournalDesc: "Una pregunta profunda para hacerte",
+      // Vista previa de Sí/No
+      premiumPreviewDeepAnalysis: "Análisis profundo",
+      premiumPreviewDeepAnalysisDesc: "La energía detrás de la respuesta y sus matices",
+      premiumPreviewTimingInsight: "Perspectiva del momento",
+      premiumPreviewTimingInsightDesc: "Cuándo las condiciones podrían cambiar o aclararse",
+      premiumPreviewConditions: "Condiciones",
+      premiumPreviewConditionsDesc: "Qué podría cambiar la respuesta",
+      premiumPreviewEnergyFlow: "Flujo de energía",
+      premiumPreviewEnergyFlowDesc: "La dirección en la que fluye la energía",
       // Vista previa de amor
       premiumPreviewBondAnalysis: "Análisis del vínculo",
       premiumPreviewBondAnalysisDesc: "La dinámica profunda de tu conexión",

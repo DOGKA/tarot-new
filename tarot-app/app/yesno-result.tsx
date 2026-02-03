@@ -10,7 +10,7 @@ import {
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
-import { GradientBackground, GlassCard } from "../components/ui";
+import { GradientBackground, GlassCard, PremiumPreview } from "../components/ui";
 import { LinearGradient } from "expo-linear-gradient";
 import type { YesNoReading } from "../types/tarot";
 import Constants from "expo-constants";
@@ -243,6 +243,18 @@ export default function YesNoResultScreen() {
         <GlassCard style={styles.explanationSection}>
           <Text style={styles.explanationText}>{reading.explanation}</Text>
         </GlassCard>
+
+        {/* Premium Preview for FREE users */}
+        {!isPremium && (
+          <PremiumPreview
+            spreadType="yes_no"
+            focusArea={reading.focusArea}
+            onUnlock={() => {
+              // TODO: Implement premium unlock flow
+              console.log("Premium unlock requested");
+            }}
+          />
+        )}
 
         {/* Premium Badge */}
         {isPremium && (

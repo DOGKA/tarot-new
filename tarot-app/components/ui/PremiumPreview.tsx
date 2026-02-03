@@ -17,6 +17,13 @@ interface PreviewItem {
 
 // Premium output items by spread type
 const SPREAD_PREVIEW_ITEMS: Record<string, PreviewItem[]> = {
+  // YES/NO
+  yes_no: [
+    { titleKey: "premiumPreviewDeepAnalysis", descKey: "premiumPreviewDeepAnalysisDesc" },
+    { titleKey: "premiumPreviewTimingInsight", descKey: "premiumPreviewTimingInsightDesc" },
+    { titleKey: "premiumPreviewConditions", descKey: "premiumPreviewConditionsDesc" },
+    { titleKey: "premiumPreviewEnergyFlow", descKey: "premiumPreviewEnergyFlowDesc" },
+  ],
   // GENERAL
   single_card: [
     { titleKey: "overall", descKey: "premiumPreviewOverallDesc" },

@@ -2502,5 +2502,215 @@
       "answerMayChange": false,
       "conditionMessage": null
     }
+  },
+  {
+    "timestamp": "2026-02-03T07:15:23.939Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Kupa Altılısı",
+      "image": "41_six_cups",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Kupa Altılısı — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "yes",
+      "confidence": 59,
+      "clarityLabel": "Şartlı",
+      "explanation": "Şartlı Evet; nostaljiyle takılı kalmak güncel cevabı gölgeleyebilir. Hatıralarla gerçek arasında ayrım gerek.",
+      "keywords": [
+        "nostalji",
+        "hatıra"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:15:36.476Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Kılıç Altılısı",
+      "image": "55_six_swords",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Kılıç Altılısı — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 77,
+      "clarityLabel": "Net",
+      "explanation": "Evet; zihinsel olarak daha sakin bir alana geçiş mümkün. İyileşme yönünde.",
+      "keywords": [
+        "uzaklaşma",
+        "yeni başlangıç"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:15:47.454Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Tılsım Şövalyesi",
+      "image": "75_knight_pentacles",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "response": {
+      "title": "Tılsım Şövalyesi — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 59,
+      "clarityLabel": "Şartlı",
+      "explanation": "Şartlı Evet; inat veya durağanlık, süreci aksatabilir. Esnek olman gereken bir dönemdesin.",
+      "keywords": [
+        "çalışkanlık",
+        "metot"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:16:08.675Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Değnek Üçlüsü",
+      "image": "24_three_wands",
+      "orientation": "upright"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Üçlüsü (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Net ve güçlü bir yön var.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Aşk hayatında yeni ufuklara açılıyorsun. Geleceğe dair umut dolusun. Enerjin ilişkinin büyümesine ve derinleşmesine odaklanıyor.\"}",
+    "response": {
+      "title": "Değnek Üçlüsü — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 81,
+      "clarityLabel": "Net",
+      "explanation": "Aşk hayatında yeni ufuklara açılıyorsun. Geleceğe dair umut dolusun. Enerjin ilişkinin büyümesine ve derinleşmesine odaklanıyor.",
+      "keywords": [
+        "gelişme",
+        "büyüme"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:16:36.811Z",
+    "model": "gpt-4o",
+    "structureId": "ppf_v15_story",
+    "hasNextStep": null,
+    "hasJournal": null,
+    "qualityWarns": [],
+    "request": {
+      "language": "tr",
+      "spread": "celestial_illumination",
+      "cards": [
+        {
+          "position": "signal",
+          "name": "Değnek Dokuzlusu",
+          "orientation": "reversed"
+        },
+        {
+          "position": "guidance",
+          "name": "Büyücü",
+          "orientation": "upright"
+        },
+        {
+          "position": "integration",
+          "name": "Kılıç Sekizlisi",
+          "orientation": "upright"
+        }
+      ]
+    },
+    "response": {
+      "title": "Değnek Dokuzlusu·Büyücü·Kılıç Sekizlisi — Kozmik Aydınlanma",
+      "overall": "Evren sana kendi gücünü ve içsel büyümeni hatırlatıyor, engellerin ötesine geçme zamanın geldi. İçsel direncin ve özgüven eksikliği, seni sınırlayan unsurlar olarak görünüyor. Ancak, ilahi rehberlik seni bu kısıtlamaları aşmaya davet ediyor.",
+      "celestialMessage": "Kozmik fısıltılar, kendi yaratıcılığının ve potansiyelinin farkına varman gerektiğini söylüyor. Evren sana, tüm kaynakların zaten içinde olduğunu hatırlatıyor.",
+      "beats": {
+        "signal": "Evren sana içsel blokajlarını aşman için Değnek Dokuzlusu ile işaret gönderiyor, kendi gücüne karşı direniyorsun.",
+        "guidance": "Büyücü, ilahi rehberlik olarak sana içinde bulunduğun enerjiyi dönüştürmeni ve kaynaklarını en iyi şekilde kullanmanı söylüyor.",
+        "integration": "Kılıç Sekizlisi ile bu mesajı hayatına yansıtmak için, kendini özgür bırak ve sınırlayıcı düşüncelerinin ötesine geç."
+      },
+      "omenKeywords": [
+        "Öz-güven",
+        "Dönüşüm",
+        "Özgürlük"
+      ],
+      "nextStep": "Meditasyon yaparak içsel potansiyelini keşfet ve sınırlayıcı düşünceleri bırak.",
+      "journal": "Hangi içsel dirençlerim beni engelliyor ve bu blokajları nasıl aşabilirim?"
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:17:01.928Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "general",
+    "card": {
+      "name": "Kader Çarkı",
+      "image": "10_wheel_of_fortune",
+      "orientation": "reversed"
+    },
+    "tendency": "belirsiz",
+    "response": {
+      "title": "Kader Çarkı — Evet / Hayır",
+      "focusArea": "general",
+      "answer": "uncertain",
+      "confidence": 57,
+      "clarityLabel": "Şartlı",
+      "explanation": "Şartlı Evet; döngüsel bir takılma hali var. Yeniden başlamak için direnç yerine teslimiyet gerek.",
+      "keywords": [
+        "şans",
+        "döngü"
+      ],
+      "baseTendency": "belirsiz",
+      "answerMayChange": true,
+      "conditionMessage": "Koşullara göre netleşir"
+    }
+  },
+  {
+    "timestamp": "2026-02-03T07:18:06.636Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Tılsım Dörtlüsü",
+      "image": "67_four_pentacles",
+      "orientation": "upright"
+    },
+    "tendency": "hayır",
+    "response": {
+      "title": "Tılsım Dörtlüsü — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "no",
+      "confidence": 73,
+      "clarityLabel": "Şartlı",
+      "explanation": "Hayır; tutunma ve kaybetme korkusu seni sabit bir yerde tutuyor olabilir. Akışı engelleyen bir direnç var.",
+      "keywords": [
+        "istikrar",
+        "tutuculuk"
+      ],
+      "baseTendency": "hayır",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
   }
 ]
