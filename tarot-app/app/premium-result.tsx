@@ -40,9 +40,17 @@ export default function PremiumResultScreen() {
   const [resetting, setResetting] = useState(false);
 
   useEffect(() => {
+    console.log("[premium-result] useEffect triggered");
+    console.log("[premium-result] spreadType:", spreadType);
+    console.log("[premium-result] selectedCards count:", selectedCards.length);
+    console.log("[premium-result] language:", language);
+    
     const fetchReading = async () => {
+      console.log("[premium-result] fetchReading called");
       if (spreadType === "single_card" && selectedCards[0]) {
+        console.log("[premium-result] Fetching single_card reading...");
         const reading = await getSingleCardReading(language, selectedCards[0], focusArea);
+        console.log("[premium-result] single_card reading result:", reading ? "success" : "null");
         setSingleReading(reading);
       } else if (spreadType === "past_present_future" && selectedCards.length === 3) {
         const reading = await getThreeCardReading(language, selectedCards);
@@ -83,10 +91,19 @@ export default function PremiumResultScreen() {
       } else if (spreadType === "wealth_flow" && selectedCards.length === 5) {
         const reading = await getWealthFlowReading(language, selectedCards);
         setWealthFlowReading(reading);
+      } else {
+        // No spread type matched - set error
+        console.warn("[premium-result] No spread type matched!", { spreadType, cardsCount: selectedCards.length });
       }
     };
-    fetchReading();
-  }, []);
+    
+    // Only fetch if we have cards
+    if (selectedCards.length > 0 && spreadType) {
+      fetchReading();
+    } else {
+      console.warn("[premium-result] Missing data:", { spreadType, cardsCount: selectedCards.length });
+    }
+  }, [spreadType, selectedCards.length]);
 
   const handleNewReading = () => {
     resetReading();

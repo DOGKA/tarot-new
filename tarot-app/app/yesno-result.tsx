@@ -17,21 +17,34 @@ import Constants from "expo-constants";
 
 // Backend API URL - dynamic based on Expo host
 const host = Constants.expoConfig?.hostUri?.split(":")[0] || "localhost";
-const API_URL = process.env.EXPO_PUBLIC_API_URL || `http://${host}:3001`;
+const API_URL = `http://${host}:3001`;
 
-// Confidence renk sistemi (netlik derecesi)
-const getConfidenceColor = (confidence: number): string => {
-  if (confidence >= 85) return "#22c55e"; // Yeşil - Çok Net
-  if (confidence >= 75) return "#f59e0b"; // Amber - İyi
-  if (confidence >= 65) return "#f97316"; // Turuncu - Orta
-  return "#ef4444"; // Kırmızı - Belirsiz
+// Answer colors
+const getAnswerColor = (answer: string): string => {
+  if (answer === "yes") return "#22c55e"; // Yeşil - Evet
+  if (answer === "no") return "#ef4444"; // Kırmızı - Hayır
+  return "#a855f7"; // Mor - Belirsiz
 };
 
-const getConfidenceLabel = (confidence: number, t: (key: string) => string): string => {
-  if (confidence >= 85) return t("veryClean") || "Çok Net";
-  if (confidence >= 75) return t("good") || "İyi";
-  if (confidence >= 65) return t("moderate") || "Orta";
-  return t("uncertain") || "Belirsiz";
+// Answer icons
+const getAnswerIcon = (answer: string): string => {
+  if (answer === "yes") return "↑";
+  if (answer === "no") return "↓";
+  return "◐"; // Belirsiz için yarım daire
+};
+
+// Confidence renk sistemi (netlik derecesi)
+const getConfidenceColor = (confidence: number, answer: string): string => {
+  // Belirsiz cevaplar için mor tonları
+  if (answer === "uncertain") {
+    if (confidence >= 60) return "#a855f7"; // Mor
+    return "#8b5cf6"; // Koyu Mor
+  }
+  // Evet/Hayır için yeşil-sarı-turuncu-kırmızı
+  if (confidence >= 80) return "#22c55e"; // Yeşil - Net
+  if (confidence >= 65) return "#f59e0b"; // Amber - Şartlı
+  if (confidence >= 50) return "#f97316"; // Turuncu - Düşük
+  return "#ef4444"; // Kırmızı - Çok Düşük
 };
 
 export default function YesNoResultScreen() {
@@ -62,6 +75,7 @@ export default function YesNoResultScreen() {
             isPremium,
             card: {
               name: selectedCards[0].card.name,
+              image: selectedCards[0].card.image, // cardKey for v2 system
               orientation: selectedCards[0].orientation,
             },
           }),
@@ -123,8 +137,25 @@ export default function YesNoResultScreen() {
     );
   }
 
-  const isYes = reading.answer === "yes";
-  const answerColor = isYes ? "#22c55e" : "#ef4444";
+  // Answer display logic
+  const answer = reading.answer || "uncertain";
+  const answerColor = getAnswerColor(answer);
+  const answerIcon = getAnswerIcon(answer);
+  const isUncertain = answer === "uncertain";
+  
+  // Get answer text
+  const getAnswerText = () => {
+    if (answer === "yes") return t("yes");
+    if (answer === "no") return t("no");
+    return t("uncertainAnswer") || "Belirsiz";
+  };
+  
+  // Get variant for GlassCard
+  const getVariant = () => {
+    if (answer === "yes") return "upright";
+    if (answer === "no") return "reversed";
+    return undefined; // neutral for uncertain
+  };
 
   return (
     <GradientBackground>
@@ -139,20 +170,29 @@ export default function YesNoResultScreen() {
 
         {/* Answer Display - Clean bold design */}
         <GlassCard
-          variant={isYes ? "upright" : "reversed"}
+          variant={getVariant()}
           style={styles.answerContainer}
         >
           <View style={[styles.answerCircle, { borderColor: answerColor, shadowColor: answerColor }]}>
             <Text style={[styles.arrowIcon, { color: answerColor }]}>
-              {isYes ? "↑" : "↓"}
+              {answerIcon}
             </Text>
           </View>
           <Text style={[styles.answerText, { color: answerColor }]}>
-            {isYes ? t("yes") : t("no")}
+            {getAnswerText()}
           </Text>
-          <Text style={styles.orientationLabel}>
-            {t(isYes ? "upright" : "reversed")}
-          </Text>
+          {/* Clarity Label from API */}
+          {reading.clarityLabel && (
+            <Text style={[styles.clarityLabel, { color: answerColor }]}>
+              {reading.clarityLabel}
+            </Text>
+          )}
+          {/* Condition Message for Uncertain */}
+          {isUncertain && reading.conditionMessage && (
+            <Text style={styles.conditionMessage}>
+              {reading.conditionMessage}
+            </Text>
+          )}
         </GlassCard>
 
         {/* Confidence Section */}
@@ -160,18 +200,20 @@ export default function YesNoResultScreen() {
           <View style={styles.confidenceHeader}>
             <Text style={styles.confidenceLabel}>{t("confidence")}</Text>
             <View style={styles.confidenceValueContainer}>
-              <View style={[styles.confidenceDot, { backgroundColor: getConfidenceColor(reading.confidence) }]} />
-              <Text style={[styles.confidenceValue, { color: getConfidenceColor(reading.confidence) }]}>
+              <View style={[styles.confidenceDot, { backgroundColor: getConfidenceColor(reading.confidence, answer) }]} />
+              <Text style={[styles.confidenceValue, { color: getConfidenceColor(reading.confidence, answer) }]}>
                 {reading.confidence}%
               </Text>
-              <Text style={[styles.confidenceLabelText, { color: getConfidenceColor(reading.confidence) }]}>
-                ({getConfidenceLabel(reading.confidence, t)})
-              </Text>
+              {reading.clarityLabel && (
+                <Text style={[styles.confidenceLabelText, { color: getConfidenceColor(reading.confidence, answer) }]}>
+                  ({reading.clarityLabel})
+                </Text>
+              )}
             </View>
           </View>
           <View style={styles.confidenceBarBg}>
             <LinearGradient
-              colors={[getConfidenceColor(reading.confidence), getConfidenceColor(reading.confidence) + "88"]}
+              colors={[getConfidenceColor(reading.confidence, answer), getConfidenceColor(reading.confidence, answer) + "88"]}
               style={[styles.confidenceBarFill, { width: `${reading.confidence}%` }]}
               start={{ x: 0, y: 0 }}
               end={{ x: 1, y: 0 }}
@@ -307,12 +349,20 @@ const styles = StyleSheet.create({
     letterSpacing: 2,
     textTransform: "uppercase",
   },
-  orientationLabel: {
-    fontSize: 14,
-    fontWeight: "500",
+  clarityLabel: {
+    fontSize: 16,
+    fontWeight: "600",
     marginTop: 8,
-    color: "rgba(255, 255, 255, 0.5)",
     textTransform: "capitalize",
+  },
+  conditionMessage: {
+    fontSize: 14,
+    fontWeight: "400",
+    marginTop: 12,
+    color: "rgba(255, 255, 255, 0.7)",
+    textAlign: "center",
+    fontStyle: "italic",
+    paddingHorizontal: 16,
   },
   confidenceSection: {
     marginBottom: 16,

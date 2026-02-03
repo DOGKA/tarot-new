@@ -7,40 +7,24 @@ import {
   ScrollView,
   Dimensions,
   Animated,
+  ActivityIndicator,
 } from "react-native";
 import { useLocalSearchParams, useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../../context/AppContext";
 import { GradientBackground, GlassCard } from "../../components/ui";
+import { shuffleArray, getOrientation } from "../../utils";
 import type { Card, SelectedCard, SpreadType, TarotData, FocusArea } from "../../types/tarot";
+import Constants from "expo-constants";
 
-// Import tarot data based on language (new folder structure)
-import enData from "../../data/en/tarot-template.json";
-import trData from "../../data/tr/tarot-template.json";
-import deData from "../../data/de/tarot-template.json";
-import esData from "../../data/es/tarot-template.json";
+// Backend API URL - always use dynamic Expo host IP
+const host = Constants.expoConfig?.hostUri?.split(":")[0] || "localhost";
+const API_URL = `http://${host}:3001`;
 
 const { width } = Dimensions.get("window");
 const CARD_WIDTH = (width - 60) / 5;
 const CARD_HEIGHT = CARD_WIDTH * 1.5;
 
-const tarotDataMap: Record<string, TarotData> = {
-  en: enData as TarotData,
-  tr: trData as TarotData,
-  de: deData as TarotData,
-  es: esData as TarotData,
-};
-
-function shuffleArray<T>(array: T[]): T[] {
-  const newArray = [...array];
-  for (let i = newArray.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [newArray[i], newArray[j]] = [newArray[j], newArray[i]];
-  }
-  return newArray;
-}
-
-const focusAreas: FocusArea[] = ["general", "love", "career", "spiritual"];
 
 // Animated FlipCard Component using React Native's Animated API
 interface FlipCardProps {
@@ -166,6 +150,8 @@ export default function PickScreen() {
   const [deck, setDeck] = useState<Card[]>([]);
   const [revealedCards, setRevealedCards] = useState<Map<number, "upright" | "reversed">>(new Map());
   const [selected, setSelected] = useState<SelectedCard[]>([]);
+  const [cardsLoading, setCardsLoading] = useState(true);
+  const [tarotData, setTarotData] = useState<TarotData | null>(null);
 
   const requiredCards = spread === "single_card" || spread === "yes_no" ? 1 
     : spread === "love_choice" || spread === "path_to_love" || spread === "new_moon_ritual" || spread === "full_moon_release" || spread === "new_business_exploration" || spread === "wealth_flow" ? 5 
@@ -209,18 +195,42 @@ export default function PickScreen() {
     return t(titles[spread || ""] || "threeCards");
   };
 
+  // Fetch cards from API when language changes
   useEffect(() => {
-    const data = tarotDataMap[language] || tarotDataMap.en;
-    setDeck(shuffleArray(data.cards));
-    setRevealedCards(new Map());
-    setSelected([]);
+    const fetchCards = async () => {
+      setCardsLoading(true);
+      try {
+        const response = await fetch(`${API_URL}/api/cards/${language}`);
+        if (!response.ok) throw new Error("Failed to fetch cards");
+        const data: TarotData = await response.json();
+        setTarotData(data);
+        setDeck(shuffleArray(data.cards));
+        setRevealedCards(new Map());
+        setSelected([]);
+      } catch (error) {
+        console.error("Error fetching cards:", error);
+        // Fallback: try English
+        try {
+          const fallback = await fetch(`${API_URL}/api/cards/en`);
+          const data: TarotData = await fallback.json();
+          setTarotData(data);
+          setDeck(shuffleArray(data.cards));
+        } catch (e) {
+          console.error("Fallback also failed:", e);
+        }
+      } finally {
+        setCardsLoading(false);
+      }
+    };
+    fetchCards();
   }, [language]);
 
   const handleCardTap = (card: Card, index: number) => {
     if (selected.length >= requiredCards) return;
     if (revealedCards.has(index)) return;
 
-    const orientation: "upright" | "reversed" = Math.random() > 0.5 ? "upright" : "reversed";
+    // Merkezi RNG kullanarak orientation belirle (%30 ters)
+    const orientation = getOrientation({ reversedRate: 0.3, reversalsEnabled: true });
     
     let position: SelectedCard["position"];
     const positions = positionArrays[spread || ""];
@@ -250,11 +260,23 @@ export default function PickScreen() {
   };
 
   const handleShuffle = () => {
-    const data = tarotDataMap[language] || tarotDataMap.en;
-    setDeck(shuffleArray(data.cards));
+    if (!tarotData) return;
+    setDeck(shuffleArray(tarotData.cards));
     setRevealedCards(new Map());
     setSelected([]);
   };
+
+  // Loading state while fetching cards
+  if (cardsLoading) {
+    return (
+      <GradientBackground>
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color="#a855f7" />
+          <Text style={styles.loadingText}>{t("shuffle") || "Yükleniyor..."}</Text>
+        </View>
+      </GradientBackground>
+    );
+  }
 
   return (
     <GradientBackground>
@@ -271,35 +293,6 @@ export default function PickScreen() {
         </TouchableOpacity>
       </View>
 
-      {/* Focus Area Selector for Yes/No - Flat design */}
-      {spread === "yes_no" && (
-        <View style={styles.focusSection}>
-          <Text style={styles.focusSectionTitle}>{t("selectFocusArea")}</Text>
-          <View style={styles.focusGrid}>
-            {focusAreas.map((area) => (
-              <TouchableOpacity
-                key={area}
-                onPress={() => setFocusArea(area)}
-                disabled={selected.length > 0}
-                style={[
-                  styles.focusButton,
-                  focusArea === area && styles.focusButtonActive,
-                  selected.length > 0 && styles.focusButtonDisabled,
-                ]}
-              >
-                <Text
-                  style={[
-                    styles.focusButtonText,
-                    focusArea === area && styles.focusButtonTextActive,
-                  ]}
-                >
-                  {t(area)}
-                </Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-        </View>
-      )}
 
       {/* Selected Cards Display - Minimal chips */}
       <View style={styles.selectedSection}>
@@ -360,6 +353,16 @@ export default function PickScreen() {
 }
 
 const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  loadingText: {
+    color: "rgba(255, 255, 255, 0.5)",
+    marginTop: 16,
+    fontSize: 16,
+  },
   header: {
     flexDirection: "row",
     justifyContent: "space-between",
@@ -383,42 +386,6 @@ const styles = StyleSheet.create({
   },
   shuffleButtonDisabled: {
     color: "rgba(255, 255, 255, 0.3)",
-  },
-  focusSection: {
-    padding: 16,
-    borderBottomWidth: 1,
-    borderBottomColor: "rgba(255, 255, 255, 0.1)",
-  },
-  focusSectionTitle: {
-    color: "rgba(255, 255, 255, 0.5)",
-    fontSize: 14,
-    marginBottom: 12,
-  },
-  focusGrid: {
-    flexDirection: "row",
-    gap: 10,
-  },
-  focusButton: {
-    paddingVertical: 10,
-    paddingHorizontal: 16,
-    borderRadius: 10,
-  },
-  focusButtonActive: {
-    backgroundColor: "rgba(168, 85, 247, 0.2)",
-    borderWidth: 1,
-    borderColor: "#a855f7",
-  },
-  focusButtonDisabled: {
-    opacity: 0.4,
-  },
-  focusButtonText: {
-    color: "rgba(255, 255, 255, 0.5)",
-    fontSize: 14,
-    fontWeight: "500",
-  },
-  focusButtonTextActive: {
-    color: "#fff",
-    fontWeight: "600",
   },
   selectedSection: {
     padding: 16,

@@ -20,14 +20,33 @@ import type {
   WealthFlowReading,
 } from "../types/tarot";
 
-// Backend API URL - prefers EXPO_PUBLIC_API_URL, falls back to Expo host IP
+// Backend API URL - always use dynamic Expo host IP
 const hostUri =
   Constants.expoConfig?.hostUri ||
   (Constants as { manifest?: { hostUri?: string } }).manifest?.hostUri ||
   (Constants as { manifest2?: { extra?: { expoGo?: { debuggerHost?: string } } } })
     .manifest2?.extra?.expoGo?.debuggerHost;
 const host = hostUri ? hostUri.split(":")[0] : "localhost";
-const API_URL = process.env.EXPO_PUBLIC_API_URL || `http://${host}:3001`;
+const API_URL = `http://${host}:3001`;
+
+// Debug log API URL on load
+console.log("[useReading] API_URL:", API_URL, "| hostUri:", hostUri);
+
+// Fetch with timeout helper
+const fetchWithTimeout = async (url: string, options: RequestInit, timeoutMs = 60000): Promise<Response> => {
+  const controller = new AbortController();
+  const timeoutId = setTimeout(() => controller.abort(), timeoutMs);
+  
+  try {
+    const response = await fetch(url, {
+      ...options,
+      signal: controller.signal,
+    });
+    return response;
+  } finally {
+    clearTimeout(timeoutId);
+  }
+};
 
 interface SingleCardPayload {
   language: Language;
@@ -209,7 +228,8 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      console.log("[useReading] Calling API for single_card...");
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -222,9 +242,14 @@ export function useReading() {
       }
 
       const data = await response.json();
+      console.log("[useReading] single_card response received");
       return data as SingleCardReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      console.error("[useReading] single_card error:", errorMsg);
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -249,7 +274,8 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      console.log("[useReading] Calling API for three_card...");
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -262,9 +288,14 @@ export function useReading() {
       }
 
       const data = await response.json();
+      console.log("[useReading] three_card response received");
       return data as ThreeCardReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      console.error("[useReading] three_card error:", errorMsg);
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -290,7 +321,8 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      console.log("[useReading] Calling API for SOA...");
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -305,7 +337,10 @@ export function useReading() {
       const data = await response.json();
       return data as SOAReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -331,7 +366,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -346,7 +381,10 @@ export function useReading() {
       const data = await response.json();
       return data as DestinysEmbraceReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -372,7 +410,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -387,7 +425,10 @@ export function useReading() {
       const data = await response.json();
       return data as LoveChoiceReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -413,7 +454,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -428,7 +469,10 @@ export function useReading() {
       const data = await response.json();
       return data as PathToLoveReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -458,7 +502,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -473,7 +517,10 @@ export function useReading() {
       const data = await response.json();
       return data as NewMoonRitualReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -499,7 +546,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -514,7 +561,10 @@ export function useReading() {
       const data = await response.json();
       return data as FullMoonReleaseReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -540,7 +590,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -555,7 +605,10 @@ export function useReading() {
       const data = await response.json();
       return data as MindBodySpiritReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -581,7 +634,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -596,7 +649,10 @@ export function useReading() {
       const data = await response.json();
       return data as CelestialIlluminationReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -626,7 +682,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -641,7 +697,10 @@ export function useReading() {
       const data = await response.json();
       return data as CareerClarityReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -667,7 +726,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -682,7 +741,10 @@ export function useReading() {
       const data = await response.json();
       return data as CareerPathGuideReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -708,7 +770,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -723,7 +785,10 @@ export function useReading() {
       const data = await response.json();
       return data as NewBusinessExplorationReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);
@@ -749,7 +814,7 @@ export function useReading() {
     };
 
     try {
-      const response = await fetch(`${API_URL}/api/reading`, {
+      const response = await fetchWithTimeout(`${API_URL}/api/reading`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -764,7 +829,10 @@ export function useReading() {
       const data = await response.json();
       return data as WealthFlowReading;
     } catch (err) {
-      setError(err instanceof Error ? err.message : "Unknown error");
+      const errorMsg = err instanceof Error 
+        ? (err.name === 'AbortError' ? 'Bağlantı zaman aşımına uğradı' : err.message)
+        : "Unknown error";
+      setError(errorMsg);
       return null;
     } finally {
       setLoading(false);

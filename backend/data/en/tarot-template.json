@@ -1475,7 +1475,7 @@
     {
       "id": 64,
       "name": "Ace of Pentacles",
-      "image": "64_ace_pentacles.jpg",
+      "image": "64_ace_pentacles",
       "arcana": "minor",
       "number": "As",
       "suit": "pentacles",
@@ -1498,7 +1498,7 @@
     {
       "id": 65,
       "name": "Two of Pentacles",
-      "image": "65_two_pentacles.jpg",
+      "image": "65_two_pentacles",
       "arcana": "minor",
       "number": "2",
       "suit": "pentacles",
@@ -1521,7 +1521,7 @@
     {
       "id": 66,
       "name": "Three of Pentacles",
-      "image": "66_three_pentacles.jpg",
+      "image": "66_three_pentacles",
       "arcana": "minor",
       "number": "3",
       "suit": "pentacles",
@@ -1544,7 +1544,7 @@
     {
       "id": 67,
       "name": "Four of Pentacles",
-      "image": "67_four_pentacles.jpg",
+      "image": "67_four_pentacles",
       "arcana": "minor",
       "number": "4",
       "suit": "pentacles",
@@ -1567,7 +1567,7 @@
     {
       "id": 68,
       "name": "Five of Pentacles",
-      "image": "68_five_pentacles.jpg",
+      "image": "68_five_pentacles",
       "arcana": "minor",
       "number": "5",
       "suit": "pentacles",
@@ -1590,7 +1590,7 @@
     {
       "id": 69,
       "name": "Six of Pentacles",
-      "image": "69_six_pentacles.jpg",
+      "image": "69_six_pentacles",
       "arcana": "minor",
       "number": "6",
       "suit": "pentacles",
@@ -1613,7 +1613,7 @@
     {
       "id": 70,
       "name": "Seven of Pentacles",
-      "image": "70_seven_pentacles.jpg",
+      "image": "70_seven_pentacles",
       "arcana": "minor",
       "number": "7",
       "suit": "pentacles",
@@ -1636,7 +1636,7 @@
     {
       "id": 71,
       "name": "Eight of Pentacles",
-      "image": "71_eight_pentacles.jpg",
+      "image": "71_eight_pentacles",
       "arcana": "minor",
       "number": "8",
       "suit": "pentacles",
@@ -1659,7 +1659,7 @@
     {
       "id": 72,
       "name": "Nine of Pentacles",
-      "image": "72_nine_pentacles.jpg",
+      "image": "72_nine_pentacles",
       "arcana": "minor",
       "number": "9",
       "suit": "pentacles",
@@ -1682,7 +1682,7 @@
     {
       "id": 73,
       "name": "Ten of Pentacles",
-      "image": "73_ten_pentacles.jpg",
+      "image": "73_ten_pentacles",
       "arcana": "minor",
       "number": "10",
       "suit": "pentacles",
@@ -1705,7 +1705,7 @@
     {
       "id": 74,
       "name": "Page of Pentacles",
-      "image": "74_page_pentacles.jpg",
+      "image": "74_page_pentacles",
       "arcana": "minor",
       "number": "Prens",
       "suit": "pentacles",
@@ -1728,7 +1728,7 @@
     {
       "id": 75,
       "name": "Knight of Pentacles",
-      "image": "75_knight_pentacles.jpg",
+      "image": "75_knight_pentacles",
       "arcana": "minor",
       "number": "Şövalye",
       "suit": "pentacles",
@@ -1751,7 +1751,7 @@
     {
       "id": 76,
       "name": "Queen of Pentacles",
-      "image": "76_queen_pentacles.jpg",
+      "image": "76_queen_pentacles",
       "arcana": "minor",
       "number": "Kraliçe",
       "suit": "pentacles",
@@ -1774,7 +1774,7 @@
     {
       "id": 77,
       "name": "King of Pentacles",
-      "image": "77_king_pentacles.jpg",
+      "image": "77_king_pentacles",
       "arcana": "minor",
       "number": "Kral",
       "suit": "pentacles",

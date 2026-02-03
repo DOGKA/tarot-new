@@ -1,5 +1,7 @@
 {
-  "Deli": {
+  "_comment": "Yes/No Clarity - cardKey bazlı, Türkçe shortReason'lar (tarot-template stilinde)",
+  "_version": "2.0",
+  "00_fool": {
     "clarityWeight": 15,
     "keywords": {
       "general": [
@@ -16,15 +18,15 @@
       ],
       "spiritual": [
         "içsel yolculuk",
-        "ruhsal gelişim"
+        "keşif"
       ]
     },
     "shortReason": {
-      "upright": "Evet; yeni bir sayfa açmak için uygun bir eşiktesin.",
-      "reversed": "Hayır; düşünmeden atılan adım sonradan uğraştırır."
+      "upright": "Evet; bilinmeyene adım atmak için cesaretin seninle. Yeter ki içindeki sesi bastırma.",
+      "reversed": "Şartlı Evet; korkular yavaşlatıyor olabilir. Durdurmak değil, fark etmek yeterli."
     }
   },
-  "Büyücü": {
+  "01_magician": {
     "clarityWeight": 22,
     "keywords": {
       "general": [
@@ -40,16 +42,16 @@
         "başarı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "odak",
+        "niyet"
       ]
     },
     "shortReason": {
-      "upright": "Evet; elindeki imkanlar niyetini gerçeğe çevirmeye yeter.",
-      "reversed": "Hayır; niyet var ama hazırlık dağınık, önce toparla."
+      "upright": "Evet; gereken her şey sende var. Şimdi harekete geçme zamanı.",
+      "reversed": "Şartlı Evet; niyet dağınık olabilir. Önce odaklan, sonra adım at."
     }
   },
-  "Azize": {
+  "02_high_priestess": {
     "clarityWeight": 5,
     "keywords": {
       "general": [
@@ -65,16 +67,16 @@
         "bilgi"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "iç ses",
+        "farkındalık"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; perde arkasında kalanlar var, acele hüküm verme.",
-      "reversed": "Hayır; iç sesin uyarıyor, ama tablo hâlâ bulanık."
+      "upright": "Belirsiz; görünmeyenler var. Sezgin seni yönlendirecek ama cevap dışarıda değil.",
+      "reversed": "Belirsiz; iç sesin fısıldıyor ama acele cevap istiyorsan henüz zamanı değil."
     }
   },
-  "İmparatoriçe": {
+  "03_empress": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -90,16 +92,16 @@
         "büyüme"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "beslenme",
+        "doğurganlık"
       ]
     },
     "shortReason": {
-      "upright": "Evet; destek, bereket ve büyüme ihtimali yüksek.",
-      "reversed": "Hayır; ihmal edilen bir alan sonucu kesiyor."
+      "upright": "Evet; doğurgan bir dönemdesin. Şartlar verimli, meyve zamanı yakın.",
+      "reversed": "Şartlı Evet; ilgisiz kalan bir alan gelişimi engelliyor. Önce ona yönel."
     }
   },
-  "İmparator": {
+  "04_emperor": {
     "clarityWeight": 27,
     "keywords": {
       "general": [
@@ -115,16 +117,16 @@
         "kontrol"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "yapı",
+        "sınır"
       ]
     },
     "shortReason": {
-      "upright": "Evet; net çerçeve kurarsan kontrol sende kalır.",
-      "reversed": "Hayır; güç savaşı ya da katılık ilerlemeyi bozar."
+      "upright": "Evet; sağlam adımlarla ilerliyorsun. Güç seninle, yapıyı kur.",
+      "reversed": "Şartlı Evet; kontrol arzusu esnekliği engelliyor olabilir. Otorite değil denge lazım."
     }
   },
-  "Aziz": {
+  "05_hierophant": {
     "clarityWeight": 15,
     "keywords": {
       "general": [
@@ -140,16 +142,16 @@
         "eğitim"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "öğreti",
+        "aidiyet"
       ]
     },
     "shortReason": {
-      "upright": "Evet; bilinen yöntem ve doğru rehberlik iş görür.",
-      "reversed": "Hayır; mevcut kural seti sana uymuyor, yol yeniden çizilmeli."
+      "upright": "Evet; geleneksel yollar işe yarayabilir. Güvendiğin bir rehbere kulak ver.",
+      "reversed": "Şartlı Evet; kurallar dar geliyorsa, kendi doğru yolunu çizmelisin."
     }
   },
-  "Aşıklar": {
+  "06_lovers": {
     "clarityWeight": 14,
     "keywords": {
       "general": [
@@ -165,16 +167,16 @@
         "karar"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "değerler",
+        "bütünlük"
       ]
     },
     "shortReason": {
-      "upright": "Evet; uyum yakalanır, seçim kalpten yapılırsa.",
-      "reversed": "Hayır; ikilem büyüyor, netleşmeden adım atma."
+      "upright": "Belirsiz; bir kararın eşiğindesin. Cevap kalbinin yöneldiği yerde.",
+      "reversed": "Belirsiz; içsel çelişkiler kararı bulandırıyor. Netlik gelmeden acele etme."
     }
   },
-  "Savaş Arabası": {
+  "07_chariot": {
     "clarityWeight": 28,
     "keywords": {
       "general": [
@@ -190,16 +192,16 @@
         "motivasyon"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "odak",
+        "yön"
       ]
     },
     "shortReason": {
-      "upright": "Evet; irade ve disiplinle hedefe varılır.",
-      "reversed": "Hayır; direksiyon kaçıyor, yön dağılmaya açık."
+      "upright": "Evet; kontrol sende. Hedef belli, irade varsa yol da açık.",
+      "reversed": "Şartlı Evet; enerjin dağılmış olabilir. Önce ne istediğini netleştir."
     }
   },
-  "Güç": {
+  "08_strength": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -215,16 +217,16 @@
         "azim"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "içsel güç",
+        "denge"
       ]
     },
     "shortReason": {
-      "upright": "Evet; sakin güçle ilerlersen sonuç alırsın.",
-      "reversed": "Hayır; özgüven düşmüş, baskıyla değil sabırla toparlanır."
+      "upright": "Evet; yumuşak ama kararlı bir güç seni destekliyor. Sabırla yürü.",
+      "reversed": "Şartlı Evet; özdeğer dalgalanıyor olabilir. Gücünü hatırla ve ona yaslan."
     }
   },
-  "Ermiş": {
+  "09_hermit": {
     "clarityWeight": 10,
     "keywords": {
       "general": [
@@ -240,16 +242,16 @@
         "planlama"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "bilgelik",
+        "sessizlik"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; içe dönüp düşünmeden net bir cevap çıkmaz.",
-      "reversed": "Hayır; yalnızlaşmak çözüm değil, doğru kişiden fikir al."
+      "upright": "Belirsiz; cevap dış dünyada değil. İçine dönmeden ilerlemek zor.",
+      "reversed": "Belirsiz; çok fazla içe dönmek seni yalnızlığa itebilir. Paylaşmayı dene."
     }
   },
-  "Kader Çarkı": {
+  "10_wheel_of_fortune": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -265,16 +267,16 @@
         "dönüm"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "akış",
+        "teslimiyet"
       ]
     },
     "shortReason": {
-      "upright": "Evet; şartlar lehine dönebilir, fırsat anını kollayorsun.",
-      "reversed": "Hayır; zamanlama ters, aynı döngü tekrar edebilir."
+      "upright": "Evet; kader senin lehine dönüyor. Değişimin getirdiği fırsatlara açık kal.",
+      "reversed": "Şartlı Evet; döngüsel bir takılma hali var. Yeniden başlamak için direnç yerine teslimiyet gerek."
     }
   },
-  "Adalet": {
+  "11_justice": {
     "clarityWeight": 25,
     "keywords": {
       "general": [
@@ -290,16 +292,16 @@
         "sözleşme"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "karma",
+        "sorumluluk"
       ]
     },
     "shortReason": {
-      "upright": "Evet; adil ve doğru olan taraf kazanır.",
-      "reversed": "Hayır; denge bozulmuş, eksik bilgiyle hüküm vermek riskli."
+      "upright": "Evet; dürüstlükle ve dengeyle yaklaştıysan, hak ettiğin karşılığı alacaksın.",
+      "reversed": "Şartlı Evet; içsel veya dışsal bir dengesizlik kararı etkiliyor olabilir. Önce gerçeği tam gör."
     }
   },
-  "Asılan Adam": {
+  "12_hanged_man": {
     "clarityWeight": 5,
     "keywords": {
       "general": [
@@ -315,16 +317,16 @@
         "bakış"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "teslimiyet",
+        "aydınlanma"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; beklemek ve bakış açısını değiştirmek gerekiyor.",
-      "reversed": "Hayır; zorlayınca açılmıyor, inat uzatır."
+      "upright": "Belirsiz; henüz netlik için gereken içsel teslimiyet oluşmamış olabilir. Süreç devam ediyor.",
+      "reversed": "Belirsiz; erteleme ya da inatla tutunma, cevabı bulmanı engelliyor olabilir. Bakış açını değiştir."
     }
   },
-  "Ölüm": {
+  "13_death": {
     "clarityWeight": 16,
     "keywords": {
       "general": [
@@ -340,16 +342,16 @@
         "bitiş"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "bırakma",
+        "yeniden doğuş"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; eski kapanmadan yeniye kapı açılmaz.",
-      "reversed": "Hayır; değişime direnç işi geciktiriyor."
+      "upright": "Evet; kapanan bir kapı yeni bir başlangıcın önünü açıyor. Dönüşüme direnme.",
+      "reversed": "Şartlı Evet; eskiyi bırakmamak yeniye geçişi zorlaştırıyor. Bitmesi gereken şey hâlâ hayatta tutuluyor olabilir."
     }
   },
-  "Denge": {
+  "14_temperance": {
     "clarityWeight": 15,
     "keywords": {
       "general": [
@@ -365,16 +367,16 @@
         "işbirliği"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "bütünleşme",
+        "akış"
       ]
     },
     "shortReason": {
-      "upright": "Evet; dengeyi kurarsan süreç kendiliğinden akar.",
-      "reversed": "Hayır; ölçü kaçmış, önce ayar tuttur."
+      "upright": "Evet; ölçülü adımlar ve sabır sayesinde uyumlu bir çözüm mümkün.",
+      "reversed": "Şartlı Evet; dengesizlik ya da aşırılık karar vermeni zorlaştırıyor olabilir. Önce merkezine dön."
     }
   },
-  "Şeytan": {
+  "15_devil": {
     "clarityWeight": 8,
     "keywords": {
       "general": [
@@ -390,16 +392,16 @@
         "zorlama"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "gölge",
+        "bilinçdışı"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; bağlayan bir alışkanlık ya da çıkar ilişkisi var.",
-      "reversed": "Hayır; çözülme başlıyor ama henüz güvenli değil."
+      "upright": "Hayır; bağımlılıklar, takıntılar veya sağlıksız bağlar bu yolda ilerlemene engel olabilir.",
+      "reversed": "Hayır; yüzleşmeden kaçtığın bir durum, seni görünmez şekilde bağlı tutuyor olabilir. Özgürleşmeden adım atmak riskli."
     }
   },
-  "Yıkılan Kule": {
+  "16_tower": {
     "clarityWeight": 14,
     "keywords": {
       "general": [
@@ -415,16 +417,16 @@
         "sarsıntı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "uyanış",
+        "gerçekle yüzleşme"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; ani bir kırılma planı altüst edebilir.",
-      "reversed": "Hayır; sarsıntının etkisi sürüyor, temkin şart."
+      "upright": "Hayır; ani bir kırılma ya da şok etkisi yaratabilecek bir durum söz konusu. Önce yıkımı anla, sonra yeniden kur.",
+      "reversed": "Hayır; gecikmiş bir yıkım ya da ertelenmiş bir yüzleşme içindesin. Sarsıntı kaçınılmazsa direnç yerine hazırlık gerek."
     }
   },
-  "Yıldız": {
+  "17_star": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -440,16 +442,16 @@
         "potansiyel"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "inanç",
+        "rehberlik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; umut var ve yol yavaş yavaş açılıyor.",
-      "reversed": "Hayır; ışık sönmüyor ama önce inancı tazele."
+      "upright": "Evet; umut, ilham ve iyileşme enerjisi seninle. İçten gelen bir evet bu.",
+      "reversed": "Şartlı Evet; inancın zayıflamış olabilir. Umudu yeniden bulmadan harekete geçmek tam sonuç getirmeyebilir."
     }
   },
-  "Ay": {
+  "18_moon": {
     "clarityWeight": 3,
     "keywords": {
       "general": [
@@ -465,16 +467,16 @@
         "gizem"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "bilinçdışı",
+        "rüyalar"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; sis var, şu an net karar zamanı değil.",
-      "reversed": "Hayır; bazı şeyler ortaya çıkıyor ama henüz tam aydınlık değil."
+      "upright": "Belirsiz; yanılsamalar ve kararsızlıklar gerçek cevabı gölgede bırakıyor olabilir. Zaman tanı.",
+      "reversed": "Belirsiz; sis kalkmaya başlıyor ama henüz net bir görüntü oluşmamış olabilir. Sezginin süzgecinden geçir."
     }
   },
-  "Güneş": {
+  "19_sun": {
     "clarityWeight": 30,
     "keywords": {
       "general": [
@@ -490,16 +492,16 @@
         "tanınma"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "aydınlanma",
+        "canlılık"
       ]
     },
     "shortReason": {
-      "upright": "Evet; sonuç aydınlık, olumlu gelişme görünür.",
-      "reversed": "Hayır; gecikme var, şartlar henüz olgunlaşmadı."
+      "upright": "Evet; netlik, neşe ve destekleyici enerjiler seninle. Bu evet içini ısıtacak türden.",
+      "reversed": "Şartlı Evet; iyimserlik içinde aşırıya kaçma olabilir. Netlik kazandığında tam parlaklıkla ilerle."
     }
   },
-  "Mahkeme": {
+  "20_judgement": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -515,16 +517,16 @@
         "terfi"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "çağrı",
+        "hesaplaşma"
       ]
     },
     "shortReason": {
-      "upright": "Evet; karar netleşir, geçmişin hesabı kapanır.",
-      "reversed": "Hayır; erteleme ve kararsızlık aynı noktada tutar."
+      "upright": "Evet; geçmişten gelen dersler tamamlandıysa, yeni bir başlangıç mümkün. Vicdanınla uyumluysan cevabın da net.",
+      "reversed": "Şartlı Evet; eskiye takılı kalmak ya da sorumluluktan kaçınmak ilerleyişi yavaşlatıyor olabilir. İçsel çağrıyı duyman gerek."
     }
   },
-  "Dünya": {
+  "21_world": {
     "clarityWeight": 22,
     "keywords": {
       "general": [
@@ -540,16 +542,16 @@
         "başarı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "döngü",
+        "bütünleşme"
       ]
     },
     "shortReason": {
-      "upright": "Evet; süreç tamamlanır, hedefe varılır.",
-      "reversed": "Hayır; son adım eksik, bitirmeden olmaz."
+      "upright": "Evet; bir döngü tamamlandı, başarı ve bütünlük enerjisi seninle. Şimdi meyveleri toplama zamanı.",
+      "reversed": "Şartlı Evet; küçük bir eksik ya da tamamlanmamışlık hissi olabilir. Kapanış için son adımı atmadan netlik gelmeyebilir."
     }
   },
-  "Değnek Ası": {
+  "22_ace_wands": {
     "clarityWeight": 25,
     "keywords": {
       "general": [
@@ -565,16 +567,16 @@
         "girişim"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "ilham",
+        "ateşlenme"
       ]
     },
     "shortReason": {
-      "upright": "Evet; güçlü bir kıvılcım var, başlatmak için ideal.",
-      "reversed": "Hayır; heves var ama enerji dağınık, çabuk söner."
+      "upright": "Evet; içsel kıvılcım ve yaratıcı dürtü harekete geçmek için seni çağırıyor.",
+      "reversed": "Şartlı Evet; motivasyon eksikliği veya erteleme eğilimi kararı gölgeleyebilir. İstek var ama enerji dağınık."
     }
   },
-  "Değnek İkilisi": {
+  "23_two_wands": {
     "clarityWeight": 12,
     "keywords": {
       "general": [
@@ -590,16 +592,16 @@
         "ortaklık"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "vizyon",
+        "yön"
       ]
     },
     "shortReason": {
-      "upright": "Evet; planı netleştirirsen yol açılır.",
-      "reversed": "Hayır; acele karar erken, seçenekleri görmeden olmaz."
+      "upright": "Evet; planlar netleşiyor, ileriye dönük vizyon güç kazanıyor. Cesur adımlar ödüllendirilecek.",
+      "reversed": "Belirsiz; tereddüt ve aşırı ihtiyat cesareti bastırıyor olabilir. İçteki yön net değilse karar da flu kalır."
     }
   },
-  "Değnek Üçlüsü": {
+  "24_three_wands": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -615,16 +617,16 @@
         "genişleme"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "keşif",
+        "ufuk"
       ]
     },
     "shortReason": {
-      "upright": "Evet; ufuk genişliyor, ilerleme devam eder.",
-      "reversed": "Hayır; gecikme ve aksaklıklar süreci uzatır."
+      "upright": "Evet; atılan tohumlar meyve veriyor. Ufukta fırsatlar beliriyor.",
+      "reversed": "Şartlı Evet; beklentiler net ama dış koşullar beklenenden yavaş gelişebilir. Sabır testi olabilir."
     }
   },
-  "Değnek Dörtlüsü": {
+  "25_four_wands": {
     "clarityWeight": 22,
     "keywords": {
       "general": [
@@ -640,16 +642,16 @@
         "kutlama"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "temel",
+        "kök"
       ]
     },
     "shortReason": {
-      "upright": "Evet; ortam uygun, destek ve uyum var.",
-      "reversed": "Hayır; temel sağlam değil, önce düzen kur."
+      "upright": "Evet; kutlama, istikrar ve ortak sevinç enerjisiyle destekleniyor. Zemin sağlam.",
+      "reversed": "Şartlı Evet; dışarıdan her şey güzel görünse de içte huzursuzluk olabilir. Önce içte dengeyi bul."
     }
   },
-  "Değnek Beşlisi": {
+  "26_five_wands": {
     "clarityWeight": 8,
     "keywords": {
       "general": [
@@ -665,16 +667,16 @@
         "mücadele"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "ego",
+        "sürtüşme"
       ]
     },
     "shortReason": {
-      "upright": "Evet; olur ama çekişme ve rekabetle ilerler.",
-      "reversed": "Hayır; gereksiz tartışma enerjiyi tüketir."
+      "upright": "Hayır; fikir ayrılıkları ya da rekabet ortamı net bir ilerlemeyi engelliyor.",
+      "reversed": "Şartlı Evet; çatışmalar azalıyor olabilir ama hâlâ açıklığa ihtiyaç var. Uyum sağlanmadan netlik gelmez."
     }
   },
-  "Değnek Altılısı": {
+  "27_six_wands": {
     "clarityWeight": 26,
     "keywords": {
       "general": [
@@ -690,16 +692,16 @@
         "terfi"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "gurur",
+        "liderlik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; görünür başarı ve onay ihtimali yüksek.",
-      "reversed": "Hayır; destek zayıf, alkış gecikir."
+      "upright": "Evet; zafer, tanınma ve ileriye taşıyan bir özgüven enerjisiyle cevap olumlu.",
+      "reversed": "Şartlı Evet; başarıya yakınsın ama dış onay ihtiyacı kararı manipüle ediyor olabilir."
     }
   },
-  "Değnek Yedilisi": {
+  "28_seven_wands": {
     "clarityWeight": 12,
     "keywords": {
       "general": [
@@ -715,16 +717,16 @@
         "pozisyon"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "sınır",
+        "duruş"
       ]
     },
     "shortReason": {
-      "upright": "Evet; pozisyonunu korursan sonuç alırsın.",
-      "reversed": "Hayır; savunma düşüyor, yük tek başına ağır."
+      "upright": "Evet; duruşunu koruyorsan ve haklı bir zemindeysen destek seninle.",
+      "reversed": "Şartlı Evet; yorgunluk ya da motivasyon düşüşü mücadele gücünü etkiliyor olabilir. Kendini yeniden konumlandır."
     }
   },
-  "Değnek Sekizlisi": {
+  "29_eight_wands": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -740,16 +742,16 @@
         "momentum"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "akış",
+        "ivme"
       ]
     },
     "shortReason": {
-      "upright": "Evet; hızlı haber ve ivme gelir.",
-      "reversed": "Hayır; iletişim dağılır, işler aksar."
+      "upright": "Evet; hızlı gelişmeler ve açık iletişimle karar yerine oturuyor.",
+      "reversed": "Şartlı Evet; ertelemeler ya da iletişim aksaklıkları süreci yavaşlatabilir ama yön doğru."
     }
   },
-  "Değnek Dokuzlusu": {
+  "30_nine_wands": {
     "clarityWeight": 12,
     "keywords": {
       "general": [
@@ -765,16 +767,16 @@
         "son adım"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "test",
+        "olgunlaşma"
       ]
     },
     "shortReason": {
-      "upright": "Evet; yorulsan da son düzlüğe girdin, dayan.",
-      "reversed": "Hayır; yorgunluk kararını bozabilir, ara ver."
+      "upright": "Şartlı Evet; sınırlarını iyi belirlemişsen ilerleyebilirsin ama temkin elden bırakılmamalı.",
+      "reversed": "Şartlı Evet; savunma hali aşırıya kaçmış olabilir. Kapanmadan açık kalmak cevabı netleştirebilir."
     }
   },
-  "Değnek Onlusu": {
+  "31_ten_wands": {
     "clarityWeight": 8,
     "keywords": {
       "general": [
@@ -790,16 +792,16 @@
         "stres"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "taşıma",
+        "bırakma"
       ]
     },
     "shortReason": {
-      "upright": "Evet; olur ama bedeli yük ve sorumluluk olur.",
-      "reversed": "Hayır; yük taşmıyor, sadeleştirmeden yürünmez."
+      "upright": "Hayır; fazlasıyla yüklenmiş ve tükenmiş bir hâl karar vermeyi zorlaştırıyor. Hafiflemeden ilerleme olmaz.",
+      "reversed": "Şartlı Evet; yükleri bırakmaya başlıyorsan yol açılıyor. Ama hâlâ taşınan fazlalıklar var."
     }
   },
-  "Değnek Prensi": {
+  "32_page_wands": {
     "clarityWeight": 14,
     "keywords": {
       "general": [
@@ -815,16 +817,16 @@
         "öğrenme"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "merak",
+        "keşif"
       ]
     },
     "shortReason": {
-      "upright": "Evet; yeni bir haber ya da fırsat kapıda.",
-      "reversed": "Hayır; heves çok, istikrar az."
+      "upright": "Evet; yeni fikirler ve içsel heyecan seni harekete çağırıyor. Kalbinin peşinden git.",
+      "reversed": "Şartlı Evet; enerjin var ama yönsüz olabilir. Hedef belli olmadan tutku yeterli değil."
     }
   },
-  "Değnek Şövalyesi": {
+  "33_knight_wands": {
     "clarityWeight": 16,
     "keywords": {
       "general": [
@@ -840,16 +842,16 @@
         "enerji"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "hareket",
+        "ateş"
       ]
     },
     "shortReason": {
-      "upright": "Evet; cesur çıkış kapı açar, hız kazandırır.",
-      "reversed": "Hayır; fevrilik hata yaptırır, yakar yıkar."
+      "upright": "Evet; tutku, cesaret ve karizma seni destekliyor. Harekete geçmek için güçlü bir an.",
+      "reversed": "Şartlı Evet; acelecilik ya da sabırsızlık kararın sürdürülebilirliğini etkileyebilir."
     }
   },
-  "Değnek Kraliçesi": {
+  "34_queen_wands": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -865,16 +867,16 @@
         "yaratıcılık"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "enerji",
+        "ilham"
       ]
     },
     "shortReason": {
-      "upright": "Evet; özgüven ve çekim gücü işi taşır.",
-      "reversed": "Hayır; kıskançlık ve huzursuzluk düzeni bozar."
+      "upright": "Evet; kendine güvenin ve karizman çevreni etkiliyor. Cevap hem sende hem sende olanın ışığında.",
+      "reversed": "Şartlı Evet; dışarıya güçlü görünsen de içsel motivasyon sorgulanıyor olabilir. Gücünü içten hissetmen gerek."
     }
   },
-  "Değnek Kralı": {
+  "35_king_wands": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -890,16 +892,16 @@
         "başarı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "yön",
+        "irade"
       ]
     },
     "shortReason": {
-      "upright": "Evet; vizyon ve liderlikle yol alınır.",
-      "reversed": "Hayır; kontrol hırsı ters teper."
+      "upright": "Evet; liderlik, vizyon ve kararlılık cevabı destekliyor. Yön net.",
+      "reversed": "Şartlı Evet; yön belli ama strateji eksik olabilir. Yanmadan yakmaya çalış."
     }
   },
-  "Kupa Ası": {
+  "36_ace_cups": {
     "clarityWeight": 22,
     "keywords": {
       "general": [
@@ -915,16 +917,16 @@
         "tatmin"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "kalp",
+        "sezgi"
       ]
     },
     "shortReason": {
-      "upright": "Evet; kalpten bir başlangıç ve açılım var.",
-      "reversed": "Hayır; duygu karması net karar verdirmez."
+      "upright": "Evet; duygusal bir tazelik, kalpten gelen bir açılım söz konusu. İçinden geçen ses bu kez doğru yerde yankılanıyor.",
+      "reversed": "Şartlı Evet; bastırılan ya da yönsüz bırakılan duygular netliğe ulaşmayı zorlaştırıyor. Hislerini önce sen duy."
     }
   },
-  "Kupa İkilisi": {
+  "37_two_cups": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -940,16 +942,16 @@
         "ortaklık"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "denge",
+        "karşılıklılık"
       ]
     },
     "shortReason": {
-      "upright": "Evet; karşılıklı bağ ve anlaşma mümkün.",
-      "reversed": "Hayır; denge bozulmuş, eşitlik yok."
+      "upright": "Evet; uyumlu bağlar ve karşılıklı anlayış enerjisi mevcut. Kalpler aynı ritimde atıyor.",
+      "reversed": "Şartlı Evet; duygusal uyumda geçici bir kırılma olabilir. Ama köprü hâlâ yıkılmadı, tamir mümkün."
     }
   },
-  "Kupa Üçlüsü": {
+  "38_three_cups": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -965,16 +967,16 @@
         "başarı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "topluluk",
+        "paylaşım"
       ]
     },
     "shortReason": {
-      "upright": "Evet; çevreden destek, kutlama ve birliktelik var.",
-      "reversed": "Hayır; dağınık sosyal enerji işi zayıflatır."
+      "upright": "Evet; kutlama, dostluk ve duygusal destek seni sarıyor. Paylaşım dolu bir evet bu.",
+      "reversed": "Şartlı Evet; dışsal gürültü ya da duygusal karmaşa cevapla arana mesafe koyabilir. Önce sesleri ayıkla."
     }
   },
-  "Kupa Dörtlüsü": {
+  "39_four_cups": {
     "clarityWeight": 6,
     "keywords": {
       "general": [
@@ -990,16 +992,16 @@
         "duraklama"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "apati",
+        "iç sıkıntısı"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; gönül orada değil, istek düşük.",
-      "reversed": "Hayır; fırsat var ama görmezden geliyorsun."
+      "upright": "Belirsiz; mevcut olanı görmeyen bir ruh hali içinde olabilirsin. Duygusal doyumsuzluk kararını bulandırıyor olabilir.",
+      "reversed": "Belirsiz; yeniye açılmakla eskiye tutunmak arasında kalmış bir durum söz konusu. İçsel durumu netleştirmeden dışsal cevap zor."
     }
   },
-  "Kupa Beşlisi": {
+  "40_five_cups": {
     "clarityWeight": 6,
     "keywords": {
       "general": [
@@ -1015,16 +1017,16 @@
         "pişmanlık"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "yas",
+        "işleme"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; kırgınlık ağır basıyor, toparlanma zaman ister.",
-      "reversed": "Hayır; iyileşme başlar ama acele sonuç bekleme."
+      "upright": "Hayır; geçmişe takılı kalmak, önündeki cevabı görmeni engelliyor olabilir. Yas bitmeden karar netleşmez.",
+      "reversed": "Şartlı Evet; iyileşme sürecine giriyorsun, ama tam anlamıyla toparlanmadan evet demek seni yarıda bırakabilir."
     }
   },
-  "Kupa Altılısı": {
+  "41_six_cups": {
     "clarityWeight": 16,
     "keywords": {
       "general": [
@@ -1040,16 +1042,16 @@
         "tanıdık"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "masumiyet",
+        "kök"
       ]
     },
     "shortReason": {
-      "upright": "Evet; geçmişten bir destek ya da sıcak bir temas gelir.",
-      "reversed": "Hayır; geçmişe takılmak ilerlemeyi keser."
+      "upright": "Evet; geçmişin tatlı yankıları, bugünkü cevabını yumuşatıyor. İçten ve tanıdık bir evet bu.",
+      "reversed": "Şartlı Evet; nostaljiyle takılı kalmak güncel cevabı gölgeleyebilir. Hatıralarla gerçek arasında ayrım gerek."
     }
   },
-  "Kupa Yedilisi": {
+  "42_seven_cups": {
     "clarityWeight": 3,
     "keywords": {
       "general": [
@@ -1065,16 +1067,16 @@
         "belirsizlik"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "illüzyon",
+        "ayırt etme"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; çok seçenek var, hangisi gerçek belli değil.",
-      "reversed": "Hayır; sis dağılıyor ama net seçim için biraz daha zaman var."
+      "upright": "Belirsiz; çok fazla seçenek ya da hayal arasında kalmış olabilirsin. Netlik buğulu olabilir.",
+      "reversed": "Belirsiz; gerçek ile kurgu arasındaki perde kalkıyor ama tam şeffaflık henüz oluşmamış olabilir."
     }
   },
-  "Kupa Sekizlisi": {
+  "43_eight_cups": {
     "clarityWeight": 10,
     "keywords": {
       "general": [
@@ -1090,16 +1092,16 @@
         "değişim"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "bırakma",
+        "yolculuk"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; bu yolda devam etmek yerine uzaklaşmak daha doğru.",
-      "reversed": "Hayır; bırakmak zor ama kalmak da yorar."
+      "upright": "Hayır; artık seni doyurmayan bir durumdan uzaklaşma zamanı. Kalmak değil gitmek doğru olabilir.",
+      "reversed": "Şartlı Evet; gitmek istiyorsun ama hala geri dönüp bakıyorsun. Net bir kopuş olmadan cevap netleşmez."
     }
   },
-  "Kupa Dokuzlusu": {
+  "44_nine_cups": {
     "clarityWeight": 24,
     "keywords": {
       "general": [
@@ -1115,16 +1117,16 @@
         "tatmin"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "şükür",
+        "bolluk"
       ]
     },
     "shortReason": {
-      "upright": "Evet; dilek gerçekleşir, tatmin gelir.",
-      "reversed": "Hayır; beklenti şişmiş, hayal kırıklığı doğurur."
+      "upright": "Evet; dileklerin gerçekleşme enerjisiyle sarılı. İçten gelen bir tatmin duygusu bu evete eşlik ediyor.",
+      "reversed": "Şartlı Evet; dışsal başarı içsel boşlukla gölgeleniyor olabilir. Gerçek tatminin nerede olduğunu fark etmeden yola çıkmak zor."
     }
   },
-  "Kupa Onlusu": {
+  "45_ten_cups": {
     "clarityWeight": 24,
     "keywords": {
       "general": [
@@ -1140,16 +1142,16 @@
         "başarı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "bütünlük",
+        "huzur"
       ]
     },
     "shortReason": {
-      "upright": "Evet; huzur, uyum ve tamamlanma görünür.",
-      "reversed": "Hayır; ev içi/duygusal dengede açık var."
+      "upright": "Evet; duygusal doyum, ailevi huzur ve kalpten gelen bir bütünlük hissi mevcut. Cevap net ve içten.",
+      "reversed": "Şartlı Evet; dışsal huzur görünse de içsel bir kırılma olabilir. Bu evetin tam hissedilmesi için duygusal dengeyi yeniden kurmak gerek."
     }
   },
-  "Kupa Prensi": {
+  "46_page_cups": {
     "clarityWeight": 14,
     "keywords": {
       "general": [
@@ -1165,16 +1167,16 @@
         "haber"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "sezgi",
+        "hassasiyet"
       ]
     },
     "shortReason": {
-      "upright": "Evet; duygusal bir haber ya da tatlı bir teklif gelir.",
-      "reversed": "Hayır; hassasiyet artmış, yanlış anlaşılma kolay."
+      "upright": "Evet; duygusal bir teklif ya da içten bir haber kapıda. Kalbini açık tutmak seni doğru frekansa hizalar.",
+      "reversed": "Şartlı Evet; hassasiyet yüksek, küçük şeyler büyüyebilir. İfade etmeden önce kalbinle hizalan."
     }
   },
-  "Kupa Şövalyesi": {
+  "47_knight_cups": {
     "clarityWeight": 16,
     "keywords": {
       "general": [
@@ -1190,16 +1192,16 @@
         "davet"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "hayal",
+        "idealizm"
       ]
     },
     "shortReason": {
-      "upright": "Evet; romantik bir adım veya nazik bir yaklaşım olur.",
-      "reversed": "Hayır; söz verilip tutulmayabilir, netlik iste."
+      "upright": "Evet; romantik veya yaratıcı bir adım seni duygusal olarak tatmin edebilir. Gelen niyet samimi.",
+      "reversed": "Şartlı Evet; güzel sözler eyleme dönüşmeyebilir. Beklentiyi dengele, hissettiklerini netleştir."
     }
   },
-  "Kupa Kraliçesi": {
+  "48_queen_cups": {
     "clarityWeight": 17,
     "keywords": {
       "general": [
@@ -1215,16 +1217,16 @@
         "destek"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "kalp",
+        "içgörü"
       ]
     },
     "shortReason": {
-      "upright": "Evet; anlayış ve şefkat çözüm getirir.",
-      "reversed": "Hayır; duygular taşmış, sağlıklı sınır şart."
+      "upright": "Evet; şefkat, empati ve sezgisel derinlik seni destekliyor. İçsel sakinliğin rehberin olsun.",
+      "reversed": "Şartlı Evet; aşırı empati sınırları bulanıklaştırıyor olabilir. Kendine de alan tanı."
     }
   },
-  "Kupa Kralı": {
+  "49_king_cups": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -1240,16 +1242,16 @@
         "diplomasi"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "ustalık",
+        "denge"
       ]
     },
     "shortReason": {
-      "upright": "Evet; olgun ve dengeli duruş işi toparlar.",
-      "reversed": "Hayır; duyguyu yönetmek zor, kontrol kaçabilir."
+      "upright": "Evet; duygularla barışık, dengeli bir yaklaşım çözüm getiriyor. İçsel olgunluk sonuç alır.",
+      "reversed": "Şartlı Evet; duygusal baskı veya bastırma kontrolü zorlaştırabilir. Önce duygunu tanı, sonra adım at."
     }
   },
-  "Kılıç Ası": {
+  "50_ace_swords": {
     "clarityWeight": 25,
     "keywords": {
       "general": [
@@ -1265,16 +1267,16 @@
         "başarı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "berraklık",
+        "keskinlik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; netlik gelir, doğru karar keskinleşir.",
-      "reversed": "Hayır; bilgi kirli, yanlış karar ihtimali yüksek."
+      "upright": "Evet; zihinsel netlik ve gerçek ortaya çıkıyor. Doğru karar keskinleşmiş durumda.",
+      "reversed": "Şartlı Evet; bilgi bulanık ya da eksik olabilir. Netleşmeden verilen karar sonradan zorlayabilir."
     }
   },
-  "Kılıç İkilisi": {
+  "51_two_swords": {
     "clarityWeight": 2,
     "keywords": {
       "general": [
@@ -1290,16 +1292,16 @@
         "denge"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "inkâr",
+        "denge arayışı"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; karar askıda, gerçeklerle yüzleşmek gerekiyor.",
-      "reversed": "Hayır; iç çatışma büyüyor, bir şey açığa çıkmadan olmaz."
+      "upright": "Belirsiz; gerçeklerle yüzleşmekten kaçınılıyor olabilir. Karar askıda.",
+      "reversed": "Belirsiz; iç çatışma büyüyor. Görmezden gelinen gerçek artık kapıyı çalıyor."
     }
   },
-  "Kılıç Üçlüsü": {
+  "52_three_swords": {
     "clarityWeight": 8,
     "keywords": {
       "general": [
@@ -1315,16 +1317,16 @@
         "çatışma"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "yas",
+        "kabul"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; kırılma ve acı var, şu an desteklemez.",
-      "reversed": "Hayır; yara kapanıyor ama izleri sürer."
+      "upright": "Hayır; kalp kırıklığı ve zihinsel acı bu yolu desteklemiyor. Şu an iyileşme öncelik.",
+      "reversed": "Hayır; yara kapanıyor ama hassasiyet sürüyor. Karar için erken."
     }
   },
-  "Kılıç Dörtlüsü": {
+  "53_four_swords": {
     "clarityWeight": 10,
     "keywords": {
       "general": [
@@ -1340,16 +1342,16 @@
         "planlama"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "şifa",
+        "sessizlik"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; durup dinlenmek, toparlanmak gerekiyor.",
-      "reversed": "Hayır; zihin hâlâ yorgun, acele çıkış zarar verir."
+      "upright": "Hayır; dinlenme ve toparlanma zamanı. Zihinsel yorgunluk karar gücünü zayıflatıyor.",
+      "reversed": "Hayır; aceleyle harekete geçmek daha fazla tükenmeye yol açabilir."
     }
   },
-  "Kılıç Beşlisi": {
+  "54_five_swords": {
     "clarityWeight": 6,
     "keywords": {
       "general": [
@@ -1365,16 +1367,16 @@
         "haksızlık"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "ego",
+        "yenilgi"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; kazansan da kaybettirir, bedeli yüksek.",
-      "reversed": "Hayır; gerilim azalır ama güven hemen dönmez."
+      "upright": "Hayır; kazanılsa bile bedeli ağır bir durum. Bu yol uzun vadede kaybettirir.",
+      "reversed": "Hayır; gerilim azalıyor ama güven henüz onarılmadı."
     }
   },
-  "Kılıç Altılısı": {
+  "55_six_swords": {
     "clarityWeight": 14,
     "keywords": {
       "general": [
@@ -1390,16 +1392,16 @@
         "taşınma"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "yolculuk",
+        "ilerleme"
       ]
     },
     "shortReason": {
-      "upright": "Evet; daha sakin bir yere geçiş mümkün.",
-      "reversed": "Hayır; geçmişe tutunmak ilerlemeyi engeller."
+      "upright": "Evet; zihinsel olarak daha sakin bir alana geçiş mümkün. İyileşme yönünde.",
+      "reversed": "Şartlı Evet; geçmişe tutunmak ilerlemeyi yavaşlatıyor. Bırakmadan netlik zor."
     }
   },
-  "Kılıç Yedilisi": {
+  "56_seven_swords": {
     "clarityWeight": 5,
     "keywords": {
       "general": [
@@ -1415,16 +1417,16 @@
         "dikkat"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "gölge",
+        "gizli niyet"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; gizli niyetler var, güven zedelenir.",
-      "reversed": "Hayır; saklanan açığa çıkar ama bu da sarsar."
+      "upright": "Hayır; gizli niyetler ya da açık olmayan hamleler güveni zedeliyor.",
+      "reversed": "Hayır; saklananlar ortaya çıkıyor ama bu süreç sarsıcı olabilir."
     }
   },
-  "Kılıç Sekizlisi": {
+  "57_eight_swords": {
     "clarityWeight": 4,
     "keywords": {
       "general": [
@@ -1440,16 +1442,16 @@
         "blokaj"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "zihinsel hapishane",
+        "inanç"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; kısıtlı hissettirir, el kol bağlı.",
-      "reversed": "Hayır; kapı aralanıyor ama tam özgürlük değil."
+      "upright": "Hayır; zihinsel sıkışmışlık hissi güçlü. Şu an özgür bir seçim alanı yok.",
+      "reversed": "Hayır; kapı aralanıyor ama cesaret ve farkındalık olmadan ilerlemek zor."
     }
   },
-  "Kılıç Dokuzlusu": {
+  "58_nine_swords": {
     "clarityWeight": 5,
     "keywords": {
       "general": [
@@ -1465,16 +1467,16 @@
         "kaygı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "zihinsel işkence",
+        "kuruntu"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; kaygı ve kuruntu kararını gölgeler.",
-      "reversed": "Hayır; yük azalır ama zihin hemen susmaz."
+      "upright": "Hayır; kaygı ve kuruntu kararın önüne geçiyor. Zihin dinmeden cevap netleşmez.",
+      "reversed": "Hayır; yük hafifliyor ama zihinsel gürültü henüz tamamen susmadı."
     }
   },
-  "Kılıç Onlusu": {
+  "59_ten_swords": {
     "clarityWeight": 8,
     "keywords": {
       "general": [
@@ -1490,16 +1492,16 @@
         "son"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "karanlık gece",
+        "teslimiyet"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; keskin bir bitiş var, daha fazlası zorlar.",
-      "reversed": "Hayır; dipten dönüş başlar ama süreç yavaş."
+      "upright": "Hayır; keskin bir bitiş enerjisi var. Zorlamak durumu ağırlaştırır.",
+      "reversed": "Hayır; dipten dönüş başlamış olsa da süreç tamamlanmadı."
     }
   },
-  "Kılıç Prensi": {
+  "60_page_swords": {
     "clarityWeight": 12,
     "keywords": {
       "general": [
@@ -1515,16 +1517,16 @@
         "öğrenme"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "sorgulama",
+        "zihinsel keşif"
       ]
     },
     "shortReason": {
-      "upright": "Evet; dikkatli soruşturma ve uyanıklık işe yarar.",
-      "reversed": "Hayır; dedikodu/yanlış bilgi işi bozar."
+      "upright": "Belirsiz; merak ve araştırma var ama sonuç için yeterli olgunluk yok.",
+      "reversed": "Belirsiz; dedikodu ya da yanlış bilgi kararı bozabilir. Teyit şart."
     }
   },
-  "Kılıç Şövalyesi": {
+  "61_knight_swords": {
     "clarityWeight": 16,
     "keywords": {
       "general": [
@@ -1540,16 +1542,16 @@
         "agresif"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "zihinsel hız",
+        "keskinlik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; hızlı ve net hamleyle sonuç alınır.",
-      "reversed": "Hayır; düşünmeden saldırmak ters teper."
+      "upright": "Evet; hızlı ve net bir hamleyle sonuç alınabilir. Kararlılık güçlü.",
+      "reversed": "Şartlı Evet; fevrilik ve sertlik ters etki yaratabilir. Önce düşün."
     }
   },
-  "Kılıç Kraliçesi": {
+  "62_queen_swords": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -1565,16 +1567,16 @@
         "objektiflik"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "berraklık",
+        "ayırt etme"
       ]
     },
     "shortReason": {
-      "upright": "Evet; mantık ve sınır koymak doğru sonucu getirir.",
-      "reversed": "Hayır; sertlik ve kırıcılık kapıları kapatır."
+      "upright": "Evet; mantık, net sınırlar ve dürüstlük doğru sonucu getirir.",
+      "reversed": "Şartlı Evet; aşırı sertlik ya da duygusal kopukluk kapıları kapatabilir."
     }
   },
-  "Kılıç Kralı": {
+  "63_king_swords": {
     "clarityWeight": 20,
     "keywords": {
       "general": [
@@ -1590,16 +1592,16 @@
         "karar"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "ustalık",
+        "netlik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; kuralı koyup adil yönetirsen olur.",
-      "reversed": "Hayır; otorite yanlış kullanılırsa zarar verir."
+      "upright": "Evet; adil, soğukkanlı ve stratejik bir duruşla ilerlemek mümkün.",
+      "reversed": "Şartlı Evet; gücü yanlış kullanmak dengeyi bozabilir. Etik çizgiyi koru."
     }
   },
-  "Tılsım Ası": {
+  "64_ace_pentacles": {
     "clarityWeight": 24,
     "keywords": {
       "general": [
@@ -1615,16 +1617,16 @@
         "teklif"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "topraklama",
+        "somutlaşma"
       ]
     },
     "shortReason": {
-      "upright": "Evet; somut ve sağlam bir fırsat var.",
-      "reversed": "Hayır; maddi zemin oynak, risk büyür."
+      "upright": "Evet; yeni bir maddi fırsat ya da güvenli bir zemin oluşuyor. Bu tohum zamanla sağlam bir ağaca dönüşebilir.",
+      "reversed": "Şartlı Evet; fırsat var ama değerlendirme biçimi sorunlu olabilir. Kaygı ya da güvensizlik onu gölgede bırakıyor olabilir."
     }
   },
-  "Tılsım İkilisi": {
+  "65_two_pentacles": {
     "clarityWeight": 10,
     "keywords": {
       "general": [
@@ -1640,16 +1642,16 @@
         "denge"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "esneklik",
+        "uyum"
       ]
     },
     "shortReason": {
-      "upright": "Evet; denge kurulur, idare edilebilir.",
-      "reversed": "Hayır; yük fazla, bir yerden taşar."
+      "upright": "Belirsiz; karar aşamasındasın. İki seçenek arasında gidip geliyorsan netlik henüz oluşmamış olabilir.",
+      "reversed": "Belirsiz; çok fazla top çeviriyor olabilirsin. Önceliklerini belirlemeden evet ya da hayır cevabı havada kalır."
     }
   },
-  "Tılsım Üçlüsü": {
+  "66_three_pentacles": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -1665,16 +1667,16 @@
         "tanınma"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "zanaat",
+        "öğrenme"
       ]
     },
     "shortReason": {
-      "upright": "Evet; doğru ekip ve planla iş çıkar.",
-      "reversed": "Hayır; koordinasyon bozuk, kalite düşer."
+      "upright": "Evet; iş birliği, ortak çaba ve destek seninle. Sağlam temeller üzerinde ilerlemek mümkün.",
+      "reversed": "Şartlı Evet; takım içi uyumsuzluk ya da yetersiz katkı kararları gölgeliyor olabilir. Güvenilir zemini gözden geçir."
     }
   },
-  "Tılsım Dörtlüsü": {
+  "67_four_pentacles": {
     "clarityWeight": 10,
     "keywords": {
       "general": [
@@ -1690,16 +1692,16 @@
         "tutuculuk"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "tutunma",
+        "korku"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; aşırı tutunma ve kontrol akışı keser.",
-      "reversed": "Hayır; kontrol el değiştirir, güven zayıflar."
+      "upright": "Hayır; tutunma ve kaybetme korkusu seni sabit bir yerde tutuyor olabilir. Akışı engelleyen bir direnç var.",
+      "reversed": "Şartlı Evet; bırakma isteği var ama hâlâ içsel bir tedirginlik taşıyorsun. Cesaretin kararla buluşması gerek."
     }
   },
-  "Tılsım Beşlisi": {
+  "68_five_pentacles": {
     "clarityWeight": 6,
     "keywords": {
       "general": [
@@ -1715,16 +1717,16 @@
         "zorluk"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "kıtlık hissi",
+        "test"
       ]
     },
     "shortReason": {
-      "upright": "Hayır; maddi/duygusal sıkışıklık var, destek gerek.",
-      "reversed": "Hayır; toparlanma olur ama güç toplamak zaman ister."
+      "upright": "Hayır; dışlanmışlık ya da yetersizlik hissi kararı etkiliyor olabilir. Önce içsel yaraları fark etmek gerek.",
+      "reversed": "Şartlı Evet; toparlanma süreci başlamış olabilir. Ama net bir evet için henüz yeterli iyileşme oluşmamış olabilir."
     }
   },
-  "Tılsım Altılısı": {
+  "69_six_pentacles": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -1740,16 +1742,16 @@
         "tanınma"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "bolluk",
+        "döngü"
       ]
     },
     "shortReason": {
-      "upright": "Evet; adil bir destek ya da fırsat paylaşımı gelir.",
-      "reversed": "Hayır; al-ver dengesi bozuk, şartları netleştir."
+      "upright": "Evet; karşılıklı destek ve denge enerjisi söz konusu. Aldığın kadar verebildiğin bir durumda cevabın da netleşiyor.",
+      "reversed": "Şartlı Evet; dengesiz alışverişler ya da gizli beklentiler netliği gölgeliyor olabilir. Niyetini sadeleştir."
     }
   },
-  "Tılsım Yedilisi": {
+  "70_seven_pentacles": {
     "clarityWeight": 12,
     "keywords": {
       "general": [
@@ -1765,16 +1767,16 @@
         "planlama"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "hasat bekleme",
+        "sabır"
       ]
     },
     "shortReason": {
-      "upright": "Evet; sabır karşılığını verir, sonuç zamanla gelir.",
-      "reversed": "Hayır; erken vazgeçme eğilimi kazanımı bozar."
+      "upright": "Evet; emek verdiğin şey büyüyor. Sonuç hemen olmasa da yön doğru.",
+      "reversed": "Şartlı Evet; sabırsızlık veya zamanlama kaygısı cevabı bulandırıyor olabilir. Sürece güvenmeden netlik zor."
     }
   },
-  "Tılsım Sekizlisi": {
+  "71_eight_pentacles": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -1790,16 +1792,16 @@
         "eğitim"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "zanaat",
+        "pratik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; emek ve ustalıkla net sonuç alınır.",
-      "reversed": "Hayır; özensizlik ve tekrar hatası kaybettirir."
+      "upright": "Evet; kararlılık, pratik çaba ve ustalaşma enerjisiyle cevap olumlu. Emek veriyorsan karşılığını alacaksın.",
+      "reversed": "Şartlı Evet; dağınıklık ya da motivasyon eksikliği olabilir. Net bir adım atmadan net bir sonuç beklemek zor."
     }
   },
-  "Tılsım Dokuzlusu": {
+  "72_nine_pentacles": {
     "clarityWeight": 22,
     "keywords": {
       "general": [
@@ -1815,16 +1817,16 @@
         "tanınma"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "öz-yeterlilik",
+        "bolluk"
       ]
     },
     "shortReason": {
-      "upright": "Evet; kendi ayakların üzerinde durup başarı alırsın.",
-      "reversed": "Hayır; iç güven eksik, acele yatırım doğru değil."
+      "upright": "Evet; kendine güvenen, sağlam bir zeminde duruyorsun. Şartlar olgunlaştı.",
+      "reversed": "Şartlı Evet; başarı dışarıdan görünse de içsel bir eksiklik hissi olabilir. Tam tatmin için biraz daha derine in."
     }
   },
-  "Tılsım Onlusu": {
+  "73_ten_pentacles": {
     "clarityWeight": 24,
     "keywords": {
       "general": [
@@ -1840,16 +1842,16 @@
         "miras"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "kökenler",
+        "süreklilik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; kalıcı kazanç ve sağlam zemin mümkün.",
-      "reversed": "Hayır; temel zayıf, aile/iş düzeni oturmuyor."
+      "upright": "Evet; kalıcılık, bolluk ve ailevi destek enerjisi seninle. Kurduğun temel uzun vadeli güç taşıyor.",
+      "reversed": "Şartlı Evet; dışsal bolluk var gibi görünse de değer sisteminde bir dengesizlik olabilir. Gerçek güven nerede, ona bak."
     }
   },
-  "Tılsım Prensi": {
+  "74_page_pentacles": {
     "clarityWeight": 14,
     "keywords": {
       "general": [
@@ -1865,16 +1867,16 @@
         "eğitim"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "öğrenci",
+        "merak"
       ]
     },
     "shortReason": {
-      "upright": "Evet; öğrenerek büyüyecek bir fırsat var.",
-      "reversed": "Hayır; odak dağılırsa başlangıç yarım kalır."
+      "upright": "Evet; yeni bir öğrenme ya da gelişim fırsatı var. Başlangıçlar köklenmek üzere seni bekliyor.",
+      "reversed": "Şartlı Evet; odak kaybı ya da erteleme potansiyeli var. Niyetini netleştir, sonra ilerle."
     }
   },
-  "Tılsım Şövalyesi": {
+  "75_knight_pentacles": {
     "clarityWeight": 16,
     "keywords": {
       "general": [
@@ -1890,16 +1892,16 @@
         "metot"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "sebat",
+        "adanmışlık"
       ]
     },
     "shortReason": {
-      "upright": "Evet; yavaş ama sağlam ilerlersin.",
-      "reversed": "Hayır; inat ve durağanlık işi kilitler."
+      "upright": "Evet; sabırla ve adım adım ilerlemek seni sağlam temellere götürür. Süreç güven veriyor.",
+      "reversed": "Şartlı Evet; inat veya durağanlık, süreci aksatabilir. Esnek olman gereken bir dönemdesin."
     }
   },
-  "Tılsım Kraliçesi": {
+  "76_queen_pentacles": {
     "clarityWeight": 18,
     "keywords": {
       "general": [
@@ -1915,16 +1917,16 @@
         "başarı"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "topraklama",
+        "besleyicilik"
       ]
     },
     "shortReason": {
-      "upright": "Evet; pratik çözüm ve güven veren düzen kurulur.",
-      "reversed": "Hayır; dengesiz harcama ya da ihmalle güven sarsılır."
+      "upright": "Evet; bakım, sadelik ve içsel denge ile başarı geliyor. Güven ve huzur el ele yürüyor.",
+      "reversed": "Şartlı Evet; aşırı fedakârlık ya da ihmal, sistemde çatlak yaratabilir. Önce iç dengeyi kur."
     }
   },
-  "Tılsım Kralı": {
+  "77_king_pentacles": {
     "clarityWeight": 22,
     "keywords": {
       "general": [
@@ -1940,13 +1942,13 @@
         "zenginlik"
       ],
       "spiritual": [
-        "içsel yolculuk",
-        "ruhsal gelişim"
+        "ustalık",
+        "istikrar"
       ]
     },
     "shortReason": {
-      "upright": "Evet; sağlam yönetim ve güvenli sonuç verir.",
-      "reversed": "Hayır; çıkar odaklı yaklaşım düzeni bozar."
+      "upright": "Evet; planlı, güvenilir ve sürdürülebilir bir yapı kuruluyor. Maddi–manevi istikrar seninle.",
+      "reversed": "Şartlı Evet; sadece çıkar odaklı olmak uzun vadede seni doyurmaz. Kalpten onay al."
     }
   }
 }

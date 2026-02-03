@@ -1475,7 +1475,7 @@
     {
       "id": 64,
       "name": "As der Münzen",
-      "image": "64_ace_pentacles.jpg",
+      "image": "64_ace_pentacles",
       "arcana": "minor",
       "number": "As",
       "suit": "Münzen",
@@ -1498,7 +1498,7 @@
     {
       "id": 65,
       "name": "Zwei Münzen",
-      "image": "65_two_pentacles.jpg",
+      "image": "65_two_pentacles",
       "arcana": "minor",
       "number": "2",
       "suit": "Münzen",
@@ -1521,7 +1521,7 @@
     {
       "id": 66,
       "name": "Drei Münzen",
-      "image": "66_three_pentacles.jpg",
+      "image": "66_three_pentacles",
       "arcana": "minor",
       "number": "3",
       "suit": "Münzen",
@@ -1544,7 +1544,7 @@
     {
       "id": 67,
       "name": "Vier Münzen",
-      "image": "67_four_pentacles.jpg",
+      "image": "67_four_pentacles",
       "arcana": "minor",
       "number": "4",
       "suit": "Münzen",
@@ -1567,7 +1567,7 @@
     {
       "id": 68,
       "name": "Fünf Münzen",
-      "image": "68_five_pentacles.jpg",
+      "image": "68_five_pentacles",
       "arcana": "minor",
       "number": "5",
       "suit": "Münzen",
@@ -1590,7 +1590,7 @@
     {
       "id": 69,
       "name": "Sechs Münzen",
-      "image": "69_six_pentacles.jpg",
+      "image": "69_six_pentacles",
       "arcana": "minor",
       "number": "6",
       "suit": "Münzen",
@@ -1613,7 +1613,7 @@
     {
       "id": 70,
       "name": "Sieben Münzen",
-      "image": "70_seven_pentacles.jpg",
+      "image": "70_seven_pentacles",
       "arcana": "minor",
       "number": "7",
       "suit": "Münzen",
@@ -1636,7 +1636,7 @@
     {
       "id": 71,
       "name": "Acht Münzen",
-      "image": "71_eight_pentacles.jpg",
+      "image": "71_eight_pentacles",
       "arcana": "minor",
       "number": "8",
       "suit": "Münzen",
@@ -1659,7 +1659,7 @@
     {
       "id": 72,
       "name": "Neun Münzen",
-      "image": "72_nine_pentacles.jpg",
+      "image": "72_nine_pentacles",
       "arcana": "minor",
       "number": "9",
       "suit": "Münzen",
@@ -1682,7 +1682,7 @@
     {
       "id": 73,
       "name": "Zehn Münzen",
-      "image": "73_ten_pentacles.jpg",
+      "image": "73_ten_pentacles",
       "arcana": "minor",
       "number": "10",
       "suit": "Münzen",
@@ -1705,7 +1705,7 @@
     {
       "id": 74,
       "name": "Bube der Münzen",
-      "image": "74_page_pentacles.jpg",
+      "image": "74_page_pentacles",
       "arcana": "minor",
       "number": "Prens",
       "suit": "Münzen",
@@ -1728,7 +1728,7 @@
     {
       "id": 75,
       "name": "Ritter der Münzen",
-      "image": "75_knight_pentacles.jpg",
+      "image": "75_knight_pentacles",
       "arcana": "minor",
       "number": "Şövalye",
       "suit": "Münzen",
@@ -1751,7 +1751,7 @@
     {
       "id": 76,
       "name": "Königin der Münzen",
-      "image": "76_queen_pentacles.jpg",
+      "image": "76_queen_pentacles",
       "arcana": "minor",
       "number": "Kraliçe",
       "suit": "Münzen",
@@ -1774,7 +1774,7 @@
     {
       "id": 77,
       "name": "König der Münzen",
-      "image": "77_king_pentacles.jpg",
+      "image": "77_king_pentacles",
       "arcana": "minor",
       "number": "Kral",
       "suit": "Münzen",

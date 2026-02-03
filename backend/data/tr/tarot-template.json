@@ -1475,7 +1475,7 @@
     {
       "id": 64,
       "name": "Tılsım Ası",
-      "image": "64_ace_pentacles.jpg",
+      "image": "64_ace_pentacles",
       "arcana": "minor",
       "number": "As",
       "suit": "tılsım",
@@ -1498,7 +1498,7 @@
     {
       "id": 65,
       "name": "Tılsım İkilisi",
-      "image": "65_two_pentacles.jpg",
+      "image": "65_two_pentacles",
       "arcana": "minor",
       "number": "2",
       "suit": "tılsım",
@@ -1521,7 +1521,7 @@
     {
       "id": 66,
       "name": "Tılsım Üçlüsü",
-      "image": "66_three_pentacles.jpg",
+      "image": "66_three_pentacles",
       "arcana": "minor",
       "number": "3",
       "suit": "tılsım",
@@ -1544,7 +1544,7 @@
     {
       "id": 67,
       "name": "Tılsım Dörtlüsü",
-      "image": "67_four_pentacles.jpg",
+      "image": "67_four_pentacles",
       "arcana": "minor",
       "number": "4",
       "suit": "tılsım",
@@ -1567,7 +1567,7 @@
     {
       "id": 68,
       "name": "Tılsım Beşlisi",
-      "image": "68_five_pentacles.jpg",
+      "image": "68_five_pentacles",
       "arcana": "minor",
       "number": "5",
       "suit": "tılsım",
@@ -1590,7 +1590,7 @@
     {
       "id": 69,
       "name": "Tılsım Altılısı",
-      "image": "69_six_pentacles.jpg",
+      "image": "69_six_pentacles",
       "arcana": "minor",
       "number": "6",
       "suit": "tılsım",
@@ -1613,7 +1613,7 @@
     {
       "id": 70,
       "name": "Tılsım Yedilisi",
-      "image": "70_seven_pentacles.jpg",
+      "image": "70_seven_pentacles",
       "arcana": "minor",
       "number": "7",
       "suit": "tılsım",
@@ -1636,7 +1636,7 @@
     {
       "id": 71,
       "name": "Tılsım Sekizlisi",
-      "image": "71_eight_pentacles.jpg",
+      "image": "71_eight_pentacles",
       "arcana": "minor",
       "number": "8",
       "suit": "tılsım",
@@ -1659,7 +1659,7 @@
     {
       "id": 72,
       "name": "Tılsım Dokuzlusu",
-      "image": "72_nine_pentacles.jpg",
+      "image": "72_nine_pentacles",
       "arcana": "minor",
       "number": "9",
       "suit": "tılsım",
@@ -1682,7 +1682,7 @@
     {
       "id": 73,
       "name": "Tılsım Onlusu",
-      "image": "73_ten_pentacles.jpg",
+      "image": "73_ten_pentacles",
       "arcana": "minor",
       "number": "10",
       "suit": "tılsım",
@@ -1705,7 +1705,7 @@
     {
       "id": 74,
       "name": "Tılsım Prensi",
-      "image": "74_page_pentacles.jpg",
+      "image": "74_page_pentacles",
       "arcana": "minor",
       "number": "Prens",
       "suit": "tılsım",
@@ -1728,7 +1728,7 @@
     {
       "id": 75,
       "name": "Tılsım Şövalyesi",
-      "image": "75_knight_pentacles.jpg",
+      "image": "75_knight_pentacles",
       "arcana": "minor",
       "number": "Şövalye",
       "suit": "tılsım",
@@ -1751,7 +1751,7 @@
     {
       "id": 76,
       "name": "Tılsım Kraliçesi",
-      "image": "76_queen_pentacles.jpg",
+      "image": "76_queen_pentacles",
       "arcana": "minor",
       "number": "Kraliçe",
       "suit": "tılsım",
@@ -1774,7 +1774,7 @@
     {
       "id": 77,
       "name": "Tılsım Kralı",
-      "image": "77_king_pentacles.jpg",
+      "image": "77_king_pentacles",
       "arcana": "minor",
       "number": "Kral",
       "suit": "tılsım",

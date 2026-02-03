@@ -107,10 +107,10 @@ export default function HomeScreen() {
           
           <SpreadCard
             title={t("yesNo")}
-            description={getDesc("yesNoDesc")}
+            description={getDesc("yesNoGeneralDesc")}
             cardCount="single"
             categoryColor={COLORS.general}
-            onPress={() => handleSpreadSelect("yes_no")}
+            onPress={() => handleSpreadSelect("yes_no", "general")}
           />
           
           <SpreadCard
@@ -134,6 +134,14 @@ export default function HomeScreen() {
             cardCount="single"
             categoryColor={COLORS.love}
             onPress={() => handleSpreadSelect("single_card", "love")}
+          />
+          
+          <SpreadCard
+            title={t("yesNo")}
+            description={getDesc("yesNoLoveDesc")}
+            cardCount="single"
+            categoryColor={COLORS.love}
+            onPress={() => handleSpreadSelect("yes_no", "love")}
           />
           
           <SpreadCard
@@ -173,6 +181,14 @@ export default function HomeScreen() {
             cardCount="single"
             categoryColor={COLORS.career}
             onPress={() => handleSpreadSelect("single_card", "career")}
+          />
+          
+          <SpreadCard
+            title={t("yesNo")}
+            description={getDesc("yesNoCareerDesc")}
+            cardCount="single"
+            categoryColor={COLORS.career}
+            onPress={() => handleSpreadSelect("yes_no", "career")}
           />
           
           <SpreadCard
@@ -220,6 +236,14 @@ export default function HomeScreen() {
             cardCount="single"
             categoryColor={COLORS.spiritual}
             onPress={() => handleSpreadSelect("single_card", "spiritual")}
+          />
+          
+          <SpreadCard
+            title={t("yesNo")}
+            description={getDesc("yesNoSpiritualDesc")}
+            cardCount="single"
+            categoryColor={COLORS.spiritual}
+            onPress={() => handleSpreadSelect("yes_no", "spiritual")}
           />
           
           <SpreadCard

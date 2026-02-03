@@ -1475,7 +1475,7 @@
     {
       "id": 64,
       "name": "As de Oros",
-      "image": "64_ace_pentacles.jpg",
+      "image": "64_ace_pentacles",
       "arcana": "minor",
       "number": "As",
       "suit": "Oros",
@@ -1498,7 +1498,7 @@
     {
       "id": 65,
       "name": "Dos de Oros",
-      "image": "65_two_pentacles.jpg",
+      "image": "65_two_pentacles",
       "arcana": "minor",
       "number": "2",
       "suit": "Oros",
@@ -1521,7 +1521,7 @@
     {
       "id": 66,
       "name": "Tres de Oros",
-      "image": "66_three_pentacles.jpg",
+      "image": "66_three_pentacles",
       "arcana": "minor",
       "number": "3",
       "suit": "Oros",
@@ -1544,7 +1544,7 @@
     {
       "id": 67,
       "name": "Cuatro de Oros",
-      "image": "67_four_pentacles.jpg",
+      "image": "67_four_pentacles",
       "arcana": "minor",
       "number": "4",
       "suit": "Oros",
@@ -1567,7 +1567,7 @@
     {
       "id": 68,
       "name": "Cinco de Oros",
-      "image": "68_five_pentacles.jpg",
+      "image": "68_five_pentacles",
       "arcana": "minor",
       "number": "5",
       "suit": "Oros",
@@ -1590,7 +1590,7 @@
     {
       "id": 69,
       "name": "Seis de Oros",
-      "image": "69_six_pentacles.jpg",
+      "image": "69_six_pentacles",
       "arcana": "minor",
       "number": "6",
       "suit": "Oros",
@@ -1613,7 +1613,7 @@
     {
       "id": 70,
       "name": "Siete de Oros",
-      "image": "70_seven_pentacles.jpg",
+      "image": "70_seven_pentacles",
       "arcana": "minor",
       "number": "7",
       "suit": "Oros",
@@ -1636,7 +1636,7 @@
     {
       "id": 71,
       "name": "Ocho de Oros",
-      "image": "71_eight_pentacles.jpg",
+      "image": "71_eight_pentacles",
       "arcana": "minor",
       "number": "8",
       "suit": "Oros",
@@ -1659,7 +1659,7 @@
     {
       "id": 72,
       "name": "Nueve de Oros",
-      "image": "72_nine_pentacles.jpg",
+      "image": "72_nine_pentacles",
       "arcana": "minor",
       "number": "9",
       "suit": "Oros",
@@ -1682,7 +1682,7 @@
     {
       "id": 73,
       "name": "Diez de Oros",
-      "image": "73_ten_pentacles.jpg",
+      "image": "73_ten_pentacles",
       "arcana": "minor",
       "number": "10",
       "suit": "Oros",
@@ -1705,7 +1705,7 @@
     {
       "id": 74,
       "name": "Sota de Oros",
-      "image": "74_page_pentacles.jpg",
+      "image": "74_page_pentacles",
       "arcana": "minor",
       "number": "Prens",
       "suit": "Oros",
@@ -1728,7 +1728,7 @@
     {
       "id": 75,
       "name": "Caballo de Oros",
-      "image": "75_knight_pentacles.jpg",
+      "image": "75_knight_pentacles",
       "arcana": "minor",
       "number": "Şövalye",
       "suit": "Oros",
@@ -1751,7 +1751,7 @@
     {
       "id": 76,
       "name": "Reina de Oros",
-      "image": "76_queen_pentacles.jpg",
+      "image": "76_queen_pentacles",
       "arcana": "minor",
       "number": "Kraliçe",
       "suit": "Oros",
@@ -1774,7 +1774,7 @@
     {
       "id": 77,
       "name": "Rey de Oros",
-      "image": "77_king_pentacles.jpg",
+      "image": "77_king_pentacles",
       "arcana": "minor",
       "number": "Kral",
       "suit": "Oros",

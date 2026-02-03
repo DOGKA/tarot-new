@@ -2,13 +2,32 @@
  * German (DE) prompts for ChatGPT
  */
 
+// ReversalStyle guidance map (German)
+const reversalStyleMapDE = {
+  delay: "das Timing ist verschoben, betone Geduld und Prozess",
+  internal: "innerer Widerstand oder Selbstwert-Thema, adressiere innere Blockade",
+  shadow: "unterdrücktes Gefühl oder Schattenabsicht, beleuchte das Unbemerkte",
+  imbalance: "Übertreibung oder Balance-Problem, erinnere an Maß",
+  blocked: "der Fluss ist gestoppt, schlage alternativen Weg oder Warten vor"
+};
+
+// Helper to build reversal guidance
+const buildReversalGuidance = (isReversed, reversalStyle) => {
+  if (!isReversed || !reversalStyle) return "";
+  return `\n- INTERPRETATION DER UMGEKEHRTEN KARTE: ${reversalStyleMapDE[reversalStyle] || "allgemeiner umgekehrter Effekt"}`;
+};
+
 module.exports = {
   // System message
   systemMessage: "Du bist ein erfahrener Tarot-Experte. Gib immer gültiges JSON zurück, füge keine Erklärung oder Markdown hinzu.",
   retrySystemMessage: "Deine vorherige Antwort war ungültig. Gib nur die angeforderte JSON-Struktur zurück.",
 
   // Single Card Reading prompt
-  buildSinglePrompt: ({ profile, cardName, orientationLabel, focusArea }) => `
+  buildSinglePrompt: ({ profile, cardName, orientationLabel, focusArea, reversalStyle }) => {
+    const isReversed = orientationLabel === "Umgekehrt";
+    const reversalGuidance = buildReversalGuidance(isReversed, reversalStyle);
+    
+    return `
 ${profile.tone}
 ${profile.address}
 Sprache: ${profile.nativeName}. Der gesamte Text muss in dieser Sprache sein.
@@ -21,7 +40,7 @@ Regeln:
 - deepDive: 4–6 Sätze; verwende den Kartennamen höchstens einmal.
 - shadow: 2–3 Sätze, möglicher Schatten oder Warnung.
 - nextStep: 1 Satz, Imperativ mit einer einzelnen Aktion.
-- journal: 1 Frage, endet mit einem einzelnen Fragezeichen.
+- journal: 1 Frage, endet mit einem einzelnen Fragezeichen.${reversalGuidance}
 
 Gib nur JSON zurück:
 {
@@ -32,10 +51,18 @@ Gib nur JSON zurück:
   "shadow": "2–3 Sätze",
   "nextStep": "1 Satz",
   "journal": "1 Frage"
-}`,
+}`;
+  },
 
   // Three Card (PPF) Reading prompt
-  buildPpfPrompt: ({ profile, pastCard, presentCard, futureCard, pastOrientation, presentOrientation, futureOrientation }) => `
+  buildPpfPrompt: ({ profile, pastCard, presentCard, futureCard, pastOrientation, presentOrientation, futureOrientation, pastReversalStyle, presentReversalStyle, futureReversalStyle }) => {
+    const reversals = [];
+    if (pastOrientation === "Umgekehrt" && pastReversalStyle) reversals.push(`Vergangenheit (${pastCard}): ${reversalStyleMapDE[pastReversalStyle]}`);
+    if (presentOrientation === "Umgekehrt" && presentReversalStyle) reversals.push(`Gegenwart (${presentCard}): ${reversalStyleMapDE[presentReversalStyle]}`);
+    if (futureOrientation === "Umgekehrt" && futureReversalStyle) reversals.push(`Zukunft (${futureCard}): ${reversalStyleMapDE[futureReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\n- INTERPRETATION UMGEKEHRTER KARTEN:\n  ${reversals.join("\n  ")}` : "";
+    
+    return `
 ${profile.tone}
 ${profile.address}
 Sprache: ${profile.nativeName}. Titel und gesamter Text müssen in dieser Sprache sein.
@@ -48,7 +75,7 @@ Karten:
 Regeln:
 - story: 4–6 Sätze; Kartennamen erscheinen höchstens je einmal in der Geschichte.
 - overall: 3–4 Sätze (Zusammenfassung + Spannung + Richtung).
-- keywords genau 3, mood ein einzelnes Wort.
+- keywords genau 3, mood ein einzelnes Wort.${reversalGuidance}
 
 Gib nur JSON zurück. Ein einzelnes JSON-Objekt:
 {
@@ -68,11 +95,47 @@ Gib nur JSON zurück. Ein einzelnes JSON-Objekt:
   "keywords": ["...", "...", "..."],
   "mood": "ein Wort",
   "nextStep": "1 Satz"
-}`,
+}`;
+  },
 
-  // Yes/No Reading prompt
-  buildYesNoPrompt: ({ profile, cardName, orientationLabel, focusArea, answer, confidence }) => {
-    const answerText = profile.yesNoAnswer[answer];
+  // Yes/No Reading prompt (v2.1 - supports uncertain + reversalStyle)
+  buildYesNoPrompt: ({ profile, cardName, orientationLabel, focusArea, answer, confidence, clarityLabel, reversalStyle }) => {
+    const answerText = profile.yesNoAnswer[answer] || answer;
+    const isUncertain = answer === "uncertain";
+    const isReversed = orientationLabel === "Umgekehrt" || orientationLabel === "reversed";
+    
+    // Confidence context for GPT
+    const confidenceContext = confidence >= 80 
+      ? "Klare und starke Richtung vorhanden." 
+      : confidence >= 65 
+        ? "Richtung hängt von bestimmten Bedingungen ab." 
+        : confidence >= 50 
+          ? "Schwache Tendenz, vorsichtig vorgehen." 
+          : "Sehr unsicher, Timing ist wichtig.";
+    
+    // ReversalStyle guidance for GPT
+    const reversalStyleMap = {
+      delay: "das Timing ist verschoben, betone Geduld und Prozess",
+      internal: "innerer Widerstand oder Selbstwert-Thema, adressiere innere Blockade",
+      shadow: "unterdrücktes Gefühl oder Schattenabsicht, beleuchte das Unbemerkte",
+      imbalance: "Übertreibung oder Balance-Problem, erinnere an Maß",
+      blocked: "der Fluss ist gestoppt, schlage alternativen Weg oder Warten vor"
+    };
+    
+    const reversalGuidance = isReversed && reversalStyle 
+      ? `\n- Interpretation der umgekehrten Karte: ${reversalStyleMap[reversalStyle] || "allgemeiner umgekehrter Effekt"}`
+      : "";
+    
+    const uncertainRules = isUncertain 
+      ? `
+- Die Energie dieser Karte gibt eine "unsichere" Antwort
+- Erkläre warum es unsicher ist (Kartennatur, Bedingungen, Timing)
+- Erwähne kurz was sich für Klarheit ändern muss
+- Zerstöre keine Hoffnung, aber sei realistisch`
+      : `
+- Erkläre die Energie hinter der Antwort
+- Teile mit warum die Karte diese Richtung zeigt`;
+    
     return `
 Du bist ein professioneller Tarot-Leser und machst eine Ja/Nein-Lesung.
 ${profile.tone}
@@ -80,20 +143,28 @@ ${profile.address}
 
 Karte: ${cardName} (${orientationLabel})
 Antwort: ${answerText}
-Vertrauen: ${confidence}%
+Klarheit: ${clarityLabel || `${confidence}%`}
+Kontext: ${confidenceContext}
 Fokusbereich: ${focusArea}
 
 Regeln:
-- Schreibe eine Erklärung in 12-25 Wörtern
-- Erkläre die Energie der Karte und warum diese Antwort
+- Schreibe eine Erklärung in 15-30 Wörtern${uncertainRules}${reversalGuidance}
 - Sei warm aber professionell
+- Verwende den Kartennamen höchstens einmal
 
 Gib nur JSON zurück:
 {"explanation": "..."}`;
   },
 
   // SOA (Situation/Hindernis/Rat) Reading prompt
-  buildSoaPrompt: ({ profile, situationCard, obstacleCard, adviceCard, situationOrientation, obstacleOrientation, adviceOrientation }) => `
+  buildSoaPrompt: ({ profile, situationCard, obstacleCard, adviceCard, situationOrientation, obstacleOrientation, adviceOrientation, situationReversalStyle, obstacleReversalStyle, adviceReversalStyle }) => {
+    const reversals = [];
+    if (situationOrientation === "Umgekehrt" && situationReversalStyle) reversals.push(`Situation (${situationCard}): ${reversalStyleMapDE[situationReversalStyle]}`);
+    if (obstacleOrientation === "Umgekehrt" && obstacleReversalStyle) reversals.push(`Hindernis (${obstacleCard}): ${reversalStyleMapDE[obstacleReversalStyle]}`);
+    if (adviceOrientation === "Umgekehrt" && adviceReversalStyle) reversals.push(`Rat (${adviceCard}): ${reversalStyleMapDE[adviceReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `
 Du bist ein erfahrener Tarot-Leser. Du führst Situation/Hindernis/Rat-Legungen mit einem modernen psychologischen Ansatz durch.
 
 ⚠️ GRUNDREGEL: Schreibe keine Prophezeiung. Schreibe Verhaltensanalyse.
@@ -125,6 +196,7 @@ Karten:
 - Situation: ${situationCard} (${situationOrientation})
 - Hindernis: ${obstacleCard} (${obstacleOrientation})
 - Rat: ${adviceCard} (${adviceOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Aufbau: (1) aktueller Zustand, (2) Spannung, (3) Richtung.
@@ -145,10 +217,18 @@ Gib nur JSON zurück:
     "advice": "..."
   },
   "nextStep": "..."
-}`,
+}`;
+  },
 
   // Destiny's Embrace (Umarmung des Schicksals) prompt
-  buildDestinysEmbracePrompt: ({ profile, destinyCard, pathCard, unionCard, destinyOrientation, pathOrientation, unionOrientation }) => `Du bist ein erfahrener Tarot-Leser. Du führst "Destiny's Embrace (Umarmung des Schicksals)" Legungen durch.
+  buildDestinysEmbracePrompt: ({ profile, destinyCard, pathCard, unionCard, destinyOrientation, pathOrientation, unionOrientation, destinyReversalStyle, pathReversalStyle, unionReversalStyle }) => {
+    const reversals = [];
+    if (destinyOrientation === "Umgekehrt" && destinyReversalStyle) reversals.push(`Schicksal (${destinyCard}): ${reversalStyleMapDE[destinyReversalStyle]}`);
+    if (pathOrientation === "Umgekehrt" && pathReversalStyle) reversals.push(`Weg (${pathCard}): ${reversalStyleMapDE[pathReversalStyle]}`);
+    if (unionOrientation === "Umgekehrt" && unionReversalStyle) reversals.push(`Vereinigung (${unionCard}): ${reversalStyleMapDE[unionReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot-Leser. Du führst "Destiny's Embrace (Umarmung des Schicksals)" Legungen durch.
 
 ⚠️ GRUNDREGEL: Schreibe keine Prophezeiung. Gib keine Schicksalsgewissheit. Sage nicht "wird/wird nicht passieren." Schreibe Beziehungsdynamik und Verhaltensanalyse.
 FRAGE: "Was ist die Richtung dieser Verbindung?"
@@ -175,6 +255,7 @@ Karten:
 - Schicksal (Destiny): ${destinyCard} (${destinyOrientation})
 - Weg (Path): ${pathCard} (${pathOrientation})
 - Vereinigung (Union): ${unionCard} (${unionOrientation})
+${reversalGuidance}
 
 Struktur und Länge:
 - overall: 2-3 Sätze. Fasse die allgemeine Richtung der Verbindung + Hauptspannung + kurze Orientierung zusammen.
@@ -200,10 +281,20 @@ Gib nur JSON zurück:
   },
   "nextStep": "...",
   "keywords": ["...", "...", "..."]
-}`,
+}`;
+  },
 
   // Love Choice (Liebeswahl) prompt - 5 Karten
-  buildLoveChoicePrompt: ({ profile, optionACard, optionAOutcomeCard, optionBCard, optionBOutcomeCard, adviceCard, optionAOrientation, optionAOutcomeOrientation, optionBOrientation, optionBOutcomeOrientation, adviceOrientation }) => `Du bist ein erfahrener Tarot-Leser. Du führst "Love Choice" (Liebeswahl) Legungen durch.
+  buildLoveChoicePrompt: ({ profile, optionACard, optionAOutcomeCard, optionBCard, optionBOutcomeCard, adviceCard, optionAOrientation, optionAOutcomeOrientation, optionBOrientation, optionBOutcomeOrientation, adviceOrientation, optionAReversalStyle, optionAOutcomeReversalStyle, optionBReversalStyle, optionBOutcomeReversalStyle, adviceReversalStyle }) => {
+    const reversals = [];
+    if (optionAOrientation === "Umgekehrt" && optionAReversalStyle) reversals.push(`Option A (${optionACard}): ${reversalStyleMapDE[optionAReversalStyle]}`);
+    if (optionAOutcomeOrientation === "Umgekehrt" && optionAOutcomeReversalStyle) reversals.push(`Ergebnis A (${optionAOutcomeCard}): ${reversalStyleMapDE[optionAOutcomeReversalStyle]}`);
+    if (optionBOrientation === "Umgekehrt" && optionBReversalStyle) reversals.push(`Option B (${optionBCard}): ${reversalStyleMapDE[optionBReversalStyle]}`);
+    if (optionBOutcomeOrientation === "Umgekehrt" && optionBOutcomeReversalStyle) reversals.push(`Ergebnis B (${optionBOutcomeCard}): ${reversalStyleMapDE[optionBOutcomeReversalStyle]}`);
+    if (adviceOrientation === "Umgekehrt" && adviceReversalStyle) reversals.push(`Rat (${adviceCard}): ${reversalStyleMapDE[adviceReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot-Leser. Du führst "Love Choice" (Liebeswahl) Legungen durch.
 
 ⚠️ GRUNDREGEL: Schreibe keine Prophezeiung. Sage nicht, welchen Weg man wählen soll. Schreibe Verhaltens-Ergebnis-Analyse.
 FRAGE: "Was ist der psychologische Unterschied zwischen diesen beiden Wegen?"
@@ -232,6 +323,7 @@ Karten (5 Karten):
 - Option B: ${optionBCard} (${optionBOrientation})
 - Ergebnis B: ${optionBOutcomeCard} (${optionBOutcomeOrientation})
 - Rat: ${adviceCard} (${adviceOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 2-3 Sätze. Fasse den grundlegenden Unterschied + Spannung + Richtung zusammen.
@@ -264,10 +356,20 @@ Gib nur JSON zurück:
   "decisionLens": "...",
   "nextStep": "...",
   "keywords": ["...", "...", "..."]
-}`,
+}`;
+  },
 
   // Path to Love (Weg zur Liebe) prompt - 5 Karten
-  buildPathToLovePrompt: ({ profile, selfCard, blockCard, needCard, actionCard, potentialCard, selfOrientation, blockOrientation, needOrientation, actionOrientation, potentialOrientation }) => `Du bist ein erfahrener Tarot-Leser. Du führst "Path to Love" (Weg zur Liebe) Legungen durch.
+  buildPathToLovePrompt: ({ profile, selfCard, blockCard, needCard, actionCard, potentialCard, selfOrientation, blockOrientation, needOrientation, actionOrientation, potentialOrientation, selfReversalStyle, blockReversalStyle, needReversalStyle, actionReversalStyle, potentialReversalStyle }) => {
+    const reversals = [];
+    if (selfOrientation === "Umgekehrt" && selfReversalStyle) reversals.push(`Selbst (${selfCard}): ${reversalStyleMapDE[selfReversalStyle]}`);
+    if (blockOrientation === "Umgekehrt" && blockReversalStyle) reversals.push(`Blockade (${blockCard}): ${reversalStyleMapDE[blockReversalStyle]}`);
+    if (needOrientation === "Umgekehrt" && needReversalStyle) reversals.push(`Bedürfnis (${needCard}): ${reversalStyleMapDE[needReversalStyle]}`);
+    if (actionOrientation === "Umgekehrt" && actionReversalStyle) reversals.push(`Aktion (${actionCard}): ${reversalStyleMapDE[actionReversalStyle]}`);
+    if (potentialOrientation === "Umgekehrt" && potentialReversalStyle) reversals.push(`Potenzial (${potentialCard}): ${reversalStyleMapDE[potentialReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot-Leser. Du führst "Path to Love" (Weg zur Liebe) Legungen durch.
 
 ⚠️ GRUNDREGEL: Schreibe keine Prophezeiung. Schreibe Beziehungsstrategie.
 FRAGE: "Was entwickelt mich auf dem Weg zur Liebe?"
@@ -296,6 +398,7 @@ Karten (5 Karten):
 - Bedürfnis (Need): ${needCard} (${needOrientation})
 - Aktion (Action): ${actionCard} (${actionOrientation})
 - Potenzial (Potential): ${potentialCard} (${potentialOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 2-3 Sätze. Zusammenfassung der Beziehungsstrategie.
@@ -328,14 +431,24 @@ Gib nur JSON zurück:
   "strategy": "...",
   "nextStep": "...",
   "keywords": ["...", "...", "..."]
-}`,
+}`;
+  },
 
   // ============================================
   // SPIRITUAL SPREADS
   // ============================================
 
   // New Moon Ritual - 5 Karten
-  buildNewMoonPrompt: ({ profile, intentionCard, seedCard, shadowCard, supportCard, firstStepCard, intentionOrientation, seedOrientation, shadowOrientation, supportOrientation, firstStepOrientation }) => `Du bist ein erfahrener Tarot- und spiritueller Berater. Du führst "Neumond-Ritual"-Lesungen durch.
+  buildNewMoonPrompt: ({ profile, intentionCard, seedCard, shadowCard, supportCard, firstStepCard, intentionOrientation, seedOrientation, shadowOrientation, supportOrientation, firstStepOrientation, intentionReversalStyle, seedReversalStyle, shadowReversalStyle, supportReversalStyle, firstStepReversalStyle }) => {
+    const reversals = [];
+    if (intentionOrientation === "Umgekehrt" && intentionReversalStyle) reversals.push(`Absicht (${intentionCard}): ${reversalStyleMapDE[intentionReversalStyle]}`);
+    if (seedOrientation === "Umgekehrt" && seedReversalStyle) reversals.push(`Samen (${seedCard}): ${reversalStyleMapDE[seedReversalStyle]}`);
+    if (shadowOrientation === "Umgekehrt" && shadowReversalStyle) reversals.push(`Schatten (${shadowCard}): ${reversalStyleMapDE[shadowReversalStyle]}`);
+    if (supportOrientation === "Umgekehrt" && supportReversalStyle) reversals.push(`Unterstützung (${supportCard}): ${reversalStyleMapDE[supportReversalStyle]}`);
+    if (firstStepOrientation === "Umgekehrt" && firstStepReversalStyle) reversals.push(`Erster Schritt (${firstStepCard}): ${reversalStyleMapDE[firstStepReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und spiritueller Berater. Du führst "Neumond-Ritual"-Lesungen durch.
 
 Ton: Tief, intuitiv, auf innere Bewusstheit ausgerichtet.
 Stil:
@@ -357,6 +470,7 @@ Karten (5 Karten):
 - Verborgener Widerstand (Shadow): ${shadowCard} (${shadowOrientation})
 - Spirituelle Unterstützung (Support): ${supportCard} (${supportOrientation})
 - Erster Schritt (First Step): ${firstStepCard} (${firstStepOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Die Energie, die dieser Neumondzyklus dir bringt, allgemeines Thema und Richtung.
@@ -385,10 +499,20 @@ Gib nur JSON zurück:
   "affirmation": "...",
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Full Moon Release - 5 Karten
-  buildFullMoonPrompt: ({ profile, illuminationCard, tensionCard, lessonCard, releaseCard, integrationCard, illuminationOrientation, tensionOrientation, lessonOrientation, releaseOrientation, integrationOrientation }) => `Du bist ein erfahrener Tarot- und spiritueller Berater. Du führst "Vollmond-Freigabe"-Lesungen durch.
+  buildFullMoonPrompt: ({ profile, illuminationCard, tensionCard, lessonCard, releaseCard, integrationCard, illuminationOrientation, tensionOrientation, lessonOrientation, releaseOrientation, integrationOrientation, illuminationReversalStyle, tensionReversalStyle, lessonReversalStyle, releaseReversalStyle, integrationReversalStyle }) => {
+    const reversals = [];
+    if (illuminationOrientation === "Umgekehrt" && illuminationReversalStyle) reversals.push(`Erleuchtung (${illuminationCard}): ${reversalStyleMapDE[illuminationReversalStyle]}`);
+    if (tensionOrientation === "Umgekehrt" && tensionReversalStyle) reversals.push(`Innere Last (${tensionCard}): ${reversalStyleMapDE[tensionReversalStyle]}`);
+    if (lessonOrientation === "Umgekehrt" && lessonReversalStyle) reversals.push(`Lektion (${lessonCard}): ${reversalStyleMapDE[lessonReversalStyle]}`);
+    if (releaseOrientation === "Umgekehrt" && releaseReversalStyle) reversals.push(`Freigabe (${releaseCard}): ${reversalStyleMapDE[releaseReversalStyle]}`);
+    if (integrationOrientation === "Umgekehrt" && integrationReversalStyle) reversals.push(`Neue Balance (${integrationCard}): ${reversalStyleMapDE[integrationReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und spiritueller Berater. Du führst "Vollmond-Freigabe"-Lesungen durch.
 
 Ton: Tief, reinigend, transformierend.
 Stil:
@@ -410,6 +534,7 @@ Karten (5 Karten):
 - Lektion (Lesson): ${lessonCard} (${lessonOrientation})
 - Freigabe (Release): ${releaseCard} (${releaseOrientation})
 - Neue Balance (Integration): ${integrationCard} (${integrationOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Die Erleuchtungs- und Reinigungsmöglichkeit, die dieser Vollmond bringt.
@@ -440,10 +565,18 @@ Gib nur JSON zurück:
   "affirmation": "...",
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Mind Body Spirit - 3 Karten
-  buildMbsPrompt: ({ profile, mindCard, bodyCard, spiritCard, mindOrientation, bodyOrientation, spiritOrientation }) => `Du bist ein erfahrener Tarot- und ganzheitlicher Wellness-Berater. Du führst "Geist Körper Seele"-Lesungen durch.
+  buildMbsPrompt: ({ profile, mindCard, bodyCard, spiritCard, mindOrientation, bodyOrientation, spiritOrientation, mindReversalStyle, bodyReversalStyle, spiritReversalStyle }) => {
+    const reversals = [];
+    if (mindOrientation === "Umgekehrt" && mindReversalStyle) reversals.push(`Geist (${mindCard}): ${reversalStyleMapDE[mindReversalStyle]}`);
+    if (bodyOrientation === "Umgekehrt" && bodyReversalStyle) reversals.push(`Körper (${bodyCard}): ${reversalStyleMapDE[bodyReversalStyle]}`);
+    if (spiritOrientation === "Umgekehrt" && spiritReversalStyle) reversals.push(`Seele (${spiritCard}): ${reversalStyleMapDE[spiritReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und ganzheitlicher Wellness-Berater. Du führst "Geist Körper Seele"-Lesungen durch.
 
 Ton: Ganzheitlich, ausgleichend, bewusstseinsorientiert.
 Stil:
@@ -462,6 +595,7 @@ Karten (3 Karten):
 - Geist (Mind): ${mindCard} (${mindOrientation})
 - Körper (Body): ${bodyCard} (${bodyOrientation})
 - Seele (Spirit): ${spiritCard} (${spiritOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Gesamtbalance der drei Bereiche und Hauptthema.
@@ -486,10 +620,18 @@ Gib nur JSON zurück:
   "alignmentAdvice": "...",
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Celestial Illumination - 3 Karten
-  buildCelestialPrompt: ({ profile, signalCard, guidanceCard, integrationCard, signalOrientation, guidanceOrientation, integrationOrientation }) => `Du bist ein erfahrener Tarot- und spiritueller Berater. Du führst "Himmlische Erleuchtung"-Lesungen durch.
+  buildCelestialPrompt: ({ profile, signalCard, guidanceCard, integrationCard, signalOrientation, guidanceOrientation, integrationOrientation, signalReversalStyle, guidanceReversalStyle, integrationReversalStyle }) => {
+    const reversals = [];
+    if (signalOrientation === "Umgekehrt" && signalReversalStyle) reversals.push(`Signal (${signalCard}): ${reversalStyleMapDE[signalReversalStyle]}`);
+    if (guidanceOrientation === "Umgekehrt" && guidanceReversalStyle) reversals.push(`Führung (${guidanceCard}): ${reversalStyleMapDE[guidanceReversalStyle]}`);
+    if (integrationOrientation === "Umgekehrt" && integrationReversalStyle) reversals.push(`Integration (${integrationCard}): ${reversalStyleMapDE[integrationReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und spiritueller Berater. Du führst "Himmlische Erleuchtung"-Lesungen durch.
 
 Ton: Mystisch, intuitiv, auf universelle Verbindung fokussiert.
 Stil:
@@ -508,6 +650,7 @@ Karten (3 Karten):
 - Signal: ${signalCard} (${signalOrientation})
 - Führung (Guidance): ${guidanceCard} (${guidanceOrientation})
 - Integration: ${integrationCard} (${integrationOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Zusammenfassung der kosmischen Botschaft und allgemeine Richtung.
@@ -532,14 +675,22 @@ Gib nur JSON zurück:
   "omenKeywords": ["...", "...", "..."],
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // ============================================
   // KARRIERE SPREADS
   // ============================================
 
   // Karriere-Klarheit - 3 Karten
-  buildCareerClarityPrompt: ({ profile, currentCard, challengeCard, clarityCard, currentOrientation, challengeOrientation, clarityOrientation }) => `Du bist ein erfahrener Tarot- und Karriere-Coach. Du führst "Karriere-Klarheit"-Lesungen durch.
+  buildCareerClarityPrompt: ({ profile, currentCard, challengeCard, clarityCard, currentOrientation, challengeOrientation, clarityOrientation, currentReversalStyle, challengeReversalStyle, clarityReversalStyle }) => {
+    const reversals = [];
+    if (currentOrientation === "Umgekehrt" && currentReversalStyle) reversals.push(`Aktuell (${currentCard}): ${reversalStyleMapDE[currentReversalStyle]}`);
+    if (challengeOrientation === "Umgekehrt" && challengeReversalStyle) reversals.push(`Herausforderung (${challengeCard}): ${reversalStyleMapDE[challengeReversalStyle]}`);
+    if (clarityOrientation === "Umgekehrt" && clarityReversalStyle) reversals.push(`Klarheit (${clarityCard}): ${reversalStyleMapDE[clarityReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und Karriere-Coach. Du führst "Karriere-Klarheit"-Lesungen durch.
 
 ⚠️ GRUNDREGEL: KEINE Aktionssprache. Natürlicher Fluss + Bewusstseinssprache.
 FRAGE: "Wo stehe ich jetzt, was ist klar, was ist unklar?"
@@ -566,6 +717,7 @@ Karten (3 Karten):
 - Aktuelle Situation: ${currentCard} (${currentOrientation})
 - Hauptherausforderung: ${challengeCard} (${challengeOrientation})
 - Klärende Richtung: ${clarityCard} (${clarityOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Allgemeine Sicht der Karrieresituation.
@@ -580,10 +732,18 @@ Gib nur JSON zurück:
   "throughline": "...",
   "directionHint": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Karriere-Wegweiser - 3 Karten
-  buildCareerPathGuidePrompt: ({ profile, strengthCard, opportunityCard, directionCard, strengthOrientation, opportunityOrientation, directionOrientation }) => `Du bist ein erfahrener Tarot- und Karriere-Coach. Du führst "Karriere-Wegweiser"-Lesungen durch.
+  buildCareerPathGuidePrompt: ({ profile, strengthCard, opportunityCard, directionCard, strengthOrientation, opportunityOrientation, directionOrientation, strengthReversalStyle, opportunityReversalStyle, directionReversalStyle }) => {
+    const reversals = [];
+    if (strengthOrientation === "Umgekehrt" && strengthReversalStyle) reversals.push(`Stärke (${strengthCard}): ${reversalStyleMapDE[strengthReversalStyle]}`);
+    if (opportunityOrientation === "Umgekehrt" && opportunityReversalStyle) reversals.push(`Gelegenheit (${opportunityCard}): ${reversalStyleMapDE[opportunityReversalStyle]}`);
+    if (directionOrientation === "Umgekehrt" && directionReversalStyle) reversals.push(`Richtung (${directionCard}): ${reversalStyleMapDE[directionReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und Karriere-Coach. Du führst "Karriere-Wegweiser"-Lesungen durch.
 
 ⚠️ GRUNDREGEL: KEINE Aktionssprache. Natürlicher Fluss + Bewusstseinssprache.
 FRAGE: "Was sind meine Stärken, Chancen und die richtige Richtung?"
@@ -610,6 +770,7 @@ Karten (3 Karten):
 - Stärke: ${strengthCard} (${strengthOrientation})
 - Chance: ${opportunityCard} (${opportunityOrientation})
 - Richtung: ${directionCard} (${directionOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Allgemeine Sicht des Karrierepotenzials.
@@ -630,10 +791,20 @@ Gib nur JSON zurück:
   },
   "directionHint": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Neue Geschäftserkundung - 5 Karten
-  buildNewBusinessPrompt: ({ profile, ideaCard, foundationCard, challengeCard, opportunityCard, shiftCard, ideaOrientation, foundationOrientation, challengeOrientation, opportunityOrientation, shiftOrientation }) => `Du bist ein erfahrener Tarot- und Geschäftsberater. Du führst "Neue Geschäftserkundung"-Lesungen durch.
+  buildNewBusinessPrompt: ({ profile, ideaCard, foundationCard, challengeCard, opportunityCard, shiftCard, ideaOrientation, foundationOrientation, challengeOrientation, opportunityOrientation, shiftOrientation, ideaReversalStyle, foundationReversalStyle, challengeReversalStyle, opportunityReversalStyle, shiftReversalStyle }) => {
+    const reversals = [];
+    if (ideaOrientation === "Umgekehrt" && ideaReversalStyle) reversals.push(`Idee (${ideaCard}): ${reversalStyleMapDE[ideaReversalStyle]}`);
+    if (foundationOrientation === "Umgekehrt" && foundationReversalStyle) reversals.push(`Fundament (${foundationCard}): ${reversalStyleMapDE[foundationReversalStyle]}`);
+    if (challengeOrientation === "Umgekehrt" && challengeReversalStyle) reversals.push(`Herausforderung (${challengeCard}): ${reversalStyleMapDE[challengeReversalStyle]}`);
+    if (opportunityOrientation === "Umgekehrt" && opportunityReversalStyle) reversals.push(`Gelegenheit (${opportunityCard}): ${reversalStyleMapDE[opportunityReversalStyle]}`);
+    if (shiftOrientation === "Umgekehrt" && shiftReversalStyle) reversals.push(`Wandel (${shiftCard}): ${reversalStyleMapDE[shiftReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und Geschäftsberater. Du führst "Neue Geschäftserkundung"-Lesungen durch.
 
 ⚠️ GRUNDREGEL: KEINE Aktionssprache. Natürlicher Fluss + Bewusstseinssprache.
 FRAGE: "Wie kann ich diese Geschäfts-/Unternehmensidee ganzheitlich sehen?"
@@ -663,6 +834,7 @@ Karten (5 Karten):
 - Kernherausforderung: ${challengeCard} (${challengeOrientation})
 - Wachstumspotenzial: ${opportunityCard} (${opportunityOrientation})
 - Erforderliche Denkweise-Änderung: ${shiftCard} (${shiftOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Allgemeine Bewertung der Geschäftsidee.
@@ -679,10 +851,20 @@ Gib nur JSON zurück:
   "riskNote": "...",
   "directionHint": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Vermögensfluss - 5 Karten
-  buildWealthFlowPrompt: ({ profile, incomeCard, blockCard, resourceCard, growthCard, balanceCard, incomeOrientation, blockOrientation, resourceOrientation, growthOrientation, balanceOrientation }) => `Du bist ein erfahrener Tarot- und Finanzbewusstseinsberater. Du führst "Vermögensfluss"-Lesungen durch.
+  buildWealthFlowPrompt: ({ profile, incomeCard, blockCard, resourceCard, growthCard, balanceCard, incomeOrientation, blockOrientation, resourceOrientation, growthOrientation, balanceOrientation, incomeReversalStyle, blockReversalStyle, resourceReversalStyle, growthReversalStyle, balanceReversalStyle }) => {
+    const reversals = [];
+    if (incomeOrientation === "Umgekehrt" && incomeReversalStyle) reversals.push(`Einkommen (${incomeCard}): ${reversalStyleMapDE[incomeReversalStyle]}`);
+    if (blockOrientation === "Umgekehrt" && blockReversalStyle) reversals.push(`Blockade (${blockCard}): ${reversalStyleMapDE[blockReversalStyle]}`);
+    if (resourceOrientation === "Umgekehrt" && resourceReversalStyle) reversals.push(`Ressource (${resourceCard}): ${reversalStyleMapDE[resourceReversalStyle]}`);
+    if (growthOrientation === "Umgekehrt" && growthReversalStyle) reversals.push(`Wachstum (${growthCard}): ${reversalStyleMapDE[growthReversalStyle]}`);
+    if (balanceOrientation === "Umgekehrt" && balanceReversalStyle) reversals.push(`Balance (${balanceCard}): ${reversalStyleMapDE[balanceReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nINTERPRETATION UMGEKEHRTER KARTEN:\n${reversals.join("\n")}` : "";
+    
+    return `Du bist ein erfahrener Tarot- und Finanzbewusstseinsberater. Du führst "Vermögensfluss"-Lesungen durch.
 
 ⚠️ GRUNDREGEL: KEINE Aktionssprache. Natürlicher Fluss + Bewusstseinssprache.
 FRAGE: "Wie sieht mein Geldfluss, Blockaden und Nachhaltigkeit aus?"
@@ -712,6 +894,7 @@ Karten (5 Karten):
 - Starke Ressource: ${resourceCard} (${resourceOrientation})
 - Wachstumspotenzial: ${growthCard} (${growthOrientation})
 - Finanzielle Balance: ${balanceCard} (${balanceOrientation})
+${reversalGuidance}
 
 Struktur:
 - overall: 3-4 Sätze. Allgemeine Sicht des Finanzflusses.
@@ -728,5 +911,6 @@ Gib nur JSON zurück:
   "optimization": "...",
   "directionHint": "...",
   "journal": "..."
-}`
+}`;
+  }
 };

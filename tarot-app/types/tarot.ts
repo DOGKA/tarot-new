@@ -134,8 +134,10 @@ export interface YesNoRequest {
 export interface YesNoReading {
   title: string;
   focusArea: FocusArea;
-  answer: "yes" | "no";
-  confidence: number; // 55-90
+  answer: "yes" | "no" | "uncertain"; // v2: added uncertain
+  confidence: number; // 40-95
+  clarityLabel?: string; // v2: "Net", "Şartlı", "Düşük", "Belirsiz"
+  conditionMessage?: string; // v2: for uncertain answers
   explanation: string;
   keywords?: string[]; // focusArea'ya göre keywords
 }

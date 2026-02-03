@@ -17,31 +17,272 @@ const logsFilePath = path.join(logsDir, "premium-readings.json");
 
 // Data folder base path
 const dataBasePath = path.join(__dirname, "../tarot-app/data");
+const backendDataPath = path.join(__dirname, "data");
 
-// Load Yes/No data for all languages
-const yesNoClarityByLang = {};
-const yesNoAnswersByLang = {};
+// ============================================
+// CARD DATA - byKey INDEX (cardKey based)
+// ============================================
+
 const supportedLanguages = ['tr', 'en', 'de', 'es'];
 
+// Load tarot-template.json per language and create byKey index
+const templateByLang = {};
+const cardsByKey = {}; // Master index: cardKey -> card data (per language)
+
 supportedLanguages.forEach(lang => {
-  // Load clarity data: data/{lang}/yesno-clarity.json
-  const clarityPath = path.join(dataBasePath, lang, "yesno-clarity.json");
+  const templatePath = path.join(backendDataPath, lang, "tarot-template.json");
   try {
-    yesNoClarityByLang[lang] = JSON.parse(fs.readFileSync(clarityPath, "utf8"));
-    console.log(`Loaded ${lang}/yesno-clarity.json`);
+    const data = JSON.parse(fs.readFileSync(templatePath, "utf8"));
+    templateByLang[lang] = data;
+    
+    // Create byKey index for this language
+    cardsByKey[lang] = {};
+    data.cards.forEach(card => {
+      const cardKey = card.image; // image field = cardKey
+      cardsByKey[lang][cardKey] = card;
+    });
+    
+    console.log(`✓ Loaded ${lang}/tarot-template.json (${data.cards.length} cards, byKey indexed)`);
   } catch (e) {
-    console.warn(`Could not load ${lang}/yesno-clarity.json:`, e.message);
-  }
-  
-  // Load answers data: data/{lang}/yesno-answers.json
-  const answersPath = path.join(dataBasePath, lang, "yesno-answers.json");
-  try {
-    yesNoAnswersByLang[lang] = JSON.parse(fs.readFileSync(answersPath, "utf8"));
-    console.log(`Loaded ${lang}/yesno-answers.json`);
-  } catch (e) {
-    console.warn(`Could not load ${lang}/yesno-answers.json:`, e.message);
+    console.warn(`✗ Could not load ${lang}/tarot-template.json:`, e.message);
   }
 });
+
+// Get card by cardKey
+const getCardByKey = (cardKey, language = 'tr') => {
+  return cardsByKey[language]?.[cardKey] || cardsByKey.tr?.[cardKey] || null;
+};
+
+// Get all cardKeys from template (canonical list)
+const getCanonicalCardKeys = () => {
+  const trTemplate = templateByLang.tr;
+  if (!trTemplate) return [];
+  return trTemplate.cards.map(card => card.image);
+};
+
+// ============================================
+// DRIFT CHECKER - Verify data consistency
+// ============================================
+
+const runDriftChecker = () => {
+  console.log('\n--- Drift Checker ---');
+  const canonicalKeys = new Set(getCanonicalCardKeys());
+  let hasErrors = false;
+  
+  // Check tendency.map.json for each language
+  supportedLanguages.forEach(lang => {
+    const tendencyData = tendencyMapByLang[lang];
+    if (!tendencyData) {
+      console.warn(`⚠️  ${lang}/tendency.map.json not loaded`);
+      hasErrors = true;
+      return;
+    }
+    
+    const tendencyKeys = Object.keys(tendencyData).filter(k => !k.startsWith('_'));
+    const missingInTendency = [...canonicalKeys].filter(k => !tendencyKeys.includes(k));
+    const extraInTendency = tendencyKeys.filter(k => !canonicalKeys.has(k));
+    
+    if (missingInTendency.length > 0) {
+      console.warn(`⚠️  ${lang}/tendency.map.json missing ${missingInTendency.length} keys`);
+      hasErrors = true;
+    }
+    if (extraInTendency.length > 0) {
+      console.warn(`⚠️  ${lang}/tendency.map.json has ${extraInTendency.length} extra keys`);
+      hasErrors = true;
+    }
+  });
+  
+  // Check yesno-clarity.json for each language
+  supportedLanguages.forEach(lang => {
+    const clarityData = yesNoClarityByLangV2[lang];
+    if (!clarityData) return;
+    
+    const clarityKeys = Object.keys(clarityData).filter(k => !k.startsWith('_'));
+    const missingInClarity = [...canonicalKeys].filter(k => !clarityKeys.includes(k));
+    const extraInClarity = clarityKeys.filter(k => !canonicalKeys.has(k));
+    
+    if (missingInClarity.length > 0) {
+      console.warn(`⚠️  ${lang}/yesno-clarity.json missing ${missingInClarity.length} keys`);
+      hasErrors = true;
+    }
+    if (extraInClarity.length > 0) {
+      console.warn(`⚠️  ${lang}/yesno-clarity.json has ${extraInClarity.length} extra keys`);
+      hasErrors = true;
+    }
+  });
+  
+  // Log impact distribution (using EN as reference, normalized values)
+  const enTendencies = tendencyMapByLang.en || {};
+  const tendencyKeys = Object.keys(enTendencies).filter(k => !k.startsWith('_'));
+  const impactDist = { low: 0, standard: 0, high: 0 };
+  const reversalStyleDist = { delay: 0, internal: 0, shadow: 0, imbalance: 0, blocked: 0 };
+  
+  tendencyKeys.forEach(key => {
+    const tendency = enTendencies[key];
+    if (tendency?.orientationImpact) {
+      impactDist[tendency.orientationImpact] = (impactDist[tendency.orientationImpact] || 0) + 1;
+    }
+    if (tendency?.reversalStyle) {
+      reversalStyleDist[tendency.reversalStyle] = (reversalStyleDist[tendency.reversalStyle] || 0) + 1;
+    }
+  });
+  
+  console.log(`📊 Impact distribution: low=${impactDist.low} | standard=${impactDist.standard} | high=${impactDist.high}`);
+  console.log(`📊 ReversalStyle: delay=${reversalStyleDist.delay} | internal=${reversalStyleDist.internal} | shadow=${reversalStyleDist.shadow} | imbalance=${reversalStyleDist.imbalance} | blocked=${reversalStyleDist.blocked}`);
+  
+  if (!hasErrors) {
+    console.log('✅ All cardKeys consistent across all data files!');
+  }
+  console.log('');
+  
+  return !hasErrors;
+};
+
+// ============================================
+// YES/NO SYSTEM v2.0 - cardKey based
+// ============================================
+
+// Load tendency.map.json per language (cardKey based)
+const tendencyMapByLang = {};
+supportedLanguages.forEach(lang => {
+  const tendencyPath = path.join(backendDataPath, lang, "tendency.map.json");
+  try {
+    tendencyMapByLang[lang] = JSON.parse(fs.readFileSync(tendencyPath, "utf8"));
+    console.log(`✓ Loaded ${lang}/tendency.map.json (${Object.keys(tendencyMapByLang[lang]).length} cards)`);
+  } catch (e) {
+    console.warn(`✗ Could not load ${lang}/tendency.map.json:`, e.message);
+  }
+});
+
+// Backward compatibility alias
+const yesNoTendencies = tendencyMapByLang.en || {};
+
+// Load yesno-clarity.json per language (cardKey based)
+const yesNoClarityByLangV2 = {};
+const clarityLanguages = ['tr', 'en', 'de', 'es'];
+
+clarityLanguages.forEach(lang => {
+  const clarityPath = path.join(backendDataPath, lang, "yesno-clarity.json");
+  try {
+    yesNoClarityByLangV2[lang] = JSON.parse(fs.readFileSync(clarityPath, "utf8"));
+    console.log(`✓ Loaded ${lang}/yesno-clarity.json (cardKey based)`);
+  } catch (e) {
+    // Silent - file may not exist yet for this language
+  }
+});
+
+// Fallback to TR if language not found
+const yesNoClarity = yesNoClarityByLangV2.tr || {};
+
+// Language-specific value mappings for tendency logic
+const tendencyValueMaps = {
+  baseTendency: {
+    // Maps all language values to canonical EN values for logic
+    'yes': 'yes', 'evet': 'yes', 'ja': 'yes', 'sí': 'yes',
+    'strong_yes': 'strong_yes', 'güçlü_evet': 'strong_yes', 'stark_ja': 'strong_yes', 'fuerte_sí': 'strong_yes',
+    'no': 'no', 'hayır': 'no', 'nein': 'no',
+    'strong_no': 'strong_no', 'güçlü_hayır': 'strong_no', 'stark_nein': 'strong_no', 'fuerte_no': 'strong_no',
+    'uncertain': 'uncertain', 'belirsiz': 'uncertain', 'unsicher': 'uncertain', 'incierto': 'uncertain'
+  },
+  orientationImpact: {
+    'low': 'low', 'düşük': 'low', 'niedrig': 'low', 'bajo': 'low',
+    'standard': 'standard', 'standart': 'standard', 'estándar': 'standard',
+    'high': 'high', 'yüksek': 'high', 'hoch': 'high', 'alto': 'high'
+  },
+  reversalStyle: {
+    'delay': 'delay', 'gecikme': 'delay', 'verzögerung': 'delay', 'retraso': 'delay',
+    'internal': 'internal', 'içsel': 'internal', 'innerlich': 'internal', 'interno': 'internal',
+    'shadow': 'shadow', 'gölge': 'shadow', 'schatten': 'shadow', 'sombra': 'shadow',
+    'imbalance': 'imbalance', 'dengesizlik': 'imbalance', 'ungleichgewicht': 'imbalance', 'desequilibrio': 'imbalance',
+    'blocked': 'blocked', 'tıkanık': 'blocked', 'blockiert': 'blocked', 'bloqueado': 'blocked'
+  }
+};
+
+// Normalize tendency value to canonical EN
+const normalizeTendencyValue = (value, type) => {
+  return tendencyValueMaps[type]?.[value] || value;
+};
+
+// Get tendency data by cardKey (with language support)
+const getYesNoTendency = (cardKey, language = 'en') => {
+  const langMap = tendencyMapByLang[language] || tendencyMapByLang.en || {};
+  return langMap[cardKey] || { baseTendency: "uncertain", orientationImpact: "standard", reversalStyle: "internal" };
+};
+
+// Get clarity data by cardKey (with language support)
+const getYesNoClarityByKey = (cardKey, language = 'tr') => {
+  const langClarity = yesNoClarityByLangV2[language] || yesNoClarityByLangV2.tr || {};
+  return langClarity[cardKey] || { clarityWeight: 10, keywords: { general: ["enerji", "işaret"] } };
+};
+
+// Convert 5-level baseTendency to 3-level UI answer (handles all languages)
+const tendencyToAnswer = (baseTendency) => {
+  const normalized = normalizeTendencyValue(baseTendency, 'baseTendency');
+  if (normalized === "strong_yes" || normalized === "yes") return "yes";
+  if (normalized === "strong_no" || normalized === "no") return "no";
+  return "uncertain";
+};
+
+// Calculate confidence with cardKey-based logic (handles all languages)
+const calculateConfidenceV2 = (cardKey, orientation, language = 'en') => {
+  const tendency = getYesNoTendency(cardKey, language);
+  const clarityData = getYesNoClarityByKey(cardKey, language);
+  
+  // Normalize orientationImpact to canonical EN value
+  const normalizedImpact = normalizeTendencyValue(tendency.orientationImpact, 'orientationImpact');
+  
+  // Impact-based modifier (low: -8, standard: -12, high: -18)
+  const impactModifiers = { low: -8, standard: -12, high: -18 };
+  const baseModifier = impactModifiers[normalizedImpact] || -12;
+  
+  // Upright: +8, Reversed: negative based on impact
+  const orientationMod = orientation === "upright" ? 8 : baseModifier;
+  const base = 55 + (clarityData.clarityWeight || 10) + orientationMod;
+  
+  // Normalize baseTendency to check if uncertain
+  const normalizedTendency = normalizeTendencyValue(tendency.baseTendency, 'baseTendency');
+  
+  // Uncertain: 40-75, others: 45-90
+  if (normalizedTendency === "uncertain") {
+    return Math.min(75, Math.max(40, base));
+  }
+  return Math.min(90, Math.max(45, base));
+};
+
+// Get clarity label based on confidence
+const getClarityLabel = (confidence, language) => {
+  const labels = {
+    tr: { high: "Net", medium: "Şartlı", low: "Belirsiz" },
+    en: { high: "Clear", medium: "Conditional", low: "Uncertain" },
+    de: { high: "Klar", medium: "Bedingt", low: "Unsicher" },
+    es: { high: "Claro", medium: "Condicional", low: "Incierto" }
+  };
+  
+  const lang = labels[language] || labels.en;
+  if (confidence >= 75) return lang.high;
+  if (confidence >= 55) return lang.medium;
+  return lang.low;
+};
+
+// Get shortReason from clarity data (by cardKey and language)
+const getShortReason = (cardKey, language, orientation) => {
+  // Try language-specific clarity file first
+  const langClarity = yesNoClarityByLangV2[language];
+  if (langClarity?.[cardKey]?.shortReason?.[orientation]) {
+    return langClarity[cardKey].shortReason[orientation];
+  }
+  // Fallback to Turkish
+  const trClarity = yesNoClarityByLangV2.tr;
+  if (trClarity?.[cardKey]?.shortReason?.[orientation]) {
+    return trClarity[cardKey].shortReason[orientation];
+  }
+  return null;
+};
+
+// Legacy data for backward compatibility (will be removed later)
+const yesNoClarityByLang = {};
+const yesNoAnswersByLang = {};
+// Note: supportedLanguages already declared above
 
 // Get clarity data for a specific language (fallback to TR then EN)
 const getYesNoClarityData = (language, cardName) => {
@@ -114,7 +355,9 @@ const languageProfiles = {
     singleRules:
       "Her zaman hem nextStep (1 cümle) hem journal (1 soru) üret. focusArea dışındaki alanlardan bahsetme. nextStep emir kipinde tek aksiyon olsun. journal tek soru işareti ile bitsin.",
     orientation: { upright: "Düz", reversed: "Ters" },
-    yesNoAnswer: { yes: "Evet", no: "Hayır" },
+    yesNoAnswer: { yes: "Evet", no: "Hayır", uncertain: "Belirsiz" },
+    clarityLabel: { high: "Net", medium: "Şartlı", low: "Belirsiz" },
+    conditionMessage: "Koşullara göre netleşir",
   },
   en: {
     code: "en",
@@ -139,7 +382,9 @@ const languageProfiles = {
     singleRules:
       "Always include nextStep (1 sentence) and journal (1 question). Do not mention areas outside focusArea. nextStep must be an imperative single action. journal must end with a single question mark.",
     orientation: { upright: "Upright", reversed: "Reversed" },
-    yesNoAnswer: { yes: "Yes", no: "No" },
+    yesNoAnswer: { yes: "Yes", no: "No", uncertain: "Uncertain" },
+    clarityLabel: { high: "Clear", medium: "Conditional", low: "Uncertain" },
+    conditionMessage: "May change depending on conditions",
   },
   de: {
     code: "de",
@@ -164,7 +409,9 @@ const languageProfiles = {
     singleRules:
       "Erzeuge immer nextStep (1 Satz) und journal (1 Frage). Sprich nur über focusArea. nextStep als klarer Imperativ mit einer Aktion. journal endet mit genau einem Fragezeichen.",
     orientation: { upright: "Aufrecht", reversed: "Umgekehrt" },
-    yesNoAnswer: { yes: "Ja", no: "Nein" },
+    yesNoAnswer: { yes: "Ja", no: "Nein", uncertain: "Unsicher" },
+    clarityLabel: { high: "Klar", medium: "Bedingt", low: "Unsicher" },
+    conditionMessage: "Kann sich je nach Bedingungen ändern",
   },
   es: {
     code: "es",
@@ -189,7 +436,9 @@ const languageProfiles = {
     singleRules:
       "Incluye siempre nextStep (1 frase) y journal (1 pregunta). No menciones áreas fuera de focusArea. nextStep debe ser un imperativo con una sola acción. journal termina con un solo signo de interrogación.",
     orientation: { upright: "Derecha", reversed: "Invertida" },
-    yesNoAnswer: { yes: "Sí", no: "No" },
+    yesNoAnswer: { yes: "Sí", no: "No", uncertain: "Incierto" },
+    clarityLabel: { high: "Claro", medium: "Condicional", low: "Incierto" },
+    conditionMessage: "Puede cambiar según las condiciones",
   },
 };
 
@@ -617,30 +866,42 @@ app.post("/api/reading", async (req, res) => {
       : "general";
     const isPremium = req.body.isPremium === true;
     
-    // YES/NO SPREAD HANDLER
+    // YES/NO SPREAD HANDLER - v2.0 (cardKey based)
     if (spread === "yes_no" && card) {
-      const answer = getYesNoAnswer(language, card.name, card.orientation);
-      const confidence = calculateConfidence(language, card.name, card.orientation);
+      // cardKey = image field from card data (e.g., "19_sun", "00_fool")
+      const cardKey = card.image || card.cardKey || "";
+      
+      // v2: Get answer from baseTendency (independent of orientation)
+      const tendency = getYesNoTendency(cardKey, language);
+      const answer = tendencyToAnswer(tendency.baseTendency);
+      
+      // v2: Calculate confidence with orientation impact
+      const confidence = calculateConfidenceV2(cardKey, card.orientation, language);
+      const clarityLabel = getClarityLabel(confidence, language);
+      
       const orientationLabel = card.orientation === "upright" 
         ? profile.orientation.upright 
         : profile.orientation.reversed;
       
+      // Get clarity data for keywords and shortReason
+      const clarityData = getYesNoClarityByKey(cardKey, language);
+      const keywords = clarityData?.keywords?.[focusArea] || clarityData?.keywords?.general || [];
+      
       // FREE: Deterministic response
       if (!isPremium) {
-        let explanation = "";
-        let keywords = [];
+        // Get shortReason from cardKey-based clarity data
+        let explanation = getShortReason(cardKey, language, card.orientation);
         
-        const clarityData = getYesNoClarityData(language, card.name);
-        
-        if (clarityData && clarityData.shortReason) {
-          // Use language-specific shortReason + keywords
-          explanation = clarityData.shortReason[card.orientation];
-          keywords = clarityData.keywords[focusArea] || clarityData.keywords.general || [];
-        } else {
-          // Fallback: Use template system
-          keywords = getYesNoKeywords(card.name, language, focusArea);
-          const template = yesNoFreeTemplates[language] || yesNoFreeTemplates.en;
-          explanation = template[card.orientation](keywords[0], keywords[1]);
+        if (!explanation) {
+          // Fallback: Use legacy system or template
+          const legacyClarityData = getYesNoClarityData(language, card.name);
+          if (legacyClarityData?.shortReason?.[card.orientation]) {
+            explanation = legacyClarityData.shortReason[card.orientation];
+          } else {
+            const kw = keywords.length >= 2 ? keywords : ["enerji", "işaret"];
+            const template = yesNoFreeTemplates[language] || yesNoFreeTemplates.en;
+            explanation = template[card.orientation](kw[0], kw[1]);
+          }
         }
         
         const freeResponse = {
@@ -648,16 +909,22 @@ app.post("/api/reading", async (req, res) => {
           focusArea,
           answer,
           confidence,
+          clarityLabel,
           explanation,
-          keywords, // focusArea'ya göre keywords
+          keywords,
+          // v2: Additional info for UI
+          baseTendency: tendency.baseTendency,
+          answerMayChange: answer === "uncertain",
+          conditionMessage: answer === "uncertain" ? profile.conditionMessage : null,
         };
         
         appendLog({
           timestamp: new Date().toISOString(),
-          type: "yes_no_free",
+          type: "yes_no_free_v2",
           language,
           focusArea,
-          card: { name: card.name, orientation: card.orientation },
+          card: { name: card.name, image: cardKey, orientation: card.orientation },
+          tendency: tendency.baseTendency,
           response: freeResponse,
         });
         
@@ -672,11 +939,10 @@ app.post("/api/reading", async (req, res) => {
         focusArea,
         answer,
         confidence,
+        clarityLabel,
+        baseTendency: tendency.baseTendency,
+        reversalStyle: card.orientation === "reversed" ? (tendency.reversalStyle || "internal") : null,
       });
-      
-      // Get keywords from JSON (same as FREE)
-      const clarityData = getYesNoClarityData(language, card.name);
-      const keywords = clarityData?.keywords?.[focusArea] || clarityData?.keywords?.general || [];
       
       try {
         const systemMessage = getSystemMessage(language);
@@ -697,17 +963,22 @@ app.post("/api/reading", async (req, res) => {
           title: `${card.name} — ${profile.yesNoLabel}`,
           focusArea,
           answer,
-          confidence, // Always deterministic (netlik derecesi)
+          confidence,
+          clarityLabel,
           explanation: parsed.explanation || "No explanation available.",
-          keywords, // focusArea'ya göre keywords (JSON'dan)
+          keywords,
+          baseTendency: tendency.baseTendency,
+          answerMayChange: answer === "uncertain",
+          conditionMessage: answer === "uncertain" ? profile.conditionMessage : null,
         };
         
         appendLog({
           timestamp: new Date().toISOString(),
-          type: "yes_no_premium",
+          type: "yes_no_premium_v2",
           language,
           focusArea,
-          card: { name: card.name, orientation: card.orientation },
+          card: { name: card.name, image: cardKey, orientation: card.orientation },
+          tendency: tendency.baseTendency,
           prompt: yesNoPrompt,
           rawResponse: content,
           response: premiumResponse,
@@ -717,16 +988,24 @@ app.post("/api/reading", async (req, res) => {
       } catch (error) {
         console.error("Yes/No Premium error:", error);
         // Fallback to FREE response on error
-        const keywords = getYesNoKeywords(card.name, language, focusArea);
-        const template = yesNoFreeTemplates[language] || yesNoFreeTemplates.en;
-        const explanation = template[card.orientation](keywords[0], keywords[1]);
+        let explanation = getShortReason(cardKey, language, card.orientation);
+        if (!explanation) {
+          const kw = keywords.length >= 2 ? keywords : ["enerji", "işaret"];
+          const template = yesNoFreeTemplates[language] || yesNoFreeTemplates.en;
+          explanation = template[card.orientation](kw[0], kw[1]);
+        }
         
         return res.json({
           title: `${card.name} — ${profile.yesNoLabel}`,
           focusArea,
           answer,
           confidence,
+          clarityLabel,
           explanation,
+          keywords,
+          baseTendency: tendency.baseTendency,
+          answerMayChange: answer === "uncertain",
+          conditionMessage: answer === "uncertain" ? profile.conditionMessage : null,
         });
       }
     }
@@ -734,6 +1013,15 @@ app.post("/api/reading", async (req, res) => {
     const structureId = spread === "single_card" ? "single_v15_minimal" : "ppf_v15_story";
 
     let prompt = "";
+
+    // Helper to get reversalStyle for a card (normalized to EN)
+    const getReversalStyleForCard = (cardObj) => {
+      if (!cardObj || cardObj.orientation !== "reversed") return null;
+      const cardKey = cardObj.image || cardObj.cardKey;
+      const tendency = getYesNoTendency(cardKey, language);
+      const reversalStyle = tendency.reversalStyle || "internal";
+      return normalizeTendencyValue(reversalStyle, 'reversalStyle');
+    };
 
     if (spread === "single_card" && card) {
       const orientationLabel =
@@ -743,6 +1031,7 @@ app.post("/api/reading", async (req, res) => {
         cardName: card.name,
         orientationLabel,
         focusArea,
+        reversalStyle: getReversalStyleForCard(card),
       });
     } else if (spread === "past_present_future" && cards) {
       const past = cards.find((c) => c.position === "past");
@@ -768,6 +1057,9 @@ app.post("/api/reading", async (req, res) => {
         pastOrientation,
         presentOrientation,
         futureOrientation,
+        pastReversalStyle: getReversalStyleForCard(past),
+        presentReversalStyle: getReversalStyleForCard(present),
+        futureReversalStyle: getReversalStyleForCard(future),
       });
     } else if (spread === "situation_obstacle_advice" && cards) {
       // SOA SPREAD HANDLER
@@ -790,6 +1082,9 @@ app.post("/api/reading", async (req, res) => {
         situationOrientation,
         obstacleOrientation,
         adviceOrientation,
+        situationReversalStyle: getReversalStyleForCard(situation),
+        obstacleReversalStyle: getReversalStyleForCard(obstacle),
+        adviceReversalStyle: getReversalStyleForCard(advice),
       });
     } else if (spread === "destinys_embrace" && cards) {
       // DESTINY'S EMBRACE HANDLER
@@ -812,6 +1107,9 @@ app.post("/api/reading", async (req, res) => {
         destinyOrientation,
         pathOrientation,
         unionOrientation,
+        destinyReversalStyle: getReversalStyleForCard(destiny),
+        pathReversalStyle: getReversalStyleForCard(path),
+        unionReversalStyle: getReversalStyleForCard(union),
       });
     } else if (spread === "love_choice" && cards) {
       // LOVE CHOICE HANDLER - 5 cards
@@ -844,6 +1142,11 @@ app.post("/api/reading", async (req, res) => {
         optionBOrientation,
         optionBOutcomeOrientation,
         adviceOrientation,
+        optionAReversalStyle: getReversalStyleForCard(optionA),
+        optionAOutcomeReversalStyle: getReversalStyleForCard(optionAOutcome),
+        optionBReversalStyle: getReversalStyleForCard(optionB),
+        optionBOutcomeReversalStyle: getReversalStyleForCard(optionBOutcome),
+        adviceReversalStyle: getReversalStyleForCard(advice),
       });
     } else if (spread === "path_to_love" && cards) {
       // PATH TO LOVE HANDLER - 5 cards
@@ -876,6 +1179,11 @@ app.post("/api/reading", async (req, res) => {
         needOrientation,
         actionOrientation,
         potentialOrientation,
+        selfReversalStyle: getReversalStyleForCard(self),
+        blockReversalStyle: getReversalStyleForCard(block),
+        needReversalStyle: getReversalStyleForCard(need),
+        actionReversalStyle: getReversalStyleForCard(action),
+        potentialReversalStyle: getReversalStyleForCard(potential),
       });
     } else if (spread === "new_moon_ritual" && cards) {
       // NEW MOON RITUAL HANDLER - 5 cards
@@ -908,6 +1216,11 @@ app.post("/api/reading", async (req, res) => {
         shadowOrientation,
         supportOrientation,
         firstStepOrientation,
+        intentionReversalStyle: getReversalStyleForCard(intention),
+        seedReversalStyle: getReversalStyleForCard(seed),
+        shadowReversalStyle: getReversalStyleForCard(shadow),
+        supportReversalStyle: getReversalStyleForCard(support),
+        firstStepReversalStyle: getReversalStyleForCard(firstStep),
       });
     } else if (spread === "full_moon_release" && cards) {
       // FULL MOON RELEASE HANDLER - 5 cards
@@ -940,6 +1253,11 @@ app.post("/api/reading", async (req, res) => {
         lessonOrientation,
         releaseOrientation,
         integrationOrientation,
+        illuminationReversalStyle: getReversalStyleForCard(illumination),
+        tensionReversalStyle: getReversalStyleForCard(tension),
+        lessonReversalStyle: getReversalStyleForCard(lesson),
+        releaseReversalStyle: getReversalStyleForCard(release),
+        integrationReversalStyle: getReversalStyleForCard(integration),
       });
     } else if (spread === "mind_body_spirit" && cards) {
       // MIND BODY SPIRIT HANDLER - 3 cards
@@ -962,6 +1280,9 @@ app.post("/api/reading", async (req, res) => {
         mindOrientation,
         bodyOrientation,
         spiritOrientation,
+        mindReversalStyle: getReversalStyleForCard(mind),
+        bodyReversalStyle: getReversalStyleForCard(body),
+        spiritReversalStyle: getReversalStyleForCard(spirit),
       });
     } else if (spread === "celestial_illumination" && cards) {
       // CELESTIAL ILLUMINATION HANDLER - 3 cards
@@ -984,6 +1305,9 @@ app.post("/api/reading", async (req, res) => {
         signalOrientation,
         guidanceOrientation,
         integrationOrientation,
+        signalReversalStyle: getReversalStyleForCard(signal),
+        guidanceReversalStyle: getReversalStyleForCard(guidance),
+        integrationReversalStyle: getReversalStyleForCard(integration),
       });
     } else if (spread === "career_clarity" && cards) {
       // CAREER CLARITY HANDLER - 3 cards
@@ -1006,6 +1330,9 @@ app.post("/api/reading", async (req, res) => {
         currentOrientation,
         challengeOrientation,
         clarityOrientation,
+        currentReversalStyle: getReversalStyleForCard(current),
+        challengeReversalStyle: getReversalStyleForCard(challenge),
+        clarityReversalStyle: getReversalStyleForCard(clarity),
       });
     } else if (spread === "career_path_guide" && cards) {
       // CAREER PATH GUIDE HANDLER - 3 cards
@@ -1028,6 +1355,9 @@ app.post("/api/reading", async (req, res) => {
         strengthOrientation,
         opportunityOrientation,
         directionOrientation,
+        strengthReversalStyle: getReversalStyleForCard(strength),
+        opportunityReversalStyle: getReversalStyleForCard(opportunity),
+        directionReversalStyle: getReversalStyleForCard(direction),
       });
     } else if (spread === "new_business_exploration" && cards) {
       // NEW BUSINESS EXPLORATION HANDLER - 5 cards
@@ -1060,6 +1390,11 @@ app.post("/api/reading", async (req, res) => {
         challengeOrientation,
         opportunityOrientation,
         shiftOrientation,
+        ideaReversalStyle: getReversalStyleForCard(idea),
+        foundationReversalStyle: getReversalStyleForCard(foundation),
+        challengeReversalStyle: getReversalStyleForCard(challenge),
+        opportunityReversalStyle: getReversalStyleForCard(opportunity),
+        shiftReversalStyle: getReversalStyleForCard(shift),
       });
     } else if (spread === "wealth_flow" && cards) {
       // WEALTH FLOW HANDLER - 5 cards
@@ -1092,6 +1427,11 @@ app.post("/api/reading", async (req, res) => {
         resourceOrientation,
         growthOrientation,
         balanceOrientation,
+        incomeReversalStyle: getReversalStyleForCard(income),
+        blockReversalStyle: getReversalStyleForCard(block),
+        resourceReversalStyle: getReversalStyleForCard(resource),
+        growthReversalStyle: getReversalStyleForCard(growth),
+        balanceReversalStyle: getReversalStyleForCard(balance),
       });
     } else {
       return res.status(400).json({ error: "Invalid request" });
@@ -1222,7 +1562,246 @@ app.post("/api/logs/reset", (req, res) => {
   }
 });
 
+// ============================================
+// FREE READING API - Deterministic readings
+// ============================================
+
+// Spread -> allowed focusAreas mapping
+const spreadFocusMap = {
+  single_card: ['general', 'love', 'career', 'spiritual'],
+  yes_no: ['general', 'love', 'career', 'spiritual'],
+  past_present_future: ['general'],
+  situation_obstacle_advice: ['general'],
+  destinys_embrace: ['love'],
+  love_choice: ['love'],
+  path_to_love: ['love'],
+  career_clarity: ['career'],
+  career_path_guide: ['career'],
+  new_business_exploration: ['career'],
+  wealth_flow: ['career'],
+  new_moon_ritual: ['spiritual'],
+  full_moon_release: ['spiritual'],
+  mind_body_spirit: ['spiritual'],
+  celestial_illumination: ['spiritual'],
+};
+
+// Spread -> required positions mapping
+const spreadPositionMap = {
+  single_card: [],
+  yes_no: [],
+  past_present_future: ['past', 'present', 'future'],
+  situation_obstacle_advice: ['situation', 'obstacle', 'advice'],
+  destinys_embrace: ['destiny', 'path', 'union'],
+  love_choice: ['optionA', 'optionA_outcome', 'optionB', 'optionB_outcome', 'advice'],
+  path_to_love: ['self', 'block', 'need', 'action', 'potential'],
+  career_clarity: ['current', 'challenge', 'clarity'],
+  career_path_guide: ['strength', 'opportunity', 'direction'],
+  new_business_exploration: ['idea', 'foundation', 'challenge', 'opportunity', 'shift'],
+  wealth_flow: ['income', 'block', 'resource', 'growth', 'balance'],
+  new_moon_ritual: ['intention', 'seed', 'shadow', 'support', 'firstStep'],
+  full_moon_release: ['illumination', 'tension', 'lesson', 'release', 'integration'],
+  mind_body_spirit: ['mind', 'body', 'spirit'],
+  celestial_illumination: ['signal', 'guidance', 'integration'],
+};
+
+// Validate spread request
+const validateFreeRequest = (body) => {
+  const warnings = [];
+  const { language, spread, focusArea, cards } = body;
+  
+  // Validate language
+  if (!supportedLanguages.includes(language)) {
+    return { valid: false, error: `Invalid language: ${language}` };
+  }
+  
+  // Validate spread
+  if (!spreadFocusMap[spread]) {
+    return { valid: false, error: `Invalid spread: ${spread}` };
+  }
+  
+  // Validate focusArea (with fallback)
+  const allowedFocus = spreadFocusMap[spread];
+  let validFocusArea = focusArea;
+  if (!allowedFocus.includes(focusArea)) {
+    validFocusArea = allowedFocus[0]; // Default to first allowed
+    warnings.push(`focusArea '${focusArea}' not allowed for ${spread}, defaulted to '${validFocusArea}'`);
+  }
+  
+  // Validate cards array
+  if (!Array.isArray(cards) || cards.length === 0) {
+    return { valid: false, error: 'cards array is required' };
+  }
+  
+  // Validate each card
+  const requiredPositions = spreadPositionMap[spread];
+  const canonicalKeys = getCanonicalCardKeys();
+  
+  for (const card of cards) {
+    if (!card.cardKey && !card.image) {
+      return { valid: false, error: 'Each card must have cardKey or image' };
+    }
+    
+    const cardKey = card.cardKey || card.image;
+    if (!canonicalKeys.includes(cardKey)) {
+      warnings.push(`Unknown cardKey: ${cardKey}`);
+    }
+    
+    if (!['upright', 'reversed'].includes(card.orientation)) {
+      return { valid: false, error: `Invalid orientation: ${card.orientation}` };
+    }
+    
+    // Validate position for multi-card spreads
+    if (requiredPositions.length > 0 && !requiredPositions.includes(card.position)) {
+      warnings.push(`Invalid position '${card.position}' for ${spread}`);
+    }
+  }
+  
+  return { valid: true, validFocusArea, warnings };
+};
+
+// Impact modifiers for confidence/clarity
+const impactModifiers = {
+  low: { upright: 5, reversed: -3 },      // Strong archetype: less penalty
+  standard: { upright: 0, reversed: -6 }, // Normal
+  high: { upright: -3, reversed: -10 }    // Uncertain: more penalty
+};
+
+// Clarity range constraints (user-friendly)
+const clarityRange = { min: 50, max: 90 };
+
+// POST /api/reading/free - Deterministic FREE reading
+app.post("/api/reading/free", (req, res) => {
+  const { language, spread, focusArea, cards } = req.body;
+  
+  // Validate request
+  const validation = validateFreeRequest(req.body);
+  if (!validation.valid) {
+    return res.status(400).json({ error: validation.error });
+  }
+  
+  const { validFocusArea, warnings } = validation;
+  
+  try {
+    // Process each card with impact data
+    const cardReadings = cards.map(card => {
+      const cardKey = card.cardKey || card.image;
+      const cardData = getCardByKey(cardKey, language);
+      
+      if (!cardData) {
+        return {
+          position: card.position || null,
+          cardKey,
+          name: cardKey,
+          orientation: card.orientation,
+          meaning: "Card data not found",
+          error: true
+        };
+      }
+      
+      // Get tendency data for this card (impact & reversalStyle)
+      const tendency = getYesNoTendency(cardKey, language);
+      const impact = normalizeTendencyValue(tendency.orientationImpact || 'standard', 'orientationImpact');
+      const reversalStyle = normalizeTendencyValue(tendency.reversalStyle || 'internal', 'reversalStyle');
+      
+      // Get meaning based on orientation and focusArea
+      const meaning = cardData.meanings?.[card.orientation]?.[validFocusArea] 
+        || cardData.meanings?.[card.orientation]?.general
+        || "Meaning not available";
+      
+      // Calculate clarity score using impact (range: 50-90)
+      const baseClarity = card.orientation === 'upright' ? 78 : 62;
+      const modifier = impactModifiers[impact]?.[card.orientation] || 0;
+      const clarity = Math.min(clarityRange.max, Math.max(clarityRange.min, baseClarity + modifier));
+      
+      return {
+        position: card.position || null,
+        cardKey,
+        name: cardData.name,
+        orientation: card.orientation,
+        meaning,
+        clarity,
+        // Impact metadata (for debugging/premium)
+        impact,
+        reversalStyle: card.orientation === 'reversed' ? reversalStyle : null,
+        // Card metadata
+        arcana: cardData.arcana,
+        suit: cardData.suit,
+        element: cardData.element
+      };
+    });
+    
+    // Calculate aggregate heuristics
+    const reversedCount = cards.filter(c => c.orientation === 'reversed').length;
+    const majorCount = cardReadings.filter(c => c.arcana === 'major').length;
+    const avgClarity = Math.round(cardReadings.reduce((sum, c) => sum + (c.clarity || 70), 0) / cardReadings.length);
+    
+    // Count impact distribution in this reading
+    const impactDist = { low: 0, standard: 0, high: 0 };
+    cardReadings.forEach(c => {
+      if (c.impact) impactDist[c.impact]++;
+    });
+    
+    // Build response
+    const response = {
+      spread,
+      focusArea: validFocusArea,
+      language,
+      cards: cardReadings,
+      meta: {
+        totalCards: cards.length,
+        reversedCount,
+        majorCount,
+        avgClarity,
+        impactDistribution: impactDist,
+        timestamp: new Date().toISOString()
+      }
+    };
+    
+    // Add warnings if any
+    if (warnings.length > 0) {
+      response.warnings = warnings;
+    }
+    
+    // Log for debugging
+    console.log(`[FREE] ${spread} - ${language} - ${cards.length} cards - clarity: ${avgClarity}%`);
+    
+    res.json(response);
+    
+  } catch (error) {
+    console.error('[FREE] Error:', error);
+    res.status(500).json({ error: 'Failed to generate reading' });
+  }
+});
+
+// ============================================
+// CARDS API - Serve tarot card data
+// ============================================
+
+app.get("/api/cards/:language", (req, res) => {
+  const { language } = req.params;
+  const validLangs = ["tr", "en", "de", "es"];
+  
+  if (!validLangs.includes(language)) {
+    return res.status(400).json({ error: "Invalid language" });
+  }
+  
+  try {
+    const templatePath = path.join(backendDataPath, language, "tarot-template.json");
+    const data = JSON.parse(fs.readFileSync(templatePath, "utf8"));
+    res.json(data);
+  } catch (error) {
+    console.error(`Error loading cards for ${language}:`, error.message);
+    res.status(500).json({ error: "Could not load card data" });
+  }
+});
+
 const PORT = process.env.PORT || 3001;
+
+// Run drift checker before starting server
+runDriftChecker();
+
 app.listen(PORT, "0.0.0.0", () => {
-  console.log(`Backend running on http://localhost:${PORT}`);
+  console.log(`\n🚀 Backend running on http://localhost:${PORT}`);
+  console.log(`   Languages: ${supportedLanguages.join(', ')}`);
+  console.log(`   Cards indexed: ${getCanonicalCardKeys().length}`);
 });

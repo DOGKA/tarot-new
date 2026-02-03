@@ -1,22 +1,108 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import {
   View,
   Text,
   TouchableOpacity,
   StyleSheet,
   ScrollView,
+  ActivityIndicator,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
 import { GradientBackground, GlassCard, PremiumPreview } from "../components/ui";
 import { LinearGradient } from "expo-linear-gradient";
+import Constants from "expo-constants";
+
+// Backend API URL
+const host = Constants.expoConfig?.hostUri?.split(":")[0] || "localhost";
+const API_URL = `http://${host}:3001`;
+
+// API response types
+interface CardReading {
+  position: string | null;
+  cardKey: string;
+  name: string;
+  orientation: "upright" | "reversed";
+  meaning: string;
+  arcana?: string;
+  suit?: string;
+  element?: string;
+  reversalStyle?: "delay" | "internal" | "shadow" | "imbalance" | "blocked";
+}
+
+// ReversalStyle color map (no emojis, colors only)
+const reversalStyleColors: Record<string, string> = {
+  delay: "#f59e0b",      // Amber - waiting/timing
+  internal: "#8b5cf6",   // Purple - inner work
+  shadow: "#6b7280",     // Gray - hidden
+  imbalance: "#ec4899",  // Pink - excess
+  blocked: "#ef4444",    // Red - stopped
+};
+
+interface FreeReadingResponse {
+  spread: string;
+  focusArea: string;
+  language: string;
+  cards: CardReading[];
+  meta: {
+    totalCards: number;
+    reversedCount: number;
+    majorCount: number;
+  };
+  warnings?: string[];
+}
 
 export default function ResultScreen() {
   const router = useRouter();
   const { t } = useTranslation();
-  const { selectedCards, isPremium, spreadType, resetReading, focusArea } = useApp();
+  const { selectedCards, isPremium, spreadType, resetReading, focusArea, language } = useApp();
   const [showPremiumModal, setShowPremiumModal] = useState(false);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
+  const [reading, setReading] = useState<FreeReadingResponse | null>(null);
+
+  // Fetch FREE reading from backend
+  useEffect(() => {
+    const fetchReading = async () => {
+      if (selectedCards.length === 0 || !spreadType) {
+        setLoading(false);
+        return;
+      }
+
+      try {
+        const response = await fetch(`${API_URL}/api/reading/free`, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            language,
+            spread: spreadType,
+            focusArea,
+            cards: selectedCards.map(sel => ({
+              cardKey: sel.card.image, // Use image as cardKey
+              orientation: sel.orientation,
+              position: sel.position || null,
+            })),
+          }),
+        });
+
+        if (!response.ok) {
+          const err = await response.json();
+          throw new Error(err.error || "API request failed");
+        }
+
+        const data: FreeReadingResponse = await response.json();
+        setReading(data);
+      } catch (err) {
+        console.error("[result] Error fetching reading:", err);
+        setError(err instanceof Error ? err.message : "Unknown error");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchReading();
+  }, [selectedCards, spreadType, language, focusArea]);
 
   const handleNewReading = () => {
     resetReading();
@@ -31,32 +117,42 @@ export default function ResultScreen() {
     }
   };
 
-  // Get focus area based on spread type
-  const getCardMeaning = (card: typeof selectedCards[0]) => {
-    if (spreadType === "single_card") {
-      return card.card.meanings[card.orientation][focusArea];
-    }
-    
-    // Spread-specific focus areas
-    const spreadFocusMap: Record<string, keyof typeof card.card.meanings.upright> = {
-      destinys_embrace: "love",
-      love_choice: "love",
-      path_to_love: "love",
-      career_clarity: "career",
-      career_path_guide: "career",
-      new_business_exploration: "career",
-      wealth_flow: "career",
-      new_moon_ritual: "spiritual",
-      full_moon_release: "spiritual",
-      mind_body_spirit: "spiritual",
-      celestial_illumination: "spiritual",
-    };
-    
-    const focus = spreadFocusMap[spreadType || ""] || "general";
-    return card.card.meanings[card.orientation][focus];
-  };
+  // Loading state
+  if (loading) {
+    return (
+      <GradientBackground>
+        <View style={styles.loadingContainer}>
+          <ActivityIndicator size="large" color="#a855f7" />
+          <Text style={styles.loadingText}>{t("shuffle") || "Yükleniyor..."}</Text>
+        </View>
+      </GradientBackground>
+    );
+  }
 
-  if (selectedCards.length === 0) {
+  // Error state
+  if (error) {
+    return (
+      <GradientBackground>
+        <View style={styles.errorContainer}>
+          <GlassCard style={styles.errorCard}>
+            <Text style={styles.errorText}>Hata: {error}</Text>
+            <TouchableOpacity onPress={handleNewReading}>
+              <LinearGradient
+                colors={["#a855f7", "#6366f1"]}
+                style={styles.retryButton}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+              >
+                <Text style={styles.retryButtonText}>{t("newReading")}</Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          </GlassCard>
+        </View>
+      </GradientBackground>
+    );
+  }
+
+  if (selectedCards.length === 0 || !reading) {
     return (
       <GradientBackground>
         <View style={styles.emptyState}>
@@ -88,58 +184,75 @@ export default function ResultScreen() {
           showsHorizontalScrollIndicator={false}
           contentContainerStyle={styles.cardsSummary}
         >
-          {selectedCards.map((sel, i) => (
+          {reading.cards.map((card, i) => (
             <View key={i} style={styles.cardChip}>
               <Text style={styles.cardChipName} numberOfLines={1}>
-                {sel.card.name}
+                {card.name}
               </Text>
               <Text style={[
                 styles.cardChipOrientation,
-                { color: sel.orientation === "upright" ? "#22c55e" : "#ef4444" }
+                { color: card.orientation === "upright" ? "#22c55e" : "#ef4444" }
               ]}>
-                {sel.orientation === "upright" ? "↑" : "↓"}
+                {card.orientation === "upright" ? "↑" : "↓"}
               </Text>
             </View>
           ))}
         </ScrollView>
 
-        {/* Single Card - focus area badge */}
-        {spreadType === "single_card" && (
-          <View style={styles.focusBadgeContainer}>
-            <View style={styles.focusBadge}>
-              <Text style={styles.focusBadgeText}>{t(focusArea)}</Text>
-            </View>
+        {/* Focus area badge */}
+        <View style={styles.focusBadgeContainer}>
+          <View style={styles.focusBadge}>
+            <Text style={styles.focusBadgeText}>{t(reading.focusArea)}</Text>
           </View>
-        )}
+        </View>
 
-        {/* Card Meanings */}
+        {/* Card Meanings - from API */}
         <View style={styles.meaningsSection}>
-          {selectedCards.map((sel, i) => (
+          {reading.cards.map((card, i) => (
             <GlassCard key={i} style={styles.meaningCard}>
               {/* Position Label */}
-              {sel.position && (
+              {card.position && (
                 <Text style={[
                   styles.positionLabel,
-                  { color: sel.orientation === "upright" ? "#22c55e" : "#ef4444" }
+                  { color: card.orientation === "upright" ? "#22c55e" : "#ef4444" }
                 ]}>
-                  {t(sel.position === "shadow" ? "hiddenResistance" : sel.position)}
+                  {t(card.position === "shadow" ? "hiddenResistance" : card.position)}
                 </Text>
               )}
               
               {/* Card Name */}
-              <Text style={styles.cardNameLabel}>{sel.card.name}</Text>
+              <Text style={styles.cardNameLabel}>{card.name}</Text>
               
               {/* Orientation */}
               <Text style={[
                 styles.orientationLabel,
-                { color: sel.orientation === "upright" ? "#22c55e" : "#ef4444" }
+                { color: card.orientation === "upright" ? "#22c55e" : "#ef4444" }
               ]}>
-                {sel.orientation === "upright" ? "↑" : "↓"} {t(sel.orientation)}
+                {card.orientation === "upright" ? "↑" : "↓"} {t(card.orientation)}
               </Text>
               
-              {/* Meaning */}
+              {/* ReversalStyle Badge - only for reversed cards */}
+              {card.orientation === "reversed" && card.reversalStyle && (
+                <View style={[
+                  styles.reversalBadge,
+                  { backgroundColor: reversalStyleColors[card.reversalStyle] + "20" }
+                ]}>
+                  <View style={[
+                    styles.reversalDot,
+                    { backgroundColor: reversalStyleColors[card.reversalStyle] }
+                  ]} />
+                  <Text style={[
+                    styles.reversalText,
+                    { color: reversalStyleColors[card.reversalStyle] }
+                  ]}>
+                    {t(`reversal${card.reversalStyle.charAt(0).toUpperCase() + card.reversalStyle.slice(1)}`)}
+                  </Text>
+                </View>
+              )}
+              
+              {/* Meaning from API */}
               <Text style={styles.meaningText}>
-                {getCardMeaning(sel)}
+                {card.meaning}
               </Text>
             </GlassCard>
           ))}
@@ -199,6 +312,43 @@ export default function ResultScreen() {
 }
 
 const styles = StyleSheet.create({
+  loadingContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  loadingText: {
+    color: "rgba(255, 255, 255, 0.5)",
+    marginTop: 16,
+    fontSize: 16,
+  },
+  errorContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 20,
+  },
+  errorCard: {
+    alignItems: "center",
+    width: "100%",
+    maxWidth: 320,
+  },
+  errorText: {
+    color: "#ef4444",
+    fontSize: 16,
+    textAlign: "center",
+    marginBottom: 20,
+  },
+  retryButton: {
+    paddingHorizontal: 24,
+    paddingVertical: 12,
+    borderRadius: 12,
+  },
+  retryButtonText: {
+    color: "#fff",
+    fontSize: 16,
+    fontWeight: "600",
+  },
   emptyState: {
     flex: 1,
     justifyContent: "center",
@@ -300,7 +450,26 @@ const styles = StyleSheet.create({
   orientationLabel: {
     fontSize: 13,
     fontWeight: "600",
+    marginBottom: 8,
+  },
+  reversalBadge: {
+    flexDirection: "row",
+    alignItems: "center",
+    paddingHorizontal: 10,
+    paddingVertical: 5,
+    borderRadius: 12,
     marginBottom: 12,
+    alignSelf: "flex-start",
+  },
+  reversalDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    marginRight: 6,
+  },
+  reversalText: {
+    fontSize: 11,
+    fontWeight: "600",
   },
   meaningText: {
     color: "rgba(255, 255, 255, 0.8)",

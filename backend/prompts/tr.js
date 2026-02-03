@@ -2,13 +2,32 @@
  * Turkish (TR) prompts for ChatGPT
  */
 
+// ReversalStyle guidance map (Turkish)
+const reversalStyleMapTR = {
+  delay: "zamanlama ertelenmiş, sabır ve süreç vurgusu yap",
+  internal: "iç direnç veya öz-değer konusu var, içsel blokaja değin",
+  shadow: "bastırılmış duygu veya gölge niyet var, fark edilmeyene dikkat çek",
+  imbalance: "aşırılık veya denge sorunu var, ölçüyü hatırlat",
+  blocked: "akış durmuş, alternatif yol veya bekle mesajı ver"
+};
+
+// Helper to build reversal guidance
+const buildReversalGuidance = (isReversed, reversalStyle) => {
+  if (!isReversed || !reversalStyle) return "";
+  return `\n- TERS KART YORUMU: ${reversalStyleMapTR[reversalStyle] || "genel ters etki"}`;
+};
+
 module.exports = {
   // System message
   systemMessage: "Sen deneyimli bir tarot uzmanısın. Her zaman geçerli JSON döndür, hiçbir açıklama veya markdown ekleme.",
   retrySystemMessage: "Önceki yanıtın geçersizdi. Yalnızca istenen JSON yapısını döndür.",
 
   // Single Card Reading prompt
-  buildSinglePrompt: ({ profile, cardName, orientationLabel, focusArea }) => `
+  buildSinglePrompt: ({ profile, cardName, orientationLabel, focusArea, reversalStyle }) => {
+    const isReversed = orientationLabel === "Ters";
+    const reversalGuidance = buildReversalGuidance(isReversed, reversalStyle);
+    
+    return `
 ${profile.tone}
 ${profile.address}
 Dil: ${profile.nativeName}. Tüm metin bu dilde olmalı.
@@ -21,7 +40,7 @@ Kurallar:
 - deepDive: 4–6 cümle; kart ismini en fazla 1 kez kullan.
 - shadow: 2–3 cümle, olası gölge ya da uyarı.
 - nextStep: 1 cümle, emir kipiyle tek aksiyon.
-- journal: 1 soru, tek soru işaretiyle bitecek.
+- journal: 1 soru, tek soru işaretiyle bitecek.${reversalGuidance}
 
 Sadece JSON döndür:
 {
@@ -32,10 +51,18 @@ Sadece JSON döndür:
   "shadow": "2–3 cümle",
   "nextStep": "1 cümle",
   "journal": "1 soru"
-}`,
+}`;
+  },
 
   // Three Card (PPF) Reading prompt
-  buildPpfPrompt: ({ profile, pastCard, presentCard, futureCard, pastOrientation, presentOrientation, futureOrientation }) => `
+  buildPpfPrompt: ({ profile, pastCard, presentCard, futureCard, pastOrientation, presentOrientation, futureOrientation, pastReversalStyle, presentReversalStyle, futureReversalStyle }) => {
+    const reversals = [];
+    if (pastOrientation === "Ters" && pastReversalStyle) reversals.push(`Geçmiş (${pastCard}): ${reversalStyleMapTR[pastReversalStyle]}`);
+    if (presentOrientation === "Ters" && presentReversalStyle) reversals.push(`Şimdi (${presentCard}): ${reversalStyleMapTR[presentReversalStyle]}`);
+    if (futureOrientation === "Ters" && futureReversalStyle) reversals.push(`Gelecek (${futureCard}): ${reversalStyleMapTR[futureReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\n- TERS KARTLAR İÇİN YORUM REHBERİ:\n  ${reversals.join("\n  ")}` : "";
+    
+    return `
 ${profile.tone}
 ${profile.address}
 Dil: ${profile.nativeName}. Başlık ve tüm metin bu dilde olacak.
@@ -48,7 +75,7 @@ Kartlar:
 Kurallar:
 - story: 4–6 cümle; kart isimleri hikayede en fazla 1'er kez geçsin.
 - overall: 3–4 cümle (özet + gerilim + yön).
-- keywords tam 3, mood tek kelime.
+- keywords tam 3, mood tek kelime.${reversalGuidance}
 
 Sadece JSON döndür. Tek bir JSON nesnesi:
 {
@@ -68,11 +95,47 @@ Sadece JSON döndür. Tek bir JSON nesnesi:
   "keywords": ["...", "...", "..."],
   "mood": "tek kelime",
   "nextStep": "1 cümle"
-}`,
+}`;
+  },
 
-  // Yes/No Reading prompt
-  buildYesNoPrompt: ({ profile, cardName, orientationLabel, focusArea, answer, confidence }) => {
-    const answerText = profile.yesNoAnswer[answer];
+  // Yes/No Reading prompt (v2.1 - supports uncertain + reversalStyle)
+  buildYesNoPrompt: ({ profile, cardName, orientationLabel, focusArea, answer, confidence, clarityLabel, reversalStyle }) => {
+    const answerText = profile.yesNoAnswer[answer] || answer;
+    const isUncertain = answer === "uncertain";
+    const isReversed = orientationLabel === "Ters" || orientationLabel === "reversed";
+    
+    // Confidence context for GPT
+    const confidenceContext = confidence >= 80 
+      ? "Net ve güçlü bir yön var." 
+      : confidence >= 65 
+        ? "Belirli koşullara bağlı bir yön var." 
+        : confidence >= 50 
+          ? "Zayıf bir eğilim var, dikkatli ol." 
+          : "Çok belirsiz, zamanlama önemli.";
+    
+    // ReversalStyle guidance for GPT
+    const reversalStyleMap = {
+      delay: "zamanlama ertelenmiş, sabır ve süreç vurgusu yap",
+      internal: "iç direnç veya öz-değer konusu var, içsel blokaja değin",
+      shadow: "bastırılmış duygu veya gölge niyet var, fark edilmeyene dikkat çek",
+      imbalance: "aşırılık veya denge sorunu var, ölçüyü hatırlat",
+      blocked: "akış durmuş, alternatif yol veya bekle mesajı ver"
+    };
+    
+    const reversalGuidance = isReversed && reversalStyle 
+      ? `\n- Ters kart yorumu: ${reversalStyleMap[reversalStyle] || "genel ters etki"}`
+      : "";
+    
+    const uncertainRules = isUncertain 
+      ? `
+- Bu kartın enerjisi "belirsiz" bir cevap veriyor
+- Neden belirsiz olduğunu açıkla (kartın doğası, koşullar, zamanlama)
+- Netlik için nelerin değişmesi gerektiğine kısaca değin
+- Umut kırıcı olma ama gerçekçi ol`
+      : `
+- Cevabın arkasındaki enerjiyi açıkla
+- Kartın bu yönü neden gösterdiğini anlat`;
+    
     return `
 Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.
 ${profile.tone}
@@ -80,20 +143,28 @@ ${profile.address}
 
 Kart: ${cardName} (${orientationLabel})
 Cevap: ${answerText}
-Güven: %${confidence}
+Netlik: ${clarityLabel || `%${confidence}`}
+Bağlam: ${confidenceContext}
 Odak alanı: ${focusArea}
 
 Kurallar:
-- 12-25 kelime arasında açıklama yaz
-- Kartın enerjisini ve cevabın nedenini açıkla
+- 15-30 kelime arasında açıklama yaz${uncertainRules}${reversalGuidance}
 - Samimi ama profesyonel ol
+- Kartın ismini en fazla 1 kez kullan
 
 Sadece JSON döndür:
 {"explanation": "..."}`;
   },
 
   // SOA (Situation/Obstacle/Advice) Reading prompt
-  buildSoaPrompt: ({ profile, situationCard, obstacleCard, adviceCard, situationOrientation, obstacleOrientation, adviceOrientation }) => `
+  buildSoaPrompt: ({ profile, situationCard, obstacleCard, adviceCard, situationOrientation, obstacleOrientation, adviceOrientation, situationReversalStyle, obstacleReversalStyle, adviceReversalStyle }) => {
+    const reversals = [];
+    if (situationOrientation === "Ters" && situationReversalStyle) reversals.push(`Durum (${situationCard}): ${reversalStyleMapTR[situationReversalStyle]}`);
+    if (obstacleOrientation === "Ters" && obstacleReversalStyle) reversals.push(`Engel (${obstacleCard}): ${reversalStyleMapTR[obstacleReversalStyle]}`);
+    if (adviceOrientation === "Ters" && adviceReversalStyle) reversals.push(`Tavsiye (${adviceCard}): ${reversalStyleMapTR[adviceReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `
 Sen deneyimli bir tarot uzmanısın. Modern psikolojik yaklaşımla Durum/Engel/Tavsiye okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Kehanet yazma. Davranış analizi yaz.
@@ -125,6 +196,7 @@ Kartlar:
 - Durum: ${situationCard} (${situationOrientation})
 - Engel: ${obstacleCard} (${obstacleOrientation})
 - Tavsiye: ${adviceCard} (${adviceOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Yapısı: (1) mevcut durum, (2) gerilim, (3) yön.
@@ -145,10 +217,18 @@ Sadece JSON döndür:
     "advice": "..."
   },
   "nextStep": "..."
-}`,
+}`;
+  },
 
   // Destiny's Embrace (Kaderin Kucağı) prompt
-  buildDestinysEmbracePrompt: ({ profile, destinyCard, pathCard, unionCard, destinyOrientation, pathOrientation, unionOrientation }) => `Sen deneyimli bir tarot uzmanısın. "Destiny's Embrace (Kaderin Kucağı)" okuması yapıyorsun.
+  buildDestinysEmbracePrompt: ({ profile, destinyCard, pathCard, unionCard, destinyOrientation, pathOrientation, unionOrientation, destinyReversalStyle, pathReversalStyle, unionReversalStyle }) => {
+    const reversals = [];
+    if (destinyOrientation === "Ters" && destinyReversalStyle) reversals.push(`Kader (${destinyCard}): ${reversalStyleMapTR[destinyReversalStyle]}`);
+    if (pathOrientation === "Ters" && pathReversalStyle) reversals.push(`Yol (${pathCard}): ${reversalStyleMapTR[pathReversalStyle]}`);
+    if (unionOrientation === "Ters" && unionReversalStyle) reversals.push(`Birlik (${unionCard}): ${reversalStyleMapTR[unionReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot uzmanısın. "Destiny's Embrace (Kaderin Kucağı)" okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Kehanet yazma. Kader kesinliği verme. "Olacak/olmayacak" deme. İlişki dinamiği ve davranış analizi yaz.
 SORU: "Bu bağın yönü ne?"
@@ -175,6 +255,7 @@ Kartlar:
 - Kader (Destiny): ${destinyCard} (${destinyOrientation})
 - Yol (Path): ${pathCard} (${pathOrientation})
 - Birlik (Union): ${unionCard} (${unionOrientation})
+${reversalGuidance}
 
 Yapı ve uzunluk:
 - overall: 2-3 cümle. Bağın genel yönünü + ana gerilimi + kısa yönü özetle.
@@ -200,10 +281,20 @@ Sadece JSON döndür:
   },
   "nextStep": "...",
   "keywords": ["...", "...", "..."]
-}`,
+}`;
+  },
 
   // Love Choice (Aşk Seçimi) prompt - 5 kart
-  buildLoveChoicePrompt: ({ profile, optionACard, optionAOutcomeCard, optionBCard, optionBOutcomeCard, adviceCard, optionAOrientation, optionAOutcomeOrientation, optionBOrientation, optionBOutcomeOrientation, adviceOrientation }) => `Sen deneyimli bir tarot uzmanısın. "Love Choice" (Aşk Seçimi) okuması yapıyorsun.
+  buildLoveChoicePrompt: ({ profile, optionACard, optionAOutcomeCard, optionBCard, optionBOutcomeCard, adviceCard, optionAOrientation, optionAOutcomeOrientation, optionBOrientation, optionBOutcomeOrientation, adviceOrientation, optionAReversalStyle, optionAOutcomeReversalStyle, optionBReversalStyle, optionBOutcomeReversalStyle, adviceReversalStyle }) => {
+    const reversals = [];
+    if (optionAOrientation === "Ters" && optionAReversalStyle) reversals.push(`Seçenek A (${optionACard}): ${reversalStyleMapTR[optionAReversalStyle]}`);
+    if (optionAOutcomeOrientation === "Ters" && optionAOutcomeReversalStyle) reversals.push(`A Sonucu (${optionAOutcomeCard}): ${reversalStyleMapTR[optionAOutcomeReversalStyle]}`);
+    if (optionBOrientation === "Ters" && optionBReversalStyle) reversals.push(`Seçenek B (${optionBCard}): ${reversalStyleMapTR[optionBReversalStyle]}`);
+    if (optionBOutcomeOrientation === "Ters" && optionBOutcomeReversalStyle) reversals.push(`B Sonucu (${optionBOutcomeCard}): ${reversalStyleMapTR[optionBOutcomeReversalStyle]}`);
+    if (adviceOrientation === "Ters" && adviceReversalStyle) reversals.push(`Tavsiye (${adviceCard}): ${reversalStyleMapTR[adviceReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot uzmanısın. "Love Choice" (Aşk Seçimi) okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Kehanet yazma. Hangi yolu seçmesi gerektiğini söyleme. Davranış sonucu analizi yaz.
 SORU: "Bu iki yolun psikolojik farkı ne?"
@@ -232,6 +323,7 @@ Kartlar (5 kart):
 - Seçenek B: ${optionBCard} (${optionBOrientation})
 - B Sonucu: ${optionBOutcomeCard} (${optionBOutcomeOrientation})
 - Tavsiye: ${adviceCard} (${adviceOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 2-3 cümle. İki yolun temel farkını + gerilimi + yönü özetle.
@@ -264,10 +356,20 @@ Sadece JSON döndür:
   "decisionLens": "...",
   "nextStep": "...",
   "keywords": ["...", "...", "..."]
-}`,
+}`;
+  },
 
   // Path to Love (Aşka Giden Yol) prompt - 5 kart
-  buildPathToLovePrompt: ({ profile, selfCard, blockCard, needCard, actionCard, potentialCard, selfOrientation, blockOrientation, needOrientation, actionOrientation, potentialOrientation }) => `Sen deneyimli bir tarot uzmanısın. "Path to Love" (Aşka Giden Yol) okuması yapıyorsun.
+  buildPathToLovePrompt: ({ profile, selfCard, blockCard, needCard, actionCard, potentialCard, selfOrientation, blockOrientation, needOrientation, actionOrientation, potentialOrientation, selfReversalStyle, blockReversalStyle, needReversalStyle, actionReversalStyle, potentialReversalStyle }) => {
+    const reversals = [];
+    if (selfOrientation === "Ters" && selfReversalStyle) reversals.push(`Ben (${selfCard}): ${reversalStyleMapTR[selfReversalStyle]}`);
+    if (blockOrientation === "Ters" && blockReversalStyle) reversals.push(`Blok (${blockCard}): ${reversalStyleMapTR[blockReversalStyle]}`);
+    if (needOrientation === "Ters" && needReversalStyle) reversals.push(`İhtiyaç (${needCard}): ${reversalStyleMapTR[needReversalStyle]}`);
+    if (actionOrientation === "Ters" && actionReversalStyle) reversals.push(`Aksiyon (${actionCard}): ${reversalStyleMapTR[actionReversalStyle]}`);
+    if (potentialOrientation === "Ters" && potentialReversalStyle) reversals.push(`Potansiyel (${potentialCard}): ${reversalStyleMapTR[potentialReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot uzmanısın. "Path to Love" (Aşka Giden Yol) okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Kehanet yazma. İlişki stratejisi yaz.
 SORU: "Aşka giden yolda beni ne geliştirir?"
@@ -296,6 +398,7 @@ Kartlar (5 kart):
 - İhtiyaç (Need): ${needCard} (${needOrientation})
 - Aksiyon (Action): ${actionCard} (${actionOrientation})
 - Potansiyel (Potential): ${potentialCard} (${potentialOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 2-3 cümle. İlişki stratejisinin özeti.
@@ -328,14 +431,24 @@ Sadece JSON döndür:
   "strategy": "...",
   "nextStep": "...",
   "keywords": ["...", "...", "..."]
-}`,
+}`;
+  },
 
   // ============================================
   // SPIRITUAL SPREADS
   // ============================================
 
   // New Moon Ritual (Yeni Ay Ritüeli) - 5 kart
-  buildNewMoonPrompt: ({ profile, intentionCard, seedCard, shadowCard, supportCard, firstStepCard, intentionOrientation, seedOrientation, shadowOrientation, supportOrientation, firstStepOrientation }) => `Sen deneyimli bir tarot ve ruhsal rehberlik uzmanısın. "New Moon Ritual" (Yeni Ay Ritüeli) okuması yapıyorsun.
+  buildNewMoonPrompt: ({ profile, intentionCard, seedCard, shadowCard, supportCard, firstStepCard, intentionOrientation, seedOrientation, shadowOrientation, supportOrientation, firstStepOrientation, intentionReversalStyle, seedReversalStyle, shadowReversalStyle, supportReversalStyle, firstStepReversalStyle }) => {
+    const reversals = [];
+    if (intentionOrientation === "Ters" && intentionReversalStyle) reversals.push(`Niyet (${intentionCard}): ${reversalStyleMapTR[intentionReversalStyle]}`);
+    if (seedOrientation === "Ters" && seedReversalStyle) reversals.push(`Tohum (${seedCard}): ${reversalStyleMapTR[seedReversalStyle]}`);
+    if (shadowOrientation === "Ters" && shadowReversalStyle) reversals.push(`Gizli Direnç (${shadowCard}): ${reversalStyleMapTR[shadowReversalStyle]}`);
+    if (supportOrientation === "Ters" && supportReversalStyle) reversals.push(`Ruhsal Destek (${supportCard}): ${reversalStyleMapTR[supportReversalStyle]}`);
+    if (firstStepOrientation === "Ters" && firstStepReversalStyle) reversals.push(`İlk Adım (${firstStepCard}): ${reversalStyleMapTR[firstStepReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve ruhsal rehberlik uzmanısın. "New Moon Ritual" (Yeni Ay Ritüeli) okuması yapıyorsun.
 
 Ton: Derin, sezgisel, içsel farkındalığa yönelik.
 Tarz:
@@ -357,6 +470,7 @@ Kartlar (5 kart):
 - Gizli Direnç (Shadow): ${shadowCard} (${shadowOrientation})
 - Ruhsal Destek (Support): ${supportCard} (${supportOrientation})
 - İlk Adım (First Step): ${firstStepCard} (${firstStepOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Yeni ay döngüsünün sana getirdiği enerji, genel tema ve yön.
@@ -385,10 +499,20 @@ Sadece JSON döndür:
   "affirmation": "...",
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Full Moon Release (Dolunay Arınması) - 5 kart
-  buildFullMoonPrompt: ({ profile, illuminationCard, tensionCard, lessonCard, releaseCard, integrationCard, illuminationOrientation, tensionOrientation, lessonOrientation, releaseOrientation, integrationOrientation }) => `Sen deneyimli bir tarot ve ruhsal rehberlik uzmanısın. "Full Moon Release" (Dolunay Arınması) okuması yapıyorsun.
+  buildFullMoonPrompt: ({ profile, illuminationCard, tensionCard, lessonCard, releaseCard, integrationCard, illuminationOrientation, tensionOrientation, lessonOrientation, releaseOrientation, integrationOrientation, illuminationReversalStyle, tensionReversalStyle, lessonReversalStyle, releaseReversalStyle, integrationReversalStyle }) => {
+    const reversals = [];
+    if (illuminationOrientation === "Ters" && illuminationReversalStyle) reversals.push(`Açığa Çıkan (${illuminationCard}): ${reversalStyleMapTR[illuminationReversalStyle]}`);
+    if (tensionOrientation === "Ters" && tensionReversalStyle) reversals.push(`İçsel Yük (${tensionCard}): ${reversalStyleMapTR[tensionReversalStyle]}`);
+    if (lessonOrientation === "Ters" && lessonReversalStyle) reversals.push(`Ders (${lessonCard}): ${reversalStyleMapTR[lessonReversalStyle]}`);
+    if (releaseOrientation === "Ters" && releaseReversalStyle) reversals.push(`Bırakılacak (${releaseCard}): ${reversalStyleMapTR[releaseReversalStyle]}`);
+    if (integrationOrientation === "Ters" && integrationReversalStyle) reversals.push(`Yeni Denge (${integrationCard}): ${reversalStyleMapTR[integrationReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve ruhsal rehberlik uzmanısın. "Full Moon Release" (Dolunay Arınması) okuması yapıyorsun.
 
 Ton: Derin, arındırıcı, dönüştürücü.
 Tarz:
@@ -410,6 +534,7 @@ Kartlar (5 kart):
 - Ders (Lesson): ${lessonCard} (${lessonOrientation})
 - Bırakılacak (Release): ${releaseCard} (${releaseOrientation})
 - Yeni Denge (Integration): ${integrationCard} (${integrationOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Dolunayın sana getirdiği aydınlanma ve arınma fırsatı.
@@ -440,10 +565,18 @@ Sadece JSON döndür:
   "affirmation": "...",
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Mind Body Spirit (Zihin Beden Ruh) - 3 kart
-  buildMbsPrompt: ({ profile, mindCard, bodyCard, spiritCard, mindOrientation, bodyOrientation, spiritOrientation }) => `Sen deneyimli bir tarot ve bütünsel sağlık uzmanısın. "Mind Body Spirit" (Zihin Beden Ruh) okuması yapıyorsun.
+  buildMbsPrompt: ({ profile, mindCard, bodyCard, spiritCard, mindOrientation, bodyOrientation, spiritOrientation, mindReversalStyle, bodyReversalStyle, spiritReversalStyle }) => {
+    const reversals = [];
+    if (mindOrientation === "Ters" && mindReversalStyle) reversals.push(`Zihin (${mindCard}): ${reversalStyleMapTR[mindReversalStyle]}`);
+    if (bodyOrientation === "Ters" && bodyReversalStyle) reversals.push(`Beden (${bodyCard}): ${reversalStyleMapTR[bodyReversalStyle]}`);
+    if (spiritOrientation === "Ters" && spiritReversalStyle) reversals.push(`Ruh (${spiritCard}): ${reversalStyleMapTR[spiritReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve bütünsel sağlık uzmanısın. "Mind Body Spirit" (Zihin Beden Ruh) okuması yapıyorsun.
 
 Ton: Bütünsel, dengeleyici, farkındalık odaklı.
 Tarz:
@@ -462,6 +595,7 @@ Kartlar (3 kart):
 - Zihin (Mind): ${mindCard} (${mindOrientation})
 - Beden (Body): ${bodyCard} (${bodyOrientation})
 - Ruh (Spirit): ${spiritCard} (${spiritOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Üç alanın genel dengesi ve ana tema.
@@ -486,10 +620,18 @@ Sadece JSON döndür:
   "alignmentAdvice": "...",
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Celestial Illumination (Kozmik Aydınlanma) - 3 kart
-  buildCelestialPrompt: ({ profile, signalCard, guidanceCard, integrationCard, signalOrientation, guidanceOrientation, integrationOrientation }) => `Sen deneyimli bir tarot ve spiritüel rehberlik uzmanısın. "Celestial Illumination" (Kozmik Aydınlanma) okuması yapıyorsun.
+  buildCelestialPrompt: ({ profile, signalCard, guidanceCard, integrationCard, signalOrientation, guidanceOrientation, integrationOrientation, signalReversalStyle, guidanceReversalStyle, integrationReversalStyle }) => {
+    const reversals = [];
+    if (signalOrientation === "Ters" && signalReversalStyle) reversals.push(`İşaret (${signalCard}): ${reversalStyleMapTR[signalReversalStyle]}`);
+    if (guidanceOrientation === "Ters" && guidanceReversalStyle) reversals.push(`Rehberlik (${guidanceCard}): ${reversalStyleMapTR[guidanceReversalStyle]}`);
+    if (integrationOrientation === "Ters" && integrationReversalStyle) reversals.push(`Bütünleşme (${integrationCard}): ${reversalStyleMapTR[integrationReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve spiritüel rehberlik uzmanısın. "Celestial Illumination" (Kozmik Aydınlanma) okuması yapıyorsun.
 
 Ton: Mistik, sezgisel, evrensel bağlantı odaklı.
 Tarz:
@@ -508,6 +650,7 @@ Kartlar (3 kart):
 - İşaret (Signal): ${signalCard} (${signalOrientation})
 - Rehberlik (Guidance): ${guidanceCard} (${guidanceOrientation})
 - Yansıma (Integration): ${integrationCard} (${integrationOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Kozmik mesajın özeti ve genel yön.
@@ -532,14 +675,22 @@ Sadece JSON döndür:
   "omenKeywords": ["...", "...", "..."],
   "nextStep": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // ============================================
   // CAREER SPREADS
   // ============================================
 
   // Career Clarity (Kariyer Netliği) - 3 kart
-  buildCareerClarityPrompt: ({ profile, currentCard, challengeCard, clarityCard, currentOrientation, challengeOrientation, clarityOrientation }) => `Sen deneyimli bir tarot ve kariyer koçusun. "Career Clarity" (Kariyer Netliği) okuması yapıyorsun.
+  buildCareerClarityPrompt: ({ profile, currentCard, challengeCard, clarityCard, currentOrientation, challengeOrientation, clarityOrientation, currentReversalStyle, challengeReversalStyle, clarityReversalStyle }) => {
+    const reversals = [];
+    if (currentOrientation === "Ters" && currentReversalStyle) reversals.push(`Mevcut (${currentCard}): ${reversalStyleMapTR[currentReversalStyle]}`);
+    if (challengeOrientation === "Ters" && challengeReversalStyle) reversals.push(`Zorluk (${challengeCard}): ${reversalStyleMapTR[challengeReversalStyle]}`);
+    if (clarityOrientation === "Ters" && clarityReversalStyle) reversals.push(`Netlik (${clarityCard}): ${reversalStyleMapTR[clarityReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve kariyer koçusun. "Career Clarity" (Kariyer Netliği) okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Aksiyon dili YOK. Doğal akış + farkındalık dili.
 SORU: "Şu an neredeyim, ne net, ne bulanık?"
@@ -566,6 +717,7 @@ Kartlar (3 kart):
 - Mevcut Durum (Current): ${currentCard} (${currentOrientation})
 - Ana Zorluk (Challenge): ${challengeCard} (${challengeOrientation})
 - Netleşen Yön (Clarity): ${clarityCard} (${clarityOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Kariyer durumunun genel görünümü.
@@ -580,10 +732,18 @@ Sadece JSON döndür:
   "throughline": "...",
   "directionHint": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Career Path Guide (Kariyer Yol Haritası) - 3 kart
-  buildCareerPathGuidePrompt: ({ profile, strengthCard, opportunityCard, directionCard, strengthOrientation, opportunityOrientation, directionOrientation }) => `Sen deneyimli bir tarot ve kariyer koçusun. "Career Path Guide" (Kariyer Yol Haritası) okuması yapıyorsun.
+  buildCareerPathGuidePrompt: ({ profile, strengthCard, opportunityCard, directionCard, strengthOrientation, opportunityOrientation, directionOrientation, strengthReversalStyle, opportunityReversalStyle, directionReversalStyle }) => {
+    const reversals = [];
+    if (strengthOrientation === "Ters" && strengthReversalStyle) reversals.push(`Güçlü Yön (${strengthCard}): ${reversalStyleMapTR[strengthReversalStyle]}`);
+    if (opportunityOrientation === "Ters" && opportunityReversalStyle) reversals.push(`Fırsat Alanı (${opportunityCard}): ${reversalStyleMapTR[opportunityReversalStyle]}`);
+    if (directionOrientation === "Ters" && directionReversalStyle) reversals.push(`Yol Gösterici (${directionCard}): ${reversalStyleMapTR[directionReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve kariyer koçusun. "Career Path Guide" (Kariyer Yol Haritası) okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Aksiyon dili YOK. Doğal akış + farkındalık dili.
 SORU: "Güçlü yönlerim, fırsatlarım ve doğru yönelimim ne?"
@@ -610,6 +770,7 @@ Kartlar (3 kart):
 - Güçlü Yön (Strength): ${strengthCard} (${strengthOrientation})
 - Fırsat Alanı (Opportunity): ${opportunityCard} (${opportunityOrientation})
 - Yol Gösterici Yön (Direction): ${directionCard} (${directionOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Kariyer potansiyelinin genel görünümü.
@@ -630,10 +791,20 @@ Sadece JSON döndür:
   },
   "directionHint": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // New Business Exploration (Yeni İş Keşfi) - 5 kart
-  buildNewBusinessPrompt: ({ profile, ideaCard, foundationCard, challengeCard, opportunityCard, shiftCard, ideaOrientation, foundationOrientation, challengeOrientation, opportunityOrientation, shiftOrientation }) => `Sen deneyimli bir tarot ve iş danışmanısın. "New Business Exploration" (Yeni İş Keşfi) okuması yapıyorsun.
+  buildNewBusinessPrompt: ({ profile, ideaCard, foundationCard, challengeCard, opportunityCard, shiftCard, ideaOrientation, foundationOrientation, challengeOrientation, opportunityOrientation, shiftOrientation, ideaReversalStyle, foundationReversalStyle, challengeReversalStyle, opportunityReversalStyle, shiftReversalStyle }) => {
+    const reversals = [];
+    if (ideaOrientation === "Ters" && ideaReversalStyle) reversals.push(`İş Fikri (${ideaCard}): ${reversalStyleMapTR[ideaReversalStyle]}`);
+    if (foundationOrientation === "Ters" && foundationReversalStyle) reversals.push(`Mevcut Zemin (${foundationCard}): ${reversalStyleMapTR[foundationReversalStyle]}`);
+    if (challengeOrientation === "Ters" && challengeReversalStyle) reversals.push(`Temel Zorluk (${challengeCard}): ${reversalStyleMapTR[challengeReversalStyle]}`);
+    if (opportunityOrientation === "Ters" && opportunityReversalStyle) reversals.push(`Büyüme Potansiyeli (${opportunityCard}): ${reversalStyleMapTR[opportunityReversalStyle]}`);
+    if (shiftOrientation === "Ters" && shiftReversalStyle) reversals.push(`Zihniyet Değişimi (${shiftCard}): ${reversalStyleMapTR[shiftReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve iş danışmanısın. "New Business Exploration" (Yeni İş Keşfi) okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Aksiyon dili YOK. Doğal akış + farkındalık dili.
 SORU: "Bu iş/girişim fikrini bütüncül olarak nasıl görebilirim?"
@@ -663,6 +834,7 @@ Kartlar (5 kart):
 - Temel Zorluk (Challenge): ${challengeCard} (${challengeOrientation})
 - Büyüme Potansiyeli (Opportunity): ${opportunityCard} (${opportunityOrientation})
 - Gerekli Zihniyet Değişimi (Shift): ${shiftCard} (${shiftOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. İş fikrinin genel değerlendirmesi.
@@ -679,10 +851,20 @@ Sadece JSON döndür:
   "riskNote": "...",
   "directionHint": "...",
   "journal": "..."
-}`,
+}`;
+  },
 
   // Wealth Flow (Finansal Akış) - 5 kart
-  buildWealthFlowPrompt: ({ profile, incomeCard, blockCard, resourceCard, growthCard, balanceCard, incomeOrientation, blockOrientation, resourceOrientation, growthOrientation, balanceOrientation }) => `Sen deneyimli bir tarot ve finansal farkındalık danışmanısın. "Wealth Flow" (Finansal Akış) okuması yapıyorsun.
+  buildWealthFlowPrompt: ({ profile, incomeCard, blockCard, resourceCard, growthCard, balanceCard, incomeOrientation, blockOrientation, resourceOrientation, growthOrientation, balanceOrientation, incomeReversalStyle, blockReversalStyle, resourceReversalStyle, growthReversalStyle, balanceReversalStyle }) => {
+    const reversals = [];
+    if (incomeOrientation === "Ters" && incomeReversalStyle) reversals.push(`Gelir Akışı (${incomeCard}): ${reversalStyleMapTR[incomeReversalStyle]}`);
+    if (blockOrientation === "Ters" && blockReversalStyle) reversals.push(`Finansal Engel (${blockCard}): ${reversalStyleMapTR[blockReversalStyle]}`);
+    if (resourceOrientation === "Ters" && resourceReversalStyle) reversals.push(`Güçlü Kaynak (${resourceCard}): ${reversalStyleMapTR[resourceReversalStyle]}`);
+    if (growthOrientation === "Ters" && growthReversalStyle) reversals.push(`Artış Potansiyeli (${growthCard}): ${reversalStyleMapTR[growthReversalStyle]}`);
+    if (balanceOrientation === "Ters" && balanceReversalStyle) reversals.push(`Finansal Denge (${balanceCard}): ${reversalStyleMapTR[balanceReversalStyle]}`);
+    const reversalGuidance = reversals.length > 0 ? `\nTERS KART YORUM REHBERİ:\n${reversals.join("\n")}` : "";
+    
+    return `Sen deneyimli bir tarot ve finansal farkındalık danışmanısın. "Wealth Flow" (Finansal Akış) okuması yapıyorsun.
 
 ⚠️ TEMEL KURAL: Aksiyon dili YOK. Doğal akış + farkındalık dili.
 SORU: "Para akışım, tıkanıklıklarım ve sürdürülebilirliğim nasıl görünüyor?"
@@ -712,6 +894,7 @@ Kartlar (5 kart):
 - Güçlü Kaynak (Resource): ${resourceCard} (${resourceOrientation})
 - Artış Potansiyeli (Growth): ${growthCard} (${growthOrientation})
 - Finansal Denge (Balance): ${balanceCard} (${balanceOrientation})
+${reversalGuidance}
 
 Yapı:
 - overall: 3-4 cümle. Finansal akışın genel görünümü.
@@ -728,5 +911,6 @@ Sadece JSON döndür:
   "optimization": "...",
   "directionHint": "...",
   "journal": "..."
-}`
+}`;
+  }
 };
