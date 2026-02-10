@@ -1,16 +1,14 @@
 /**
  * Dream Coder — Prompt dil router
- * Şimdilik sadece TR, diğer diller DeepL ile eklenecek
+ * 4 dil: TR, EN, DE, ES
  */
 
 const tr = require("./tr");
+const en = require("./en");
+const de = require("./de");
+const es = require("./es");
 
-const promptsByLang = {
-  tr,
-  // en: require("./en"),  // TODO: DeepL ile çevrilecek
-  // de: require("./de"),  // TODO: DeepL ile çevrilecek
-  // es: require("./es"),  // TODO: DeepL ile çevrilecek
-};
+const promptsByLang = { tr, en, de, es };
 
 const getPrompts = (language = "tr") => {
   return promptsByLang[language] || promptsByLang.tr;

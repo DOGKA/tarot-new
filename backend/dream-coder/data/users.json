@@ -226,6 +226,13 @@
       "gemstoneBalance": 10000,
       "dreamFreeCredit": 1,
       "createdAt": "2026-02-10T09:49:41.994Z"
+    },
+    "test-profanity-001": {
+      "gemstoneBalance": 990,
+      "isPremiumSubscriber": false,
+      "premiumPlan": null,
+      "premiumExpiresAt": null,
+      "createdAt": "2026-02-10T11:15:31.065Z"
     }
   }
 }

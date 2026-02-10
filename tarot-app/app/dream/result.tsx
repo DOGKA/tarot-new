@@ -11,6 +11,7 @@ import {
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useDream } from "../../context/DreamContext";
+import { useApp } from "../../context/AppContext";
 import { GradientBackground, GlassCard } from "../../components/ui";
 import { LinearGradient } from "expo-linear-gradient";
 import Constants from "expo-constants";
@@ -33,6 +34,7 @@ export default function DreamResultScreen() {
     setCurrentResult,
   } = useDream();
 
+  const { language } = useApp();
   const [upsellLoading, setUpsellLoading] = useState(false);
   const [showCandidates, setShowCandidates] = useState(false);
 
@@ -70,7 +72,7 @@ export default function DreamResultScreen() {
           dreamDecodeId: result.readingId,
           deviceId,
           selectedSymbol: symbol,
-          language: "tr",
+          language,
         }),
       });
       if (!response.ok) {

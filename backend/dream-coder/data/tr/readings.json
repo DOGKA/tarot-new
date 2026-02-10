@@ -833,6 +833,44 @@
       "upsellSymbol": "Camın İçinden Gelen Ses",
       "upsellCost": 5,
       "createdAt": "2026-02-10T10:50:26.162Z"
+    },
+    {
+      "id": "b1789336-3fad-465e-94c5-48d93e600498",
+      "requestId": "profanity_test_2",
+      "userId": "test-profanity-001",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Ananı sikeyim rüyamda peşimden köpekler kovalıyordu amk uçurumdan atladım düştüm düştüm yerden kalktım yine aynı yerdeyim siktiğimin yerinde eski sevgilim gülüyordu orospu yüzüme bakıp kahkaha atıyordu sonra her yer karanlık oldu siktir olup gittim ama bir yere varamadım",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 10,
+      "resultJson": {
+        "overall": "Kaçış hissi ve yüzleşme korkusu dikkat çekiyor. Geçmişten gelen bir hayalet seni rahatsız ediyor. Karanlıkta kaybolmuş hissediyorsun.",
+        "beats": [
+          "Köpeklerin kovalaması, kaçış arzunu ve korkularının seni sıkıştırmasını simgeliyor.",
+          "Eski sevgilinin gülmesi, geçmişteki ilişkilerin hala seni etkilediğini gösteriyor.",
+          "Karanlıkta kaybolman, belirsizlik ve çıkış yolu bulamama hissini ifade ediyor."
+        ],
+        "nextStep": "Bu hafta korkularınla yüzleşmek için küçük bir adım at.",
+        "keywords": [
+          "kaçış",
+          "geçmiş",
+          "belirsizlik"
+        ],
+        "journal": "Geçmişte seni en çok rahatsız eden olay neydi?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "Uçurumdan Atlamak",
+          "hint": "Kendini zor bir durumda bulduğun hissi.",
+          "insight": "Uçurumdan atlamak, kontrol edemediğin bir duruma sürüklenmek anlamına gelebilir. Hayatında büyük bir risk almış ya da almak üzere olabilirsin. Bu durum, seni korkutuyor ve sonuçlarından endişe duyuyorsun."
+        }
+      ],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-10T11:15:40.538Z"
     }
   ]
 }

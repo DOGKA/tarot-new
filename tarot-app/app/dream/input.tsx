@@ -14,6 +14,7 @@ import {
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useDream } from "../../context/DreamContext";
+import { useApp } from "../../context/AppContext";
 import { GradientBackground } from "../../components/ui";
 import { LinearGradient } from "expo-linear-gradient";
 import Constants from "expo-constants";
@@ -63,6 +64,7 @@ export default function DreamInputScreen() {
     deviceId,
     fetchUserInfo,
   } = useDream();
+  const { language } = useApp();
 
   const [loading, setLoading] = useState(false);
 
@@ -92,7 +94,7 @@ export default function DreamInputScreen() {
           lifeContextTag: lifeContextTag || undefined,
           deviceId,
           requestId,
-          language: "tr",
+          language,
         }),
       });
 
