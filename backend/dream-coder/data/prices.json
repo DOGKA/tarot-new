@@ -1,0 +1,63 @@
+{
+  "_comment": "Ortak fiyat konfigurasyonu — Tarot + Dream Coder + Abonelik",
+  "tarot": {
+    "single": 6,
+    "three": 14,
+    "five": 22,
+    "yes_no": 6
+  },
+  "decode": {
+    "A": 10,
+    "B": 22,
+    "C": 12,
+    "UPSELL_SYMBOL": 5
+  },
+  "premiumSubscription": {
+    "monthly": {
+      "id": "premium_monthly",
+      "priceUSD": 9.99,
+      "bonusGems": 100,
+      "durationDays": 30
+    },
+    "yearly": {
+      "id": "premium_yearly",
+      "priceUSD": 59.99,
+      "bonusGems": 100,
+      "durationDays": 365
+    }
+  },
+  "gemstonePackages": [
+    {
+      "id": "pack_50",
+      "gems": 50,
+      "bonus": 0,
+      "total": 50,
+      "priceUSD": 3.99,
+      "perGem": 0.0798
+    },
+    {
+      "id": "pack_100",
+      "gems": 75,
+      "bonus": 25,
+      "total": 100,
+      "priceUSD": 5.99,
+      "perGem": 0.0599
+    },
+    {
+      "id": "pack_250",
+      "gems": 150,
+      "bonus": 100,
+      "total": 250,
+      "priceUSD": 11.99,
+      "perGem": 0.04796
+    },
+    {
+      "id": "pack_500",
+      "gems": 250,
+      "bonus": 250,
+      "total": 500,
+      "priceUSD": 19.99,
+      "perGem": 0.03998
+    }
+  ]
+}

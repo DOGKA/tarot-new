@@ -864,7 +864,40 @@ app.post("/api/reading", async (req, res) => {
     const focusArea = allowedFocusAreas.includes(requestedFocusArea)
       ? requestedFocusArea
       : "general";
-    const isPremium = req.body.isPremium === true;
+    
+    // Gemstone-based premium: isPremium from body OR spread requires gems
+    const deviceId = req.body.deviceId;
+    const requestedPremium = req.body.isPremium === true;
+    const isFreeSpread = isFreeTarotSpread(spread);
+    
+    // If premium requested (GPT yorum), check gemstone
+    let isPremium = requestedPremium;
+    if (isPremium && deviceId) {
+      const gemCost = getSpreadGemCost(spread);
+      const user = getSharedUser(deviceId);
+      if (user.gemstoneBalance < gemCost) {
+        return res.status(402).json({
+          error: "INSUFFICIENT_GEMSTONES",
+          message: "Yetersiz gemstone bakiyesi.",
+          required: gemCost,
+          balance: user.gemstoneBalance,
+          spread,
+        });
+      }
+      // Debit gemstones
+      updateSharedUser(deviceId, { gemstoneBalance: user.gemstoneBalance - gemCost });
+      console.log(`💎 Tarot [${spread}] -${gemCost}gs — ${deviceId.substring(0, 12)}...`);
+    }
+    
+    // 3-5 kart spread'ler: gemstone zorunlu (FREE erisim yok)
+    if (!isFreeSpread && !isPremium) {
+      return res.status(403).json({
+        error: "PREMIUM_REQUIRED",
+        message: "Bu açılım için gemstone gereklidir.",
+        spread,
+        requiredGems: getSpreadGemCost(spread),
+      });
+    }
     
     // YES/NO SPREAD HANDLER - v2.0 (cardKey based)
     if (spread === "yes_no" && card) {
@@ -1795,6 +1828,33 @@ app.get("/api/cards/:language", (req, res) => {
   }
 });
 
+// ============================================
+// DREAM CODER MODULE + SHARED HELPERS
+// ============================================
+const dreamRouter = require("./dream-coder");
+const { getUser: getSharedUser, updateUser: updateSharedUser, isPremium: isSharedPremium, TAROT_PRICES: SHARED_TAROT_PRICES } = dreamRouter.shared;
+app.use("/api/dream", dreamRouter);
+
+// ============================================
+// TAROT GEMSTONE HELPER
+// ============================================
+// Spread tipine gore gemstone fiyati
+const getSpreadGemCost = (spread) => {
+  const singleSpreads = ["single_card", "yes_no"];
+  const threeSpreads = ["past_present_future", "situation_obstacle_advice", "destinys_embrace", "mind_body_spirit", "celestial_illumination", "career_clarity", "career_path_guide"];
+  const fiveSpreads = ["love_choice", "path_to_love", "new_moon_ritual", "full_moon_release", "new_business_exploration", "wealth_flow"];
+
+  if (singleSpreads.includes(spread)) return SHARED_TAROT_PRICES.single || 6;
+  if (threeSpreads.includes(spread)) return SHARED_TAROT_PRICES.three || 14;
+  if (fiveSpreads.includes(spread)) return SHARED_TAROT_PRICES.five || 22;
+  return SHARED_TAROT_PRICES.single || 6;
+};
+
+// FREE spreads (gemstone dusmuyor): tekli kart + yes/no (sadece FREE versiyonlari)
+const isFreeTarotSpread = (spread) => {
+  return spread === "single_card" || spread === "yes_no";
+};
+
 const PORT = process.env.PORT || 3001;
 
 // Run drift checker before starting server
@@ -1804,4 +1864,5 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`\n🚀 Backend running on http://localhost:${PORT}`);
   console.log(`   Languages: ${supportedLanguages.join(', ')}`);
   console.log(`   Cards indexed: ${getCanonicalCardKeys().length}`);
+  console.log(`   Dream Coder: mounted at /api/dream`);
 });

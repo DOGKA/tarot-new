@@ -1,6 +1,6 @@
-# Tarot App — Psikolojik Tarot Okuma Platformu
+# Mystic — Tarot & Dream Coder Platform
 
-Modern psikolojik tarot okumaları sunan mobil uygulama. FREE kullanıcılar hardcoded anlamlar görürken, PREMIUM kullanıcılar GPT-4o destekli derinlemesine analizler alır.
+Psikolojik tarot okumalari ve ruya cozumlemesi sunan mobil uygulama. Ortak gemstone sistemi + premium abonelik. GPT-4o destekli davranis analizi + sembol cozumlemesi.
 
 ---
 
@@ -14,626 +14,436 @@ Modern psikolojik tarot okumaları sunan mobil uygulama. FREE kullanıcılar har
 | **AI** | OpenAI GPT-4o | via SDK |
 | **i18n** | i18next + react-i18next | ^25.x |
 | **UI** | Glassmorphism (expo-blur, expo-linear-gradient) | — |
+| **Storage** | JSON dosyalari (DB yok), AsyncStorage (deviceId) | — |
 
 ---
 
-## Özellikler
+## Style DNA (Tum Platformda Gecerli)
 
-- **4 Dil Desteği:** Türkçe (TR), İngilizce (EN), Almanca (DE), İspanyolca (ES)
-- **4 Kategori, 15 Spread:** Genel, Aşk, Kariyer, Ruhsal
-- **FREE:** JSON'dan hardcoded anlamlar + spread bazlı premium preview teaser'ları
-- **PREMIUM:** GPT-4o ile psikolojik davranış analizi
-- **Yes/No Sistemi v2:** clarityWeight + baseTendency + orientationImpact + shortReason
-- **ReversalStyle:** Ters kartlar için 5 farklı yorum tarzı (delay, internal, shadow, imbalance, blocked)
-- **Glassmorphism UI:** Modern, temiz, minimalist tasarım
-- **Loglama:** Tüm premium okumalar `premium-readings.json`'a kaydedilir
-- **Drift Checker:** Veri tutarlılığı kontrolü (startup'ta çalışır)
+```
+Felsefe: "Kehanet degil, farkindalik araci."
+Ton:     %40 psikolojik icgoru + %40 sembol analizi + %20 arketipsel rehberlik
+Dil:     2. tekil sahis ("sen"), kisa yogun cumleler, yuzlestirici ama yargisiz
+
+YASAK:   "evren mesaj gonderiyor", "kader", "titresim", "ruh esi", "su olacak"
+KULLAN:  "su davranis seni yavasliyor", "burada kontrolu kaybediyorsun"
+```
 
 ---
 
-## Proje Yapısı
+## Erisim Matrisi
+
+| Icerik | FREE | Gemstone | Premium Abo |
+|--------|------|----------|-------------|
+| **Tekli Tarot** (1 kart) | Hardcoded meaning | GPT yorum (6gs) | GPT yorum (6gs) |
+| **Yes/No** | Hardcoded shortReason | GPT yorum (6gs) | GPT yorum (6gs) |
+| **3'lu Tarot** (PPF, SOA, vs.) | KILITLI | GPT yorum (14gs) | GPT yorum (14gs) |
+| **5'li Tarot** (Love, Moon, vs.) | KILITLI | GPT yorum (22gs) | GPT yorum (22gs) |
+| **Dream A** (Hizli Cozumleme) | KILITLI | 10gs | 10gs |
+| **Dream B** (Derin Cozumleme) | KILITLI | 22gs | 22gs |
+| **Dream C** (Donusturme Plani) | KILITLI | KILITLI | 12gs (sadece abone) |
+| **Upsell Sembol** | — | 5gs | 5gs |
+
+- FREE: Tekli tarot + Yes/No sinirsiz ucretsiz (hardcoded meaning)
+- Gemstone: 3-5 kart tarot + Dream A/B acilir
+- Premium Abo: Dream C erisimi + 100gs bonus
+
+---
+
+## Premium Abonelik
+
+| Plan | Fiyat | Bonus | Sure |
+|------|-------|-------|------|
+| Aylik | $9.99/ay | +100 gemstone | 30 gun |
+| Yillik | $59.99/yil | +100 gemstone | 365 gun (~$5/ay, %50 tasarruf) |
+
+Premium avantajlari:
+- Dream C (Donusturme Plani) erisimi acilir
+- 100 gemstone hediye (abonelik basinda)
+
+---
+
+## Gemstone Paketleri
+
+| Paket | Gercek | Bonus | Toplam | Fiyat | $/gem |
+|-------|--------|-------|--------|-------|-------|
+| 50 | 50 | 0 | **50** | $3.99 | $0.0798 |
+| 100 | 75 | 25 | **100** | $5.99 | $0.0599 |
+| 250 | 150 | 100 | **250** | $11.99 | $0.0480 |
+| 500 | 250 | 250 | **500** | $19.99 | $0.0400 |
+
+Normal fiyat (50 baz): 50 gem = $3.99. Buyuk paketlerde ustu cizili normal fiyat gosterilir.
+
+---
+
+## Dream Coder Modlari
+
+### A — Hizli Cozumleme (10gs)
+
+| Alan | Aciklama |
+|------|----------|
+| overall | 2-3 cumle, cekirdek tema |
+| beats | 2-3 oge, her biri 1 cumle |
+| nextStep | "Bu hafta..." somut aksiyon |
+| keywords | 3 kelime |
+| journal | 1 icsel soru |
+| **Upsell** | **1 aday sembol otomatik sunulur, 5gs'e acilir** |
+
+### B — Derin Cozumleme (22gs)
+
+A'nin tum alanlari + ek:
+
+| Alan | Aciklama |
+|------|----------|
+| pattern | 1 paragraf, davranis dongusu (kacis/kontrol/sinir vb.) |
+| beats | 4-6 oge, her biri 1-2 cumle |
+| **Upsell** | **3 aday sembol listelenir, kullanici secer, 5gs'e acilir** |
+
+### C — Donusturme Plani (12gs, PREMIUM ONLY)
+
+A'nin tum alanlari + ek:
+
+| Alan | Aciklama |
+|------|----------|
+| plan[0] | 24 saat: somut aksiyon |
+| plan[1] | 7 gun: aliskanlik degisikligi |
+| plan[2] | Sinir cumlesi: "Ben artik..." |
+| **Upsell** | **YOK** |
+
+---
+
+## Upsell Sembol Sistemi
+
+```
+Decode istegi (2 GPT cagrisi):
+  1. Ana decode → overall/beats/nextStep/keywords/journal
+  2. Upsell pre-gen → adaylar (hint + insight onceden hazir)
+
+Mode A: 1 aday otomatik → sonuc ekraninda direkt gosterilir
+Mode B: 3 aday → "+1 Sembol Ac" butonu → kullanici secer
+Mode C: Upsell yok
+
+Sembol secilince: GPT cagrisi YOK, onceden hazir insight gosterilir, 5gs duser
+```
+
+---
+
+## Proje Yapisi
 
 ```
 TAROT-NEW/
 ├── backend/
-│   ├── index.js                    # Express API + Yes/No v2 Engine
-│   ├── package.json
-│   ├── .env                        # OPENAI_API_KEY (gitignore'da)
+│   ├── index.js                    # Express API + Tarot Engine + gemstone dusme
+│   ├── .env                        # OPENAI_API_KEY
 │   │
-│   ├── prompts/                    # Dil bazlı GPT prompt dosyaları
-│   │   ├── index.js                # Prompt router
-│   │   ├── tr.js                   # Türkçe promptlar + reversalStyleMapTR
-│   │   ├── en.js                   # İngilizce promptlar
-│   │   ├── de.js                   # Almanca promptlar
-│   │   └── es.js                   # İspanyolca promptlar
+│   ├── prompts/                    # Tarot GPT promptlari (4 dil)
+│   │   ├── index.js
+│   │   └── tr.js / en.js / de.js / es.js
 │   │
-│   └── data/
-│       ├── premium-readings.json   # Premium okuma logları
-│       │
-│       ├── tr/
-│       │   ├── tarot-template.json    # 78 kart tanımları + meanings
-│       │   ├── tendency.map.json      # ★ Kart eğilimleri (TR değerler)
-│       │   ├── tendencyGlossary.json  # ★ Eğilim sözlüğü (TR açıklamalar)
-│       │   └── yesno-clarity.json     # ★ clarityWeight + keywords + shortReason
-│       │
-│       ├── en/
-│       │   ├── tarot-template.json
-│       │   ├── tendency.map.json      # EN değerler (yes, delay, internal...)
-│       │   ├── tendencyGlossary.json
-│       │   └── yesno-clarity.json
-│       │
-│       ├── de/
-│       │   ├── tarot-template.json
-│       │   ├── tendency.map.json      # DE değerler (ja, verzögerung...)
-│       │   ├── tendencyGlossary.json
-│       │   └── yesno-clarity.json
-│       │
-│       └── es/
-│           ├── tarot-template.json
-│           ├── tendency.map.json      # ES değerler (sí, retraso...)
-│           ├── tendencyGlossary.json
-│           └── yesno-clarity.json
+│   ├── data/
+│   │   ├── premium-readings.json   # Tarot okuma loglari
+│   │   └── {tr,en,de,es}/
+│   │       ├── tarot-template.json
+│   │       ├── tendency.map.json
+│   │       ├── tendencyGlossary.json
+│   │       ├── yesno-clarity.json
+│   │       └── cards_history.json
+│   │
+│   └── dream-coder/
+│       ├── index.js                # Express Router + shared user helpers
+│       ├── prompts/
+│       │   ├── index.js
+│       │   └── tr.js               # A/B/C + upsell promptlari
+│       └── data/
+│           ├── prices.json         # Tum fiyatlar (tarot + dream + abonelik + paketler)
+│           ├── users.json          # Ortak kullanici DB (gemstone + premium)
+│           └── tr/
+│               └── readings.json   # Dream okuma kayitlari
 │
 ├── tarot-app/
-│   ├── app/                        # Expo Router sayfaları
-│   │   ├── _layout.tsx             # Root layout
-│   │   ├── index.tsx               # Ana ekran (spread seçimi)
-│   │   ├── pick/[spread].tsx       # Kart seçimi ekranı
-│   │   ├── result.tsx              # FREE sonuç ekranı
-│   │   ├── premium-result.tsx      # PREMIUM sonuç ekranı
-│   │   └── yesno-result.tsx        # Yes/No sonuç ekranı
+│   ├── app/
+│   │   ├── _layout.tsx             # Root layout (AppProvider + DreamProvider)
+│   │   ├── index.tsx               # Welcome (dil + premium toggle + market + Tarot/Dream)
+│   │   ├── tarot.tsx               # Tarot spread secimi (gemstone fiyatlar + kilit)
+│   │   ├── market.tsx              # Market (paketler + abonelik - bilgi amacli)
+│   │   ├── pick/[spread].tsx
+│   │   ├── result.tsx
+│   │   ├── premium-result.tsx
+│   │   ├── yesno-result.tsx
+│   │   └── dream/
+│   │       ├── index.tsx           # Mod secimi (A/B/C + gemstone badge + C kilidi)
+│   │       ├── input.tsx           # Ruya girisi (max 300 char + tag'ler)
+│   │       └── result.tsx          # Sonuc (mod bazli render + upsell)
 │   │
-│   ├── components/ui/              # Reusable UI bileşenleri
-│   │   ├── GradientBackground.tsx
-│   │   ├── GlassCard.tsx
-│   │   ├── SpreadCard.tsx
-│   │   ├── FlipCard.tsx
-│   │   ├── PremiumPreview.tsx
-│   │   └── index.ts
-│   │
+│   ├── components/ui/
+│   │   └── SpreadCard.tsx          # gemCost + locked prop'lu
 │   ├── context/
-│   │   └── AppContext.tsx          # Global state (language, isPremium, cards...)
-│   │
-│   ├── hooks/
-│   │   ├── useReading.ts           # API çağrı fonksiyonları
-│   │   ├── useLanguage.ts
-│   │   └── useUser.ts
-│   │
+│   │   ├── AppContext.tsx           # Ortak: dil, gemstone, isPremium, deviceId
+│   │   └── DreamContext.tsx         # Dream: mod, text, tag, result, prices
 │   ├── utils/
-│   │   ├── deck.ts                 # ★ Kart dağıtımı (getOrientation, shuffleArray)
-│   │   ├── rng.ts                  # Merkezi RNG
-│   │   └── index.ts
-│   │
+│   │   └── deviceId.ts             # AsyncStorage kalici deviceId
 │   ├── types/
-│   │   └── tarot.ts                # TypeScript tipleri (410+ satır)
-│   │
-│   ├── i18n/
-│   │   ├── index.ts
-│   │   └── translations.ts         # UI çevirileri (1000+ satır, 4 dil)
-│   │
-│   ├── app.json
-│   ├── package.json
-│   └── tsconfig.json
+│   │   ├── tarot.ts
+│   │   └── dream.ts
+│   └── i18n/
+│       └── translations.ts         # 4 dil, 1400+ satir
 │
 └── README.md
 ```
 
 ---
 
-## Kullanıcı Akışı: 1 Kart Seçimi (Tekli Kart Spread)
-
-Kullanıcı ana ekrandan "Tekli Kart" spread'ini seçtiğinde arka planda neler oluyor?
-
-### Adım 1: Frontend - Kart Seçimi
+## Kullanici Akisi
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  KULLANICI AKSİYONU                                         │
-│  ═══════════════════                                        │
-│  1. Ana ekrandan spread seçer (örn: "Tekli Kart - Aşk")    │
-│  2. pick/[spread].tsx ekranına yönlendirilir               │
-│  3. 78 kart karıştırılır (Fisher-Yates shuffle)            │
-│  4. Kullanıcı kartlardan birini seçer                      │
-│  5. Orientation belirlenir (%30 ters olasılık)             │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Frontend Hesaplamaları:**
-
-```typescript
-// utils/deck.ts
-const getOrientation = () => {
-  return rng01() < 0.3 ? "reversed" : "upright";  // %30 ters
-};
-
-// Seçilen kart örneği:
-const selectedCard = {
-  card: { id: 0, name: "Deli", image: "00_fool", ... },
-  orientation: "upright"  // veya "reversed"
-};
-```
-
-### Adım 2: API Request
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  POST /api/reading                                          │
-│  ═══════════════════                                        │
-│  {                                                          │
-│    "language": "tr",                                        │
-│    "spread": "single_card",                                 │
-│    "focusArea": "love",                                     │
-│    "isPremium": false,          // veya true                │
-│    "card": {                                                │
-│      "name": "Deli",                                        │
-│      "image": "00_fool",        // cardKey                  │
-│      "orientation": "upright"                               │
-│    }                                                        │
-│  }                                                          │
-└─────────────────────────────────────────────────────────────┘
+index.tsx (Welcome)
+  ├── Dil sec (TR/EN/DE/ES)
+  ├── Premium toggle (Free ↔ Premium)
+  ├── Market butonu → market.tsx
+  │
+  ├── Tarot → tarot.tsx
+  │     ├── FREE: Tekli + Yes/No (gemstone dusmez)
+  │     └── PREMIUM: 3-5 kart (gemstone duser) → pick → result/premium-result
+  │
+  └── Dream Coder → dream/index.tsx
+        ├── A: Hizli (10gs) → input → result (+1 sembol otomatik)
+        ├── B: Derin (22gs) → input → result (+1 sembol sec)
+        └── C: Donusturme (12gs, premium-only) → input → result (upsell yok)
 ```
 
 ---
 
-## FREE Kullanıcı Akışı (GPT Çağrısı YOK)
+## API Endpoints
+
+### Tarot
+
+| Method | Endpoint | Aciklama |
+|--------|----------|----------|
+| POST | `/api/reading` | Tarot okuma (FREE: hardcoded, PREMIUM: GPT + gemstone) |
+
+Request body'de `deviceId` + `isPremium: true` gonderilirse gemstone duser.
+3-5 kart spread'ler `isPremium: true` zorunlu (yoksa 403).
+
+### Dream Coder
+
+| Method | Endpoint | Aciklama |
+|--------|----------|----------|
+| POST | `/api/dream/decode` | Ruya cozumle (A/B/C) + upsell adaylari |
+| POST | `/api/dream/upsell-symbol` | Secilen sembolu ac (5gs, GPT yok) |
+| GET | `/api/dream/user/:deviceId` | Kullanici bakiye + premium durumu |
+| GET | `/api/dream/prices` | Tum fiyatlar + paketler + abonelik planlari |
+
+---
+
+## API Maliyet Analizi
+
+| Urun | GPT Cagrisi | Maliyet | Gemstone | Kar Marji |
+|------|-------------|---------|----------|-----------|
+| Tekli Tarot | 1 | ~$0.0015 | 6gs | %97-99 |
+| 3'lu Tarot | 1 | ~$0.007 | 14gs | %98-99 |
+| 5'li Tarot | 1 | ~$0.008 | 22gs | %98-99 |
+| Dream A | 2 (decode + upsell) | ~$0.007 | 10gs | %97-99 |
+| Dream B | 2 (decode + upsell) | ~$0.009 | 22gs | %98-99 |
+| Dream C | 1 (decode only) | ~$0.004 | 12gs | %98-99 |
+| Upsell Sembol | 0 (onceden hazir) | $0 | 5gs | %100 |
+
+---
+
+## Tarot FREE Kullanici Akisi (GPT Cagrisi YOK)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  BACKEND İŞLEMLERİ - FREE                                   │
-│  ═══════════════════════                                    │
+│  BACKEND ISLEMLERI - FREE                                   │
 │                                                             │
-│  1. cardKey çıkar: "00_fool"                               │
+│  1. cardKey cikar: "00_fool"                               │
 │                                                             │
 │  2. Tendency Map'den oku: tr/tendency.map.json             │
 │     {                                                       │
 │       "baseTendency": "evet",                              │
 │       "orientationImpact": "standart",                     │
-│       "reversalStyle": "içsel"                             │
+│       "reversalStyle": "icsel"                             │
 │     }                                                       │
 │                                                             │
-│  3. Tarot Template'den meaning çek: tr/tarot-template.json │
-│     meanings.upright.love = "Aşkta taze bir başlangıç..."  │
+│  3. Tarot Template'den meaning cek: tr/tarot-template.json │
+│     meanings.upright.love = "Askta taze bir baslangic..."  │
 │                                                             │
-│  4. Clarity hesapla (impact bazlı):                        │
+│  4. Clarity hesapla (impact bazli):                        │
 │     baseClarity = upright ? 78 : 62                        │
 │     modifier = impactModifiers["standart"]["upright"] = 0  │
 │     clarity = 78 + 0 = 78                                  │
 │                                                             │
-│  5. Response döndür (GPT çağrısı YOK!)                     │
+│  5. Response dondur (GPT cagrisi YOK!)                     │
+│  Gemstone dusmez.                                          │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**FREE Response:**
-
-```json
-{
-  "spread": "single_card",
-  "focusArea": "love",
-  "language": "tr",
-  "cards": [{
-    "cardKey": "00_fool",
-    "name": "Deli",
-    "orientation": "upright",
-    "meaning": "Aşkta taze bir başlangıç isteği var: kalbini kapatmadan, ama körleşmeden ilerle...",
-    "clarity": 78,
-    "impact": "standard",
-    "reversalStyle": null,
-    "arcana": "major",
-    "suit": null,
-    "element": "hava"
-  }],
-  "meta": {
-    "totalCards": 1,
-    "reversedCount": 0,
-    "majorCount": 1,
-    "avgClarity": 78
-  }
-}
-```
-
-**Kullanılan Dosyalar (FREE):**
-
-| Dosya | Kullanım |
-|-------|----------|
-| `tr/tarot-template.json` | `meanings.upright.love` → Anlam metni |
-| `tr/tendency.map.json` | `orientationImpact` → Clarity hesaplama |
-
-**GPT Çağrısı:** ❌ YOK
-
----
-
-## PREMIUM Kullanıcı Akışı (GPT-4o Çağrısı VAR)
+## Tarot PREMIUM Kullanici Akisi (GPT-4o + Gemstone)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
-│  BACKEND İŞLEMLERİ - PREMIUM                                │
-│  ═══════════════════════════                                │
+│  BACKEND ISLEMLERI - PREMIUM                                │
 │                                                             │
-│  1-2. FREE ile aynı (cardKey + tendency oku)               │
+│  1-2. FREE ile ayni (cardKey + tendency oku)               │
 │                                                             │
-│  3. ReversalStyle normalize et (ters kart varsa):          │
-│     "içsel" → "internal" (GPT için canonical EN)           │
+│  3. Gemstone kontrol: deviceId → users.json                │
+│     Tekli: 6gs, 3'lu: 14gs, 5'li: 22gs                    │
+│     Yetersizse → 402 INSUFFICIENT_GEMSTONES                │
 │                                                             │
-│  4. Prompt oluştur: prompts/tr.js → buildSinglePrompt()    │
-│     {                                                       │
-│       profile: { tone, address, ... },                     │
-│       cardName: "Deli",                                    │
-│       orientationLabel: "Düz",                             │
-│       focusArea: "love",                                   │
-│       reversalStyle: null  // upright olduğu için          │
-│     }                                                       │
+│  4. ReversalStyle normalize et (ters kart varsa):          │
+│     "icsel" → "internal" (GPT icin canonical EN)           │
 │                                                             │
-│  5. GPT-4o API çağrısı:                                    │
-│     model: "gpt-4o"                                        │
-│     temperature: 0.7                                       │
-│     max_tokens: 600                                        │
+│  5. Prompt olustur: prompts/tr.js → buildSinglePrompt()    │
 │                                                             │
-│  6. JSON parse + response döndür                           │
+│  6. GPT-4o API cagrisi (temperature: 0.7)                  │
+│                                                             │
+│  7. Gemstone dus + JSON parse + response dondur            │
 └─────────────────────────────────────────────────────────────┘
 ```
 
-**PREMIUM Response:**
+**PREMIUM Response ornegi:**
 
 ```json
 {
-  "title": "Deli — Tekli Kart Okuması",
-  "overall": "Kalbindeki merak ve açılma isteği seni yeni bir duygusal alana çağırıyor...",
+  "title": "Deli — Tekli Kart Okumasi",
+  "overall": "Kalbindeki merak ve acilma istegi seni yeni bir duygusal alana cagiriyor...",
   "focusArea": "love",
-  "deepDive": "Aşkta spontanlık ve keşif enerjisi hakim. Geçmişteki kalıpları bırakıp...",
-  "shadow": "Dikkat: Aşırı coşku, karşındakini değerlendirmeden hızlı bağlanmaya itebilir.",
-  "nextStep": "Bugün, ilgini çeken birine ilk adımı at.",
-  "journal": "Aşkta en çok neyden kaçınıyorsun ve bu korku seni nasıl koruyor?"
+  "deepDive": "Askta spontanlik ve kesif enerjisi hakim...",
+  "shadow": "Dikkat: Asiri cosku, karsindakini degerlendirmeden hizli baglanmaya itebilir.",
+  "nextStep": "Bugun, ilgini ceken birine ilk adimi at.",
+  "journal": "Askta en cok neyden kaciniyorsun?"
 }
 ```
 
-**Kullanılan Dosyalar (PREMIUM):**
+## Yes/No v2 Engine (Detay)
 
-| Dosya | Kullanım |
-|-------|----------|
-| `tr/tendency.map.json` | `reversalStyle` → GPT prompt'a eklenir |
-| `prompts/tr.js` | `buildSinglePrompt()` → Prompt template |
-| OpenAI API | GPT-4o → Derinlemesine analiz |
-
-**GPT Çağrısı:** ✅ VAR (gpt-4o, ~600 token)
-
----
-
-## Yes/No Spread Akışı (Özel Hesaplamalar)
-
-Yes/No spread'i farklı bir hesaplama motoru kullanır:
-
-### FREE Yes/No
+### Confidence Formulu
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  YES/NO v2 ENGINE - FREE                                    │
-│  ═══════════════════════                                    │
-│                                                             │
-│  1. Tendency Map'den oku: tr/tendency.map.json             │
-│     baseTendency: "evet"                                   │
-│     orientationImpact: "standart"                          │
-│                                                             │
-│  2. Answer hesapla (normalize + convert):                  │
-│     "evet" → "yes" (canonical)                             │
-│     tendencyToAnswer("yes") → "yes"                        │
-│                                                             │
-│  3. Clarity Data oku: tr/yesno-clarity.json                │
-│     clarityWeight: 15                                      │
-│     keywords.love: ["macera", "spontanlık"]                │
-│     shortReason.upright: "Evet; bilinmeyene adım atmak..." │
-│                                                             │
-│  4. Confidence hesapla:                                    │
-│     base = 55                                              │
-│     + clarityWeight (15)                                   │
-│     + orientationMod (upright: +8, reversed: -12)          │
-│     = 55 + 15 + 8 = 78                                     │
-│                                                             │
-│  5. ClarityLabel belirle:                                  │
-│     78 ≥ 75 → "Net"                                        │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Confidence Formülü:**
-
-```javascript
 confidence = 55 + clarityWeight + orientationMod
 
-// orientationMod:
-// - Upright: +8
-// - Reversed: impactModifiers[orientationImpact]
-//   - low: -8
-//   - standard: -12  
-//   - high: -18
+orientationMod:
+  upright: +8
+  reversed: impact bazli → low: -8, standard: -12, high: -18
 
-// Sonuç sınırları:
-// - baseTendency = "uncertain": 40-75
-// - diğerleri: 45-90
+Sinirlar:
+  uncertain egilim: 40-75
+  diger: 45-90
 ```
 
-**FREE Yes/No Response:**
+### Ornek Hesaplamalar
+
+| Kart | clarityWeight | Yon | Impact | Hesaplama | Sonuc |
+|------|---------------|-----|--------|-----------|-------|
+| Gunes (duz) | 25 | duz | - | 55+25+8 | **88%** |
+| Gunes (ters) | 25 | ters | dusuk(-8) | 55+25-8 | **72%** |
+| Bas Rahibe (duz) | 5 | duz | - | 55+5+8=68 | **68%** |
+| Bas Rahibe (ters) | 5 | ters | yuksek(-18) | 55+5-18 | **42%** |
+
+### Clarity Label
+
+| Aralik | TR | EN | DE | ES |
+|--------|----|----|----|----|
+| >= 75% | Net | Clear | Klar | Claro |
+| 55-74% | Sartli | Conditional | Bedingt | Condicional |
+| < 55% | Belirsiz | Uncertain | Unsicher | Incierto |
+
+### Tendency → Answer Donusumu
+
+```
+strong_yes / yes → "yes"
+strong_no / no → "no"
+uncertain → "uncertain"
+```
+
+### Yes/No FREE Response
 
 ```json
 {
-  "title": "Deli — Evet / Hayır",
-  "focusArea": "love",
+  "title": "Deli — Evet / Hayir",
   "answer": "yes",
   "confidence": 78,
   "clarityLabel": "Net",
-  "explanation": "Evet; bilinmeyene adım atmak için cesaretin seninle.",
-  "keywords": ["macera", "spontanlık"],
-  "baseTendency": "evet",
-  "answerMayChange": false,
-  "conditionMessage": null
+  "explanation": "Evet; bilinmeyene adim atmak icin cesaretin seninle.",
+  "keywords": ["macera", "spontanlik"],
+  "baseTendency": "evet"
 }
 ```
 
-### PREMIUM Yes/No
+## Dream Decode Response Ornekleri
 
-PREMIUM Yes/No, FREE hesaplamalarına ek olarak GPT-4o'dan detaylı açıklama alır:
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│  YES/NO v2 ENGINE - PREMIUM                                 │
-│  ═══════════════════════════                                │
-│                                                             │
-│  1-5. FREE ile aynı hesaplamalar                           │
-│                                                             │
-│  6. ReversalStyle (ters kart için):                        │
-│     tendency.reversalStyle → "içsel" → normalize → "internal" │
-│                                                             │
-│  7. GPT Prompt oluştur:                                    │
-│     - answer: "yes"                                        │
-│     - confidence: 78                                       │
-│     - clarityLabel: "Net"                                  │
-│     - baseTendency: "evet"                                 │
-│     - reversalStyle: null (upright)                        │
-│                                                             │
-│  8. GPT-4o çağrısı (max_tokens: 200)                       │
-│                                                             │
-│  9. Zenginleştirilmiş response döndür                      │
-└─────────────────────────────────────────────────────────────┘
-```
-
----
-
-## Spread Yapısı
-
-### ✨ Genel Kategori
-
-| Spread | Kod | Kart | Açıklama |
-|--------|-----|------|----------|
-| Tekli Kart | `single_card` | 1 | Hızlı içgörü |
-| Zamanın Akışı | `past_present_future` | 3 | Geçmiş-Şimdi-Gelecek |
-| Evet / Hayır | `yes_no` | 1 | Net cevap (v2 engine) |
-| Yolun Haritası | `situation_obstacle_advice` | 3 | Durum-Engel-Tavsiye |
-
-### 💖 Aşk Kategorisi
-
-| Spread | Kod | Kart | Açıklama |
-|--------|-----|------|----------|
-| Tekli Kart | `single_card` | 1 | Aşk odaklı |
-| Evet / Hayır | `yes_no` | 1 | Aşk soruları |
-| Kaderin Dokunuşu | `destinys_embrace` | 3 | İlişki dinamiği |
-| Aşk Kavşağı | `love_choice` | 5 | İki yol karşılaştırma |
-| Kalbin Rotası | `path_to_love` | 5 | Aşka giden yol |
-
-### 💼 Kariyer Kategorisi
-
-| Spread | Kod | Kart | Açıklama |
-|--------|-----|------|----------|
-| Tekli Kart | `single_card` | 1 | Kariyer odaklı |
-| Evet / Hayır | `yes_no` | 1 | Kariyer soruları |
-| Kariyer Netliği | `career_clarity` | 3 | Durum analizi |
-| Kariyer Rehberi | `career_path_guide` | 3 | Güçlü yönler & fırsatlar |
-| Yeni İş Keşfi | `new_business_exploration` | 5 | İş fikri analizi |
-| Para Akışı | `wealth_flow` | 5 | Finansal denge |
-
-### 🔮 Ruhsal Kategori
-
-| Spread | Kod | Kart | Açıklama |
-|--------|-----|------|----------|
-| Tekli Kart | `single_card` | 1 | Ruhsal odaklı |
-| Evet / Hayır | `yes_no` | 1 | Ruhsal sorular |
-| Yeni Ay Ritüeli | `new_moon_ritual` | 5 | Niyet belirleme |
-| Dolunay Arınması | `full_moon_release` | 5 | Bırakma & arınma |
-| Zihin-Beden-Ruh | `mind_body_spirit` | 3 | İçsel denge |
-| Kozmik Aydınlanma | `celestial_illumination` | 3 | Evrensel rehberlik |
-
----
-
-## Data Sistemleri
-
-### 1. Tendency Map (Dil Bazlı)
-
-Her kart için eğilim değerleri, **dil bazlı** olarak saklanır.
-
-**Dosya:** `backend/data/{lang}/tendency.map.json`
-
-```json
-// TR örneği
-{
-  "00_fool": {
-    "baseTendency": "evet",
-    "orientationImpact": "standart",
-    "reversalStyle": "içsel"
-  }
-}
-
-// EN örneği
-{
-  "00_fool": {
-    "baseTendency": "yes",
-    "orientationImpact": "standard",
-    "reversalStyle": "internal"
-  }
-}
-```
-
-**Değer Eşleştirmeleri:**
-
-| EN | TR | DE | ES |
-|----|----|----|-----|
-| yes | evet | ja | sí |
-| strong_yes | güçlü_evet | stark_ja | fuerte_sí |
-| no | hayır | nein | no |
-| strong_no | güçlü_hayır | stark_nein | fuerte_no |
-| uncertain | belirsiz | unsicher | incierto |
-| low | düşük | niedrig | bajo |
-| standard | standart | standard | estándar |
-| high | yüksek | hoch | alto |
-| delay | gecikme | verzögerung | retraso |
-| internal | içsel | innerlich | interno |
-| shadow | gölge | schatten | sombra |
-| imbalance | dengesizlik | ungleichgewicht | desequilibrio |
-| blocked | tıkanık | blockiert | bloqueado |
-
-### 2. Tendency Glossary (Açıklama Sözlüğü)
-
-Her değerin anlamını açıklar.
-
-**Dosya:** `backend/data/{lang}/tendencyGlossary.json`
+### Mode A Response
 
 ```json
 {
-  "baseTendency": {
-    "evet": "Evet — destekleyici, akışta ilerleyen olumlu eğilim",
-    "güçlü_evet": "Kesin Evet — güçlü, açık ve net olumlama (örnek: Güneş, Dünya)"
-  },
-  "orientationImpact": {
-    "düşük": "Arketip güçlüdür; kart ters gelse bile ana mesaj büyük ölçüde korunur"
-  },
-  "reversalStyle": {
-    "içsel": "İçsel engel — korku, kararsızlık veya kendini sabote etme hali"
-  }
+  "readingId": "uuid",
+  "mode": "A",
+  "gemstoneCost": 10,
+  "overall": "Kacis ve ozgurluk arasinda gidip geliyorsun...",
+  "beats": [
+    "Karanlik koridor, gormek istemedigin bir gercegi temsil ediyor.",
+    "Kosma refleksi, yuzlesmek yerine erteleme aliskanligini gosteriyor.",
+    "Isik, farkina varma aninin yaklastigini isaret ediyor."
+  ],
+  "nextStep": "Bu hafta kactigin tek bir konuyu isimlendir.",
+  "keywords": ["kacis", "yuzlesme", "farkindalik"],
+  "journal": "Neyi gormezden gelince rahatladigini hissediyorsun?",
+  "upsellCandidates": [
+    { "symbol": "Karanlik Koridor", "hint": "Gorulmek istemeyen gercekler.", "insight": "Bu koridor senin ertelediklerin..." }
+  ]
 }
 ```
 
-### 3. Clarity Weight Sistemi (Yes/No v2)
-
-**Dosya:** `backend/data/{lang}/yesno-clarity.json`
+### Mode B Response (ek alanlar)
 
 ```json
 {
-  "00_fool": {
-    "clarityWeight": 15,
-    "keywords": {
-      "general": ["başlangıç", "özgürlük"],
-      "love": ["macera", "spontanlık"],
-      "career": ["risk", "yenilik"],
-      "spiritual": ["içsel yolculuk", "keşif"]
-    },
-    "shortReason": {
-      "upright": "Evet; bilinmeyene adım atmak için cesaretin seninle.",
-      "reversed": "Şartlı Evet; korkular yavaşlatıyor olabilir."
-    }
-  }
+  "pattern": "Yuzlesmek yerine kacis refleksi tekrarliyor. Rahatsizlik hissettiginde geri cekilme egilimin var...",
+  "upsellCandidates": [
+    { "symbol": "...", "hint": "...", "insight": "..." },
+    { "symbol": "...", "hint": "...", "insight": "..." },
+    { "symbol": "...", "hint": "...", "insight": "..." }
+  ]
 }
 ```
 
-| Alan | Değer Aralığı | Açıklama |
-|------|---------------|----------|
-| `clarityWeight` | 5-25 | Yüksek = daha net cevap |
-| `keywords` | 2 kelime/alan | FocusArea bazlı |
-| `shortReason` | 1-2 cümle | Orientation bazlı açıklama |
+### Mode C Response (ek alanlar)
 
----
-
-## Özet Karşılaştırma: FREE vs PREMIUM
-
-| Özellik | FREE | PREMIUM |
-|---------|------|---------|
-| **Veri Kaynağı** | JSON dosyaları | JSON + GPT-4o |
-| **GPT Çağrısı** | ❌ | ✅ |
-| **Maliyet** | $0 | ~$0.01-0.03/okuma |
-| **Yanıt Süresi** | <100ms | 2-5 saniye |
-| **Meaning** | `tarot-template.json` | GPT üretimi |
-| **ReversalStyle** | Görünmez | GPT'ye gönderilir |
-| **Kişiselleştirme** | Yok | Var (GPT analizi) |
+```json
+{
+  "plan": [
+    "24 saat: Bugün kaçtığın bir konuyu tek cümleyle yaz.",
+    "7 gün: Her gün 5 dakika o konuyla ilgili not tut.",
+    "Sınır: Ben artık rahatsızlıktan kaçmak yerine fark ediyorum."
+  ]
+}
+```
 
 ---
 
 ## Kurulum
 
-### 1. Backend
-
 ```bash
+# Backend
 cd backend
+cp .env.example .env   # OPENAI_API_KEY=sk-...
 npm install
-```
-
-`.env` dosyası oluştur:
-
-```
-OPENAI_API_KEY=your_openai_api_key
-PORT=3001
-```
-
-Çalıştır:
-
-```bash
 node index.js
-```
 
-### 2. Mobile App
-
-```bash
+# Frontend
 cd tarot-app
 npm install
 npx expo start
 ```
 
-Expo Go ile QR kodu okut.
-
 ---
 
-## API Endpoint'leri
+## Notlar
 
-### `POST /api/reading`
-
-Tüm okumalar için tek endpoint (FREE + PREMIUM).
-
-### `POST /api/reading/free`
-
-Deterministic FREE okumalar için (GPT yok).
-
-### `POST /api/logs/reset`
-
-Premium log dosyasını temizler.
-
----
-
-## Drift Checker
-
-Backend başlatıldığında otomatik çalışır:
-
-```
---- Drift Checker ---
-✓ Loaded tr/tendency.map.json (78 cards)
-✓ Loaded en/tendency.map.json (78 cards)
-✓ Loaded de/tendency.map.json (78 cards)
-✓ Loaded es/tendency.map.json (78 cards)
-📊 Impact distribution: low=8 | standard=52 | high=18
-📊 ReversalStyle: delay=12 | internal=25 | shadow=16 | imbalance=13 | blocked=12
-✅ All cardKeys consistent across all data files!
-```
-
----
-
-## Versiyon Geçmişi
-
-| Versiyon | Özellikler |
-|----------|------------|
-| **v3.3** | Dil bazlı tendency.map.json + tendencyGlossary.json. Backend normalize sistemi. |
-| **v3.2** | Yes/No v2 Engine: clarityWeight, baseTendency (5 seviye), orientationImpact, shortReason. |
-| **v3.1** | ReversalStyle sistemi: Ters kartlar için 5 yorum tarzı. 4 dilde prompt entegrasyonu. |
-| **v3.0** | Kariyer & Ruhsal spread'leri, Glassmorphism UI, FREE/PREMIUM açıklama ayrımı |
-| **v2.0** | 5 kartlık aşk spread'leri, psikolojik tarot motoru |
-
----
-
-## Platform
-
-- **Frontend:** React Native (Expo) ~54.0
-- **Backend:** Express.js ^5.2
-- **AI:** OpenAI GPT-4o
-- **Desteklenen Platformlar:** iOS, Android (Expo Go veya build)
+- **Ortak users.json**: Tarot ve Dream Coder ayni kullanici veritabanini paylasir (deviceId bazli)
+- **Ortak deviceId**: AsyncStorage ile kalici, her iki context ayni ID'yi kullanir
+- **Premium suresi dolunca**: Backend otomatik olarak `isPremiumSubscriber: false` yapar
+- **Idempotency**: `requestId` ile duplicate decode istekleri onlenir
+- **Upsell token tasarrufu**: Adaylar decode sirasinda 1 ek GPT cagrisiyla hazirlanir, secim aninda GPT yok
+- **Market**: Bilgi amacli ekran, satin alma entegrasyonu henuz yok
+- **Drift Checker**: Backend baslarken veri tutarliligi kontrol edilir
+- **Loglama**: Tarot → `premium-readings.json`, Dream → `tr/readings.json`

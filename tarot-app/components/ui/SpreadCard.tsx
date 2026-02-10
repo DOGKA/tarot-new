@@ -11,6 +11,8 @@ interface SpreadCardProps {
   onPress: () => void;
   categoryColor?: string;
   style?: ViewStyle;
+  gemCost?: number;
+  locked?: boolean;
 }
 
 export default function SpreadCard({
@@ -20,6 +22,8 @@ export default function SpreadCard({
   onPress,
   categoryColor = "#a855f7",
   style,
+  gemCost,
+  locked,
 }: SpreadCardProps) {
   const renderCardIcons = () => {
     if (cardCount === "single") {
@@ -59,16 +63,27 @@ export default function SpreadCard({
   };
 
   return (
-    <TouchableOpacity onPress={onPress} activeOpacity={0.8}>
-      <GlassCard style={[styles.card, style]}>
+    <TouchableOpacity onPress={locked ? undefined : onPress} activeOpacity={locked ? 1 : 0.8}>
+      <GlassCard style={[styles.card, style, locked && styles.cardLocked]}>
         <View style={styles.content}>
           <View style={styles.iconWrapper}>
-            {renderCardIcons()}
+            {locked ? (
+              <Text style={styles.lockIcon}>🔒</Text>
+            ) : (
+              renderCardIcons()
+            )}
           </View>
           <View style={styles.textContent}>
-            <Text style={[styles.title, { color: categoryColor }]}>{title}</Text>
-            <Text style={styles.description}>{description}</Text>
+            <Text style={[styles.title, { color: locked ? "rgba(255,255,255,0.35)" : categoryColor }]}>{title}</Text>
+            <Text style={[styles.description, locked && styles.descLocked]}>{description}</Text>
           </View>
+          {gemCost !== undefined && (
+            <View style={[styles.gemBadge, locked && styles.gemBadgeLocked]}>
+              <Text style={[styles.gemText, locked && styles.gemTextLocked]}>
+                {locked ? "🔒" : `💎 ${gemCost}`}
+              </Text>
+            </View>
+          )}
         </View>
       </GlassCard>
     </TouchableOpacity>
@@ -141,5 +156,35 @@ const styles = StyleSheet.create({
     fontSize: 13,
     color: "rgba(255, 255, 255, 0.6)",
     lineHeight: 18,
+  },
+  cardLocked: {
+    opacity: 0.5,
+  },
+  descLocked: {
+    color: "rgba(255, 255, 255, 0.3)",
+  },
+  lockIcon: {
+    fontSize: 24,
+  },
+  gemBadge: {
+    paddingHorizontal: 8,
+    paddingVertical: 4,
+    borderRadius: 10,
+    backgroundColor: "rgba(168, 85, 247, 0.2)",
+    borderWidth: 1,
+    borderColor: "rgba(168, 85, 247, 0.4)",
+    marginLeft: 8,
+  },
+  gemBadgeLocked: {
+    backgroundColor: "rgba(255, 255, 255, 0.05)",
+    borderColor: "rgba(255, 255, 255, 0.1)",
+  },
+  gemText: {
+    color: "#c084fc",
+    fontSize: 11,
+    fontWeight: "700",
+  },
+  gemTextLocked: {
+    color: "rgba(255, 255, 255, 0.3)",
   },
 });

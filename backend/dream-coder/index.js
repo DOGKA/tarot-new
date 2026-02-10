@@ -1,0 +1,443 @@
+/**
+ * Dream Coder — Express Router
+ * Mount: app.use("/api/dream", dreamRouter)
+ */
+
+const express = require("express");
+const fs = require("fs");
+const path = require("path");
+const crypto = require("crypto");
+const { getPrompts } = require("./prompts");
+
+const router = express.Router();
+
+// ============================================
+// DATA PATHS
+// ============================================
+const dataDir = path.join(__dirname, "data");
+const pricesPath = path.join(dataDir, "prices.json");
+const usersPath = path.join(dataDir, "users.json");
+
+const getReadingsPath = (language = "tr") => {
+  const langDir = path.join(dataDir, language);
+  if (!fs.existsSync(langDir)) fs.mkdirSync(langDir, { recursive: true });
+  const p = path.join(langDir, "readings.json");
+  if (!fs.existsSync(p)) fs.writeFileSync(p, JSON.stringify({ readings: [] }), "utf8");
+  return p;
+};
+
+// ============================================
+// DATA HELPERS
+// ============================================
+const loadJSON = (filePath) => {
+  try {
+    return JSON.parse(fs.readFileSync(filePath, "utf8"));
+  } catch {
+    return null;
+  }
+};
+
+const saveJSON = (filePath, data) => {
+  fs.writeFileSync(filePath, JSON.stringify(data, null, 2), "utf8");
+};
+
+const pricesData = loadJSON(pricesPath) || {};
+const PRICES = pricesData.decode || { A: 10, B: 22, C: 12, UPSELL_SYMBOL: 5 };
+const TAROT_PRICES = pricesData.tarot || { single: 6, three: 14, five: 22, yes_no: 6 };
+const GEMSTONE_PACKAGES = pricesData.gemstonePackages || [];
+const PREMIUM_PLANS = pricesData.premiumSubscription || {};
+
+// ============================================
+// USER HELPERS (exported for tarot backend)
+// ============================================
+const getUsers = () => loadJSON(usersPath) || { users: {} };
+
+const DEFAULT_USER = {
+  gemstoneBalance: 1000,
+  isPremiumSubscriber: false,
+  premiumPlan: null,
+  premiumExpiresAt: null,
+  createdAt: null,
+};
+
+const getUser = (deviceId) => {
+  const data = getUsers();
+  if (!data.users[deviceId]) {
+    data.users[deviceId] = {
+      ...DEFAULT_USER,
+      createdAt: new Date().toISOString(),
+    };
+    saveJSON(usersPath, data);
+  }
+  // Check premium expiry
+  const user = data.users[deviceId];
+  if (user.isPremiumSubscriber && user.premiumExpiresAt) {
+    if (new Date(user.premiumExpiresAt) < new Date()) {
+      user.isPremiumSubscriber = false;
+      user.premiumPlan = null;
+      user.premiumExpiresAt = null;
+      saveJSON(usersPath, data);
+    }
+  }
+  return user;
+};
+
+const updateUser = (deviceId, updates) => {
+  const data = getUsers();
+  if (!data.users[deviceId]) {
+    data.users[deviceId] = {
+      ...DEFAULT_USER,
+      createdAt: new Date().toISOString(),
+    };
+  }
+  Object.assign(data.users[deviceId], updates);
+  saveJSON(usersPath, data);
+  return data.users[deviceId];
+};
+
+// Check if user has active premium subscription
+const isPremium = (deviceId) => {
+  const user = getUser(deviceId);
+  return user.isPremiumSubscriber === true;
+};
+
+// ============================================
+// READINGS HELPERS
+// ============================================
+const getReadings = (language = "tr") => {
+  const data = loadJSON(getReadingsPath(language));
+  return data?.readings || [];
+};
+
+const addReading = (language, reading) => {
+  const p = getReadingsPath(language);
+  const data = loadJSON(p) || { readings: [] };
+  data.readings.push(reading);
+  saveJSON(p, data);
+};
+
+const updateReading = (language, readingId, updates) => {
+  const p = getReadingsPath(language);
+  const data = loadJSON(p) || { readings: [] };
+  const idx = data.readings.findIndex((r) => r.id === readingId);
+  if (idx === -1) return null;
+  Object.assign(data.readings[idx], updates);
+  saveJSON(p, data);
+  return data.readings[idx];
+};
+
+const findReadingByRequestId = (language, requestId) => {
+  const readings = getReadings(language);
+  return readings.find((r) => r.requestId === requestId) || null;
+};
+
+// ============================================
+// OpenAI — lazy init (uses parent's env)
+// ============================================
+let _openai = null;
+const getOpenAI = () => {
+  if (!_openai) {
+    const OpenAI = require("openai");
+    _openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+  }
+  return _openai;
+};
+
+// ============================================
+// GPT CALL HELPER
+// ============================================
+const callGPT = async (systemMsg, userMsg, retrySystemMsg) => {
+  const openai = getOpenAI();
+
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      const messages =
+        attempt === 0
+          ? [
+              { role: "system", content: systemMsg },
+              { role: "user", content: userMsg },
+            ]
+          : [
+              { role: "system", content: retrySystemMsg || systemMsg },
+              { role: "user", content: userMsg },
+            ];
+
+      const completion = await openai.chat.completions.create({
+        model: "gpt-4o",
+        messages,
+        temperature: 0.7,
+        max_tokens: 1200,
+      });
+
+      const raw = completion.choices[0]?.message?.content || "";
+      // Extract JSON from potential markdown code blocks
+      const jsonMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/) || [null, raw];
+      const parsed = JSON.parse(jsonMatch[1].trim());
+      return parsed;
+    } catch (err) {
+      if (attempt === 1) throw err;
+      console.warn(`Dream Coder GPT attempt ${attempt + 1} failed, retrying...`);
+    }
+  }
+};
+
+// ============================================
+// VALIDATION
+// ============================================
+const ALLOWED_MODES = ["A", "B", "C"];
+const MAX_DREAM_LENGTH = 300;
+
+const FEELING_TAGS = ["korku", "özlem", "merak", "rahatlık", "utanç", "öfke", "hüzün", "şaşkınlık"];
+const LIFE_CONTEXT_TAGS = ["iş", "aşk", "para", "aile", "sağlık", "arkadaşlık", "kayıp", "değişim"];
+
+// ============================================
+// POST /decode
+// ============================================
+router.post("/decode", async (req, res) => {
+  try {
+    const { mode, dreamText, feelingTag, lifeContextTag, deviceId, requestId, language } = req.body;
+    const lang = language || "tr";
+
+    // Validation
+    if (!deviceId) return res.status(400).json({ error: "deviceId gerekli" });
+    if (!mode || !ALLOWED_MODES.includes(mode)) return res.status(400).json({ error: "Geçersiz mod. A, B veya C olmalı." });
+    if (!dreamText || dreamText.length < 20) return res.status(400).json({ error: "Rüya metni en az 20 karakter olmalı." });
+    if (dreamText.length > MAX_DREAM_LENGTH) return res.status(400).json({ error: `Rüya metni en fazla ${MAX_DREAM_LENGTH} karakter olabilir.` });
+
+    // Idempotency check
+    if (requestId) {
+      const existing = findReadingByRequestId(lang, requestId);
+      if (existing) return res.json(existing.resultJson);
+    }
+
+    // Premium check for mode C
+    if (mode === "C" && !isPremium(deviceId)) {
+      return res.status(403).json({
+        error: "PREMIUM_REQUIRED",
+        message: "Dönüştürme Planı sadece premium aboneler için kullanılabilir.",
+      });
+    }
+
+    // User & balance
+    const user = getUser(deviceId);
+    const cost = PRICES[mode] || 10;
+
+    // Check balance
+    if (user.gemstoneBalance < cost) {
+      return res.status(402).json({
+        error: "INSUFFICIENT_GEMSTONES",
+        message: "Yetersiz gemstone bakiyesi.",
+        required: cost,
+        balance: user.gemstoneBalance,
+      });
+    }
+    // Debit
+    updateUser(deviceId, { gemstoneBalance: user.gemstoneBalance - cost });
+
+    // Build prompt
+    const prompts = getPrompts(lang);
+    const promptInput = { dreamText, feelingTag, lifeContextTag };
+
+    let userPrompt;
+    if (mode === "A") userPrompt = prompts.buildModeAPrompt(promptInput);
+    else if (mode === "B") userPrompt = prompts.buildModeBPrompt(promptInput);
+    else userPrompt = prompts.buildModeCPrompt(promptInput);
+
+    // GPT call - main decode
+    const resultJson = await callGPT(
+      prompts.systemMessage,
+      userPrompt,
+      prompts.retrySystemMessage
+    );
+
+    // GPT call - upsell candidates (A=1 aday, B=3 aday, C=yok)
+    let upsellCandidates = [];
+    if (mode !== "C") {
+      try {
+        const upsellPrompt = prompts.buildUpsellAllPrompt({
+          dreamText,
+          existingBeats: resultJson.beats || [],
+          feelingTag,
+          lifeContextTag,
+        });
+        const upsellResult = await callGPT(
+          prompts.systemMessage,
+          upsellPrompt,
+          prompts.retrySystemMessage
+        );
+        const allCandidates = upsellResult.candidates || [];
+        // A mode: only 1 candidate (auto), B mode: all 3 candidates (user picks)
+        upsellCandidates = mode === "A" ? allCandidates.slice(0, 1) : allCandidates;
+      } catch (err) {
+        console.warn("Upsell candidates pre-gen failed:", err.message);
+      }
+    }
+
+    // Save reading
+    const reading = {
+      id: crypto.randomUUID(),
+      requestId: requestId || null,
+      userId: deviceId,
+      language: lang,
+      mode,
+      dreamText,
+      feelingTag: feelingTag || null,
+      lifeContextTag: lifeContextTag || null,
+      wasFree: false,
+      gemstoneCost: cost,
+      resultJson,
+      upsellCandidates,
+      upsellUnlocked: false,
+      upsellSymbol: null,
+      upsellCost: null,
+      createdAt: new Date().toISOString(),
+    };
+
+    addReading(lang, reading);
+
+    // Log
+    console.log(`✓ Dream Decode [${mode}] (${cost}gs) — ${deviceId.substring(0, 8)}...`);
+
+    return res.json({
+      readingId: reading.id,
+      mode,
+      wasFree: false,
+      gemstoneCost: cost,
+      upsellCandidates,
+      ...resultJson,
+    });
+  } catch (err) {
+    console.error("Dream Decode error:", err.message);
+    return res.status(500).json({ error: "Dream decode başarısız.", detail: err.message });
+  }
+});
+
+// ============================================
+// Helper: find reading across languages
+// ============================================
+const findReading = (dreamDecodeId, lang) => {
+  let reading = null;
+  let readingLang = lang;
+  const langReadings = getReadings(lang);
+  reading = langReadings.find((r) => r.id === dreamDecodeId);
+  if (!reading) {
+    for (const searchLang of ["tr", "en", "de", "es"]) {
+      const searchReadings = getReadings(searchLang);
+      const found = searchReadings.find((r) => r.id === dreamDecodeId);
+      if (found) { reading = found; readingLang = searchLang; break; }
+    }
+  }
+  return { reading, readingLang };
+};
+
+// ============================================
+// POST /upsell-symbol — Seçilen sembolü aç (GPT yok, önceden hazır insight gösterilir)
+// ============================================
+router.post("/upsell-symbol", async (req, res) => {
+  try {
+    const { dreamDecodeId, deviceId, selectedSymbol, language } = req.body;
+    const lang = language || "tr";
+
+    if (!deviceId) return res.status(400).json({ error: "deviceId gerekli" });
+    if (!dreamDecodeId) return res.status(400).json({ error: "dreamDecodeId gerekli" });
+    if (!selectedSymbol) return res.status(400).json({ error: "selectedSymbol gerekli" });
+
+    const { reading, readingLang } = findReading(dreamDecodeId, lang);
+    if (!reading) return res.status(404).json({ error: "Okuma bulunamadı." });
+
+    // Already unlocked?
+    if (reading.upsellUnlocked) {
+      return res.json({
+        readingId: reading.id,
+        upsellSymbol: reading.resultJson.upsellSymbol || null,
+        alreadyUnlocked: true,
+      });
+    }
+
+    // Find the pre-generated candidate
+    const candidates = reading.upsellCandidates || [];
+    const selected = candidates.find((c) => c.symbol === selectedSymbol);
+    if (!selected) {
+      return res.status(400).json({ error: "Seçilen sembol adaylar arasında bulunamadı." });
+    }
+
+    // Check balance
+    const user = getUser(deviceId);
+    const cost = PRICES.UPSELL_SYMBOL || 5;
+    if (user.gemstoneBalance < cost) {
+      return res.status(402).json({
+        error: "INSUFFICIENT_GEMSTONES",
+        message: "Yetersiz gemstone bakiyesi.",
+        required: cost,
+        balance: user.gemstoneBalance,
+      });
+    }
+
+    // Debit
+    updateUser(deviceId, { gemstoneBalance: user.gemstoneBalance - cost });
+
+    // Use pre-generated insight (no GPT call)
+    const upsellResult = {
+      symbol: selected.symbol,
+      insight: selected.insight,
+    };
+
+    // Update reading
+    const updatedResult = {
+      ...reading.resultJson,
+      upsellSymbol: upsellResult,
+    };
+
+    updateReading(readingLang, dreamDecodeId, {
+      upsellUnlocked: true,
+      upsellSymbol: selected.symbol,
+      upsellCost: cost,
+      resultJson: updatedResult,
+    });
+
+    console.log(`✓ Dream Upsell "${selectedSymbol}" (${cost}gs) — ${deviceId.substring(0, 8)}...`);
+
+    return res.json({
+      readingId: dreamDecodeId,
+      upsellCost: cost,
+      upsellSymbol: upsellResult,
+    });
+  } catch (err) {
+    console.error("Dream Upsell error:", err.message);
+    return res.status(500).json({ error: "Upsell başarısız.", detail: err.message });
+  }
+});
+
+// ============================================
+// GET /user/:deviceId
+// ============================================
+router.get("/user/:deviceId", (req, res) => {
+  const { deviceId } = req.params;
+  if (!deviceId) return res.status(400).json({ error: "deviceId gerekli" });
+
+  const user = getUser(deviceId);
+  return res.json({
+    deviceId,
+    gemstoneBalance: user.gemstoneBalance,
+    isPremiumSubscriber: user.isPremiumSubscriber || false,
+    premiumPlan: user.premiumPlan || null,
+    premiumExpiresAt: user.premiumExpiresAt || null,
+    createdAt: user.createdAt,
+  });
+});
+
+// ============================================
+// GET /prices
+// ============================================
+router.get("/prices", (req, res) => {
+  return res.json({
+    ...PRICES,
+    tarot: TAROT_PRICES,
+    packages: GEMSTONE_PACKAGES,
+    premiumSubscription: PREMIUM_PLANS,
+  });
+});
+
+// Export router + shared helpers for tarot backend
+router.shared = { getUser, updateUser, isPremium, TAROT_PRICES, PRICES, PREMIUM_PLANS, loadJSON, pricesPath };
+module.exports = router;

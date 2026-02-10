@@ -1,0 +1,557 @@
+import React, { useState } from "react";
+import {
+  View,
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  ScrollView,
+  ActivityIndicator,
+  Alert,
+} from "react-native";
+import { useRouter } from "expo-router";
+import { useTranslation } from "react-i18next";
+import { useDream } from "../../context/DreamContext";
+import { GradientBackground, GlassCard } from "../../components/ui";
+import { LinearGradient } from "expo-linear-gradient";
+import Constants from "expo-constants";
+
+const host = Constants.expoConfig?.hostUri?.split(":")[0] || "localhost";
+const API_URL = `http://${host}:3001/api/dream`;
+
+export default function DreamResultScreen() {
+  const router = useRouter();
+  const { t } = useTranslation();
+  const {
+    currentResult,
+    dreamMode,
+    gemstoneBalance,
+    prices,
+    deviceId,
+    fetchUserInfo,
+    resetDream,
+    setDreamMode,
+    setCurrentResult,
+  } = useDream();
+
+  const [upsellLoading, setUpsellLoading] = useState(false);
+  const [showCandidates, setShowCandidates] = useState(false);
+
+  if (!currentResult) {
+    return (
+      <GradientBackground>
+        <View style={styles.emptyContainer}>
+          <Text style={styles.emptyText}>Sonuç bulunamadı</Text>
+          <TouchableOpacity onPress={() => router.replace("/dream")}>
+            <Text style={styles.retryLink}>Geri Dön</Text>
+          </TouchableOpacity>
+        </View>
+      </GradientBackground>
+    );
+  }
+
+  const result = currentResult;
+  const hasUpsell = !!result.upsellSymbol;
+  const canAffordUpsell = gemstoneBalance >= (prices.UPSELL_SYMBOL || 5);
+
+  const candidates = (result as any).upsellCandidates || [];
+
+  // User selects a symbol, pay & reveal insight
+  const handleSelectSymbol = async (symbol: string) => {
+    if (!canAffordUpsell) {
+      Alert.alert(t("insufficientGemstone") || "Gemstone yetersiz");
+      return;
+    }
+    setUpsellLoading(true);
+    try {
+      const response = await fetch(`${API_URL}/upsell-symbol`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          dreamDecodeId: result.readingId,
+          deviceId,
+          selectedSymbol: symbol,
+          language: "tr",
+        }),
+      });
+      if (!response.ok) {
+        const err = await response.json();
+        Alert.alert("Hata", err.message || err.error);
+        return;
+      }
+      const data = await response.json();
+      setCurrentResult({ ...result, upsellSymbol: data.upsellSymbol });
+      setShowCandidates(false);
+      fetchUserInfo();
+    } catch {
+      Alert.alert("Bağlantı Hatası", "Sunucuya bağlanılamadı.");
+    } finally {
+      setUpsellLoading(false);
+    }
+  };
+
+  const handleNewDream = () => {
+    resetDream();
+    router.replace("/dream");
+  };
+
+  const handleUpgrade = (mode: "B" | "C") => {
+    setDreamMode(mode);
+    router.push("/dream/input");
+  };
+
+  const modeLabel = dreamMode === "A" ? "Quick Decode" : dreamMode === "B" ? "Deep Decode" : "Rewrite Plan";
+
+  return (
+    <GradientBackground>
+      <ScrollView contentContainerStyle={styles.scrollContent} showsVerticalScrollIndicator={false}>
+        {/* Header */}
+        <View style={styles.header}>
+          <Text style={styles.title}>🌙 {modeLabel}</Text>
+          <TouchableOpacity onPress={handleNewDream}>
+            <Text style={styles.newLink}>{t("newDream") || "Yeni Rüya"}</Text>
+          </TouchableOpacity>
+        </View>
+
+        {/* Overall */}
+        <GlassCard style={styles.section}>
+          <Text style={styles.sectionTitle}>{t("dreamOverall") || "Genel Bakış"}</Text>
+          <Text style={styles.overallText}>{result.overall}</Text>
+        </GlassCard>
+
+        {/* Beats */}
+        <GlassCard style={styles.section}>
+          <Text style={styles.sectionTitle}>{t("dreamBeats") || "Sembol Analizi"}</Text>
+          {result.beats?.map((beat: string, i: number) => (
+            <View key={i} style={styles.beatRow}>
+              <View style={styles.beatDot} />
+              <Text style={styles.beatText}>{beat}</Text>
+            </View>
+          ))}
+        </GlassCard>
+
+        {/* Pattern (B mode only) */}
+        {result.pattern && (
+          <GlassCard style={styles.section}>
+            <Text style={styles.sectionTitle}>{t("dreamPattern") || "Davranış Döngüsü"}</Text>
+            <Text style={styles.patternText}>{result.pattern}</Text>
+          </GlassCard>
+        )}
+
+        {/* Plan (C mode only) */}
+        {result.plan && (
+          <GlassCard style={styles.section}>
+            <Text style={styles.sectionTitle}>{t("dreamPlan") || "Aksiyon Planı"}</Text>
+            {result.plan.map((step: string, i: number) => (
+              <View key={i} style={styles.planRow}>
+                <View style={[styles.planNumber, i === 0 && styles.planFirst, i === 1 && styles.planSecond, i === 2 && styles.planThird]}>
+                  <Text style={styles.planNumberText}>{i + 1}</Text>
+                </View>
+                <Text style={styles.planText}>{step}</Text>
+              </View>
+            ))}
+          </GlassCard>
+        )}
+
+        {/* Keywords */}
+        {result.keywords && (
+          <View style={styles.keywordsRow}>
+            {result.keywords.map((kw: string, i: number) => (
+              <View key={i} style={styles.keywordChip}>
+                <Text style={styles.keywordText}>{kw}</Text>
+              </View>
+            ))}
+          </View>
+        )}
+
+        {/* Next Step */}
+        <GlassCard style={styles.section}>
+          <Text style={styles.sectionTitle}>{t("dreamNextStep") || "Sonraki Adım"}</Text>
+          <Text style={styles.nextStepText}>{result.nextStep}</Text>
+        </GlassCard>
+
+        {/* Journal */}
+        <GlassCard style={[styles.section, styles.journalSection]}>
+          <Text style={styles.journalLabel}>{t("dreamJournal") || "Kendine Sor"}</Text>
+          <Text style={styles.journalText}>{result.journal}</Text>
+        </GlassCard>
+
+        {/* Upsell Symbol (if unlocked) */}
+        {hasUpsell && result.upsellSymbol && (
+          <GlassCard style={[styles.section, styles.upsellResult]}>
+            <Text style={styles.upsellResultTitle}>
+              +1 {result.upsellSymbol.symbol}
+            </Text>
+            <Text style={styles.upsellInsight}>{result.upsellSymbol.insight}</Text>
+          </GlassCard>
+        )}
+
+        {/* MODE A: Single auto-symbol offer */}
+        {dreamMode === "A" && !hasUpsell && candidates.length === 1 && (
+          <TouchableOpacity
+            activeOpacity={0.85}
+            onPress={() => handleSelectSymbol(candidates[0].symbol)}
+            disabled={upsellLoading || !canAffordUpsell}
+          >
+            <GlassCard style={[styles.section, styles.upsellOffer]}>
+              <View style={styles.upsellOfferRow}>
+                <View style={styles.upsellOfferLeft}>
+                  <Text style={styles.upsellOfferSymbol}>{candidates[0].symbol}</Text>
+                  <Text style={styles.upsellOfferHint}>{candidates[0].hint}</Text>
+                </View>
+                <View style={styles.upsellOfferBadge}>
+                  {upsellLoading ? (
+                    <ActivityIndicator color="#38bdf8" size="small" />
+                  ) : (
+                    <Text style={styles.upsellOfferPrice}>💎 {prices.UPSELL_SYMBOL}</Text>
+                  )}
+                </View>
+              </View>
+            </GlassCard>
+          </TouchableOpacity>
+        )}
+
+        {/* MODE B: 3 candidate symbols (user picks one) */}
+        {dreamMode === "B" && showCandidates && candidates.length > 0 && !hasUpsell && (
+          <GlassCard style={[styles.section, styles.candidateSection]}>
+            <Text style={styles.candidateTitle}>Bir sembol seç (💎 {prices.UPSELL_SYMBOL})</Text>
+            {candidates.map((c: any, i: number) => (
+              <TouchableOpacity
+                key={i}
+                style={styles.candidateRow}
+                activeOpacity={0.8}
+                onPress={() => handleSelectSymbol(c.symbol)}
+                disabled={upsellLoading}
+              >
+                <View style={styles.candidateDot} />
+                <View style={styles.candidateContent}>
+                  <Text style={styles.candidateSymbol}>{c.symbol}</Text>
+                  <Text style={styles.candidateHint}>{c.hint}</Text>
+                </View>
+              </TouchableOpacity>
+            ))}
+            {upsellLoading && <ActivityIndicator color="#38bdf8" style={{ marginTop: 8 }} />}
+          </GlassCard>
+        )}
+
+        {/* CTAs */}
+        <View style={styles.ctaContainer}>
+          {/* MODE B: Upsell CTA to show candidates */}
+          {dreamMode === "B" && !hasUpsell && !showCandidates && candidates.length > 0 && (
+            <TouchableOpacity
+              activeOpacity={0.85}
+              onPress={() => setShowCandidates(true)}
+            >
+              <LinearGradient
+                colors={["#38bdf8", "#6366f1"]}
+                style={styles.ctaButton}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+              >
+                <Text style={styles.ctaText}>
+                  +1 Sembol Aç (💎 {prices.UPSELL_SYMBOL})
+                </Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          )}
+
+          {/* Upgrade CTAs (only show if current mode is A) */}
+          {dreamMode === "A" && (
+            <>
+              <TouchableOpacity activeOpacity={0.85} onPress={() => handleUpgrade("B")}>
+                <LinearGradient
+                  colors={["rgba(168, 85, 247, 0.5)", "rgba(99, 102, 241, 0.4)"]}
+                  style={styles.ctaButton}
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 1 }}
+                >
+                  <Text style={styles.ctaText}>
+                    🔮 Deep Decode (💎 {prices.B})
+                  </Text>
+                </LinearGradient>
+              </TouchableOpacity>
+
+              <TouchableOpacity activeOpacity={0.85} onPress={() => handleUpgrade("C")}>
+                <LinearGradient
+                  colors={["rgba(245, 158, 11, 0.4)", "rgba(234, 88, 12, 0.3)"]}
+                  style={styles.ctaButton}
+                  start={{ x: 0, y: 0 }}
+                  end={{ x: 1, y: 1 }}
+                >
+                  <Text style={styles.ctaText}>
+                    🗺️ Rewrite Plan (💎 {prices.C})
+                  </Text>
+                </LinearGradient>
+              </TouchableOpacity>
+            </>
+          )}
+        </View>
+
+        <View style={styles.bottomPadding} />
+      </ScrollView>
+    </GradientBackground>
+  );
+}
+
+const styles = StyleSheet.create({
+  scrollContent: {
+    paddingHorizontal: 20,
+    paddingTop: 50,
+    paddingBottom: 20,
+  },
+  emptyContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  emptyText: {
+    color: "rgba(255,255,255,0.5)",
+    fontSize: 16,
+    marginBottom: 12,
+  },
+  retryLink: {
+    color: "#a855f7",
+    fontSize: 14,
+    fontWeight: "600",
+  },
+  header: {
+    flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
+    marginBottom: 20,
+  },
+  title: {
+    color: "#fff",
+    fontSize: 20,
+    fontWeight: "800",
+  },
+  newLink: {
+    color: "#a855f7",
+    fontSize: 14,
+    fontWeight: "500",
+  },
+  section: {
+    marginBottom: 16,
+    width: "100%",
+  },
+  sectionTitle: {
+    color: "#a855f7",
+    fontSize: 13,
+    fontWeight: "700",
+    letterSpacing: 0.5,
+    marginBottom: 10,
+    textTransform: "uppercase",
+  },
+  overallText: {
+    color: "rgba(255, 255, 255, 0.85)",
+    fontSize: 16,
+    lineHeight: 26,
+  },
+  beatRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    marginBottom: 10,
+    gap: 10,
+  },
+  beatDot: {
+    width: 6,
+    height: 6,
+    borderRadius: 3,
+    backgroundColor: "#a855f7",
+    marginTop: 8,
+  },
+  beatText: {
+    color: "rgba(255, 255, 255, 0.8)",
+    fontSize: 15,
+    lineHeight: 22,
+    flex: 1,
+  },
+  patternText: {
+    color: "rgba(255, 255, 255, 0.8)",
+    fontSize: 15,
+    lineHeight: 24,
+    fontStyle: "italic",
+  },
+  planRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    marginBottom: 12,
+    gap: 12,
+  },
+  planNumber: {
+    width: 28,
+    height: 28,
+    borderRadius: 14,
+    backgroundColor: "rgba(168, 85, 247, 0.3)",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  planFirst: { backgroundColor: "rgba(34, 197, 94, 0.3)" },
+  planSecond: { backgroundColor: "rgba(56, 189, 248, 0.3)" },
+  planThird: { backgroundColor: "rgba(245, 158, 11, 0.3)" },
+  planNumberText: {
+    color: "#fff",
+    fontSize: 13,
+    fontWeight: "700",
+  },
+  planText: {
+    color: "rgba(255, 255, 255, 0.8)",
+    fontSize: 15,
+    lineHeight: 22,
+    flex: 1,
+  },
+  keywordsRow: {
+    flexDirection: "row",
+    justifyContent: "center",
+    gap: 10,
+    marginBottom: 16,
+  },
+  keywordChip: {
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    borderRadius: 16,
+    backgroundColor: "rgba(168, 85, 247, 0.2)",
+    borderWidth: 1,
+    borderColor: "rgba(168, 85, 247, 0.4)",
+  },
+  keywordText: {
+    color: "#c084fc",
+    fontSize: 13,
+    fontWeight: "600",
+  },
+  nextStepText: {
+    color: "#4ade80",
+    fontSize: 15,
+    lineHeight: 24,
+    fontWeight: "500",
+  },
+  journalSection: {
+    borderWidth: 1,
+    borderColor: "rgba(56, 189, 248, 0.2)",
+  },
+  journalLabel: {
+    color: "#7dd3fc",
+    fontSize: 12,
+    fontWeight: "700",
+    letterSpacing: 0.5,
+    marginBottom: 8,
+    textTransform: "uppercase",
+  },
+  journalText: {
+    color: "rgba(255, 255, 255, 0.7)",
+    fontSize: 15,
+    lineHeight: 24,
+    fontStyle: "italic",
+  },
+  upsellOffer: {
+    borderWidth: 1,
+    borderColor: "rgba(56, 189, 248, 0.25)",
+  },
+  upsellOfferRow: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  upsellOfferLeft: {
+    flex: 1,
+    marginRight: 12,
+  },
+  upsellOfferSymbol: {
+    color: "#38bdf8",
+    fontSize: 15,
+    fontWeight: "700",
+    marginBottom: 3,
+  },
+  upsellOfferHint: {
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 12,
+    lineHeight: 17,
+  },
+  upsellOfferBadge: {
+    paddingHorizontal: 12,
+    paddingVertical: 8,
+    borderRadius: 12,
+    backgroundColor: "rgba(56, 189, 248, 0.2)",
+    borderWidth: 1,
+    borderColor: "rgba(56, 189, 248, 0.4)",
+  },
+  upsellOfferPrice: {
+    color: "#7dd3fc",
+    fontSize: 13,
+    fontWeight: "700",
+  },
+  upsellResult: {
+    borderWidth: 1,
+    borderColor: "rgba(56, 189, 248, 0.3)",
+    backgroundColor: "rgba(56, 189, 248, 0.05)",
+  },
+  upsellResultTitle: {
+    color: "#38bdf8",
+    fontSize: 16,
+    fontWeight: "700",
+    marginBottom: 8,
+  },
+  upsellInsight: {
+    color: "rgba(255, 255, 255, 0.8)",
+    fontSize: 15,
+    lineHeight: 24,
+  },
+  candidateSection: {
+    borderWidth: 1,
+    borderColor: "rgba(56, 189, 248, 0.2)",
+  },
+  candidateTitle: {
+    color: "#7dd3fc",
+    fontSize: 14,
+    fontWeight: "700",
+    marginBottom: 14,
+    textAlign: "center",
+  },
+  candidateRow: {
+    flexDirection: "row",
+    alignItems: "flex-start",
+    paddingVertical: 10,
+    paddingHorizontal: 8,
+    borderRadius: 12,
+    backgroundColor: "rgba(56, 189, 248, 0.08)",
+    marginBottom: 8,
+    gap: 10,
+  },
+  candidateDot: {
+    width: 8,
+    height: 8,
+    borderRadius: 4,
+    backgroundColor: "#38bdf8",
+    marginTop: 6,
+  },
+  candidateContent: {
+    flex: 1,
+  },
+  candidateSymbol: {
+    color: "#38bdf8",
+    fontSize: 15,
+    fontWeight: "700",
+    marginBottom: 2,
+  },
+  candidateHint: {
+    color: "rgba(255, 255, 255, 0.55)",
+    fontSize: 13,
+    lineHeight: 19,
+  },
+  ctaContainer: {
+    gap: 10,
+    marginTop: 8,
+  },
+  ctaButton: {
+    paddingVertical: 14,
+    borderRadius: 14,
+    alignItems: "center",
+  },
+  ctaText: {
+    color: "#fff",
+    fontSize: 15,
+    fontWeight: "700",
+  },
+  bottomPadding: {
+    height: 30,
+  },
+});

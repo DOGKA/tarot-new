@@ -1,10 +1,11 @@
 import React from "react";
-import { View, Text, TouchableOpacity, StyleSheet, ScrollView } from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import { useApp } from "../context/AppContext";
-import { GradientBackground, GlassCard, SpreadCard } from "../components/ui";
-import type { Language, SpreadType, FocusArea } from "../types/tarot";
+import { GradientBackground } from "../components/ui";
+import { LinearGradient } from "expo-linear-gradient";
+import type { Language } from "../types/tarot";
 
 const languages: { code: Language; label: string; flag: string }[] = [
   { code: "en", label: "English", flag: "🇬🇧" },
@@ -13,42 +14,21 @@ const languages: { code: Language; label: string; flag: string }[] = [
   { code: "es", label: "Español", flag: "🇪🇸" },
 ];
 
-// Category colors
-const COLORS = {
-  general: "#a855f7",
-  love: "#ec4899",
-  career: "#f59e0b",
-  spiritual: "#6366f1",
-};
-
-export default function HomeScreen() {
+export default function WelcomeScreen() {
   const router = useRouter();
   const { t, i18n } = useTranslation();
-  const { language, setLanguage, isPremium, togglePremium, setSpreadType, setFocusArea } =
-    useApp();
+  const { language, setLanguage, gemstoneBalance, isPremium, togglePremium } = useApp();
 
   const handleLanguageSelect = (lang: Language) => {
     setLanguage(lang);
     i18n.changeLanguage(lang);
   };
 
-  const handleSpreadSelect = (spread: SpreadType, focus: FocusArea = "general") => {
-    setSpreadType(spread);
-    setFocusArea(focus);
-    router.push(`/pick/${spread}`);
-  };
-
-  // Get description based on premium status
-  const getDesc = (key: string) => {
-    return isPremium ? t(`${key}Premium`) : t(key);
-  };
-
   return (
     <GradientBackground>
-      <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-        {/* Header */}
-        <View style={styles.header}>
-          <Text style={styles.title}>{t("appName")}</Text>
+      <View style={styles.container}>
+        {/* Top Bar */}
+        <View style={styles.topBar}>
           <TouchableOpacity
             style={[styles.premiumBadge, isPremium && styles.premiumActive]}
             onPress={togglePremium}
@@ -57,11 +37,24 @@ export default function HomeScreen() {
               {isPremium ? "★ Premium" : "Free"}
             </Text>
           </TouchableOpacity>
+          <View style={styles.topBarRight}>
+            <View style={styles.balanceBadge}>
+              <Text style={styles.balanceText}>💎 {gemstoneBalance}</Text>
+            </View>
+            <TouchableOpacity style={styles.marketButton} onPress={() => router.push("/market")}>
+              <Text style={styles.marketButtonText}>Market</Text>
+            </TouchableOpacity>
+          </View>
         </View>
 
-        {/* Language Selection - Clean flat design */}
-        <View style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("selectLanguage")}</Text>
+        {/* Title */}
+        <View style={styles.header}>
+          <Text style={styles.appTitle}>Mystic</Text>
+          <Text style={styles.appSubtitle}>Tarot & Dream</Text>
+        </View>
+
+        {/* Language Selection */}
+        <View style={styles.languageSection}>
           <View style={styles.languageGrid}>
             {languages.map((lang) => (
               <TouchableOpacity
@@ -74,238 +67,123 @@ export default function HomeScreen() {
                 ]}
               >
                 <Text style={styles.flag}>{lang.flag}</Text>
-                <Text style={[
-                  styles.languageLabel,
-                  language === lang.code && styles.languageLabelSelected
-                ]}>{lang.label}</Text>
+                <Text
+                  style={[
+                    styles.languageLabel,
+                    language === lang.code && styles.languageLabelSelected,
+                  ]}
+                >
+                  {lang.label}
+                </Text>
               </TouchableOpacity>
             ))}
           </View>
         </View>
 
-        {/* General Category */}
-        <View style={styles.section}>
-          <Text style={[styles.categoryTitle, { color: COLORS.general }]}>
-            ✨ {t("generalCategory")}
-          </Text>
-          
-          <SpreadCard
-            title={t("singleCard")}
-            description={getDesc("singleCardDesc")}
-            cardCount="single"
-            categoryColor={COLORS.general}
-            onPress={() => handleSpreadSelect("single_card", "general")}
-          />
-          
-          <SpreadCard
-            title={t("threeCards")}
-            description={getDesc("threeCardsDesc")}
-            cardCount="three"
-            categoryColor={COLORS.general}
-            onPress={() => handleSpreadSelect("past_present_future")}
-          />
-          
-          <SpreadCard
-            title={t("yesNo")}
-            description={getDesc("yesNoGeneralDesc")}
-            cardCount="single"
-            categoryColor={COLORS.general}
-            onPress={() => handleSpreadSelect("yes_no", "general")}
-          />
-          
-          <SpreadCard
-            title={t("situationObstacleAdvice")}
-            description={getDesc("situationObstacleAdviceDesc")}
-            cardCount="three"
-            categoryColor={COLORS.general}
-            onPress={() => handleSpreadSelect("situation_obstacle_advice")}
-          />
+        {/* Cards */}
+        <View style={styles.cardsContainer}>
+          {/* Tarot Card */}
+          <TouchableOpacity
+            style={styles.card}
+            activeOpacity={0.85}
+            onPress={() => router.push("/tarot")}
+          >
+            <LinearGradient
+              colors={[
+                "rgba(168, 85, 247, 0.3)",
+                "rgba(99, 102, 241, 0.2)",
+                "rgba(30, 20, 60, 0.8)",
+              ]}
+              style={styles.cardGradient}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 0, y: 1 }}
+            >
+              <Text style={styles.cardIcon}>✨</Text>
+              <Text style={styles.cardTitle}>Tarot</Text>
+              <Text style={styles.cardDescription}>
+                {t("tarotWelcomeDesc")}
+              </Text>
+              <View style={styles.cardBadge}>
+                <Text style={styles.cardBadgeText}>{t("tarotBadge")}</Text>
+              </View>
+            </LinearGradient>
+          </TouchableOpacity>
+
+          {/* Dream Coder Card */}
+          <TouchableOpacity
+            style={styles.card}
+            activeOpacity={0.85}
+            onPress={() => router.push("/dream")}
+          >
+            <LinearGradient
+              colors={[
+                "rgba(56, 189, 248, 0.3)",
+                "rgba(99, 102, 241, 0.2)",
+                "rgba(30, 20, 60, 0.8)",
+              ]}
+              style={styles.cardGradient}
+              start={{ x: 0, y: 0 }}
+              end={{ x: 0, y: 1 }}
+            >
+              <Text style={styles.cardIcon}>🌙</Text>
+              <Text style={styles.cardTitle}>Dream Coder</Text>
+              <Text style={styles.cardDescription}>
+                {t("dreamWelcomeDesc")}
+              </Text>
+              <View style={[styles.cardBadge, styles.dreamBadge]}>
+                <Text style={[styles.cardBadgeText, styles.dreamBadgeText]}>
+                  {t("dreamBadge")}
+                </Text>
+              </View>
+            </LinearGradient>
+          </TouchableOpacity>
         </View>
 
-        {/* Love Category */}
-        <View style={styles.section}>
-          <Text style={[styles.categoryTitle, { color: COLORS.love }]}>
-            💖 {t("loveCategory")}
-          </Text>
-          
-          <SpreadCard
-            title={t("singleCard")}
-            description={getDesc("singleCardDesc")}
-            cardCount="single"
-            categoryColor={COLORS.love}
-            onPress={() => handleSpreadSelect("single_card", "love")}
-          />
-          
-          <SpreadCard
-            title={t("yesNo")}
-            description={getDesc("yesNoLoveDesc")}
-            cardCount="single"
-            categoryColor={COLORS.love}
-            onPress={() => handleSpreadSelect("yes_no", "love")}
-          />
-          
-          <SpreadCard
-            title={t("destinysEmbrace")}
-            description={getDesc("destinysEmbraceDesc")}
-            cardCount="three"
-            categoryColor={COLORS.love}
-            onPress={() => handleSpreadSelect("destinys_embrace", "love")}
-          />
-          
-          <SpreadCard
-            title={t("loveChoice")}
-            description={getDesc("loveChoiceDesc")}
-            cardCount="five"
-            categoryColor={COLORS.love}
-            onPress={() => handleSpreadSelect("love_choice", "love")}
-          />
-          
-          <SpreadCard
-            title={t("pathToLove")}
-            description={getDesc("pathToLoveDesc")}
-            cardCount="five"
-            categoryColor={COLORS.love}
-            onPress={() => handleSpreadSelect("path_to_love", "love")}
-          />
-        </View>
-
-        {/* Career Category */}
-        <View style={styles.section}>
-          <Text style={[styles.categoryTitle, { color: COLORS.career }]}>
-            💼 {t("careerCategory")}
-          </Text>
-          
-          <SpreadCard
-            title={t("singleCard")}
-            description={getDesc("singleCardDesc")}
-            cardCount="single"
-            categoryColor={COLORS.career}
-            onPress={() => handleSpreadSelect("single_card", "career")}
-          />
-          
-          <SpreadCard
-            title={t("yesNo")}
-            description={getDesc("yesNoCareerDesc")}
-            cardCount="single"
-            categoryColor={COLORS.career}
-            onPress={() => handleSpreadSelect("yes_no", "career")}
-          />
-          
-          <SpreadCard
-            title={t("careerClarity")}
-            description={getDesc("careerClarityDesc")}
-            cardCount="three"
-            categoryColor={COLORS.career}
-            onPress={() => handleSpreadSelect("career_clarity", "career")}
-          />
-          
-          <SpreadCard
-            title={t("careerPathGuide")}
-            description={getDesc("careerPathGuideDesc")}
-            cardCount="three"
-            categoryColor={COLORS.career}
-            onPress={() => handleSpreadSelect("career_path_guide", "career")}
-          />
-          
-          <SpreadCard
-            title={t("newBusinessExploration")}
-            description={getDesc("newBusinessExplorationDesc")}
-            cardCount="five"
-            categoryColor={COLORS.career}
-            onPress={() => handleSpreadSelect("new_business_exploration", "career")}
-          />
-          
-          <SpreadCard
-            title={t("wealthFlow")}
-            description={getDesc("wealthFlowDesc")}
-            cardCount="five"
-            categoryColor={COLORS.career}
-            onPress={() => handleSpreadSelect("wealth_flow", "career")}
-          />
-        </View>
-
-        {/* Spiritual Category */}
-        <View style={styles.section}>
-          <Text style={[styles.categoryTitle, { color: COLORS.spiritual }]}>
-            🔮 {t("spiritualCategory")}
-          </Text>
-          
-          <SpreadCard
-            title={t("singleCard")}
-            description={getDesc("singleCardDesc")}
-            cardCount="single"
-            categoryColor={COLORS.spiritual}
-            onPress={() => handleSpreadSelect("single_card", "spiritual")}
-          />
-          
-          <SpreadCard
-            title={t("yesNo")}
-            description={getDesc("yesNoSpiritualDesc")}
-            cardCount="single"
-            categoryColor={COLORS.spiritual}
-            onPress={() => handleSpreadSelect("yes_no", "spiritual")}
-          />
-          
-          <SpreadCard
-            title={t("newMoonRitual")}
-            description={getDesc("newMoonRitualDesc")}
-            cardCount="five"
-            categoryColor={COLORS.spiritual}
-            onPress={() => handleSpreadSelect("new_moon_ritual", "spiritual")}
-          />
-          
-          <SpreadCard
-            title={t("fullMoonRelease")}
-            description={getDesc("fullMoonReleaseDesc")}
-            cardCount="five"
-            categoryColor={COLORS.spiritual}
-            onPress={() => handleSpreadSelect("full_moon_release", "spiritual")}
-          />
-          
-          <SpreadCard
-            title={t("mindBodySpirit")}
-            description={getDesc("mindBodySpiritDesc")}
-            cardCount="three"
-            categoryColor={COLORS.spiritual}
-            onPress={() => handleSpreadSelect("mind_body_spirit", "spiritual")}
-          />
-          
-          <SpreadCard
-            title={t("celestialIllumination")}
-            description={getDesc("celestialIlluminationDesc")}
-            cardCount="three"
-            categoryColor={COLORS.spiritual}
-            onPress={() => handleSpreadSelect("celestial_illumination", "spiritual")}
-          />
-        </View>
-        
-        <View style={styles.bottomPadding} />
-      </ScrollView>
+        {/* Version */}
+        <Text style={styles.version}>v4.0</Text>
+      </View>
     </GradientBackground>
   );
 }
 
 const styles = StyleSheet.create({
-  content: {
+  container: {
     flex: 1,
-    padding: 20,
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 24,
   },
-  header: {
+  topBar: {
+    position: "absolute",
+    top: 50,
+    left: 24,
+    right: 24,
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
-    marginBottom: 30,
-    marginTop: 10,
   },
-  title: {
-    fontSize: 32,
-    fontWeight: "bold",
-    color: "#fff",
+  topBarRight: {
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 8,
+  },
+  marketButton: {
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    borderRadius: 14,
+    backgroundColor: "rgba(245, 158, 11, 0.25)",
+    borderWidth: 1,
+    borderColor: "rgba(245, 158, 11, 0.5)",
+  },
+  marketButtonText: {
+    color: "#fbbf24",
+    fontWeight: "700",
+    fontSize: 13,
   },
   premiumBadge: {
-    paddingHorizontal: 16,
-    paddingVertical: 8,
-    borderRadius: 20,
+    paddingHorizontal: 14,
+    paddingVertical: 6,
+    borderRadius: 14,
     backgroundColor: "rgba(255, 255, 255, 0.1)",
     borderWidth: 1,
     borderColor: "rgba(255, 255, 255, 0.2)",
@@ -317,27 +195,52 @@ const styles = StyleSheet.create({
   premiumText: {
     color: "#fff",
     fontWeight: "600",
-    fontSize: 14,
+    fontSize: 13,
   },
-  section: {
-    marginBottom: 24,
+  balanceBadge: {
+    paddingHorizontal: 12,
+    paddingVertical: 6,
+    borderRadius: 14,
+    backgroundColor: "rgba(255, 255, 255, 0.1)",
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.15)",
   },
-  sectionTitle: {
+  balanceText: {
+    color: "#fff",
+    fontWeight: "600",
+    fontSize: 13,
+  },
+  header: {
+    alignItems: "center",
+    marginBottom: 28,
+  },
+  appTitle: {
+    fontSize: 42,
+    fontWeight: "900",
+    color: "#fff",
+    letterSpacing: 3,
+  },
+  appSubtitle: {
     fontSize: 16,
     color: "rgba(255, 255, 255, 0.5)",
-    marginBottom: 12,
+    letterSpacing: 6,
+    marginTop: 4,
+    textTransform: "uppercase",
+  },
+  languageSection: {
+    marginBottom: 32,
   },
   languageGrid: {
     flexDirection: "row",
-    flexWrap: "wrap",
-    gap: 12,
+    justifyContent: "center",
+    gap: 6,
   },
   languageButton: {
     flexDirection: "row",
     alignItems: "center",
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-    gap: 8,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    gap: 4,
     borderRadius: 12,
   },
   languageSelected: {
@@ -346,23 +249,73 @@ const styles = StyleSheet.create({
     borderColor: "#a855f7",
   },
   flag: {
-    fontSize: 24,
+    fontSize: 20,
   },
   languageLabel: {
-    color: "rgba(255, 255, 255, 0.6)",
-    fontSize: 15,
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 14,
   },
   languageLabelSelected: {
     color: "#fff",
     fontWeight: "600",
   },
-  categoryTitle: {
-    fontSize: 22,
-    fontWeight: "bold",
-    marginBottom: 16,
-    marginTop: 8,
+  cardsContainer: {
+    width: "100%",
+    gap: 16,
   },
-  bottomPadding: {
-    height: 40,
+  card: {
+    borderRadius: 20,
+    overflow: "hidden",
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.12)",
+  },
+  cardGradient: {
+    padding: 24,
+    alignItems: "center",
+  },
+  cardIcon: {
+    fontSize: 40,
+    marginBottom: 8,
+  },
+  cardTitle: {
+    fontSize: 24,
+    fontWeight: "800",
+    color: "#fff",
+    marginBottom: 6,
+    letterSpacing: 1,
+  },
+  cardDescription: {
+    fontSize: 13,
+    color: "rgba(255, 255, 255, 0.6)",
+    textAlign: "center",
+    lineHeight: 19,
+    maxWidth: 280,
+    marginBottom: 12,
+  },
+  cardBadge: {
+    paddingHorizontal: 14,
+    paddingVertical: 5,
+    borderRadius: 12,
+    backgroundColor: "rgba(168, 85, 247, 0.3)",
+    borderWidth: 1,
+    borderColor: "rgba(168, 85, 247, 0.5)",
+  },
+  cardBadgeText: {
+    color: "#c084fc",
+    fontSize: 12,
+    fontWeight: "700",
+    letterSpacing: 0.5,
+  },
+  dreamBadge: {
+    backgroundColor: "rgba(56, 189, 248, 0.2)",
+    borderColor: "rgba(56, 189, 248, 0.4)",
+  },
+  dreamBadgeText: {
+    color: "#7dd3fc",
+  },
+  version: {
+    color: "rgba(255, 255, 255, 0.2)",
+    fontSize: 12,
+    marginTop: 24,
   },
 });

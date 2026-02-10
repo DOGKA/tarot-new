@@ -1,0 +1,114 @@
+// ============================================
+// DREAM CODER — Type Definitions
+// ============================================
+
+export type DreamMode = "A" | "B" | "C";
+
+export type FeelingTag =
+  | "korku"
+  | "özlem"
+  | "merak"
+  | "rahatlık"
+  | "utanç"
+  | "öfke"
+  | "hüzün"
+  | "şaşkınlık";
+
+export type LifeContextTag =
+  | "iş"
+  | "aşk"
+  | "para"
+  | "aile"
+  | "sağlık"
+  | "arkadaşlık"
+  | "kayıp"
+  | "değişim";
+
+// ============================================
+// API Request / Response
+// ============================================
+
+export interface DreamDecodeRequest {
+  mode: DreamMode;
+  dreamText: string;
+  feelingTag?: FeelingTag;
+  lifeContextTag?: LifeContextTag;
+  deviceId: string;
+  requestId: string;
+  language?: string;
+}
+
+export interface DreamUpsellRequest {
+  dreamDecodeId: string;
+  deviceId: string;
+  requestId: string;
+  language?: string;
+}
+
+// ============================================
+// Result Types (mode-specific)
+// ============================================
+
+export interface DreamResultA {
+  overall: string;
+  beats: string[];
+  nextStep: string;
+  keywords: [string, string, string];
+  journal: string;
+  upsellSymbol?: UpsellSymbol;
+}
+
+export interface DreamResultB extends DreamResultA {
+  pattern: string;
+}
+
+export interface DreamResultC extends DreamResultA {
+  plan: [string, string, string];
+}
+
+export type DreamResult = DreamResultA | DreamResultB | DreamResultC;
+
+export interface UpsellSymbol {
+  symbol: string;
+  insight: string;
+  nextStepAddOn: string;
+  journalAddOn?: string;
+}
+
+// ============================================
+// API Response wrappers
+// ============================================
+
+export interface DreamDecodeResponse extends DreamResultA {
+  readingId: string;
+  mode: DreamMode;
+  wasFree: boolean;
+  gemstoneCost: number;
+  // B mode extras
+  pattern?: string;
+  // C mode extras
+  plan?: [string, string, string];
+  // Upsell candidates (pre-generated)
+  upsellCandidates?: Array<{ symbol: string; hint: string; insight: string }>;
+}
+
+export interface DreamUpsellResponse {
+  readingId: string;
+  upsellCost: number;
+  upsellSymbol: UpsellSymbol;
+  alreadyUnlocked?: boolean;
+}
+
+export interface DreamUserInfo {
+  deviceId: string;
+  gemstoneBalance: number;
+  dreamFreeCredit: number;
+  createdAt: string;
+}
+
+export interface DreamPrices {
+  A: number;
+  B: number;
+  C: number;
+  UPSELL_SYMBOL: number;
+}
