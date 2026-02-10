@@ -34,6 +34,14 @@ const FEELING_OPTIONS: { value: FeelingTag; label: string }[] = [
   { value: "öfke", label: "Öfke" },
   { value: "hüzün", label: "Hüzün" },
   { value: "şaşkınlık", label: "Şaşkınlık" },
+  { value: "mutluluk", label: "Mutluluk" },
+  { value: "hayal kırıklığı", label: "Hayal Kırıklığı" },
+  { value: "endişe", label: "Endişe" },
+  { value: "suçluluk", label: "Suçluluk" },
+  { value: "güvensizlik", label: "Güvensizlik" },
+  { value: "huzur", label: "Huzur" },
+  { value: "çaresizlik", label: "Çaresizlik" },
+  { value: "kıskançlık", label: "Kıskançlık" },
 ];
 
 const CONTEXT_OPTIONS: { value: LifeContextTag; label: string }[] = [
@@ -64,7 +72,7 @@ export default function DreamInputScreen() {
     deviceId,
     fetchUserInfo,
   } = useDream();
-  const { language } = useApp();
+  const { language, isPremium } = useApp();
 
   const [loading, setLoading] = useState(false);
 
@@ -95,6 +103,7 @@ export default function DreamInputScreen() {
           deviceId,
           requestId,
           language,
+          isPremium,
         }),
       });
 

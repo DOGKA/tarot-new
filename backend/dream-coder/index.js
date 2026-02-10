@@ -210,8 +210,9 @@ router.post("/decode", async (req, res) => {
       if (existing) return res.json(existing.resultJson);
     }
 
-    // Premium check for mode C
-    if (mode === "C" && !isPremium(deviceId)) {
+    // Premium check for mode C (backend users.json OR frontend isPremium flag)
+    const clientIsPremium = req.body.isPremium === true;
+    if (mode === "C" && !isPremium(deviceId) && !clientIsPremium) {
       return res.status(403).json({
         error: "PREMIUM_REQUIRED",
         message: "Dönüştürme Planı sadece premium aboneler için kullanılabilir.",

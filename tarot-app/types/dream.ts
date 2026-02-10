@@ -12,7 +12,15 @@ export type FeelingTag =
   | "utanç"
   | "öfke"
   | "hüzün"
-  | "şaşkınlık";
+  | "şaşkınlık"
+  | "mutluluk"
+  | "hayal kırıklığı"
+  | "endişe"
+  | "suçluluk"
+  | "güvensizlik"
+  | "huzur"
+  | "çaresizlik"
+  | "kıskançlık";
 
 export type LifeContextTag =
   | "iş"

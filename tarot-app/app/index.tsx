@@ -37,19 +37,14 @@ export default function WelcomeScreen() {
               {isPremium ? "★ Premium" : "Free"}
             </Text>
           </TouchableOpacity>
-          <View style={styles.topBarRight}>
-            <View style={styles.balanceBadge}>
-              <Text style={styles.balanceText}>💎 {gemstoneBalance}</Text>
-            </View>
-            <TouchableOpacity style={styles.marketButton} onPress={() => router.push("/market")}>
-              <Text style={styles.marketButtonText}>Market</Text>
-            </TouchableOpacity>
-          </View>
+          <TouchableOpacity style={styles.marketButton} onPress={() => router.push("/market")}>
+            <Text style={styles.marketButtonText}>Market</Text>
+          </TouchableOpacity>
         </View>
 
         {/* Title */}
         <View style={styles.header}>
-          <Text style={styles.appTitle}>Mystic</Text>
+          <Text style={styles.appTitle}>Astrolic</Text>
           <Text style={styles.appSubtitle}>Tarot & Dream</Text>
         </View>
 

@@ -871,6 +871,172 @@
       "upsellSymbol": null,
       "upsellCost": null,
       "createdAt": "2026-02-10T11:15:40.538Z"
+    },
+    {
+      "id": "80abb792-4114-4e51-809c-806cbce6ffbb",
+      "requestId": "1770722705530_cyraqp",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "lsof -ti:3001 | xargs kill -9 2>/dev/null; sleep 1; cd /Users/dogukanarik/Desktop/TAROT-NEW/backend && node index.js",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Bu metin rüya anlatımı gibi görünmüyor.",
+        "beats": [
+          "Metnin arkasındaki duygu tonu dikkat çekiyor.",
+          "Asıl soruyu netleştirmek faydalı olabilir."
+        ],
+        "nextStep": "Bu hafta bir rüyanı 2–3 sahneyle yaz.",
+        "keywords": [
+          "netlik",
+          "niyet",
+          "odak"
+        ],
+        "journal": "Şu an neye tepki veriyorsun?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-10T11:25:07.303Z"
+    },
+    {
+      "id": "e92f1645-3706-4f9c-8fe5-38f196f0af24",
+      "requestId": "1770722733321_5p0fp9",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "Dün gece kendimi terk edilmiş bir lunaparkta buldum. Dönme dolap yavaşça kendi kendine dönüyor, kabinlerde kimse yoktu. Her turda ışıklar sönüp geri yanıyor, sanki bir şey “başla” diyordu. Elimde paslı bir anahtar vardı; hangi kapıyı açacağını bilmiyordum. Uzaktan çocuk kahkahası değil, metal sürtün",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Terk edilmiş lunapark, içsel boşluk veya yönsüzlük hissini yansıtıyor olabilir. Paslı anahtar, keşfetmediğin potansiyel veya fırsatları simgeliyor. Bu hislerinle yüzleşmek, seni ileriye taşıyabilir.",
+        "beats": [
+          "Dönme dolabın kendi kendine dönmesi, kontrol edemediğin döngüleri işaret ediyor.",
+          "Işıkların yanıp sönmesi, belirsizlik veya kararsızlık anlarını gösteriyor.",
+          "Paslı anahtar, unutulmuş ya da göz ardı edilen bir beceriye dikkat çekiyor.",
+          "Uzaktaki kahkaha, geçmişteki bir neşeyi veya masumiyeti hatırlatıyor."
+        ],
+        "nextStep": "Bu hafta, her gün 5 dakika kendine yeni bir şey öğretmeye ayır.",
+        "plan": [
+          "24 saat: Elindeki bir projeye veya soruna kısa bir not düş.",
+          "7 gün: Her gün bir becerini veya ilginç bir konuyu 5 dakika çalış.",
+          "Sınır: Ben artık belirsizlikten korkmuyorum, onu keşif için bir fırsat olarak görüyorum."
+        ],
+        "keywords": [
+          "belirsizlik",
+          "kontrol",
+          "keşif"
+        ],
+        "journal": "Şu an hangi konuda yön arıyorsun?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-10T11:25:46.008Z"
+    },
+    {
+      "id": "b62b39f3-a70b-4b55-bc3b-8835359694f3",
+      "requestId": "1770722780179_72fc07",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Dün gece kendimi terk edilmiş bir lunaparkta buldum. Dönme dolap yavaşça kendi kendine dönüyor, kabinlerde kimse yoktu. Her turda ışıklar sönüp geri yanıyor, sanki bir şey “başla” diyordu. Elimde paslı bir anahtar vardı; hangi kapıyı açacağını bilmiyordum. Uzaktan çocuk kahkahası değil, metal sürtün",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 10,
+      "resultJson": {
+        "overall": "Terk edilmiş lunapark, içsel karmaşayı ve belirsizliği yansıtıyor. Kendi kendine dönen dönme dolap, kontrol dışı hissettiğin bazı durumları işaret ediyor. Elindeki paslı anahtarla yüzleş; belirsizliğe karşı adım atmak seni duraklatıyor olabilir.",
+        "beats": [
+          "Dönme dolap, tekrar eden düşünce döngülerine işaret ediyor.",
+          "Paslı anahtar, çözülmemiş bir sorumluluk veya fırsatı temsil ediyor.",
+          "Işıkların sönüp yanması, kararsızlık ve belirsizlik arasında gidip geldiğini gösteriyor."
+        ],
+        "nextStep": "Bu hafta, belirsiz hissettiğin bir konuda küçük bir adım atmayı dene.",
+        "keywords": [
+          "belirsizlik",
+          "kontrol",
+          "adım"
+        ],
+        "journal": "Hangi konuda kontrolü kaybettiğini hissediyorsun?",
+        "upsellSymbol": {
+          "symbol": "Terk edilmiş lunapark",
+          "insight": "Kendini izole veya terk edilmiş hissediyor olabilirsin. Belki de geçmişte seni mutlu eden şeyler artık aynı etkiyi yaratmıyor. İçsel neşe kaynağını yeniden keşfetmen gerekebilir."
+        }
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "Terk edilmiş lunapark",
+          "hint": "Boş mekan, içsel yalnızlığı işaret ediyor.",
+          "insight": "Kendini izole veya terk edilmiş hissediyor olabilirsin. Belki de geçmişte seni mutlu eden şeyler artık aynı etkiyi yaratmıyor. İçsel neşe kaynağını yeniden keşfetmen gerekebilir."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "Terk edilmiş lunapark",
+      "upsellCost": 5,
+      "createdAt": "2026-02-10T11:26:40.329Z"
+    },
+    {
+      "id": "3e1311b9-8c30-4412-9c5a-e51a9fc960cf",
+      "requestId": "1770722820636_43wuru",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Dün gece kendimi terk edilmiş bir lunaparkta buldum. Dönme dolap yavaşça kendi kendine dönüyor, kabinlerde kimse yoktu. Her turda ışıklar sönüp geri yanıyor, sanki bir şey “başla” diyordu. Elimde paslı bir anahtar vardı; hangi kapıyı açacağını bilmiyordum. Uzaktan çocuk kahkahası değil, metal sürtün",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Terk edilmiş lunapark, içsel yalnızlık ve belirsizlik hissini çağrıştırıyor. Dönme dolap ve sönüp yanan ışıklar, bir şeylerin başlayıp durduğunu, bir karar verme noktasında olduğunu gösteriyor. Paslı anahtar, potansiyel bir çözüm ya da fırsatın farkında olduğun ancak nasıl kullanacağını bilmediğin bir durumu simgeliyor.",
+        "beats": [
+          "Terk edilmiş lunapark, yalnızlık ve terk edilmişlik hissini anlatıyor.",
+          "Dönme dolap, zamanın geçişini ve belki de bir döngüde sıkışmışlık hissini gösteriyor.",
+          "Işıkların sönüp yanması, belirsizlik ve kararsızlığı işaret ediyor.",
+          "Elindeki paslı anahtar, potansiyel bir çözüm ya da fırsatın varlığını gösteriyor ama ne yapacağını bilememek dikkat çekiyor.",
+          "Uzaktan gelen metal sürtünmesi, rahatsız edici ve çözülmemiş bir durumun varlığına işaret ediyor."
+        ],
+        "pattern": "Tetikleyici: Karar verme ya da yön belirleme ihtiyacıyla karşı karşıya kalmak. Otomatik tepki: Belirsizlik karşısında hareketsiz kalma ya da zaman kaybetme. Bedel: Kısa vadede bir şey yapmamak rahatlatıcı olabilir ancak uzun vadede ilerlememe, fırsatları kaçırma riskini doğurur.",
+        "nextStep": "Bu hafta hangi konuda kararsız kaldığını veya adım atmakta zorlandığını yaz. Bir fırsatı değerlendirmek için küçük bir adım atmayı dene.",
+        "keywords": [
+          "belirsizlik",
+          "kararsızlık",
+          "fırsat"
+        ],
+        "journal": "Hangi konuda bir anahtar arıyorsun?",
+        "upsellSymbol": {
+          "symbol": "dönme dolap hareketi",
+          "insight": "Rutinlerin veya alışkanlıkların seni bir yere götürmeyen bir döngüde olabilir. İlerlemenin aynı noktada kalmak yerine farklı bir yola çıkmayı gerektirdiğini fark etmen mümkün."
+        }
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "lunapark atmosferi",
+          "hint": "Eğlence ve heyecan ile ilişkilendirilen bir yerin terk edilmiş olması dikkat çekiyor.",
+          "insight": "Hayatında geçmişte seni mutlu eden bir şeyin artık aynı heyecanı vermemesi söz konusu olabilir. Belki de eğlence anlayışın ya da hayatındaki keyif verici unsurlar dönüşüyor."
+        },
+        {
+          "symbol": "dönme dolap hareketi",
+          "hint": "Dönme dolap, sürekli hareket halinde olmasına rağmen aynı noktaya geri dönüyor.",
+          "insight": "Rutinlerin veya alışkanlıkların seni bir yere götürmeyen bir döngüde olabilir. İlerlemenin aynı noktada kalmak yerine farklı bir yola çıkmayı gerektirdiğini fark etmen mümkün."
+        },
+        {
+          "symbol": "paslı anahtarın durumu",
+          "hint": "Pas, zamanla kullanılmayan ya da ihmal edilen bir şeyin işareti olabilir.",
+          "insight": "Hayatında üzerinde durmadığın veya unutulmuş bir yeteneğin ya da fırsatın yeniden değerlendirilmesi gerekebilir. Belki de bu anahtar sana eski bir beceriyi ya da ilgiyi hatırlatıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "dönme dolap hareketi",
+      "upsellCost": 5,
+      "createdAt": "2026-02-10T11:27:13.357Z"
     }
   ]
 }
