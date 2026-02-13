@@ -268,6 +268,13 @@
       "premiumPlan": null,
       "premiumExpiresAt": null,
       "createdAt": "2026-02-13T10:42:17.074Z"
+    },
+    "dev_v32_final_001": {
+      "gemstoneBalance": 673,
+      "isPremiumSubscriber": false,
+      "premiumPlan": null,
+      "premiumExpiresAt": null,
+      "createdAt": "2026-02-13T11:23:25.637Z"
     }
   }
 }

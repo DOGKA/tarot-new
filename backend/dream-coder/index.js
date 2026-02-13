@@ -144,85 +144,24 @@ const getOpenAI = () => {
 };
 
 // ============================================
-// BANNED PATTERNS — alan bazli regex post-check (kelime sinirli)
+// GPT CALL HELPER (tek cagri, retry yok, token tasarrufu)
 // ============================================
-const BANNED_TR = /\b(göster(iyor|ir|di|mek|en)?|simgel(iyor|er|edi|emek)?|işaret\s*ed(iyor|er|di|en)?|yansıt(ıyor|ır|tı|mak)?|temsil\s*ed(iyor|er|di|en)?|sembolize\s*ed(iyor|er)?|ifade\s*ed(iyor|er|en)?|anlamına\s*gel(ir|iyor|di)|demektir|olabilir(sin)?|edebilir(sin)?|muhtemelen|büyük\s*ihtimal(le)?|belki\s*de|gerekiyor|gerektir(ir)?|yapmalısın|zorundasın|mecbursun|vurgul(uyor|ar|adı|amak)?|ortaya\s*koy(ar|uyor|du|mak)?)\b/i;
-const BANNED_EN = /\b(represent(s|ing|ed)?|symboliz(es|ing|ed)?|indicat(es|ing|ed)?|reflect(s|ing|ed)?|could\s*be|might\s*be|probably|perhaps|means\s*that|should|must)\b/i;
-
-// Alan bazli tarama: sadece icerik alanlarini kontrol et
-const extractTextFields = (parsed) => {
-  const fields = [];
-  if (parsed.overall) fields.push(parsed.overall);
-  if (parsed.pattern) fields.push(parsed.pattern);
-  if (parsed.nextStep) fields.push(parsed.nextStep);
-  if (parsed.journal) fields.push(parsed.journal);
-  if (Array.isArray(parsed.beats)) fields.push(...parsed.beats);
-  if (Array.isArray(parsed.plan)) fields.push(...parsed.plan);
-  // Upsell candidates
-  if (Array.isArray(parsed.candidates)) {
-    parsed.candidates.forEach(c => {
-      if (c.hint) fields.push(c.hint);
-      if (c.insight) fields.push(c.insight);
-    });
-  }
-  // JournalPlus
-  if (parsed.insight) fields.push(parsed.insight);
-  return fields.filter(Boolean).join(" ");
-};
-
-const hasBannedLanguage = (parsed) => {
-  const text = extractTextFields(parsed);
-  return BANNED_TR.test(text) || BANNED_EN.test(text);
-};
-
-// ============================================
-// GPT CALL HELPER (alan bazli post-check, max 2 retry)
-// ============================================
-const callGPT = async (systemMsg, userMsg, retrySystemMsg) => {
+const callGPT = async (systemMsg, userMsg) => {
   const openai = getOpenAI();
 
-  for (let attempt = 0; attempt < 2; attempt++) {
-    try {
-      const isRetry = attempt > 0;
-      const messages = [
-        { role: "system", content: isRetry ? (retrySystemMsg || systemMsg) : systemMsg },
-        { role: "user", content: userMsg },
-      ];
+  const completion = await openai.chat.completions.create({
+    model: "gpt-4o",
+    messages: [
+      { role: "system", content: systemMsg },
+      { role: "user", content: userMsg },
+    ],
+    temperature: 0.7,
+    max_tokens: 1200,
+  });
 
-      if (isRetry) {
-        messages.push({
-          role: "user",
-          content: "UYARI: Önceki yanıtında yasaklı kelimeler vardı. göster-/simgele-/işaret et-/yansıt-/temsil et-/vurgula-/ortaya koy-/olabilir/edebilir/gerekiyor HİÇ KULLANMA. Dinamizm fiilleriyle yeniden yaz.",
-        });
-      }
-
-      const completion = await openai.chat.completions.create({
-        model: "gpt-4o",
-        messages,
-        temperature: isRetry ? 0.5 : 0.7,
-        max_tokens: 1200,
-      });
-
-      const raw = completion.choices[0]?.message?.content || "";
-      const jsonMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/) || [null, raw];
-      const parsed = JSON.parse(jsonMatch[1].trim());
-
-      // Alan bazli post-check
-      if (hasBannedLanguage(parsed) && attempt < 1) {
-        console.warn(`⚠️ Banned language in content fields (attempt ${attempt + 1}), retrying...`);
-        continue;
-      }
-
-      if (hasBannedLanguage(parsed)) {
-        console.warn(`⚠️ Banned language still present after retry, accepting.`);
-      }
-
-      return parsed;
-    } catch (err) {
-      if (attempt === 1) throw err;
-      console.warn(`Dream Coder GPT attempt ${attempt + 1} failed, retrying...`);
-    }
-  }
+  const raw = completion.choices[0]?.message?.content || "";
+  const jsonMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/) || [null, raw];
+  return JSON.parse(jsonMatch[1].trim());
 };
 
 // ============================================
@@ -291,8 +230,7 @@ router.post("/decode", async (req, res) => {
     // GPT call - main decode
     const resultJson = await callGPT(
       prompts.systemMessage,
-      userPrompt,
-      prompts.retrySystemMessage
+      userPrompt
     );
 
     // GPT call - upsell candidates (A=1 aday, B=3 aday, C=yok)
@@ -307,8 +245,7 @@ router.post("/decode", async (req, res) => {
         });
         const upsellResult = await callGPT(
           prompts.systemMessage,
-          upsellPrompt,
-          prompts.retrySystemMessage
+          upsellPrompt
         );
         const allCandidates = upsellResult.candidates || [];
         // A mode: only 1 candidate (auto), B mode: all 3 candidates (user picks)
@@ -500,8 +437,7 @@ router.post("/journal-plus", async (req, res) => {
 
     const gpResult = await callGPT(
       prompts.systemMessage,
-      jpPrompt,
-      prompts.retrySystemMessage
+      jpPrompt
     );
 
     const journalPlus = {
