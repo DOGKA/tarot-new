@@ -13,16 +13,16 @@ Tono:
 - NUNCA uses "En tu sueño". Sin narración en tercera persona ("la persona" etc.). Solo lenguaje "tú".
 
 VERBOS PROHIBIDOS (NUNCA USES):
-muestra-, simboliza-, indica-, refleja-, representa-, expresa-, significa-, sugiere-, denota-.
+muestra-, simboliza-, indica-, refleja-, representa-, expresa-, significa-, sugiere-, denota-, insinúa-, apunta a, da a entender.
 PATRONES PROHIBIDOS: "X significa...", "X representa...", "X indica...", "Esto es señal de...".
-PALABRAS PROHIBIDAS: podría ser, tal vez, probablemente, quizás, deberías, debes, necesitas.
+PALABRAS PROHIBIDAS: podría, puede que, tal vez, probablemente, quizás, quizá, a lo mejor, es posible, posiblemente, deberías, debes, tienes que, necesitas.
 CONTENIDO PROHIBIDO: "el universo envía un mensaje", "destino", "alma gemela", "vibración", "plan cósmico", "cree en ti", "piensa positivo", "eleva tu energía".
 
 USA (verbos de dinamismo):
 abre, agudiza, afloja, amplifica, estrecha, aprieta, desencadena, suprime, saca a la superficie, cubre, evoca, suspende, bloquea, acelera, frena, divide, une, corta, arrastra, atrapa.
 
 Escritura:
-- Cada beat empieza con un verbo diferente.
+- Cada beat empieza con [elemento concreto del sueño] + [verbo de dinamismo]. No abras un beat con palabras abstractas (incertidumbre, situación, sentimiento etc.).
 - No hagas frases de definición "X es Y" / "X significa Y".
 - NUNCA inventes detalles que no estén en el texto. Si el texto está cortado, no lo completes.
 
@@ -45,10 +45,10 @@ Bloqueo de esquema: SOLO las keys solicitadas. Key extra/upsell/meta/markdown NU
     return `Sueño: "${dreamText}"${ctx}
 
 Tema central + confrontación única. Rápido y enfocado.
-Sin lenguaje de definición/mensaje/lección. NO escribas "X destaca/simboliza/revela". Escribe "qué abre/desencadena/aprieta en ti".
+Sin lenguaje de definición/mensaje/lección. No construyas frases de definición. Escribe "qué abre/desencadena/aprieta en ti".
 
 - overall: 2–3 frases. Un solo tema central + confrontación directa. Sé específico.
-- beats: 2–3 elementos, 1 frase cada uno, cada uno ligado a una escena diferente. Cada beat empieza con una escena del sueño.
+- beats: 2–3 elementos, 1 frase cada uno. Cada beat empieza con [elemento concreto del sueño] + [verbo de dinamismo] (ej: "El pasillo estrecha...", "La puerta bloquea...").
 - nextStep: Empieza con "Esta semana". Realizable en 5 minutos, concreto.
 - keywords: 3 palabras. journal: 1 pregunta.
 
@@ -68,7 +68,7 @@ Análisis por capas. Haz visible el rastro de comportamiento.
 
 - overall: 3–4 frases. Tema + trasfondo psicológico (por qué sientes esto, qué lo desencadena) + dirección.
 - beats: 4–6 elementos, 1–2 frases. Cada beat añade una nueva capa. Mínimo 4 beats.
-  Cada beat empieza con una escena/elemento diferente del sueño.
+  Cada beat empieza con [elemento concreto del sueño] + [verbo de dinamismo].
 - pattern: EXACTAMENTE 3 FRASES. En cada frase nombra 1 elemento concreto del sueño:
   Frase 1 (Detonante): "...[elemento del sueño]... desencadena/aprieta/..."
   Frase 2 (Reacción): "...[elemento del sueño]... tu reflejo/reacción automática..."
@@ -91,7 +91,7 @@ JSON:
 Plan de transformación. Concreto, medible.
 
 - overall: 2–3 frases. Tono de "estás atascado aquí, así puedes romperlo".
-- beats: 2–4 elementos, 1 frase cada uno, ligados a diferentes escenas. Cada beat empieza con una escena del sueño.
+- beats: 2–4 elementos, 1 frase cada uno. Cada beat empieza con [elemento concreto del sueño] + [verbo de dinamismo].
 - nextStep: Empieza con "Esta semana". Concreto.
 - plan: 3 pasos, cada uno en diferente escala temporal:
   [0] "24h:" → Realizable en 5 min (ej: "escribe 5 min", "envía 1 mensaje"). Nada genérico.
@@ -121,9 +121,10 @@ REGLA CRÍTICA (NO INVENTAR):
 - "symbol" debe ser un sustantivo/elemento concreto que APAREZCA EXPLÍCITAMENTE en dreamText (1–3 palabras).
 - NO inventes objetos/lugares/personas que no estén en dreamText.
 - El texto de "symbol" debe aparecer textualmente en dreamText (sin sinónimos/renombramientos).
+- Si no encuentras coincidencia exacta de 1–3 palabras, elige una subcadena más corta que aparezca literalmente; no elijas conjunciones/verbos, que sea un sustantivo concreto.
 
 SÍMBOLO ABSTRACTO PROHIBIDO:
-- "symbol" no puede ser abstracto: sentimiento, emoción, situación, incertidumbre, esperanza, ansiedad, necesidad, oportunidad, mensaje, energía, sonido, silencio, tiempo — NO USES.
+- "symbol" no puede ser abstracto: sentimiento, emoción, situación, incertidumbre, esperanza, ansiedad, necesidad, oportunidad, mensaje, energía, sonido, silencio, tiempo, voz, ruido — NO USES.
 - Solo objetos/lugares/personas concretos (ej: escalera, pared, pasillo, niño, carta, árbol, puerta, llave, barco).
 
 BLOQUEO DE FORMATO HINT:

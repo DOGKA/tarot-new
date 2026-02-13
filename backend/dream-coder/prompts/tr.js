@@ -23,10 +23,10 @@ YASAK KELİMELER: olabilir, olabilirsin, edebilir, edebilirsin, muhtemelen, büy
 YASAK İÇERİK: "evren mesaj gönderiyor", "kader", "ruh eşi", "titreşim", "kozmik plan", "kesin olacak", "kendine inan", "güçlen", "pozitif düşün", "enerjini yükselt".
 
 KULLAN (dinamizm fiilleri):
-açıyor, netleştiriyor, sertleştiriyor, gevşetiyor, büyütüyor, daraltıyor, sıkıştırıyor, tetikliyor, bastırıyor, görünür kılıyor, üstünü örtüyor, geri çağırıyor, askıda bırakıyor, kilitliyor, hızlandırıyor, yavaşlatıyor, bölüyor, birleştiriyor, kesiyor, sürüklüyor, kıstırıyor.
+açıyor, netleştiriyor, sertleştiriyor, gevşetiyor, büyütüyor, daraltıyor, sıkıştırıyor, tetikliyor, bastırıyor, belirginleştiriyor, üstünü örtüyor, geri çağırıyor, askıda bırakıyor, kilitliyor, hızlandırıyor, yavaşlatıyor, bölüyor, birleştiriyor, kesiyor, sürüklüyor, kıstırıyor.
 
 Yazım:
-- Her beat farklı fiille başlasın.
+- Her beat [somut rüya öğesi] + [dinamizm fiili] ile başlasın. Soyut kelimeyle beat açma (belirsizlik, durum, his vb.).
 - "-mak/-mek'li" tanım cümlesi YAPMA.
 - Uydurma detay YASAK. Kesik metin varsa tamamlama, sadece görünen sahnelerle yorum yap.
 
@@ -52,10 +52,10 @@ Rüya değilse (küfür, sayısal veri, anlamsız metin):
     return `Rüya: "${dreamText}"${ctx}
 
 Çekirdek tema + tek yüzleştirme. Hızlı ve odaklı.
-Tanım/mesaj/ders dili yok. "X şunu vurgular/simgeler/ortaya koyar" YAZMA. "Sende neyi açıyor/tetikliyor/sıkıştırıyor" üzerinden yaz.
+Tanım/mesaj/ders dili yok. Tanım cümlesi KURMA. "Sende neyi açıyor/tetikliyor/sıkıştırıyor" üzerinden yaz.
 
 - overall: 2–3 cümle. Tek çekirdek tema + doğrudan yüzleştirme. Spesifik ol.
-- beats: 2–3 öğe, her biri 1 cümle, her biri farklı sembole bağlı. Her beat rüyadaki bir sahneyle başlasın.
+- beats: 2–3 öğe, her biri 1 cümle. Her beat [somut rüya öğesi] + [dinamizm fiili] ile başlasın (ör: "Koridor daralıyor...", "Kapı kilitleniyor...").
 - nextStep: "Bu hafta" ile başla. 5 dakikada yapılabilir, somut.
 - keywords: 3 kelime. journal: 1 soru.
 
@@ -76,9 +76,9 @@ JSON:
 
 Katmanlı analiz. Davranış izini görünür kıl.
 
-- overall: 3–4 cümle. Tema + psikolojik arka plan (neden böyle hissediyor, ne tetikliyor) + yön.
+- overall: 3–4 cümle. Tema + psikolojik arka plan (neden böyle hissediyorsun, ne tetikliyor) + yön.
 - beats: 4–6 öğe, 1–2 cümle. Her beat yeni katman eklemeli. Minimum 4 beat.
-  Her beat rüyadaki farklı bir sahne/öğeyle başlasın.
+  Her beat [somut rüya öğesi] + [dinamizm fiili] ile başlasın.
 - pattern: TAM 3 CÜMLE. Her cümlede rüyadan 1 somut öğe adı geçsin:
   Cümle 1 (Tetikleyici): "...[rüya öğesi adı]... tetikliyor/sıkıştırıyor/..."
   Cümle 2 (Tepki): "...[rüya öğesi adı]... refleksin/otomatik tepkin..."
@@ -104,7 +104,7 @@ JSON:
 Dönüştürme planı. Somut, ölçülebilir.
 
 - overall: 2–3 cümle. "Burada takılıyorsun, şöyle kırabilirsin" tonu.
-- beats: 2–4 öğe, her biri 1 cümle, farklı sembole bağlı. Her beat rüyadaki bir sahneyle başlasın.
+- beats: 2–4 öğe, her biri 1 cümle, farklı sembole bağlı. Her beat [somut rüya öğesi] + [dinamizm fiili] ile başlasın.
 - nextStep: "Bu hafta" ile başla. Somut.
 - plan: 3 adım, her biri farklı zaman ölçeğinde:
   [0] "24 saat:" → 5 dk'da yapılabilir (ör: "5 dk not tut", "1 mesaj at"). Genel yasak.
@@ -138,6 +138,7 @@ KRİTİK KURAL (İCAT YASAK):
 - "symbol" SADECE rüya metninde (dreamText) AÇIKÇA GEÇEN somut bir isim/öğe olmalı (1–3 kelime).
 - dreamText'te geçmeyen hiçbir obje/yer/kişi/olay UYDURMA. (örn: saat, şemsiye, bilet vb rüyada yoksa yazma)
 - "symbol" metni dreamText içinde birebir bulunmalı (eş anlamlı/yeniden adlandırma yok).
+- Tam 1–3 kelimelik eşleşme bulunamazsa, dreamText'te birebir geçen daha kısa bir alt dize seç; bağlaç/ek/fiil seçme, somut isim kalsın.
 
 SOYUT SEMBOL YASAK:
 - "symbol" soyut kavram olamaz: duygu, his, durum, belirsizlik, umut, kaygı, ihtiyaç, fırsat, mesaj, enerji, ses, sessizlik, zaman YAZMA.

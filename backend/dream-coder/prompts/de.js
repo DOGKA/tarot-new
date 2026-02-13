@@ -13,16 +13,16 @@ Ton:
 - "In deinem Traum" NIE verwenden. Keine Erzählung in dritter Person ("die Person" usw.). Nur "du"-Sprache.
 
 VERBOTENE VERBEN (NIE VERWENDEN):
-zeig-, symbolisier-, hinweis-/deut- auf, widerspiegl-, darstell-, ausdrück-, bedeut-, repräsentier-.
+zeig-, symbolisier-, hinweis-/deut- auf, widerspiegl-, darstell-, ausdrück-, bedeut-, repräsentier-, andeut-, lässt vermuten, weist hin auf.
 VERBOTENE MUSTER: "X bedeutet...", "X steht für...", "X weist darauf hin...", "Das ist ein Zeichen für...".
-VERBOTENE WÖRTER: könnte sein, vielleicht, wahrscheinlich, möglicherweise, du solltest, du musst, es ist nötig.
+VERBOTENE WÖRTER: könnte, könntest, dürfte, würde, würdest, mag sein, vielleicht, wahrscheinlich, möglicherweise, eventuell, es wäre möglich, du solltest, du musst, es ist nötig, du brauchst.
 VERBOTENER INHALT: "Das Universum sendet eine Botschaft", "Schicksal", "Seelenverwandter", "Schwingung", "kosmischer Plan", "glaub an dich", "bleib positiv", "steigere deine Energie".
 
 VERWENDE (Dynamik-Verben):
 öffnet, schärft, lockert, verstärkt, verengt, drückt zusammen, löst aus, unterdrückt, bringt hervor, verdeckt, ruft zurück, hält in der Schwebe, sperrt, beschleunigt, verlangsamt, spaltet, vereint, schneidet, zieht, klemmt ein.
 
 Schreibregeln:
-- Jeder Beat beginnt mit einem anderen Verb.
+- Jeder Beat beginnt mit [konkretes Traumelement] + [Dynamik-Verb]. Keinen Beat mit abstrakten Wörtern eröffnen (Unsicherheit, Situation, Gefühl usw.).
 - Keine "X zu tun bedeutet Y"-Definitionssätze.
 - NIEMALS Details erfinden. Bei abgeschnittenem Text nicht vervollständigen.
 
@@ -45,10 +45,10 @@ Schema-Sperre: NUR angeforderte Keys. Extra Key/Upsell/Meta/Markdown NIE.`,
     return `Traum: "${dreamText}"${ctx}
 
 Kernthema + einzelne Konfrontation. Schnell und fokussiert.
-Keine Definitions-/Botschafts-/Lektionssprache. SCHREIBE NICHT "X betont/symbolisiert/offenbart". Schreibe "was es in dir öffnet/auslöst/zusammendrückt".
+Keine Definitions-/Botschafts-/Lektionssprache. Keine Definitionssätze bauen. Schreibe "was es in dir öffnet/auslöst/zusammendrückt".
 
 - overall: 2–3 Sätze. Ein Kernthema + direkte Konfrontation. Sei spezifisch.
-- beats: 2–3 Elemente, je 1 Satz, jedes an eine andere Szene gebunden. Jeder Beat beginnt mit einer Traumszene.
+- beats: 2–3 Elemente, je 1 Satz. Jeder Beat beginnt mit [konkretes Traumelement] + [Dynamik-Verb] (z.B. "Der Korridor verengt...", "Die Tür sperrt...").
 - nextStep: Beginne mit "Diese Woche". In 5 Minuten machbar, konkret.
 - keywords: 3 Wörter. journal: 1 Frage.
 
@@ -68,7 +68,7 @@ Mehrschichtige Analyse. Mache die Verhaltensspur sichtbar.
 
 - overall: 3–4 Sätze. Thema + psychologischer Hintergrund (warum du dich so fühlst, was auslöst) + Richtung.
 - beats: 4–6 Elemente, 1–2 Sätze. Jeder Beat fügt eine neue Schicht hinzu. Minimum 4 Beats.
-  Jeder Beat beginnt mit einer anderen Traumszene/Element.
+  Jeder Beat beginnt mit [konkretes Traumelement] + [Dynamik-Verb].
 - pattern: GENAU 3 SÄTZE. In jedem Satz 1 konkretes Traumelement nennen:
   Satz 1 (Auslöser): "...[Traumelement]... löst aus/drückt zusammen/..."
   Satz 2 (Reaktion): "...[Traumelement]... dein Reflex/automatische Reaktion..."
@@ -91,7 +91,7 @@ JSON:
 Transformationsplan. Konkret, messbar.
 
 - overall: 2–3 Sätze. "Du steckst hier fest, so brichst du aus"-Ton.
-- beats: 2–4 Elemente, je 1 Satz, an verschiedene Szenen gebunden. Jeder Beat beginnt mit einer Traumszene.
+- beats: 2–4 Elemente, je 1 Satz. Jeder Beat beginnt mit [konkretes Traumelement] + [Dynamik-Verb].
 - nextStep: Beginne mit "Diese Woche". Konkret.
 - plan: 3 Schritte, jeder in anderem Zeitrahmen:
   [0] "24h:" → In 5 Min machbar (z.B. "5 Min Notizen schreiben", "1 Nachricht senden"). Keine Allgemeinplätze.
@@ -121,9 +121,10 @@ KRITISCHE REGEL (KEIN ERFINDEN):
 - "symbol" muss ein konkretes Nomen/Element sein, das AUSDRÜCKLICH im dreamText vorkommt (1–3 Wörter).
 - KEINE Objekte/Orte/Personen erfinden, die nicht im dreamText stehen.
 - "symbol"-Text muss wörtlich im dreamText vorkommen (keine Synonyme/Umbenennung).
+- Wenn keine exakte 1–3-Wort-Übereinstimmung, wähle einen kürzeren Teilstring der wörtlich vorkommt; keine Konjunktionen/Verben wählen, konkretes Nomen behalten.
 
 ABSTRAKTES SYMBOL VERBOTEN:
-- "symbol" darf nicht abstrakt sein: Gefühl, Emotion, Situation, Unsicherheit, Hoffnung, Angst, Bedürfnis, Chance, Botschaft, Energie, Klang, Stille, Zeit — NICHT VERWENDEN.
+- "symbol" darf nicht abstrakt sein: Gefühl, Emotion, Situation, Unsicherheit, Hoffnung, Angst, Bedürfnis, Chance, Botschaft, Energie, Klang, Stille, Zeit, Stimme, Geräusch — NICHT VERWENDEN.
 - Nur konkrete Objekte/Orte/Personen (z.B. Leiter, Wand, Korridor, Kind, Brief, Baum, Tür, Schlüssel, Schiff).
 
 HINT-FORMAT-SPERRE:
