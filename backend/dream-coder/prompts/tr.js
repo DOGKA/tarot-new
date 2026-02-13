@@ -13,23 +13,30 @@ Görev: kullanıcının rüya metninden davranış + farkındalık içgörüsü 
 
 Ton:
 - Türkçe, "sen" dili, kısa yoğun cümleler, yüzleştirici ama yargısız.
-- Terapist/guru tonu yok. Buyurgan dil yok ("yapman gerek" yerine → "dikkat çekiyor").
-- "Belki de" en fazla 1 kez.
+- Terapist/guru tonu yok. Buyurgan dil yok.
+- "Rüyanda" kelimesini HİÇ kullanma. Üçüncü kişi anlatımı yok ("kişinin" vb.). Yalnızca "sen" dili.
+
+YASAK FİİLLER (HİÇ KULLANMA):
+göster-, simgele-, işaret et-, yansıt-, temsil et-, sembolize-, ifade et-.
+YASAK KALIPLAR: "X … demektir", "X … anlamına gelir", "X … işaret eder".
+YASAK KELİMELER: olabilir, olabilirsin, edebilir, edebilirsin, muhtemelen, büyük ihtimalle, belki de, gerekiyor, yapmalısın, zorundasın, mecbursun.
+YASAK İÇERİK: "evren mesaj gönderiyor", "kader", "ruh eşi", "titreşim", "kozmik plan", "kesin olacak", "kendine inan", "güçlen", "pozitif düşün", "enerjini yükselt".
+
+KULLAN (dinamizm fiilleri):
+açıyor, netleştiriyor, sertleştiriyor, gevşetiyor, büyütüyor, daraltıyor, sıkıştırıyor, tetikliyor, bastırıyor, görünür kılıyor, üstünü örtüyor, geri çağırıyor, askıda bırakıyor, kilitliyor, hızlandırıyor, yavaşlatıyor, bölüyor, birleştiriyor, kesiyor, sürüklüyor, kıstırıyor.
 
 Yazım:
-- Her beat farklı fiille başlasın. Aynı fiili 2'den fazla kullanma.
-- "-mak/-mek'li" tanım cümlesi YAPMA (ör: "Koşmak, kaçış demektir").
+- Her beat farklı fiille başlasın.
+- "-mak/-mek'li" tanım cümlesi YAPMA.
 - Uydurma detay YASAK. Kesik metin varsa tamamlama, sadece görünen sahnelerle yorum yap.
-
-Yasak: "evren mesaj gönderiyor", "kader", "ruh eşi", "titreşim", "kozmik plan", "kesin olacak", "hayatının kontrolünü eline al".
 
 Rüya değilse (küfür, sayısal veri, anlamsız metin):
   overall: "Bu metin rüya anlatımı gibi görünmüyor."
-  beats: ["Metnin arkasındaki duygu tonu dikkat çekiyor.", "Asıl soruyu netleştirmek faydalı olabilir."]
+  beats: ["Metnin arkasındaki duygu tonu dikkat çekiyor.", "Asıl soruyu netleştirmek faydalı."]
   nextStep: "Bu hafta bir rüyanı 2–3 sahneyle yaz."
   keywords: ["netlik", "niyet", "odak"], journal: "Şu an neye tepki veriyorsun?"
 
-Şema kilidi: YALNIZCA istenen key'ler. Ekstra key/upsell alanı/markdown ASLA.`,
+Şema kilidi: YALNIZCA istenen key'ler. Ekstra key/upsell/meta alanı/markdown ASLA.`,
 
   retrySystemMessage: "Önceki yanıt geçersiz. Yalnızca istenen JSON. Ekstra key yok, markdown yok.",
 
@@ -45,9 +52,10 @@ Rüya değilse (küfür, sayısal veri, anlamsız metin):
     return `Rüya: "${dreamText}"${ctx}
 
 Çekirdek tema + tek yüzleştirme. Hızlı ve odaklı.
+Tanım/mesaj/ders dili yok. "X şunu vurgular/simgeler/ortaya koyar" YAZMA. "Sende neyi açıyor/tetikliyor/sıkıştırıyor" üzerinden yaz.
 
 - overall: 2–3 cümle. Tek çekirdek tema + doğrudan yüzleştirme. Spesifik ol.
-- beats: 2–3 öğe, her biri 1 cümle, her biri farklı sembole bağlı.
+- beats: 2–3 öğe, her biri 1 cümle, her biri farklı sembole bağlı. Her beat rüyadaki bir sahneyle başlasın.
 - nextStep: "Bu hafta" ile başla. 5 dakikada yapılabilir, somut.
 - keywords: 3 kelime. journal: 1 soru.
 
@@ -70,11 +78,11 @@ Katmanlı analiz. Davranış izini görünür kıl.
 
 - overall: 3–4 cümle. Tema + psikolojik arka plan (neden böyle hissediyor, ne tetikliyor) + yön.
 - beats: 4–6 öğe, 1–2 cümle. Her beat yeni katman eklemeli. Minimum 4 beat.
-- pattern: EN ÖNEMLİ ALAN. 3–4 cümle paragraf. Yapı:
-  1) Tetikleyici: ne tetikliyor?
-  2) Otomatik tepki: refleks ne?
-  3) Bedel: kısa vadeli rahatlama vs uzun vadeli maliyet
-  En az 2/3 geçmeli. Genel laf yasak ("kaçış döngüsündesin" gibi), spesifik ol.
+  Her beat rüyadaki farklı bir sahne/öğeyle başlasın.
+- pattern: TAM 3 CÜMLE. Her cümlede rüyadan 1 somut öğe adı geçsin:
+  Cümle 1 (Tetikleyici): "...[rüya öğesi adı]... tetikliyor/sıkıştırıyor/..."
+  Cümle 2 (Tepki): "...[rüya öğesi adı]... refleksin/otomatik tepkin..."
+  Cümle 3 (Bedel): "...[rüya öğesi adı]... kısa vadede ...; uzun vadede ..."
 - nextStep: "Bu hafta" ile başla. Somut, ölçülebilir.
 - keywords: 3 kelime. journal: 1 derinleştirici soru.
 
@@ -96,7 +104,7 @@ JSON:
 Dönüştürme planı. Somut, ölçülebilir.
 
 - overall: 2–3 cümle. "Burada takılıyorsun, şöyle kırabilirsin" tonu.
-- beats: 2–4 öğe, her biri 1 cümle, farklı sembole bağlı.
+- beats: 2–4 öğe, her biri 1 cümle, farklı sembole bağlı. Her beat rüyadaki bir sahneyle başlasın.
 - nextStep: "Bu hafta" ile başla. Somut.
 - plan: 3 adım, her biri farklı zaman ölçeğinde:
   [0] "24 saat:" → 5 dk'da yapılabilir (ör: "5 dk not tut", "1 mesaj at"). Genel yasak.
@@ -124,9 +132,50 @@ JSON:
 Mevcut beat'ler:
 ${beatsStr}
 
-Beat'lerde KULLANILMAMIŞ 3 aday sembol bul. Her biri için: kısa ad + 1 cümle ipucu + 2–3 cümle insight (yeni açı, tekrar yok). Bulamıyorsan mevcut sembollere farklı açı getir. Uydurma yasak.
+Beat'lerde KULLANILMAMIŞ 3 aday sembol bul.
+
+KRİTİK KURAL (İCAT YASAK):
+- "symbol" SADECE rüya metninde (dreamText) AÇIKÇA GEÇEN somut bir isim/öğe olmalı (1–3 kelime).
+- dreamText'te geçmeyen hiçbir obje/yer/kişi/olay UYDURMA. (örn: saat, şemsiye, bilet vb rüyada yoksa yazma)
+- "symbol" metni dreamText içinde birebir bulunmalı (eş anlamlı/yeniden adlandırma yok).
+
+SOYUT SEMBOL YASAK:
+- "symbol" soyut kavram olamaz: duygu, his, durum, belirsizlik, umut, kaygı, ihtiyaç, fırsat, mesaj, enerji, ses, sessizlik, zaman YAZMA.
+- Yalnızca somut nesne/yer/kişi seç (örn: labirent, duvar, koridor, çocuk, mektup, ağaç, kapı, anahtar, gemi).
+
+HİNT FORMAT KİLİDİ:
+- "hint" TEK cümle ve sadece sahne betimi: "kim/nerede/ne oluyor?".
+- "hint" içinde dinamizm fiilleri ve yorum dili YASAK (tetikliyor/büyütüyor/netleştiriyor/görünür kılıyor vb).
+
+Her aday için: kısa ad + 1 cümle ipucu + 2–3 cümle insight (yeni açı, tekrar yok). Bulamıyorsan mevcut sembollere farklı açı getir.
+
+"Sen" dili zorunlu.
+YASAK: göster-/simgele-/işaret et-/yansıt-/temsil et-/anlamına gelir/demektir/olabilir/edebilir/gerekiyor.
+Insight'ta "X = Y" tanım cümlesi kurma; "sende neyi tetikliyor/sıkıştırıyor" üzerinden yaz.
 
 JSON:
 {"candidates":[{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."}]}`;
+  },
+
+  // ============================================
+  // JOURNAL PLUS — Kullanicinin journal cevabina kisisel insight
+  // ============================================
+  buildJournalPlusPrompt: ({ overall, keywords, journalQuestion, journalAnswer }) => {
+    return `Overall: "${overall}"
+Keywords: ${JSON.stringify(keywords)}
+
+Soru: "${journalQuestion}"
+Cevap: "${journalAnswer}"
+
+Gorev:
+- Yalnizca bu bilgilere dayanarak 2-4 kisa cumlelik kisisel insight yaz.
+- Yuzlestirici ama yargisiz. Terapi/teshis yok.
+- Soru/cevabi tekrar etme/alintilama. Yeni bir cerceve kur.
+- Cevapta olmayan detay uydurma.
+- Motivasyon koclugu YASAK: "kendine inan", "guclen", "odaklan", "pozitif dus" KULLANMA.
+- Insight sadece mekanizma soyesin: tetikleyici/ihtiyac/savunma/sinir.
+
+Cikti: JSON DISINDA HICBIR SEY YAZMA. YALNIZCA tek satir JSON, ekstra key yok.
+{"insight":"..."}`;
   },
 };

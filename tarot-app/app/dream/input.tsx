@@ -25,34 +25,34 @@ const API_URL = `http://${host}:3001/api/dream`;
 
 const MAX_CHARS = 300;
 
-const FEELING_OPTIONS: { value: FeelingTag; label: string }[] = [
-  { value: "korku", label: "Korku" },
-  { value: "özlem", label: "Özlem" },
-  { value: "merak", label: "Merak" },
-  { value: "rahatlık", label: "Rahatlık" },
-  { value: "utanç", label: "Utanç" },
-  { value: "öfke", label: "Öfke" },
-  { value: "hüzün", label: "Hüzün" },
-  { value: "şaşkınlık", label: "Şaşkınlık" },
-  { value: "mutluluk", label: "Mutluluk" },
-  { value: "hayal kırıklığı", label: "Hayal Kırıklığı" },
-  { value: "endişe", label: "Endişe" },
-  { value: "suçluluk", label: "Suçluluk" },
-  { value: "güvensizlik", label: "Güvensizlik" },
-  { value: "huzur", label: "Huzur" },
-  { value: "çaresizlik", label: "Çaresizlik" },
-  { value: "kıskançlık", label: "Kıskançlık" },
+const FEELING_KEYS: { value: FeelingTag; i18nKey: string }[] = [
+  { value: "korku", i18nKey: "feelingFear" },
+  { value: "özlem", i18nKey: "feelingLonging" },
+  { value: "merak", i18nKey: "feelingCuriosity" },
+  { value: "rahatlık", i18nKey: "feelingComfort" },
+  { value: "utanç", i18nKey: "feelingShame" },
+  { value: "öfke", i18nKey: "feelingAnger" },
+  { value: "hüzün", i18nKey: "feelingSadness" },
+  { value: "şaşkınlık", i18nKey: "feelingSurprise" },
+  { value: "mutluluk", i18nKey: "feelingHappiness" },
+  { value: "hayal kırıklığı", i18nKey: "feelingDisappointment" },
+  { value: "endişe", i18nKey: "feelingAnxiety" },
+  { value: "suçluluk", i18nKey: "feelingGuilt" },
+  { value: "güvensizlik", i18nKey: "feelingInsecurity" },
+  { value: "huzur", i18nKey: "feelingPeace" },
+  { value: "çaresizlik", i18nKey: "feelingHelplessness" },
+  { value: "kıskançlık", i18nKey: "feelingJealousy" },
 ];
 
-const CONTEXT_OPTIONS: { value: LifeContextTag; label: string }[] = [
-  { value: "iş", label: "İş" },
-  { value: "aşk", label: "Aşk" },
-  { value: "para", label: "Para" },
-  { value: "aile", label: "Aile" },
-  { value: "sağlık", label: "Sağlık" },
-  { value: "arkadaşlık", label: "Arkadaşlık" },
-  { value: "kayıp", label: "Kayıp" },
-  { value: "değişim", label: "Değişim" },
+const CONTEXT_KEYS: { value: LifeContextTag; i18nKey: string }[] = [
+  { value: "iş", i18nKey: "contextWork" },
+  { value: "aşk", i18nKey: "contextLove" },
+  { value: "para", i18nKey: "contextMoney" },
+  { value: "aile", i18nKey: "contextFamily" },
+  { value: "sağlık", i18nKey: "contextHealth" },
+  { value: "arkadaşlık", i18nKey: "contextFriendship" },
+  { value: "kayıp", i18nKey: "contextLoss" },
+  { value: "değişim", i18nKey: "contextChange" },
 ];
 
 export default function DreamInputScreen() {
@@ -179,14 +179,14 @@ export default function DreamInputScreen() {
               {t("feelingTagLabel") || "Baskın duygu"} <Text style={styles.optional}>(opsiyonel)</Text>
             </Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.tagRow}>
-              {FEELING_OPTIONS.map((opt) => (
+              {FEELING_KEYS.map((opt) => (
                 <TouchableOpacity
                   key={opt.value}
                   style={[styles.tagChip, feelingTag === opt.value && styles.tagChipSelected]}
                   onPress={() => setFeelingTag(feelingTag === opt.value ? null : opt.value)}
                 >
                   <Text style={[styles.tagChipText, feelingTag === opt.value && styles.tagChipTextSelected]}>
-                    {opt.label}
+                    {t(opt.i18nKey)}
                   </Text>
                 </TouchableOpacity>
               ))}
@@ -199,14 +199,14 @@ export default function DreamInputScreen() {
               {t("lifeContextLabel") || "Yaşam bağlamı"} <Text style={styles.optional}>(opsiyonel)</Text>
             </Text>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.tagRow}>
-              {CONTEXT_OPTIONS.map((opt) => (
+              {CONTEXT_KEYS.map((opt) => (
                 <TouchableOpacity
                   key={opt.value}
                   style={[styles.tagChip, lifeContextTag === opt.value && styles.tagChipSelected]}
                   onPress={() => setLifeContextTag(lifeContextTag === opt.value ? null : opt.value)}
                 >
                   <Text style={[styles.tagChipText, lifeContextTag === opt.value && styles.tagChipTextSelected]}>
-                    {opt.label}
+                    {t(opt.i18nKey)}
                   </Text>
                 </TouchableOpacity>
               ))}

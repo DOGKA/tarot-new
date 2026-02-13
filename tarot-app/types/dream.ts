@@ -83,6 +83,11 @@ export interface UpsellSymbol {
   journalAddOn?: string;
 }
 
+export interface DreamJournalPlus {
+  answer: string;
+  insight: string;
+}
+
 // ============================================
 // API Response wrappers
 // ============================================
@@ -98,6 +103,8 @@ export interface DreamDecodeResponse extends DreamResultA {
   plan?: [string, string, string];
   // Upsell candidates (pre-generated)
   upsellCandidates?: Array<{ symbol: string; hint: string; insight: string }>;
+  // JournalPlus (kullanicinin journal cevabi + GPT insight)
+  dreamJournalPlus?: DreamJournalPlus;
 }
 
 export interface DreamUpsellResponse {
@@ -119,4 +126,5 @@ export interface DreamPrices {
   B: number;
   C: number;
   UPSELL_SYMBOL: number;
+  JOURNAL_PLUS: number;
 }

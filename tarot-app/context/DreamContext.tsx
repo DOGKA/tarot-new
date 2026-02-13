@@ -41,7 +41,7 @@ interface DreamContextType {
 
 const DreamContext = createContext<DreamContextType | undefined>(undefined);
 
-const DEFAULT_PRICES: DreamPrices = { A: 10, B: 22, C: 12, UPSELL_SYMBOL: 5 };
+const DEFAULT_PRICES: DreamPrices = { A: 11, B: 22, C: 12, UPSELL_SYMBOL: 3, JOURNAL_PLUS: 5 };
 
 export function DreamProvider({ children }: { children: ReactNode }) {
   const [dreamMode, setDreamMode] = useState<DreamMode>("A");

@@ -144,35 +144,79 @@ const getOpenAI = () => {
 };
 
 // ============================================
-// GPT CALL HELPER
+// BANNED PATTERNS — alan bazli regex post-check (kelime sinirli)
+// ============================================
+const BANNED_TR = /\b(göster(iyor|ir|di|mek|en)?|simgel(iyor|er|edi|emek)?|işaret\s*ed(iyor|er|di|en)?|yansıt(ıyor|ır|tı|mak)?|temsil\s*ed(iyor|er|di|en)?|sembolize\s*ed(iyor|er)?|ifade\s*ed(iyor|er|en)?|anlamına\s*gel(ir|iyor|di)|demektir|olabilir(sin)?|edebilir(sin)?|muhtemelen|büyük\s*ihtimal(le)?|belki\s*de|gerekiyor|gerektir(ir)?|yapmalısın|zorundasın|mecbursun|vurgul(uyor|ar|adı|amak)?|ortaya\s*koy(ar|uyor|du|mak)?)\b/i;
+const BANNED_EN = /\b(represent(s|ing|ed)?|symboliz(es|ing|ed)?|indicat(es|ing|ed)?|reflect(s|ing|ed)?|could\s*be|might\s*be|probably|perhaps|means\s*that|should|must)\b/i;
+
+// Alan bazli tarama: sadece icerik alanlarini kontrol et
+const extractTextFields = (parsed) => {
+  const fields = [];
+  if (parsed.overall) fields.push(parsed.overall);
+  if (parsed.pattern) fields.push(parsed.pattern);
+  if (parsed.nextStep) fields.push(parsed.nextStep);
+  if (parsed.journal) fields.push(parsed.journal);
+  if (Array.isArray(parsed.beats)) fields.push(...parsed.beats);
+  if (Array.isArray(parsed.plan)) fields.push(...parsed.plan);
+  // Upsell candidates
+  if (Array.isArray(parsed.candidates)) {
+    parsed.candidates.forEach(c => {
+      if (c.hint) fields.push(c.hint);
+      if (c.insight) fields.push(c.insight);
+    });
+  }
+  // JournalPlus
+  if (parsed.insight) fields.push(parsed.insight);
+  return fields.filter(Boolean).join(" ");
+};
+
+const hasBannedLanguage = (parsed) => {
+  const text = extractTextFields(parsed);
+  return BANNED_TR.test(text) || BANNED_EN.test(text);
+};
+
+// ============================================
+// GPT CALL HELPER (alan bazli post-check, max 2 retry)
 // ============================================
 const callGPT = async (systemMsg, userMsg, retrySystemMsg) => {
   const openai = getOpenAI();
 
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
-      const messages =
-        attempt === 0
-          ? [
-              { role: "system", content: systemMsg },
-              { role: "user", content: userMsg },
-            ]
-          : [
-              { role: "system", content: retrySystemMsg || systemMsg },
-              { role: "user", content: userMsg },
-            ];
+      const isRetry = attempt > 0;
+      const messages = [
+        { role: "system", content: isRetry ? (retrySystemMsg || systemMsg) : systemMsg },
+        { role: "user", content: userMsg },
+      ];
+
+      if (isRetry) {
+        messages.push({
+          role: "user",
+          content: "UYARI: Önceki yanıtında yasaklı kelimeler vardı. göster-/simgele-/işaret et-/yansıt-/temsil et-/vurgula-/ortaya koy-/olabilir/edebilir/gerekiyor HİÇ KULLANMA. Dinamizm fiilleriyle yeniden yaz.",
+        });
+      }
 
       const completion = await openai.chat.completions.create({
         model: "gpt-4o",
         messages,
-        temperature: 0.7,
+        temperature: isRetry ? 0.5 : 0.7,
         max_tokens: 1200,
       });
 
       const raw = completion.choices[0]?.message?.content || "";
-      // Extract JSON from potential markdown code blocks
       const jsonMatch = raw.match(/```(?:json)?\s*([\s\S]*?)```/) || [null, raw];
       const parsed = JSON.parse(jsonMatch[1].trim());
+
+      // Alan bazli post-check
+      if (hasBannedLanguage(parsed) && attempt < 1) {
+        console.warn(`⚠️ Banned language in content fields (attempt ${attempt + 1}), retrying...`);
+        continue;
+      }
+
+      if (hasBannedLanguage(parsed)) {
+        console.warn(`⚠️ Banned language still present after retry, accepting.`);
+      }
+
       return parsed;
     } catch (err) {
       if (attempt === 1) throw err;
@@ -350,7 +394,7 @@ router.post("/upsell-symbol", async (req, res) => {
     if (reading.upsellUnlocked) {
       return res.json({
         readingId: reading.id,
-        upsellSymbol: reading.resultJson.upsellSymbol || null,
+        upsellSymbol: { symbol: reading.upsellSymbol, insight: reading.upsellInsight || "" },
         alreadyUnlocked: true,
       });
     }
@@ -383,17 +427,12 @@ router.post("/upsell-symbol", async (req, res) => {
       insight: selected.insight,
     };
 
-    // Update reading
-    const updatedResult = {
-      ...reading.resultJson,
-      upsellSymbol: upsellResult,
-    };
-
+    // Update reading (meta only, resultJson untouched)
     updateReading(readingLang, dreamDecodeId, {
       upsellUnlocked: true,
       upsellSymbol: selected.symbol,
+      upsellInsight: selected.insight,
       upsellCost: cost,
-      resultJson: updatedResult,
     });
 
     console.log(`✓ Dream Upsell "${selectedSymbol}" (${cost}gs) — ${deviceId.substring(0, 8)}...`);
@@ -406,6 +445,88 @@ router.post("/upsell-symbol", async (req, res) => {
   } catch (err) {
     console.error("Dream Upsell error:", err.message);
     return res.status(500).json({ error: "Upsell başarısız.", detail: err.message });
+  }
+});
+
+// ============================================
+// POST /journal-plus — Kullanicinin journal cevabina kisisel insight
+// ============================================
+router.post("/journal-plus", async (req, res) => {
+  try {
+    const { dreamDecodeId, deviceId, journalAnswer, language } = req.body;
+    const lang = language || "tr";
+
+    if (!deviceId) return res.status(400).json({ error: "deviceId gerekli" });
+    if (!dreamDecodeId) return res.status(400).json({ error: "dreamDecodeId gerekli" });
+    if (!journalAnswer || journalAnswer.trim().length < 5) return res.status(400).json({ error: "Cevap en az 5 karakter olmali." });
+
+    const { reading, readingLang } = findReading(dreamDecodeId, lang);
+    if (!reading) return res.status(404).json({ error: "Okuma bulunamadi." });
+
+    // Already unlocked?
+    if (reading.journalPlusUnlocked) {
+      return res.json({
+        readingId: reading.id,
+        dreamJournalPlus: { answer: reading.journalPlusAnswer, insight: reading.journalPlusInsight || "" },
+        alreadyUnlocked: true,
+      });
+    }
+
+    // Check balance
+    const user = getUser(deviceId);
+    const cost = PRICES.JOURNAL_PLUS || 5;
+    if (user.gemstoneBalance < cost) {
+      return res.status(402).json({
+        error: "INSUFFICIENT_GEMSTONES",
+        message: "Yetersiz gemstone bakiyesi.",
+        required: cost,
+        balance: user.gemstoneBalance,
+      });
+    }
+
+    // Debit
+    updateUser(deviceId, { gemstoneBalance: user.gemstoneBalance - cost });
+
+    // GPT call — minimal prompt with overall+keywords context (safe formatting)
+    const prompts = getPrompts(lang);
+    const safeOverall = (reading.resultJson.overall || "").slice(0, 320);
+    const safeKeywords = Array.isArray(reading.resultJson.keywords) ? reading.resultJson.keywords.slice(0, 3) : [];
+    const jpPrompt = prompts.buildJournalPlusPrompt({
+      overall: safeOverall,
+      keywords: safeKeywords,
+      journalQuestion: reading.resultJson.journal || "",
+      journalAnswer: journalAnswer.trim(),
+    });
+
+    const gpResult = await callGPT(
+      prompts.systemMessage,
+      jpPrompt,
+      prompts.retrySystemMessage
+    );
+
+    const journalPlus = {
+      answer: journalAnswer.trim(),
+      insight: gpResult.insight || "",
+    };
+
+    // Update reading (meta only, resultJson untouched)
+    updateReading(readingLang, dreamDecodeId, {
+      journalPlusUnlocked: true,
+      journalPlusAnswer: journalAnswer.trim(),
+      journalPlusInsight: gpResult.insight || "",
+      journalPlusCost: cost,
+    });
+
+    console.log(`✓ Dream JournalPlus (${cost}gs) — ${deviceId.substring(0, 8)}...`);
+
+    return res.json({
+      readingId: dreamDecodeId,
+      journalPlusCost: cost,
+      dreamJournalPlus: journalPlus,
+    });
+  } catch (err) {
+    console.error("Dream JournalPlus error:", err.message);
+    return res.status(500).json({ error: "JournalPlus basarisiz.", detail: err.message });
   }
 });
 

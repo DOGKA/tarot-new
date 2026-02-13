@@ -212,5 +212,34 @@
       "directionHint": "Denge ve kontrol için iç sesini dinleyerek öz-değerine odaklanmak önemli olabilir.",
       "journal": "Mevcut finansal yapılarımda hangi değişiklikler bana yeni fırsatlar getirebilir?"
     }
+  },
+  {
+    "timestamp": "2026-02-11T08:26:24.016Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "career",
+    "card": {
+      "name": "Değnek Dörtlüsü",
+      "image": "25_four_wands",
+      "orientation": "reversed"
+    },
+    "tendency": "evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Değnek Dörtlüsü (Ters)\nCevap: Evet\nNetlik: Şartlı\nBağlam: Belirli koşullara bağlı bir yön var.\nOdak alanı: career\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Ters kart yorumu: genel ters etki\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"Kariyerinde başarı mümkün ama içsel çatışmaların var. Dengeyi sağlarsan ilerlersin. Şu an netlik için iletişim önemli.\"}",
+    "response": {
+      "title": "Değnek Dörtlüsü — Evet / Hayır",
+      "focusArea": "career",
+      "answer": "yes",
+      "confidence": 65,
+      "clarityLabel": "Şartlı",
+      "explanation": "Kariyerinde başarı mümkün ama içsel çatışmaların var. Dengeyi sağlarsan ilerlersin. Şu an netlik için iletişim önemli.",
+      "keywords": [
+        "başarı",
+        "kutlama"
+      ],
+      "baseTendency": "evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
   }
 ]

@@ -1,4 +1,4 @@
-# Mystic — Tarot & Dream Coder Platform
+# Astrolic — Tarot & Dream Coder Platform
 
 Psikolojik tarot okumalari ve ruya cozumlemesi sunan mobil uygulama. Ortak gemstone sistemi + premium abonelik. GPT-4o destekli davranis analizi + sembol cozumlemesi.
 
@@ -39,14 +39,14 @@ KULLAN:  "su davranis seni yavasliyor", "burada kontrolu kaybediyorsun"
 | **Yes/No** | Hardcoded shortReason | GPT yorum (6gs) | GPT yorum (6gs) |
 | **3'lu Tarot** (PPF, SOA, vs.) | KILITLI | GPT yorum (14gs) | GPT yorum (14gs) |
 | **5'li Tarot** (Love, Moon, vs.) | KILITLI | GPT yorum (22gs) | GPT yorum (22gs) |
-| **Dream A** (Hizli Cozumleme) | KILITLI | 10gs | 10gs |
+| **Dream A** (Hizli Cozumleme) | KILITLI | 11gs | 11gs |
 | **Dream B** (Derin Cozumleme) | KILITLI | 22gs | 22gs |
 | **Dream C** (Donusturme Plani) | KILITLI | KILITLI | 12gs (sadece abone) |
-| **Upsell Sembol** | — | 5gs | 5gs |
+| **Upsell Sembol** | — | 3gs | 3gs |
 
 - FREE: Tekli tarot + Yes/No sinirsiz ucretsiz (hardcoded meaning)
 - Gemstone: 3-5 kart tarot + Dream A/B acilir
-- Premium Abo: Dream C erisimi + 100gs bonus
+- Premium Abo: Dream C erisimi + gemstone bonus (aylik 50gs, yillik 600gs)
 
 ---
 
@@ -54,12 +54,12 @@ KULLAN:  "su davranis seni yavasliyor", "burada kontrolu kaybediyorsun"
 
 | Plan | Fiyat | Bonus | Sure |
 |------|-------|-------|------|
-| Aylik | $9.99/ay | +100 gemstone | 30 gun |
-| Yillik | $59.99/yil | +100 gemstone | 365 gun (~$5/ay, %50 tasarruf) |
+| Aylik | $4.99/ay | +50 gemstone (her ay yenilenir) | 30 gun |
+| Yillik | ~~$59.88~~ **$45.00/yil** | +500 gemstone toplam | 365 gun ($3.75/ay, %25 tasarruf) |
 
 Premium avantajlari:
 - Dream C (Donusturme Plani) erisimi acilir
-- 100 gemstone hediye (abonelik basinda)
+- Gemstone hediye (aylik: 50gs/ay, yillik: 500gs toplam)
 
 ---
 
@@ -78,7 +78,7 @@ Normal fiyat (50 baz): 50 gem = $3.99. Buyuk paketlerde ustu cizili normal fiyat
 
 ## Dream Coder Modlari
 
-### A — Hizli Cozumleme (10gs)
+### A — Hizli Cozumleme (11gs)
 
 | Alan | Aciklama |
 |------|----------|
@@ -87,7 +87,7 @@ Normal fiyat (50 baz): 50 gem = $3.99. Buyuk paketlerde ustu cizili normal fiyat
 | nextStep | "Bu hafta..." somut aksiyon |
 | keywords | 3 kelime |
 | journal | 1 icsel soru |
-| **Upsell** | **1 aday sembol otomatik sunulur, 5gs'e acilir** |
+| **Upsell** | **1 aday sembol otomatik sunulur, 3gs'e acilir** |
 
 ### B — Derin Cozumleme (22gs)
 
@@ -95,9 +95,9 @@ A'nin tum alanlari + ek:
 
 | Alan | Aciklama |
 |------|----------|
-| pattern | 1 paragraf, davranis dongusu (kacis/kontrol/sinir vb.) |
+| pattern | 1 paragraf, davranis dongusu (tetikleyici→tepki→bedel) |
 | beats | 4-6 oge, her biri 1-2 cumle |
-| **Upsell** | **3 aday sembol listelenir, kullanici secer, 5gs'e acilir** |
+| **Upsell** | **3 aday sembol listelenir, kullanici secer, 3gs'e acilir** |
 
 ### C — Donusturme Plani (12gs, PREMIUM ONLY)
 
@@ -105,7 +105,7 @@ A'nin tum alanlari + ek:
 
 | Alan | Aciklama |
 |------|----------|
-| plan[0] | 24 saat: somut aksiyon |
+| plan[0] | 24 saat: somut aksiyon (5 dk'da yapilabilir) |
 | plan[1] | 7 gun: aliskanlik degisikligi |
 | plan[2] | Sinir cumlesi: "Ben artik..." |
 | **Upsell** | **YOK** |
@@ -237,15 +237,28 @@ Request body'de `deviceId` + `isPremium: true` gonderilirse gemstone duser.
 
 ## API Maliyet Analizi
 
-| Urun | GPT Cagrisi | Maliyet | Gemstone | Kar Marji |
-|------|-------------|---------|----------|-----------|
-| Tekli Tarot | 1 | ~$0.0015 | 6gs | %97-99 |
-| 3'lu Tarot | 1 | ~$0.007 | 14gs | %98-99 |
-| 5'li Tarot | 1 | ~$0.008 | 22gs | %98-99 |
-| Dream A | 2 (decode + upsell) | ~$0.007 | 10gs | %97-99 |
-| Dream B | 2 (decode + upsell) | ~$0.009 | 22gs | %98-99 |
-| Dream C | 1 (decode only) | ~$0.004 | 12gs | %98-99 |
-| Upsell Sembol | 0 (onceden hazir) | $0 | 5gs | %100 |
+| Urun | GPT Cagrisi | Maliyet/istek | Gemstone | Kar Marji |
+|------|-------------|---------------|----------|-----------|
+| Tekli Tarot | 1 | ~$0.001461 | 6gs | %97-99 |
+| 3'lu Tarot | 1 | ~$0.007005 | 14gs | %98-99 |
+| 5'li Tarot | 1 | ~$0.008468 | 22gs | %98-99 |
+| Dream A | 2 (decode + upsell) | ~$0.006555 | 11gs | %97-99 |
+| Dream B | 2 (decode + upsell) | ~$0.007939 | 22gs | %98-99 |
+| Dream C | 1 (decode only) | ~$0.007264 | 12gs | %98-99 |
+| Upsell Sembol | 0 (onceden hazir) | $0 | 3gs | %100 |
+
+### 1 USD API Maliyeti Icin Kapasite
+
+| Urun | 1 USD = ~istek | Tahsil edilen tas |
+|------|----------------|-------------------|
+| Tekli Tarot (Premium) | 684 | 684 x 6 = **4,104 tas** |
+| 3'lu Tarot (Premium) | 143 | 143 x 14 = **2,002 tas** |
+| 5'li Tarot (Premium) | 118 | 118 x 22 = **2,596 tas** |
+| Dream A (Hizli) | 153 | 153 x 11 = **1,683 tas** |
+| Dream B (Derin) | 126 | 126 x 22 = **2,772 tas** |
+| Dream C (Plan) | 138 | 138 x 12 = **1,656 tas** |
+
+*Not: Degerler yaklasik; yuvarlama yuzunden 1 USD'ye cok yakin cikar.*
 
 ---
 

@@ -108,4 +108,21 @@ Find 3 candidate symbols NOT used in the beats. For each: short name + 1 sentenc
 JSON:
 {"candidates":[{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."}]}`;
   },
+
+  buildJournalPlusPrompt: ({ overall, keywords, journalQuestion, journalAnswer }) => {
+    return `Overall: "${overall}"
+Keywords: ${JSON.stringify(keywords)}
+
+Question: "${journalQuestion}"
+Answer: "${journalAnswer}"
+
+Task:
+- Based only on this info, write 2-4 short sentences of personal insight.
+- Confronting but non-judgmental. No therapy/diagnosis.
+- Don't repeat/quote the question or answer. Build a new frame.
+- Don't invent details not in the answer.
+
+Output: WRITE NOTHING EXCEPT JSON. ONLY single-line JSON, no extra keys.
+{"insight":"..."}`;
+  },
 };

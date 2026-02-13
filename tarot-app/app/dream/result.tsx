@@ -2,11 +2,14 @@ import React, { useState } from "react";
 import {
   View,
   Text,
+  TextInput,
   TouchableOpacity,
   StyleSheet,
   ScrollView,
   ActivityIndicator,
   Alert,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
@@ -37,6 +40,9 @@ export default function DreamResultScreen() {
   const { language } = useApp();
   const [upsellLoading, setUpsellLoading] = useState(false);
   const [showCandidates, setShowCandidates] = useState(false);
+  const [journalAnswer, setJournalAnswer] = useState("");
+  const [journalPlusLoading, setJournalPlusLoading] = useState(false);
+  const [showJournalInput, setShowJournalInput] = useState(false);
 
   if (!currentResult) {
     return (
@@ -53,9 +59,41 @@ export default function DreamResultScreen() {
 
   const result = currentResult;
   const hasUpsell = !!result.upsellSymbol;
-  const canAffordUpsell = gemstoneBalance >= (prices.UPSELL_SYMBOL || 5);
+  const canAffordUpsell = gemstoneBalance >= (prices.UPSELL_SYMBOL || 3);
+  const hasJournalPlus = !!(result as any).dreamJournalPlus;
+  const canAffordJournalPlus = gemstoneBalance >= (prices.JOURNAL_PLUS || 5);
 
   const candidates = (result as any).upsellCandidates || [];
+
+  // JournalPlus: kullanici journal sorusuna cevap yazdi
+  const handleJournalPlus = async () => {
+    if (hasJournalPlus || !canAffordJournalPlus || journalAnswer.trim().length < 5) return;
+    setJournalPlusLoading(true);
+    try {
+      const response = await fetch(`${API_URL}/journal-plus`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          dreamDecodeId: result.readingId,
+          deviceId,
+          journalAnswer: journalAnswer.trim(),
+          language,
+        }),
+      });
+      if (!response.ok) {
+        const err = await response.json();
+        Alert.alert("Hata", err.message || err.error);
+        return;
+      }
+      const data = await response.json();
+      setCurrentResult({ ...result, dreamJournalPlus: data.dreamJournalPlus } as any);
+      fetchUserInfo();
+    } catch {
+      Alert.alert("Baglanti Hatasi", "Sunucuya baglanamadi.");
+    } finally {
+      setJournalPlusLoading(false);
+    }
+  };
 
   // User selects a symbol, pay & reveal insight
   const handleSelectSymbol = async (symbol: string) => {
@@ -177,6 +215,55 @@ export default function DreamResultScreen() {
           <Text style={styles.journalText}>{result.journal}</Text>
         </GlassCard>
 
+        {/* JournalPlus — cevap yaz + insight al */}
+        {hasJournalPlus && (result as any).dreamJournalPlus ? (
+          /* Acilmis: cevap + insight goster */
+          <GlassCard style={[styles.section, styles.journalPlusResult]}>
+            <Text style={styles.jpLabel}>{t("journalPlusYourAnswer") || "Senin Cevabin"}</Text>
+            <Text style={styles.jpAnswer}>{(result as any).dreamJournalPlus.answer}</Text>
+            <View style={styles.jpDivider} />
+            <Text style={styles.jpInsightLabel}>{t("journalPlusInsight") || "Ek Icgoru"}</Text>
+            <Text style={styles.jpInsight}>{(result as any).dreamJournalPlus.insight}</Text>
+          </GlassCard>
+        ) : showJournalInput ? (
+          /* TextInput acik: yaz + gonder */
+          <GlassCard style={[styles.section, styles.journalPlusInput]}>
+            <Text style={styles.jpInputLabel}>{t("journalPlusWriteAnswer") || "Cevabini yaz"}</Text>
+            <TextInput
+              style={styles.jpTextInput}
+              placeholder={t("journalPlusPlaceholder") || "Cevabini buraya yaz..."}
+              placeholderTextColor="rgba(255, 255, 255, 0.25)"
+              multiline
+              maxLength={200}
+              value={journalAnswer}
+              onChangeText={setJournalAnswer}
+              textAlignVertical="top"
+            />
+            <TouchableOpacity
+              activeOpacity={0.85}
+              onPress={handleJournalPlus}
+              disabled={journalPlusLoading || journalAnswer.trim().length < 5 || !canAffordJournalPlus}
+            >
+              <LinearGradient
+                colors={
+                  journalAnswer.trim().length < 5 || !canAffordJournalPlus
+                    ? ["rgba(100,100,100,0.3)", "rgba(80,80,80,0.2)"]
+                    : ["#c084fc", "#6366f1"]
+                }
+                style={styles.jpButton}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+              >
+                {journalPlusLoading ? (
+                  <ActivityIndicator color="#fff" size="small" />
+                ) : (
+                  <Text style={styles.jpButtonText}>{t("journalPlusSend") || "Gonder"} (💎 {prices.JOURNAL_PLUS || 5})</Text>
+                )}
+              </LinearGradient>
+            </TouchableOpacity>
+          </GlassCard>
+        ) : null}
+
         {/* Upsell Symbol (if unlocked) */}
         {hasUpsell && result.upsellSymbol && (
           <GlassCard style={[styles.section, styles.upsellResult]}>
@@ -251,6 +338,25 @@ export default function DreamResultScreen() {
               >
                 <Text style={styles.ctaText}>
                   +1 Sembol Aç (💎 {prices.UPSELL_SYMBOL})
+                </Text>
+              </LinearGradient>
+            </TouchableOpacity>
+          )}
+
+          {/* JournalPlus CTA — "Soruyu Cevapla" butonu */}
+          {!hasJournalPlus && !showJournalInput && (
+            <TouchableOpacity
+              activeOpacity={0.85}
+              onPress={() => setShowJournalInput(true)}
+            >
+              <LinearGradient
+                colors={["#c084fc", "#7c3aed"]}
+                style={styles.ctaButton}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+              >
+                <Text style={styles.ctaText}>
+                  {t("journalPlusCTA") || "Soruyu Cevapla"} (💎 {prices.JOURNAL_PLUS || 5})
                 </Text>
               </LinearGradient>
             </TouchableOpacity>
@@ -429,6 +535,76 @@ const styles = StyleSheet.create({
   journalSection: {
     borderWidth: 1,
     borderColor: "rgba(56, 189, 248, 0.2)",
+  },
+  journalPlusResult: {
+    borderWidth: 1,
+    borderColor: "rgba(168, 85, 247, 0.3)",
+    backgroundColor: "rgba(168, 85, 247, 0.05)",
+  },
+  jpLabel: {
+    color: "#c084fc",
+    fontSize: 11,
+    fontWeight: "700",
+    letterSpacing: 0.5,
+    textTransform: "uppercase",
+    marginBottom: 6,
+  },
+  jpAnswer: {
+    color: "rgba(255, 255, 255, 0.7)",
+    fontSize: 14,
+    lineHeight: 21,
+    fontStyle: "italic",
+  },
+  jpDivider: {
+    height: 1,
+    backgroundColor: "rgba(168, 85, 247, 0.2)",
+    marginVertical: 12,
+  },
+  jpInsightLabel: {
+    color: "#c084fc",
+    fontSize: 11,
+    fontWeight: "700",
+    letterSpacing: 0.5,
+    textTransform: "uppercase",
+    marginBottom: 6,
+  },
+  jpInsight: {
+    color: "rgba(255, 255, 255, 0.85)",
+    fontSize: 15,
+    lineHeight: 24,
+  },
+  journalPlusInput: {
+    borderWidth: 1,
+    borderColor: "rgba(168, 85, 247, 0.2)",
+  },
+  jpInputLabel: {
+    color: "rgba(255, 255, 255, 0.5)",
+    fontSize: 13,
+    marginBottom: 10,
+    textAlign: "center",
+  },
+  jpTextInput: {
+    backgroundColor: "rgba(255, 255, 255, 0.06)",
+    borderWidth: 1,
+    borderColor: "rgba(255, 255, 255, 0.12)",
+    borderRadius: 12,
+    padding: 12,
+    color: "#fff",
+    fontSize: 14,
+    lineHeight: 20,
+    minHeight: 70,
+    maxHeight: 120,
+    marginBottom: 10,
+  },
+  jpButton: {
+    paddingVertical: 12,
+    borderRadius: 12,
+    alignItems: "center",
+  },
+  jpButtonText: {
+    color: "#fff",
+    fontSize: 14,
+    fontWeight: "700",
   },
   journalLabel: {
     color: "#7dd3fc",

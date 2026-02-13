@@ -108,4 +108,21 @@ Encuentre 3 símbolos candidatos NO utilizados en los tiempos. Para cada uno: no
 JSON:
 {"candidates":[{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."}]}`;
   },
+
+  buildJournalPlusPrompt: ({ overall, keywords, journalQuestion, journalAnswer }) => {
+    return `Overall: "${overall}"
+Keywords: ${JSON.stringify(keywords)}
+
+Pregunta: "${journalQuestion}"
+Respuesta: "${journalAnswer}"
+
+Tarea:
+- Basandote solo en esta info, escribe 2-4 frases cortas de percepcion personal.
+- Confronta pero sin juzgar. Sin terapia/diagnostico.
+- No repitas/cites la pregunta o respuesta. Crea un marco nuevo.
+- No inventes detalles que no esten en la respuesta.
+
+Salida: NO ESCRIBAS NADA EXCEPTO JSON. SOLO JSON en una linea, sin keys extra.
+{"insight":"..."}`;
+  },
 };

@@ -223,7 +223,7 @@
       "createdAt": "2026-02-10T09:49:41.990Z"
     },
     "dev_1770716982010_ns74ratd": {
-      "gemstoneBalance": 9934,
+      "gemstoneBalance": 9832,
       "dreamFreeCredit": 1,
       "createdAt": "2026-02-10T09:49:41.994Z"
     },
@@ -233,6 +233,41 @@
       "premiumPlan": null,
       "premiumExpiresAt": null,
       "createdAt": "2026-02-10T11:15:31.065Z"
+    },
+    "dev_test_bulk_001": {
+      "gemstoneBalance": 885,
+      "isPremiumSubscriber": false,
+      "premiumPlan": null,
+      "premiumExpiresAt": null,
+      "createdAt": "2026-02-13T09:32:23.416Z"
+    },
+    "dev_test_v3_001": {
+      "gemstoneBalance": 885,
+      "isPremiumSubscriber": false,
+      "premiumPlan": null,
+      "premiumExpiresAt": null,
+      "createdAt": "2026-02-13T09:55:45.445Z"
+    },
+    "dev_final_test_001": {
+      "gemstoneBalance": 874,
+      "isPremiumSubscriber": false,
+      "premiumPlan": null,
+      "premiumExpiresAt": null,
+      "createdAt": "2026-02-13T10:17:12.585Z"
+    },
+    "dev_mass_test_001": {
+      "gemstoneBalance": 684,
+      "isPremiumSubscriber": false,
+      "premiumPlan": null,
+      "premiumExpiresAt": null,
+      "createdAt": "2026-02-13T10:26:37.449Z"
+    },
+    "dev_stress_test_001": {
+      "gemstoneBalance": 665,
+      "isPremiumSubscriber": false,
+      "premiumPlan": null,
+      "premiumExpiresAt": null,
+      "createdAt": "2026-02-13T10:42:17.074Z"
     }
   }
 }

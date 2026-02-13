@@ -108,4 +108,21 @@ Finde 3 mögliche Symbole, die NICHT in den Beats verwendet werden. Für jedes: 
 JSON:
 {"candidates":[{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."},{"symbol":"...","hint":"...","insight":"..."}]}`;
   },
+
+  buildJournalPlusPrompt: ({ overall, keywords, journalQuestion, journalAnswer }) => {
+    return `Overall: "${overall}"
+Keywords: ${JSON.stringify(keywords)}
+
+Frage: "${journalQuestion}"
+Antwort: "${journalAnswer}"
+
+Aufgabe:
+- Schreibe nur basierend auf diesen Infos 2-4 kurze Satze personlicher Einsicht.
+- Konfrontierend aber nicht wertend. Keine Therapie/Diagnose.
+- Frage/Antwort nicht wiederholen/zitieren. Neuen Rahmen schaffen.
+- Keine Details erfinden, die nicht in der Antwort stehen.
+
+Ausgabe: NICHTS AUSSER JSON SCHREIBEN. NUR einzeilige JSON, keine zusatzlichen Keys.
+{"insight":"..."}`;
+  },
 };

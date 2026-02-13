@@ -1,1042 +1,713 @@
 {
-  "_comment": "Dream Coder okuma kayıtları — TR",
   "readings": [
     {
-      "id": "f170cbf4-10a1-4ea1-b834-0a0beaacaed6",
-      "requestId": "1770711764949_tyuz73",
-      "userId": "dev_1770711764319_3mohmt",
+      "id": "139cf529-f5d5-4d73-a2a8-d7bd3f70965d",
+      "requestId": "stress_0_1770979337046",
+      "userId": "dev_stress_test_001",
       "language": "tr",
       "mode": "A",
-      "dreamText": "Rüyamda maymunlar tarafından kovalanıyordum ilerideki sarmaşıklara dökündüm ve uçmaya başladım kendimi denizde buldum",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": true,
-      "gemstoneCost": 0,
-      "resultJson": {
-        "overall": "Kaçış ve özgürlük arasında gidip geliyorsun. Kovalayanlardan kurtulmak isterken kendini başka bir bilinmezde buluyorsun.",
-        "beats": [
-          "Maymunlar tarafından kovalanmak, belki de göz ardı ettiğin sorunlardan kaçıyorsun.",
-          "Sarmaşıklara tutunup uçmak, özgürlüğe duyduğun özlemi gösteriyor.",
-          "Denizde bulmak, bilinmeyen duygularla yüzleşmen gerektiğini anlatıyor."
-        ],
-        "nextStep": "Bu hafta kaçtığın sorunlarla yüzleşmeyi dene.",
-        "keywords": [
-          "kaçış",
-          "özgürlük",
-          "bilinmezlik"
-        ],
-        "journal": "Hangi sorunlardan kaçıyorsun ve onlarla nasıl yüzleşebilirsin?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:22:50.047Z"
-    },
-    {
-      "id": "700571ca-73b4-4562-8f4a-02814cbe9c08",
-      "requestId": "1770711786959_quawzm",
-      "userId": "dev_1770711784564_b2viyp",
-      "language": "tr",
-      "mode": "B",
-      "dreamText": "Rüyamda maymunlar tarafından kovalanıyordum ilerideki sarmaşıklara dökündüm ve uçmaya başladım kendimi denizde buldum",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 22,
-      "resultJson": {
-        "overall": "Kovalanma hissi, içindeki kaçış dürtüsünü işaret ediyor. Uçmak, özgürleşme isteğini gösterir. Ancak denize düşmek, belirsizlikle başa çıkma zorluklarını yansıtıyor.",
-        "beats": [
-          "Maymunlar tarafından kovalanmak, stres veya baskı altında hissettiğin bir durumu temsil ediyor.",
-          "Sarmaşıklara tutunmak, destek arayışını ve belki de güvendiğin birine dayanmayı işaret ediyor.",
-          "Uçmaya başlamak, özgürlük arayışını ve mevcut sıkıntılardan kaçma isteğini gösteriyor.",
-          "Kendini denizde bulmak, kontrolsüzlük ve belirsizlik duygularını yansıtıyor."
-        ],
-        "pattern": "Sürekli bir kaçış ve özgürleşme döngüsündesin. Kaçışın ardından belirsizlikle yüzleşiyorsun. İçinde sıkışmış hissettiğinde, kaçmak yerine sorunla yüzleşmek için durabilirsin.",
-        "nextStep": "Bu hafta, bir şeyden kaçmak yerine onunla yüzleşmek için küçük bir adım at.",
-        "keywords": [
-          "kaçış",
-          "özgürlük",
-          "belirsizlik"
-        ],
-        "journal": "Son zamanlarda hangi durumlarda kendini sıkışmış hissediyorsun?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:23:13.926Z"
-    },
-    {
-      "id": "92c7b0de-90b3-44ca-900c-9cf292a72896",
-      "requestId": "1770711944866_ktzs10",
-      "userId": "dev_1770711938358_aenitz",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Rüyamda maymunlar tarafından kovalandığımı gördüm ileride bulunan sarmaşıklara tutunarak kendimi denize attım ve uyandığımda çok terlemiştim",
-      "feelingTag": "korku",
-      "lifeContextTag": null,
-      "wasFree": true,
-      "gemstoneCost": 0,
-      "resultJson": {
-        "overall": "Korkularınla yüzleşmekten kaçıyor olabilirsin. İçinde biriken gerilim seni bunaltıyor. Kendini koruma içgüdün, cesaretini bastırıyor.",
-        "beats": [
-          "Maymunlar tarafından kovalanmak, günlük hayatındaki tehdit veya baskı hislerini sembolize ediyor.",
-          "Sarmaşıklara tutunmak, güvende hissetmek için bulduğun geçici çözümleri gösteriyor.",
-          "Kendini denize atmak, kaçış arayışının yoğunluğunu ve belirsizlikten duyulan korkuyu yansıtıyor."
-        ],
-        "nextStep": "Bu hafta korkularının kaynağını düşün ve onlarla yüzleşmeye çalış.",
-        "keywords": [
-          "korku",
-          "kaçış",
-          "gerilim"
-        ],
-        "journal": "Hayatında hangi durumlar seni tehdit altında hissettiriyor?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:25:51.385Z"
-    },
-    {
-      "id": "3dfa1304-38af-4659-b6dd-8626e831024f",
-      "requestId": "1770711967736_lk6gmt",
-      "userId": "dev_1770711966224_a3udlg",
-      "language": "tr",
-      "mode": "B",
-      "dreamText": "Rüyamda maymunlar tarafından kovalandığımı gördüm ileride bulunan sarmaşıklara tutunarak kendimi denize attım ve uyandığımda çok terlemiştim",
+      "dreamText": "Rüyamda dar bir merdivenden iniyordum, duvarlar rutubetliydi. Aşağıda bir kapı vardı ama kolu yoktu. Arkadan ayak sesleri yaklaştı.",
       "feelingTag": "korku",
       "lifeContextTag": null,
       "wasFree": false,
-      "gemstoneCost": 22,
+      "gemstoneCost": 11,
       "resultJson": {
-        "overall": "Kaçma ve korku birleşiyor. Maymunlar seni tehdit ederken, sarmaşıklara tutunmak geçici bir rahatlama sunuyor. Denize atlamak ise son çare. Korku seni zorluyor ama sonunda rahatlama arıyorsun.",
+        "overall": "Dar merdiven ve kolu olmayan kapı, ilerleyişini ve hedeflerini sorgulatıyor. Arkadaki ayak sesleri seni rahatsız eden bir şeyin peşinde olduğunu hissettiriyor.",
         "beats": [
-          "Maymunlar seni tehdit ediyor, baskı altında hissediyorsun.",
-          "Sarmaşıklara tutunmak, geçici güvenlik arayışını simgeliyor.",
-          "Denize atlamak, kaçma isteğinin doruğu.",
-          "Rüyadan uyanmak, fiziksel olarak yoğun bir deneyim.",
-          "Terlemek, korkunun bedensel etkisini gösteriyor."
+          "Dar merdiven, hareket alanını ve seçeneklerini kısıtlıyor.",
+          "Rutubetli duvarlar, geçmişten gelen yükleri ve sıkıntıları hatırlatıyor.",
+          "Kolu olmayan kapı, bir çıkış yolu arıyorsun ama engellerle karşılaşıyorsun."
         ],
-        "pattern": "Korku seni bir adım atmaktan alıkoyuyor, kaçmak ve saklanmak daha kolay geliyor. Tehdit altında hissettiğinde, geçici çözümlerle rahatlamaya çalışıyorsun. Her kaçış, sonunda daha fazla tereddüt getiriyor.",
-        "nextStep": "Bu hafta seni korkutan bir duruma küçük bir adımla yaklaşmayı dene.",
+        "nextStep": "Bu hafta, seni rahatsız eden ve peşinden gelen bir düşünceyi yazıya dök.",
         "keywords": [
-          "korku",
-          "kaçış",
-          "rahatlama"
-        ],
-        "journal": "Korktuğunda hangi adımları atmaktan çekiniyorsun?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:26:14.984Z"
-    },
-    {
-      "id": "94d80900-1bdf-4857-b712-3c6a1aed149c",
-      "requestId": "1770712033169_d9dc11",
-      "userId": "dev_1770712032435_ovi76k",
-      "language": "tr",
-      "mode": "C",
-      "dreamText": "Rüyamda maymunlar tarafından kovalandığımı gördüm ileride bulunan sarmaşıklara tutunarak kendimi denize attım ve uyandığımda çok terlemiştim",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 12,
-      "resultJson": {
-        "overall": "Kendini tehdit altında hissettiğin bir durumdan kaçıyorsun. Ancak, bu kaçış seni daha derin duygulara sürüklüyor. Kendi sınırlarını ve korkularını keşfetme zamanı.",
-        "beats": [
-          "Maymunlar tarafından kovalanmak, korku ve endişe hissettiğin bir durumu temsil edebilir.",
-          "Sarmaşıklara tutunmak, zorluklar karşısında dayanıklılığını gösteriyor.",
-          "Denize atlamak, duygusal bir boşalım veya rahatlama arayışını simgeliyor."
-        ],
-        "nextStep": "Bu hafta, kendini güvende hissetmediğin bir alanı keşfet ve oradaki duygularını anlamaya çalış.",
-        "plan": [
-          "24 saat: Kısa bir meditasyon yap ve nefesine odaklan.",
-          "7 gün: Her gün bir korkunla yüzleş ve onu yaz.",
-          "Sınır: Ben artık korkularımın beni kontrol etmesine izin vermiyorum."
-        ],
-        "keywords": [
-          "Korku",
-          "Kaçış",
-          "Duygusal"
-        ],
-        "journal": "Kendimi tehdit altında hissettiğimde nasıl tepki veriyorum?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:27:19.399Z"
-    },
-    {
-      "id": "05f5cfef-790a-4690-a5d5-8971a882d320",
-      "requestId": "1770712082106_wuofx2",
-      "userId": "dev_1770712080710_inl3c9",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Rüyamda maymunlar tarafından kovalandığımı gördüm ileride bulunan sarmaşıklara tutunarak kendimi denize attım ve uyandığımda çok terlemiştim",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": true,
-      "gemstoneCost": 0,
-      "resultJson": {
-        "overall": "Kaçış ve yüzleşme arzusu iç içe geçmiş. Korkuların seni harekete geçiriyor ama çözüme ulaşmak için suya atlıyorsun.",
-        "beats": [
-          "Maymunlar seni sıkıştırıyor, sorumluluklarından kaçmak istiyorsun.",
-          "Sarmaşıklara tutunmak, geçici çözümlerle yetindiğini gösteriyor.",
-          "Denize atlamak, özgürlüğe kaçış arayışını temsil ediyor."
-        ],
-        "nextStep": "Bu hafta korkularınla yüzleşmek için küçük bir adım at.",
-        "keywords": [
-          "kaçış",
-          "yüzleşme",
-          "özgürlük"
-        ],
-        "journal": "Hangi sorumluluklar seni zorluyor?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:28:05.294Z"
-    },
-    {
-      "id": "ffe1b473-eece-4cda-bce5-c4f0201a2402",
-      "requestId": "1770712763296_q1qrhs",
-      "userId": "dev_1770712762352_onpvn3",
-      "language": "tr",
-      "mode": "B",
-      "dreamText": "Rüyamda maymunlar tarafından kovalandığımı gördüm ileride bulunan sarmaşıklara tutunarak kendimi denize attım ve uyandığımda çok terlemiştim",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 22,
-      "resultJson": {
-        "overall": "Tehlike altında hissettiğin durumlarda kaçmayı seçiyorsun. Kontrol edemediğin şeylerle karşılaştığında, kaçış ve güvende hissetme arzusu öne çıkıyor. Kendi sınırlarını zorlamaktan kaçınma eğilimindesin.",
-        "beats": [
-          "Maymunlar seni kovalamış, bu seni rahatsız eden bir baskı ya da tehdit hissi olabilir.",
-          "Sarmaşıklara tutunman, geçici çözümlere sığınma alışkanlığını gösteriyor.",
-          "Kendini denize atman, kaçış ve arınma isteğini yansıtıyor.",
-          "Uyandığında terlemiş olman, bu durumun seni ne kadar etkilediğinin bir işareti.",
-          "Deniz, yeniden başlama veya temizlenme arzusunu temsil ediyor."
-        ],
-        "pattern": "Rüyanda baskı altında kaldığında kaçış yollarını arıyorsun. Geçici çözümlerle sorunları erteleyerek rahatlamaya çalışıyorsun. Bu döngü, uzun vadede kalıcı çözümler sunmuyor.",
-        "nextStep": "Bu hafta, bir sorununla yüzleşmeye çalış ve kaçmak yerine çözüm üretmeye odaklan.",
-        "keywords": [
-          "kaçış",
-          "baskı",
-          "çözüm"
-        ],
-        "journal": "Son zamanlarda seni baskı altında hissettiren bir durum nedir?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:39:31.632Z"
-    },
-    {
-      "id": "cb6369e6-d03e-4d3e-9f2a-c8b6b2ab1e21",
-      "requestId": "1770712799868_s58v51",
-      "userId": "dev_1770712799201_qkc61c",
-      "language": "tr",
-      "mode": "B",
-      "dreamText": "Rüyamda maymunlar tarafından kovalandığımı gördüm ileride bulunan sarmaşıklara tutunarak kendimi denize attım ve uyandığımda çok terlemiştim",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 22,
-      "resultJson": {
-        "overall": "Kaçmak istediğin bir durumun içindesin. Maymunlar seni tehdit eden ya da seni zorlayan unsurlar olabilir. Sarmaşıklara tutunmak bir çıkış yolu aradığını gösteriyor. Denize atlamak ise özgürleşme arayışını temsil ediyor.",
-        "beats": [
-          "Maymunlar seni tehdit eden veya zorlayan unsurlar.",
-          "Kovalama sahnesi baskı altında hissettiğini gösteriyor.",
-          "Sarmaşıklara tutunmak bir çıkış yolu arayışını temsil ediyor.",
-          "Denize atlamak özgürleşme isteğini anlatıyor.",
-          "Ter içinde uyanmak içinde biriken stresi işaret ediyor."
-        ],
-        "pattern": "Kaçma ve özgürleşme isteği ön planda. Kendini tehdit altında hissettiğinde, kontrolü kaybetmekten korkuyorsun. Bir çıkış yolu ararken, rahatlamak için kaçmayı tercih ediyorsun.",
-        "nextStep": "Bu hafta seni tehdit eden unsurları belirle ve onlarla yüzleşmeye çalış.",
-        "keywords": [
-          "tehdit",
-          "kaçış",
-          "özgürlük"
-        ],
-        "journal": "Seni tehdit eden unsurlar neler ve onlarla nasıl başa çıkabilirsin?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T08:40:05.929Z"
-    },
-    {
-      "id": "55877320-0e8b-410e-899b-e607e60f93a8",
-      "requestId": "1770713073068_ii6y8p",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Tarot fiyat/kar tablosu (min–max satış bedeli, API maliyeti, min–max kar) — Güncel\nÜrün\tGem\tEn düşük satış (500’lük) USD\tEn yüksek satış (50’lik) USD\tAPI maliyeti (USD)\tEn düşük kar (USD)\tEn yüksek kar (USD)\nTekli Tarot\t6\t0.239880\t0.478800\t0.001461\t0.238419\t0.477339\n3’lü Tarot\t14\t0.55972",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": true,
-      "gemstoneCost": 0,
-      "resultJson": {
-        "overall": "Rüyan, odaklandığın şeyin maddi boyutunu ve metriklerle olan ilişkiyi gösteriyor. Rakamlar ve hesaplar üzerinden bir değerlendirme yapıyorsun. Belki de kararlarını verilere dayandırma eğilimin var.",
-        "beats": [
-          "Tarot fiyat tablosu, maddi konulara olan odağını ve hesap yapma ihtiyacını temsil ediyor.",
-          "API maliyeti, harcamalar ve kazançlar arasında denge kurma çabalarını yansıtıyor.",
-          "En düşük ve en yüksek kar oranları, risk ve ödül arasındaki dengeyi bulmaya çalıştığını gösteriyor."
-        ],
-        "nextStep": "Bu hafta bir kararını duygusal değil, tamamen mantıksal verilere dayandırmayı dene.",
-        "keywords": [
-          "maddi",
-          "hesap",
-          "denge"
-        ],
-        "journal": "Kararlarında ne kadar veri odaklısın?",
-        "upsellSymbol": {
-          "symbol": "Gem",
-          "insight": "Gem sayısı, kararlarının değerini ve potansiyelini ölçme arzunu simgeliyor. Her bir taş, ne kadar yatırım yapacağını ve hangi sonuçları alabileceğini düşündüğünü gösteriyor.",
-          "nextStepAddOn": "Bu hafta kararlarının değerini ve potansiyelini objektif bir şekilde değerlendirmeye çalış.",
-          "journalAddOn": "Kararlarının değerini ölçerken nelere dikkat ediyorsun?"
-        }
-      },
-      "upsellUnlocked": true,
-      "upsellSymbol": "Gem",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T08:44:38.702Z"
-    },
-    {
-      "id": "bd0759b2-ec67-4735-8fb4-a067e6a70fb5",
-      "requestId": "1770714520710_bughy8",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Dar bir sokakta yağmur yağıyordu ama damlalar yere düşmeden havada asılı kalıyordu. Bir dükkân camında kendi yansımam yerine, yaşlı bir versiyonum bana bakıyordu. “Geç kaldın” dedi, sesi camın içinden geldi. Tam koşmaya başladım, ayaklarım suya değil kuma basıyordu. Cep telefonum çaldı",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Zamanın geçişi ve fırsatların kaçırılması seni düşündürüyor. Kendi geleceğinle yüzleşmekten kaçıyor gibisin. Hayatının kontrolünü eline alman gerek.",
-        "beats": [
-          "Yağmur damlalarının havada asılı kalması, olayların akışını durdurmaya çalıştığını gösteriyor.",
-          "Kendi yansıman yerine yaşlı bir versiyonunu görmek, gelecekteki halinle barışık olmadığını ifade ediyor.",
-          "Kuma basman ise sağlam bir zeminde olmadığını, kararsızlık içinde olduğunu anlatıyor."
-        ],
-        "nextStep": "Bu hafta bir karar ver ve adım at, beklemek seni bir yere götürmez.",
-        "keywords": [
-          "zaman",
-          "gelecek",
-          "kararsızlık"
-        ],
-        "journal": "Hayatında kontrol edebileceğin hangi alanlarda daha kararlı olabilirsin?",
-        "upsellSymbol": {
-          "symbol": "Cep telefonu",
-          "insight": "Cep telefonunun çalması, seni sürekli bir şeylere çağıran, dikkatin dağıtan unsurların olduğunu gösteriyor. Sürekli bir bağlantı ve ulaşılabilirlik ihtiyacı hissediyorsun.",
-          "nextStepAddOn": "Bu hafta, günde en az bir saat telefonunu kapatarak kendine odaklan.",
-          "journalAddOn": "Hangi durumlarda telefonun seni en çok bölüyor?"
-        }
-      },
-      "upsellUnlocked": true,
-      "upsellSymbol": "Cep telefonu",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T09:08:49.183Z"
-    },
-    {
-      "id": "aa303b49-adf5-40c6-b743-cc586c602e0d",
-      "requestId": "1770714675636_3c17ta",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Dar bir sokakta yağmur yağıyordu ama damlalar yere düşmeden havada asılı kalıyordu. Bir dükkân camında kendi yansımam yerine, yaşlı bir versiyonum bana bakıyordu. “Geç kaldın” dedi, sesi camın içinden geldi. Tam koşmaya başladım, ayaklarım suya değil kuma basıyordu. Cep telefonum çaldı:",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Zamanın geçişi ve belirsizlik hissi seni düşündürüyor. Geleceğe dair bir acelecilik ve kaygı var. Şu anla olan bağını güçlendirmek önemli.",
-        "beats": [
-          "Yağmurun havada asılı kalması, kontrol edemediğin durumlar karşısındaki çaresizliğini yansıtıyor.",
-          "Yaşlı versiyonunla karşılaşman, geçmişinle ve geleceğinle yüzleşme isteğini gösteriyor.",
-          "Koşarken ayaklarının kuma basması, hedeflerine ulaşma yolunda kararsızlık veya güvensizlik hissettiğini anlatıyor."
-        ],
-        "nextStep": "Bu hafta, bir hedef belirle ve ona adım adım yaklaşmak için somut bir plan yap.",
-        "keywords": [
-          "zaman",
-          "belirsizlik",
-          "kontrol"
-        ],
-        "journal": "Kendini gelecekte nasıl bir yerde görmek istiyorsun?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T09:11:21.651Z"
-    },
-    {
-      "id": "1771d2b5-50bc-4b0d-9bac-59e4585b3108",
-      "requestId": "1770714687402_k5w0p6",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "C",
-      "dreamText": "Dar bir sokakta yağmur yağıyordu ama damlalar yere düşmeden havada asılı kalıyordu. Bir dükkân camında kendi yansımam yerine, yaşlı bir versiyonum bana bakıyordu. “Geç kaldın” dedi, sesi camın içinden geldi. Tam koşmaya başladım, ayaklarım suya değil kuma basıyordu. Cep telefonum çaldı:",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 12,
-      "resultJson": {
-        "overall": "Geçmişteki pişmanlıklar ve zamanın akışı seni düşündürüyor. Kendini tanımak, yaşlanma korkusunu yenmek için bir fırsat. Harekete geçmek için zamana meydan okumak isteyebilirsin.",
-        "beats": [
-          "Yağmur damlalarının havada asılı kalması, zamanın durduğu hissini yansıtıyor.",
-          "Dükkân camındaki yaşlı versiyonun, geleceğe dair kaygılarını ve kaçırılmış fırsatları simgeliyor.",
-          "Ayakların kumda, sabit ve sağlam bir temele ihtiyacını gösteriyor.",
-          "Telefonun çalması, dış dünyada seni bekleyen gerçekleri ve fırsatları hatırlatıyor."
-        ],
-        "nextStep": "Bu hafta, geçmişte ertelediğin bir konuyu ele al.",
-        "plan": [
-          "24 saat: Kendine bir saat ayır ve geçmişte ertelediğin bir şey üzerine düşün.",
-          "7 gün: Her gün kısa bir yürüyüş yaparak düşüncelerini netleştir.",
-          "Sınır: Ben artık geçmiş pişmanlıklarımın geleceğimi etkilemesine izin vermiyorum."
-        ],
-        "keywords": [
-          "zaman",
-          "temel",
-          "fırsat"
-        ],
-        "journal": "Yaşlanma korkuların hayatını nasıl etkiliyor?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T09:11:36.419Z"
-    },
-    {
-      "id": "59cf2f7e-8cb9-48c6-894e-c1f45f63f90e",
-      "requestId": "1770714774758_anpj3j",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "/\nDashboard\nAPI Docs\nChat Completion\nProperties\nCreated\n10 Şub 2026 12:11\nID\nchatcmpl-D7e44vWsnwHh5UkIIf7QJ2Y3jOF0u\nModel\ngpt-4o-2024-08-06\nTokens\n802 total\nConfiguration\nResponse\ntext\nTemperature\n0.70\nMetadata\nNo metadata entries\nInput\n586t\nsystem\nSen Dream Coder'sın — tarot tarzı bir öz-farkındalı",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Rüyan, bilgi ve teknolojiyle dolu bir ortamda kaybolmuş hissettiğini gösteriyor. Kontrol etme isteğinle, karmaşık durumlar arasında sıkışmış olabilirsin.",
-        "beats": [
-          "Dashboard, hayatında kontrol etmek istediğin alanları temsil ediyor.",
-          "API Docs, karmaşık bilgileri anlamlandırma çabanı gösteriyor.",
-          "Tokens, enerjini ve kaynaklarını nasıl harcadığını sorgulaman gerektiğini işaret ediyor."
-        ],
-        "nextStep": "Bu hafta hayatında kontrol edebileceğin küçük bir alan seç ve ona odaklan.",
-        "keywords": [
-          "kontrol",
-          "bilgi",
-          "enerji"
-        ],
-        "journal": "Kendimi en çok hangi alanlarda kaybolmuş hissediyorum?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T09:12:59.146Z"
-    },
-    {
-      "id": "5f15ae60-8533-4403-8184-4f37b1875961",
-      "requestId": "1770714817222_zje2me",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Bir kütüphanede tek başıma oturuyordum; raflar sonsuz gibiydi. Kitapların sırtında isim yok, sadece tarih vardı. Birini açtım: sayfalar boştu ama kelimeler fısıltı gibi kulağıma doluyordu. Görevli bir kedi, bana mühür uzattı; mührün üzerinde kalp ve kilit simgesi vardı. Bastığım anda tavan açıldı",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Bilinmeyeni keşfetme isteğin içsel bir arayışa işaret ediyor. Bilgiyi ararken duygusal kilitlerinle yüzleşiyorsun. Farkındalık, özgürlüğün anahtarı olabilir.",
-        "beats": [
-          "Sonsuz raflar, derin bir merakın ve bilginin peşinden gitme arzunun simgesi.",
-          "Boş sayfalar, içsel sessizliğin ve belki de henüz keşfetmediğin potansiyelin göstergesi.",
-          "Mühür ve açılan tavan, duygusal engelleri aşmanın ve yeni bir anlayışa ulaşmanın ipucunu veriyor."
-        ],
-        "nextStep": "Bu hafta duygusal kilitlerini fark etmeye çalış ve onları açmanın yollarını araştır.",
-        "keywords": [
-          "merak",
-          "duygusal kilitler",
-          "özgürlük"
-        ],
-        "journal": "Hangi duygusal engellerim beni geri tutuyor olabilir?"
-      },
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T09:13:42.650Z"
-    },
-    {
-      "id": "07ea08b2-db00-4706-9144-a6520766d8e6",
-      "requestId": "1770714983983_yubptr",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Bir kütüphanede tek başıma oturuyordum; raflar sonsuz gibiydi. Kitapların sırtında isim yok, sadece tarih vardı. Birini açtım: sayfalar boştu ama kelimeler fısıltı gibi kulağıma doluyordu. Görevli bir kedi, bana mühür uzattı; mührün üzerinde kalp ve kilit simgesi vardı. Bastığım anda tavan açıldı, i",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Bilgiyi arıyorsun ama henüz içselleştiremedin. Duygularını çözmek için bir anahtar peşindesin.",
-        "beats": [
-          "Sonsuz raflar, bilgiye olan açlığını gösteriyor.",
-          "Boş sayfalar, içsel anlam arayışını yansıtıyor.",
-          "Kedinin uzattığı mühür, duygularını kilitleyen bir şeyleri açma isteğini simgeliyor."
-        ],
-        "nextStep": "Bu hafta duygularını yazıya dökerek anlamaya çalış.",
-        "keywords": [
-          "bilgi",
-          "anahtar",
-          "duygu"
-        ],
-        "journal": "Hangi duyguların seni tıkadığını düşünüyor musun?",
-        "upsellSymbol": {
-          "symbol": "Kütüphane",
-          "insight": "Kütüphane, zihninde saklı kalmış bilgilerin ve deneyimlerin deposu gibi. Yalnızlık içinde kendi içsel bilgeliğine erişmek istiyorsun. Bilinçaltın, keşfedilmeyi bekleyen derin bir kaynak olabilir."
-        }
-      },
-      "upsellUnlocked": true,
-      "upsellSymbol": "Kütüphane",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T09:16:30.496Z"
-    },
-    {
-      "id": "03bc92d2-8175-49e9-b44b-f6b2d21c974b",
-      "requestId": "1770715020826_hqwwtc",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "B",
-      "dreamText": "Bir kütüphanede tek başıma oturuyordum; raflar sonsuz gibiydi. Kitapların sırtında isim yok, sadece tarih vardı. Birini açtım: sayfalar boştu ama kelimeler fısıltı gibi kulağıma doluyordu. Görevli bir kedi, bana mühür uzattı; mührün üzerinde kalp ve kilit simgesi vardı. Bastığım anda tavan açıldı, i",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 22,
-      "resultJson": {
-        "overall": "Kendini bilgi ve anlam arayışında buluyorsun. Ancak, bu arayış bazen belirsizlik ve tanımsızlık hisleriyle çevrili. İçsel bir kilidini açma arzun, yeni keşiflere kapı aralıyor.",
-        "beats": [
-          "Kütüphanede tek başına oturmak, yalnızlık veya içsel huzur arayışını gösteriyor.",
-          "Raflardaki kitapların isimlerinin olmaması, belirsizlik ve tanımsızlık hissini yansıtıyor.",
-          "Boş sayfaların fısıltı gibi gelmesi, içsel sesine kulak verme ihtiyacını gösteriyor.",
-          "Kedinin mühür uzatması, rehberliğe veya beklenmedik bir yardıma açık olmanı işaret ediyor.",
-          "Mührün üzerindeki kalp ve kilit simgeleri, duygusal bir kapının açılmasını sembolize ediyor.",
-          "Tavanın açılması, yeni farkındalıklar ve perspektifler kazanmaya hazır olduğunu gösteriyor."
-        ],
-        "pattern": "Bilgi ve anlam peşinde koşarken, belirsizlikten kaçınmaya çalışıyorsun. Yalnızlık veya içsel huzur arayışın, seni bazen soyut veya tanımsız hislerin kucağına bırakıyor. Rehberliği kabul etme isteğin, yeni kapılar açmana yardımcı olabilir.",
-        "nextStep": "Bu hafta içsel sesine kulak ver ve belirsizlikle yüzleşmekten kaçınma.",
-        "keywords": [
-          "belirsizlik",
-          "içsel ses",
-          "rehberlik"
-        ],
-        "journal": "Belirsizlikle karşılaştığında ne yapıyorsun?",
-        "upsellSymbol": {
-          "symbol": "Boş Sayfalar",
-          "insight": "Boş sayfalar, kendi hikayeni yazma gücüne sahip olduğunu hatırlatıyor. Geçmişin seni tanımlamak zorunda değil; geleceğin belirsizliği korkutucu olabilir, ama aynı zamanda özgürleştirici. İçsel sesin, kendi yolunu çizmen için kılavuzun olabilir."
-        }
-      },
-      "upsellUnlocked": true,
-      "upsellSymbol": "Boş Sayfalar",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T09:17:07.830Z"
-    },
-    {
-      "id": "e93741b6-ecf8-4456-8517-6cec79bbec56",
-      "requestId": "1770715048119_46e2oy",
-      "userId": "dev_1770713023613_rlx2e497",
-      "language": "tr",
-      "mode": "C",
-      "dreamText": "Bir kütüphanede tek başıma oturuyordum; raflar sonsuz gibiydi. Kitapların sırtında isim yok, sadece tarih vardı. Birini açtım: sayfalar boştu ama kelimeler fısıltı gibi kulağıma doluyordu. Görevli bir kedi, bana mühür uzattı; mührün üzerinde kalp ve kilit simgesi vardı. Bastığım anda tavan açıldı, i",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 12,
-      "resultJson": {
-        "overall": "Sonsuz bilgi arayışın, içsel rehberliğe duyduğun ihtiyacı gösteriyor. Bilinmeyenle yüzleşmek, seni yeni bir dönüşüme hazırlıyor.",
-        "beats": [
-          "Kütüphane, aradığın bilginin ve keşfedilecek potansiyelin simgesi.",
-          "Boş sayfalar, belirsizlikle dolu ama içsel sezgilerin seni yönlendiriyor.",
-          "Kedi ve mühür, kalbini açma ve içsel kapıları kilitleme ihtiyacını temsil ediyor."
-        ],
-        "nextStep": "Bu hafta içsel sezgilerine daha fazla kulak ver.",
-        "plan": [
-          "24 saat: Gün içinde 5 dakikanı sessiz bir ortamda düşünmeye ayır.",
-          "7 gün: Her gün bir kitap veya makale oku, notlar al.",
-          "Sınır: Ben artık başkalarının beklentileriyle sınırlanmıyorum."
-        ],
-        "keywords": [
-          "bilgi",
-          "belirsizlik",
-          "sezgi"
-        ],
-        "journal": "Hangi içsel sezgilerimi daha fazla dinlemeliyim?",
-        "upsellSymbol": {
-          "symbol": "Fısıltı kelimeler",
-          "insight": "Fısıltılar, duyulmayan ya da bastırılan düşüncelerin sesi olabilir. İçsel sesin sana ulaşmak istiyor. Belki de kendine daha fazla kulak vermelisin."
-        }
-      },
-      "upsellUnlocked": true,
-      "upsellSymbol": "Fısıltı kelimeler",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T09:17:34.195Z"
-    },
-    {
-      "id": "9ae425ab-154f-4575-8f9e-2ff8ac534941",
-      "requestId": "1770718704421_4brtlw",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Ananı avradını siketim orospı çocuğu",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Rüya, yoğun bir öfke ve hayal kırıklığına işaret ediyor. İçsel çatışmaların yüzeye çıkmış olabilir.",
-        "beats": [
-          "Küfür, bastırılmış duyguların dışa vurumu olabilir.",
-          "Hakaret, kendinle veya başkalarıyla olan içsel çatışmalarına işaret edebilir."
-        ],
-        "nextStep": "Bu hafta duygularını ifade etmenin sağlıklı yollarını ara.",
-        "keywords": [
-          "öfke",
-          "çatışma",
-          "ifade"
-        ],
-        "journal": "Son zamanlarda seni en çok ne kızdırıyor?",
-        "upsellSymbol": {
-          "symbol": "Sözün Gücü",
-          "insight": "Kullandığın kelimeler, senin ve başkalarının üzerindeki etkisini yansıtıyor. Söylediklerinin ardında yatan niyetleri ve bunların sonuçlarını sorgulaman faydalı olabilir. İletişim tarzını gözden geçirmek, ilişkilerinde denge kurmana yardımcı olabilir."
-        }
-      },
-      "upsellCandidates": [
-        {
-          "symbol": "Öfke Patlaması",
-          "hint": "Ani duygusal tepkilerle yüzleşme.",
-          "insight": "Bu rüya, içinde biriken öfkenin kontrolsüzce dışa vurulabileceğini gösteriyor. Duygularını ifade etme biçimlerini gözden geçirmen gerekebilir. Yoğun duygusal tepkiler, iletişim kanallarını zorlayabilir."
-        },
-        {
-          "symbol": "Sözün Gücü",
-          "hint": "Kelimelerin etkisi üzerine düşün.",
-          "insight": "Kullandığın kelimeler, senin ve başkalarının üzerindeki etkisini yansıtıyor. Söylediklerinin ardında yatan niyetleri ve bunların sonuçlarını sorgulaman faydalı olabilir. İletişim tarzını gözden geçirmek, ilişkilerinde denge kurmana yardımcı olabilir."
-        },
-        {
-          "symbol": "Kimlik Mücadelesi",
-          "hint": "Kendilik algını sorgulama zamanı.",
-          "insight": "Bu rüya, kendi kimliğinle ilgili yaşadığın içsel çatışmalara işaret edebilir. Başkalarının senin hakkındaki düşünceleri ile kendi öz algın arasında bir denge kurmaya çalışıyor olabilirsin. Bu süreç, kendini daha iyi tanıman için bir fırsat sunabilir."
-        }
-      ],
-      "upsellUnlocked": true,
-      "upsellSymbol": "Sözün Gücü",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T10:18:39.393Z"
-    },
-    {
-      "id": "85921bbd-13bd-444b-a35f-12b21073b05a",
-      "requestId": "1770718868252_blvgpr",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "B",
-      "dreamText": "Dar bir sokakta yağmur yağıyordu ama damlalar yere düşmeden havada asılı kalıyordu. Bir dükkân camında kendi yansımam yerine, yaşlı bir versiyonum bana bakıyordu. “Geç kaldın” dedi, sesi camın içinden geldi. Tam koşmaya başladım, ayaklarım suya değil kuma basıyordu. Cep telefonum çaldı: ekranda sade",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 22,
-      "resultJson": {
-        "overall": "Geçmişinle yüzleşmekten kaçınıyor gibisin. Zamanın hızla geçtiğini fark ediyorsun ama adım atmakta tereddüt ediyorsun. Kendi yolunda bir engel gibi duruyorsun.",
-        "beats": [
-          "Yağmur damlalarının havada asılı kalması: Hayatındaki belirsizlikler seni duraksatıyor.",
-          "Dükkân camındaki yaşlı versiyon: Geçmişinle veya geleceğinle ilgili endişelerin var.",
-          "Camdan gelen sesin 'Geç kaldın' demesi: Zamanın seni beklemediğini hissediyorsun.",
-          "Koşmaya başladığında ayaklarının kuma basması: İlerlemeye çalışıyorsun ama zemin sağlam değil.",
-          "Çalan telefonun tamamlanmamış mesajı: Önemli bir iletişim eksikliği seni rahatsız ediyor."
-        ],
-        "pattern": "Zamanın her geçen gün daha da hızlandığını hissediyorsun ama adım atmaktan çekiniyorsun. Gelecek kaygısı ve geçmiş hesaplaşması arasında sıkışmışsın. Kontrol edemediğin unsurlar seni durduruyor.",
-        "nextStep": "Bu hafta bir konuda küçük bir adım atarak kendine güven kazanmaya çalış.",
-        "keywords": [
-          "gecikme",
-          "belirsizlik",
-          "endişe"
-        ],
-        "journal": "Geçmişin hangi yönleri seni ilerlemekten alıkoyuyor?",
-        "upsellSymbol": {
-          "symbol": "Havada Asılı Yağmur",
-          "insight": "Yağmur damlalarının havada asılı kalması, hayatında askıda kalan meseleleri işaret edebilir. Belki de bir karar vermekte zorlanıyorsun veya bir şeylerin durdurulamaz olduğunu hissediyorsun. Bu duraklama, içsel bir değerlendirme süreci olabilir."
-        }
-      },
-      "upsellCandidates": [
-        {
-          "symbol": "Dar Sokak",
-          "hint": "Kısıtlanmış hissetme.",
-          "insight": "Dar bir sokakta olmak, hayatında bir çıkış yolu bulmakta zorlandığını gösterebilir. Sıkışmışlık hissi, özgürlük arayışını tetikliyor olabilir. Belki de seçimlerin sınırlı olduğunu düşünüyorsun."
-        },
-        {
-          "symbol": "Havada Asılı Yağmur",
-          "hint": "Zamanın durduğu an.",
-          "insight": "Yağmur damlalarının havada asılı kalması, hayatında askıda kalan meseleleri işaret edebilir. Belki de bir karar vermekte zorlanıyorsun veya bir şeylerin durdurulamaz olduğunu hissediyorsun. Bu duraklama, içsel bir değerlendirme süreci olabilir."
-        },
-        {
-          "symbol": "Kum Zemini",
-          "hint": "Güvenilir olmayan temeller.",
-          "insight": "Ayaklarının kumda ilerlemesi, belki de hayatında sağlam bir zemine ihtiyaç duyduğunu gösteriyor. İlerlemek istiyorsun ama temellerin sarsıntılı. Kararlar alırken sağlam bir plan yapmaya ihtiyaç duyuyor olabilirsin."
-        }
-      ],
-      "upsellUnlocked": true,
-      "upsellSymbol": "Havada Asılı Yağmur",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T10:21:24.682Z"
-    },
-    {
-      "id": "0f9973a7-8c8a-497b-88b5-c1c679847bf5",
-      "requestId": "1770720533484_vb6446",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Dar bir sokakta yağmur yağıyordu ama damlalar yere düşmeden havada asılı kalıyordu. Bir dükkân camında kendi yansımam yerine, yaşlı bir versiyonum bana bakıyordu. “Geç kaldın” dedi, sesi camın içinden geldi. Tam koşmaya başladım, ayaklarım suya değil kuma basıyordu. Cep telefonum çaldı",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Belirsizlik ve zamanla yarış içinde hissediyorsun. Geleceğe dair kaygıların, seni eski kararlarını sorgulamaya itiyor.",
-        "beats": [
-          "Yağmurun havada asılı kalması, beklediğin değişimlerin bir türlü gerçekleşmediğini gösteriyor.",
-          "Yaşlı versiyonun 'Geç kaldın' demesi, kaçırıldığını düşündüğün fırsatların ağırlığını hissettiriyor.",
-          "Ayaklarının kuma basması, kararsızlık ve ilerleme kaydedememe hissini yansıtıyor."
-        ],
-        "nextStep": "Bu hafta geçmişe değil, geleceğe odaklanarak bir adım at.",
-        "keywords": [
-          "zaman",
-          "belirsizlik",
-          "fırsat"
-        ],
-        "journal": "Hangi fırsatları kaçırdığını düşünüyorsun ve bu seni nasıl etkiliyor?"
-      },
-      "upsellCandidates": [
-        {
-          "symbol": "Dar Sokak",
-          "hint": "Sıkışmışlık ve sınırlı alan hissi.",
-          "insight": "Dar bir sokakta olman, kendini sıkışmış ya da sınırlı hissettiğin bir durumu simgeliyor olabilir. Belki de yaşamında daha fazla alan ya da esneklik arıyorsun. Bu his, seni harekete geçmeye ya da sınırları zorlamaya teşvik edebilir."
-        },
-        {
-          "symbol": "Dükkân Camı",
-          "hint": "Kendi yansıman yerine başkasını görmek.",
-          "insight": "Camda kendi yansımana baktığında, yaşlı bir versiyonunu görmen, gerçek benliğinle ilgili keşfedilmeyi bekleyen bir yönü işaret edebilir. Başka bir yönden, gelecekteki beklentilerinle ya da korkularınla yüzleşmen gerektiğine dair bir işaret olabilir."
-        },
-        {
-          "symbol": "Cep Telefonu",
-          "hint": "Ulaşılabilirlik ve iletişim.",
-          "insight": "Cep telefonunun çalması, iletişim kurma ya da bağlantı kurma ihtiyacını simgeliyor olabilir. Belki de bir mesaj ya da haber bekliyorsun, ya da birisiyle derinlemesine konuşma arzun var. Bu sembol, içsel ya da dışsal iletişim kanallarına dair dikkatini çekiyor."
-        }
-      ],
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T10:49:06.102Z"
-    },
-    {
-      "id": "c5c7d62f-ba0d-4d3e-8451-b4b9d24e4520",
-      "requestId": "1770720578988_gsimew",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "B",
-      "dreamText": "Dar bir sokakta yağmur yağıyordu ama damlalar yere düşmeden havada asılı kalıyordu. Bir dükkân camında kendi yansımam yerine, yaşlı bir versiyonum bana bakıyordu. “Geç kaldın” dedi, sesi camın içinden geldi. Tam koşmaya başladım, ayaklarım suya değil kuma basıyordu. Cep telefonum çaldı",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 22,
-      "resultJson": {
-        "overall": "Rüyanda zamanın geçişi ve kontrol edemediğin değişimler öne çıkıyor. Geçmiş ve gelecekle ilgili endişelerin var. Kaçırdığın fırsatlar ya da yapılması gerekenler zihnini meşgul ediyor.",
-        "beats": [
-          "Yağmur damlaları havada asılı kalıyor, değişimi kabul etmekte zorlanıyorsun.",
-          "Yaşlı versiyonunla karşılaşmak, zamanın geçişine dair kaygılarını simgeliyor.",
-          "\"Geç kaldın\" uyarısı, fırsatları kaçırma korkusunu yansıtıyor.",
-          "Koşmaya başlamak ama kumda yürümek, hedeflerine ulaşmanın zorluğunu gösteriyor.",
-          "Cep telefonunun çalması, dış dünyadan gelen beklentilerin ağırlığını hissettiriyor."
-        ],
-        "pattern": "Geçmişteki kaçırdıklarına odaklanmak, bugünü kaçırmana neden oluyor. Sürekli olarak bir şeyleri yetiştirme, tamamlama telaşındasın. Bu da seni yorgun ve gergin hissettiriyor.",
-        "nextStep": "Bu hafta, bir şeyleri yetiştirmek yerine bir an durup, içinde bulunduğun anı değerlendirmeye çalış.",
-        "keywords": [
-          "zaman",
-          "değişim",
-          "endişe"
-        ],
-        "journal": "Hangi fırsatları kaçırdığını düşünüyorsun?",
-        "upsellSymbol": {
-          "symbol": "Camın İçinden Gelen Ses",
-          "insight": "Camın içinden gelen ses, belki de kendi iç sesini veya bilinçaltındaki mesajları duymazdan geldiğini işaret ediyor. Bu, içsel çatışmaların veya bastırılmış duyguların bir yansıması olabilir. Kendi iç sesine kulak vermen gerektiğini hatırlatıyor."
-        }
-      },
-      "upsellCandidates": [
-        {
-          "symbol": "Dar Sokak",
-          "hint": "Sıkışmış hissettiğin bir durumu işaret ediyor.",
-          "insight": "Dar sokak, hayatında kendini sıkışmış veya sınırlanmış hissettiğin bir durumu simgeliyor olabilir. Bu, karar verme sürecinde hissettiğin baskı veya özgürlük alanının daralması ile ilgili olabilir. Belki de daha geniş bir perspektife ihtiyaç duyuyorsun."
-        },
-        {
-          "symbol": "Camın İçinden Gelen Ses",
-          "hint": "Kendi içsel sesini duymazdan geliyor olabilirsin.",
-          "insight": "Camın içinden gelen ses, belki de kendi iç sesini veya bilinçaltındaki mesajları duymazdan geldiğini işaret ediyor. Bu, içsel çatışmaların veya bastırılmış duyguların bir yansıması olabilir. Kendi iç sesine kulak vermen gerektiğini hatırlatıyor."
-        },
-        {
-          "symbol": "Kuma Basmak",
-          "hint": "Zeminin kayganlığına dikkat çekiyor.",
-          "insight": "Kuma basmak, hayatında sağlam bir zemine ihtiyaç duyduğunu gösteriyor olabilir. Belki de şu anda belirsiz veya güvensiz bir durumda ilerlemeye çalışıyorsun. Ayaklarının altındaki zemini daha sağlam hale getirmek için hangi adımları atabileceğini düşün."
-        }
-      ],
-      "upsellUnlocked": true,
-      "upsellSymbol": "Camın İçinden Gelen Ses",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T10:49:54.975Z"
-    },
-    {
-      "id": "9b1d2280-b7c9-48b2-b7ea-302165a508eb",
-      "requestId": "1770720616129_qjtuph",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Dar bir sokakta yağmur yağıyordu ama damlalar yere düşmeden havada asılı kalıyordu. Bir dükkân camında kendi yansımam yerine, yaşlı bir versiyonum bana bakıyordu. “Geç kaldın” dedi, sesi camın içinden geldi. Tam koşmaya başladım, ayaklarım suya değil kuma basıyordu. Cep telefonum çaldı: ekranda sade",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Zamanın geçişi ve kontrol edemediğin şeyler seni kaygılandırıyor. Geçmiş ve gelecek arasında sıkışmış hissediyorsun. Kendine dair beklentilerin seni zorluyor.",
-        "beats": [
-          "Yağmur damlalarının havada asılı kalması, zamanın durmasını istediğin anları yansıtıyor.",
-          "Yaşlı versiyonun, geleceğe dair endişelerini ve kaçırılmış fırsatlar duygusunu simgeliyor.",
-          "Kuma basman, sağlam bir zemin arayışını ve belirsizlikle yüzleşmeni gösteriyor."
-        ],
-        "nextStep": "Bu hafta zaman yönetimine dair bir adım at, küçük hedefler belirle.",
-        "keywords": [
-          "zaman",
-          "beklenti",
-          "belirsizlik"
-        ],
-        "journal": "Hangi anlarda zamanın durmasını istiyorsun?",
-        "upsellSymbol": {
-          "symbol": "Camın İçinden Gelen Ses",
-          "insight": "Camın içinden gelen ses, senin içsel rehberliğini ve kendine dair sorgularını işaret ediyor. Bu ses, kendi iç dünyanla daha derin bir bağlantı kurman gerektiğine dair bir çağrı olabilir. İçsel sesini dinlemek, seni daha iyi bir kendilik farkındalığına yönlendirebilir."
-        }
-      },
-      "upsellCandidates": [
-        {
-          "symbol": "Camın İçinden Gelen Ses",
-          "hint": "Kendinle yaptığın içsel bir diyaloğu temsil ediyor.",
-          "insight": "Camın içinden gelen ses, senin içsel rehberliğini ve kendine dair sorgularını işaret ediyor. Bu ses, kendi iç dünyanla daha derin bir bağlantı kurman gerektiğine dair bir çağrı olabilir. İçsel sesini dinlemek, seni daha iyi bir kendilik farkındalığına yönlendirebilir."
-        }
-      ],
-      "upsellUnlocked": true,
-      "upsellSymbol": "Camın İçinden Gelen Ses",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T10:50:26.162Z"
-    },
-    {
-      "id": "b1789336-3fad-465e-94c5-48d93e600498",
-      "requestId": "profanity_test_2",
-      "userId": "test-profanity-001",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Ananı sikeyim rüyamda peşimden köpekler kovalıyordu amk uçurumdan atladım düştüm düştüm yerden kalktım yine aynı yerdeyim siktiğimin yerinde eski sevgilim gülüyordu orospu yüzüme bakıp kahkaha atıyordu sonra her yer karanlık oldu siktir olup gittim ama bir yere varamadım",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Kaçış hissi ve yüzleşme korkusu dikkat çekiyor. Geçmişten gelen bir hayalet seni rahatsız ediyor. Karanlıkta kaybolmuş hissediyorsun.",
-        "beats": [
-          "Köpeklerin kovalaması, kaçış arzunu ve korkularının seni sıkıştırmasını simgeliyor.",
-          "Eski sevgilinin gülmesi, geçmişteki ilişkilerin hala seni etkilediğini gösteriyor.",
-          "Karanlıkta kaybolman, belirsizlik ve çıkış yolu bulamama hissini ifade ediyor."
-        ],
-        "nextStep": "Bu hafta korkularınla yüzleşmek için küçük bir adım at.",
-        "keywords": [
-          "kaçış",
+          "kısıtlanma",
           "geçmiş",
-          "belirsizlik"
+          "engeller"
         ],
-        "journal": "Geçmişte seni en çok rahatsız eden olay neydi?"
+        "journal": "Peşinden gelen ayak sesleri hangi duygunu tetikliyor?"
       },
       "upsellCandidates": [
         {
-          "symbol": "Uçurumdan Atlamak",
-          "hint": "Kendini zor bir durumda bulduğun hissi.",
-          "insight": "Uçurumdan atlamak, kontrol edemediğin bir duruma sürüklenmek anlamına gelebilir. Hayatında büyük bir risk almış ya da almak üzere olabilirsin. Bu durum, seni korkutuyor ve sonuçlarından endişe duyuyorsun."
-        }
-      ],
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T11:15:40.538Z"
-    },
-    {
-      "id": "80abb792-4114-4e51-809c-806cbce6ffbb",
-      "requestId": "1770722705530_cyraqp",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "C",
-      "dreamText": "lsof -ti:3001 | xargs kill -9 2>/dev/null; sleep 1; cd /Users/dogukanarik/Desktop/TAROT-NEW/backend && node index.js",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 12,
-      "resultJson": {
-        "overall": "Bu metin rüya anlatımı gibi görünmüyor.",
-        "beats": [
-          "Metnin arkasındaki duygu tonu dikkat çekiyor.",
-          "Asıl soruyu netleştirmek faydalı olabilir."
-        ],
-        "nextStep": "Bu hafta bir rüyanı 2–3 sahneyle yaz.",
-        "keywords": [
-          "netlik",
-          "niyet",
-          "odak"
-        ],
-        "journal": "Şu an neye tepki veriyorsun?"
-      },
-      "upsellCandidates": [],
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T11:25:07.303Z"
-    },
-    {
-      "id": "e92f1645-3706-4f9c-8fe5-38f196f0af24",
-      "requestId": "1770722733321_5p0fp9",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "C",
-      "dreamText": "Dün gece kendimi terk edilmiş bir lunaparkta buldum. Dönme dolap yavaşça kendi kendine dönüyor, kabinlerde kimse yoktu. Her turda ışıklar sönüp geri yanıyor, sanki bir şey “başla” diyordu. Elimde paslı bir anahtar vardı; hangi kapıyı açacağını bilmiyordum. Uzaktan çocuk kahkahası değil, metal sürtün",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 12,
-      "resultJson": {
-        "overall": "Terk edilmiş lunapark, içsel boşluk veya yönsüzlük hissini yansıtıyor olabilir. Paslı anahtar, keşfetmediğin potansiyel veya fırsatları simgeliyor. Bu hislerinle yüzleşmek, seni ileriye taşıyabilir.",
-        "beats": [
-          "Dönme dolabın kendi kendine dönmesi, kontrol edemediğin döngüleri işaret ediyor.",
-          "Işıkların yanıp sönmesi, belirsizlik veya kararsızlık anlarını gösteriyor.",
-          "Paslı anahtar, unutulmuş ya da göz ardı edilen bir beceriye dikkat çekiyor.",
-          "Uzaktaki kahkaha, geçmişteki bir neşeyi veya masumiyeti hatırlatıyor."
-        ],
-        "nextStep": "Bu hafta, her gün 5 dakika kendine yeni bir şey öğretmeye ayır.",
-        "plan": [
-          "24 saat: Elindeki bir projeye veya soruna kısa bir not düş.",
-          "7 gün: Her gün bir becerini veya ilginç bir konuyu 5 dakika çalış.",
-          "Sınır: Ben artık belirsizlikten korkmuyorum, onu keşif için bir fırsat olarak görüyorum."
-        ],
-        "keywords": [
-          "belirsizlik",
-          "kontrol",
-          "keşif"
-        ],
-        "journal": "Şu an hangi konuda yön arıyorsun?"
-      },
-      "upsellCandidates": [],
-      "upsellUnlocked": false,
-      "upsellSymbol": null,
-      "upsellCost": null,
-      "createdAt": "2026-02-10T11:25:46.008Z"
-    },
-    {
-      "id": "b62b39f3-a70b-4b55-bc3b-8835359694f3",
-      "requestId": "1770722780179_72fc07",
-      "userId": "dev_1770716982010_ns74ratd",
-      "language": "tr",
-      "mode": "A",
-      "dreamText": "Dün gece kendimi terk edilmiş bir lunaparkta buldum. Dönme dolap yavaşça kendi kendine dönüyor, kabinlerde kimse yoktu. Her turda ışıklar sönüp geri yanıyor, sanki bir şey “başla” diyordu. Elimde paslı bir anahtar vardı; hangi kapıyı açacağını bilmiyordum. Uzaktan çocuk kahkahası değil, metal sürtün",
-      "feelingTag": null,
-      "lifeContextTag": null,
-      "wasFree": false,
-      "gemstoneCost": 10,
-      "resultJson": {
-        "overall": "Terk edilmiş lunapark, içsel karmaşayı ve belirsizliği yansıtıyor. Kendi kendine dönen dönme dolap, kontrol dışı hissettiğin bazı durumları işaret ediyor. Elindeki paslı anahtarla yüzleş; belirsizliğe karşı adım atmak seni duraklatıyor olabilir.",
-        "beats": [
-          "Dönme dolap, tekrar eden düşünce döngülerine işaret ediyor.",
-          "Paslı anahtar, çözülmemiş bir sorumluluk veya fırsatı temsil ediyor.",
-          "Işıkların sönüp yanması, kararsızlık ve belirsizlik arasında gidip geldiğini gösteriyor."
-        ],
-        "nextStep": "Bu hafta, belirsiz hissettiğin bir konuda küçük bir adım atmayı dene.",
-        "keywords": [
-          "belirsizlik",
-          "kontrol",
-          "adım"
-        ],
-        "journal": "Hangi konuda kontrolü kaybettiğini hissediyorsun?",
-        "upsellSymbol": {
-          "symbol": "Terk edilmiş lunapark",
-          "insight": "Kendini izole veya terk edilmiş hissediyor olabilirsin. Belki de geçmişte seni mutlu eden şeyler artık aynı etkiyi yaratmıyor. İçsel neşe kaynağını yeniden keşfetmen gerekebilir."
-        }
-      },
-      "upsellCandidates": [
-        {
-          "symbol": "Terk edilmiş lunapark",
-          "hint": "Boş mekan, içsel yalnızlığı işaret ediyor.",
-          "insight": "Kendini izole veya terk edilmiş hissediyor olabilirsin. Belki de geçmişte seni mutlu eden şeyler artık aynı etkiyi yaratmıyor. İçsel neşe kaynağını yeniden keşfetmen gerekebilir."
+          "symbol": "merdiven",
+          "hint": "Dar bir merdivenden iniyorsun.",
+          "insight": "Merdiven, iniş ve çıkışlarla dolu bir süreçte olduğunu açıyor. Kendi iç dünyanda derinleşirken, bastığın her basamak seni biraz daha içine çekiyor."
         }
       ],
       "upsellUnlocked": true,
-      "upsellSymbol": "Terk edilmiş lunapark",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T11:26:40.329Z"
+      "upsellSymbol": "merdiven",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:42:27.905Z",
+      "upsellInsight": "Merdiven, iniş ve çıkışlarla dolu bir süreçte olduğunu açıyor. Kendi iç dünyanda derinleşirken, bastığın her basamak seni biraz daha içine çekiyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Her zaman aynı çıkmazda kalıyorum, kapılar hep kapalı",
+      "journalPlusInsight": "Dar alanlar ve kapalı kapılar, seni kısıtlayan ve sınırlarını zorlayan durumları büyütüyor. Peşindeki sesler, sürekli bir baskı altında hissetme ve kaçış ihtiyacını tetikliyor. Çıkmazda kalma duygusu, geçiş yapamadığın eski deneyimleri geri çağırıyor.",
+      "journalPlusCost": 5
     },
     {
-      "id": "3e1311b9-8c30-4412-9c5a-e51a9fc960cf",
-      "requestId": "1770722820636_43wuru",
-      "userId": "dev_1770716982010_ns74ratd",
+      "id": "53ed75c5-f050-4b8b-8898-8fad7f194a34",
+      "requestId": "stress_1_1770979350883",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Rüyamda cam bir asansördeydim, asansör yukarı çıkıyordu. Bir anda kabin sallandı ve düğmeler silindi. Elimde sadece tek anahtar kaldı.",
+      "feelingTag": "endişe",
+      "lifeContextTag": "iş",
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Kontrol kaybı ve belirsizlik endişeni tetikliyor. İş ortamında güvendiğin araçların yetersiz kalması seni kıstırıyor. Tek bir anahtara bel bağlamak seni sıkıştırıyor.",
+        "beats": [
+          "Cam asansörde yukarı çıkmak, yükselme çabanı netleştiriyor.",
+          "Düğmelerin silinmesi, kontrol kaybı korkunu büyütüyor.",
+          "Elindeki tek anahtar, güvendiğin tek bir çözümle sınırlı kaldığını açıyor."
+        ],
+        "nextStep": "Bu hafta işindeki belirsizlikleri ve endişeleri yazıya dök.",
+        "keywords": [
+          "kontrol",
+          "belirsizlik",
+          "anahtar"
+        ],
+        "journal": "Kendini hangi durumlarda kıstırılmış hissediyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "cam asansör",
+          "hint": "Cam asansörün içindesin ve yukarı çıkıyorsun.",
+          "insight": "Şeffaf bir ortamda yükselmek, çevrendeki her şeyi açıkça görme isteğini ancak aynı zamanda savunmasız hissettiğini düşündürüyor. Bu durum, iş ortamında daha fazla görünür olma arzunla birlikte gelen bir kırılganlık duygusunu sıkıştırıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "cam asansör",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:42:45.781Z",
+      "upsellInsight": "Şeffaf bir ortamda yükselmek, çevrendeki her şeyi açıkça görme isteğini ancak aynı zamanda savunmasız hissettiğini düşündürüyor. Bu durum, iş ortamında daha fazla görünür olma arzunla birlikte gelen bir kırılganlık duygusunu sıkıştırıyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "İş yerinde sürekli baskı altındayım amk patronun da anasını sikeyim",
+      "journalPlusInsight": "Baskı ve kontrol kaybı seni hızla savunmaya geçiriyor. Dış etkenlere karşı tetikte olmak, içsel çatışmalarını büyütüyor. Belirsizlik, harekete geçme gücünü yavaşlatıyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "4914b306-e20d-4d89-bb09-fcc20f540b79",
+      "requestId": "stress_2_1770979367816",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Rüyamda bir masada oturuyordum, tabakta yemek vardı ama çatal bıçak yoktu. Yanımdaki kişi konuştu ama ağzı görünmüyordu.",
+      "feelingTag": "şaşkınlık",
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Görünürde olanla ulaşamadıkların arasında sıkışmış gibisin. İletişim kurmak istiyorsun ama araçların eksik. Bu eksiklik seni şaşırtıyor.",
+        "beats": [
+          "Masada oturmak, mevcut durumla başa çıkma yollarını aradığını açıyor.",
+          "Tabakta yemek ama çatal bıçak olmaması, kaynakların sınırlı olduğunu netleştiriyor.",
+          "Yanındaki kişinin konuşması ama ağzının görünmemesi, iletişimde belirsizliği tetikliyor."
+        ],
+        "nextStep": "Bu hafta iletişimin eksik kaldığı bir durumu yaz.",
+        "keywords": [
+          "iletişim",
+          "eksiklik",
+          "belirsizlik"
+        ],
+        "journal": "Hangi konuda anlaşılmadığını hissediyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "masa",
+          "hint": "Masa başında oturuyorsun.",
+          "insight": "Masa, sabit bir zeminde olmaktan gelen güveni ve aynı anda hareketsiz kalmanın getirdiği sabırsızlığı büyütüyor. Sabitlik ve hareket arasında denge arıyorsun."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "masa",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:42:54.504Z",
+      "upsellInsight": "Masa, sabit bir zeminde olmaktan gelen güveni ve aynı anda hareketsiz kalmanın getirdiği sabırsızlığı büyütüyor. Sabitlik ve hareket arasında denge arıyorsun.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Yanımdakiler hep bir şey söylüyor ama anlamıyorum",
+      "journalPlusInsight": "Belirsizlik, çevrendekilerin söylediklerini anlamlandırmanı zorlaştırıyor. Anlam eksikliği, içsel bir iletişim bariyerini tetikliyor. Bu bariyer, seni anlam arayışında bırakıyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "6eefb47b-2a9a-43c8-b589-cc09086e4d57",
+      "requestId": "stress_3_1770979376077",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Rüyamda karanlık bir sokakta yürüyordum. Telefonumun ekranı sürekli kapanıyordu. Bir tabelanın ışığı yanıp sönüyordu ama yazıyı okuyamadım.",
+      "feelingTag": "korku",
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Karanlık sokakta yürümek, belirsizlik ve güvensizlik hislerini tetikliyor. Telefonun ekranının kapanması, kontrol kaybı ve iletişimde kopukluk korkusunu açığa çıkarıyor.",
+        "beats": [
+          "Karanlık sokakta yürümek, belirsizlik ve yalnızlık duygularını harekete geçiriyor.",
+          "Telefonun ekranının sürekli kapanması, kontrol kaybı ve çaresizlik hissini tetikliyor.",
+          "Tabelanın ışığının yanıp sönmesi, kafa karışıklığı ve yönsüzlük hissini sıkıştırıyor."
+        ],
+        "nextStep": "Bu hafta karanlık bir ortamda birkaç dakika sessizce otur ve hislerini gözlemle.",
+        "keywords": [
+          "belirsizlik",
+          "kontrol kaybı",
+          "kafa karışıklığı"
+        ],
+        "journal": "Kendimi güvende hissetmediğim anlarda nasıl tepki veriyorum?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "sokak",
+          "hint": "Karanlık bir sokakta yürüyorsun.",
+          "insight": "Sokak, seni belirsizlik ve yalnızlık içinde bırakıyor. Tanıdık olmayan bu ortamda, neyin ileride olduğunu bilememen, içsel bir tedirginlik yaratıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "sokak",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:43:10.979Z",
+      "upsellInsight": "Sokak, seni belirsizlik ve yalnızlık içinde bırakıyor. Tanıdık olmayan bu ortamda, neyin ileride olduğunu bilememen, içsel bir tedirginlik yaratıyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Geceleri yalnız kalmaktan nefret ediyorum",
+      "journalPlusInsight": "Güvensizlik, seni çevrenden izole ediyor. Kontrol kaybı hissi, yalnızlık korkusunu büyütüyor. Belirsizlik, içsel güvenlik arayışını tetikliyor. Dış dünyayla bağlantı kopukluğu, içsel karmaşayı derinleştiriyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "f0e7c22e-598a-45bf-aac8-a7be555ed089",
+      "requestId": "stress_4_1770979393776",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Rüyamda denize bakıyordum, su çok sakindi. Bir anda suyun üstünde çatlaklar oluştu, sanki buz gibi kırılıyordu. Uzakta küçük bir tekne durdu.",
+      "feelingTag": "merak",
+      "lifeContextTag": "sağlık",
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Sakinlik aniden kırılganlıkla değişiyor. Sağlığınla ilgili belirsizlikler kendi gözlemlerinle yüzleşmeni tetikliyor.",
+        "beats": [
+          "Denize bakmak, içsel huzuru ve mevcut durumu gözlemleme ihtiyacını açıyor.",
+          "Su üzerindeki çatlaklar, beklenmedik değişikliklerin kırılganlığını görünür kılıyor.",
+          "Küçük tekne, uzak bir çözüm veya destek arayışını geri çağırıyor."
+        ],
+        "nextStep": "Bu hafta sağlığınla ilgili bir kontrol veya araştırma yap.",
+        "keywords": [
+          "kırılganlık",
+          "gözlem",
+          "belirsizlik"
+        ],
+        "journal": "Hangi sağlık konusu seni en çok düşündürüyor?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "deniz",
+          "hint": "Deniz kenarında duruyorsun.",
+          "insight": "Deniz, içsel dünyan ve duygusal durumun hakkında ipuçları taşır. Sakin yüzeyi, huzur ve denge arayışını yansıtabilir."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "deniz",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:43:26.130Z",
+      "upsellInsight": "Deniz, içsel dünyan ve duygusal durumun hakkında ipuçları taşır. Sakin yüzeyi, huzur ve denge arayışını yansıtabilir."
+    },
+    {
+      "id": "8a8b2bf3-d7c1-4792-9322-f8245fa01323",
+      "requestId": "stress_5_1770979406139",
+      "userId": "dev_stress_test_001",
       "language": "tr",
       "mode": "B",
-      "dreamText": "Dün gece kendimi terk edilmiş bir lunaparkta buldum. Dönme dolap yavaşça kendi kendine dönüyor, kabinlerde kimse yoktu. Her turda ışıklar sönüp geri yanıyor, sanki bir şey “başla” diyordu. Elimde paslı bir anahtar vardı; hangi kapıyı açacağını bilmiyordum. Uzaktan çocuk kahkahası değil, metal sürtün",
-      "feelingTag": null,
+      "dreamText": "Rüyamda eski evimizin salonundaydım. Perdeler kapalıydı, içerisi loştu. Masada yarım yazılmış bir mektup ve yanında kırık bir kalem vardı. Pencereden baktım, bahçede tek bir sandalye duruyordu.",
+      "feelingTag": "hüzün",
+      "lifeContextTag": "aile",
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Geçmişe dair bir özlem ve yarım kalmışlık hissi açığa çıkıyor. Ailevi bağlar ve tamamlanmamış duygusal süreçler seni etkiliyor. Bu durum, eski anıların ve eksik kalan iletişimin tetiklediği bir huzursuzluk yaratıyor. İleriye dönük, bu duyguları fark etmek ve kabul etmek önemli.",
+        "beats": [
+          "Perdelerin kapalı olması, bastırılmış duyguları görünür kılıyor.",
+          "Loş ortam, belirsiz ve tam olarak ifade edilememiş durumları netleştiriyor.",
+          "Yarım kalmış mektup, iletişimdeki eksiklikleri ve söylenemeyenleri büyütüyor.",
+          "Kırık kalem, ifade edemediğin ya da tamamlayamadığın düşünceleri sertleştiriyor.",
+          "Tek sandalye, yalnızlık ve içsel bir arayışı geri çağırıyor."
+        ],
+        "pattern": "Perdeler kapalı olması, geçmişten gelen duygusal yükleri tetikliyor. Mektup, iletişimdeki eksikliklere karşı geliştirdiğin refleksin. Sandalye, kısa vadede yalnızlık hissini artırıyor; uzun vadede içsel bir denge arayışını hızlandırıyor.",
+        "nextStep": "Bu hafta, eski evdeki anılarınla ilgili bir yazı yaz ve hissettiklerini ifade et.",
+        "keywords": [
+          "özlem",
+          "eksiklik",
+          "iletişim"
+        ],
+        "journal": "Ailende hangi duygusal bağlantılar eksik kaldı?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "eski evimizin salonu",
+          "hint": "Eski evin salonunda bulunuyorsun.",
+          "insight": "Eski evin salonu, geçmişteki anıların ve duygularınla yüzleşmene olanak tanıyor. Bu mekan, eski ilişkilerin ve hatıraların zihninde yeniden canlanmasına neden oluyor."
+        },
+        {
+          "symbol": "pencere",
+          "hint": "Pencereden bahçeye bakıyorsun.",
+          "insight": "Pencere, dış dünyayla olan bağlantını ve içsel düşüncelerinle dışsal gerçeklik arasında bir köprü kurmanı sağlıyor. Bu bakış açısı, içsel dünyanla dışsal çevren arasındaki farkındalığını artırıyor."
+        },
+        {
+          "symbol": "bahçe",
+          "hint": "Bahçede tek bir sandalye duruyor.",
+          "insight": "Bahçe, içsel huzur ve dinginlik arayışını simgeliyor. Tek bir sandalye ile birleştiğinde, yalnızlık duygusunu ve kendinle baş başa kalma ihtiyacını güçlendiriyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "eski evimizin salonu",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:43:46.740Z",
+      "upsellInsight": "Eski evin salonu, geçmişteki anıların ve duygularınla yüzleşmene olanak tanıyor. Bu mekan, eski ilişkilerin ve hatıraların zihninde yeniden canlanmasına neden oluyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Babamla konuşamadan kaybettim, çok pişmanım",
+      "journalPlusInsight": "Geçmişte yarım kalan konuşmalar, bugünkü ilişkilerinde duygusal bir boşluk yaratıyor. Babayla yaşanan kayıp, derin bir pişmanlık duygusunu tetikliyor. Bu duygular, iletişimde kendini kapatma ya da bağlanma korkusunu büyütüyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "6583c8bb-dc50-436e-8c5a-cad89e157304",
+      "requestId": "stress_6_1770979429276",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Rüyamda bir pazardaydım, elimde torbalar vardı ama her adımda yırtılıp yere dökülüyordu. Tezgahtar para üstünü verirken bozukluklar avucumdan kaydı. Kalabalık üstüme geldi.",
+      "feelingTag": "hayal kırıklığı",
+      "lifeContextTag": "para",
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Rüyanda kontrol kaybı ve eksiklik hissi öne çıkıyor. Pazardaki deneyimlerin, yaşamında denge kurma çabasını ve kaynaklarını yeterince yönetememenin getirdiği hayal kırıklığını açıyor. Her adımda bir şeylerin elinden kayıp gitmesi, maddi veya manevi konularda güvensizlik duygusunu tetikliyor. Bu durum, kendine güvenini yeniden inşa etme ihtiyacını büyütüyor.",
+        "beats": [
+          "Pazardaki torbaların yırtılması, elindekileri korumakta zorlandığını netleştiriyor.",
+          "Para üstünü alırken bozuklukların avucundan kayması, fırsatları değerlendirme konusundaki endişeni sertleştiriyor.",
+          "Kalabalığın üstüne gelmesi, dış etkilere karşı savunmasız hissettiğini görünür kılıyor.",
+          "Elindeki torbaların sürekli yırtılması, sabrını ve dayanıklılığını test ediyor."
+        ],
+        "pattern": "Torbaların yırtılması, güven duygusunu sıkıştırıyor. Bozuklukların avucundan kayması, kaybetme korkusunu tetikliyor. Kalabalığın üstüne gelmesi, kısa vadede stres yaratıyor; uzun vadede sosyal ilişkilerini daraltıyor.",
+        "nextStep": "Bu hafta, kaynaklarını nasıl yönettiğine dair küçük bir günlük tut. Her gün neyi kaybettiğini veya kazandığını not et.",
+        "keywords": [
+          "kontrol",
+          "kaynak",
+          "güven"
+        ],
+        "journal": "Hayatında hangi alanlarda kontrolü kaybettiğini düşünüyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "pazar",
+          "hint": "Pazardasın, çevre kalabalık ve hareketli.",
+          "insight": "Pazar, karmaşık ya da kontrol dışı gördüğün bir çevrede var olma çabalarını açıyor. Kalabalık seni kıskaca alırken, kendinle olan bağlantılarını sıkıştırıyor."
+        },
+        {
+          "symbol": "tezgahtar",
+          "hint": "Tezgahtar sana para üstü verirken olay gerçekleşiyor.",
+          "insight": "Tezgahtar, bir başkasından aldığın destek ya da yönlendirmelerin yeterliliğini sorguluyor. İlişkilerdeki dengenin sana nasıl hissettirdiğini netleştiriyor."
+        },
+        {
+          "symbol": "bozukluklar",
+          "hint": "Bozukluklar avucundan kayıyor.",
+          "insight": "Bozukluklar, küçük ama önemli kazançların ya da detayların kontrolünü kaybetme korkusunu büyütüyor. Bu durum, dikkatini hangi alanlara daha fazla odaklaman gerektiğini geri çağırıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "pazar",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:44:03.403Z",
+      "upsellInsight": "Pazar, karmaşık ya da kontrol dışı gördüğün bir çevrede var olma çabalarını açıyor. Kalabalık seni kıskaca alırken, kendinle olan bağlantılarını sıkıştırıyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Siktir et parayı zaten biriktiremedim ömrümde",
+      "journalPlusInsight": "Kendi değerini ekonomik başarıyla ölçmek, duygusal yorgunluğu tetikliyor. Kaynak yönetimindeki zorluklar, özgüvenini sıkıştırıyor. İçsel dengeyi yeniden kurmak, duygusal yüklerini hafifletebilir.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "f9042acb-8cbc-4e7b-bb6e-66157058280b",
+      "requestId": "stress_7_1770979445342",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Rüyamda bir tren istasyonundaydım. Anonslar vardı ama kelimeler anlaşılmıyordu. Bankta otururken yanımdaki bavul kendi kendine açıldı ve içinden çocukluk fotoğrafım çıktı.",
+      "feelingTag": "özlem",
       "lifeContextTag": null,
       "wasFree": false,
       "gemstoneCost": 22,
       "resultJson": {
-        "overall": "Terk edilmiş lunapark, içsel yalnızlık ve belirsizlik hissini çağrıştırıyor. Dönme dolap ve sönüp yanan ışıklar, bir şeylerin başlayıp durduğunu, bir karar verme noktasında olduğunu gösteriyor. Paslı anahtar, potansiyel bir çözüm ya da fırsatın farkında olduğun ancak nasıl kullanacağını bilmediğin bir durumu simgeliyor.",
+        "overall": "Rüya, kişinin geçmişe duyduğu özlemi ve belirsizlikle dolu bir dönemde kendini yeniden değerlendirme isteğini yansıtıyor. Anlaşılmayan anonslar, hayatında belirsizlikleri ve bilinmezlikleri işaret ediyor. Çocukluk fotoğrafının ortaya çıkması, geçmişteki masumiyet ve mutluluğa duyulan özlemi canlandırıyor.",
         "beats": [
-          "Terk edilmiş lunapark, yalnızlık ve terk edilmişlik hissini anlatıyor.",
-          "Dönme dolap, zamanın geçişini ve belki de bir döngüde sıkışmışlık hissini gösteriyor.",
-          "Işıkların sönüp yanması, belirsizlik ve kararsızlığı işaret ediyor.",
-          "Elindeki paslı anahtar, potansiyel bir çözüm ya da fırsatın varlığını gösteriyor ama ne yapacağını bilememek dikkat çekiyor.",
-          "Uzaktan gelen metal sürtünmesi, rahatsız edici ve çözülmemiş bir durumun varlığına işaret ediyor."
+          "Tren istasyonu, kişinin yaşam yolculuğunda bir duraklama ve yeniden değerlendirme ihtiyacını simgeliyor.",
+          "Anonsların anlaşılmaması, hayatında net olmayan mesajlar ve belirsizliklerle başa çıkma zorunluluğunu tetikliyor.",
+          "Bankta oturmak, kişinin şu anki durumunu gözden geçirme ve içsel bir huzur arayışını ifade ediyor.",
+          "Bavulun kendi kendine açılması, kişinin geçmiş anılarına ve duygularına istemsiz bir şekilde geri dönme arzusunu gösteriyor.",
+          "Çocukluk fotoğrafının ortaya çıkması, kişinin saf ve mutlu zamanlara duyduğu özlemi canlandırıyor."
         ],
-        "pattern": "Tetikleyici: Karar verme ya da yön belirleme ihtiyacıyla karşı karşıya kalmak. Otomatik tepki: Belirsizlik karşısında hareketsiz kalma ya da zaman kaybetme. Bedel: Kısa vadede bir şey yapmamak rahatlatıcı olabilir ancak uzun vadede ilerlememe, fırsatları kaçırma riskini doğurur.",
-        "nextStep": "Bu hafta hangi konuda kararsız kaldığını veya adım atmakta zorlandığını yaz. Bir fırsatı değerlendirmek için küçük bir adım atmayı dene.",
+        "pattern": "Anonslar belirsizliği tetikliyor. Bavul otomatik tepkin olarak açılıyor. Çocukluk fotoğrafı kısa vadede nostalji yaratırken; uzun vadede geçmişe saplanma riski taşıyor.",
+        "nextStep": "Bu hafta geçmişten gelen duygularını ve anılarını yazılı olarak ifade etmeye çalış.",
         "keywords": [
+          "özlem",
           "belirsizlik",
-          "kararsızlık",
-          "fırsat"
+          "geçmiş"
         ],
-        "journal": "Hangi konuda bir anahtar arıyorsun?",
-        "upsellSymbol": {
-          "symbol": "dönme dolap hareketi",
-          "insight": "Rutinlerin veya alışkanlıkların seni bir yere götürmeyen bir döngüde olabilir. İlerlemenin aynı noktada kalmak yerine farklı bir yola çıkmayı gerektirdiğini fark etmen mümkün."
-        }
+        "journal": "Geçmişteki hangi anılar seni en çok etkiliyor ve neden?"
       },
       "upsellCandidates": [
         {
-          "symbol": "lunapark atmosferi",
-          "hint": "Eğlence ve heyecan ile ilişkilendirilen bir yerin terk edilmiş olması dikkat çekiyor.",
-          "insight": "Hayatında geçmişte seni mutlu eden bir şeyin artık aynı heyecanı vermemesi söz konusu olabilir. Belki de eğlence anlayışın ya da hayatındaki keyif verici unsurlar dönüşüyor."
+          "symbol": "tren istasyonu",
+          "hint": "Tren istasyonunda bekleniyor.",
+          "insight": "Tren istasyonu, hayatında bir duraklama noktasını açıyor. Bu bekleme, yaşamındaki yönünü sorgulama ihtiyacını büyütebilir."
         },
         {
-          "symbol": "dönme dolap hareketi",
-          "hint": "Dönme dolap, sürekli hareket halinde olmasına rağmen aynı noktaya geri dönüyor.",
-          "insight": "Rutinlerin veya alışkanlıkların seni bir yere götürmeyen bir döngüde olabilir. İlerlemenin aynı noktada kalmak yerine farklı bir yola çıkmayı gerektirdiğini fark etmen mümkün."
+          "symbol": "anonslar",
+          "hint": "Anonslar duyuluyor ama kelimeler anlaşılmıyor.",
+          "insight": "Anlaşılamayan anonslar, hayatında duyduğun ama anlamlandıramadığın mesajları tetikliyor. Bu belirsizlik, içsel bir huzursuzluğu körükleyebilir."
         },
         {
-          "symbol": "paslı anahtarın durumu",
-          "hint": "Pas, zamanla kullanılmayan ya da ihmal edilen bir şeyin işareti olabilir.",
-          "insight": "Hayatında üzerinde durmadığın veya unutulmuş bir yeteneğin ya da fırsatın yeniden değerlendirilmesi gerekebilir. Belki de bu anahtar sana eski bir beceriyi ya da ilgiyi hatırlatıyor."
+          "symbol": "bavul",
+          "hint": "Yanındaki bavul kendi kendine açılıyor.",
+          "insight": "Bavulun açılması, bastırılmış duyguların ve geçmişin kendiliğinden gündeme gelişini hızlandırıyor. Bu durum, geçmişle yüzleşme ihtiyacını netleştirebilir."
         }
       ],
       "upsellUnlocked": true,
-      "upsellSymbol": "dönme dolap hareketi",
-      "upsellCost": 5,
-      "createdAt": "2026-02-10T11:27:13.357Z"
+      "upsellSymbol": "tren istasyonu",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:44:27.589Z",
+      "upsellInsight": "Tren istasyonu, hayatında bir duraklama noktasını açıyor. Bu bekleme, yaşamındaki yönünü sorgulama ihtiyacını büyütebilir.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Çocukluğumu özlüyorum, o günlere dönmek istiyorum",
+      "journalPlusInsight": "Geçmişe duyulan özlem, şu anki belirsizliği sertleştiriyor. Çocukluk anıları, güven ve masumiyet ihtiyacını geri çağırıyor. Hayatındaki belirsizlikler, netleşmeye duyulan açlığı büyütüyor. Geçmişin idealize edilmesi, mevcut gerçeklikle yüzleşmeyi zorlaştırıyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "08b8ac03-f542-4f87-8180-cf5822c09314",
+      "requestId": "stress_8_1770979470878",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Rüyamda bir aynaya baktım, yüzüm ikiye bölünmüş gibiydi. Arkadaki odada ışık yanıp söndü. Kapıyı açtım ama içeride sadece boş bir askı vardı.",
+      "feelingTag": "şaşkınlık",
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Rüyandaki ayna, içsel bir bölünmeyi açıyor. Yüzün ikiye ayrılmış gibi görünmesi, kimliğine dair bir çatışmayı netleştiriyor. Arkadaki odadaki yanıp sönen ışık, belirsizliği ve kararsızlığı tetikliyor. Boş askı ise, beklediğin bir şeyin eksikliğini görünür kılıyor.",
+        "beats": [
+          "Aynada ikiye bölünmüş yüzün, içsel çatışmalarını yüzeye çıkarıyor.",
+          "Işık yanıp sönmesi, kararsızlık ve belirsizlikle yüzleşmeni hızlandırıyor.",
+          "Kapıyı açman, bilinmeyene duyduğun merakı ve cesareti netleştiriyor.",
+          "Boş askı, beklentilerinle gerçeklik arasındaki farkı sertleştiriyor."
+        ],
+        "pattern": "Aynaya bakmak, içsel çatışmalarını tetikliyor. Kapıyı açmak, belirsizlikle karşılaşma refleksin. Boş askı, kısa vadede hayal kırıklığı; uzun vadede gerçeklikle yüzleşmene zemin hazırlıyor.",
+        "nextStep": "Bu hafta, her gün bir dakika aynada kendine bakarak hislerini gözlemle.",
+        "keywords": [
+          "belirsizlik",
+          "çatışma",
+          "beklenti"
+        ],
+        "journal": "Hangi alanda kendini ikiye bölünmüş hissediyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "ayna",
+          "hint": "Bir aynaya bakıyorsun ve yüzün ikiye bölünmüş görünüyor.",
+          "insight": "Aynada kendine bakman, kendinle ilgili farkındalığını artırıyor. İkiye bölünmüş yüz, içsel parçalarının uyumsuzluğunu daha görünür kılıyor."
+        },
+        {
+          "symbol": "kapı",
+          "hint": "Kapıyı açtığında içeride yalnızca boş bir askı buluyorsun.",
+          "insight": "Kapıyı açman, yeni bir yola girme isteğini netleştiriyor. Kapının ardındaki boşluk, beklentilerinin karşılanmaması durumunu daha sert hale getiriyor."
+        },
+        {
+          "symbol": "ışık",
+          "hint": "Arkadaki odada ışık yanıp sönüyor.",
+          "insight": "Işığın yanıp sönmesi, kararlarının net olmayışını tetikliyor. Bu durum, zihninde gidip gelen düşünceleri ve belirsizliği hızlandıran bir etki yaratıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "ayna",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:44:41.813Z",
+      "upsellInsight": "Aynada kendine bakman, kendinle ilgili farkındalığını artırıyor. İkiye bölünmüş yüz, içsel parçalarının uyumsuzluğunu daha görünür kılıyor."
+    },
+    {
+      "id": "ffef1c98-fd6b-4b8f-a35a-f703d08dc779",
+      "requestId": "stress_9_1770979481821",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Rüyamda bir toplantı odasındaydım. Sunum dosyası açılmadı, ekran karardı. Herkes susup bana baktı. Masadaki saat tersine akıyordu ve kalemim kırıldı.",
+      "feelingTag": "endişe",
+      "lifeContextTag": "iş",
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Toplantı odasında yaşanan aksaklıklar, iş yerinde kontrol kaybı endişeni açıyor. Sunumun yapılamaması ve herkesin sana bakması, sorumluluk hissini sertleştiriyor. Zamanın tersine akışı, işlerin planladığın gibi gitmediği duygusunu büyütüyor. Kırılan kalem, yetkinlik algını kıstırıyor ve güvenini zedeliyor.",
+        "beats": [
+          "Toplantı odası, sosyal baskıyı görünür kılıyor.",
+          "Sunum dosyasının açılmaması, hazırlıksızlık korkunu tetikliyor.",
+          "Ekranın kararması, belirsizlikle başa çıkma zorluğunu netleştiriyor.",
+          "Herkesin sana bakması, yargılanma endişesini büyütüyor.",
+          "Masadaki saatin tersine akması, kontrol kaybı hissini sertleştiriyor.",
+          "Kalemin kırılması, ifade gücünün kısıtlandığını hissettiriyor."
+        ],
+        "pattern": "Sunum dosyası açılmadığında, hazırlıksızlık korkusu tetikleniyor. Ekranın kararması, belirsizlik karşısında otomatik refleksin oluyor. Masadaki saat tersine aktığında, kısa vadede paniği; uzun vadede tükenmişliği büyütüyor.",
+        "nextStep": "Bu hafta iş yerinde kontrol edemediğin durumları gözlemle ve tepkilerini yaz.",
+        "keywords": [
+          "kontrol",
+          "belirsizlik",
+          "endişe"
+        ],
+        "journal": "İş yerinde hangi durumlar seni en çok endişelendiriyor?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "toplantı odası",
+          "hint": "Bir toplantı odasında sunum yapmaya hazırlanıyorsun.",
+          "insight": "Toplantı odası, sosyal etkileşimlerin ve beklentilerin yoğunlaştığı bir alan. Bu ortamda sorumluluk ve performans baskısı seni kıstırıyor. Anlam arayışın, başkalarının beklentileriyle nasıl örtüştüğünü sorguluyor."
+        },
+        {
+          "symbol": "ekran",
+          "hint": "Sunum sırasında ekran kararıyor.",
+          "insight": "Ekranın kararması, bilgi akışındaki kesintiyi yüzeye çıkarıyor. Bu durum, kontrolün dışındaki faktörlerin seni nasıl etkilediğini sorgulamana neden oluyor. Başka bir deyişle, belirsizlikle nasıl başa çıktığını görünür kılıyor."
+        },
+        {
+          "symbol": "kalem",
+          "hint": "Sunum sırasında kalemin kırılıyor.",
+          "insight": "Kalemin kırılması, ifade araçlarının sınırlanmasını açığa çıkarıyor. İletişim ve kendini ifade etme yollarının kesildiğini hissediyorsun. Bu durum, içsel ve dışsal iletişim engellerini yeniden değerlendirmeni tetikliyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "toplantı odası",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:44:57.002Z",
+      "upsellInsight": "Toplantı odası, sosyal etkileşimlerin ve beklentilerin yoğunlaştığı bir alan. Bu ortamda sorumluluk ve performans baskısı seni kıstırıyor. Anlam arayışın, başkalarının beklentileriyle nasıl örtüştüğünü sorguluyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Toplantılarda donup kalıyorum, sesim çıkmıyor",
+      "journalPlusInsight": "Toplantı öncesi beklenti yükü seni kilitliyor. İçsel sesin, dışa vurumunu bastırıyor. Bu sessizlik, kontrol kaybı endişeni hızlandırıyor. Kendini ifade edememek, yetkinlik algını daraltıyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "5ceb9caf-b259-499d-90a8-e395bd7ad3a2",
+      "requestId": "stress_10_1770979499263",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "Rüyamda sınava giriyordum ama sorular boştu. Gözetmen yanıma geldi, kâğıdı çevirdiğimde yazılar akmıştı. Zil çaldı, ben yerimden kalkamadım.",
+      "feelingTag": "endişe",
+      "lifeContextTag": "iş",
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Burada endişe içinde sıkışıp kalıyorsun, ama bu döngüyü kırabilirsin. Küçük adımlarla ilerleyerek bu hissi hafifletebilirsin.",
+        "beats": [
+          "Rüyada sınava giriyorsun, ama sorular boş. Bu durum, belirsizlikle başa çıkma yeteneğini geliştirmen gerektiğini gösteriyor.",
+          "Gözetmen gelip kâğıdı çevirdiğinde yazılar akmış. Bu, işteki belirsizliklerin seni nasıl etkilediğini düşündürüyor.",
+          "Zil çalıyor, ama yerinden kalkamıyorsun. Bu, harekete geçme konusunda yaşadığın tereddütleri işaret ediyor."
+        ],
+        "nextStep": "Bu hafta iş yerinde bir konuyu netleştirmek için bir adım at.",
+        "plan": [
+          "24 saat: Bir iş arkadaşına kısa bir soru sor.",
+          "7 gün: Her gün iş yerinde bir belirsizliği not al ve çözüm üretmeye çalış.",
+          "Sınır: Ben artık belirsizliklerle başa çıkarken kendime güveniyorum."
+        ],
+        "keywords": [
+          "belirsizlik",
+          "hareket",
+          "netlik"
+        ],
+        "journal": "İş yerinde belirsiz hissettiğin bir durumu nasıl çözebilirsin?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-13T10:45:11.856Z",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Sınavlardan hep korktum, yetişemiyorum",
+      "journalPlusInsight": "Sıkışmışlık hissi, harekete geçme ihtiyacını tetikliyor. Belirsizlik, netlik arayışını hızlandırıyor. Endişe, kontrol kaybı korkusunu geri çağırıyor. Küçük adımlar, bu döngüyü yumuşatabilir.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "ef15f77e-1fef-43df-8b2b-9a3c13b0dceb",
+      "requestId": "stress_11_1770979513786",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "Rüyamda hastane koridorundaydım. Kapılar kilitliydi, hemşire bir form uzattı ama imza kısmı yoktu. Pencereden baharı gördüm, geri dönemedim.",
+      "feelingTag": "korku",
+      "lifeContextTag": "sağlık",
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Burada kilitli kalma hissi seni yavaşlatıyor. İleriye geçmek için imza kısmını doldurmanın yolunu bulman gerek. Baharın tazeliğiyle yeni başlangıçlar yapabilirsin.",
+        "beats": [
+          "Hastane koridoru, belirsizlik ve bekleyişi açıyor.",
+          "Kilitle kapılar, hareket alanını daraltıyor.",
+          "Formsuz imza, tamamlanmamış işleri görünür kılıyor.",
+          "Baharı görmek, umut ve yenilik arayışını tetikliyor."
+        ],
+        "nextStep": "Bu hafta bir sağlık kontrolü randevusu ayarla.",
+        "plan": [
+          "24 saat: Sağlıkla ilgili bir konuyu not al.",
+          "7 gün: Her sabah 5 dakika nefes egzersizi yap.",
+          "Sınır: Ben artık sağlığımı ihmal etmiyorum."
+        ],
+        "keywords": [
+          "kilit",
+          "tamamlanma",
+          "yenilik"
+        ],
+        "journal": "Sağlık konusunda en büyük endişen ne?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-13T10:45:19.141Z",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Amına koyayım bu hastalık beni bitirdi artık dayanamıyorum",
+      "journalPlusInsight": "Rahatsızlığın, içinde biriken öfkeyi ve çaresizliği görünür kılıyor. Bu duygular, kontrolü kaybetme korkusunu tetikliyor. İçsel huzursuzluk, başa çıkma gücünü daraltıyor ve ifade edilmesi gereken bir baskı yaratıyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "c4f4297b-dbd4-4f0f-9419-9255f644d2e7",
+      "requestId": "stress_12_1770979522537",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "Rüyamda bir marketteydim, kasa sırası bitmiyordu. Cüzdanımı açtım, içinden sadece kartvizitler çıktı. Kasiyer gülümsedi, ben konuşamadım.",
+      "feelingTag": "utanç",
+      "lifeContextTag": "para",
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Burada sıkıştığın bir durum var, bunu fark edip harekete geçebilirsin. Kendi değerini anlamak için adım atman önemli.",
+        "beats": [
+          "Market sırası ilerlemiyor, sabırsızlık ve çaresizlik hissettiriyor.",
+          "Cüzdandan kartvizitler çıkıyor, finansal kaygıları tetikliyor.",
+          "Kasiyer gülümsüyor, iletişimde kopukluk yaratıyor."
+        ],
+        "nextStep": "Bu hafta finansal durumunu gözden geçir ve bütçeni planla.",
+        "plan": [
+          "24 saat: 5 dakikada harcamalarını not et.",
+          "7 gün: Her sabah bütçene 3 dakika ayır.",
+          "Sınır: Ben artık finansal belirsizlikle yaşamam."
+        ],
+        "keywords": [
+          "finans",
+          "iletişim",
+          "değer"
+        ],
+        "journal": "Finansal olarak kendimi nasıl daha güvende hissedebilirim?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-13T10:45:32.642Z",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Utanıyorum kasada para yetmeyince",
+      "journalPlusInsight": "Utanma, finansal güvensizliğin tetikleyicisi olarak belirebilir. İletişimdeki çekingenlik, bu durumda kendini ifade etmeyi zorlaştırıyor. Değer algın, bu süreçte daha fazla sorgulanıyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "a5d049b0-a078-44a4-ab45-1b148038e2aa",
+      "requestId": "stress_13_1770979535163",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Rüyamda bir odada tek bir mum yanıyordu. Mum eridikçe masaya yayıldı. Dışarıdan çocuk ağlama sesi geldi ama kapı açılmadı.",
+      "feelingTag": "korku",
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Tek başına yanıp eriyen mum, içindeki tükenişi ve zamanın baskısını açıyor. Çocuğun ağlama sesi, derin bir korunmasızlık hissini tetikliyor. Kapının açılmaması, çözülmemiş bir korkuyu kilitliyor.",
+        "beats": [
+          "Mumun erimesi, içsel kaynaklarının tükenişini görünür kılıyor.",
+          "Çocuğun ağlama sesi, bastırılmış duygusal yaraları geri çağırıyor.",
+          "Kapının açılmaması, korkuların üstünü örtüyor."
+        ],
+        "nextStep": "Bu hafta korkularını yazıya dök ve bir tanesini sorgula.",
+        "keywords": [
+          "tükeniş",
+          "korunmasızlık",
+          "korku"
+        ],
+        "journal": "Hangi korkun kapalı kapılar ardında kalıyor?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "mum",
+          "hint": "Bir odada tek bir mum yanıyor.",
+          "insight": "Mum, içsel enerjinin tükenişini hatırlatıyor. Belirsizlik anlarında nasıl tükenmiş hissettiğini fark et. İç kaynaklarını nasıl koruyacağını düşün."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "mum",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:45:45.178Z",
+      "upsellInsight": "Mum, içsel enerjinin tükenişini hatırlatıyor. Belirsizlik anlarında nasıl tükenmiş hissettiğini fark et. İç kaynaklarını nasıl koruyacağını düşün.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Çocuk sesleri duyunca içim acıyor, nedenini bilmiyorum",
+      "journalPlusInsight": "Mumun eriyişi, içsel kaynakların tükenişini anımsatırken, çocuk ağlaması korunmasızlığın izlerini tetikler. Kapalı kapılar, korkuların güvenli bir mesafede tutulmasını sağlar.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "21333015-938f-4ff3-9789-6f9a2ace07bb",
+      "requestId": "stress_14_1770979549561",
+      "userId": "dev_stress_test_001",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Rüyamda bir köprüden geçiyordum, köprü sallanıyordu. Aşağıda sis vardı. Karşı tarafta tanımadığım biri el salladı, ben adım atınca ayakkabım bağlandı.",
+      "feelingTag": "güvensizlik",
+      "lifeContextTag": "aşk",
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Köprüden geçiş, belirsizlikle yüzleşme çabalarını açıyor. Sallanan köprü, güvensizlik hissini tetikliyor. Sis, kararsızlığın ve korkunun üstünü örtüyor. Tanımadığın kişi, bilinmeyeni keşfetme isteğini geri çağırıyor.",
+        "beats": [
+          "Köprüden geçmek, hayatında bir geçiş dönemini hızlandırıyor.",
+          "Köprünün sallanması, zemininin sağlam olmadığını hissettiriyor.",
+          "Sis, geleceği görmekte zorlanmanı büyütüyor.",
+          "Karşı tarafta el sallayan yabancı, tanımadığın duygularınla yüzleşmeni tetikliyor.",
+          "Adım atınca ayakkabının bağlanması, ilerleme konusundaki tereddütlerini kilitliyor."
+        ],
+        "pattern": "Köprü, belirsizlik duygusunu tetikliyor. Sis, güvensizlik refleksin. Ayakkabı, kısa vadede ilerlemeni durduruyor; uzun vadede cesaretini kırıyor.",
+        "nextStep": "Bu hafta belirsizlikle yüzleşmek için bir adım at. Belirsiz gördüğün bir şeyin üzerine git.",
+        "keywords": [
+          "belirsizlik",
+          "güvensizlik",
+          "geçiş"
+        ],
+        "journal": "İlerleme konusunda en çok korktuğun şey ne?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "köprü",
+          "hint": "Köprüden geçiyorsun.",
+          "insight": "Köprü, iki farklı durumu veya duyguyu birbirine bağlayan bir geçiş noktasını işaret eder. Hayatında bir aşamadan diğerine geçerken hissettiğin belirsizlik ve kararsızlık bu köprüde şekilleniyor. İlerlemeye çalışırken karşılaştığın zorluklar, bu köprünün üzerinde attığın adımlarda kendini gösteriyor."
+        },
+        {
+          "symbol": "sis",
+          "hint": "Aşağıda sis var.",
+          "insight": "Sis, göremediğin veya netleştiremediğin durumları içinde barındırıyor. Geleceğe dair belirsizlik ve kaygıların, bu sisin içinde kaybolmuş gibi hissetmene yol açıyor. Sis, ilerlemek istediğin yolda karşına çıkan engelleri ve bu engellerle nasıl başa çıkacağını düşündüğün anları temsil ediyor."
+        },
+        {
+          "symbol": "ayakkabı",
+          "hint": "Adım atınca ayakkabın bağlanıyor.",
+          "insight": "Ayakkabının bağlanması, ilerleme konusundaki tereddütlerini ve duraksamalarını ortaya çıkarıyor. Hayatında atmak istediğin adımlar, bu bağlanma anında duraksıyor ve seni düşündürüyor. Ayakkabı, hareket etme isteğinle kararsızlıkların arasında sıkıştığın anları yansıtıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "köprü",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T10:46:13.863Z",
+      "upsellInsight": "Köprü, iki farklı durumu veya duyguyu birbirine bağlayan bir geçiş noktasını işaret eder. Hayatında bir aşamadan diğerine geçerken hissettiğin belirsizlik ve kararsızlık bu köprüde şekilleniyor. İlerlemeye çalışırken karşılaştığın zorluklar, bu köprünün üzerinde attığın adımlarda kendini gösteriyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Yeni insanlara güvenemiyorum, hep hayal kırıklığı",
+      "journalPlusInsight": "Güvensizlik, insanlarla olan ilişkilerinde savunma duvarlarını yükseltiyor. Hayal kırıklığı korkusu, yeniliklere ve değişimlere karşı direnç oluşturuyor. Geçmiş deneyimler, şimdiki anı kontrol etme isteğini sıkıştırıyor. Belirsizlikle karşılaşmak, içsel güven arayışını hızlandırıyor.",
+      "journalPlusCost": 5
     }
   ]
 }

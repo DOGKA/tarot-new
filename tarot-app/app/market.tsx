@@ -28,6 +28,7 @@ interface GemPackage {
 interface PremiumPlan {
   id: string;
   priceUSD: number;
+  normalPriceUSD?: number;
   bonusGems: number;
   durationDays: number;
 }
@@ -47,8 +48,8 @@ export default function MarketScreen() {
     { id: "pack_500", gems: 250, bonus: 250, total: 500, priceUSD: 19.99, perGem: 0.03998 },
   ]);
   const [premiumPlans, setPremiumPlans] = useState<{ monthly?: PremiumPlan; yearly?: PremiumPlan }>({
-    monthly: { id: "premium_monthly", priceUSD: 9.99, bonusGems: 100, durationDays: 30 },
-    yearly: { id: "premium_yearly", priceUSD: 59.99, bonusGems: 100, durationDays: 365 },
+    monthly: { id: "premium_monthly", priceUSD: 4.99, bonusGems: 50, durationDays: 30 },
+    yearly: { id: "premium_yearly", priceUSD: 45.00, normalPriceUSD: 59.88, bonusGems: 500, durationDays: 365 },
   });
 
   useEffect(() => {
@@ -109,6 +110,7 @@ export default function MarketScreen() {
           </View>
         )}
 
+        {/* Aylik Premium */}
         {premiumPlans.monthly && (
           <View>
             <LinearGradient
@@ -118,22 +120,20 @@ export default function MarketScreen() {
               end={{ x: 1, y: 1 }}
             >
               <View style={styles.subRow}>
-                <View>
-                  <Text style={styles.subTitle}>Aylik Premium</Text>
-                  <Text style={styles.subDesc}>Dream C + 3-5 kart acilimlar</Text>
-                </View>
+                <Text style={styles.subTitle}>Aylik Premium</Text>
                 <View style={styles.subPriceBox}>
                   <Text style={styles.subPrice}>${premiumPlans.monthly.priceUSD}</Text>
                   <Text style={styles.subPeriod}>/ay</Text>
                 </View>
               </View>
               <View style={styles.subBonusRow}>
-                <Text style={styles.subBonus}>+{premiumPlans.monthly.bonusGems} gemstone hediye</Text>
+                <Text style={styles.subBonus}>Her ay +{premiumPlans.monthly.bonusGems} gemstone hediye</Text>
               </View>
             </LinearGradient>
           </View>
         )}
 
+        {/* Yillik Premium */}
         {premiumPlans.yearly && (
           <View>
             <LinearGradient
@@ -145,14 +145,14 @@ export default function MarketScreen() {
               <View style={styles.bestValueTag}>
                 <Text style={styles.bestValueText}>En Avantajli</Text>
               </View>
-              <View style={styles.subRow}>
-                <View>
-                  <Text style={styles.subTitle}>Yillik Premium</Text>
-                  <Text style={styles.subDesc}>~$5/ay - %50 tasarruf</Text>
-                </View>
-                <View style={styles.subPriceBox}>
-                  <Text style={styles.subPrice}>${premiumPlans.yearly.priceUSD}</Text>
-                  <Text style={styles.subPeriod}>/yil</Text>
+              <Text style={styles.subTitle}>Yillik Premium</Text>
+              <Text style={styles.subMonthly}>Ayda sadece $3.75</Text>
+              <View style={styles.subPriceRow}>
+                <Text style={styles.subNormalPrice}>${premiumPlans.yearly.normalPriceUSD || "59.88"}</Text>
+                <Text style={styles.subPriceLarge}>${premiumPlans.yearly.priceUSD}</Text>
+                <Text style={styles.subPeriodInline}>/yil</Text>
+                <View style={styles.savingBadge}>
+                  <Text style={styles.savingText}>%25 Tasarruf</Text>
                 </View>
               </View>
               <View style={styles.subBonusRow}>
@@ -303,16 +303,38 @@ const styles = StyleSheet.create({
   },
   subTitle: {
     color: "#fff",
-    fontSize: 17,
+    fontSize: 18,
     fontWeight: "700",
   },
-  subDesc: {
-    color: "rgba(255, 255, 255, 0.5)",
-    fontSize: 12,
-    marginTop: 2,
+  subMonthly: {
+    color: "#fbbf24",
+    fontSize: 15,
+    fontWeight: "700",
+    marginTop: 4,
   },
   subPriceBox: {
     alignItems: "flex-end",
+  },
+  subPriceRow: {
+    flexDirection: "row",
+    alignItems: "baseline",
+    marginTop: 8,
+    gap: 8,
+  },
+  subNormalPrice: {
+    color: "rgba(255, 255, 255, 0.35)",
+    fontSize: 16,
+    textDecorationLine: "line-through",
+  },
+  subPriceLarge: {
+    color: "#fff",
+    fontSize: 28,
+    fontWeight: "900",
+  },
+  subPeriodInline: {
+    color: "rgba(255, 255, 255, 0.4)",
+    fontSize: 13,
+    marginBottom: 2,
   },
   subPrice: {
     color: "#fff",
@@ -323,16 +345,28 @@ const styles = StyleSheet.create({
     color: "rgba(255, 255, 255, 0.4)",
     fontSize: 11,
   },
+  savingBadge: {
+    backgroundColor: "rgba(34, 197, 94, 0.25)",
+    borderRadius: 6,
+    paddingHorizontal: 8,
+    paddingVertical: 2,
+    marginLeft: 4,
+  },
+  savingText: {
+    color: "#4ade80",
+    fontSize: 12,
+    fontWeight: "800",
+  },
   subBonusRow: {
     marginTop: 10,
     backgroundColor: "rgba(34, 197, 94, 0.15)",
     borderRadius: 8,
-    padding: 6,
+    padding: 8,
     alignItems: "center",
   },
   subBonus: {
     color: "#4ade80",
-    fontSize: 12,
+    fontSize: 13,
     fontWeight: "600",
   },
   packageCard: {
