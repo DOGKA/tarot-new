@@ -169,6 +169,8 @@ Soru: "${journalQuestion}"
 Cevap: "${journalAnswer}"
 
 Gorev:
+- Kullanicinin cevabindaki ana temayi bul. Overall/keywords sadece baglam; CEVAP ONCELIKLI.
+- Eger cevap ruyadan farkli bir konuya geciyorsa, cevabi takip et, ruyaya geri donme.
 - Yalnizca bu bilgilere dayanarak 2-4 kisa cumlelik kisisel insight yaz.
 - Yuzlestirici ama yargisiz. Terapi/teshis yok.
 - Soru/cevabi tekrar etme/alintilama. Yeni bir cerceve kur.

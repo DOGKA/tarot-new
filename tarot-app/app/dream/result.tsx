@@ -154,13 +154,13 @@ export default function DreamResultScreen() {
 
         {/* Overall */}
         <GlassCard style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("dreamOverall") || "Genel Bakış"}</Text>
+          <Text style={styles.sectionTitle}>{t("dreamOverall") || "Genel Çerçeve"}</Text>
           <Text style={styles.overallText}>{result.overall}</Text>
         </GlassCard>
 
         {/* Beats */}
         <GlassCard style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("dreamBeats") || "Sembol Analizi"}</Text>
+          <Text style={styles.sectionTitle}>{t("dreamBeats") || "Sembol Çözümlemesi"}</Text>
           {result.beats?.map((beat: string, i: number) => (
             <View key={i} style={styles.beatRow}>
               <View style={styles.beatDot} />
@@ -172,7 +172,7 @@ export default function DreamResultScreen() {
         {/* Pattern (B mode only) */}
         {result.pattern && (
           <GlassCard style={styles.section}>
-            <Text style={styles.sectionTitle}>{t("dreamPattern") || "Davranış Döngüsü"}</Text>
+            <Text style={styles.sectionTitle}>{t("dreamPattern") || "Davranış İzi"}</Text>
             <Text style={styles.patternText}>{result.pattern}</Text>
           </GlassCard>
         )}
@@ -180,7 +180,7 @@ export default function DreamResultScreen() {
         {/* Plan (C mode only) */}
         {result.plan && (
           <GlassCard style={styles.section}>
-            <Text style={styles.sectionTitle}>{t("dreamPlan") || "Aksiyon Planı"}</Text>
+            <Text style={styles.sectionTitle}>{t("dreamPlan") || "Dönüştürme Planı"}</Text>
             {result.plan.map((step: string, i: number) => (
               <View key={i} style={styles.planRow}>
                 <View style={[styles.planNumber, i === 0 && styles.planFirst, i === 1 && styles.planSecond, i === 2 && styles.planThird]}>
@@ -205,7 +205,7 @@ export default function DreamResultScreen() {
 
         {/* Next Step */}
         <GlassCard style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("dreamNextStep") || "Sonraki Adım"}</Text>
+          <Text style={styles.sectionTitle}>{t("dreamNextStep") || "Bu Hafta"}</Text>
           <Text style={styles.nextStepText}>{result.nextStep}</Text>
         </GlassCard>
 
@@ -219,19 +219,19 @@ export default function DreamResultScreen() {
         {hasJournalPlus && (result as any).dreamJournalPlus ? (
           /* Acilmis: cevap + insight goster */
           <GlassCard style={[styles.section, styles.journalPlusResult]}>
-            <Text style={styles.jpLabel}>{t("journalPlusYourAnswer") || "Senin Cevabin"}</Text>
+            <Text style={styles.jpLabel}>{t("journalPlusYourAnswer") || "Senin Cevabın"}</Text>
             <Text style={styles.jpAnswer}>{(result as any).dreamJournalPlus.answer}</Text>
             <View style={styles.jpDivider} />
-            <Text style={styles.jpInsightLabel}>{t("journalPlusInsight") || "Ek Icgoru"}</Text>
+            <Text style={styles.jpInsightLabel}>{t("journalPlusInsight") || "Derinlemesine İçgörü"}</Text>
             <Text style={styles.jpInsight}>{(result as any).dreamJournalPlus.insight}</Text>
           </GlassCard>
         ) : showJournalInput ? (
           /* TextInput acik: yaz + gonder */
           <GlassCard style={[styles.section, styles.journalPlusInput]}>
-            <Text style={styles.jpInputLabel}>{t("journalPlusWriteAnswer") || "Cevabini yaz"}</Text>
+            <Text style={styles.jpInputLabel}>{t("journalPlusWriteAnswer") || "Cevabını yaz"}</Text>
             <TextInput
               style={styles.jpTextInput}
-              placeholder={t("journalPlusPlaceholder") || "Cevabini buraya yaz..."}
+              placeholder={t("journalPlusPlaceholder") || "Cevabını buraya yaz..."}
               placeholderTextColor="rgba(255, 255, 255, 0.25)"
               multiline
               maxLength={200}
@@ -257,7 +257,7 @@ export default function DreamResultScreen() {
                 {journalPlusLoading ? (
                   <ActivityIndicator color="#fff" size="small" />
                 ) : (
-                  <Text style={styles.jpButtonText}>{t("journalPlusSend") || "Gonder"} (💎 {prices.JOURNAL_PLUS || 5})</Text>
+                  <Text style={styles.jpButtonText}>{t("journalPlusSend") || "Gönder"} (💎 {prices.JOURNAL_PLUS || 5})</Text>
                 )}
               </LinearGradient>
             </TouchableOpacity>
@@ -343,7 +343,7 @@ export default function DreamResultScreen() {
             </TouchableOpacity>
           )}
 
-          {/* JournalPlus CTA — "Soruyu Cevapla" butonu */}
+          {/* JournalPlus CTA — "Kendime Sordum" butonu */}
           {!hasJournalPlus && !showJournalInput && (
             <TouchableOpacity
               activeOpacity={0.85}
@@ -356,7 +356,7 @@ export default function DreamResultScreen() {
                 end={{ x: 1, y: 1 }}
               >
                 <Text style={styles.ctaText}>
-                  {t("journalPlusCTA") || "Soruyu Cevapla"} (💎 {prices.JOURNAL_PLUS || 5})
+                  {t("journalPlusCTA") || "Kendime Sordum"} (💎 {prices.JOURNAL_PLUS || 5})
                 </Text>
               </LinearGradient>
             </TouchableOpacity>

@@ -703,6 +703,280 @@
       "journalPlusAnswer": "Anasını sikeyim bu patronun her gün aşağılıyor beni dayanacak gücüm kalmadı",
       "journalPlusInsight": "Patronun sürekli aşağılaması, içinde bastırılmış öfkeyi büyütüyor. Bu durum, değersizlik algısını sertleştirip sabrını zorluyor. Kontrol kaybı, çaresizlikle birleşerek savunmasız kalmana yol açıyor.",
       "journalPlusCost": 5
+    },
+    {
+      "id": "04b4c0e9-5710-4596-93cb-d9ce965193ba",
+      "requestId": "1770982621365_p6sloq",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Rüyamda yatağımda örümcekler yuva yapmıştı ve kız arkadaşımın başka biriyle öpüşmeye çalıştığını görüp uyandım.",
+      "feelingTag": "hayal kırıklığı",
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Örümceklerle dolu yatak, kontrol kaybı ve rahatsızlık hissini açıyor. Kız arkadaşının başka biriyle öpüşmeye çalışması ise güvensizlik ve kıskançlık duygularını netleştiriyor. Bu iki olay, ilişkideki sınırların ve güvenin sorgulanmasına yol açıyor. Hayal kırıklığı, belirsizlik ve kaygının birleşiminden doğuyor.",
+        "beats": [
+          "Örümcekler yatağında yuva yapmış, kontrol duygusunu sıkıştırıyor.",
+          "Kız arkadaşının başka biriyle öpüşmeye çalışması, güvensizlik ve kıskançlık duygularını tetikliyor.",
+          "Yataktaki örümcekler, kişisel alanına bir müdahale hissi getiriyor.",
+          "Kız arkadaşının davranışı, sadakat ve bağlılık konularında endişelerini büyütüyor.",
+          "Uyandığın an, gerçeklikle yüzleşme ve hislerinle başa çıkma ihtiyacını belirginleştiriyor."
+        ],
+        "pattern": "Örümcekler yatağında, kontrol kaybı hissini tetikliyor. Kız arkadaşının başka biriyle öpüşmeye çalışması, otomatik kıskançlık tepkini devreye sokuyor. Kız arkadaşının davranışı, kısa vadede güvensizlik yaratıyor; uzun vadede ilişkiyi sorgulamaya itiyor.",
+        "nextStep": "Bu hafta ilişkinde açık iletişim kurarak hislerini paylaşmayı dene.",
+        "keywords": [
+          "kontrol",
+          "güvensizlik",
+          "iletişim"
+        ],
+        "journal": "İlişkinde hangi durumlar seni güvensiz hissettiriyor?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "yatağımda",
+          "hint": "Yatağında örümceklerin yuva yapması.",
+          "insight": "Yatak, kişisel alanın ve güvenlik duygunu temsil ediyor. Bu alanda kontrolünü kaybetme korkusu içsel huzurunu zorluyor."
+        },
+        {
+          "symbol": "yuva",
+          "hint": "Örümceklerin yatağında yuva yapması.",
+          "insight": "Yuva, güven ve aidiyet arayışını temsil ediyor. Kendi yaşam alanında güvende hissetme ihtiyacın, dış etkenlerle tehdit ediliyor."
+        },
+        {
+          "symbol": "uyandım",
+          "hint": "Kız arkadaşının başka biriyle öpüşmeye çalıştığını görüp uyandığın an.",
+          "insight": "Uyanmak, gerçeklerle yüzleşme anını getiriyor. Hayal kırıklığı ve duygusal karmaşıklık, içsel dünyanda daha fazla netlik arayışını artırıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "uyandım",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T11:37:16.622Z",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Bu tarz rüyalar görmek beni tetikliyor",
+      "journalPlusInsight": "Örümcekler kontrol kaybını tetikliyor, bu da ilişkideki sınırlarının netleşmesine duyduğun ihtiyacı belirginleştiriyor. Kız arkadaşının öpüşmeye çalışması, güvensizlik ve kıskançlıkla yüzleşme gereğini açıyor. Bu iki olay, ilişkideki güven ve iletişim ihtiyacını sertleştiriyor.",
+      "journalPlusCost": 5,
+      "upsellInsight": "Uyanmak, gerçeklerle yüzleşme anını getiriyor. Hayal kırıklığı ve duygusal karmaşıklık, içsel dünyanda daha fazla netlik arayışını artırıyor."
+    },
+    {
+      "id": "39dd4aba-0589-4c77-a5ad-a501bec9b0ad",
+      "requestId": "1770983399450_juay3a",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "otobüs şöförüydüm macaristan a yük götürüyordum. Yolda karım aradı bana çocukların sana ihtiyacı var dönmen gerekli dedi ama yol çok uzaktı dönemedim bir adamdan yardım isteyip onun telefonuyla ailemi aradım . Açmadılar . o sırada ter ile uyandım.",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Sorumlulukların ve içsel çatışmaların arasında sıkışmış hissediyorsun. Ailevi görevler ve kişisel hedefler arasında denge kurma çabası seni yoruyor. Yetersizlik ve kontrol kaybı hissi derinleşiyor. Bu hisleri anlamak, duygusal yüklerini hafifletmek için bir adım olabilir.",
+        "beats": [
+          "Otobüs sürücüsü olmak, yön ve kontrol duygunu belirginleştiriyor.",
+          "Macaristan'a yük taşımak, uzak hedeflerin peşinde koştuğunu gösteriyor.",
+          "Karının araması, içsel çatışmalarını ve ailevi sorumluluklarını hızlandırıyor.",
+          "Yardım istemek, destek arayışının ve yalnızlık hissinin altını çiziyor.",
+          "Telefonla ulaşamamak, iletişim kopukluğunu ve çaresizlik duygusunu büyütüyor.",
+          "Ter içinde uyanmak, kaygının fiziksel etkilerini açığa çıkarıyor."
+        ],
+        "pattern": "Macaristan'a gitmek, sorumlulukların ağırlığını tetikliyor. Karının çağrısı, uzak kalma korkunu refleksin haline getiriyor. Telefonla ulaşamamak, kısa vadede çaresizlik yaratırken; uzun vadede duygusal mesafeyi artırıyor.",
+        "nextStep": "Bu hafta sorumlulukların ve kişisel hedeflerin arasında nasıl bir denge kurabileceğini düşün.",
+        "keywords": [
+          "sorumluluk",
+          "kontrol",
+          "yalnızlık"
+        ],
+        "journal": "Şu an hangi sorumluluk seni en çok zorluyor?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "otobüs",
+          "hint": "Sen uzak bir noktaya yük taşıyan bir otobüs sürüyorsun.",
+          "insight": "Otobüs, senin şu an hayatta ilerlemeye çalıştığın yolu ve sorumluluklarını temsil ediyor. Taşıdığın yük, belki de taşımak zorunda olduğun duygusal veya fiziksel yükleri işaret ediyor."
+        },
+        {
+          "symbol": "karım",
+          "hint": "Yolda ilerlerken karın seni arıyor ve çocukların seni geri çağırıyor.",
+          "insight": "Karın, hayatındaki önemli ilişkilerin ve sorumlulukların sesini taşıyor. Bu çağrı, belki de hayatındaki önceliklerin ve içsel çatışmaların seni nasıl etkilediğini sorgulamana neden oluyor."
+        },
+        {
+          "symbol": "adam",
+          "hint": "Yardım için bir adamdan telefonunu ödünç alıyorsun.",
+          "insight": "Adam, dışarıdan bir desteğe duyduğun ihtiyacı belirginleştiriyor. Kendi başına çözemediğin durumlarda başkalarına güvenmenin ve yardım istemenin senin için ne anlam ifade ettiğini sorguluyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "karım",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T11:50:20.966Z",
+      "upsellInsight": "Karın, hayatındaki önemli ilişkilerin ve sorumlulukların sesini taşıyor. Bu çağrı, belki de hayatındaki önceliklerin ve içsel çatışmaların seni nasıl etkilediğini sorgulamana neden oluyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Çocukların okulu ve düşük maaş",
+      "journalPlusInsight": "Çocukların eğitimi ve finansal baskılar, kontrol arayışını tetikliyor. Düşük maaş, yetersizlik duygusunu sertleştiriyor. Bu iki unsur, içsel çatışmalarının merkezinde yer alıyor. Gerçekten neyi kontrol edebileceğini netleştirmek, bu dinamiği biraz yumuşatabilir.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "37b27b0f-cbd6-414e-b215-d36226749efe",
+      "requestId": "1770983523105_wkviba",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "otobüs şöförüydüm macaristan a yük götürüyordum. Yolda karım aradı bana çocukların sana ihtiyacı var dönmen gerekli dedi ama yol çok uzaktı dönemedim bir adamdan yardım isteyip onun telefonuyla ailemi aradım . Açmadılar . o sırada ter ile uyandım.",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Uzun bir yolculukta kaybolmuş hissediyorsun. Aile ve sorumluluklar arasında sıkışmışlık var. Bu döngüyü kırmak için içsel dengeyi bulman gerekiyor.",
+        "beats": [
+          "Otobüs şoförü olmak sorumluluklarını büyütüyor.",
+          "Macaristan'a yük götürmek hedeflerinin uzaklığını belirginleştiriyor.",
+          "Eşinin araması içsel çatışmayı tetikliyor.",
+          "Telefonla ulaşamamak iletişimdeki kopukluğu netleştiriyor."
+        ],
+        "nextStep": "Bu hafta içsel dengeyi araştıran kısa bir meditasyon yap.",
+        "plan": [
+          "24 saat: Ailene kısa bir mesaj gönder.",
+          "7 gün: Her gün bir sorumluluğunu gözden geçir.",
+          "Sınır: Ben artık kendimi ihmal etmiyorum."
+        ],
+        "keywords": [
+          "sorumluluk",
+          "denge",
+          "iletişim"
+        ],
+        "journal": "Hangi sorumluluk seni en çok yoruyor?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-13T11:52:08.816Z"
+    },
+    {
+      "id": "17fd281c-dc62-41d9-8c99-ca055a9f572c",
+      "requestId": "1770983628786_d8awa2",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "otobüs şöförüydüm macaristan a yük götürüyordum. Yolda karım aradı bana çocukların sana ihtiyacı var dönmen gerekli dedi ama yol çok uzaktı dönemedim bir adamdan yardım isteyip onun telefonuyla ailemi aradım . Açmadılar . o sırada ter ile uyandım.",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Uzakta olmak ve dönme isteği arasında sıkışıyorsun. Yardım istemek çözüm için kapıyı açıyor. Ancak iletişimde engellerle yüzleşmen gerekiyor.",
+        "beats": [
+          "Otobüs sürmek bağımsızlık arayışını belirginleştiriyor.",
+          "Macaristan'a yük götürmek sorumluluklarının ağırlığını büyütüyor.",
+          "Karının araması içsel çağrıya kulak vermeni tetikliyor.",
+          "Telefonun açılmaması iletişimdeki engelleri sertleştiriyor."
+        ],
+        "nextStep": "Bu hafta ailenle açık bir iletişim kurmanın yollarını düşün.",
+        "plan": [
+          "24 saat: Ailene kısa bir mesaj at.",
+          "7 gün: Her gün 5 dakika yalnız kalacağın bir zaman yarat.",
+          "Sınır: Ben artık iletişimde açık ve dürüst olmaya kararlıyım."
+        ],
+        "keywords": [
+          "bağımsızlık",
+          "sorumluluk",
+          "iletişim"
+        ],
+        "journal": "Aile bağlarını güçlendirmek için ne yapabilirsin?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-13T11:53:55.590Z"
+    },
+    {
+      "id": "793e982a-5052-4b48-b9da-2d4337ec4114",
+      "requestId": "1770983656315_ethm78",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "otobüs şöförüydüm macaristan a yük götürüyordum. Yolda karım aradı bana çocukların sana ihtiyacı var dönmen gerekli dedi ama yol çok uzaktı dönemedim bir adamdan yardım isteyip onun telefonuyla ailemi aradım . Açmadılar . o sırada ter ile uyandım.",
+      "feelingTag": "özlem",
+      "lifeContextTag": "para",
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Macaristan'a yük taşırken sorumluluklar ve özlem arasında sıkışmış hissediyorsun. Ailenin sana olan ihtiyacı, hedeflerinle çarpışıyor. Ter içinde uyanmak, içsel çatışmayı belirginleştiriyor.",
+        "beats": [
+          "Otobüs sürmek, kontrol ve yön arayışını tetikliyor.",
+          "Karının araması, aile sorumluluğunu büyütüyor.",
+          "Açılmayan telefon, iletişim kopukluğunu keskinleştiriyor."
+        ],
+        "nextStep": "Bu hafta sorumluluklarını ve özlemlerini 5 dakikalık bir yazıyla düşün.",
+        "keywords": [
+          "sorumluluk",
+          "özlem",
+          "iletişim"
+        ],
+        "journal": "Hedeflerin ve ailen arasında nasıl bir denge kuruyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "Macaristan",
+          "hint": "Yük taşıdığın ülke, yolculuğunun hedefi.",
+          "insight": "Macaristan, hedeflerin ve bu hedeflere ulaşma çabanı sorgulamana neden oluyor. Uzak bir yere gitmek, belki de hayallerine ya da hedeflerine ulaşmak için ne kadar yol kat etmen gerektiğini düşündürüyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "Macaristan",
+      "upsellCost": 3,
+      "createdAt": "2026-02-13T11:54:32.308Z",
+      "upsellInsight": "Macaristan, hedeflerin ve bu hedeflere ulaşma çabanı sorgulamana neden oluyor. Uzak bir yere gitmek, belki de hayallerine ya da hedeflerine ulaşmak için ne kadar yol kat etmen gerektiğini düşündürüyor.",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Çok zor kuruyorum ailem öncelik",
+      "journalPlusInsight": "Yük taşımak, sorumluluğunu sertleştiriyor. Aileyle olan bağlar, içsel özlemi büyütüyor. İki taraf arasında sıkışmak, dengeyi askıda bırakıyor. Öncelik belirlemek, çatışmayı netleştiriyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "29095a5f-72c0-4373-b59f-930d2776248b",
+      "requestId": "jp_retest_1770984069349",
+      "userId": "dev_jp_retest_001",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "otobüs şöförüydüm macaristan a yük götürüyordum. Yolda karım aradı bana çocukların sana ihtiyacı var dönmen gerekli dedi ama yol çok uzaktı dönemedim bir adamdan yardım isteyip onun telefonuyla ailemi aradım . Açmadılar . o sırada ter ile uyandım.",
+      "feelingTag": "özlem",
+      "lifeContextTag": "para",
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Kendini iki farklı dünyanın arasında sıkışmış hissediyorsun. Bir yanda sorumluluklar, diğer yanda ailenin ihtiyaçları seni bölüyor. Aradaki mesafe, içindeki özlemi büyütüyor.",
+        "beats": [
+          "Otobüs yolu uzuyor, sorumluluklar ağırlaşıyor.",
+          "Telefon açılmıyor, iletişim kopukluğu belirginleşiyor.",
+          "Terle uyanmak, içsel gerilimi sertleştiriyor."
+        ],
+        "nextStep": "Bu hafta bir yakınını kısa bir telefonla ara.",
+        "keywords": [
+          "sorumluluk",
+          "uzaklık",
+          "iletişim"
+        ],
+        "journal": "Hangi sorumluluklarını yeniden değerlendiriyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "otobüs",
+          "hint": "Macaristan'a yük taşıyan bir otobüs kullanıyorsun.",
+          "insight": "Otobüs, senin için yükümlülüklerin ve taşıdığın sorumluluklarla ilgili bir metafor. Bu yükler seni hedefinden uzaklaştırıyor mu, bunu sorguluyorsun."
+        }
+      ],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-13T12:01:25.255Z",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Çok zor kuruyorum ailem öncelik",
+      "journalPlusInsight": "Ailenin önceliği, kendini sorumluluklarından uzaklaştırıyor. İçten içe, bu dengeyi kurarken zorlanıyorsun. Aileye duyduğun bağlılık, kişisel özgürlük alanını daraltıyor.",
+      "journalPlusCost": 5
     }
   ]
 }

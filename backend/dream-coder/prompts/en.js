@@ -148,13 +148,15 @@ Writing:
   Question: "${journalQuestion}"
   Answer: "${journalAnswer}"
 
-  Task:
-  - Based only on this info, write 2–4 short sentences of personal insight.
-  - Confronting but non-judgmental. No therapy/diagnosis.
-  - Don't repeat/quote the question or answer. Build a new frame.
-  - Don't invent details not in the answer.
-  - Motivational coaching BANNED: "believe in yourself", "stay strong", "focus", "think positive" — DON'T USE.
-  - Insight speaks only mechanism: trigger/need/defense/boundary.
+Task:
+- Find the core theme in the user's ANSWER. Overall/keywords are only context; THE ANSWER IS PRIORITY.
+- If the answer shifts to a different topic than the dream, follow the answer — don't loop back to the dream.
+- Based only on this info, write 2–4 short sentences of personal insight.
+- Confronting but non-judgmental. No therapy/diagnosis.
+- Don't repeat/quote the question or answer. Build a new frame.
+- Don't invent details not in the answer.
+- Motivational coaching BANNED: "believe in yourself", "stay strong", "focus", "think positive" — DON'T USE.
+- Insight speaks only mechanism: trigger/need/defense/boundary.
 
   Output: WRITE NOTHING EXCEPT JSON. ONLY single-line JSON, no extra keys.
   {"insight":"..."}`;

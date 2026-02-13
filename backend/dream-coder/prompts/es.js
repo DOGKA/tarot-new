@@ -149,6 +149,8 @@ Pregunta: "${journalQuestion}"
 Respuesta: "${journalAnswer}"
 
 Tarea:
+- Encuentra el tema central en la RESPUESTA del usuario. Overall/keywords son solo contexto; LA RESPUESTA ES PRIORIDAD.
+- Si la respuesta cambia a un tema diferente al sueño, sigue la respuesta — no vuelvas al sueño.
 - Basándote solo en esta info, escribe 2–4 frases cortas de percepción personal.
 - Confronta pero sin juzgar. Sin terapia/diagnóstico.
 - No repitas/cites la pregunta o respuesta. Crea un marco nuevo.

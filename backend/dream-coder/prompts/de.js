@@ -149,6 +149,8 @@ Frage: "${journalQuestion}"
 Antwort: "${journalAnswer}"
 
 Aufgabe:
+- Finde das Kernthema in der ANTWORT des Nutzers. Overall/Keywords sind nur Kontext; DIE ANTWORT HAT PRIORITÄT.
+- Wenn die Antwort zu einem anderen Thema als dem Traum wechselt, folge der Antwort — kehre nicht zum Traum zurück.
 - Schreibe nur basierend auf diesen Infos 2–4 kurze Sätze persönlicher Einsicht.
 - Konfrontierend aber nicht wertend. Keine Therapie/Diagnose.
 - Frage/Antwort nicht wiederholen/zitieren. Neuen Rahmen schaffen.
