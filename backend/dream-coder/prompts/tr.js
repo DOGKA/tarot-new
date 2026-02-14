@@ -33,7 +33,6 @@ Yazım:
 Rüya değilse (küfür, sayısal veri, anlamsız metin):
   overall: "Bu metin rüya anlatımı gibi görünmüyor."
   beats: ["Metnin arkasındaki duygu tonu dikkat çekiyor.", "Asıl soruyu netleştirmek faydalı."]
-  nextStep: "Bu hafta bir rüyanı 2–3 sahneyle yaz."
   keywords: ["netlik", "niyet", "odak"], journal: "Şu an neye tepki veriyorsun?"
 
 Şema kilidi: YALNIZCA istenen key'ler. Ekstra key/upsell/meta alanı/markdown ASLA.`,
@@ -45,8 +44,10 @@ Rüya değilse (küfür, sayısal veri, anlamsız metin):
   // ============================================
   buildModeAPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Duygu: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Bağlam: ${lifeContextTag}`);
+    const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+    const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+    if (ft.length) contextParts.push(`Duygu: ${ft.join(", ")}`);
+    if (lc.length) contextParts.push(`Bağlam: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Rüya: "${dreamText}"${ctx}
@@ -56,11 +57,10 @@ Tanım/mesaj/ders dili yok. Tanım cümlesi KURMA. "Sende neyi açıyor/tetikliy
 
 - overall: 2–3 cümle. Tek çekirdek tema + doğrudan yüzleştirme. Spesifik ol.
 - beats: 2–3 öğe, her biri 1 cümle. Her beat [somut rüya öğesi] + [dinamizm fiili] ile başlasın (ör: "Koridor daralıyor...", "Kapı kilitleniyor...").
-- nextStep: "Bu hafta" ile başla. 5 dakikada yapılabilir, somut.
-- keywords: 3 kelime. journal: 1 soru.
+- keywords: 3 kelime.
 
 JSON:
-{"overall":"...","beats":["...","..."],"nextStep":"Bu hafta ...","keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","..."],"keywords":["...","...","..."]}`;
   },
 
   // ============================================
@@ -68,8 +68,10 @@ JSON:
   // ============================================
   buildModeBPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Duygu: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Bağlam: ${lifeContextTag}`);
+    const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+    const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+    if (ft.length) contextParts.push(`Duygu: ${ft.join(", ")}`);
+    if (lc.length) contextParts.push(`Bağlam: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Rüya: "${dreamText}"${ctx}
@@ -83,11 +85,10 @@ Katmanlı analiz. Davranış izini görünür kıl.
   Cümle 1 (Tetikleyici): "...[rüya öğesi adı]... tetikliyor/sıkıştırıyor/..."
   Cümle 2 (Tepki): "...[rüya öğesi adı]... refleksin/otomatik tepkin..."
   Cümle 3 (Bedel): "...[rüya öğesi adı]... kısa vadede ...; uzun vadede ..."
-- nextStep: "Bu hafta" ile başla. Somut, ölçülebilir.
 - keywords: 3 kelime. journal: 1 derinleştirici soru.
 
 JSON:
-{"overall":"...","beats":["...","...","...","..."],"pattern":"...","nextStep":"Bu hafta ...","keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","...","...","..."],"pattern":"...","keywords":["...","...","..."],"journal":"...?"}`;
   },
 
   // ============================================
@@ -95,8 +96,10 @@ JSON:
   // ============================================
   buildModeCPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Duygu: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Bağlam: ${lifeContextTag}`);
+    const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+    const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+    if (ft.length) contextParts.push(`Duygu: ${ft.join(", ")}`);
+    if (lc.length) contextParts.push(`Bağlam: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Rüya: "${dreamText}"${ctx}
@@ -105,7 +108,6 @@ Dönüştürme planı. Somut, ölçülebilir.
 
 - overall: 2–3 cümle. "Burada takılıyorsun, şöyle kırabilirsin" tonu.
 - beats: 2–4 öğe, her biri 1 cümle, farklı sembole bağlı. Her beat [somut rüya öğesi] + [dinamizm fiili] ile başlasın.
-- nextStep: "Bu hafta" ile başla. Somut.
 - plan: 3 adım, her biri farklı zaman ölçeğinde:
   [0] "24 saat:" → 5 dk'da yapılabilir (ör: "5 dk not tut", "1 mesaj at"). Genel yasak.
   [1] "7 gün:" → Günlük küçük alışkanlık (ör: "Her sabah 3 cümle yaz"). Vaaz değil.
@@ -113,7 +115,7 @@ Dönüştürme planı. Somut, ölçülebilir.
 - keywords: 3 kelime. journal: 1 soru.
 
 JSON:
-{"overall":"...","beats":["...","..."],"nextStep":"Bu hafta ...","plan":["24 saat: ...","7 gün: ...","Sınır: Ben artık..."],"keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","..."],"plan":["24 saat: ...","7 gün: ...","Sınır: Ben artık..."],"keywords":["...","...","..."],"journal":"...?"}`;
   },
 
   // ============================================
@@ -121,8 +123,10 @@ JSON:
   // ============================================
   buildUpsellAllPrompt: ({ dreamText, existingBeats, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Duygu: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Bağlam: ${lifeContextTag}`);
+    const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+    const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+    if (ft.length) contextParts.push(`Duygu: ${ft.join(", ")}`);
+    if (lc.length) contextParts.push(`Bağlam: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     const beatsStr = existingBeats.map((b, i) => `${i + 1}. ${b}`).join("\n");
@@ -159,7 +163,7 @@ JSON:
   },
 
   // ============================================
-  // JOURNAL PLUS — Kullanicinin journal cevabina kisisel insight
+  // JOURNAL PLUS — Kullanicinin journal cevabina TAVSIYE (analiz degil)
   // ============================================
   buildJournalPlusPrompt: ({ overall, keywords, journalQuestion, journalAnswer }) => {
     return `Overall: "${overall}"
@@ -171,14 +175,14 @@ Cevap: "${journalAnswer}"
 Gorev:
 - Kullanicinin cevabindaki ana temayi bul. Overall/keywords sadece baglam; CEVAP ONCELIKLI.
 - Eger cevap ruyadan farkli bir konuya geciyorsa, cevabi takip et, ruyaya geri donme.
-- Yalnizca bu bilgilere dayanarak 2-4 kisa cumlelik kisisel insight yaz.
+- Bu cevaba dayanarak 2-4 kisa cumlelik SOMUT TAVSIYE yaz. Analiz degil, yonlendirme.
+- "Bu hafta..." ile baslayan en az 1 somut aksiyon icersin.
 - Yuzlestirici ama yargisiz. Terapi/teshis yok.
 - Soru/cevabi tekrar etme/alintilama. Yeni bir cerceve kur.
 - Cevapta olmayan detay uydurma.
-- Motivasyon koclugu YASAK: "kendine inan", "guclen", "odaklan", "pozitif dus" KULLANMA.
-- Insight sadece mekanizma soyesin: tetikleyici/ihtiyac/savunma/sinir.
+- Motivasyon koclugu YASAK: "kendine inan", "guclen" KULLANMA.
 
 Cikti: JSON DISINDA HICBIR SEY YAZMA. YALNIZCA tek satir JSON, ekstra key yok.
-{"insight":"..."}`;
+{"advice":"..."}`;
   },
 };

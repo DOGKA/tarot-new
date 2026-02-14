@@ -977,6 +977,190 @@
       "journalPlusAnswer": "Çok zor kuruyorum ailem öncelik",
       "journalPlusInsight": "Ailenin önceliği, kendini sorumluluklarından uzaklaştırıyor. İçten içe, bu dengeyi kurarken zorlanıyorsun. Aileye duyduğun bağlılık, kişisel özgürlük alanını daraltıyor.",
       "journalPlusCost": 5
+    },
+    {
+      "id": "e25704f7-0665-4999-9fb5-d016fd2071d0",
+      "requestId": "1771062739238_ukj2vb",
+      "userId": "dev_1771062466717_fflihzs8",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "buzlarla kapli bir dagda yuruyordum. telefonum caldi. esim arayip hemen yanlarina gelmemi soyledi. Uzaklarda gordugum dag kaplani beni yiyecek korkusuyla kosarken asagiya yuvarlandim. yuvarlanirlen telefonu actim esim alo dedi. uyandim.",
+      "feelingTag": "korku",
+      "lifeContextTag": "aile",
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Buzlarla kaplı dağ, hayatında karşılaştığın zorlukları ve soğuk mesafeleri açıyor. Eşinin araması, aileye olan bağlılık ve sorumluluk duygusunu netleştiriyor. Dağ kaplanı, yaklaşan tehlikeler ya da tehdit algını belirginleştiriyor. Korku ve panik, kontrol kaybını sertleştiriyor.",
+        "beats": [
+          "Buzlarla kaplı dağ, soğuk ve zorlu koşulları açıyor.",
+          "Telefonun çalması, önemli bir çağrıyı netleştiriyor.",
+          "Eşinin araması, ailevi sorumlulukları tetikliyor.",
+          "Dağ kaplanı, tehdit ve korku duygusunu büyütüyor.",
+          "Yuvarlanmak, kontrol kaybı ve panik hissini sertleştiriyor."
+        ],
+        "pattern": "Dağ, zorlayıcı durumları tetikliyor. Telefon, otomatik tepkin olan iletişim ihtiyacını açıyor. Kaplan, kısa vadede korku yaratıyor; uzun vadede güvenlik arayışını hızlandırıyor.",
+        "nextStep": "Bu hafta ailenle ilgili bir konuyu netleştir ve bunun üzerine düşün.",
+        "keywords": [
+          "sorumluluk",
+          "tehdit",
+          "kontrol"
+        ],
+        "journal": "Ailene karşı hangi sorumluluklar seni baskı altında hissettiriyor?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "buzlarla kaplı dağ",
+          "hint": "Soğuk ve kaygan yüzeylerde yürüyorsun.",
+          "insight": "Buzlu dağ, zorluklar karşısında kaygan bir zeminde ilerlediğini hissettiriyor. Kendini güvende hissetmediğin bir durumda dengeyi bulmakta zorlanıyorsun."
+        },
+        {
+          "symbol": "telefon",
+          "hint": "Bir çağrı alıyorsun ve bu seni harekete geçiriyor.",
+          "insight": "Telefon, beklenmedik bir iletişimle karşı karşıya kalmanın getirdiği baskıyı netleştiriyor. O anki önceliklerini sorguluyor ve hızlı kararlar almak zorunda kalıyorsun."
+        },
+        {
+          "symbol": "dağ kaplanı",
+          "hint": "Uzaktan seni izleyen bir tehdit var.",
+          "insight": "Dağ kaplanı, görünmez tehlikelerin seni nasıl tetiklediğini belirginleştiriyor. Korkuların ve endişelerin, harekete geçme hızını artırıyor ve seni savunmasız bırakıyor."
+        }
+      ],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-14T09:52:28.774Z",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "maddi kaygilar cocuklarimin egitimi",
+      "journalPlusInsight": "Maddi kaygılar ve çocuklarının eğitimi üzerindeki baskı, sorumluluk duygunu tetikliyor. Bu yük, kontrol hissini zorluyor ve endişeyi büyütüyor. Aile için sağlanması gerekenler, içsel bir stres kaynağına dönüşüyor.",
+      "journalPlusCost": 5
+    },
+    {
+      "id": "eda09693-9c4d-4eb8-b8af-401833037d61",
+      "requestId": "1771063107091_jf1rxk",
+      "userId": "dev_1771062466717_fflihzs8",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "okuldaki arkadaslarimla piknige gittik. ogretmenimiz beni iceceklerden sorumlu yapti. Doldururken tum masaya doktum arkadaslarim benimle dalga gecti. Ogretmenim beni kucagina aldi tokatla vurdu aglayarak uyandim. Orospu cocugu ogretmen.",
+      "feelingTag": "korku",
+      "lifeContextTag": "arkadaşlık",
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Başkalarının beklentileri ve kendi hataların arasında sıkışmışsın. Kontrolü kaybettiğinde hissettiğin korkuyu fark etmen önemli. Kendine haksızlık etmeyi bırakmak, içsel huzura giden yolu açabilir.",
+        "beats": [
+          "Piknik masası, senin için sosyal bağları büyütüyor.",
+          "İçecekleri dökmen, hata yapma korkunu tetikliyor.",
+          "Arkadaşlarının dalga geçmesi, kabul görme ihtiyacını sertleştiriyor.",
+          "Öğretmenin tokadı, otoriteyle olan gerilimi belirginleştiriyor."
+        ],
+        "nextStep": "Bu hafta duygularını yazıya dökerek anlamaya çalış.",
+        "plan": [
+          "24 saat: Kendine bir not yaz ve hataların seni tanımlamadığını hatırlat.",
+          "7 gün: Her gün bir olumlu özelliğini yaz.",
+          "Sınır: Ben artık başkalarının yargılarıyla kendimi tanımlamıyorum."
+        ],
+        "keywords": [
+          "hata",
+          "kabul",
+          "otorite"
+        ],
+        "journal": "Hangi durumlarda kendine haksızlık ediyorsun?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-14T09:58:34.579Z"
+    },
+    {
+      "id": "4da59edd-4bcc-4625-9e7e-9eca3fb5b3da",
+      "requestId": "1771063202326_t49xhz",
+      "userId": "dev_1771062466717_fflihzs8",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "okuldaki arkadaslarimla piknige gittik. ogretmenimiz beni iceceklerden sorumlu yapti. Doldururken tum masaya doktum arkadaslarim benimle dalga gecti. Ogretmenim beni kucagina aldi tokatla vurdu aglayarak uyandim. Orospu cocugu ogretmen.",
+      "feelingTag": "korku",
+      "lifeContextTag": "arkadaşlık",
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Kontrol kaybı ve utanç duyguları seni kıstırıyor. Otorite figürüyle gelen şiddet korkuyu büyütüyor. Arkadaşlarının tepkisi güvensizliği tetikliyor.",
+        "beats": [
+          "İçecekler masaya dökülüyor, kontrol kaybı açılıyor.",
+          "Arkadaşların dalga geçiyor, utanç büyüyor.",
+          "Öğretmenin tokatlıyor, korku sertleşiyor."
+        ],
+        "nextStep": "Bu hafta arkadaşlarınla günlük bir konuda konuşup hislerini paylaş.",
+        "keywords": [
+          "kontrol",
+          "utanç",
+          "korku"
+        ],
+        "journal": "Kendini en son ne zaman kontrolsüz hissettin?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "piknik",
+          "hint": "Okuldaki arkadaşlarınla bir araya geldiğiniz açık hava etkinliği.",
+          "insight": "Sosyal ortamlarda kendini nasıl konumlandırdığını sorgulatıyor. Bir araya gelmek ve paylaşımda bulunmak sende hangi duygulara alan açıyor?"
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "piknik",
+      "upsellCost": 3,
+      "createdAt": "2026-02-14T10:00:13.239Z",
+      "upsellInsight": "Sosyal ortamlarda kendini nasıl konumlandırdığını sorgulatıyor. Bir araya gelmek ve paylaşımda bulunmak sende hangi duygulara alan açıyor?"
+    },
+    {
+      "id": "dbc50559-7ba2-4a42-a2f2-ad690d99ae82",
+      "requestId": "1771063266777_rdd0vf",
+      "userId": "dev_1771062466717_fflihzs8",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "okuldaki arkadaslarimla piknige gittik. ogretmenimiz beni iceceklerden sorumlu yapti. Doldururken tum masaya doktum arkadaslarim benimle dalga gecti. Ogretmenim beni kucagina aldi tokatla vurdu aglayarak uyandim. Orospu cocugu ogretmen.",
+      "feelingTag": "korku",
+      "lifeContextTag": "arkadaşlık",
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Arkadaş çevresinde sorumluluk almak stres yaratıyor. Hata yapma korkusu derinleşiyor. Başkalarının tepkileri özgüvenini zedeliyor. Otorite figürleriyle olan ilişkilerde gerginlik yaşanıyor.",
+        "beats": [
+          "Piknik ortamı, sosyal etkileşimleri büyütüyor.",
+          "İçeceklerden sorumlu olmak, yükümlülük hissini tetikliyor.",
+          "Dökülen içecek, hata yapma kaygısını belirginleştiriyor.",
+          "Arkadaşların dalga geçmesi, kabul görme arzusunu sıkıştırıyor.",
+          "Öğretmenin tokadı, otoriteyle ilişkini sertleştiriyor."
+        ],
+        "pattern": "İçecek sorumluluğu, hata yapma korkusunu tetikliyor. Masaya dökülen içecek, otomatik öz eleştiri refleksin. Öğretmenin tokadı, kısa vadede utanç yaratıyor; uzun vadede özgüveni zedeliyor.",
+        "nextStep": "Bu hafta bir rüyanı 2–3 sahneyle yaz ve özellikle duygusal tepkilerini not et.",
+        "keywords": [
+          "sorumluluk",
+          "özgüven",
+          "otorite"
+        ],
+        "journal": "Otorite figürleriyle ilişkinde neyin değişmesini istiyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "piknik",
+          "hint": "Açık havada arkadaşlarınla bir araya geliyorsun.",
+          "insight": "Piknik, sosyal bağlarını ve grup içindeki yerini sorgulamana kapı açıyor. Bu tür etkinliklerin sana getirdiği rahatlık ve baskı arasındaki dengeyi düşün."
+        },
+        {
+          "symbol": "masaya",
+          "hint": "İçecekleri yanlışlıkla döktüğün yüzey.",
+          "insight": "Masa, kontrolünü kaybettiğin alanlarda kendine karşı ne kadar sert olabileceğini düşündürüyor. Hata yapma korkusu, mükemmeliyetçi eğilimlerini tetikleyebilir."
+        },
+        {
+          "symbol": "kucak",
+          "hint": "Öğretmenin seni burada tutuyor.",
+          "insight": "Kucak, güven ve otorite arasındaki karmaşık ilişkini sorgulamana neden oluyor. Güvende hissetmen gereken bir yerde şiddetle karşılaşmak, otorite figürleriyle olan ilişkilerini yeniden değerlendirmeni gerektirebilir."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "piknik",
+      "upsellCost": 3,
+      "createdAt": "2026-02-14T10:01:23.919Z",
+      "upsellInsight": "Piknik, sosyal bağlarını ve grup içindeki yerini sorgulamana kapı açıyor. Bu tür etkinliklerin sana getirdiği rahatlık ve baskı arasındaki dengeyi düşün."
     }
   ]
 }

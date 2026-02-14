@@ -30,7 +30,8 @@ export type LifeContextTag =
   | "sağlık"
   | "arkadaşlık"
   | "kayıp"
-  | "değişim";
+  | "değişim"
+  | "eğitim";
 
 // ============================================
 // API Request / Response
@@ -39,8 +40,8 @@ export type LifeContextTag =
 export interface DreamDecodeRequest {
   mode: DreamMode;
   dreamText: string;
-  feelingTag?: FeelingTag;
-  lifeContextTag?: LifeContextTag;
+  feelingTags?: FeelingTag[];
+  lifeContextTags?: LifeContextTag[];
   deviceId: string;
   requestId: string;
   language?: string;

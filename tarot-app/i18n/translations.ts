@@ -369,6 +369,8 @@ export const translations = {
       contextFriendship: "Friendship",
       contextLoss: "Loss",
       contextChange: "Change",
+      contextEducation: "Education",
+      journalPlusAdvice: "Advice",
     },
   },
   tr: {
@@ -716,6 +718,7 @@ export const translations = {
       journalPlusCTA: "Kendime Sordum",
       journalPlusYourAnswer: "Senin Cevabın",
       journalPlusInsight: "Derinlemesine İçgörü",
+      journalPlusAdvice: "Tavsiye",
       journalPlusWriteAnswer: "Cevabını yaz",
       journalPlusPlaceholder: "Cevabını buraya yaz...",
       journalPlusSend: "Gönder",
@@ -745,6 +748,7 @@ export const translations = {
       contextFriendship: "Arkadaşlık",
       contextLoss: "Kayıp",
       contextChange: "Değişim",
+      contextEducation: "Eğitim",
     },
   },
   de: {
@@ -1117,6 +1121,8 @@ export const translations = {
       contextFriendship: "Freundschaft",
       contextLoss: "Verlust",
       contextChange: "Veränderung",
+      contextEducation: "Bildung",
+      journalPlusAdvice: "Empfehlung",
     },
   },
   es: {
@@ -1489,6 +1495,8 @@ export const translations = {
       contextFriendship: "Amistad",
       contextLoss: "Pérdida",
       contextChange: "Cambio",
+      contextEducation: "Educación",
+      journalPlusAdvice: "Consejo",
     },
   },
 };

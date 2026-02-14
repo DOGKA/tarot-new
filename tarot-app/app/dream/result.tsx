@@ -203,29 +203,25 @@ export default function DreamResultScreen() {
           </View>
         )}
 
-        {/* Next Step */}
-        <GlassCard style={styles.section}>
-          <Text style={styles.sectionTitle}>{t("dreamNextStep") || "Bu Hafta"}</Text>
-          <Text style={styles.nextStepText}>{result.nextStep}</Text>
-        </GlassCard>
+        {/* Journal (B ve C modunda, A'da yok) */}
+        {dreamMode !== "A" && result.journal && (
+          <GlassCard style={[styles.section, styles.journalSection]}>
+            <Text style={styles.journalLabel}>{t("dreamJournal") || "Kendine Sor"}</Text>
+            <Text style={styles.journalText}>{result.journal}</Text>
+          </GlassCard>
+        )}
 
-        {/* Journal */}
-        <GlassCard style={[styles.section, styles.journalSection]}>
-          <Text style={styles.journalLabel}>{t("dreamJournal") || "Kendine Sor"}</Text>
-          <Text style={styles.journalText}>{result.journal}</Text>
-        </GlassCard>
-
-        {/* JournalPlus — cevap yaz + insight al */}
-        {hasJournalPlus && (result as any).dreamJournalPlus ? (
-          /* Acilmis: cevap + insight goster */
+        {/* JournalPlus — tavsiye al (B ve C modunda, A'da yok) */}
+        {dreamMode !== "A" && hasJournalPlus && (result as any).dreamJournalPlus ? (
+          /* Acilmis: cevap + tavsiye goster */
           <GlassCard style={[styles.section, styles.journalPlusResult]}>
             <Text style={styles.jpLabel}>{t("journalPlusYourAnswer") || "Senin Cevabın"}</Text>
             <Text style={styles.jpAnswer}>{(result as any).dreamJournalPlus.answer}</Text>
             <View style={styles.jpDivider} />
-            <Text style={styles.jpInsightLabel}>{t("journalPlusInsight") || "Derinlemesine İçgörü"}</Text>
-            <Text style={styles.jpInsight}>{(result as any).dreamJournalPlus.insight}</Text>
+            <Text style={styles.jpInsightLabel}>{t("journalPlusAdvice") || "Tavsiye"}</Text>
+            <Text style={styles.jpInsight}>{(result as any).dreamJournalPlus.advice || (result as any).dreamJournalPlus.insight}</Text>
           </GlassCard>
-        ) : showJournalInput ? (
+        ) : dreamMode !== "A" && showJournalInput ? (
           /* TextInput acik: yaz + gonder */
           <GlassCard style={[styles.section, styles.journalPlusInput]}>
             <Text style={styles.jpInputLabel}>{t("journalPlusWriteAnswer") || "Cevabını yaz"}</Text>
@@ -343,8 +339,8 @@ export default function DreamResultScreen() {
             </TouchableOpacity>
           )}
 
-          {/* JournalPlus CTA — "Kendime Sordum" butonu */}
-          {!hasJournalPlus && !showJournalInput && (
+          {/* JournalPlus CTA — "Kendime Sordum" butonu (B ve C, A'da yok) */}
+          {dreamMode !== "A" && !hasJournalPlus && !showJournalInput && (
             <TouchableOpacity
               activeOpacity={0.85}
               onPress={() => setShowJournalInput(true)}

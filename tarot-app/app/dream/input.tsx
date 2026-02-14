@@ -53,7 +53,10 @@ const CONTEXT_KEYS: { value: LifeContextTag; i18nKey: string }[] = [
   { value: "arkadaşlık", i18nKey: "contextFriendship" },
   { value: "kayıp", i18nKey: "contextLoss" },
   { value: "değişim", i18nKey: "contextChange" },
+  { value: "eğitim", i18nKey: "contextEducation" },
 ];
+
+const MAX_TAGS = 3;
 
 export default function DreamInputScreen() {
   const router = useRouter();
@@ -62,10 +65,10 @@ export default function DreamInputScreen() {
     dreamMode,
     dreamText,
     setDreamText,
-    feelingTag,
-    setFeelingTag,
-    lifeContextTag,
-    setLifeContextTag,
+    feelingTags,
+    setFeelingTags,
+    lifeContextTags,
+    setLifeContextTags,
     setCurrentResult,
     gemstoneBalance,
     prices,
@@ -98,8 +101,8 @@ export default function DreamInputScreen() {
         body: JSON.stringify({
           mode: dreamMode,
           dreamText: dreamText.trim(),
-          feelingTag: feelingTag || undefined,
-          lifeContextTag: lifeContextTag || undefined,
+          feelingTags: feelingTags.length > 0 ? feelingTags : undefined,
+          lifeContextTags: lifeContextTags.length > 0 ? lifeContextTags : undefined,
           deviceId,
           requestId,
           language,
@@ -182,10 +185,16 @@ export default function DreamInputScreen() {
               {FEELING_KEYS.map((opt) => (
                 <TouchableOpacity
                   key={opt.value}
-                  style={[styles.tagChip, feelingTag === opt.value && styles.tagChipSelected]}
-                  onPress={() => setFeelingTag(feelingTag === opt.value ? null : opt.value)}
+                  style={[styles.tagChip, feelingTags.includes(opt.value) && styles.tagChipSelected]}
+                  onPress={() => {
+                    if (feelingTags.includes(opt.value)) {
+                      setFeelingTags(feelingTags.filter(t => t !== opt.value));
+                    } else if (feelingTags.length < MAX_TAGS) {
+                      setFeelingTags([...feelingTags, opt.value]);
+                    }
+                  }}
                 >
-                  <Text style={[styles.tagChipText, feelingTag === opt.value && styles.tagChipTextSelected]}>
+                  <Text style={[styles.tagChipText, feelingTags.includes(opt.value) && styles.tagChipTextSelected]}>
                     {t(opt.i18nKey)}
                   </Text>
                 </TouchableOpacity>
@@ -202,10 +211,16 @@ export default function DreamInputScreen() {
               {CONTEXT_KEYS.map((opt) => (
                 <TouchableOpacity
                   key={opt.value}
-                  style={[styles.tagChip, lifeContextTag === opt.value && styles.tagChipSelected]}
-                  onPress={() => setLifeContextTag(lifeContextTag === opt.value ? null : opt.value)}
+                  style={[styles.tagChip, lifeContextTags.includes(opt.value) && styles.tagChipSelected]}
+                  onPress={() => {
+                    if (lifeContextTags.includes(opt.value)) {
+                      setLifeContextTags(lifeContextTags.filter(t => t !== opt.value));
+                    } else if (lifeContextTags.length < MAX_TAGS) {
+                      setLifeContextTags([...lifeContextTags, opt.value]);
+                    }
+                  }}
                 >
-                  <Text style={[styles.tagChipText, lifeContextTag === opt.value && styles.tagChipTextSelected]}>
+                  <Text style={[styles.tagChipText, lifeContextTags.includes(opt.value) && styles.tagChipTextSelected]}>
                     {t(opt.i18nKey)}
                   </Text>
                 </TouchableOpacity>

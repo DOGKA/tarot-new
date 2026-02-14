@@ -178,7 +178,9 @@ const LIFE_CONTEXT_TAGS = ["iş", "aşk", "para", "aile", "sağlık", "arkadaşl
 // ============================================
 router.post("/decode", async (req, res) => {
   try {
-    const { mode, dreamText, feelingTag, lifeContextTag, deviceId, requestId, language } = req.body;
+    const { mode, dreamText, deviceId, requestId, language } = req.body;
+    const feelingTag = req.body.feelingTags || req.body.feelingTag || null;
+    const lifeContextTag = req.body.lifeContextTags || req.body.lifeContextTag || null;
     const lang = language || "tr";
 
     // Validation
@@ -404,7 +406,7 @@ router.post("/journal-plus", async (req, res) => {
     if (reading.journalPlusUnlocked) {
       return res.json({
         readingId: reading.id,
-        dreamJournalPlus: { answer: reading.journalPlusAnswer, insight: reading.journalPlusInsight || "" },
+        dreamJournalPlus: { answer: reading.journalPlusAnswer, advice: reading.journalPlusInsight || "" },
         alreadyUnlocked: true,
       });
     }
@@ -442,14 +444,14 @@ router.post("/journal-plus", async (req, res) => {
 
     const journalPlus = {
       answer: journalAnswer.trim(),
-      insight: gpResult.insight || "",
+      advice: gpResult.advice || gpResult.insight || "",
     };
 
     // Update reading (meta only, resultJson untouched)
     updateReading(readingLang, dreamDecodeId, {
       journalPlusUnlocked: true,
       journalPlusAnswer: journalAnswer.trim(),
-      journalPlusInsight: gpResult.insight || "",
+      journalPlusInsight: gpResult.advice || gpResult.insight || "",
       journalPlusCost: cost,
     });
 

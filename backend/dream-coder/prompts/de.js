@@ -29,7 +29,6 @@ Schreibregeln:
 Kein Traum (Schimpfwörter, Zahlen, Unsinn):
   overall: "Dieser Text sieht nicht nach einer Traumerzählung aus."
   beats: ["Der emotionale Ton hinter dem Text fällt auf.", "Die eigentliche Frage zu klären wäre hilfreich."]
-  nextStep: "Schreibe diese Woche einen Traum in 2–3 Szenen."
   keywords: ["Klarheit", "Absicht", "Fokus"], journal: "Worauf reagierst du gerade wirklich?"
 
 Schema-Sperre: NUR angeforderte Keys. Extra Key/Upsell/Meta/Markdown NIE.`,
@@ -38,8 +37,10 @@ Schema-Sperre: NUR angeforderte Keys. Extra Key/Upsell/Meta/Markdown NIE.`,
 
   buildModeAPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Gefühl: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Kontext: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Gefühl: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Kontext: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Traum: "${dreamText}"${ctx}
@@ -49,17 +50,18 @@ Keine Definitions-/Botschafts-/Lektionssprache. Keine Definitionssätze bauen. S
 
 - overall: 2–3 Sätze. Ein Kernthema + direkte Konfrontation. Sei spezifisch.
 - beats: 2–3 Elemente, je 1 Satz. Jeder Beat beginnt mit [konkretes Traumelement] + [Dynamik-Verb] (z.B. "Der Korridor verengt...", "Die Tür sperrt...").
-- nextStep: Beginne mit "Diese Woche". In 5 Minuten machbar, konkret.
-- keywords: 3 Wörter. journal: 1 Frage.
+- keywords: 3 Wörter.
 
 JSON:
-{"overall":"...","beats":["...","..."],"nextStep":"Diese Woche ...","keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","..."],"keywords":["...","...","..."]}`;
   },
 
   buildModeBPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Gefühl: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Kontext: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Gefühl: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Kontext: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Traum: "${dreamText}"${ctx}
@@ -73,17 +75,18 @@ Mehrschichtige Analyse. Mache die Verhaltensspur sichtbar.
   Satz 1 (Auslöser): "...[Traumelement]... löst aus/drückt zusammen/..."
   Satz 2 (Reaktion): "...[Traumelement]... dein Reflex/automatische Reaktion..."
   Satz 3 (Kosten): "...[Traumelement]... kurzfristig ...; langfristig ..."
-- nextStep: Beginne mit "Diese Woche". Konkret, messbar.
 - keywords: 3 Wörter. journal: 1 vertiefende Frage.
 
 JSON:
-{"overall":"...","beats":["...","...","...","..."],"pattern":"...","nextStep":"Diese Woche ...","keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","...","...","..."],"pattern":"...","keywords":["...","...","..."],"journal":"...?"}`;
   },
 
   buildModeCPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Gefühl: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Kontext: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Gefühl: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Kontext: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Traum: "${dreamText}"${ctx}
@@ -92,7 +95,6 @@ Transformationsplan. Konkret, messbar.
 
 - overall: 2–3 Sätze. "Du steckst hier fest, so brichst du aus"-Ton.
 - beats: 2–4 Elemente, je 1 Satz. Jeder Beat beginnt mit [konkretes Traumelement] + [Dynamik-Verb].
-- nextStep: Beginne mit "Diese Woche". Konkret.
 - plan: 3 Schritte, jeder in anderem Zeitrahmen:
   [0] "24h:" → In 5 Min machbar (z.B. "5 Min Notizen schreiben", "1 Nachricht senden"). Keine Allgemeinplätze.
   [1] "7d:" → Kleine tägliche Gewohnheit (z.B. "Jeden Morgen 3 Sätze schreiben"). Keine Predigt.
@@ -100,13 +102,15 @@ Transformationsplan. Konkret, messbar.
 - keywords: 3 Wörter. journal: 1 Frage.
 
 JSON:
-{"overall":"...","beats":["...","..."],"nextStep":"Diese Woche ...","plan":["24h: ...","7d: ...","Grenze: Ich erlaube nicht mehr..."],"keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","..."],"plan":["24h: ...","7d: ...","Grenze: Ich erlaube nicht mehr..."],"keywords":["...","...","..."],"journal":"...?"}`;
   },
 
   buildUpsellAllPrompt: ({ dreamText, existingBeats, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Gefühl: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Kontext: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Gefühl: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Kontext: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
     const beatsStr = existingBeats.map((b, i) => `${i + 1}. ${b}`).join("\n");
 
@@ -151,14 +155,14 @@ Antwort: "${journalAnswer}"
 Aufgabe:
 - Finde das Kernthema in der ANTWORT des Nutzers. Overall/Keywords sind nur Kontext; DIE ANTWORT HAT PRIORITÄT.
 - Wenn die Antwort zu einem anderen Thema als dem Traum wechselt, folge der Antwort — kehre nicht zum Traum zurück.
-- Schreibe nur basierend auf diesen Infos 2–4 kurze Sätze persönlicher Einsicht.
+- Schreibe basierend darauf 2–4 kurze Sätze KONKRETEN RAT. Keine Analyse — Orientierung.
+- Mindestens 1 umsetzbarer Schritt mit "Diese Woche..." beginnen.
 - Konfrontierend aber nicht wertend. Keine Therapie/Diagnose.
 - Frage/Antwort nicht wiederholen/zitieren. Neuen Rahmen schaffen.
 - Keine Details erfinden, die nicht in der Antwort stehen.
-- Motivationscoaching VERBOTEN: "glaub an dich", "werde stärker", "fokussiere dich", "denk positiv" — NICHT VERWENDEN.
-- Insight spricht nur Mechanismus: Auslöser/Bedürfnis/Abwehr/Grenze.
+- Motivationscoaching VERBOTEN: "glaub an dich", "werde stärker" — NICHT VERWENDEN.
 
 Ausgabe: NICHTS AUSSER JSON SCHREIBEN. NUR einzeilige JSON, keine zusätzlichen Keys.
-{"insight":"..."}`;
+{"advice":"..."}`;
   },
 };

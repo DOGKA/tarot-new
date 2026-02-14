@@ -29,7 +29,6 @@ Writing:
   Not a dream (profanity, numbers, nonsense):
     overall: "This text doesn't look like a dream narrative."
     beats: ["The emotional tone behind the text stands out.", "Clarifying the real question helps."]
-    nextStep: "This week, write a dream in 2–3 scenes."
     keywords: ["clarity", "intention", "focus"], journal: "What are you actually reacting to right now?"
 
   Schema lock: ONLY requested keys. Extra key/upsell/meta/markdown NEVER.`,
@@ -38,8 +37,10 @@ Writing:
 
     buildModeAPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
       const contextParts = [];
-      if (feelingTag) contextParts.push(`Feeling: ${feelingTag}`);
-      if (lifeContextTag) contextParts.push(`Context: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Feeling: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Context: ${lc.join(", ")}`);
       const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
       return `Dream: "${dreamText}"${ctx}
@@ -49,17 +50,18 @@ Writing:
 
   - overall: 2–3 sentences. Single core theme + direct confrontation. Be specific.
   - beats: 2–3 items, 1 sentence each. Each beat starts with [concrete dream element] + [dynamism verb] (e.g. "The corridor tightens...", "The door locks...").
-  - nextStep: Start with "This week". Doable in 5 minutes, concrete.
-  - keywords: 3 words. journal: 1 question.
+  - keywords: 3 words.
 
   JSON:
-  {"overall":"...","beats":["...","..."],"nextStep":"This week ...","keywords":["...","...","..."],"journal":"...?"}`;
+  {"overall":"...","beats":["...","..."],"keywords":["...","...","..."]}`;
     },
 
     buildModeBPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
       const contextParts = [];
-      if (feelingTag) contextParts.push(`Feeling: ${feelingTag}`);
-      if (lifeContextTag) contextParts.push(`Context: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Feeling: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Context: ${lc.join(", ")}`);
       const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
       return `Dream: "${dreamText}"${ctx}
@@ -73,17 +75,18 @@ Writing:
     Sentence 1 (Trigger): "...[dream element]... triggers/tightens/..."
     Sentence 2 (Reaction): "...[dream element]... your reflex/automatic response..."
     Sentence 3 (Cost): "...[dream element]... in the short term ...; in the long term ..."
-  - nextStep: Start with "This week". Concrete, measurable.
   - keywords: 3 words. journal: 1 deepening question.
 
   JSON:
-  {"overall":"...","beats":["...","...","...","..."],"pattern":"...","nextStep":"This week ...","keywords":["...","...","..."],"journal":"...?"}`;
+  {"overall":"...","beats":["...","...","...","..."],"pattern":"...","keywords":["...","...","..."],"journal":"...?"}`;
     },
 
     buildModeCPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
       const contextParts = [];
-      if (feelingTag) contextParts.push(`Feeling: ${feelingTag}`);
-      if (lifeContextTag) contextParts.push(`Context: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Feeling: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Context: ${lc.join(", ")}`);
       const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
       return `Dream: "${dreamText}"${ctx}
@@ -92,7 +95,6 @@ Writing:
 
   - overall: 2–3 sentences. "You're stuck here, here's how to break it" tone.
   - beats: 2–4 items, 1 sentence each. Each beat starts with [concrete dream element] + [dynamism verb].
-  - nextStep: Start with "This week". Concrete.
   - plan: 3 steps, each at a different time scale:
     [0] "24h:" → Doable in 5 min (e.g. "write for 5 min", "send 1 message"). No generics.
     [1] "7d:" → Small daily habit (e.g. "Write 3 sentences every morning"). No preaching.
@@ -100,13 +102,15 @@ Writing:
   - keywords: 3 words. journal: 1 question.
 
   JSON:
-  {"overall":"...","beats":["...","..."],"nextStep":"This week ...","plan":["24h: ...","7d: ...","Boundary: I no longer..."],"keywords":["...","...","..."],"journal":"...?"}`;
+  {"overall":"...","beats":["...","..."],"plan":["24h: ...","7d: ...","Boundary: I no longer..."],"keywords":["...","...","..."],"journal":"...?"}`;
     },
 
     buildUpsellAllPrompt: ({ dreamText, existingBeats, feelingTag, lifeContextTag }) => {
       const contextParts = [];
-      if (feelingTag) contextParts.push(`Feeling: ${feelingTag}`);
-      if (lifeContextTag) contextParts.push(`Context: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Feeling: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Context: ${lc.join(", ")}`);
       const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
       const beatsStr = existingBeats.map((b, i) => `${i + 1}. ${b}`).join("\n");
 
@@ -151,14 +155,14 @@ Writing:
 Task:
 - Find the core theme in the user's ANSWER. Overall/keywords are only context; THE ANSWER IS PRIORITY.
 - If the answer shifts to a different topic than the dream, follow the answer — don't loop back to the dream.
-- Based only on this info, write 2–4 short sentences of personal insight.
+- Based on this, write 2–4 short sentences of CONCRETE ADVICE. Not analysis — guidance.
+- Include at least 1 actionable step starting with "This week...".
 - Confronting but non-judgmental. No therapy/diagnosis.
 - Don't repeat/quote the question or answer. Build a new frame.
 - Don't invent details not in the answer.
-- Motivational coaching BANNED: "believe in yourself", "stay strong", "focus", "think positive" — DON'T USE.
-- Insight speaks only mechanism: trigger/need/defense/boundary.
+- Motivational coaching BANNED: "believe in yourself", "stay strong" — DON'T USE.
 
-  Output: WRITE NOTHING EXCEPT JSON. ONLY single-line JSON, no extra keys.
-  {"insight":"..."}`;
+Output: WRITE NOTHING EXCEPT JSON. ONLY single-line JSON, no extra keys.
+{"advice":"..."}`;
     },
   };

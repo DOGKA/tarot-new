@@ -29,7 +29,6 @@ Escritura:
 No es un sueño (insultos, datos numéricos, texto sin sentido):
   overall: "Este texto no parece una narración de sueño."
   beats: ["El tono emocional detrás del texto llama la atención.", "Aclarar la pregunta real ayudaría."]
-  nextStep: "Esta semana, escribe un sueño en 2–3 escenas."
   keywords: ["claridad", "intención", "enfoque"], journal: "¿A qué estás reaccionando realmente ahora?"
 
 Bloqueo de esquema: SOLO las keys solicitadas. Key extra/upsell/meta/markdown NUNCA.`,
@@ -38,8 +37,10 @@ Bloqueo de esquema: SOLO las keys solicitadas. Key extra/upsell/meta/markdown NU
 
   buildModeAPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Sentimiento: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Contexto: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Sentimiento: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Contexto: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Sueño: "${dreamText}"${ctx}
@@ -49,17 +50,18 @@ Sin lenguaje de definición/mensaje/lección. No construyas frases de definició
 
 - overall: 2–3 frases. Un solo tema central + confrontación directa. Sé específico.
 - beats: 2–3 elementos, 1 frase cada uno. Cada beat empieza con [elemento concreto del sueño] + [verbo de dinamismo] (ej: "El pasillo estrecha...", "La puerta bloquea...").
-- nextStep: Empieza con "Esta semana". Realizable en 5 minutos, concreto.
-- keywords: 3 palabras. journal: 1 pregunta.
+- keywords: 3 palabras.
 
 JSON:
-{"overall":"...","beats":["...","..."],"nextStep":"Esta semana ...","keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","..."],"keywords":["...","...","..."]}`;
   },
 
   buildModeBPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Sentimiento: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Contexto: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Sentimiento: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Contexto: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Sueño: "${dreamText}"${ctx}
@@ -73,17 +75,18 @@ Análisis por capas. Haz visible el rastro de comportamiento.
   Frase 1 (Detonante): "...[elemento del sueño]... desencadena/aprieta/..."
   Frase 2 (Reacción): "...[elemento del sueño]... tu reflejo/reacción automática..."
   Frase 3 (Costo): "...[elemento del sueño]... a corto plazo ...; a largo plazo ..."
-- nextStep: Empieza con "Esta semana". Concreto, medible.
 - keywords: 3 palabras. journal: 1 pregunta profundizadora.
 
 JSON:
-{"overall":"...","beats":["...","...","...","..."],"pattern":"...","nextStep":"Esta semana ...","keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","...","...","..."],"pattern":"...","keywords":["...","...","..."],"journal":"...?"}`;
   },
 
   buildModeCPrompt: ({ dreamText, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Sentimiento: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Contexto: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Sentimiento: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Contexto: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
 
     return `Sueño: "${dreamText}"${ctx}
@@ -92,7 +95,6 @@ Plan de transformación. Concreto, medible.
 
 - overall: 2–3 frases. Tono de "estás atascado aquí, así puedes romperlo".
 - beats: 2–4 elementos, 1 frase cada uno. Cada beat empieza con [elemento concreto del sueño] + [verbo de dinamismo].
-- nextStep: Empieza con "Esta semana". Concreto.
 - plan: 3 pasos, cada uno en diferente escala temporal:
   [0] "24h:" → Realizable en 5 min (ej: "escribe 5 min", "envía 1 mensaje"). Nada genérico.
   [1] "7d:" → Pequeño hábito diario (ej: "Escribe 3 frases cada mañana"). Sin sermones.
@@ -100,13 +102,15 @@ Plan de transformación. Concreto, medible.
 - keywords: 3 palabras. journal: 1 pregunta.
 
 JSON:
-{"overall":"...","beats":["...","..."],"nextStep":"Esta semana ...","plan":["24h: ...","7d: ...","Límite: Ya no permito..."],"keywords":["...","...","..."],"journal":"...?"}`;
+{"overall":"...","beats":["...","..."],"plan":["24h: ...","7d: ...","Límite: Ya no permito..."],"keywords":["...","...","..."],"journal":"...?"}`;
   },
 
   buildUpsellAllPrompt: ({ dreamText, existingBeats, feelingTag, lifeContextTag }) => {
     const contextParts = [];
-    if (feelingTag) contextParts.push(`Sentimiento: ${feelingTag}`);
-    if (lifeContextTag) contextParts.push(`Contexto: ${lifeContextTag}`);
+      const ft = Array.isArray(feelingTag) ? feelingTag : (feelingTag ? [feelingTag] : []);
+      const lc = Array.isArray(lifeContextTag) ? lifeContextTag : (lifeContextTag ? [lifeContextTag] : []);
+      if (ft.length) contextParts.push(`Sentimiento: ${ft.join(", ")}`);
+      if (lc.length) contextParts.push(`Contexto: ${lc.join(", ")}`);
     const ctx = contextParts.length > 0 ? `\n${contextParts.join(". ")}.` : "";
     const beatsStr = existingBeats.map((b, i) => `${i + 1}. ${b}`).join("\n");
 
@@ -151,14 +155,14 @@ Respuesta: "${journalAnswer}"
 Tarea:
 - Encuentra el tema central en la RESPUESTA del usuario. Overall/keywords son solo contexto; LA RESPUESTA ES PRIORIDAD.
 - Si la respuesta cambia a un tema diferente al sueño, sigue la respuesta — no vuelvas al sueño.
-- Basándote solo en esta info, escribe 2–4 frases cortas de percepción personal.
+- Basándote en esto, escribe 2–4 frases cortas de CONSEJO CONCRETO. No análisis — orientación.
+- Incluye al menos 1 paso accionable que empiece con "Esta semana...".
 - Confronta pero sin juzgar. Sin terapia/diagnóstico.
 - No repitas/cites la pregunta o respuesta. Crea un marco nuevo.
 - No inventes detalles que no estén en la respuesta.
-- Coaching motivacional PROHIBIDO: "cree en ti", "sé fuerte", "enfócate", "piensa positivo" — NO USES.
-- Insight habla solo de mecanismo: detonante/necesidad/defensa/límite.
+- Coaching motivacional PROHIBIDO: "cree en ti", "sé fuerte" — NO USES.
 
 Salida: NO ESCRIBAS NADA EXCEPTO JSON. SOLO JSON en una línea, sin keys extra.
-{"insight":"..."}`;
+{"advice":"..."}`;
   },
 };

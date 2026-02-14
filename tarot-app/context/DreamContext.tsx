@@ -19,10 +19,10 @@ interface DreamContextType {
   setDreamMode: (mode: DreamMode) => void;
   dreamText: string;
   setDreamText: (text: string) => void;
-  feelingTag: FeelingTag | null;
-  setFeelingTag: (tag: FeelingTag | null) => void;
-  lifeContextTag: LifeContextTag | null;
-  setLifeContextTag: (tag: LifeContextTag | null) => void;
+  feelingTags: FeelingTag[];
+  setFeelingTags: (tags: FeelingTag[]) => void;
+  lifeContextTags: LifeContextTag[];
+  setLifeContextTags: (tags: LifeContextTag[]) => void;
   currentResult: DreamDecodeResponse | null;
   setCurrentResult: (result: DreamDecodeResponse | null) => void;
 
@@ -46,8 +46,8 @@ const DEFAULT_PRICES: DreamPrices = { A: 11, B: 22, C: 12, UPSELL_SYMBOL: 3, JOU
 export function DreamProvider({ children }: { children: ReactNode }) {
   const [dreamMode, setDreamMode] = useState<DreamMode>("A");
   const [dreamText, setDreamText] = useState("");
-  const [feelingTag, setFeelingTag] = useState<FeelingTag | null>(null);
-  const [lifeContextTag, setLifeContextTag] = useState<LifeContextTag | null>(null);
+  const [feelingTags, setFeelingTags] = useState<FeelingTag[]>([]);
+  const [lifeContextTags, setLifeContextTags] = useState<LifeContextTag[]>([]);
   const [currentResult, setCurrentResult] = useState<DreamDecodeResponse | null>(null);
 
   const [gemstoneBalance, setGemstoneBalance] = useState(0);
@@ -90,8 +90,8 @@ export function DreamProvider({ children }: { children: ReactNode }) {
   const resetDream = () => {
     setDreamMode("A");
     setDreamText("");
-    setFeelingTag(null);
-    setLifeContextTag(null);
+    setFeelingTags([]);
+    setLifeContextTags([]);
     setCurrentResult(null);
   };
 
@@ -109,10 +109,10 @@ export function DreamProvider({ children }: { children: ReactNode }) {
         setDreamMode,
         dreamText,
         setDreamText,
-        feelingTag,
-        setFeelingTag,
-        lifeContextTag,
-        setLifeContextTag,
+        feelingTags,
+        setFeelingTags,
+        lifeContextTags,
+        setLifeContextTags,
         currentResult,
         setCurrentResult,
         gemstoneBalance,
