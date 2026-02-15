@@ -1161,6 +1161,101 @@
       "upsellCost": 3,
       "createdAt": "2026-02-14T10:01:23.919Z",
       "upsellInsight": "Piknik, sosyal bağlarını ve grup içindeki yerini sorgulamana kapı açıyor. Bu tür etkinliklerin sana getirdiği rahatlık ve baskı arasındaki dengeyi düşün."
+    },
+    {
+      "id": "1e3bd544-7d85-4c51-8064-2c4420b05434",
+      "requestId": "1771064398928_wurt0r",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "A",
+      "dreamText": "Rüyamda eski bir tren istasyonundaydım ama rayların üzerinde su akıyordu. Peronda bekleyen insanlar konuşmuyor, sadece ellerindeki saatleri duvara asıyordu. Saatlerden biri erimeye başlayınca zeminde küçük bir kapı açıldı. İçeri girdiğimde tavandan tersine yağan bir yağmur vardı; damlalar yere düşme",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 11,
+      "resultJson": {
+        "overall": "Zaman algın ve geçmişle olan ilişkilerin içsel bir baskı yaratıyor. Geçmişin ağırlığı altında hareket kabiliyetin kısıtlanıyor. Değişime direndiğin bir alan dikkat çekiyor.",
+        "beats": [
+          "Rayların üzerindeki su akışı, belirsizlik ve kontrol kaybını tetikliyor.",
+          "İnsanların saatleri duvara asması, zamanın askıda kalmasını belirginleştiriyor.",
+          "Erimeye başlayan saat, çözülmeyen sorunları ve kaçınılmaz değişimi netleştiriyor."
+        ],
+        "nextStep": "Bu hafta geçmişle ilgili bir anını yaz ve nasıl hissettirdiğini gözlemle.",
+        "keywords": [
+          "zaman",
+          "belirsizlik",
+          "değişim"
+        ],
+        "journal": "Geçmişte hangi anılar seni hala etkiliyor?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "tren istasyonu",
+          "hint": "Eski bir tren istasyonundasın ve etrafında su var.",
+          "insight": "Eski tren istasyonu, geçmişte takılı kalmış ya da beklemede olan bir durumu geri çağırıyor. Yenilik beklerken, eski alışkanlıklar ve anılar yolunu kesiyor olabilir."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "tren istasyonu",
+      "upsellCost": 3,
+      "createdAt": "2026-02-14T10:20:08.324Z",
+      "upsellInsight": "Eski tren istasyonu, geçmişte takılı kalmış ya da beklemede olan bir durumu geri çağırıyor. Yenilik beklerken, eski alışkanlıklar ve anılar yolunu kesiyor olabilir."
+    },
+    {
+      "id": "a492caa5-1735-4bfe-ad78-e0e77fafcd87",
+      "requestId": "1771064436033_sf0av0",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Rüyamda eski bir tren istasyonundaydım ama rayların üzerinde su akıyordu. Peronda bekleyen insanlar konuşmuyor, sadece ellerindeki saatleri duvara asıyordu. Saatlerden biri erimeye başlayınca zeminde küçük bir kapı açıldı. İçeri girdiğimde tavandan tersine yağan bir yağmur vardı; damlalar yere düşme",
+      "feelingTag": null,
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Eski tren istasyonu, geçmişe dair düşüncelerini ve duraksamalarını açıyor. Rayların üzerindeki su, belirsizlik ve kontrol dışı hislerini belirginleştiriyor. Sessiz bekleyiş ve eriyen saat, zamanın akışına karşı olan direncini netleştiriyor. Tersine yağan yağmur, alışılmışın dışında düşünme ve hissetme yönünü tetikliyor.",
+        "beats": [
+          "Eski tren istasyonu, duraksamalarını ve geçmişle olan bağlarını açıyor.",
+          "Rayların üzerindeki su, belirsizlik ve kontrol dışı hislerini belirginleştiriyor.",
+          "Peronda bekleyen sessiz insanlar, içsel sessizlik ve iletişim eksikliğini sertleştiriyor.",
+          "Eriyen saat, zamanın akışına karşı direnç gösterme eğilimini netleştiriyor.",
+          "Tavandan tersine yağan yağmur, alışılmışın dışına çıkma ve yeniden değerlendirme isteğini tetikliyor."
+        ],
+        "pattern": "Rayların üzerindeki su, belirsizlik duygunu tetikliyor. Sessiz insanlar, iletişimden kaçınma refleksin. Eriyen saat, kısa vadede huzursuzluk; uzun vadede değişim ihtiyacını büyütüyor.",
+        "nextStep": "Bu hafta zamanla ilgili hislerini gözlemle ve her gün kendine 10 dakika ayır.",
+        "keywords": [
+          "belirsizlik",
+          "zaman",
+          "değişim"
+        ],
+        "journal": "Zamanın akışı hakkındaki düşüncelerin neler?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "rayların üzerinde su",
+          "hint": "Tren istasyonunda rayların üzerinde su akıyor.",
+          "insight": "Kontrol edemediğin şeyler seni sıkıştırıyor. Akışa karşı durmak yerine, belirsizlikle dans etme cesaretin ne durumda?"
+        },
+        {
+          "symbol": "ellerindeki saatleri",
+          "hint": "Peronda insanlar ellerindeki saatleri duvara asıyor.",
+          "insight": "Zamanı askıya alma ihtiyacı, zamana karşı olan algını sorgulatıyor. Kendi zamanını nasıl değerlendiriyorsun?"
+        },
+        {
+          "symbol": "küçük bir kapı",
+          "hint": "Eriyen saatle birlikte zeminde küçük bir kapı açılıyor.",
+          "insight": "Beklenmedik fırsatlar seni sürüklüyor. Açılan yeni yolları keşfetmeye ne kadar hazırsın?"
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "ellerindeki saatleri",
+      "upsellCost": 3,
+      "createdAt": "2026-02-14T10:20:47.857Z",
+      "upsellInsight": "Zamanı askıya alma ihtiyacı, zamana karşı olan algını sorgulatıyor. Kendi zamanını nasıl değerlendiriyorsun?",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Zaman inanılmaz hızlı geçiyor",
+      "journalPlusInsight": "Zamanın hızlı geçişi, kontrol dışı hislerinle birleşerek seni huzursuz edebilir. Geçmiş ve şimdi arasında sıkışmışlık, değişim ihtiyacını tetikliyor. Düşüncelerini netleştirmek, bu akışa direnç yerine esneklik kazandırabilir.",
+      "journalPlusCost": 5
     }
   ]
 }
