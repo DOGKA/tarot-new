@@ -1,0 +1,197 @@
+{
+  "slots": [
+    {
+      "id": "2026-03-04T112634Z_full_moon_virgo_mercury",
+      "start": "2026-03-04T11:26:34.410Z",
+      "end": "2026-03-04T15:21:53.160Z",
+      "phase": "full_moon",
+      "zodiac": "virgo",
+      "planet": "mercury",
+      "content": {
+        "planet": {
+          "meaning": "Mercury opens up communication channels on Wednesday. Today you find quick answers to questions that pop up in your mind.",
+          "advice": "Ask that difficult question that has been on your mind for some time."
+        },
+        "zodiac": {
+          "meaning": "The Moon in Virgo makes you focus on details. You question yourself while analyzing your feelings.",
+          "firsat": "Restructure your daily routine.",
+          "his": "analytical restlessness"
+        },
+        "phase": {
+          "sentence": "The truth is coming to the surface.",
+          "general": "The full moon reveals the invisible. Old issues come to light and become clear.",
+          "ayna": "Ignored problems are coming to light."
+        }
+      }
+    },
+    {
+      "id": "2026-03-04T152153Z_full_moon_libra_mercury",
+      "start": "2026-03-04T15:21:53.160Z",
+      "end": "2026-03-05T00:00:00.000Z",
+      "phase": "full_moon",
+      "zodiac": "libra",
+      "planet": "mercury",
+      "content": {
+        "planet": {
+          "meaning": "Wednesday opens communication channels. Mercury triggers the ability to think fast and speak clearly.",
+          "advice": "Write down your daily plans in detail."
+        },
+        "zodiac": {
+          "meaning": "The Moon in Libra seeks balance. It magnifies the need for justice and harmony in relationships.",
+          "firsat": "Organize a new event in your social circle.",
+          "his": "the search for balance, the need for peace"
+        },
+        "phase": {
+          "sentence": "The truth is hitting you in the face.",
+          "general": "The full moon reveals hidden emotions. There are clarifications and confrontations in communication.",
+          "ayna": "Your repressed emotional need is being exposed."
+        }
+      }
+    },
+    {
+      "id": "2026-03-05T000000Z_full_moon_libra_jupiter",
+      "start": "2026-03-05T00:00:00.000Z",
+      "end": "2026-03-05T11:11:34.410Z",
+      "phase": "full_moon",
+      "zodiac": "libra",
+      "planet": "jupiter",
+      "content": {
+        "planet": {
+          "meaning": "On Thursday Jupiter triggers expansion. Optimism and the desire to learn grow.",
+          "advice": "Read that book you've been putting off for so long."
+        },
+        "zodiac": {
+          "meaning": "The Moon in Libra seeks balance. The search for harmony and beauty in relationships intensifies.",
+          "firsat": "Visit an art gallery with your friends.",
+          "his": "peaceful pursuit"
+        },
+        "phase": {
+          "sentence": "Don't ignore it, face it!",
+          "general": "The full moon magnifies emotions and clarifies facts. Hidden, suppressed feelings come out.",
+          "ayna": "Conflicts you ignore are coming to light. Recognize imbalances in relationships."
+        }
+      }
+    },
+    {
+      "id": "2026-03-05T111134Z_disseminating_moon_libra_jupiter",
+      "start": "2026-03-05T11:11:34.410Z",
+      "end": "2026-03-06T00:00:00.000Z",
+      "phase": "disseminating_moon",
+      "zodiac": "libra",
+      "planet": "jupiter",
+      "content": {
+        "planet": {
+          "meaning": "On Thursday, Jupiter activates your broad thinking. It inspires new ideas and projects.",
+          "advice": "Go into a bookstore today and choose a new book."
+        },
+        "zodiac": {
+          "meaning": "Moon in Libra shakes the emotional balance. The search for harmony in relationships accelerates.",
+          "firsat": "Have coffee with an old friend.",
+          "his": "uneasy balance, careful analysis"
+        },
+        "phase": {
+          "sentence": "Spread the goals.",
+          "general": "The radiating Moon is expanding its energy field. It opens doors for new beginnings.",
+          "ayna": "Take that important step now that you have put off in the past."
+        }
+      }
+    },
+    {
+      "id": "2026-03-06T000000Z_disseminating_moon_libra_venus",
+      "start": "2026-03-06T00:00:00.000Z",
+      "end": "2026-03-07T00:00:00.000Z",
+      "phase": "disseminating_moon",
+      "zodiac": "libra",
+      "planet": "venus",
+      "content": {
+        "planet": {
+          "meaning": "On Friday, Venus triggers balance and harmony in relationships. Your search for aesthetics and beauty increases.",
+          "advice": "Organize your wardrobe today and create new outfits."
+        },
+        "zodiac": {
+          "meaning": "The Moon in Libra magnifies your balanced approach. Your social relationships and partnerships are being re-evaluated.",
+          "firsat": "Plan a new activity with your friends.",
+          "his": "balanced tranquility, social curiosity"
+        },
+        "phase": {
+          "sentence": "The emitter moon is shaking.",
+          "general": "The radiating Moon nurtures new ideas and projects. Your energy is dissipating, use it carefully.",
+          "ayna": "Deferred social connections become clearer."
+        }
+      }
+    },
+    {
+      "id": "2026-03-07T000000Z_disseminating_moon_libra_saturn",
+      "start": "2026-03-07T00:00:00.000Z",
+      "end": "2026-03-07T02:39:45.660Z",
+      "phase": "disseminating_moon",
+      "zodiac": "libra",
+      "planet": "saturn",
+      "content": {
+        "planet": {
+          "meaning": "On Saturday, Saturn activates discipline and order. It makes you see your responsibilities clearly.",
+          "advice": "Finish your unfinished business today."
+        },
+        "zodiac": {
+          "meaning": "Moon in Libra magnifies balance and harmony. It triggers the search for justice in relationships.",
+          "firsat": "Start a new collaboration.",
+          "his": "peaceful balance, moderate desire"
+        },
+        "phase": {
+          "sentence": "Expand and share.",
+          "general": "The Expanding Moon expands knowledge and emotions. It increases your willingness to share your thoughts with others.",
+          "ayna": "Start that project you've been putting off."
+        }
+      }
+    },
+    {
+      "id": "2026-03-07T023945Z_disseminating_moon_scorpio_saturn",
+      "start": "2026-03-07T02:39:45.660Z",
+      "end": "2026-03-07T07:28:30.660Z",
+      "phase": "disseminating_moon",
+      "zodiac": "scorpio",
+      "planet": "saturn",
+      "content": {
+        "planet": {
+          "meaning": "On Saturday, Saturn clarifies your responsibilities. It requires a disciplined approach.",
+          "advice": "Finish your unfinished business today."
+        },
+        "zodiac": {
+          "meaning": "The Moon in Scorpio deepens your emotions. Your hidden desires come to the surface.",
+          "firsat": "Accept the truth you have been avoiding admitting to yourself.",
+          "his": "intense passions, hidden anger"
+        },
+        "phase": {
+          "sentence": "Spread out, expand!",
+          "general": "The Expanding Moon magnifies opportunities. It prepares the ground for new projects.",
+          "ayna": "It's time to reconsider your postponed goals."
+        }
+      }
+    },
+    {
+      "id": "2026-03-07T072830Z_waning_gibbous_scorpio_saturn",
+      "start": "2026-03-07T07:28:30.660Z",
+      "end": "2026-03-07T11:26:34.410Z",
+      "phase": "waning_gibbous",
+      "zodiac": "scorpio",
+      "planet": "saturn",
+      "content": {
+        "planet": {
+          "meaning": "On Saturday, Saturn brings your responsibilities to the forefront. The need to be disciplined increases.",
+          "advice": "Reorganize your routine."
+        },
+        "zodiac": {
+          "meaning": "The Moon in Scorpio triggers your deep emotions. Your hidden feelings come to the surface.",
+          "firsat": "Discover a hidden talent.",
+          "his": "intense passion, deep quest"
+        },
+        "phase": {
+          "sentence": "Let him go!",
+          "general": "The waning full moon melts your burdens. It shakes the unnecessary.",
+          "ayna": "Make the decisions you've been putting off for so long."
+        }
+      }
+    }
+  ],
+  "generatedUntil": "2026-03-07T11:26:34.410Z"
+}

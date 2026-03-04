@@ -1836,6 +1836,12 @@ const { getUser: getSharedUser, updateUser: updateSharedUser, isPremium: isShare
 app.use("/api/dream", dreamRouter);
 
 // ============================================
+// MOON ASTRO MODULE
+// ============================================
+const moonRouter = require("./moon");
+app.use("/api/moon", moonRouter);
+
+// ============================================
 // TAROT GEMSTONE HELPER
 // ============================================
 // Spread tipine gore gemstone fiyati
@@ -1865,4 +1871,5 @@ app.listen(PORT, "0.0.0.0", () => {
   console.log(`   Languages: ${supportedLanguages.join(', ')}`);
   console.log(`   Cards indexed: ${getCanonicalCardKeys().length}`);
   console.log(`   Dream Coder: mounted at /api/dream`);
+  console.log(`   Moon Astro: mounted at /api/moon`);
 });

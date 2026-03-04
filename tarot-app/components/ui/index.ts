@@ -3,3 +3,6 @@ export { default as GlassCard } from "./GlassCard";
 export { default as SpreadCard } from "./SpreadCard";
 export { default as FlipCard } from "./FlipCard";
 export { default as PremiumPreview } from "./PremiumPreview";
+export { default as Moon3D } from "./Moon3D";
+export { default as Planet3D } from "./Planet3D";
+export { default as Zodiac3D } from "./Zodiac3D";

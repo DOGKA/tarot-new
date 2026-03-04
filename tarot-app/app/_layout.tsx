@@ -26,6 +26,10 @@ export default function RootLayout() {
               <Stack.Screen name="dream/index" options={{ headerShown: false }} />
               <Stack.Screen name="dream/input" options={{ headerShown: false }} />
               <Stack.Screen name="dream/result" options={{ headerShown: false }} />
+              {/* Moon Astro screens */}
+              <Stack.Screen name="astro/phase" options={{ headerShown: false }} />
+              <Stack.Screen name="astro/zodiac" options={{ headerShown: false }} />
+              <Stack.Screen name="astro/planet" options={{ headerShown: false }} />
             </Stack>
             <StatusBar style="light" />
           </DreamProvider>

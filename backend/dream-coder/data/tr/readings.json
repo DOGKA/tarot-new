@@ -1256,6 +1256,103 @@
       "journalPlusAnswer": "Zaman inanılmaz hızlı geçiyor",
       "journalPlusInsight": "Zamanın hızlı geçişi, kontrol dışı hislerinle birleşerek seni huzursuz edebilir. Geçmiş ve şimdi arasında sıkışmışlık, değişim ihtiyacını tetikliyor. Düşüncelerini netleştirmek, bu akışa direnç yerine esneklik kazandırabilir.",
       "journalPlusCost": 5
+    },
+    {
+      "id": "834e31f8-faf3-46de-942e-f999d567b21b",
+      "requestId": "1771934580151_gp26px",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "B",
+      "dreamText": "Köpek balığı yüzerken bana saldırdı sonrasında birden suyun içinde denizin altında annemi gördüm",
+      "feelingTag": [
+        "merak",
+        "özlem"
+      ],
+      "lifeContextTag": null,
+      "wasFree": false,
+      "gemstoneCost": 22,
+      "resultJson": {
+        "overall": "Köpek balığı tehlike ve korku duygularını tetikliyor. Bu tür tehditler, hayatta kalma içgüdülerini ve savunma mekanizmalarını harekete geçiriyor. Anneni denizin altında görmek, korunma ve güvenlik arayışını netleştiriyor. Merak ve özlem duyguları geçmişle bağlantı kurarak içsel çatışmaları belirginleştiriyor.",
+        "beats": [
+          "Köpek balığı tehlikeyi açıyor. Tehdit algısıyla yüzleşme ihtiyacı doğuyor.",
+          "Suyun altında olmak kontrol kaybını netleştiriyor. Kendi derinliklerine inme isteği tetikleniyor.",
+          "Anneni görmek güven arayışını büyütüyor. İçsel huzur için geçmişe tutunma arzusu belirginleşiyor.",
+          "Denizin altındaki manzara bilinmeyeni askıda bırakıyor. Risk ve keşif arasında gidip gelme hali beliriyor."
+        ],
+        "pattern": "Köpek balığı tehlike algını tetikliyor. Suya daldığın an refleksin kaçmak oluyor. Anneni görmek kısa vadede rahatlatıcı; uzun vadede bağımlılık yaratıyor.",
+        "keywords": [
+          "tehlike",
+          "güvenlik",
+          "merak"
+        ],
+        "journal": "Hangi durumlarda kendini savunmasız hissediyorsun?"
+      },
+      "upsellCandidates": [
+        {
+          "symbol": "köpek balığı",
+          "hint": "Denizde yüzerken bir köpek balığı sana saldırıyor.",
+          "insight": "Köpek balığı, içsel korkularını ve dışarıdan gelen tehditleri açıyor. Başkalarından gelen baskıları nasıl algıladığını sorgulamaya yönlendiriyor."
+        },
+        {
+          "symbol": "denizin altı",
+          "hint": "Kendini denizin altında buluyorsun.",
+          "insight": "Denizin altı, bilinçaltındaki derin düşünceleri ve bastırdığın duyguları netleştiriyor. İç dünyana daha derin bir bakış atma isteğini tetikliyor."
+        },
+        {
+          "symbol": "annen",
+          "hint": "Denizin altında annene rastlıyorsun.",
+          "insight": "Annen, içsel güven ihtiyacını ve korunma arayışını büyütüyor. Geçmişte kalan destek sistemlerine ve duygusal bağlara olan özlemi geri çağırıyor."
+        }
+      ],
+      "upsellUnlocked": true,
+      "upsellSymbol": "köpek balığı",
+      "upsellCost": 3,
+      "createdAt": "2026-02-24T12:03:17.159Z",
+      "journalPlusUnlocked": true,
+      "journalPlusAnswer": "Çıplak uyurken",
+      "journalPlusInsight": "Savunmasız hissettiğin anları fark etmek, içsel güvenlik duygunu güçlendiriyor. Bu hafta, yatak odanda güveni artıracak küçük değişiklikler yap. Uyumadan önce kendine güvenli bir ortam yaratmanın yollarını keşfet. Gündüzleri de bu güvenli alanı zihninde canlandırarak, savunmasızlık hissini dışarıda bırak.",
+      "journalPlusCost": 5,
+      "upsellInsight": "Köpek balığı, içsel korkularını ve dışarıdan gelen tehditleri açıyor. Başkalarından gelen baskıları nasıl algıladığını sorgulamaya yönlendiriyor."
+    },
+    {
+      "id": "fdd0789c-d030-4c96-95ad-09c71f87846d",
+      "requestId": "1771934734099_cc6if1",
+      "userId": "dev_1770716982010_ns74ratd",
+      "language": "tr",
+      "mode": "C",
+      "dreamText": "Maymunlar kovarken daldan düştüm. Götüm açıldı anasını sikeyim",
+      "feelingTag": [
+        "korku"
+      ],
+      "lifeContextTag": [
+        "iş"
+      ],
+      "wasFree": false,
+      "gemstoneCost": 12,
+      "resultJson": {
+        "overall": "Kontrol etme çaban seni zor durumda bırakıyor. Bu yükü hafifletmek için esneklik geliştirmen önemli.",
+        "beats": [
+          "Maymunlar seni kovarken tetikliyor, sürekli baskı hissi yaratıyor.",
+          "Daldan düşmek, güvenli alanını kaybettiğinde paniği büyütüyor.",
+          "Götünün açılması, korunmasız hissettiğin durumları netleştiriyor."
+        ],
+        "plan": [
+          "24 saat: 5 dakikada endişelerini yazıya dök.",
+          "7 gün: Her gün işte bir kez derin nefes al ve gevşe.",
+          "Sınır: Ben artık her durumu kontrol edemeyeceğimi kabul ediyorum."
+        ],
+        "keywords": [
+          "kontrol",
+          "esneklik",
+          "savunmasızlık"
+        ],
+        "journal": "Hangi durumda kontrolü kaybetmekten korkuyorsun?"
+      },
+      "upsellCandidates": [],
+      "upsellUnlocked": false,
+      "upsellSymbol": null,
+      "upsellCost": null,
+      "createdAt": "2026-02-24T12:05:51.204Z"
     }
   ]
 }

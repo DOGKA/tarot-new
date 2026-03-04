@@ -1,0 +1,197 @@
+{
+  "slots": [
+    {
+      "id": "2026-03-04T112634Z_full_moon_virgo_mercury",
+      "start": "2026-03-04T11:26:34.410Z",
+      "end": "2026-03-04T15:21:53.160Z",
+      "phase": "full_moon",
+      "zodiac": "virgo",
+      "planet": "mercury",
+      "content": {
+        "planet": {
+          "meaning": "Merkur öffnet am Mittwoch deine Kommunikationskanäle. Heute wirst du schnelle Antworten auf die Fragen finden, die in deinem Kopf auftauchen.",
+          "advice": "Stell die schwierige Frage, die dich schon eine Weile beschäftigt."
+        },
+        "zodiac": {
+          "meaning": "Mond in Jungfrau lässt dich auf Details achten. Du hinterfragst dich selbst und analysierst deine Gefühle.",
+          "firsat": "Strukturiere deinen Tagesablauf neu.",
+          "his": "analytische Unruhe"
+        },
+        "phase": {
+          "sentence": "Die Wahrheit kommt an die Oberfläche.",
+          "general": "Der Vollmond enthüllt das Unsichtbare. Alte Themen werden beleuchtet und geklärt.",
+          "ayna": "Unbeachtete Probleme kommen ans Licht."
+        }
+      }
+    },
+    {
+      "id": "2026-03-04T152153Z_full_moon_libra_mercury",
+      "start": "2026-03-04T15:21:53.160Z",
+      "end": "2026-03-05T00:00:00.000Z",
+      "phase": "full_moon",
+      "zodiac": "libra",
+      "planet": "mercury",
+      "content": {
+        "planet": {
+          "meaning": "Der Mittwoch öffnet die Kanäle der Kommunikation. Merkur löst die Fähigkeit aus, schnell zu denken und klar zu sprechen.",
+          "advice": "Schreibe deine Tagespläne im Detail auf."
+        },
+        "zodiac": {
+          "meaning": "Der Mond in der Waage strebt nach Gleichgewicht. Er verstärkt das Bedürfnis nach Gerechtigkeit und Harmonie in Beziehungen.",
+          "firsat": "Organisiere eine neue Veranstaltung in deinem sozialen Umfeld.",
+          "his": "die Suche nach Gleichgewicht, das Bedürfnis nach Frieden"
+        },
+        "phase": {
+          "sentence": "Die Wahrheit trifft dich mitten ins Gesicht.",
+          "general": "Der Vollmond enthüllt verborgene Gefühle. In der Kommunikation kommt es zu Klärungen und Konfrontationen.",
+          "ayna": "Dein unterdrücktes emotionales Bedürfnis kommt an die Oberfläche."
+        }
+      }
+    },
+    {
+      "id": "2026-03-05T000000Z_full_moon_libra_jupiter",
+      "start": "2026-03-05T00:00:00.000Z",
+      "end": "2026-03-05T11:11:34.410Z",
+      "phase": "full_moon",
+      "zodiac": "libra",
+      "planet": "jupiter",
+      "content": {
+        "planet": {
+          "meaning": "Am Donnerstag löst Jupiter eine Expansion aus. Optimismus und der Wunsch zu lernen wachsen.",
+          "advice": "Lies das Buch, das du schon so lange aufgeschoben hast."
+        },
+        "zodiac": {
+          "meaning": "Der Mond sucht in der Waage nach Gleichgewicht. Die Suche nach Harmonie und Schönheit in Beziehungen wird schärfer.",
+          "firsat": "Besuche mit deinen Kumpels eine Kunstgalerie.",
+          "his": "friedliche Verfolgung"
+        },
+        "phase": {
+          "sentence": "Ignoriere es nicht, sieh es ein!",
+          "general": "Der Vollmond vergrößert die Gefühle und klärt die Fakten. Verborgene, unterdrückte Gefühle kommen zum Vorschein.",
+          "ayna": "Konflikte, die du ignorierst, kommen an die Oberfläche. Erkenne Ungleichgewichte in Beziehungen."
+        }
+      }
+    },
+    {
+      "id": "2026-03-05T111134Z_disseminating_moon_libra_jupiter",
+      "start": "2026-03-05T11:11:34.410Z",
+      "end": "2026-03-06T00:00:00.000Z",
+      "phase": "disseminating_moon",
+      "zodiac": "libra",
+      "planet": "jupiter",
+      "content": {
+        "planet": {
+          "meaning": "Am Donnerstag aktiviert Jupiter dein breites Denken. Er inspiriert dich zu neuen Ideen und Projekten.",
+          "advice": "Geh heute in eine Buchhandlung und such dir ein neues Buch aus."
+        },
+        "zodiac": {
+          "meaning": "Der Mond in der Waage erschüttert das emotionale Gleichgewicht. Die Suche nach Harmonie in Beziehungen beschleunigt sich.",
+          "firsat": "Trinke einen Kaffee mit einem alten Freund.",
+          "his": "Unruhiges Gleichgewicht, sorgfältige Analyse"
+        },
+        "phase": {
+          "sentence": "Verteile die Ziele.",
+          "general": "Der strahlende Mond weitet das Energiefeld aus. Er öffnet die Türen für neue Anfänge.",
+          "ayna": "Mache jetzt den wichtigen Schritt, den du in der Vergangenheit aufgeschoben hast."
+        }
+      }
+    },
+    {
+      "id": "2026-03-06T000000Z_disseminating_moon_libra_venus",
+      "start": "2026-03-06T00:00:00.000Z",
+      "end": "2026-03-07T00:00:00.000Z",
+      "phase": "disseminating_moon",
+      "zodiac": "libra",
+      "planet": "venus",
+      "content": {
+        "planet": {
+          "meaning": "Am Freitag sorgt Venus für Gleichgewicht und Harmonie in den Beziehungen. Dein Streben nach Ästhetik und Schönheit nimmt zu.",
+          "advice": "Organisiere deinen Kleiderschrank noch heute und schaffe neue Kombinationen."
+        },
+        "zodiac": {
+          "meaning": "Der Mond in der Waage stärkt deinen ausgeglichenen Ansatz. Deine sozialen Beziehungen und Partnerschaften werden neu bewertet.",
+          "firsat": "Plane eine neue Aktivität mit deinen Freunden.",
+          "his": "Ausgeglichene Ruhe, soziale Neugierde"
+        },
+        "phase": {
+          "sentence": "Der Emittermond wackelt.",
+          "general": "Der strahlende Mond stärkt neue Ideen und Projekte. Deine Energie verpufft, setze sie vorsichtig ein.",
+          "ayna": "Aufgeschobene soziale Kontakte werden deutlicher."
+        }
+      }
+    },
+    {
+      "id": "2026-03-07T000000Z_disseminating_moon_libra_saturn",
+      "start": "2026-03-07T00:00:00.000Z",
+      "end": "2026-03-07T02:39:45.660Z",
+      "phase": "disseminating_moon",
+      "zodiac": "libra",
+      "planet": "saturn",
+      "content": {
+        "planet": {
+          "meaning": "Am Samstag aktiviert Saturn die Disziplin und Ordnung. Er lässt dich deine Verantwortung klar sehen.",
+          "advice": "Erledige heute lose Enden."
+        },
+        "zodiac": {
+          "meaning": "Der Mond in der Waage stärkt das Gleichgewicht und die Harmonie. Er löst die Suche nach Gerechtigkeit in Beziehungen aus.",
+          "firsat": "Starte eine neue Kooperation.",
+          "his": "Friedliches Gleichgewicht, mäßiges Verlangen"
+        },
+        "phase": {
+          "sentence": "Erweitern und teilen.",
+          "general": "Der zunehmende Mond erweitert das Wissen und die Gefühle. Er verstärkt den Wunsch, deine Gedanken mit anderen zu teilen.",
+          "ayna": "Beginne das Projekt, das du aufgeschoben hast."
+        }
+      }
+    },
+    {
+      "id": "2026-03-07T023945Z_disseminating_moon_scorpio_saturn",
+      "start": "2026-03-07T02:39:45.660Z",
+      "end": "2026-03-07T07:28:30.660Z",
+      "phase": "disseminating_moon",
+      "zodiac": "scorpio",
+      "planet": "saturn",
+      "content": {
+        "planet": {
+          "meaning": "Saturn klärt am Samstag deine Verantwortlichkeiten. Das erfordert eine disziplinierte Vorgehensweise.",
+          "advice": "Erledige deine unerledigten Aufgaben heute."
+        },
+        "zodiac": {
+          "meaning": "Der Mond im Skorpion vertieft deine Gefühle. Deine geheimen Sehnsüchte kommen an die Oberfläche.",
+          "firsat": "Akzeptiere die Wahrheit, die du dir bisher nicht eingestehen wolltest.",
+          "his": "Intensive Leidenschaften, versteckte Wut"
+        },
+        "phase": {
+          "sentence": "Schwärmt aus, schwärmt aus!",
+          "general": "Der strahlende Mond vergrößert die Chancen. Er bereitet den Boden für neue Projekte.",
+          "ayna": "Es ist an der Zeit, deine aufgeschobenen Ziele neu zu bewerten."
+        }
+      }
+    },
+    {
+      "id": "2026-03-07T072830Z_waning_gibbous_scorpio_saturn",
+      "start": "2026-03-07T07:28:30.660Z",
+      "end": "2026-03-07T11:26:34.410Z",
+      "phase": "waning_gibbous",
+      "zodiac": "scorpio",
+      "planet": "saturn",
+      "content": {
+        "planet": {
+          "meaning": "Am Samstag rückt Saturn deine Verantwortung in den Vordergrund. Das Bedürfnis, diszipliniert zu sein, steigt.",
+          "advice": "Organisiere deine Routine neu."
+        },
+        "zodiac": {
+          "meaning": "Der Mond im Skorpion löst deine tiefen Gefühle aus. Deine verborgenen Gefühle kommen an die Oberfläche.",
+          "firsat": "Entdecke ein verborgenes Talent.",
+          "his": "Intensive Leidenschaft, tiefes Suchen"
+        },
+        "phase": {
+          "sentence": "Lass ihn gehen!",
+          "general": "Der abnehmende Vollmond löst deine Bürden auf. Er schüttelt das Unnötige ab.",
+          "ayna": "Triff die Entscheidungen, die du schon so lange aufgeschoben hast."
+        }
+      }
+    }
+  ],
+  "generatedUntil": "2026-03-07T11:26:34.410Z"
+}

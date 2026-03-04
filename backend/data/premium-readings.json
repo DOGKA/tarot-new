@@ -241,5 +241,115 @@
       "answerMayChange": false,
       "conditionMessage": null
     }
+  },
+  {
+    "timestamp": "2026-02-24T11:55:01.323Z",
+    "type": "yes_no_premium_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Savaş Arabası",
+      "image": "07_chariot",
+      "orientation": "upright"
+    },
+    "tendency": "güçlü_evet",
+    "prompt": "Sen profesyonel bir tarot okuyucususun. Evet/Hayır okuma yapıyorsun.\nModern, psikolojik ve yüzleştirici yaz. Kısa ve net cümleler kur.\nTüm metin 'sen' diliyle yazılacak. 'siz' kullanma.\n\nKart: Savaş Arabası (Düz)\nCevap: Evet\nNetlik: Net\nBağlam: Net ve güçlü bir yön var.\nOdak alanı: love\n\nKurallar:\n- 15-30 kelime arasında açıklama yaz\n- Cevabın arkasındaki enerjiyi açıkla\n- Kartın bu yönü neden gösterdiğini anlat\n- Samimi ama profesyonel ol\n- Kartın ismini en fazla 1 kez kullan\n\nSadece JSON döndür:\n{\"explanation\": \"...\"}",
+    "rawResponse": "{\"explanation\": \"İlişkin güçlü bir yolda ilerliyor. Kararlılık ve odaklanma, aşk hayatında zafer getirecek. Net bir yön ve pozitif sonuçlar görünüyor.\"}",
+    "response": {
+      "title": "Savaş Arabası — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "yes",
+      "confidence": 90,
+      "clarityLabel": "Net",
+      "explanation": "İlişkin güçlü bir yolda ilerliyor. Kararlılık ve odaklanma, aşk hayatında zafer getirecek. Net bir yön ve pozitif sonuçlar görünüyor.",
+      "keywords": [
+        "ilerleme",
+        "kararlılık"
+      ],
+      "baseTendency": "güçlü_evet",
+      "answerMayChange": false,
+      "conditionMessage": null
+    }
+  },
+  {
+    "timestamp": "2026-02-24T11:55:26.883Z",
+    "type": "yes_no_free_v2",
+    "language": "tr",
+    "focusArea": "love",
+    "card": {
+      "name": "Ermiş",
+      "image": "09_hermit",
+      "orientation": "upright"
+    },
+    "tendency": "belirsiz",
+    "response": {
+      "title": "Ermiş — Evet / Hayır",
+      "focusArea": "love",
+      "answer": "uncertain",
+      "confidence": 73,
+      "clarityLabel": "Şartlı",
+      "explanation": "Belirsiz; cevap dış dünyada değil. İçine dönmeden ilerlemek zor.",
+      "keywords": [
+        "yalnızlık",
+        "düşünce"
+      ],
+      "baseTendency": "belirsiz",
+      "answerMayChange": true,
+      "conditionMessage": "Koşullara göre netleşir"
+    }
+  },
+  {
+    "timestamp": "2026-02-24T11:56:12.287Z",
+    "model": "gpt-4o",
+    "structureId": "ppf_v15_story",
+    "hasNextStep": null,
+    "hasJournal": null,
+    "qualityWarns": [],
+    "request": {
+      "language": "tr",
+      "spread": "new_moon_ritual",
+      "cards": [
+        {
+          "position": "intention",
+          "name": "Değnek İkilisi",
+          "orientation": "upright"
+        },
+        {
+          "position": "seed",
+          "name": "Tılsım Altılısı",
+          "orientation": "upright"
+        },
+        {
+          "position": "shadow",
+          "name": "Tılsım Onlusu",
+          "orientation": "upright"
+        },
+        {
+          "position": "support",
+          "name": "Tılsım Beşlisi",
+          "orientation": "reversed"
+        },
+        {
+          "position": "firstStep",
+          "name": "Kılıç Şövalyesi",
+          "orientation": "upright"
+        }
+      ]
+    },
+    "response": {
+      "title": "Değnek İkilisi·Tılsım Altılısı·Tılsım Onlusu·Tılsım Beşlisi·Kılıç Şövalyesi — Yeni Ay Ritüeli",
+      "overall": "Yeni ayın enerjisi, yeni başlangıçlar ve hayatında önemli bir yol ayrımında karar verme sürecini getiriyor. Bu döngü, içsel potansiyelini ortaya çıkararak yeni bir yola adım atman için ideal bir zaman.",
+      "ritualTheme": "Bu ay, paylaşım ve dengeye odaklanarak hayatında cömertliği ve alma-verme dengesini artırmalısın.",
+      "beats": {
+        "intention": "Niyetin, geleceğe dair vizyonunu güçlendirmek ve yeni yollar keşfetmek.",
+        "seed": "Verimliliği teşvik eden ve ilişkilerdeki dengeyi güçlendiren bir tohum dikiyorsun.",
+        "shadow": "Gizli direncin, mevcut konfor alanını koruma isteğinde saklı.",
+        "support": "Ruhsal destek, kendine değer verme ve içsel blokajları aşma konusunda geliyor.",
+        "firstStep": "Hızlı ve kararlı bir şekilde harekete geçmelisin."
+      },
+      "affirmation": "Ben hazırım, yeni başlangıçlara ve değişime açık olmayı seçiyorum.",
+      "nextStep": "Bir günlük tutarak niyetlerini yaz ve neye ulaşmak istediğini netleştir.",
+      "journal": "Hayatımda dengeyi nasıl daha iyi sağlayabilirim?"
+    }
   }
 ]
