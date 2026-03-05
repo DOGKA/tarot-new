@@ -125,11 +125,12 @@ async function ensureSlots(lang = "tr") {
   // Read TR cache (source of truth)
   const trCache = loadCache("tr");
   const now = new Date();
-  const minHorizon = new Date(now.getTime() + 3600000);
 
-  const trIsValid = trCache.generatedUntil &&
-    new Date(trCache.generatedUntil).getTime() >= minHorizon.getTime() &&
-    trCache.slots.length > 0;
+  // Find the last slot's end time — don't regenerate until we're past it
+  const lastSlotEnd = trCache.slots.length > 0
+    ? new Date(trCache.slots[trCache.slots.length - 1].end).getTime()
+    : 0;
+  const trIsValid = trCache.slots.length > 0 && now.getTime() < lastSlotEnd;
 
   // If TR is valid, just return the requested lang cache
   if (trIsValid) {

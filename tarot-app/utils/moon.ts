@@ -102,3 +102,78 @@ export function formatMoonTime(date: Date | null): string {
 export function getTimeUntilTransition(transitionTime: string): number {
   return new Date(transitionTime).getTime() - Date.now();
 }
+
+// ============================================
+// Lunar Calculations (no API needed)
+// ============================================
+
+const SYNODIC = 29.53058770576;
+
+function getLunarAge(date: Date): number {
+  const KNOWN_NEW_MOON = new Date("2000-01-06T18:14:00Z").getTime();
+  const diff = date.getTime() - KNOWN_NEW_MOON;
+  const days = diff / 86400000;
+  let age = days % SYNODIC;
+  if (age < 0) age += SYNODIC;
+  return age;
+}
+
+export function getPhaseForDate(date: Date): string {
+  const age = getLunarAge(date);
+  if (age < 1.84566) return "new_moon";
+  if (age < 5.53699) return "waxing_crescent";
+  if (age < 9.22831) return "first_quarter";
+  if (age < 12.91963) return "waxing_gibbous";
+  if (age < 16.61096) return "full_moon";
+  if (age < 18.45662) return "disseminating_moon";
+  if (age < 20.30228) return "waning_gibbous";
+  if (age < 23.99360) return "last_quarter";
+  if (age < 27.68493) return "waning_crescent";
+  return "balsamic_moon";
+}
+
+export function getNextPhaseDate(targetPhase: string, from: Date): Date {
+  const cursor = new Date(from);
+  for (let i = 0; i < 45; i++) {
+    cursor.setDate(cursor.getDate() + 1);
+    if (getPhaseForDate(cursor) === targetPhase) return cursor;
+  }
+  return cursor;
+}
+
+export function getMoonDistance(date: Date): number {
+  const illum = SunCalc.getMoonIllumination(date);
+  const pos = SunCalc.getMoonPosition(date, 0, 0);
+  return pos.distance;
+}
+
+export function getMoonTimes(date: Date, lat: number, lng: number) {
+  return SunCalc.getMoonTimes(date, lat, lng);
+}
+
+export function getMonthPhases(year: number, month: number): { day: number; phase: string }[] {
+  const result: { day: number; phase: string }[] = [];
+  const daysInMonth = new Date(year, month + 1, 0).getDate();
+  for (let d = 1; d <= daysInMonth; d++) {
+    const date = new Date(year, month, d, 12, 0, 0);
+    result.push({ day: d, phase: getPhaseForDate(date) });
+  }
+  return result;
+}
+
+const PHASE_EMOJIS: Record<string, string> = {
+  new_moon: "🌑",
+  waxing_crescent: "🌒",
+  first_quarter: "🌓",
+  waxing_gibbous: "🌔",
+  full_moon: "🌕",
+  disseminating_moon: "🌖",
+  waning_gibbous: "🌖",
+  last_quarter: "🌗",
+  waning_crescent: "🌘",
+  balsamic_moon: "🌘",
+};
+
+export function getPhaseEmoji(phase: string): string {
+  return PHASE_EMOJIS[phase] || "🌑";
+}

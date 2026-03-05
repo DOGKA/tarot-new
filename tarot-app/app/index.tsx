@@ -4,7 +4,7 @@ import { useRouter } from "expo-router";
 import { useTranslation } from "react-i18next";
 import Constants from "expo-constants";
 import { useApp } from "../context/AppContext";
-import { GradientBackground, Moon3D, Planet3D, Zodiac3D } from "../components/ui";
+import { GradientBackground, Moon3D, Planet3D, Zodiac3D, StarField } from "../components/ui";
 import { getMoonIllumination } from "../utils/moon";
 import { LinearGradient } from "expo-linear-gradient";
 import { BlurView } from "expo-blur";
@@ -361,6 +361,7 @@ export default function WelcomeScreen() {
                       start={{ x: 0, y: 0 }}
                       end={{ x: 1, y: 1 }}
                     >
+                      <StarField count={20} width={CARD_WIDTH} height={220} />
                       <View style={styles.slotDateRow}>
                         <Text style={styles.slotDate} numberOfLines={1}>{formatSlotTime(s.start, todayLabel, tomorrowLabel)}</Text>
                         <Text style={styles.slotDate} numberOfLines={1}>{formatSlotTime(s.end, todayLabel, tomorrowLabel)}</Text>
