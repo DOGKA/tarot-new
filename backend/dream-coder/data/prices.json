@@ -1,65 +1,72 @@
 {
-  "_comment": "Ortak fiyat konfigurasyonu — Tarot + Dream Coder + Abonelik",
+  "_comment": "Ortak fiyat konfigurasyonu — Tarot + Dream Coder + Abonelik (v2 — 2026)",
   "tarot": {
-    "single": 6,
-    "three": 14,
-    "five": 22,
-    "yes_no": 6
+    "single": 3,
+    "three": 5,
+    "five": 8,
+    "yes_no": 3
   },
   "decode": {
-    "A": 11,
-    "B": 22,
-    "C": 12,
-    "UPSELL_SYMBOL": 3,
-    "JOURNAL_PLUS": 5
+    "A": 4,
+    "B": 8,
+    "C": 5,
+    "UPSELL_SYMBOL": 1,
+    "JOURNAL_PLUS": 2
   },
   "premiumSubscription": {
     "monthly": {
       "id": "premium_monthly",
       "priceUSD": 4.99,
-      "bonusGems": 50,
+      "bonusGems": 10,
       "durationDays": 30
+    },
+    "semiannual": {
+      "id": "premium_semiannual",
+      "priceUSD": 19.99,
+      "normalPriceUSD": 29.94,
+      "bonusGems": 80,
+      "durationDays": 180
     },
     "yearly": {
       "id": "premium_yearly",
-      "priceUSD": 45.00,
+      "priceUSD": 34.99,
       "normalPriceUSD": 59.88,
-      "bonusGems": 500,
+      "bonusGems": 150,
       "durationDays": 365
     }
   },
   "gemstonePackages": [
     {
-      "id": "pack_50",
-      "gems": 50,
+      "id": "pack_20",
+      "gems": 20,
       "bonus": 0,
-      "total": 50,
+      "total": 20,
       "priceUSD": 3.99,
-      "perGem": 0.0798
+      "premiumPriceUSD": 2.99
+    },
+    {
+      "id": "pack_50",
+      "gems": 35,
+      "bonus": 15,
+      "total": 50,
+      "priceUSD": 6.99,
+      "premiumPriceUSD": 4.99
     },
     {
       "id": "pack_100",
       "gems": 75,
       "bonus": 25,
       "total": 100,
-      "priceUSD": 5.99,
-      "perGem": 0.0599
+      "priceUSD": 14.99,
+      "premiumPriceUSD": 10.99
     },
     {
-      "id": "pack_250",
-      "gems": 150,
-      "bonus": 100,
-      "total": 250,
-      "priceUSD": 11.99,
-      "perGem": 0.04796
-    },
-    {
-      "id": "pack_500",
-      "gems": 250,
-      "bonus": 250,
-      "total": 500,
-      "priceUSD": 19.99,
-      "perGem": 0.03998
+      "id": "pack_200",
+      "gems": 125,
+      "bonus": 75,
+      "total": 200,
+      "priceUSD": 24.99,
+      "premiumPriceUSD": 17.99
     }
   ]
 }

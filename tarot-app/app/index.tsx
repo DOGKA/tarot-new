@@ -349,8 +349,10 @@ export default function WelcomeScreen() {
                 }}
                 scrollEventThrottle={100}
                 renderItem={({ item: s, index }) => {
-                  const isCurrentSlot = index === (moonData.currentIndex || 0);
-                  const isLocked = !isPremium && !isCurrentSlot;
+                  const slotStart = new Date(s.start);
+                  const today = new Date();
+                  const isToday = slotStart.getDate() === today.getDate() && slotStart.getMonth() === today.getMonth() && slotStart.getFullYear() === today.getFullYear();
+                  const isLocked = !isPremium && !isToday;
                   const grad = ZODIAC_GRADIENTS[s.zodiac.key] || DEFAULT_GRADIENT;
                   return (
                     <LinearGradient
