@@ -22,17 +22,16 @@ Veri:
 
 Uret:
 
-1. planet.meaning: 2 cumle. "${dayName} gunu..." diye basla. ${planetName}'in bugun sende neyi harekete gecirdigini yaz.
+1. planet.meaning: 3 cumle. "${dayName} gunu..." diye basla. ${planetName}'in bugun sende neyi harekete gecirdigini yaz.
    planet.advice: 1 cumle. Bugun yapilabilecek spesifik bir eylem. Genel fiiller ("paylas", "dene") degil, tam olarak ne yapacagini soyle.
 
-2. zodiac.meaning: 2 cumle. "Ay ${zodiacName} burcunda..." diye basla. Ay'in bu burctaki gecisinin duygusal etkisini yaz.
+2. zodiac.meaning: 3 cumle. "Ay ${zodiacName} burcunda..." diye basla. Ay'in bu burctaki gecisinin duygusal etkisini yaz.
    zodiac.firsat: 1 cumle. Ay'in ${zodiacName} burcundaki gecisinin sana actigi kapi. Olumlu, somut, yapilabilir.
-   zodiac.his: 2-3 kelime. Hakim duygu tonu. Ornek: "gergin dikkat", "yumusak merak", "keskin sabırsızlık".
+   zodiac.his: 2-3 kelime. Hakim duygu tonu. Ornek: "gergin dikkat", "yumusak merak", "keskin sabirsizlik".
 
-3. phase.sentence: Max 6 kelime. Carpici, keskin. Soru veya emir.
-   phase.general: 2 cumle. ${phaseName} bugun ne yapiyor? Somut etki.
+3. phase.general: 3 cumle. ${phaseName} bugun ne yapiyor? Somut etki.
    phase.ayna: 1-2 cumle. Bu evre sana neyi gosteriyor? Ertelenen, kacinilan veya gormezden gelinen ne varsa onu yaz.
 
 JSON:
-{"planet":{"meaning":"...","advice":"..."},"zodiac":{"meaning":"...","firsat":"...","his":"..."},"phase":{"sentence":"...","general":"...","ayna":"..."}}`
+{"planet":{"meaning":"...","advice":"..."},"zodiac":{"meaning":"...","firsat":"...","his":"..."},"phase":{"general":"...","ayna":"..."}}`
 };

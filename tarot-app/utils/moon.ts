@@ -20,7 +20,6 @@ export interface MoonSlot {
     planet: { meaning: string; advice: string };
     zodiac: { meaning: string; firsat: string; his: string };
     phase: {
-      sentence: string;
       general: string;
       ayna: string;
     };
