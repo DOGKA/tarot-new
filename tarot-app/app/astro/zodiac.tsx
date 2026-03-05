@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { GradientBackground, Zodiac3D, StarField } from "../../components/ui";
+import { GradientBackground, Zodiac3D, StarField, WeekRuler } from "../../components/ui";
 
 const ELEMENT_COLORS: Record<string, { bg: string; border: string; text: string }> = {
   fire: { bg: "rgba(251,146,60,0.12)", border: "rgba(251,146,60,0.3)", text: "#fb923c" },
@@ -72,6 +72,9 @@ export default function ZodiacDetailScreen() {
             <Text style={[styles.elementText, { color: elemStyle.text }]}>{elemName}</Text>
           </View>
         </View>
+
+        {/* Week Ruler */}
+        <WeekRuler lang={lang} accentColor={elemStyle.text} />
 
         {/* Meaning */}
         {params.meaning ? (

@@ -9,7 +9,7 @@ import {
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { GradientBackground, Moon3D, StarField } from "../../components/ui";
+import { GradientBackground, Moon3D, StarField, WeekRuler } from "../../components/ui";
 import {
   getMoonIllumination,
   getMoonDistance,
@@ -124,6 +124,9 @@ export default function PhaseDetailScreen() {
           <Text style={styles.phaseName}>{params.phaseName}</Text>
           <Text style={styles.phaseDate}>{formatDateShort(now, lang)}</Text>
         </View>
+
+        {/* Week Ruler */}
+        <WeekRuler lang={lang} accentColor="#c084fc" />
 
         {/* Info Rows */}
         <View style={styles.infoCard}>

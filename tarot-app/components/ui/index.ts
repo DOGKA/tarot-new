@@ -7,3 +7,4 @@ export { default as Moon3D } from "./Moon3D";
 export { default as Planet3D } from "./Planet3D";
 export { default as Zodiac3D } from "./Zodiac3D";
 export { default as StarField } from "./StarField";
+export { default as WeekRuler } from "./WeekRuler";

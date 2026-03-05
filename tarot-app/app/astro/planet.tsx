@@ -8,7 +8,7 @@ import {
 } from "react-native";
 import { useRouter, useLocalSearchParams } from "expo-router";
 import { useTranslation } from "react-i18next";
-import { GradientBackground, Planet3D, StarField } from "../../components/ui";
+import { GradientBackground, Planet3D, StarField, WeekRuler } from "../../components/ui";
 
 const PLANET_COLORS: Record<string, { bg: string; border: string; text: string }> = {
   sun:     { bg: "rgba(251,191,36,0.12)", border: "rgba(251,191,36,0.3)", text: "#fbbf24" },
@@ -61,6 +61,9 @@ export default function PlanetDetailScreen() {
             <Text style={[styles.symbolText, { color: pColors.text }]}>{DAY_SYMBOLS[pKey] || "★"}</Text>
           </View>
         </View>
+
+        {/* Week Ruler */}
+        <WeekRuler lang={lang} accentColor={pColors.text} />
 
         {/* Meaning */}
         {params.meaning ? (
